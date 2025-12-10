@@ -13,6 +13,11 @@ skip digital signing requirement:
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
+run html fixer:
+```ps1
+.\fix-html.ps1 -inpath ".\cebuano-dictionary.html"
+```
+
 Parse:
 ```ps1
 .\parse.ps1 -inpath ".\cebuano-dictionary.html" -outpath ".\cebuano_dictionary_parsed.csv"
