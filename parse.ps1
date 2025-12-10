@@ -1,7 +1,12 @@
 
+param (
+    [string]$inpath = ".\cebuano-dictionary.html",
+    [string]$outpath = ".\cebuano_dictionary_parsed.csv"
+)
+
 $entries = @()
 
-$html = Get-Content '.\pg40074-images.html'
+$html = Get-Content $inpath
 [xml]$xml = $html
 if (-not $xml) {
     throw "could not parse html"
@@ -207,4 +212,4 @@ $wordEntries | ForEach-Object {
             }
         }
     }
-} | Export-Csv -Path '.\cebuano_dictionary_parsed.csv' -NoTypeInformation -Encoding UTF8
+} | Export-Csv -Path "$outpath" -NoTypeInformation -Encoding UTF8
