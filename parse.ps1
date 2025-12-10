@@ -12,6 +12,51 @@ function reduceWS($text) {
     return ($text -replace "\s+", " ").Trim()
 }
 
+# Parse content by word type and numbered definitions
+function parseWordTypeContent($content, $typeChar) {
+    # Parse numbered definitions using regex: <b>(\d+)</b>
+    $defSplits = [regex]::Split($content, "<b>(\d+)</b>")
+
+    $typeEntry = @{
+        type        = $typeChar
+        definitions = @()
+    }
+
+    # Helper function to extract class from definition
+    function extractClass($defContent) {
+        $classMatch = [regex]::Match($defContent, '<span class="rm">\[([^\]]+)\]</span>')
+        if ($classMatch.Success) {
+            return reduceWS($classMatch.Groups[1].Value)
+        }
+        return $null
+    }
+
+    # First element is text before any numbered definition (general definition for this type)
+    if ($defSplits[0].Trim() -ne "") {
+        $cleanContent = reduceWS($defSplits[0]) -replace "<[^>]*>", ""
+        $typeEntry.definitions += @{
+            number  = $null
+            class   = extractClass($defSplits[0])
+            content = $cleanContent
+        }
+    }
+
+    # Then alternating: definition number, definition content
+    for ($j = 1; $j -lt $defSplits.Count; $j += 2) {
+        $defNum = $defSplits[$j]
+        $defContent = if ($j + 1 -lt $defSplits.Count) { $defSplits[$j + 1] } else { "" }
+
+        $cleanContent = reduceWS($defContent) -replace "<[^>]*>", ""
+        $typeEntry.definitions += @{
+            number  = $defNum
+            class   = extractClass($defContent)
+            content = $cleanContent
+        }
+    }
+
+    return $typeEntry
+}
+
 $wordEntries = @()
 foreach ($section in Select-Xml -Xml $xml -XPath "//div[@class='div1 letter']") {
     foreach ($node in $section.Node) {
@@ -75,65 +120,12 @@ foreach ($section in Select-Xml -Xml $xml -XPath "//div[@class='div1 letter']") 
                 for ($i = 1; $i -lt $wordTypeSplits.Count; $i += 2) {
                     $typeChar = $wordTypeSplits[$i]
                     $typeContent = if ($i + 1 -lt $wordTypeSplits.Count) { $wordTypeSplits[$i + 1] } else { "" }
-
-                    # Now parse numbered definitions within $typeContent using regex: <b>(\d+)</b>
-                    $defSplits = [regex]::Split($typeContent, "<b>(\d+)</b>")
-
-                    $typeEntry = @{
-                        type        = $typeChar
-                        definitions = @()
-                    }
-
-                    # First element is text before any numbered definition (general definition for this type)
-                    if ($defSplits[0].Trim() -ne "") {
-                        $typeEntry.definitions += @{
-                            number  = $null
-                            content = (reduceWS($defSplits[0]) -replace "<[^>]*>", "")  # Strip HTML tags
-                        }
-                    }
-
-                    # Then alternating: definition number, definition content
-                    for ($j = 1; $j -lt $defSplits.Count; $j += 2) {
-                        $defNum = $defSplits[$j]
-                        $defContent = if ($j + 1 -lt $defSplits.Count) { $defSplits[$j + 1] } else { "" }
-
-                        $typeEntry.definitions += @{
-                            number  = $defNum
-                            content = (reduceWS($defContent) -replace "<[^>]*>", "")  # Strip HTML tags
-                        }
-                    }
-
-                    $wordEntry.types += $typeEntry
+                    $wordEntry.types += parseWordTypeContent $typeContent $typeChar
                 }
 
-                # Handle content before first word type (unknown type)
+                # Handle content before first word type (empty type)
                 if ($wordTypeSplits[0].Trim() -ne "") {
-                    $defSplits = [regex]::Split($wordTypeSplits[0], "<b>(\d+)</b>")
-                    $typeEntry = @{
-                        type        = ""
-                        definitions = @()
-                    }
-
-                    # First element is text before any numbered definition
-                    if ($defSplits[0].Trim() -ne "") {
-                        $typeEntry.definitions += @{
-                            number  = $null
-                            content = (reduceWS($defSplits[0]) -replace "<[^>]*>", "")
-                        }
-                    }
-
-                    # Then alternating: definition number, definition content
-                    for ($j = 1; $j -lt $defSplits.Count; $j += 2) {
-                        $defNum = $defSplits[$j]
-                        $defContent = if ($j + 1 -lt $defSplits.Count) { $defSplits[$j + 1] } else { "" }
-
-                        $typeEntry.definitions += @{
-                            number  = $defNum
-                            content = (reduceWS($defContent) -replace "<[^>]*>", "")
-                        }
-                    }
-
-                    $wordEntry.types += $typeEntry
+                    $wordEntry.types += parseWordTypeContent $wordTypeSplits[0] ""
                 }
 
                 $wordEntries += $wordEntry
@@ -155,6 +147,7 @@ $wordEntries | ForEach-Object {
                 word    = $word
                 type    = $typeChar
                 number  = $def.number
+                class   = $def.class
                 content = $def.content
             }
         }
