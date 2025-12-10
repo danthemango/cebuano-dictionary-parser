@@ -7,6 +7,7 @@ param (
 $entries = @()
 
 $html = Get-Content $inpath
+
 [xml]$xml = $html
 if (-not $xml) {
     throw "could not parse html"
@@ -61,6 +62,12 @@ function cleanContent($text) {
 
 # Parse content by word type and numbered definitions
 function parseWordTypeContent($content, $typeChar) {
+    # find and remove all page number links
+    # e.g. <span class="pagenum">[<a id="xd20e6352" href="#xd20e6352">5</a>]</span>
+    # These can span multiple lines, so use Singleline flag and . to match newlines
+    $opts = [System.Text.RegularExpressions.RegexOptions]::Singleline
+    $content = [regex]::Replace($content, '<span[^>]*class="pagenum"[^>]*>.*?</span>', '', $opts)
+
     # Parse numbered definitions using regex: <b>(\d+)</b>
     $defSplits = [regex]::Split($content, "<b>(\d+)</b>")
 
