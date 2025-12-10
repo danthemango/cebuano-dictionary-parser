@@ -12,6 +12,48 @@ function reduceWS($text) {
     return ($text -replace "\s+", " ").Trim()
 }
 
+# Extract referenced words/links and remove them from the HTML fragment
+function extractReferences($html) {
+    $links = @()
+    if (-not $html) { return [PSCustomObject]@{ links = $null; html = $html } }
+
+    $opts = [System.Text.RegularExpressions.RegexOptions]::IgnoreCase -bor [System.Text.RegularExpressions.RegexOptions]::Singleline
+
+    # Patterns: leading '=' then a .sc span, or an <i>see</i> then a .sc span
+    $patternEqual = '(?:=)\s*(<span[^>]*class="sc"[^>]*>.*?</span>)'
+    $patternSee = '<i[^>]*>\s*see\s*</i>\s*(<span[^>]*class="sc"[^>]*>.*?</span>)'
+
+    foreach ($m in [regex]::Matches($html, $patternEqual, $opts)) {
+        $span = $m.Groups[1].Value
+        $text = ($span -replace '<[^>]*>', '') -replace '\s+', ' '
+        $text = $text.Trim()
+        if ($text) { $links += $text }
+    }
+    foreach ($m in [regex]::Matches($html, $patternSee, $opts)) {
+        $span = $m.Groups[1].Value
+        $text = ($span -replace '<[^>]*>', '') -replace '\s+', ' '
+        $text = $text.Trim()
+        if ($text) { $links += $text }
+    }
+
+    # Remove the matched fragments from the html
+    $clean = $html -replace $patternEqual, '' -replace $patternSee, ''
+
+    return [PSCustomObject]@{
+        links = if ($links.Count -gt 0) { ($links | ForEach-Object { $_.Trim() }) -join ';' } else { $null }
+        html  = $clean
+    }
+}
+
+function cleanContent($text) {
+    $result = reduceWS($text) -replace "<[^>]*>", ""
+    # strip out everything if there is no text except punctuation or whitespace:
+    if ($result -match "^[\p{P}\s]*$") {
+        return ""
+    }
+    return $result
+}
+
 # Parse content by word type and numbered definitions
 function parseWordTypeContent($content, $typeChar) {
     # Parse numbered definitions using regex: <b>(\d+)</b>
@@ -26,17 +68,24 @@ function parseWordTypeContent($content, $typeChar) {
     function extractClass($defContent) {
         $classMatch = [regex]::Match($defContent, '<span class="rm">\[([^\]]+)\]</span>')
         if ($classMatch.Success) {
-            return reduceWS($classMatch.Groups[1].Value)
+            return $classMatch.Groups[1].Value
         }
         return $null
     }
 
     # First element is text before any numbered definition (general definition for this type)
     if ($defSplits[0].Trim() -ne "") {
-        $cleanContent = reduceWS($defSplits[0]) -replace "<[^>]*>", ""
+        $refs = extractReferences $defSplits[0]
+        $contentWithoutRefs = $refs.html
+
+        # remove class span before stripping tags
+        $contentWithoutClass = $contentWithoutRefs -replace '<span class="rm">\[[^\]]+\]</span>', ""
+        $cleanContent = cleanContent($contentWithoutClass)
+
         $typeEntry.definitions += @{
             number  = $null
             class   = extractClass($defSplits[0])
+            links   = $refs.links
             content = $cleanContent
         }
     }
@@ -46,10 +95,15 @@ function parseWordTypeContent($content, $typeChar) {
         $defNum = $defSplits[$j]
         $defContent = if ($j + 1 -lt $defSplits.Count) { $defSplits[$j + 1] } else { "" }
 
-        $cleanContent = reduceWS($defContent) -replace "<[^>]*>", ""
+        $refs = extractReferences $defContent
+        $contentWithoutRefs = $refs.html
+        $contentWithoutClass = $contentWithoutRefs -replace '<span class="rm">\[[^\]]+\]</span>', ""
+        $cleanContent = cleanContent($contentWithoutClass)
+
         $typeEntry.definitions += @{
             number  = $defNum
             class   = extractClass($defContent)
+            links   = $refs.links
             content = $cleanContent
         }
     }
@@ -148,6 +202,7 @@ $wordEntries | ForEach-Object {
                 type    = $typeChar
                 number  = $def.number
                 class   = $def.class
+                links   = $def.links
                 content = $def.content
             }
         }
