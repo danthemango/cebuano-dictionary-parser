@@ -1,17 +1,10 @@
+# .EXAMPLE
+# .\parse.ps1 | select -first 100 | Export-Csv -Path "$outpath" -NoTypeInformation -Encoding UTF8
 
 param (
     [string]$inpath = ".\cebuano-dictionary.html",
     [string]$outpath = ".\cebuano_dictionary_parsed.csv"
 )
-
-$entries = @()
-
-$html = Get-Content $inpath
-
-[xml]$xml = $html
-if (-not $xml) {
-    throw "could not parse html"
-}
 
 # Utility function to convert multiple whitespace to single space
 function reduceWS($text) {
@@ -123,6 +116,13 @@ function parseWordTypeContent($content, $typeChar) {
     return $typeEntry
 }
 
+$html = Get-Content $inpath
+
+[xml]$xml = $html
+if (-not $xml) {
+    throw "could not parse html"
+}
+
 $wordEntries = @()
 foreach ($section in Select-Xml -Xml $xml -XPath "//div[@class='div1 letter']") {
     foreach ($node in $section.Node) {
@@ -194,29 +194,25 @@ foreach ($section in Select-Xml -Xml $xml -XPath "//div[@class='div1 letter']") 
                     $wordEntry.types += parseWordTypeContent $wordTypeSplits[0] ""
                 }
 
-                $wordEntries += $wordEntry
+                # $wordEntries += $wordEntry
+                # create pscustomobj for csv rows:
+                $letter = $wordEntry.letter
+                $word = $wordEntry.word
+                foreach ($typeEntry in $wordEntry.types) {
+                    $typeChar = $typeEntry.type
+                    foreach ($def in $typeEntry.definitions) {
+                        [PSCustomObject]@{
+                            letter  = $letter
+                            word    = $word
+                            type    = $typeChar
+                            number  = $def.number
+                            class   = $def.class
+                            links   = $def.links
+                            content = $def.content
+                        }
+                    }
+                }
             }
         }
     }
 }
-
-# pipe to csv with fields: letter, word, type, (later: class), number, content
-$wordEntries | ForEach-Object {
-    $wordEntry = $_
-    $letter = $wordEntry.letter
-    $word = $wordEntry.word
-    foreach ($typeEntry in $wordEntry.types) {
-        $typeChar = $typeEntry.type
-        foreach ($def in $typeEntry.definitions) {
-            [PSCustomObject]@{
-                letter  = $letter
-                word    = $word
-                type    = $typeChar
-                number  = $def.number
-                class   = $def.class
-                links   = $def.links
-                content = $def.content
-            }
-        }
-    }
-} | Export-Csv -Path "$outpath" -NoTypeInformation -Encoding UTF8
