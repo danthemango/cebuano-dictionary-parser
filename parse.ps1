@@ -73,7 +73,7 @@ function parseWordTypeContent($content, $typeChar) {
     function extractClass($defContent) {
         $classMatch = [regex]::Match($defContent, '<span class="rm">\[([^\]]+)\]</span>')
         if ($classMatch.Success) {
-            return $classMatch.Groups[1].Value
+            return reduceWS($classMatch.Groups[1].Value)
         }
         return $null
     }
