@@ -332,6 +332,44 @@ function Parse-Links {
     }
 }
 
+# returns a type object if one found at the start of the content, e.g. for nouns: <i>n<i>
+# and returns the rest of the content with it removed
+function Parse-Type {
+    param (
+        [string]$content
+    )
+
+    $opts = [System.Text.RegularExpressions.RegexOptions]::Singleline
+    $pattern = '^\s*<i[^>]*>\s*([A-Za-z])\s*</i>\s*'
+    $match = [regex]::Match($content, $pattern, $opts)
+    if ($match.Success) {
+        $matched = $match.Groups[1].Value
+        $restContent = $content -replace $pattern, ''
+        @($matched, (reduceWS $restContent))
+    } else {
+        @($null, ($content))
+    }
+}
+
+# parses a def number, e.g. <b>1</b>, <b>2</b>, <b>2a</b>
+function Parse-Num {
+    param (
+        [string]$content
+    )
+
+    $opts = [System.Text.RegularExpressions.RegexOptions]::Singleline
+    $pattern = '^\s*<b[^>]*>\s*(\d+[a-z]*)\s*</b>\s*'
+    # $pattern = '^\s*<b[^>]*>\s*(\d+)*'
+    $match = [regex]::Match($content, $pattern, $opts)
+    if ($match.Success) {
+        $matched = $match.Groups[1].Value.ToLower()
+        $restContent = $content -replace $pattern, ''
+        @($matched, (reduceWS $restContent))
+    } else {
+        @($null, ($content))
+    }
+}
+
 function Tokenize-Content {
     param (
         [Parameter(Mandatory=$true)]
@@ -412,6 +450,15 @@ function Tokenize-Content {
 }
 
 # main
-$inxml | Split-Words | foreach { Tokenize-Content $_.content }
+# $inxml | Split-Words | foreach { $_.content } # | foreach { Tokenize-Content $_.content }
+
+# test parsing type
+$inxml | Split-Words | foreach { $_.content } | foreach {
+    $type, $rest = Parse-Num $_
+    [PSCustomObject]@{
+        type = $type
+        rest = $rest
+    }
+}
 
 # | Split-Types | Split-Nums | Split-Conjs | Parse-Links
