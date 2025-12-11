@@ -695,7 +695,7 @@ function Parse-WordDef {
             Success   = $true
             NextIndex = $i
             WordDef   = [pscustomobject]@{
-                Headword     = $headTok.Content
+                Word         = $headTok.Content
                 WordTypeDefs = $wtdefs
             }
             Diagnostics = $diag
@@ -722,7 +722,7 @@ function Parse-WordDef {
             Success   = $true
             NextIndex = $i
             WordDef   = [pscustomobject]@{
-                Headword     = $headTok.Content
+                Word         = $headTok.Content
                 NumberedDefs = $numdefs
             }
             Diagnostics = $diag
@@ -756,7 +756,7 @@ function Parse-WordDef {
                 Success   = $true
                 NextIndex = $i
                 WordDef   = [pscustomobject]@{
-                    Headword     = $headTok.Content
+                    Word             = $headTok.Content
                     DefExLead    = $defexLead.DefEx
                     NumberedDefs = $numdefs
                 }
@@ -769,7 +769,7 @@ function Parse-WordDef {
             Success   = $true
             NextIndex = $i
             WordDef   = [pscustomobject]@{
-                Headword = $headTok.Content
+                Word     = $headTok.Content
                 DefEx    = $defexLead.DefEx
             }
             Diagnostics = $diag
@@ -804,7 +804,7 @@ function Parse-WordDef {
 function Parse-Row {
     <#
       ROW ::= WORDDEF+
-      Success = consumed all tokens AND at least one WORDDEF produced
+      Success = consumed all tokens AND at least one WORDDEF produced, each subsequent worddef considered to be an affix
       Returns {Success, NextIndex, Row:{WordDefs[]}, Diagnostics}
     #>
     param([object[]]$Tokens)
@@ -838,11 +838,18 @@ function Parse-Row {
     }
 
     $success = ($i -eq $Tokens.Count) -and ($worddefs.Count -ge 1)
+
+    $worddef = $worddefs | Select-Object -First 1
+    $conjugations = $worddefs | Select-Object -Skip 1
+    if ($conjugations) {
+        $worddef | Add-Member -NotePropertyName Conjugations -NotePropertyValue $conjugations -Force
+    }
+
     [pscustomobject]@{
-        Success     = [bool]$success
-        NextIndex   = $i
-        WordDefs    = $worddefs
-        Diagnostics = $diag
+        Success      = [bool]$success
+        NextIndex    = $i
+        WordDef      = $worddef
+        Diagnostics  = $diag
     }
 }
 
@@ -888,7 +895,7 @@ $parsed = $paragraphs |
         $res = Parse-Row -Tokens $_.Tokens
 
         # Attach parse results to the row (non-destructive: adds properties)
-        $_ | Add-Member -NotePropertyName WordDefs          -NotePropertyValue $res.WordDefs          -Force
+        $_ | Add-Member -NotePropertyName WordDef           -NotePropertyValue $res.WordDef      -Force
         $_ | Add-Member -NotePropertyName ParseOk           -NotePropertyValue $res.Success      -Force
         $_ | Add-Member -NotePropertyName ParseNextIndex    -NotePropertyValue $res.NextIndex    -Force
         $_ | Add-Member -NotePropertyName ParseDiagnostics  -NotePropertyValue $res.Diagnostics  -Force
@@ -904,7 +911,7 @@ $faileds |
     ConvertTo-Json -Depth 100 |
     Set-Content -Encoding UTF8 -Path "failed-parse.json"
 
-# $successfuls.WordDefs |
+# $successfuls.WordDef |
 $successfuls |
     ConvertTo-Json -Depth 100 |
     Set-Content -Encoding UTF8 -Path "successful-parse.json"

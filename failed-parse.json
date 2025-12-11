@@ -55,19 +55,17 @@
         "Content": "be the boss and not henpecked."
       }
     ],
-    "WordDefs": [
-      {
-        "Headword": "*abab",
-        "DefEx": {
-          "Def": {
-            "Text": null,
-            "Links": [],
-            "Word": "taga-"
-          },
-          "Examples": []
-        }
+    "WordDef": {
+      "Word": "*abab",
+      "DefEx": {
+        "Def": {
+          "Text": null,
+          "Links": [],
+          "Word": "taga-"
+        },
+        "Examples": []
       }
-    ],
+    },
     "ParseOk": false,
     "ParseNextIndex": 2,
     "ParseDiagnostics": [
@@ -173,68 +171,66 @@
         "Content": "broad-shouldered."
       }
     ],
-    "WordDefs": [
-      {
-        "Headword": "abága",
-        "WordTypeDefs": [
-          {
-            "WordType": "n",
-            "Classes": [],
-            "DefEx": {
-              "Def": {
-                "Text": "shoulder.",
-                "Links": [],
-                "Word": null
-              },
-              "Examples": []
-            }
-          },
-          {
-            "WordType": "v",
-            "Classes": [
-              "[A2SN; b5]"
-            ],
-            "NumberedDefs": [
-              {
-                "Number": "1",
-                "Classes": [],
-                "DefEx": {
-                  "Def": {
-                    "Text": "take financial responsibility.",
-                    "Links": [],
-                    "Word": null
-                  },
-                  "Examples": [
-                    {
-                      "Phrase": "Abagáhun (pangabagáhun, pangabagáhan) ni Mánuy níya ang galastúhan sa pag-iskuyla,",
-                      "Gloss": "His brother will shoulder his school expenses."
-                    }
-                  ]
-                }
-              },
-              {
-                "Number": "2",
-                "Classes": [],
-                "DefEx": {
-                  "Def": {
-                    "Text": "take responsibility for accomplishing s.t.",
-                    "Links": [],
-                    "Word": null
-                  },
-                  "Examples": [
-                    {
-                      "Phrase": "Kita giyuy muabága (mangabága) áning prugramáha,",
-                      "Gloss": "We must undertake to carry out this program."
-                    }
-                  ]
-                }
-              }
-            ]
+    "WordDef": {
+      "Word": "abága",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Text": "shoulder.",
+              "Links": [],
+              "Word": null
+            },
+            "Examples": []
           }
-        ]
-      },
-      {
-        "Headword": "(→)",
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A2SN; b5]"
+          ],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "Classes": [],
+              "DefEx": {
+                "Def": {
+                  "Text": "take financial responsibility.",
+                  "Links": [],
+                  "Word": null
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Abagáhun (pangabagáhun, pangabagáhan) ni Mánuy níya ang galastúhan sa pag-iskuyla,",
+                    "Gloss": "His brother will shoulder his school expenses."
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "2",
+              "Classes": [],
+              "DefEx": {
+                "Def": {
+                  "Text": "take responsibility for accomplishing s.t.",
+                  "Links": [],
+                  "Word": null
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Kita giyuy muabága (mangabága) áning prugramáha,",
+                    "Gloss": "We must undertake to carry out this program."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "Conjugations": {
+        "Word": "(→)",
         "DefEx": {
           "Def": {
             "Text": null,
@@ -246,7 +242,7 @@
           "Examples": []
         }
       }
-    ],
+    },
     "ParseOk": false,
     "ParseNextIndex": 15,
     "ParseDiagnostics": [
@@ -280,19 +276,17 @@
         "Content": "bound by s.o.’s will. <i lang=\"ceb\">Abáhu (báhu) kunsidirasiyun"
       }
     ],
-    "WordDefs": [
-      {
-        "Headword": "*abáhu",
-        "DefEx": {
-          "Def": {
-            "Text": null,
-            "Links": [],
-            "Word": "— kunsidirasiyun, dispusisiyun"
-          },
-          "Examples": []
-        }
+    "WordDef": {
+      "Word": "*abáhu",
+      "DefEx": {
+        "Def": {
+          "Text": null,
+          "Links": [],
+          "Word": "— kunsidirasiyun, dispusisiyun"
+        },
+        "Examples": []
       }
-    ],
+    },
     "ParseOk": false,
     "ParseNextIndex": 2,
     "ParseDiagnostics": [
@@ -312,7 +306,7 @@
       "Type": "TEXT",
       "Content": "<b lang=\"ceb\">abangan"
     },
-    "WordDefs": [],
+    "WordDef": null,
     "ParseOk": false,
     "ParseNextIndex": 0,
     "ParseDiagnostics": [
@@ -438,81 +432,79 @@
         "Content": "s.t. made in such a way that it can be folded for storage, e.g., a folding chair, jackknife."
       }
     ],
-    "WordDefs": [
-      {
-        "Headword": "abaníku",
-        "WordTypeDefs": [
-          {
-            "WordType": "n",
-            "Classes": [],
-            "NumberedDefs": [
-              {
-                "Number": "1",
-                "Classes": [],
-                "DefEx": {
-                  "Def": {
-                    "Text": "folding fan.",
-                    "Links": [],
-                    "Word": null
-                  },
-                  "Examples": []
-                }
-              },
-              {
-                "Number": "1a",
-                "Classes": [],
-                "DefEx": {
-                  "Def": {
-                    "Text": "fan of any sort for fanning oneself.",
-                    "Links": [],
-                    "Word": null
-                  },
-                  "Examples": []
-                }
-              },
-              {
-                "Number": "2",
-                "Classes": [],
-                "DefEx": {
-                  "Def": {
-                    "Text": "blackberry lily, k.o. bulbous ornamental: <b lang=\"la\"><i>Balamcanda chinensis</i></b>. It is so called because the leaves are arranged like an opened fan.",
-                    "Links": [],
-                    "Word": null
-                  },
-                  "Examples": []
-                }
-              },
-              {
-                "Number": "3",
-                "Classes": [],
-                "DefEx": {
-                  "Def": {
-                    "Text": null,
-                    "Links": [
-                      "baníku"
-                    ],
-                    "Word": null
-                  },
-                  "Examples": []
-                }
-              },
-              {
-                "Number": "4",
-                "Classes": [],
-                "DefEx": {
-                  "Def": {
-                    "Text": null,
-                    "Links": [],
-                    "Word": "kurta di-"
-                  },
-                  "Examples": []
-                }
+    "WordDef": {
+      "Word": "abaníku",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "Classes": [],
+              "DefEx": {
+                "Def": {
+                  "Text": "folding fan.",
+                  "Links": [],
+                  "Word": null
+                },
+                "Examples": []
               }
-            ]
-          }
-        ]
-      }
-    ],
+            },
+            {
+              "Number": "1a",
+              "Classes": [],
+              "DefEx": {
+                "Def": {
+                  "Text": "fan of any sort for fanning oneself.",
+                  "Links": [],
+                  "Word": null
+                },
+                "Examples": []
+              }
+            },
+            {
+              "Number": "2",
+              "Classes": [],
+              "DefEx": {
+                "Def": {
+                  "Text": "blackberry lily, k.o. bulbous ornamental: <b lang=\"la\"><i>Balamcanda chinensis</i></b>. It is so called because the leaves are arranged like an opened fan.",
+                  "Links": [],
+                  "Word": null
+                },
+                "Examples": []
+              }
+            },
+            {
+              "Number": "3",
+              "Classes": [],
+              "DefEx": {
+                "Def": {
+                  "Text": null,
+                  "Links": [
+                    "baníku"
+                  ],
+                  "Word": null
+                },
+                "Examples": []
+              }
+            },
+            {
+              "Number": "4",
+              "Classes": [],
+              "DefEx": {
+                "Def": {
+                  "Text": null,
+                  "Links": [],
+                  "Word": "kurta di-"
+                },
+                "Examples": []
+              }
+            }
+          ]
+        }
+      ]
+    },
     "ParseOk": false,
     "ParseNextIndex": 12,
     "ParseDiagnostics": [
@@ -542,19 +534,17 @@
         "Content": "grand rally immediately prior to an election."
       }
     ],
-    "WordDefs": [
-      {
-        "Headword": "*abansi",
-        "DefEx": {
-          "Def": {
-            "Text": null,
-            "Links": [],
-            "Word": "miting di —"
-          },
-          "Examples": []
-        }
+    "WordDef": {
+      "Word": "*abansi",
+      "DefEx": {
+        "Def": {
+          "Text": null,
+          "Links": [],
+          "Word": "miting di —"
+        },
+        "Examples": []
       }
-    ],
+    },
     "ParseOk": false,
     "ParseNextIndex": 2,
     "ParseDiagnostics": [
@@ -872,54 +862,52 @@
         "Content": "He did not indulge in roaming about."
       }
     ],
-    "WordDefs": [
-      {
-        "Headword": "abay",
-        "WordTypeDefs": [
-          {
-            "WordType": "v",
-            "Classes": [],
-            "NumberedDefs": [
-              {
-                "Number": "1",
-                "Classes": [
-                  "[AC; b6]"
-                ],
-                "DefEx": {
-                  "Def": {
-                    "Text": "move along together with s.t. moving.",
-                    "Links": [],
-                    "Word": null
+    "WordDef": {
+      "Word": "abay",
+      "WordTypeDefs": [
+        {
+          "WordType": "v",
+          "Classes": [],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "Classes": [
+                "[AC; b6]"
+              ],
+              "DefEx": {
+                "Def": {
+                  "Text": "move along together with s.t. moving.",
+                  "Links": [],
+                  "Word": null
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Lagmit hiligsan ang bátà kay nag-abay sa tartanilya,",
+                    "Gloss": "The child is likely to be run over because he is running alongside of the rig."
                   },
-                  "Examples": [
-                    {
-                      "Phrase": "Lagmit hiligsan ang bátà kay nag-abay sa tartanilya,",
-                      "Gloss": "The child is likely to be run over because he is running alongside of the rig."
-                    },
-                    {
-                      "Phrase": "Silang duha nag-ábay paglanguy,",
-                      "Gloss": "The two swam side by side."
-                    }
-                  ]
-                }
-              },
-              {
-                "Number": "1a",
-                "Classes": [],
-                "DefEx": {
-                  "Def": {
-                    "Text": null,
-                    "Links": [],
-                    "Word": "— ug sawa"
-                  },
-                  "Examples": []
-                }
+                  {
+                    "Phrase": "Silang duha nag-ábay paglanguy,",
+                    "Gloss": "The two swam side by side."
+                  }
+                ]
               }
-            ]
-          }
-        ]
-      }
-    ],
+            },
+            {
+              "Number": "1a",
+              "Classes": [],
+              "DefEx": {
+                "Def": {
+                  "Text": null,
+                  "Links": [],
+                  "Word": "— ug sawa"
+                },
+                "Examples": []
+              }
+            }
+          ]
+        }
+      ]
+    },
     "ParseOk": false,
     "ParseNextIndex": 11,
     "ParseDiagnostics": [
@@ -949,21 +937,19 @@
         "Content": "1, 2"
       }
     ],
-    "WordDefs": [
-      {
-        "Headword": "abi",
-        "DefEx": {
-          "Def": {
-            "Text": null,
-            "Links": [
-              "abir"
-            ],
-            "Word": null
-          },
-          "Examples": []
-        }
+    "WordDef": {
+      "Word": "abi",
+      "DefEx": {
+        "Def": {
+          "Text": null,
+          "Links": [
+            "abir"
+          ],
+          "Word": null
+        },
+        "Examples": []
       }
-    ],
+    },
     "ParseOk": false,
     "ParseNextIndex": 2,
     "ParseDiagnostics": [
@@ -1067,25 +1053,23 @@
         "Content": "Fight back. They might think you give up."
       }
     ],
-    "WordDefs": [
-      {
-        "Headword": "ábi",
-        "NumberedDefs": [
-          {
-            "Number": "1",
-            "Classes": [],
-            "DefEx": {
-              "Def": {
-                "Text": "<b lang=\"ceb\">—",
-                "Links": [],
-                "Word": null
-              },
-              "Examples": []
-            }
+    "WordDef": {
+      "Word": "ábi",
+      "NumberedDefs": [
+        {
+          "Number": "1",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Text": "<b lang=\"ceb\">—",
+              "Links": [],
+              "Word": null
+            },
+            "Examples": []
           }
-        ]
-      }
-    ],
+        }
+      ]
+    },
     "ParseOk": false,
     "ParseNextIndex": 3,
     "ParseDiagnostics": [
@@ -1127,41 +1111,39 @@
         "Content": "2"
       }
     ],
-    "WordDefs": [
-      {
-        "Headword": "abrasadur",
-        "WordTypeDefs": [
-          {
-            "WordType": "n",
-            "Classes": [],
-            "DefEx": {
-              "Def": {
-                "Text": null,
-                "Links": [
-                  "tangdayan"
-                ],
-                "Word": null
-              },
-              "Examples": []
-            }
-          },
-          {
-            "WordType": "v",
-            "Classes": [],
-            "DefEx": {
-              "Def": {
-                "Text": null,
-                "Links": [
-                  "tangday"
-                ],
-                "Word": null
-              },
-              "Examples": []
-            }
+    "WordDef": {
+      "Word": "abrasadur",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Text": null,
+              "Links": [
+                "tangdayan"
+              ],
+              "Word": null
+            },
+            "Examples": []
           }
-        ]
-      }
-    ],
+        },
+        {
+          "WordType": "v",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Text": null,
+              "Links": [
+                "tangday"
+              ],
+              "Word": null
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
     "ParseOk": false,
     "ParseNextIndex": 5,
     "ParseDiagnostics": [
@@ -1249,19 +1231,17 @@
         "Content": "A jealous glance."
       }
     ],
-    "WordDefs": [
-      {
-        "Headword": "*abubhu",
-        "DefEx": {
-          "Def": {
-            "Text": null,
-            "Links": [],
-            "Word": "paN-"
-          },
-          "Examples": []
-        }
+    "WordDef": {
+      "Word": "*abubhu",
+      "DefEx": {
+        "Def": {
+          "Text": null,
+          "Links": [],
+          "Word": "paN-"
+        },
+        "Examples": []
       }
-    ],
+    },
     "ParseOk": false,
     "ParseNextIndex": 2,
     "ParseDiagnostics": [
@@ -1295,25 +1275,23 @@
         "Content": "kútu"
       }
     ],
-    "WordDefs": [
-      {
-        "Headword": "ábud<sub>3</sub>",
-        "WordTypeDefs": [
-          {
-            "WordType": "n",
-            "Classes": [],
-            "DefEx": {
-              "Def": {
-                "Text": "k.o. head louse lighter in color and with a longer and more slender body than the ordinary head louse (",
-                "Links": [],
-                "Word": null
-              },
-              "Examples": []
-            }
+    "WordDef": {
+      "Word": "ábud<sub>3</sub>",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Text": "k.o. head louse lighter in color and with a longer and more slender body than the ordinary head louse (",
+              "Links": [],
+              "Word": null
+            },
+            "Examples": []
           }
-        ]
-      }
-    ],
+        }
+      ]
+    },
     "ParseOk": false,
     "ParseNextIndex": 3,
     "ParseDiagnostics": [
@@ -1355,19 +1333,17 @@
         "Content": "<span class=\"sc\" lang=\"ceb\"><a href=\"#xxabubhu\">*"
       }
     ],
-    "WordDefs": [
-      {
-        "Headword": "*abug<sub>2</sub>",
-        "DefEx": {
-          "Def": {
-            "Text": null,
-            "Links": [],
-            "Word": "paN-"
-          },
-          "Examples": []
-        }
+    "WordDef": {
+      "Word": "*abug<sub>2</sub>",
+      "DefEx": {
+        "Def": {
+          "Text": null,
+          "Links": [],
+          "Word": "paN-"
+        },
+        "Examples": []
       }
-    ],
+    },
     "ParseOk": false,
     "ParseNextIndex": 2,
     "ParseDiagnostics": [
