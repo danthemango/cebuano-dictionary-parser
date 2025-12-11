@@ -187,7 +187,7 @@ function Split-Types {
 # they may be separate conjugations listed with their own definitions (including definition types and numbers)
 # other words, variations, conjugations, affixes
 # <b lang=""ceb"">adtuúnun, aladtúun</b>
-function Split-Cebuano {
+function Split-Cebuano-Words {
     param (
         [Parameter(ValueFromPipeline=$true)]
         $token
@@ -197,7 +197,7 @@ function Split-Cebuano {
         # the id is likely used to be the target of the internal links, not sure if that information can be used later.
         $pattern2 = "<b id=""[^""]+"" lang=""ceb"">\s*(.*?)\s*</b>"
 
-        $token | Split-TokensByPattern -pattern $pattern1 -tokenType "WORD" | Split-TokensByPattern -pattern $pattern2 -tokenType "WORD"
+        $token | Split-TokensByPattern -pattern $pattern1 -tokenType "CEBWORD" | Split-TokensByPattern -pattern $pattern2 -tokenType "CEBWORD"
     }
 }
 
@@ -294,11 +294,18 @@ function Split-Links {
 
 # class
 # <span class=""rm"">[A2; b3c]</span>
-
-# variations
-# other words, conjugations, affixes
-# <b lang=""ceb"">adtuúnun, aladtúun</b>
+# <span class=""rm"">[<i lang=""ceb"">gen.</i>]</span>
+function Split-Classes {
+    param (
+        [Parameter(ValueFromPipeline=$true)]
+        $token
+    )
+    process {
+        $pattern = '<span class="rm">(.*?)</span>'
+        $token | Split-TokensByPattern -pattern $pattern -tokenType "CLASS"
+    }
+}
 
 # main
 # Parse words and process their tokens through type and number splitting
-$inxml | Split-Paragraphs | foreach { $_.tokens } | Split-Cebuano | Split-Types | Split-Nums | Split-Links
+$inxml | Split-Paragraphs | foreach { $_.tokens } | Split-Classes | Split-Cebuano-Words | Split-Types | Split-Nums | Split-Links
