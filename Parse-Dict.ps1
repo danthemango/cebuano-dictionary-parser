@@ -1,5 +1,15 @@
+param (
+    # accept input as xml object piped in, mandatory
+    [Parameter(ValueFromPipeline=$true, Mandatory=$true)]
+    [xml]$inxml = $null,
+    # limit the number of paragraphs to parse for testing
+    # set Limit = $null for no limit
+    [Parameter(Mandatory=$true)]
+    [int]$Limit
+)
+
 # .EXAMPLE
-# .\HTML-to-XML.ps1 | .\Parse-Dict.ps1 | Export-Csv .\cebuano-dictionary.csv
+# .\HTML-to-XML.ps1 | .\Parse-Dict.ps1
 
 # after the word, there may be one or more types (e.g. <i>n</i>, <i>v</i>, <i>a</i>)
 # then each type may have one or more numbered definitions
@@ -9,11 +19,6 @@
 # and may also have zero or more numbered definitions
 # there may be a conjugation that is part of a definition (e.g. after the word type or the word conjugation)
 
-param (
-    # accept input as xml object piped in, mandatory
-    [Parameter(ValueFromPipeline=$true, Mandatory=$true)]
-    [xml]$inxml = $null
-)
 
 # Utility function to convert multiple whitespace to single space
 function reduceWS($text) {
@@ -306,13 +311,316 @@ function Split-Classes {
     }
 }
 
-# main
-# Parse words and process their tokens through type and number splitting
-# $inxml | Split-Paragraphs | foreach { $_.tokens } | Strip-Corr | Split-Classes | Split-Cebuano-Words | Split-Types | Split-Nums | Split-Links
+# remove corr elements, leaving the text contents if there are any non-numbers
+# <span class="corr" id="xd20e4931" title="Source: kunsididirasiyun">kunsidirasiyun</span>
+# <span class="corr" id="xd20e5140" title="Not in source"><sub>1</sub></span>
+function Strip-Corr {
+    param (
+        [Parameter(ValueFromPipeline=$true)]
+        $token
+    )
+    process {
+        # If not a TEXT token, pass through unchanged
+        if ($token.Type -ne "TEXT") {
+            $token
+            return
+        }
 
-$inxml |
-    Split-Paragraphs |
+        $content = $token.Content
+        $opts = [System.Text.RegularExpressions.RegexOptions]::Singleline
+
+        # Pattern: <span class="corr" ...>...</span>
+        $pattern = '<span[^>]*class="corr"[^>]*>.*?</span>'
+        $splits = [regex]::Split($content, $pattern)
+        $matches = [regex]::Matches($content, $pattern, $opts)
+        # If no matches, return original token
+        if ($matches.Count -eq 0) {
+            $token
+            return
+        }
+
+        # if there are any matches, remove the span (and sub) tags from the text but leave the content in-place
+        $newContent = ""
+        for ($i = 0; $i -lt $matches.Count; $i++) {
+            $newContent += $splits[$i]
+
+            $spanMatch = $matches[$i].Value
+            # remove tags
+            $innerText = $spanMatch -replace '<[^>]*>', ''
+            # check if innerText has any non-numeric characters
+            if ($innerText -match '\D') {
+                $newContent += $innerText
+            }
+            # emit the content including before and after
+            [PSCustomObject]@{
+                Type    = "TEXT"
+                Content = reduceWS($newContent)
+            }
+        }
+    }
+}
+
+function Get-Token {
+    param([object[]]$Tokens, [int]$i)
+    if ($i -ge 0 -and $i -lt $Tokens.Count) { $Tokens[$i] } else { $null }
+}
+
+function IsType {
+    param($tok, [string]$type)
+    $tok -and ($tok.Type -eq $type)
+}
+
+function MatchType {
+    param([object[]]$Tokens, [ref]$i, [string]$type)
+    $tok = Get-Token $Tokens $i.Value
+    if (IsType $tok $type) {
+        $i.Value++
+        return $tok
+    }
+    return $null
+}
+
+function ExpectType {
+    param([object[]]$Tokens, [ref]$i, [string]$type, [ref]$Diagnostics, [string]$msg = "Expected $type")
+    $tok = MatchType -Tokens $Tokens -i $i -type $type
+    if ($null -eq $tok) {
+        $Diagnostics.Value += [pscustomobject]@{
+            Index    = $i.Value
+            Expected = $type
+            Message  = $msg
+            Token    = Get-Token $Tokens $i.Value
+        }
+        return $false
+    }
+    return $true
+}
+
+function Parse-Examples {
+    <#
+      Parse zero or more example pairs: (CEBWORD + TEXT)
+      Returns {Examples, NextIndex}
+    #>
+    param([object[]]$Tokens, [int]$StartIndex)
+
+    $i = $StartIndex
+    $examples = @()
+    while ($true) {
+        $phraseTok = Get-Token $Tokens $i
+        if (-not (IsType $phraseTok 'CEBWORD')) { break }
+
+        $i++  # consumed phrase
+        $glossTok = Get-Token $Tokens $i
+        if (-not (IsType $glossTok 'TEXT')) {
+            # If not a TEXT, roll back one step and stop examples
+            $i-- ; break
+        }
+        $i++  # consumed gloss
+
+        $examples += [pscustomobject]@{
+            Phrase = $phraseTok.Content
+            Gloss  = $glossTok.Content
+        }
+    }
+
+    return [pscustomobject]@{
+        Examples  = $examples
+        NextIndex = $i
+    }
+}
+
+function Parse-Sense {
+    <#
+      Parse a numbered sense:
+        NUMBER [TEXT]? [ (CEBWORD TEXT)* ] [LINK]*
+      Returns {Success, NextIndex, Sense, Diagnostics}
+    #>
+    param([object[]]$Tokens, [int]$StartIndex)
+
+    $i = $StartIndex
+    $diag = @()
+
+    $numTok = Get-Token $Tokens $i
+    if (-not (IsType $numTok 'NUMBER')) {
+        return [pscustomobject]@{
+            Success   = $false
+            NextIndex = $i
+            Sense     = $null
+            Diagnostics = $diag + [pscustomobject]@{
+                Index = $i; Message = 'Sense must start with NUMBER'; Token = $numTok
+            }
+        }
+    }
+    $i++
+
+    # Optional definition text
+    $defText = $null
+    $maybeText = Get-Token $Tokens $i
+    if (IsType $maybeText 'TEXT') {
+        $defText = $maybeText.Content
+        $i++
+    }
+
+    # Zero or more examples
+    $ex = Parse-Examples -Tokens $Tokens -StartIndex $i
+    $i = $ex.NextIndex
+
+    # Optional links (zero or more)
+    $links = @()
+    while ($true) {
+        $linkTok = Get-Token $Tokens $i
+        if (-not (IsType $linkTok 'LINK')) { break }
+        $links += $linkTok.Content
+        $i++
+    }
+
+    $sense = [pscustomobject]@{
+        Number    = $numTok.Content
+        Text      = $defText
+        Examples  = $ex.Examples
+        Links     = $links
+    }
+
+    return [pscustomobject]@{
+        Success     = $true
+        NextIndex   = $i
+        Sense       = $sense
+        Diagnostics = $diag
+    }
+}
+
+function Parse-Row {
+    <#
+      Parse one row's token array.
+      Returns:
+        {
+          Success: [bool],
+          NextIndex: [int],
+          Entry: {
+            Headword,
+            Variations[],
+            PartsOfSpeech[],
+            Senses[]
+          },
+          Diagnostics: []
+        }
+      Success = ($NextIndex -eq $Tokens.Count) AND row starts with CEBWORD.
+    #>
+    param([object[]]$Tokens)
+
+    $i = 0
+    $diag = @()
+
+    # 1) Headword
+    $headTok = Get-Token $Tokens $i
+    if (-not (IsType $headTok 'CEBWORD')) {
+        $diag += [pscustomobject]@{
+            Index = $i; Message = 'Row must start with CEBWORD'; Token = $headTok
+        }
+        return [pscustomobject]@{
+            Success     = $false
+            NextIndex   = $i
+            Entry       = $null
+            Diagnostics = $diag
+        }
+    }
+    $headword = $headTok.Content
+    $i++
+
+    # 2) Variations: greedy CEBWORDs until next major type
+    $variations = @()
+    while ($true) {
+        $tok = Get-Token $Tokens $i
+        if (-not $tok) { break }
+        if ($tok.Type -in @('WORDTYPE','NUMBER','TEXT','LINK')) { break }
+        if ($tok.Type -eq 'CEBWORD') {
+            $variations += $tok.Content
+            $i++
+            continue
+        }
+        # Unknown token type -> stop variations
+        break
+    }
+
+    # 3) Parts of speech: consecutive WORDTYPEs
+    $pos = @()
+    while ($true) {
+        $tok = Get-Token $Tokens $i
+        if (IsType $tok 'WORDTYPE') {
+            $pos += $tok.Content
+            $i++
+        } else {
+            break
+        }
+    }
+
+    # 4) Numbered senses
+    $senses = @()
+    while ($true) {
+        $tok = Get-Token $Tokens $i
+        if (-not $tok) { break }
+        if (IsType $tok 'NUMBER') {
+            $senseRes = Parse-Sense -Tokens $Tokens -StartIndex $i
+            $senses += $senseRes.Sense
+            $i = $senseRes.NextIndex
+            if (-not $senseRes.Success) {
+                $diag += $senseRes.Diagnostics
+                break
+            }
+            continue
+        }
+
+        # If non-number token remains, we treat as trailing content (warning)
+        if ($tok) {
+            $diag += [pscustomobject]@{
+                Index = $i; Message = "Trailing token after senses: $($tok.Type)"; Token = $tok
+            }
+        }
+        break
+    }
+
+    $entry = [pscustomobject]@{
+        Headword     = $headword
+        Variations   = $variations
+        PartsOfSpeech= $pos
+        Senses       = $senses
+    }
+
+    $success = ($i -eq $Tokens.Count) -and ($null -ne $headword)
+    return [pscustomobject]@{
+        Success     = [bool]$success
+        NextIndex   = $i
+        Entry       = $entry
+        Diagnostics = $diag
+    }
+}
+
+# main
+$paragraphs = $inxml | Split-Paragraphs
+
+if ($Limit) {
+    $paragraphs = $paragraphs | Select-Object -First $Limit
+}
+
+# DEBUG pipe plain tokens to csv, for tokenizing development
+$paragraphs | foreach { $_.tokens } | Strip-Corr | Split-Classes | Split-Cebuano-Words | Split-Types | Split-Nums | Split-Links | Export-Csv -Encoding utf8 -NoTypeInformation -Path "tokenlist.csv"
+
+# tokenize each paragraph
+# $inxml |
+#     Split-Paragraphs |
+#     ForEach-Object {
+#         $_.Tokens = ($_.Tokens |
+#             Strip-Corr |
+#             Split-Classes |
+#             Split-Cebuano-Words |
+#             Split-Types |
+#             Split-Nums |
+#             Split-Links)
+#         $_  # emit the updated object
+#     }
+
+$parsed = $paragraphs |
     ForEach-Object {
+        # Keep your token normalization passes
         $_.Tokens = ($_.Tokens |
             Strip-Corr |
             Split-Classes |
@@ -320,5 +628,20 @@ $inxml |
             Split-Types |
             Split-Nums |
             Split-Links)
-        $_  # emit the updated object
+
+        # Parse the normalized token array into a structured tree
+        $res = Parse-Row -Tokens $_.Tokens
+
+        # Attach parse results to the row (non-destructive: adds properties)
+        $_ | Add-Member -NotePropertyName Parsed            -NotePropertyValue $res.Entry        -Force
+        $_ | Add-Member -NotePropertyName ParseOk           -NotePropertyValue $res.Success      -Force
+        $_ | Add-Member -NotePropertyName ParseNextIndex    -NotePropertyValue $res.NextIndex    -Force
+        $_ | Add-Member -NotePropertyName ParseDiagnostics  -NotePropertyValue $res.Diagnostics  -Force
+
+        $_  # emit the updated object to the pipeline
     }
+
+# Finally, write the whole set to JSON
+$parsed |
+    ConvertTo-Json -Depth 12 |
+    Set-Content -Encoding UTF8 -Path .\dict-parsed.json

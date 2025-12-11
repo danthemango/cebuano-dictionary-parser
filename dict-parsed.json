@@ -1,0 +1,999 @@
+[
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "a"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "letter A."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "walay —"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "illiterate."
+      }
+    ],
+    "Parsed": {
+      "Headword": "a",
+      "Variations": [],
+      "PartsOfSpeech": [
+        "n"
+      ],
+      "Senses": []
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [
+      {
+        "Index": 2,
+        "Message": "Trailing token after senses: TEXT",
+        "Token": {
+          "Type": "TEXT",
+          "Content": "letter A."
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "-a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "subjunctive direct passive affix."
+      },
+      {
+        "Type": "LINK",
+        "Content": "-un"
+      }
+    ],
+    "Parsed": {
+      "Headword": "-a",
+      "Variations": [],
+      "PartsOfSpeech": [],
+      "Senses": []
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 1,
+    "ParseDiagnostics": [
+      {
+        "Index": 1,
+        "Message": "Trailing token after senses: TEXT",
+        "Token": {
+          "Type": "TEXT",
+          "Content": "subjunctive direct passive affix."
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "-a(←)"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "affix added to nouns forming words which refer to a specific one of several: <i lang=\"ceb\">Kanang isdáa, dílì kadtu,</i> That fish there, not that one further over. <i lang=\"ceb\">Háing baláya ang íla?</i> Which house is theirs?"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "added to possessive pronouns: the particular one that belongs to [so-and-so]. <i lang=\"ceb\">Dakù ang amúang balay, gamay tung iláha,</i> Our house is large, and theirs is small."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "affix added to adjectives to form exclamation. <i lang=\"ceb\">Dakúa uy!</i> My! How big it is! <i lang=\"ceb\">Patyun tikaw, irúa ka!</i> I’ll kill you, you dog you! <i lang=\"ceb\">Ngilngígang awtúha à!</i> That’s some car!"
+      }
+    ],
+    "Parsed": {
+      "Headword": "-a(←)",
+      "Variations": [],
+      "PartsOfSpeech": [],
+      "Senses": [
+        {
+          "Number": "1",
+          "Text": "affix added to nouns forming words which refer to a specific one of several: <i lang=\"ceb\">Kanang isdáa, dílì kadtu,</i> That fish there, not that one further over. <i lang=\"ceb\">Háing baláya ang íla?</i> Which house is theirs?",
+          "Examples": [],
+          "Links": []
+        },
+        {
+          "Number": "1a",
+          "Text": "added to possessive pronouns: the particular one that belongs to [so-and-so]. <i lang=\"ceb\">Dakù ang amúang balay, gamay tung iláha,</i> Our house is large, and theirs is small.",
+          "Examples": [],
+          "Links": []
+        },
+        {
+          "Number": "2",
+          "Text": "affix added to adjectives to form exclamation. <i lang=\"ceb\">Dakúa uy!</i> My! How big it is! <i lang=\"ceb\">Patyun tikaw, irúa ka!</i> I’ll kill you, you dog you! <i lang=\"ceb\">Ngilngígang awtúha à!</i> That’s some car!",
+          "Examples": [],
+          "Links": []
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 7,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "á"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "particle used as a pause word before starting to speak."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "as a filler. <i lang=\"ceb\">á, muanhi ka ugmà?</i> Um, are you going to come here tomorrow?"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "deprecating or showing unimportance of what just preceded. <i lang=\"ceb\">á, paríha ra nákù,</i> Oh, it’s all the same to me. <i lang=\"ceb\">á, nagkumidiya lang siya,</i> Oh, he’s just joking."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "showing mild disapproval. <i lang=\"ceb\">á, dì nà mahímù,</i> Oh, you can’t do that."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "4"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "recalling or conceding s.t. <i lang=\"ceb\">á, duha diay tu,</i> Oh, yes. There were two of them, weren’t there."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "4a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "preceding s.t. just found out. <i lang=\"ceb\">á, Lítu diay ímung ngálan,</i> Oh, so your name is Lito. <i lang=\"ceb\">á, kanindut,</i> Oh, how nice!"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "5"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "expressing relief. <i lang=\"ceb\">á, nahuwasan ku,</i> Ah, what a relief!"
+      }
+    ],
+    "Parsed": {
+      "Headword": "á",
+      "Variations": [],
+      "PartsOfSpeech": [],
+      "Senses": []
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 1,
+    "ParseDiagnostics": [
+      {
+        "Index": 1,
+        "Message": "Trailing token after senses: TEXT",
+        "Token": {
+          "Type": "TEXT",
+          "Content": "particle used as a pause word before starting to speak."
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "à"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "particle preceding or following a sentence with an adjective predicate."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "dismissing s.t. as impractical, too easy, impossible, etc. <i lang=\"ceb\">à, mu ra diay nà? Kasayun à!</i> Oh, is that all there is to it? How easy it is! <i lang=\"ceb\">à, ása man ku mutúu nímu,</i> Hm, you think I could believe you?"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "showing disapproval. <i lang=\"ceb\">à, hináya nímung mulíhuk,</i> Hm! You sure work slowly!"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "showing surprise. <i lang=\"ceb\">à, kanindut nímug sinínà,</i> How come you have such a beautiful dress on!"
+      }
+    ],
+    "Parsed": {
+      "Headword": "à",
+      "Variations": [],
+      "PartsOfSpeech": [],
+      "Senses": []
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 1,
+    "ParseDiagnostics": [
+      {
+        "Index": 1,
+        "Message": "Trailing token after senses: TEXT",
+        "Token": {
+          "Type": "TEXT",
+          "Content": "particle preceding or following a sentence with an adjective predicate."
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "ā̀"
+      },
+      {
+        "Type": "LINK",
+        "Content": "álà"
+      }
+    ],
+    "Parsed": {
+      "Headword": "ā̀",
+      "Variations": [],
+      "PartsOfSpeech": [],
+      "Senses": []
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 1,
+    "ParseDiagnostics": [
+      {
+        "Index": 1,
+        "Message": "Trailing token after senses: LINK",
+        "Token": {
+          "Type": "LINK",
+          "Content": "álà"
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "aba<sub>1</sub>"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "breast of fowls."
+      }
+    ],
+    "Parsed": {
+      "Headword": "aba<sub>1</sub>",
+      "Variations": [],
+      "PartsOfSpeech": [
+        "n"
+      ],
+      "Senses": []
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [
+      {
+        "Index": 2,
+        "Message": "Trailing token after senses: TEXT",
+        "Token": {
+          "Type": "TEXT",
+          "Content": "breast of fowls."
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "aba<sub>2</sub>"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "exclamation of pleasure and surprise. <i lang=\"ceb\">Aba! Nakadaug ku,</i> My! I won!"
+      }
+    ],
+    "Parsed": {
+      "Headword": "aba<sub>2</sub>",
+      "Variations": [],
+      "PartsOfSpeech": [],
+      "Senses": []
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 1,
+    "ParseDiagnostics": [
+      {
+        "Index": 1,
+        "Message": "Trailing token after senses: TEXT",
+        "Token": {
+          "Type": "TEXT",
+          "Content": "exclamation of pleasure and surprise. <i lang=\"ceb\">Aba! Nakadaug ku,</i> My! I won!"
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "ábà tuy"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "(from <i lang=\"ceb\">sábà dihà untuy</i>) shut up! <i lang=\"ceb\">ábà tuy, maáyu ka lang sa tayáda, wà kay tadtad,</i> Shut up! You’re great at talking, but let’s see you do s.t."
+      }
+    ],
+    "Parsed": {
+      "Headword": "ábà tuy",
+      "Variations": [],
+      "PartsOfSpeech": [],
+      "Senses": []
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 1,
+    "ParseDiagnostics": [
+      {
+        "Index": 1,
+        "Message": "Trailing token after senses: TEXT",
+        "Token": {
+          "Type": "TEXT",
+          "Content": "(from <i lang=\"ceb\">sábà dihà untuy</i>) shut up! <i lang=\"ceb\">ábà tuy, maáyu ka lang sa tayáda, wà kay tadtad,</i> Shut up! You’re great at talking, but let’s see you do s.t."
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abaa"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "particle indicating disapproval (literary). <i lang=\"ceb\">Abaa! Mahū́g ka gánì dihà!</i> Stop that! You might fall!"
+      }
+    ],
+    "Parsed": {
+      "Headword": "abaa",
+      "Variations": [],
+      "PartsOfSpeech": [],
+      "Senses": []
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 1,
+    "ParseDiagnostics": [
+      {
+        "Index": 1,
+        "Message": "Trailing token after senses: TEXT",
+        "Token": {
+          "Type": "TEXT",
+          "Content": "particle indicating disapproval (literary). <i lang=\"ceb\">Abaa! Mahū́g ka gánì dihà!</i> Stop that! You might fall!"
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "*abab"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "taga-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "hillbilly."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "pakataga-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A13; a12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "act, treat like, consider a hillbilly. <i lang=\"ceb\">Gipakatagaabab lang ku ninyu. Ihása,</i> You just think I’m a hillbilly. Don’t try to fool me."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— disáya"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be the boss and not henpecked."
+      }
+    ],
+    "Parsed": {
+      "Headword": "*abab",
+      "Variations": [
+        "taga-"
+      ],
+      "PartsOfSpeech": [
+        "n"
+      ],
+      "Senses": []
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": [
+      {
+        "Index": 3,
+        "Message": "Trailing token after senses: TEXT",
+        "Token": {
+          "Type": "TEXT",
+          "Content": "hillbilly."
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "ab-ab"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a]"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "chew to pieces. <i lang=\"ceb\">Ab-ábun sa irù ang íyang hikut,</i> The dog will chew up his rope."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "eat away, erode. <i lang=\"ceb\">Ang pagluib ni Maríya nag-ab-ab sa íyang balatían,</i> Maria’s infidelity ate away at his insides. <i lang=\"ceb\">Giab-ab ang íyang pinútì sa tayà,</i> His sword was eaten away by rust."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "fester. <i lang=\"ceb\">Ang nag-ab-ab kung núka,</i> My festering wound.†"
+      }
+    ],
+    "Parsed": {
+      "Headword": "ab-ab",
+      "Variations": [],
+      "PartsOfSpeech": [
+        "v"
+      ],
+      "Senses": []
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [
+      {
+        "Index": 2,
+        "Message": "Trailing token after senses: CLASS",
+        "Token": {
+          "Type": "CLASS",
+          "Content": "[A; a]"
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abad"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "abbot."
+      }
+    ],
+    "Parsed": {
+      "Headword": "abad",
+      "Variations": [],
+      "PartsOfSpeech": [
+        "n"
+      ],
+      "Senses": []
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [
+      {
+        "Index": 2,
+        "Message": "Trailing token after senses: TEXT",
+        "Token": {
+          "Type": "TEXT",
+          "Content": "abbot."
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "ábag"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; b]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "give material help, help do work. <i lang=\"ceb\">Kinsa may mag-ábag nímu sa ímung pag-iskuyla?</i> Who will help pay for your schooling? <i lang=\"ceb\">Abági ku áring pagsilhig,</i> Help me sweep."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "help given."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "ka-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "helper."
+      }
+    ],
+    "Parsed": {
+      "Headword": "ábag",
+      "Variations": [],
+      "PartsOfSpeech": [
+        "v"
+      ],
+      "Senses": []
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [
+      {
+        "Index": 2,
+        "Message": "Trailing token after senses: CLASS",
+        "Token": {
+          "Type": "CLASS",
+          "Content": "[A; b]"
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abaga"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "sweet potatoes growing from the outer vines and not from the main root."
+      }
+    ],
+    "Parsed": {
+      "Headword": "abaga",
+      "Variations": [],
+      "PartsOfSpeech": [
+        "n"
+      ],
+      "Senses": []
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [
+      {
+        "Index": 2,
+        "Message": "Trailing token after senses: TEXT",
+        "Token": {
+          "Type": "TEXT",
+          "Content": "sweet potatoes growing from the outer vines and not from the main root."
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abága"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "shoulder."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2SN; b5]"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "take financial responsibility. <i lang=\"ceb\">Abagáhun (pangabagáhun, pangabagáhan) ni Mánuy níya ang galastúhan sa pag-iskuyla,</i> His brother will shoulder his school expenses."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "take responsibility for accomplishing s.t. <i lang=\"ceb\">Kita giyuy muabága (mangabága) áning prugramáha,</i> We must undertake to carry out this program."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "(→)"
+      },
+      {
+        "Type": "LINK",
+        "Content": "abága"
+      },
+      {
+        "Type": "TEXT",
+        "Content": ", <i lang=\"ceb\">v</i>."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "paN-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "right-hand-man."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "abagáhun"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "broad-shouldered."
+      }
+    ],
+    "Parsed": {
+      "Headword": "abága",
+      "Variations": [],
+      "PartsOfSpeech": [
+        "n"
+      ],
+      "Senses": []
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [
+      {
+        "Index": 2,
+        "Message": "Trailing token after senses: TEXT",
+        "Token": {
+          "Type": "TEXT",
+          "Content": "shoulder."
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "*abáhu"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— kunsidirasiyun, dispusisiyun"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "bound by s.o.’s will. <i lang=\"ceb\">Abáhu (báhu) kunsidirasiyun"
+      }
+    ],
+    "Parsed": {
+      "Headword": "*abáhu",
+      "Variations": [
+        "— kunsidirasiyun, dispusisiyun"
+      ],
+      "PartsOfSpeech": [
+        "n"
+      ],
+      "Senses": []
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": [
+      {
+        "Index": 3,
+        "Message": "Trailing token after senses: TEXT",
+        "Token": {
+          "Type": "TEXT",
+          "Content": "bound by s.o.’s will. <i lang=\"ceb\">Abáhu (báhu) kunsidirasiyun"
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abaka"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "abaca plant: <b lang=\"la\"><i>Musa textilis</i></b>."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "abaca fiber."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "abakahan, abakanhan, abakal"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "abaca plantation."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A3]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "own an abaca plantation."
+      }
+    ],
+    "Parsed": {
+      "Headword": "abaka",
+      "Variations": [],
+      "PartsOfSpeech": [
+        "n"
+      ],
+      "Senses": [
+        {
+          "Number": "1",
+          "Text": "abaca plant: <b lang=\"la\"><i>Musa textilis</i></b>.",
+          "Examples": [],
+          "Links": []
+        },
+        {
+          "Number": "2",
+          "Text": "abaca fiber.",
+          "Examples": [],
+          "Links": []
+        }
+      ]
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": [
+      {
+        "Index": 6,
+        "Message": "Trailing token after senses: CEBWORD",
+        "Token": {
+          "Type": "CEBWORD",
+          "Content": "abakahan, abakanhan, abakal"
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abakáda"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "alphabet."
+      }
+    ],
+    "Parsed": {
+      "Headword": "abakáda",
+      "Variations": [],
+      "PartsOfSpeech": [
+        "n"
+      ],
+      "Senses": []
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [
+      {
+        "Index": 2,
+        "Message": "Trailing token after senses: TEXT",
+        "Token": {
+          "Type": "TEXT",
+          "Content": "alphabet."
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abakal"
+      },
+      {
+        "Type": "LINK",
+        "Content": "abaka"
+      }
+    ],
+    "Parsed": {
+      "Headword": "abakal",
+      "Variations": [],
+      "PartsOfSpeech": [],
+      "Senses": []
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 1,
+    "ParseDiagnostics": [
+      {
+        "Index": 1,
+        "Message": "Trailing token after senses: LINK",
+        "Token": {
+          "Type": "LINK",
+          "Content": "abaka"
+        }
+      }
+    ]
+  }
+]
