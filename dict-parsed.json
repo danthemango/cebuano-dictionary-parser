@@ -23,26 +23,32 @@
         "Content": "illiterate."
       }
     ],
-    "Parsed": {
-      "Headword": "a",
-      "Variations": [],
-      "PartsOfSpeech": [
-        "n"
-      ],
-      "Senses": []
-    },
-    "ParseOk": false,
-    "ParseNextIndex": 2,
-    "ParseDiagnostics": [
+    "WordDefs": [
       {
-        "Index": 2,
-        "Message": "Trailing token after senses: TEXT",
-        "Token": {
-          "Type": "TEXT",
-          "Content": "letter A."
-        }
+        "Headword": "a",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "letter A.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "walay —",
+                  "Gloss": "illiterate."
+                }
+              ]
+            }
+          }
+        ]
       }
-    ]
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 5,
+    "ParseDiagnostics": []
   },
   {
     "letter": "a",
@@ -60,24 +66,24 @@
         "Content": "-un"
       }
     ],
-    "Parsed": {
-      "Headword": "-a",
-      "Variations": [],
-      "PartsOfSpeech": [],
-      "Senses": []
-    },
-    "ParseOk": false,
-    "ParseNextIndex": 1,
-    "ParseDiagnostics": [
+    "WordDefs": [
       {
-        "Index": 1,
-        "Message": "Trailing token after senses: TEXT",
-        "Token": {
-          "Type": "TEXT",
-          "Content": "subjunctive direct passive affix."
+        "Headword": "-a",
+        "DefEx": {
+          "Def": {
+            "Text": "subjunctive direct passive affix.",
+            "Links": [
+              "-un"
+            ],
+            "Word": null
+          },
+          "Examples": []
         }
       }
-    ]
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": []
   },
   {
     "letter": "a",
@@ -159,58 +165,73 @@
         "Content": "That’s some car!"
       }
     ],
-    "Parsed": {
-      "Headword": "-a(←)",
-      "Variations": [],
-      "PartsOfSpeech": [],
-      "Senses": [
-        {
-          "Number": "1",
-          "Text": "affix added to nouns forming words which refer to a specific one of several:",
-          "Examples": [
-            {
-              "Phrase": "Kanang isdáa, dílì kadtu,",
-              "Gloss": "That fish there, not that one further over."
-            },
-            {
-              "Phrase": "Háing baláya ang íla?",
-              "Gloss": "Which house is theirs?"
+    "WordDefs": [
+      {
+        "Headword": "-a(←)",
+        "NumberedDefs": [
+          {
+            "Number": "1",
+            "DefEx": {
+              "Def": {
+                "Text": "affix added to nouns forming words which refer to a specific one of several:",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Kanang isdáa, dílì kadtu,",
+                  "Gloss": "That fish there, not that one further over."
+                },
+                {
+                  "Phrase": "Háing baláya ang íla?",
+                  "Gloss": "Which house is theirs?"
+                }
+              ]
             }
-          ],
-          "Links": []
-        },
-        {
-          "Number": "1a",
-          "Text": "added to possessive pronouns: the particular one that belongs to [so-and-so].",
-          "Examples": [
-            {
-              "Phrase": "Dakù ang amúang balay, gamay tung iláha,",
-              "Gloss": "Our house is large, and theirs is small."
+          },
+          {
+            "Number": "1a",
+            "DefEx": {
+              "Def": {
+                "Text": "added to possessive pronouns: the particular one that belongs to [so-and-so].",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Dakù ang amúang balay, gamay tung iláha,",
+                  "Gloss": "Our house is large, and theirs is small."
+                }
+              ]
             }
-          ],
-          "Links": []
-        },
-        {
-          "Number": "2",
-          "Text": "affix added to adjectives to form exclamation.",
-          "Examples": [
-            {
-              "Phrase": "Dakúa uy!",
-              "Gloss": "My! How big it is!"
-            },
-            {
-              "Phrase": "Patyun tikaw, irúa ka!",
-              "Gloss": "I’ll kill you, you dog you!"
-            },
-            {
-              "Phrase": "Ngilngígang awtúha à!",
-              "Gloss": "That’s some car!"
+          },
+          {
+            "Number": "2",
+            "DefEx": {
+              "Def": {
+                "Text": "affix added to adjectives to form exclamation.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Dakúa uy!",
+                  "Gloss": "My! How big it is!"
+                },
+                {
+                  "Phrase": "Patyun tikaw, irúa ka!",
+                  "Gloss": "I’ll kill you, you dog you!"
+                },
+                {
+                  "Phrase": "Ngilngígang awtúha à!",
+                  "Gloss": "That’s some car!"
+                }
+              ]
             }
-          ],
-          "Links": []
-        }
-      ]
-    },
+          }
+        ]
+      }
+    ],
     "ParseOk": true,
     "ParseNextIndex": 19,
     "ParseDiagnostics": []
@@ -339,21 +360,28 @@
         "Content": "Ah, what a relief!"
       }
     ],
-    "Parsed": {
-      "Headword": "á",
-      "Variations": [],
-      "PartsOfSpeech": [],
-      "Senses": []
-    },
+    "WordDefs": [
+      {
+        "Headword": "á",
+        "DefEx": {
+          "Def": {
+            "Text": "particle used as a pause word before starting to speak.",
+            "Links": [],
+            "Word": null
+          },
+          "Examples": []
+        }
+      }
+    ],
     "ParseOk": false,
-    "ParseNextIndex": 1,
+    "ParseNextIndex": 2,
     "ParseDiagnostics": [
       {
-        "Index": 1,
-        "Message": "Trailing token after senses: TEXT",
+        "Index": 2,
+        "Message": "Trailing token after WORDDEF: NUMBER",
         "Token": {
-          "Type": "TEXT",
-          "Content": "particle used as a pause word before starting to speak."
+          "Type": "NUMBER",
+          "Content": "1"
         }
       }
     ]
@@ -426,21 +454,28 @@
         "Content": "How come you have such a beautiful dress on!"
       }
     ],
-    "Parsed": {
-      "Headword": "à",
-      "Variations": [],
-      "PartsOfSpeech": [],
-      "Senses": []
-    },
+    "WordDefs": [
+      {
+        "Headword": "à",
+        "DefEx": {
+          "Def": {
+            "Text": "particle preceding or following a sentence with an adjective predicate.",
+            "Links": [],
+            "Word": null
+          },
+          "Examples": []
+        }
+      }
+    ],
     "ParseOk": false,
-    "ParseNextIndex": 1,
+    "ParseNextIndex": 2,
     "ParseDiagnostics": [
       {
-        "Index": 1,
-        "Message": "Trailing token after senses: TEXT",
+        "Index": 2,
+        "Message": "Trailing token after WORDDEF: NUMBER",
         "Token": {
-          "Type": "TEXT",
-          "Content": "particle preceding or following a sentence with an adjective predicate."
+          "Type": "NUMBER",
+          "Content": "1"
         }
       }
     ]
@@ -457,24 +492,24 @@
         "Content": "álà"
       }
     ],
-    "Parsed": {
-      "Headword": "ā̀",
-      "Variations": [],
-      "PartsOfSpeech": [],
-      "Senses": []
-    },
-    "ParseOk": false,
-    "ParseNextIndex": 1,
-    "ParseDiagnostics": [
+    "WordDefs": [
       {
-        "Index": 1,
-        "Message": "Trailing token after senses: LINK",
-        "Token": {
-          "Type": "LINK",
-          "Content": "álà"
+        "Headword": "ā̀",
+        "DefEx": {
+          "Def": {
+            "Text": null,
+            "Links": [
+              "álà"
+            ],
+            "Word": null
+          },
+          "Examples": []
         }
       }
-    ]
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": []
   },
   {
     "letter": "a",
@@ -492,26 +527,27 @@
         "Content": "breast of fowls."
       }
     ],
-    "Parsed": {
-      "Headword": "aba<sub>1</sub>",
-      "Variations": [],
-      "PartsOfSpeech": [
-        "n"
-      ],
-      "Senses": []
-    },
-    "ParseOk": false,
-    "ParseNextIndex": 2,
-    "ParseDiagnostics": [
+    "WordDefs": [
       {
-        "Index": 2,
-        "Message": "Trailing token after senses: TEXT",
-        "Token": {
-          "Type": "TEXT",
-          "Content": "breast of fowls."
-        }
+        "Headword": "aba<sub>1</sub>",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "breast of fowls.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
       }
-    ]
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": []
   },
   {
     "letter": "a",
@@ -533,24 +569,27 @@
         "Content": "My! I won!"
       }
     ],
-    "Parsed": {
-      "Headword": "aba<sub>2</sub>",
-      "Variations": [],
-      "PartsOfSpeech": [],
-      "Senses": []
-    },
-    "ParseOk": false,
-    "ParseNextIndex": 1,
-    "ParseDiagnostics": [
+    "WordDefs": [
       {
-        "Index": 1,
-        "Message": "Trailing token after senses: TEXT",
-        "Token": {
-          "Type": "TEXT",
-          "Content": "exclamation of pleasure and surprise."
+        "Headword": "aba<sub>2</sub>",
+        "DefEx": {
+          "Def": {
+            "Text": "exclamation of pleasure and surprise.",
+            "Links": [],
+            "Word": null
+          },
+          "Examples": [
+            {
+              "Phrase": "Aba! Nakadaug ku,",
+              "Gloss": "My! I won!"
+            }
+          ]
         }
       }
-    ]
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 4,
+    "ParseDiagnostics": []
   },
   {
     "letter": "a",
@@ -580,24 +619,31 @@
         "Content": "Shut up! You’re great at talking, but let’s see you do s.t."
       }
     ],
-    "Parsed": {
-      "Headword": "ábà tuy",
-      "Variations": [],
-      "PartsOfSpeech": [],
-      "Senses": []
-    },
-    "ParseOk": false,
-    "ParseNextIndex": 1,
-    "ParseDiagnostics": [
+    "WordDefs": [
       {
-        "Index": 1,
-        "Message": "Trailing token after senses: TEXT",
-        "Token": {
-          "Type": "TEXT",
-          "Content": "(from"
+        "Headword": "ábà tuy",
+        "DefEx": {
+          "Def": {
+            "Text": "(from",
+            "Links": [],
+            "Word": null
+          },
+          "Examples": [
+            {
+              "Phrase": "sábà dihà untuy",
+              "Gloss": ") shut up!"
+            },
+            {
+              "Phrase": "ábà tuy, maáyu ka lang sa tayáda, wà kay tadtad,",
+              "Gloss": "Shut up! You’re great at talking, but let’s see you do s.t."
+            }
+          ]
         }
       }
-    ]
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": []
   },
   {
     "letter": "a",
@@ -619,24 +665,27 @@
         "Content": "Stop that! You might fall!"
       }
     ],
-    "Parsed": {
-      "Headword": "abaa",
-      "Variations": [],
-      "PartsOfSpeech": [],
-      "Senses": []
-    },
-    "ParseOk": false,
-    "ParseNextIndex": 1,
-    "ParseDiagnostics": [
+    "WordDefs": [
       {
-        "Index": 1,
-        "Message": "Trailing token after senses: TEXT",
-        "Token": {
-          "Type": "TEXT",
-          "Content": "particle indicating disapproval (literary)."
+        "Headword": "abaa",
+        "DefEx": {
+          "Def": {
+            "Text": "particle indicating disapproval (literary).",
+            "Links": [],
+            "Word": null
+          },
+          "Examples": [
+            {
+              "Phrase": "Abaa! Mahū́g ka gánì dihà!",
+              "Gloss": "Stop that! You might fall!"
+            }
+          ]
         }
       }
-    ]
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 4,
+    "ParseDiagnostics": []
   },
   {
     "letter": "a",
@@ -694,25 +743,28 @@
         "Content": "be the boss and not henpecked."
       }
     ],
-    "Parsed": {
-      "Headword": "*abab",
-      "Variations": [
-        "taga-"
-      ],
-      "PartsOfSpeech": [
-        "n"
-      ],
-      "Senses": []
-    },
+    "WordDefs": [
+      {
+        "Headword": "*abab",
+        "DefEx": {
+          "Def": {
+            "Text": null,
+            "Links": [],
+            "Word": "taga-"
+          },
+          "Examples": []
+        }
+      }
+    ],
     "ParseOk": false,
-    "ParseNextIndex": 3,
+    "ParseNextIndex": 2,
     "ParseDiagnostics": [
       {
-        "Index": 3,
-        "Message": "Trailing token after senses: TEXT",
+        "Index": 2,
+        "Message": "Trailing token after WORDDEF: WORDTYPE",
         "Token": {
-          "Type": "TEXT",
-          "Content": "hillbilly."
+          "Type": "WORDTYPE",
+          "Content": "n"
         }
       }
     ]
@@ -789,20 +841,13 @@
         "Content": "My festering wound.†"
       }
     ],
-    "Parsed": {
-      "Headword": "ab-ab",
-      "Variations": [],
-      "PartsOfSpeech": [
-        "v"
-      ],
-      "Senses": []
-    },
+    "WordDefs": [],
     "ParseOk": false,
-    "ParseNextIndex": 2,
+    "ParseNextIndex": 0,
     "ParseDiagnostics": [
       {
         "Index": 2,
-        "Message": "Trailing token after senses: CLASS",
+        "Message": "DEF: unexpected CLASS",
         "Token": {
           "Type": "CLASS",
           "Content": "[A; a]"
@@ -826,26 +871,27 @@
         "Content": "abbot."
       }
     ],
-    "Parsed": {
-      "Headword": "abad",
-      "Variations": [],
-      "PartsOfSpeech": [
-        "n"
-      ],
-      "Senses": []
-    },
-    "ParseOk": false,
-    "ParseNextIndex": 2,
-    "ParseDiagnostics": [
+    "WordDefs": [
       {
-        "Index": 2,
-        "Message": "Trailing token after senses: TEXT",
-        "Token": {
-          "Type": "TEXT",
-          "Content": "abbot."
-        }
+        "Headword": "abad",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "abbot.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
       }
-    ]
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": []
   },
   {
     "letter": "a",
@@ -903,20 +949,13 @@
         "Content": "helper."
       }
     ],
-    "Parsed": {
-      "Headword": "ábag",
-      "Variations": [],
-      "PartsOfSpeech": [
-        "v"
-      ],
-      "Senses": []
-    },
+    "WordDefs": [],
     "ParseOk": false,
-    "ParseNextIndex": 2,
+    "ParseNextIndex": 0,
     "ParseDiagnostics": [
       {
         "Index": 2,
-        "Message": "Trailing token after senses: CLASS",
+        "Message": "DEF: unexpected CLASS",
         "Token": {
           "Type": "CLASS",
           "Content": "[A; b]"
@@ -940,26 +979,27 @@
         "Content": "sweet potatoes growing from the outer vines and not from the main root."
       }
     ],
-    "Parsed": {
-      "Headword": "abaga",
-      "Variations": [],
-      "PartsOfSpeech": [
-        "n"
-      ],
-      "Senses": []
-    },
-    "ParseOk": false,
-    "ParseNextIndex": 2,
-    "ParseDiagnostics": [
+    "WordDefs": [
       {
-        "Index": 2,
-        "Message": "Trailing token after senses: TEXT",
-        "Token": {
-          "Type": "TEXT",
-          "Content": "sweet potatoes growing from the outer vines and not from the main root."
-        }
+        "Headword": "abaga",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "sweet potatoes growing from the outer vines and not from the main root.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
       }
-    ]
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": []
   },
   {
     "letter": "a",
@@ -1061,23 +1101,16 @@
         "Content": "broad-shouldered."
       }
     ],
-    "Parsed": {
-      "Headword": "abága",
-      "Variations": [],
-      "PartsOfSpeech": [
-        "n"
-      ],
-      "Senses": []
-    },
+    "WordDefs": [],
     "ParseOk": false,
-    "ParseNextIndex": 2,
+    "ParseNextIndex": 0,
     "ParseDiagnostics": [
       {
-        "Index": 2,
-        "Message": "Trailing token after senses: TEXT",
+        "Index": 4,
+        "Message": "DEF: unexpected CLASS",
         "Token": {
-          "Type": "TEXT",
-          "Content": "shoulder."
+          "Type": "CLASS",
+          "Content": "[A2SN; b5]"
         }
       }
     ]
@@ -1102,25 +1135,28 @@
         "Content": "bound by s.o.’s will. <i lang=\"ceb\">Abáhu (báhu) kunsidirasiyun"
       }
     ],
-    "Parsed": {
-      "Headword": "*abáhu",
-      "Variations": [
-        "— kunsidirasiyun, dispusisiyun"
-      ],
-      "PartsOfSpeech": [
-        "n"
-      ],
-      "Senses": []
-    },
+    "WordDefs": [
+      {
+        "Headword": "*abáhu",
+        "DefEx": {
+          "Def": {
+            "Text": null,
+            "Links": [],
+            "Word": "— kunsidirasiyun, dispusisiyun"
+          },
+          "Examples": []
+        }
+      }
+    ],
     "ParseOk": false,
-    "ParseNextIndex": 3,
+    "ParseNextIndex": 2,
     "ParseDiagnostics": [
       {
-        "Index": 3,
-        "Message": "Trailing token after senses: TEXT",
+        "Index": 2,
+        "Message": "Trailing token after WORDDEF: WORDTYPE",
         "Token": {
-          "Type": "TEXT",
-          "Content": "bound by s.o.’s will. <i lang=\"ceb\">Abáhu (báhu) kunsidirasiyun"
+          "Type": "WORDTYPE",
+          "Content": "n"
         }
       }
     ]
@@ -1177,36 +1213,49 @@
         "Content": "own an abaca plantation."
       }
     ],
-    "Parsed": {
-      "Headword": "abaka",
-      "Variations": [],
-      "PartsOfSpeech": [
-        "n"
-      ],
-      "Senses": [
-        {
-          "Number": "1",
-          "Text": "abaca plant: <b lang=\"la\"><i>Musa textilis</i></b>.",
-          "Examples": [],
-          "Links": []
-        },
-        {
-          "Number": "2",
-          "Text": "abaca fiber.",
-          "Examples": [],
-          "Links": []
-        }
-      ]
-    },
+    "WordDefs": [
+      {
+        "Headword": "abaka",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Text": "abaca plant: <b lang=\"la\"><i>Musa textilis</i></b>.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Text": "abaca fiber.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
     "ParseOk": false,
     "ParseNextIndex": 6,
     "ParseDiagnostics": [
       {
-        "Index": 6,
-        "Message": "Trailing token after senses: CEBWORD",
+        "Index": 10,
+        "Message": "DEF: unexpected CLASS",
         "Token": {
-          "Type": "CEBWORD",
-          "Content": "abakahan, abakanhan, abakal"
+          "Type": "CLASS",
+          "Content": "[A3]"
         }
       }
     ]
@@ -1227,26 +1276,27 @@
         "Content": "alphabet."
       }
     ],
-    "Parsed": {
-      "Headword": "abakáda",
-      "Variations": [],
-      "PartsOfSpeech": [
-        "n"
-      ],
-      "Senses": []
-    },
-    "ParseOk": false,
-    "ParseNextIndex": 2,
-    "ParseDiagnostics": [
+    "WordDefs": [
       {
-        "Index": 2,
-        "Message": "Trailing token after senses: TEXT",
-        "Token": {
-          "Type": "TEXT",
-          "Content": "alphabet."
-        }
+        "Headword": "abakáda",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "alphabet.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
       }
-    ]
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": []
   },
   {
     "letter": "a",
@@ -1260,23 +1310,23 @@
         "Content": "abaka"
       }
     ],
-    "Parsed": {
-      "Headword": "abakal",
-      "Variations": [],
-      "PartsOfSpeech": [],
-      "Senses": []
-    },
-    "ParseOk": false,
-    "ParseNextIndex": 1,
-    "ParseDiagnostics": [
+    "WordDefs": [
       {
-        "Index": 1,
-        "Message": "Trailing token after senses: LINK",
-        "Token": {
-          "Type": "LINK",
-          "Content": "abaka"
+        "Headword": "abakal",
+        "DefEx": {
+          "Def": {
+            "Text": null,
+            "Links": [
+              "abaka"
+            ],
+            "Word": null
+          },
+          "Examples": []
         }
       }
-    ]
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": []
   }
 ]

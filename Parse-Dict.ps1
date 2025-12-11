@@ -339,130 +339,366 @@ function Strip-Corr {
     }
 }
 
+
 function Get-Token {
     param([object[]]$Tokens, [int]$i)
     if ($i -ge 0 -and $i -lt $Tokens.Count) { $Tokens[$i] } else { $null }
 }
+function IsType { param($tok, [string]$type) $tok -and ($tok.Type -eq $type) }
 
-function IsType {
-    param($tok, [string]$type)
-    $tok -and ($tok.Type -eq $type)
-}
-
-function MatchType {
-    param([object[]]$Tokens, [ref]$i, [string]$type)
-    $tok = Get-Token $Tokens $i.Value
-    if (IsType $tok $type) {
-        $i.Value++
-        return $tok
-    }
-    return $null
-}
-
-function ExpectType {
-    param([object[]]$Tokens, [ref]$i, [string]$type, [ref]$Diagnostics, [string]$msg = "Expected $type")
-    $tok = MatchType -Tokens $Tokens -i $i -type $type
-    if ($null -eq $tok) {
-        $Diagnostics.Value += [pscustomobject]@{
-            Index    = $i.Value
-            Expected = $type
-            Message  = $msg
-            Token    = Get-Token $Tokens $i.Value
-        }
-        return $false
-    }
-    return $true
-}
-
-function Parse-Examples {
+function Parse-Def {
     <#
-      Parse zero or more example pairs: (CEBWORD + TEXT)
-      Returns {Examples, NextIndex}
+      DEF ::= TEXT [LINK*] | LINK+ | CEBWORD
+      Returns {Success, NextIndex, Def:{Text, Links[], Word}, Diagnostics}
     #>
     param([object[]]$Tokens, [int]$StartIndex)
+    $i = $StartIndex; $diag = @()
 
-    $i = $StartIndex
-    $examples = @()
-    while ($true) {
-        $phraseTok = Get-Token $Tokens $i
-        if (-not (IsType $phraseTok 'CEBPHRASE')) { break }
-
-        $i++  # consumed phrase
-        $glossTok = Get-Token $Tokens $i
-        if (-not (IsType $glossTok 'TEXT')) {
-            # If not a TEXT, roll back one step and stop examples
-            $i-- ; break
-        }
-        $i++  # consumed gloss
-
-        $examples += [pscustomobject]@{
-            Phrase = $phraseTok.Content
-            Gloss  = $glossTok.Content
-        }
+    $tok = Get-Token $Tokens $i
+    if (-not $tok) {
+        return [pscustomobject]@{ Success=$false; NextIndex=$i; Def=$null; Diagnostics=@(
+            [pscustomobject]@{ Index=$i; Message='DEF: no token'; Token=$null }
+        ) }
     }
 
-    return [pscustomobject]@{
-        Examples  = $examples
-        NextIndex = $i
-    }
-}
-
-function Parse-Sense {
-    <#
-      Parse a numbered sense:
-        NUMBER [TEXT]? [ (CEBWORD TEXT)* ] [LINK]*
-      Returns {Success, NextIndex, Sense, Diagnostics}
-    #>
-    param([object[]]$Tokens, [int]$StartIndex)
-
-    $i = $StartIndex
-    $diag = @()
-
-    $numTok = Get-Token $Tokens $i
-    if (-not (IsType $numTok 'NUMBER')) {
+    # Case 1: TEXT with optional LINKs
+    if (IsType $tok 'TEXT') {
+        $text = $tok.Content; $i++
+        $links = @()
+        while ($true) {
+            $linkTok = Get-Token $Tokens $i
+            if (-not (IsType $linkTok 'LINK')) { break }
+            $links += $linkTok.Content
+            $i++
+        }
         return [pscustomobject]@{
-            Success   = $false
+            Success   = $true
             NextIndex = $i
-            Sense     = $null
+            Def       = [pscustomobject]@{ Text=$text; Links=$links; Word=$null }
+            Diagnostics = $diag
+        }
+    }
+
+    # Case 2: one or more LINKs
+    if (IsType $tok 'LINK') {
+        $links = @()
+        while (IsType (Get-Token $Tokens $i) 'LINK') {
+            $links += (Get-Token $Tokens $i).Content
+            $i++
+        }
+        return [pscustomobject]@{
+            Success   = $true
+            NextIndex = $i
+            Def       = [pscustomobject]@{ Text=$null; Links=$links; Word=$null }
+            Diagnostics = $diag
+        }
+    }
+
+    # Case 3: CEBWORD
+    if (IsType $tok 'CEBWORD') {
+        $word = $tok.Content; $i++
+        return [pscustomobject]@{
+            Success   = $true
+            NextIndex = $i
+            Def       = [pscustomobject]@{ Text=$null; Links=@(); Word=$word }
+            Diagnostics = $diag
+        }
+    }
+
+    # Otherwise fail
+    [pscustomobject]@{
+        Success     = $false
+        NextIndex   = $i
+        Def         = $null
+        Diagnostics = $diag + [pscustomobject]@{ Index=$i; Message="DEF: unexpected $($tok.Type)"; Token=$tok }
+    }
+}
+
+function Parse-Example {
+    <#
+      EX ::= (CEBPHRASE | CEBWORD) TEXT
+      Returns {Success, NextIndex, Example:{Phrase, Gloss}, Diagnostics}
+    #>
+    param([object[]]$Tokens, [int]$StartIndex)
+    $i = $StartIndex; $diag = @()
+
+    $phraseTok = Get-Token $Tokens $i
+    if (-not $phraseTok -or -not ($phraseTok.Type -in @('CEBPHRASE','CEBWORD'))) {
+        return [pscustomobject]@{ Success=$false; NextIndex=$i; Example=$null; Diagnostics=$diag }
+    }
+    $i++
+
+    $glossTok = Get-Token $Tokens $i
+    if (-not (IsType $glossTok 'TEXT')) {
+        return [pscustomobject]@{
+            Success     = $false
+            NextIndex   = $StartIndex     # roll back
+            Example     = $null
             Diagnostics = $diag + [pscustomobject]@{
-                Index = $i; Message = 'Sense must start with NUMBER'; Token = $numTok
+                Index=$i; Message='EX: expected TEXT after phrase'; Token=$glossTok
             }
         }
     }
     $i++
 
-    # Optional definition text
-    $defText = $null
-    $maybeText = Get-Token $Tokens $i
-    if (IsType $maybeText 'TEXT') {
-        $defText = $maybeText.Content
-        $i++
+    [pscustomobject]@{
+        Success   = $true
+        NextIndex = $i
+        Example   = [pscustomobject]@{
+            Phrase = $phraseTok.Content
+            Gloss  = $glossTok.Content
+        }
+        Diagnostics = $diag
     }
+}
 
-    # Zero or more examples
-    $ex = Parse-Examples -Tokens $Tokens -StartIndex $i
-    $i = $ex.NextIndex
-
-    # Optional links (zero or more)
-    $links = @()
+function Parse-Examples {
+    <#
+      Parse zero or more EX pairs.
+      Returns {Examples[], NextIndex}
+    #>
+    param([object[]]$Tokens, [int]$StartIndex)
+    $i = $StartIndex
+    $examples = @()
     while ($true) {
-        $linkTok = Get-Token $Tokens $i
-        if (-not (IsType $linkTok 'LINK')) { break }
-        $links += $linkTok.Content
-        $i++
+        $ex = Parse-Example -Tokens $Tokens -StartIndex $i
+        if (-not $ex.Success) { break }
+        $examples += $ex.Example
+        $i = $ex.NextIndex
+    }
+    [pscustomobject]@{ Examples=$examples; NextIndex=$i }
+}
+
+function Parse-DefEx {
+    <#
+      DEFEX ::= DEF EX*
+    #>
+    param([object[]]$Tokens, [int]$StartIndex)
+    $i = $StartIndex; $diag = @()
+
+    $def = Parse-Def -Tokens $Tokens -StartIndex $i
+    if (-not $def.Success) {
+        return [pscustomobject]@{
+            Success     = $false
+            NextIndex   = $def.NextIndex
+            DefEx       = $null
+            Diagnostics = $def.Diagnostics
+        }
+    }
+    $i = $def.NextIndex
+
+    $exs = Parse-Examples -Tokens $Tokens -StartIndex $i
+    $i = $exs.NextIndex
+
+    [pscustomobject]@{
+        Success   = $true
+        NextIndex = $i
+        DefEx     = [pscustomobject]@{ Def=$def.Def; Examples=$exs.Examples }
+        Diagnostics = $diag
+    }
+}
+
+function Parse-NumDef {
+    <#
+      NUMDEF ::= NUMBER DEFEX
+    #>
+    param([object[]]$Tokens, [int]$StartIndex)
+    $i = $StartIndex; $diag = @()
+
+    $numTok = Get-Token $Tokens $i
+    if (-not (IsType $numTok 'NUMBER')) {
+        return [pscustomobject]@{
+            Success     = $false
+            NextIndex   = $i
+            NumDef      = $null
+            Diagnostics = $diag + [pscustomobject]@{ Index=$i; Message='NUMDEF: expected NUMBER'; Token=$numTok }
+        }
+    }
+    $i++
+
+    $defex = Parse-DefEx -Tokens $Tokens -StartIndex $i
+    if (-not $defex.Success) {
+        return [pscustomobject]@{
+            Success     = $false
+            NextIndex   = $defex.NextIndex
+            NumDef      = $null
+            Diagnostics = $diag + $defex.Diagnostics
+        }
+    }
+    $i = $defex.NextIndex
+
+    [pscustomobject]@{
+        Success   = $true
+        NextIndex = $i
+        NumDef    = [pscustomobject]@{
+            Number = $numTok.Content
+            DefEx  = $defex.DefEx
+        }
+        Diagnostics = $diag
+    }
+}
+
+function Parse-WtDef {
+    <#
+      WTDEF ::= WORDTYPE ( DEFEX | NUMDEF+ )
+    #>
+    param([object[]]$Tokens, [int]$StartIndex)
+    $i = $StartIndex; $diag = @()
+
+    $wtTok = Get-Token $Tokens $i
+    if (-not (IsType $wtTok 'WORDTYPE')) {
+        return [pscustomobject]@{
+            Success     = $false
+            NextIndex   = $i
+            WtDef       = $null
+            Diagnostics = $diag + [pscustomobject]@{ Index=$i; Message='WTDEF: expected WORDTYPE'; Token=$wtTok }
+        }
+    }
+    $i++
+
+    # Branch: if next is NUMBER => NUMDEF+
+    $tok = Get-Token $Tokens $i
+    if (IsType $tok 'NUMBER') {
+        $numdefs = @()
+        while (IsType (Get-Token $Tokens $i) 'NUMBER') {
+            $nd = Parse-NumDef -Tokens $Tokens -StartIndex $i
+            if (-not $nd.Success) {
+                return [pscustomobject]@{
+                    Success     = $false
+                    NextIndex   = $nd.NextIndex
+                    WtDef       = $null
+                    Diagnostics = $diag + $nd.Diagnostics
+                }
+            }
+            $numdefs += $nd.NumDef
+            $i = $nd.NextIndex
+        }
+        return [pscustomobject]@{
+            Success   = $true
+            NextIndex = $i
+            WtDef     = [pscustomobject]@{
+                WordType    = $wtTok.Content
+                NumberedDefs= $numdefs
+            }
+            Diagnostics = $diag
+        }
     }
 
-    $sense = [pscustomobject]@{
-        Number    = $numTok.Content
-        Text      = $defText
-        Examples  = $ex.Examples
-        Links     = $links
+    # Otherwise DEFEX
+    $defex = Parse-DefEx -Tokens $Tokens -StartIndex $i
+    if (-not $defex.Success) {
+        return [pscustomobject]@{
+            Success     = $false
+            NextIndex   = $defex.NextIndex
+            WtDef       = $null
+            Diagnostics = $diag + $defex.Diagnostics
+        }
+    }
+    $i = $defex.NextIndex
+
+    [pscustomobject]@{
+        Success   = $true
+        NextIndex = $i
+        WtDef     = [pscustomobject]@{
+            WordType = $wtTok.Content
+            DefEx    = $defex.DefEx
+        }
+        Diagnostics = $diag
+    }
+}
+
+function Parse-WordDef {
+    <#
+      WORDDEF ::= CEBWORD ( WTDEF+ | NUMDEF+ | DEFEX )
+    #>
+    param([object[]]$Tokens, [int]$StartIndex)
+    $i = $StartIndex; $diag = @()
+
+    $headTok = Get-Token $Tokens $i
+    if (-not (IsType $headTok 'CEBWORD')) {
+        return [pscustomobject]@{
+            Success     = $false
+            NextIndex   = $i
+            WordDef     = $null
+            Diagnostics = $diag + [pscustomobject]@{ Index=$i; Message='WORDDEF: expected CEBWORD'; Token=$headTok }
+        }
+    }
+    $i++
+
+    $tok = Get-Token $Tokens $i
+    # Branch 1: WTDEF+
+    if (IsType $tok 'WORDTYPE') {
+        $wtdefs = @()
+        while (IsType (Get-Token $Tokens $i) 'WORDTYPE') {
+            $wtr = Parse-WtDef -Tokens $Tokens -StartIndex $i
+            if (-not $wtr.Success) {
+                return [pscustomobject]@{
+                    Success     = $false
+                    NextIndex   = $wtr.NextIndex
+                    WordDef     = $null
+                    Diagnostics = $diag + $wtr.Diagnostics
+                }
+            }
+            $wtdefs += $wtr.WtDef
+            $i = $wtr.NextIndex
+        }
+        return [pscustomobject]@{
+            Success   = $true
+            NextIndex = $i
+            WordDef   = [pscustomobject]@{
+                Headword    = $headTok.Content
+                WordTypeDefs= $wtdefs
+            }
+            Diagnostics = $diag
+        }
     }
 
-    return [pscustomobject]@{
-        Success     = $true
-        NextIndex   = $i
-        Sense       = $sense
+    # Branch 2: NUMDEF+
+    if (IsType $tok 'NUMBER') {
+        $numdefs = @()
+        while (IsType (Get-Token $Tokens $i) 'NUMBER') {
+            $nd = Parse-NumDef -Tokens $Tokens -StartIndex $i
+            if (-not $nd.Success) {
+                return [pscustomobject]@{
+                    Success     = $false
+                    NextIndex   = $nd.NextIndex
+                    WordDef     = $null
+                    Diagnostics = $diag + $nd.Diagnostics
+                }
+            }
+            $numdefs += $nd.NumDef
+            $i = $nd.NextIndex
+        }
+        return [pscustomobject]@{
+            Success   = $true
+            NextIndex = $i
+            WordDef   = [pscustomobject]@{
+                Headword     = $headTok.Content
+                NumberedDefs = $numdefs
+            }
+            Diagnostics = $diag
+        }
+    }
+
+    # Branch 3: DEFEX
+    $defex = Parse-DefEx -Tokens $Tokens -StartIndex $i
+    if (-not $defex.Success) {
+        return [pscustomobject]@{
+            Success     = $false
+            NextIndex   = $defex.NextIndex
+            WordDef     = $null
+            Diagnostics = $diag + $defex.Diagnostics
+        }
+    }
+    $i = $defex.NextIndex
+
+    [pscustomobject]@{
+        Success   = $true
+        NextIndex = $i
+        WordDef   = [pscustomobject]@{
+            Headword = $headTok.Content
+            DefEx    = $defex.DefEx
+        }
         Diagnostics = $diag
     }
 }
@@ -480,106 +716,45 @@ function Parse-Sense {
 
 function Parse-Row {
     <#
-      Parse one row's token array.
-      Returns:
-        {
-          Success: [bool],
-          NextIndex: [int],
-          Entry: {
-            Headword,
-            Variations[],
-            PartsOfSpeech[],
-            Senses[]
-          },
-          Diagnostics: []
-        }
-      Success = ($NextIndex -eq $Tokens.Count) AND row starts with CEBWORD.
+      ROW ::= WORDDEF+
+      Success = consumed all tokens AND at least one WORDDEF produced
+      Returns {Success, NextIndex, Row:{WordDefs[]}, Diagnostics}
     #>
     param([object[]]$Tokens)
+    $i = 0; $diag = @(); $worddefs = @()
 
-    $i = 0
-    $diag = @()
-
-    # 1) Headword
-    $headTok = Get-Token $Tokens $i
-    if (-not (IsType $headTok 'CEBWORD')) {
-        $diag += [pscustomobject]@{
-            Index = $i; Message = 'Row must start with CEBWORD'; Token = $headTok
+    while ($i -lt $Tokens.Count) {
+        $wd = Parse-WordDef -Tokens $Tokens -StartIndex $i
+        if (-not $wd.Success) {
+            $diag += $wd.Diagnostics
+            break
         }
-        return [pscustomobject]@{
-            Success     = $false
-            NextIndex   = $i
-            Entry       = $null
-            Diagnostics = $diag
-        }
-    }
-    $headword = $headTok.Content
-    $i++
+        $worddefs += $wd.WordDef
+        $i = $wd.NextIndex
 
-    # 2) Variations: greedy CEBWORDs until next major type
-    $variations = @()
-    while ($true) {
-        $tok = Get-Token $Tokens $i
-        if (-not $tok) { break }
-        if ($tok.Type -in @('WORDTYPE','NUMBER','TEXT','LINK')) { break }
-        if ($tok.Type -eq 'CEBWORD') {
-            $variations += $tok.Content
-            $i++
-            continue
-        }
-        # Unknown token type -> stop variations
-        break
-    }
+        # If next token is not a WORDTYPE/NUMBER/DEFEX starter or new CEBWORD,
+        # we either reached end or hit unexpected trailing material.
+        $next = Get-Token $Tokens $i
+        if (-not $next) { break }
 
-    # 3) Parts of speech: consecutive WORDTYPEs
-    $pos = @()
-    while ($true) {
-        $tok = Get-Token $Tokens $i
-        if (IsType $tok 'WORDTYPE') {
-            $pos += $tok.Content
-            $i++
-        } else {
+        # If next begins another WORDDEF (CEBWORD), continue loop.
+        if (IsType $next 'CEBWORD') { continue }
+
+        # Otherwise, if we see legal continuations (e.g., more WTDEF/NUMDEF),
+        # they would have been consumed inside Parse-WordDef; anything else is trailing.
+        if ($next) {
+            $diag += [pscustomobject]@{
+                Index=$i; Message="Trailing token after WORDDEF: $($next.Type)"; Token=$next
+            }
             break
         }
     }
 
-    # 4) Numbered senses
-    $senses = @()
-    while ($true) {
-        $tok = Get-Token $Tokens $i
-        if (-not $tok) { break }
-        if (IsType $tok 'NUMBER') {
-            $senseRes = Parse-Sense -Tokens $Tokens -StartIndex $i
-            $senses += $senseRes.Sense
-            $i = $senseRes.NextIndex
-            if (-not $senseRes.Success) {
-                $diag += $senseRes.Diagnostics
-                break
-            }
-            continue
-        }
-
-        # If non-number token remains, we treat as trailing content (warning)
-        if ($tok) {
-            $diag += [pscustomobject]@{
-                Index = $i; Message = "Trailing token after senses: $($tok.Type)"; Token = $tok
-            }
-        }
-        break
-    }
-
-    $entry = [pscustomobject]@{
-        Headword     = $headword
-        Variations   = $variations
-        PartsOfSpeech= $pos
-        Senses       = $senses
-    }
-
-    $success = ($i -eq $Tokens.Count) -and ($null -ne $headword)
-    return [pscustomobject]@{
+    $success = ($i -eq $Tokens.Count) -and ($worddefs.Count -ge 1)
+    [pscustomobject]@{
         Success     = [bool]$success
         NextIndex   = $i
-        Entry       = $entry
+        WordDefs    = $worddefs
         Diagnostics = $diag
     }
 }
@@ -632,7 +807,7 @@ $parsed = $paragraphs |
         $res = Parse-Row -Tokens $_.Tokens
 
         # Attach parse results to the row (non-destructive: adds properties)
-        $_ | Add-Member -NotePropertyName Parsed            -NotePropertyValue $res.Entry        -Force
+        $_ | Add-Member -NotePropertyName WordDefs           -NotePropertyValue $res.WordDefs          -Force
         $_ | Add-Member -NotePropertyName ParseOk           -NotePropertyValue $res.Success      -Force
         $_ | Add-Member -NotePropertyName ParseNextIndex    -NotePropertyValue $res.NextIndex    -Force
         $_ | Add-Member -NotePropertyName ParseDiagnostics  -NotePropertyValue $res.Diagnostics  -Force
@@ -642,5 +817,5 @@ $parsed = $paragraphs |
 
 # Finally, write the whole set to JSON
 $parsed |
-    ConvertTo-Json -Depth 12 |
+    ConvertTo-Json -Depth 100 |
     Set-Content -Encoding UTF8 -Path .\dict-parsed.json
