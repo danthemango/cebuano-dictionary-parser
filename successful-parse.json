@@ -913,6 +913,9 @@
         "WordTypeDefs": [
           {
             "WordType": "v",
+            "Classes": [
+              "[A; a]"
+            ],
             "NumberedDefs": [
               {
                 "Number": "1",
@@ -966,9 +969,6 @@
                   ]
                 }
               }
-            ],
-            "Classes": [
-              "[A; a]"
             ]
           }
         ]
@@ -1094,10 +1094,7 @@
                   "Gloss": "Help me sweep."
                 }
               ]
-            },
-            "Classes": [
-              "[A; b]"
-            ]
+            }
           },
           {
             "WordType": "n",
@@ -1280,10 +1277,7 @@
                 "Word": null
               },
               "Examples": []
-            },
-            "Classes": [
-              "[A3]"
-            ]
+            }
           }
         ]
       }
@@ -1499,10 +1493,7 @@
                   "Gloss": "The land was assessed at fifty thousand pesos."
                 }
               ]
-            },
-            "Classes": [
-              "[AB56; b5c]"
-            ]
+            }
           }
         ]
       }
@@ -1652,10 +1643,7 @@
                   "Gloss": "Do not abandon your family."
                 }
               ]
-            },
-            "Classes": [
-              "[A3P; c1]"
-            ]
+            }
           }
         ]
       },
@@ -1803,10 +1791,7 @@
                   "Gloss": "Paint it one square at a time so it will come out even."
                 }
               ]
-            },
-            "Classes": [
-              "[A; c1]"
-            ]
+            }
           },
           {
             "WordType": "a",
@@ -1908,10 +1893,7 @@
                   "Gloss": "Don’t put a window right where it catches the full breeze."
                 }
               ]
-            },
-            "Classes": [
-              "[B12; c1]"
-            ]
+            }
           }
         ]
       }
@@ -1966,10 +1948,7 @@
                   "Gloss": "The Japanese advanced over the plains of Luzon."
                 }
               ]
-            },
-            "Classes": [
-              "[A]"
-            ]
+            }
           }
         ]
       }
@@ -2036,10 +2015,7 @@
                   "Gloss": "The old man held on to the bannister while going upstairs."
                 }
               ]
-            },
-            "Classes": [
-              "[A2S; b6]"
-            ]
+            }
           }
         ]
       },
@@ -2201,10 +2177,7 @@
                   "Gloss": "The bullet tore a huge piece out of his shoulder."
                 }
               ]
-            },
-            "Classes": [
-              "[A; b5]"
-            ]
+            }
           },
           {
             "WordType": "n",
@@ -2340,10 +2313,7 @@
                 "Word": null
               },
               "Examples": []
-            },
-            "Classes": [
-              "[B; b6]"
-            ]
+            }
           }
         ]
       },
@@ -2426,10 +2396,7 @@
                   "Gloss": "The townspeople show hospitality to any famous visitor."
                 }
               ]
-            },
-            "Classes": [
-              "[A; a12]"
-            ]
+            }
           }
         ]
       },
@@ -2520,10 +2487,7 @@
                   "Gloss": "Egging the children on in their naughtiness."
                 }
               ]
-            },
-            "Classes": [
-              "[A; b5]"
-            ]
+            }
           },
           {
             "WordType": "n",
@@ -2693,10 +2657,7 @@
                 "Word": null
               },
               "Examples": []
-            },
-            "Classes": [
-              "[A12]"
-            ]
+            }
           }
         ]
       },
@@ -2822,10 +2783,7 @@
                   "Gloss": "I don’t have any black polish. Just put tan polish on them."
                 }
               ]
-            },
-            "Classes": [
-              "[A13]"
-            ]
+            }
           }
         ]
       }
@@ -2924,6 +2882,9 @@
         "WordTypeDefs": [
           {
             "WordType": "v",
+            "Classes": [
+              "[A2C; b]"
+            ],
             "NumberedDefs": [
               {
                 "Number": "1",
@@ -2961,9 +2922,6 @@
                   ]
                 }
               }
-            ],
-            "Classes": [
-              "[A2C; b]"
             ]
           },
           {
@@ -3114,6 +3072,9 @@
           },
           {
             "WordType": "v",
+            "Classes": [
+              "[A; b5]"
+            ],
             "NumberedDefs": [
               {
                 "Number": "1",
@@ -3144,9 +3105,6 @@
                   "Examples": []
                 }
               }
-            ],
-            "Classes": [
-              "[A; b5]"
             ]
           }
         ]
@@ -3242,10 +3200,7 @@
                   "Gloss": "Try your luck with Maria and ask her."
                 }
               ]
-            },
-            "Classes": [
-              "[AN; b5]"
-            ]
+            }
           }
         ]
       },
@@ -3496,10 +3451,7 @@
                   "Gloss": "Try taking this to the pawnshop and see if they will accept it."
                 }
               ]
-            },
-            "Classes": [
-              "[AN; ac]"
-            ]
+            }
           }
         ]
       }
@@ -3615,6 +3567,9 @@
           },
           {
             "WordType": "v",
+            "Classes": [
+              "[A]"
+            ],
             "NumberedDefs": [
               {
                 "Number": "1",
@@ -3643,9 +3598,6 @@
                   "Examples": []
                 }
               }
-            ],
-            "Classes": [
-              "[A]"
             ]
           }
         ]
@@ -3728,6 +3680,9 @@
           },
           {
             "WordType": "v",
+            "Classes": [
+              "[B]"
+            ],
             "NumberedDefs": [
               {
                 "Number": "1",
@@ -3761,9 +3716,6 @@
                   ]
                 }
               }
-            ],
-            "Classes": [
-              "[B]"
             ]
           }
         ]
@@ -3874,10 +3826,7 @@
                   "Gloss": "Slice a piece off of it."
                 }
               ]
-            },
-            "Classes": [
-              "[A; ab7]"
-            ]
+            }
           }
         ]
       },
@@ -3898,10 +3847,7 @@
                   "Gloss": "They make an incision in the bud twice a day."
                 }
               ]
-            },
-            "Classes": [
-              "[A2]"
-            ]
+            }
           }
         ]
       }
@@ -3993,10 +3939,7 @@
                 "Word": null
               },
               "Examples": []
-            },
-            "Classes": [
-              "[A]"
-            ]
+            }
           }
         ]
       }
@@ -4082,10 +4025,7 @@
                   "Gloss": "We’ll supply you with one sack of rice a month."
                 }
               ]
-            },
-            "Classes": [
-              "[A; c]"
-            ]
+            }
           }
         ]
       }
@@ -4206,10 +4146,7 @@
                   "Gloss": "I will dig up the money that I buried here."
                 }
               ]
-            },
-            "Classes": [
-              "[A; a]"
-            ]
+            }
           }
         ]
       }
@@ -4320,10 +4257,7 @@
                   "Gloss": "Try to talk mother into it. She might let us."
                 }
               ]
-            },
-            "Classes": [
-              "[A; c]"
-            ]
+            }
           },
           {
             "WordType": "n",
@@ -4485,10 +4419,7 @@
                 "Word": null
               },
               "Examples": []
-            },
-            "Classes": [
-              "[A]"
-            ]
+            }
           }
         ]
       }
@@ -4678,6 +4609,9 @@
         "WordTypeDefs": [
           {
             "WordType": "v",
+            "Classes": [
+              "[AB; b5]"
+            ],
             "NumberedDefs": [
               {
                 "Number": "1",
@@ -4735,9 +4669,6 @@
                   ]
                 }
               }
-            ],
-            "Classes": [
-              "[AB; b5]"
             ]
           },
           {
@@ -4967,6 +4898,9 @@
           },
           {
             "WordType": "v",
+            "Classes": [
+              "[B12; c1]"
+            ],
             "NumberedDefs": [
               {
                 "Number": "1",
@@ -4995,9 +4929,6 @@
                   ]
                 }
               }
-            ],
-            "Classes": [
-              "[B12; c1]"
             ]
           }
         ]
@@ -5065,10 +4996,7 @@
                   "Gloss": "We shouldn’t walk side by side on a narrow street."
                 }
               ]
-            },
-            "Classes": [
-              "[AC; bc3]"
-            ]
+            }
           }
         ]
       }
@@ -5123,10 +5051,7 @@
                   "Gloss": "I saw your husband walking arm in arm with a woman (with a woman holding on to his arms)."
                 }
               ]
-            },
-            "Classes": [
-              "[C2; c2]"
-            ]
+            }
           }
         ]
       }
@@ -5393,6 +5318,9 @@
           },
           {
             "WordType": "v",
+            "Classes": [
+              "[A1; a12]"
+            ],
             "NumberedDefs": [
               {
                 "Number": "1",
@@ -5416,9 +5344,6 @@
                   "Examples": []
                 }
               }
-            ],
-            "Classes": [
-              "[A1; a12]"
             ]
           }
         ]
@@ -5480,10 +5405,7 @@
                 "Word": null
               },
               "Examples": []
-            },
-            "Classes": [
-              "[A1; a]"
-            ]
+            }
           }
         ]
       }
@@ -5565,6 +5487,9 @@
           },
           {
             "WordType": "v",
+            "Classes": [
+              "[a]"
+            ],
             "NumberedDefs": [
               {
                 "Number": "1",
@@ -5598,9 +5523,6 @@
                   ]
                 }
               }
-            ],
-            "Classes": [
-              "[a]"
             ]
           }
         ]
@@ -5750,6 +5672,9 @@
         "WordTypeDefs": [
           {
             "WordType": "v",
+            "Classes": [
+              "[A2; b6]"
+            ],
             "NumberedDefs": [
               {
                 "Number": "1",
@@ -5783,9 +5708,6 @@
                   ]
                 }
               }
-            ],
-            "Classes": [
-              "[A2; b6]"
             ]
           },
           {
@@ -5944,10 +5866,7 @@
                   "Gloss": "He was buried without having received absolution."
                 }
               ]
-            },
-            "Classes": [
-              "[b6]"
-            ]
+            }
           }
         ]
       }
@@ -6008,10 +5927,7 @@
                 "Word": null
               },
               "Examples": []
-            },
-            "Classes": [
-              "[A3P; a12]"
-            ]
+            }
           }
         ]
       }
@@ -6242,6 +6158,9 @@
         "WordTypeDefs": [
           {
             "WordType": "v",
+            "Classes": [
+              "[A; c]"
+            ],
             "NumberedDefs": [
               {
                 "Number": "1",
@@ -6323,9 +6242,6 @@
                   ]
                 }
               }
-            ],
-            "Classes": [
-              "[A; c]"
             ]
           },
           {
@@ -6510,6 +6426,9 @@
         "WordTypeDefs": [
           {
             "WordType": "v",
+            "Classes": [
+              "[A; a]"
+            ],
             "NumberedDefs": [
               {
                 "Number": "1",
@@ -6547,9 +6466,6 @@
                   ]
                 }
               }
-            ],
-            "Classes": [
-              "[A; a]"
             ]
           }
         ]

@@ -627,9 +627,6 @@ function Parse-WtDef {
             Classes      = $classes
             NumberedDefs = $numdefs
         }
-        if ($classes.Count -gt 0) {
-            $node | Add-Member -NotePropertyName Classes -NotePropertyValue $classes -Force
-        }
 
         return [pscustomobject]@{
             Success     = $true
@@ -655,13 +652,11 @@ function Parse-WtDef {
         WordType = $wtTok.Content
         DefEx    = $defex.DefEx
     }
-    if ($classes.Count -gt 0) {
-        $node2 | Add-Member -NotePropertyName Classes -NotePropertyValue $classes -Force
-    }
 
     return [pscustomobject]@{
         Success     = $true
         NextIndex   = $i
+        Classes     = $classes
         WtDef       = $node2
         Diagnostics = $diag
     }

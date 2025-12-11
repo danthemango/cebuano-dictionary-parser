@@ -190,6 +190,9 @@
           },
           {
             "WordType": "v",
+            "Classes": [
+              "[A2SN; b5]"
+            ],
             "NumberedDefs": [
               {
                 "Number": "1",
@@ -223,9 +226,6 @@
                   ]
                 }
               }
-            ],
-            "Classes": [
-              "[A2SN; b5]"
             ]
           }
         ]
