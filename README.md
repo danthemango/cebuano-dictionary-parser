@@ -20,5 +20,5 @@ run html fixer:
 
 Parse:
 ```ps1
-.\parse.ps1 -inpath ".\cebuano-dictionary.html" -outpath ".\cebuano_dictionary_parsed.csv"
+.\HTML-to-XML.ps1 | .\Parse-Dict.ps1 | Export-Csv .\cebuano-dictionary.csv
 ```
