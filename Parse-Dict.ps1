@@ -416,14 +416,14 @@ function Parse-Def {
 
 function Parse-Example {
     <#
-      EX ::= (CEBPHRASE | CEBWORD) TEXT
+      EX ::= CEBPHRASE TEXT
       Returns {Success, NextIndex, Example:{Phrase, Gloss}, Diagnostics}
     #>
     param([object[]]$Tokens, [int]$StartIndex)
     $i = $StartIndex; $diag = @()
 
     $phraseTok = Get-Token $Tokens $i
-    if (-not $phraseTok -or -not ($phraseTok.Type -in @('CEBPHRASE','CEBWORD'))) {
+    if (-not $phraseTok -or -not ($phraseTok.Type -eq 'CEBPHRASE')) {
         return [pscustomobject]@{ Success=$false; NextIndex=$i; Example=$null; Diagnostics=$diag }
     }
     $i++
@@ -607,9 +607,10 @@ function Parse-WtDef {
     }
 }
 
+
 function Parse-WordDef {
     <#
-      WORDDEF ::= CEBWORD ( WTDEF+ | NUMDEF+ | DEFEX )
+      WORDDEF ::= CEBWORD ( WTDEF+ | [DEFEX] NUMDEF+ | DEFEX )
     #>
     param([object[]]$Tokens, [int]$StartIndex)
     $i = $StartIndex; $diag = @()
@@ -626,6 +627,7 @@ function Parse-WordDef {
     $i++
 
     $tok = Get-Token $Tokens $i
+
     # Branch 1: WTDEF+
     if (IsType $tok 'WORDTYPE') {
         $wtdefs = @()
@@ -646,14 +648,14 @@ function Parse-WordDef {
             Success   = $true
             NextIndex = $i
             WordDef   = [pscustomobject]@{
-                Headword    = $headTok.Content
-                WordTypeDefs= $wtdefs
+                Headword     = $headTok.Content
+                WordTypeDefs = $wtdefs
             }
             Diagnostics = $diag
         }
     }
 
-    # Branch 2: NUMDEF+
+    # Branch 2a: NUMDEF+ (no leading DEFEX)
     if (IsType $tok 'NUMBER') {
         $numdefs = @()
         while (IsType (Get-Token $Tokens $i) 'NUMBER') {
@@ -680,30 +682,67 @@ function Parse-WordDef {
         }
     }
 
-    # Branch 3: DEFEX
-    $defex = Parse-DefEx -Tokens $Tokens -StartIndex $i
-    if (-not $defex.Success) {
+    # Branch 2b: optional leading DEFEX, then NUMDEF+ (if present)
+    # If the next token is not WORDTYPE/NUMBER, attempt DEFEX
+    $defexLead = Parse-DefEx -Tokens $Tokens -StartIndex $i
+    if ($defexLead.Success) {
+        $i = $defexLead.NextIndex
+
+        # If immediately followed by NUMBER, collect NUMDEF+
+        if (IsType (Get-Token $Tokens $i) 'NUMBER') {
+            $numdefs = @()
+            while (IsType (Get-Token $Tokens $i) 'NUMBER') {
+                $nd = Parse-NumDef -Tokens $Tokens -StartIndex $i
+                if (-not $nd.Success) {
+                    return [pscustomobject]@{
+                        Success     = $false
+                        NextIndex   = $nd.NextIndex
+                        WordDef     = $null
+                        Diagnostics = $diag + $defexLead.Diagnostics + $nd.Diagnostics
+                    }
+                }
+                $numdefs += $nd.NumDef
+                $i = $nd.NextIndex
+            }
+
+            return [pscustomobject]@{
+                Success   = $true
+                NextIndex = $i
+                WordDef   = [pscustomobject]@{
+                    Headword     = $headTok.Content
+                    DefExLead    = $defexLead.DefEx
+                    NumberedDefs = $numdefs
+                }
+                Diagnostics = $diag
+            }
+        }
+
+        # Otherwise: DEFEX-only
         return [pscustomobject]@{
-            Success     = $false
-            NextIndex   = $defex.NextIndex
-            WordDef     = $null
-            Diagnostics = $diag + $defex.Diagnostics
+            Success   = $true
+            NextIndex = $i
+            WordDef   = [pscustomobject]@{
+                Headword = $headTok.Content
+                DefEx    = $defexLead.DefEx
+            }
+            Diagnostics = $diag
         }
     }
-    $i = $defex.NextIndex
 
-    [pscustomobject]@{
-        Success   = $true
-        NextIndex = $i
-        WordDef   = [pscustomobject]@{
-            Headword = $headTok.Content
-            DefEx    = $defex.DefEx
+    # If DEFEX failed here, we treat it as a hard failure for WORDDEF
+    return [pscustomobject]@{
+        Success     = $false
+        NextIndex   = $defexLead.NextIndex
+        WordDef     = $null
+        Diagnostics = $diag + $defexLead.Diagnostics + [pscustomobject]@{
+            Index   = $defexLead.NextIndex
+            Message = 'WORDDEF: expected WTDEF+, NUMDEF+, or DEFEX'
+            Token   = Get-Token $Tokens $defexLead.NextIndex
         }
-        Diagnostics = $diag
     }
 }
 
-# a DEF (definition) is a TEXT, LINK, or TEXT+LINK or CEBWORD
+# a DEF (definition) is (optional) CLASS + TEXT or LINK or (TEXT+LINK) or CEBWORD
 # LET EX (example) be a CEBPHRASE (cebuano phrase block) + TEXT (assumed to be english)
 # let a DEFEX be a block of DEF + a list of zero or more EX
 # let NUMDEF be a NUMBER followed by DEFEX
@@ -711,6 +750,7 @@ function Parse-WordDef {
 # let WORDDEF (word definition) be either
 # - a CEBWORD + a list of one or more WTDEF
 # - a CEBWORD + a list of one or more NUMDEF
+# - a CEBWORD + DEFEX + a list of one or more NUMDEF
 # - a CEBWORD + DEFEX
 # each row will have one or more WORDDEF
 
@@ -781,8 +821,16 @@ if ($Limit) {
     $paragraphs = $paragraphs | Select-Object -First $Limit
 }
 
-# DEBUG pipe plain tokens to csv, for tokenizing development
-$paragraphs | foreach { $_.tokens } | Tokenize | Export-Csv -Encoding utf8 -NoTypeInformation -Path "tokenlist.csv"
+# basic tokenization saved to file for review
+$paragraphs | foreach {
+    # emit the tokens
+    $_.tokens
+    # emit a token indicating the end of a row
+    [PSCustomObject]@{
+        Type="ROWEND";
+        Content=""
+    }
+} | Tokenize | Export-Csv -Encoding utf8 -NoTypeInformation -Path "tokenlist.csv"
 
 # tokenize each paragraph
 # $inxml |
@@ -807,7 +855,7 @@ $parsed = $paragraphs |
         $res = Parse-Row -Tokens $_.Tokens
 
         # Attach parse results to the row (non-destructive: adds properties)
-        $_ | Add-Member -NotePropertyName WordDefs           -NotePropertyValue $res.WordDefs          -Force
+        $_ | Add-Member -NotePropertyName WordDefs          -NotePropertyValue $res.WordDefs          -Force
         $_ | Add-Member -NotePropertyName ParseOk           -NotePropertyValue $res.Success      -Force
         $_ | Add-Member -NotePropertyName ParseNextIndex    -NotePropertyValue $res.NextIndex    -Force
         $_ | Add-Member -NotePropertyName ParseDiagnostics  -NotePropertyValue $res.Diagnostics  -Force
@@ -815,7 +863,15 @@ $parsed = $paragraphs |
         $_  # emit the updated object to the pipeline
     }
 
+$successfuls = $parsed | Where-Object { $_.ParseOk }
+$faileds = $parsed | Where-Object { -not $_.ParseOk }
+
 # Finally, write the whole set to JSON
-$parsed |
+$faileds |
     ConvertTo-Json -Depth 100 |
-    Set-Content -Encoding UTF8 -Path .\dict-parsed.json
+    Set-Content -Encoding UTF8 -Path "failed-parse.json"
+
+# $successfuls.WordDefs |
+$successfuls |
+    ConvertTo-Json -Depth 100 |
+    Set-Content -Encoding UTF8 -Path "successful-parse.json"
