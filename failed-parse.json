@@ -145,16 +145,8 @@
         "Content": "abága"
       },
       {
-        "Type": "TEXT",
-        "Content": ","
-      },
-      {
         "Type": "CEBPHRASE",
         "Content": "v"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "."
       },
       {
         "Type": "CEBWORD",
@@ -257,10 +249,10 @@
     "ParseDiagnostics": [
       {
         "Index": 15,
-        "Message": "Trailing token after WORDDEF: TEXT",
+        "Message": "Trailing token after WORDDEF: CEBPHRASE",
         "Token": {
-          "Type": "TEXT",
-          "Content": ","
+          "Type": "CEBPHRASE",
+          "Content": "v"
         }
       }
     ]
@@ -307,6 +299,2313 @@
         "Token": {
           "Type": "WORDTYPE",
           "Content": "n"
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "ábang"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2S; b]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "rent."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ang usa ka kwartu giabángan sa tigúlang,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The old man rents one of the rooms."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[b]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "hire a prostitute."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2; c]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "make an offering to a supernatural being for the use of land which is thought to be in his possession."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Iábang ni nákung baktína álang sa uma,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I will sacrifice this pig as rental for the land."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "rent paid."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Pilay ábang nímu sa libru?"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "How much rent did you pay for the book?"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "money paid a prostitute."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "toil taken by supernatural beings."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Kadtung nalumus dinhi ábang kunu tu sa ingkantu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The man who drowned here is said to have been the rent collected by the supernatural spirit."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "paN-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "patronize a prostitute. <b lang=\"ceb\">-an(→)"
+      }
+    ],
+    "WordDefs": [],
+    "ParseOk": false,
+    "ParseNextIndex": 0,
+    "ParseDiagnostics": [
+      {
+        "Index": 3,
+        "Message": "DEF: unexpected CLASS",
+        "Token": {
+          "Type": "CLASS",
+          "Content": "[A2S; b]"
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": {
+      "Type": "TEXT",
+      "Content": "<b lang=\"ceb\">abangan"
+    },
+    "WordDefs": [],
+    "ParseOk": false,
+    "ParseNextIndex": 0,
+    "ParseDiagnostics": [
+      {
+        "Index": 0,
+        "Message": "WORDDEF: expected CEBWORD",
+        "Token": {
+          "Type": "TEXT",
+          "Content": "<b lang=\"ceb\">abangan"
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abaníku"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "folding fan."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "fan of any sort for fanning oneself."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "blackberry lily, k.o. bulbous ornamental: <b lang=\"la\"><i>Balamcanda chinensis</i></b>. It is so called because the leaves are arranged like an opened fan."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "LINK",
+        "Content": "baníku"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "4"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "kurta di-"
+      },
+      {
+        "Type": "LINK",
+        "Content": "kurta1"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[a12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "make into a fan."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; b6]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "fan s.o."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "paN-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "fan oneself."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "inabaníku"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "s.t. made in such a way that it can be folded for storage, e.g., a folding chair, jackknife."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abaníku",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Text": "folding fan.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "1a",
+                "DefEx": {
+                  "Def": {
+                    "Text": "fan of any sort for fanning oneself.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Text": "blackberry lily, k.o. bulbous ornamental: <b lang=\"la\"><i>Balamcanda chinensis</i></b>. It is so called because the leaves are arranged like an opened fan.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "3",
+                "DefEx": {
+                  "Def": {
+                    "Text": null,
+                    "Links": [
+                      "baníku"
+                    ],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "4",
+                "DefEx": {
+                  "Def": {
+                    "Text": null,
+                    "Links": [],
+                    "Word": "kurta di-"
+                  },
+                  "Examples": []
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "ParseOk": false,
+    "ParseNextIndex": 12,
+    "ParseDiagnostics": [
+      {
+        "Index": 12,
+        "Message": "Trailing token after WORDDEF: LINK",
+        "Token": {
+          "Type": "LINK",
+          "Content": "kurta1"
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "*abansi"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "miting di —"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "grand rally immediately prior to an election."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "*abansi",
+        "DefEx": {
+          "Def": {
+            "Text": null,
+            "Links": [],
+            "Word": "miting di —"
+          },
+          "Examples": []
+        }
+      }
+    ],
+    "ParseOk": false,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [
+      {
+        "Index": 2,
+        "Message": "Trailing token after WORDDEF: TEXT",
+        "Token": {
+          "Type": "TEXT",
+          "Content": "grand rally immediately prior to an election."
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abanti"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "forward, ahead."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abanti ka rang milingkud,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "You took a seat too far to the front."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "ahead in score."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1a"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2; c]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "move forward."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Muabanti kag diyútay, matambug ka sa bangag,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "If you move forward any more, you will fall into the hole."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Iabanti nang ímung awtug diyútay,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Move your car forward a bit."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1b"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be ahead, have more points in a game."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Naabantíhan mu námug diyis puntus,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "We were ten points ahead of you."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2; a12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "keep up with s.t."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Dì ku makaabanti sa galastúhan sa iskuylahan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I cannot keep up with the school payments."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2; a12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "endure work."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Dì ku makaabanti sa pagdáru kay dautun ku,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I can’t keep up with the plowing because I’m sickly."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "4a"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "ask part payment in advance, especially in salary."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "4b"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[c]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "give s.o. a cash advance on his salary or other payment."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "front wheel(s)."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nahiyus ang abanti sa mutur,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The front tire of the motorcycle is flat."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "forward gear."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "front seat in a car."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "atras —"
+      },
+      {
+        "Type": "LINK",
+        "Content": "atras"
+      }
+    ],
+    "WordDefs": [],
+    "ParseOk": false,
+    "ParseNextIndex": 0,
+    "ParseDiagnostics": [
+      {
+        "Index": 10,
+        "Message": "DEF: unexpected CLASS",
+        "Token": {
+          "Type": "CLASS",
+          "Content": "[A2; c]"
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abánu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "factory-made cigar."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "make into a cigar."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A123S]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "have, obtain a cigar."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "paN-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "smoke a cigar."
+      }
+    ],
+    "WordDefs": [],
+    "ParseOk": false,
+    "ParseNextIndex": 0,
+    "ParseDiagnostics": [
+      {
+        "Index": 5,
+        "Message": "DEF: unexpected CLASS",
+        "Token": {
+          "Type": "CLASS",
+          "Content": "[A; a12]"
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abat"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "any supernatural being or human with supernatural powers which shows itself in an unexpected and startling way."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "one who is ‘it’ in games."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2; a2]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "head off s.o."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Maapsan pa nímu siya ug ímung abatun sa iskína,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "You can still catch up with him if you head him off at the corner."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[AN; a12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "frighten s.o. by appearing suddenly or otherwise startling him."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ig-ági níya, abta siya,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "When he comes by, give him a scare."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "alabtan, abtanan"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "haunted, place where things appear suddenly."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "alabtun"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "s.o. to whom spirits tend to show themselves."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "abat-ábat"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "game of tag."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A13]"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "play tag."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "try to meet without succeeding."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Wà giyud mi magkítà, nag-abat-ábat lang,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "We just kept missing each other."
+      }
+    ],
+    "WordDefs": [],
+    "ParseOk": false,
+    "ParseNextIndex": 0,
+    "ParseDiagnostics": [
+      {
+        "Index": 8,
+        "Message": "DEF: unexpected CLASS",
+        "Token": {
+          "Type": "CLASS",
+          "Content": "[A2; a2]"
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "ábat<sub>2</sub>"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a1]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "feel with the hands, esp. to find s.t. out."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nag-ábat siya sa yáwi sa íyang bulsa kung wà ba hibyai,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He felt for the key in his pocket to see if he hadn’t left it behind."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abátun ku ang íyang agtang ug hilanatun ba,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I’ll touch her forehead to see if she is feverish."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A123S; a12b2]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "feel s.t. with the sense of touch."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nakaabat ku sa kabugnaw sa sinihan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I felt the coolness of the movie house."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abátun gánì nímu ang kasakit, musamut giyud,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "If you think about the pain, it will get worse."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A123S; b2]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "happen to notice, sense s.t."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nakaabat kung mu rag may misaka sa ámung báy,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I sensed that s.o. had entered our house."
+      }
+    ],
+    "WordDefs": [],
+    "ParseOk": false,
+    "ParseNextIndex": 0,
+    "ParseDiagnostics": [
+      {
+        "Index": 3,
+        "Message": "DEF: unexpected CLASS",
+        "Token": {
+          "Type": "CLASS",
+          "Content": "[A; a1]"
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abay"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[AC; b6]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "move along together with s.t. moving."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Lagmit hiligsan ang bátà kay nag-abay sa tartanilya,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The child is likely to be run over because he is running alongside of the rig."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Silang duha nag-ábay paglanguy,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The two swam side by side."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1a"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— ug sawa"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "have a snake born at the same time one is born. The snake is called one’s twin ("
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "kalúha"
+      },
+      {
+        "Type": "TEXT",
+        "Content": ") and is supposed to bring him and his family luck."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Pagkatáwu sa ákung iyaan, giabayan (giabyan) ug sawa. Mau nang nadátù ang íyang inahan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "When my aunt was born, a twin snake was born with her, and so her mother became rich."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2; c]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "go in with s.o. who buys or invests in s.t."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ug mupalit kag usa ka sákung humay muabay kug lima ka gantang,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "If you buy a sack of rice, I will go in with you for five ganta’s worth."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Giabyan níyag singku písus ang ákung pusta,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He went in for five pesos on my bet."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[AN]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "go in together in a fishing operation which requires several hands."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "4"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[c1]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "attach a gaff in the"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "abay"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "way ("
+      },
+      {
+        "Type": "LINK",
+        "Content": "abay"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "n"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "4"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "money paid as a share in a purchase or investment."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ang ákung abay bálig dus písus ra,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "My share is two pesos’ worth."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "bridesmaid or best man."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "man’s male friend."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "title used by males of the same age to each other."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "short form:"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "bay"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "ása man ning dyípa, bay?"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Where is this jeep headed for, driver?"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "4"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "manner of tying a gaff to a cock level with and parallel to the spur to offset any advantage it may have over its opponent."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "maN-l-(←), maN-r-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "persons who go in together in a fishing operation."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "-an, abyanan"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "life saver."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "abyan"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "friend, companion."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Alang kaníya walà siyay láing abyan kun dílì álak,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He has no other friend except liquor."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "supernatural being that provides a shaman or sorcerer with his power."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[C1]"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be friends."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Kita lay mag-abyan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Let’s be friends."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "indulge in a bad habit."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Walà siya makig-abyan sa huguyhúguy,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He did not indulge in roaming about."
+      }
+    ],
+    "WordDefs": [],
+    "ParseOk": false,
+    "ParseNextIndex": 0,
+    "ParseDiagnostics": [
+      {
+        "Index": 3,
+        "Message": "DEF: unexpected CLASS",
+        "Token": {
+          "Type": "CLASS",
+          "Content": "[AC; b6]"
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abi"
+      },
+      {
+        "Type": "LINK",
+        "Content": "abir"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "1, 2"
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abi",
+        "DefEx": {
+          "Def": {
+            "Text": null,
+            "Links": [
+              "abir"
+            ],
+            "Word": null
+          },
+          "Examples": []
+        }
+      }
+    ],
+    "ParseOk": false,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [
+      {
+        "Index": 3,
+        "Message": "DEF: no token",
+        "Token": null
+      },
+      {
+        "Index": 3,
+        "Message": "WORDDEF: expected WTDEF+, NUMDEF+, or DEFEX",
+        "Token": null
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "ábi"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "<b lang=\"ceb\">—"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[<i lang=\"ceb\">gen.</i>]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "</b> [gen.] thought, took for granted."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "ábi nákug tinúud,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I thought it was true."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— nímu"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "<a id=\"xd20e5830\"></a> You know what?"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "ábi nímu? Nakit-an ku siya nga láig kúyug,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "You know what? I saw him going out with s.o. else."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— kay"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "just because."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "ábi kay nakadaug sa byúti kuntis midakù na ang úlu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Just because she won the beauty contest she thinks she is s.t."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— na lang"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "s.o. might think that."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Súkul. ábi na lang, daug."
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Fight back. They might think you give up."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "ábi",
+        "NumberedDefs": [
+          {
+            "Number": "1",
+            "DefEx": {
+              "Def": {
+                "Text": "<b lang=\"ceb\">—",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": false,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": [
+      {
+        "Index": 3,
+        "Message": "Trailing token after WORDDEF: CLASS",
+        "Token": {
+          "Type": "CLASS",
+          "Content": "[<i lang=\"ceb\">gen.</i>]"
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abísu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "announcement of s.t. to come."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; c]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "announce s.t. to come."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nag-abísu ang radyu nga adúnay bagyung umaábut,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The radio announced that there is a typhoon coming."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "receive an announcement."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nakaabísu ming way túbig ugmà,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "We received the announcement that there would be no water tomorrow."
+      }
+    ],
+    "WordDefs": [],
+    "ParseOk": false,
+    "ParseNextIndex": 0,
+    "ParseDiagnostics": [
+      {
+        "Index": 5,
+        "Message": "DEF: unexpected CLASS",
+        "Token": {
+          "Type": "CLASS",
+          "Content": "[A; c]"
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abrasadur"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "LINK",
+        "Content": "tangdayan"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "LINK",
+        "Content": "tangday"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "2"
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abrasadur",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": null,
+                "Links": [
+                  "tangdayan"
+                ],
+                "Word": null
+              },
+              "Examples": []
+            }
+          },
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": null,
+                "Links": [
+                  "tangday"
+                ],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": false,
+    "ParseNextIndex": 5,
+    "ParseDiagnostics": [
+      {
+        "Index": 6,
+        "Message": "DEF: no token",
+        "Token": null
+      },
+      {
+        "Index": 6,
+        "Message": "WORDDEF: expected WTDEF+, NUMDEF+, or DEFEX",
+        "Token": null
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abtik"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "nimble, quick in reaction."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ang musáyaw sa tinikling kinahanglang abtik ug tiil,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Whoever dances the"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "tinikling"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "has to have nimble feet."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "fast, live in action."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Mahuman ni dáyug abtik lang mutrabáhu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "It will get done right away if you work rapidly."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "cunning, sly."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abtik giyud siya kay midáwat imbis mubáyad,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He sure is sharp. Instead of paying as he should have, he got paid."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B]"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "get to be nimble."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "get to be fast in action."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Muabtik (maabtik) lagi ang íyang panglíhuk basta pakit-ug sápì,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He’ll get moving fast as long as you show him money."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "get to be cunning, sly."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "4"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[b4(1)]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "outsmart."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Naabtikan sad ku sa bátà,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The child put one over on me."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "paN-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2; b6]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "engage in chicanery."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ayaw kug pangabtíki kay suhítu ku,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Don’t try to put a fast one over on me, because I know my way around."
+      }
+    ],
+    "WordDefs": [],
+    "ParseOk": false,
+    "ParseNextIndex": 0,
+    "ParseDiagnostics": [
+      {
+        "Index": 25,
+        "Message": "DEF: unexpected CLASS",
+        "Token": {
+          "Type": "CLASS",
+          "Content": "[B12]"
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "ashes."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "LINK",
+        "Content": "alabúhan"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "make ashes."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abuha nang mga palwa ug gam-ang sabun,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Make the palm stems into ashes to make soap out of."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B1256]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be razed or burned to the ground."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Pag-abut nákù naabu na ang balay,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "When I arrived, the house was already burned to the ground."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "ka-(←)"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A13]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "get ashes all over one."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nagkaábu ku kay misum-uk ku sa nasunúgan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I got ashes all over me because I went into the burned-out area."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "alabúhan"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "stove or any place a fire for cooking is built."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "abuhun"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "ash-colored."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Manuk nga abuhun,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Gray-colored cock."
+      }
+    ],
+    "WordDefs": [],
+    "ParseOk": false,
+    "ParseNextIndex": 0,
+    "ParseDiagnostics": [
+      {
+        "Index": 8,
+        "Message": "DEF: unexpected CLASS",
+        "Token": {
+          "Type": "CLASS",
+          "Content": "[A; a12]"
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "*abubhu"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "paN-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2; b6]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be jealous of a loved one."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "jealousy."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "abubhuan"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "jealous."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abubhuang bána,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "A jealous husband."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "mapangabubhúun"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "of a jealous type."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Mapangabubhúun nga pasiklap,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "A jealous glance."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "*abubhu",
+        "DefEx": {
+          "Def": {
+            "Text": null,
+            "Links": [],
+            "Word": "paN-"
+          },
+          "Examples": []
+        }
+      }
+    ],
+    "ParseOk": false,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [
+      {
+        "Index": 2,
+        "Message": "Trailing token after WORDDEF: WORDTYPE",
+        "Token": {
+          "Type": "WORDTYPE",
+          "Content": "v"
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "ábud<sub>3</sub>"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "k.o. head louse lighter in color and with a longer and more slender body than the ordinary head louse ("
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "kútu"
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "ábud<sub>3</sub>",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "k.o. head louse lighter in color and with a longer and more slender body than the ordinary head louse (",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": false,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": [
+      {
+        "Index": 3,
+        "Message": "Trailing token after WORDDEF: CEBPHRASE",
+        "Token": {
+          "Type": "CEBPHRASE",
+          "Content": "kútu"
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abug<sub>1</sub>"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "dust."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B46; a4b4(1)]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "become dusty."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Muabug ang karsáda ug dúgayng uwanun,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The road gets dusty if the rains come late."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Giabug ang ámung balay kay dúgay na nga wà puy-i,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Our house became all dusty because it hadn’t been lived in for a long time."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Tabúni ang libru arun dílì maabugan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Cover the books so they won’t get dusty."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B1256]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "turn into dust."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Sa kadugáyan kitang tanan maabug,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "In the end we will all turn to dust."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "ka-(←)"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A13]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "get dust all over it."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nagkaábug ang ákung buhuk tungud sa byáhi,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "My hair is all covered with dust because I’ve just gotten off the bus."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "-un"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "dusty."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "-l-an(←)"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "exposed to dust."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Kining kwartúha alabúgan. Duul man gud sa karsáda,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "This room is exposed to dust. It’s close to the street."
+      }
+    ],
+    "WordDefs": [],
+    "ParseOk": false,
+    "ParseNextIndex": 0,
+    "ParseDiagnostics": [
+      {
+        "Index": 5,
+        "Message": "DEF: unexpected CLASS",
+        "Token": {
+          "Type": "CLASS",
+          "Content": "[B46; a4b4(1)]"
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "*abug<sub>2</sub>"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "paN-"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "euphemism for"
+      },
+      {
+        "Type": "LINK",
+        "Content": "pangabughu"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "see"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "<span class=\"sc\" lang=\"ceb\"><a href=\"#xxabubhu\">*"
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "*abug<sub>2</sub>",
+        "DefEx": {
+          "Def": {
+            "Text": null,
+            "Links": [],
+            "Word": "paN-"
+          },
+          "Examples": []
+        }
+      }
+    ],
+    "ParseOk": false,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [
+      {
+        "Index": 2,
+        "Message": "Trailing token after WORDDEF: TEXT",
+        "Token": {
+          "Type": "TEXT",
+          "Content": "euphemism for"
+        }
+      }
+    ]
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abugádu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "lawyer."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B16; a2]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be, become a lawyer."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; b]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "speak for s.o."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abugadúhan ta lang ka kay wà kay pangabla,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I’ll speak for you because you don’t have the knack of saying what you want."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "abugaduhun"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "lawyer-like."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abugaduhung pangatarúngan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Lawyer-like reasoning."
+      }
+    ],
+    "WordDefs": [],
+    "ParseOk": false,
+    "ParseNextIndex": 0,
+    "ParseDiagnostics": [
+      {
+        "Index": 5,
+        "Message": "DEF: unexpected CLASS",
+        "Token": {
+          "Type": "CLASS",
+          "Content": "[B16; a2]"
         }
       }
     ]

@@ -1229,6 +1229,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "NumberedDefs": [
               {
                 "Number": "1",
@@ -1358,6 +1359,5368 @@
     ],
     "ParseOk": true,
     "ParseNextIndex": 2,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abal"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "LINK",
+        "Content": "balbal"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "LINK",
+        "Content": "abat"
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abal",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": null,
+                "Links": [
+                  "balbal"
+                ],
+                "Word": null
+              },
+              "Examples": []
+            }
+          },
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": null,
+                "Links": [
+                  "abat"
+                ],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 5,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abalu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "assessed value."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[AB56; b5c]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "assess, be assessed at."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ug ikaw muabalu sa ákung yútà, ayawg dak-a,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "If you assess my land, don’t set it too high."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ang yútà miabalu (giabalu, giabaluhan) ug singkwinta mil,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The land was assessed at fifty thousand pesos."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abalu",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "assessed value.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          },
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": "assess, be assessed at.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Ug ikaw muabalu sa ákung yútà, ayawg dak-a,",
+                  "Gloss": "If you assess my land, don’t set it too high."
+                },
+                {
+                  "Phrase": "Ang yútà miabalu (giabalu, giabaluhan) ug singkwinta mil,",
+                  "Gloss": "The land was assessed at fifty thousand pesos."
+                }
+              ]
+            },
+            "Classes": [
+              "[AB56; b5c]"
+            ]
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 10,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abalwasiyun"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "assessment."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Purus dagkug abalwasiyun ang mga yútà dinhi sa syudad,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The lots in the city all have high assessments."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abalwasiyun",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "assessment.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Purus dagkug abalwasiyun ang mga yútà dinhi sa syudad,",
+                  "Gloss": "The lots in the city all have high assessments."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 5,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abandunar"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A3P; c1]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "abandon, neglect."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nag-abandunar na lang siya sa íyang kaugalíngun sukad mamatay ang íyang asáwa,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He neglected himself entirely after his wife died."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ayaw abandunaha (iabandunar) ang ímung pamilya,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Do not abandon your family."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "abandunádu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "abandoned."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "neglectful."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "LINK",
+        "Content": "abandunar"
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abandunar",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": "abandon, neglect.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Nag-abandunar na lang siya sa íyang kaugalíngun sukad mamatay ang íyang asáwa,",
+                  "Gloss": "He neglected himself entirely after his wife died."
+                },
+                {
+                  "Phrase": "Ayaw abandunaha (iabandunar) ang ímung pamilya,",
+                  "Gloss": "Do not abandon your family."
+                }
+              ]
+            },
+            "Classes": [
+              "[A3P; c1]"
+            ]
+          }
+        ]
+      },
+      {
+        "Headword": "abandunádu",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Text": "abandoned.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Text": "neglectful.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              }
+            ]
+          },
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": null,
+                "Links": [
+                  "abandunar"
+                ],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 16,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abandúnu"
+      },
+      {
+        "Type": "LINK",
+        "Content": "abandunar"
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abandúnu",
+        "DefEx": {
+          "Def": {
+            "Text": null,
+            "Links": [
+              "abandunar"
+            ],
+            "Word": null
+          },
+          "Examples": []
+        }
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abánid"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; c1]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "do s.t. step by step, and in sequence."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Iabánid (abaníra) kini pagpintal arun dílì magkampat,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Paint it one square at a time so it will come out even."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "done in succession, order."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abánid ang íyang pagsukut sa mga istudyanti,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He asked the students one after another in turn."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abánid",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": "do s.t. step by step, and in sequence.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Iabánid (abaníra) kini pagpintal arun dílì magkampat,",
+                  "Gloss": "Paint it one square at a time so it will come out even."
+                }
+              ]
+            },
+            "Classes": [
+              "[A; c1]"
+            ]
+          },
+          {
+            "WordType": "a",
+            "DefEx": {
+              "Def": {
+                "Text": "done in succession, order.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Abánid ang íyang pagsukut sa mga istudyanti,",
+                  "Gloss": "He asked the students one after another in turn."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 10,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abansáda"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "exposed to the wind."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B12; c1]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "for s.t. to be directly open to the wind."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Naabansáda sa hángin ang ákung bukubuku, maung gisip-un ku,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "My back was directly exposed to the wind. That’s why I caught cold."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ayaw abansadáha (iabansáda) sa hángin ang inyung bintánà,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Don’t put a window right where it catches the full breeze."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abansáda",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "DefEx": {
+              "Def": {
+                "Text": "exposed to the wind.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          },
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": "for s.t. to be directly open to the wind.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Naabansáda sa hángin ang ákung bukubuku, maung gisip-un ku,",
+                  "Gloss": "My back was directly exposed to the wind. That’s why I caught cold."
+                },
+                {
+                  "Phrase": "Ayaw abansadáha (iabansáda) sa hángin ang inyung bintánà,",
+                  "Gloss": "Don’t put a window right where it catches the full breeze."
+                }
+              ]
+            },
+            "Classes": [
+              "[B12; c1]"
+            ]
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 10,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abansin"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "advance, for a body of people to move forward."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ang mga Hapúnis miabansin sa pátag sa Lusun,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The Japanese advanced over the plains of Luzon."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abansin",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": "advance, for a body of people to move forward.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Ang mga Hapúnis miabansin sa pátag sa Lusun,",
+                  "Gloss": "The Japanese advanced over the plains of Luzon."
+                }
+              ]
+            },
+            "Classes": [
+              "[A]"
+            ]
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "ábat<sub>1</sub>"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2S; b6]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "hold on to s.t. fixed to support oneself."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ang tigúwang miábat sa pasamánu paingun sa táas,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The old man held on to the bannister while going upstairs."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "-an(→)"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "a railing in shape of a ladder for baby to cling to when he starts to walk."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "ábat<sub>1</sub>",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": "hold on to s.t. fixed to support oneself.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Ang tigúwang miábat sa pasamánu paingun sa táas,",
+                  "Gloss": "The old man held on to the bannister while going upstairs."
+                }
+              ]
+            },
+            "Classes": [
+              "[A2S; b6]"
+            ]
+          }
+        ]
+      },
+      {
+        "Headword": "-an(→)",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "a railing in shape of a ladder for baby to cling to when he starts to walk.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 9,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abgaw"
+      },
+      {
+        "Type": "LINK",
+        "Content": "adgaw"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "-un"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "k.o. snapper with a yellow streak along the body: <b><i>Lutianus sp</i></b>."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abgaw",
+        "DefEx": {
+          "Def": {
+            "Text": null,
+            "Links": [
+              "adgaw"
+            ],
+            "Word": null
+          },
+          "Examples": []
+        }
+      },
+      {
+        "Headword": "-un",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "k.o. snapper with a yellow streak along the body: <b><i>Lutianus sp</i></b>.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 5,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abhak"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; b5]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "diminish s.t. by taking away or destroying part of it."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Naabhak (naabhákan) ang íyang abága sa bála,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The bullet tore a huge piece out of his shoulder."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "hole left when s.t. is chopped off, out."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Dakù kaáyu ang abhak sa káhuy,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "There’s a big cut in the tree."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "done in such a way that s.t. is chopped off."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abhak nga pagkabuldúsir ang inyung nataran,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Your yard was bulldozed clean."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abhak",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": "diminish s.t. by taking away or destroying part of it.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Naabhak (naabhákan) ang íyang abága sa bála,",
+                  "Gloss": "The bullet tore a huge piece out of his shoulder."
+                }
+              ]
+            },
+            "Classes": [
+              "[A; b5]"
+            ]
+          },
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "hole left when s.t. is chopped off, out.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Dakù kaáyu ang abhak sa káhuy,",
+                  "Gloss": "There’s a big cut in the tree."
+                }
+              ]
+            }
+          },
+          {
+            "WordType": "a",
+            "DefEx": {
+              "Def": {
+                "Text": "done in such a way that s.t. is chopped off.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Abhak nga pagkabuldúsir ang inyung nataran,",
+                  "Gloss": "Your yard was bulldozed clean."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 14,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abhul"
+      },
+      {
+        "Type": "LINK",
+        "Content": "abhung"
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abhul",
+        "DefEx": {
+          "Def": {
+            "Text": null,
+            "Links": [
+              "abhung"
+            ],
+            "Word": null
+          },
+          "Examples": []
+        }
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abhung"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "musty and flat in smell: damp clothing, rice, sweet potatoes, salted fish, et al."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B; b6]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be, become musty."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "-un(→)"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "of a musty kind."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abhung",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "DefEx": {
+              "Def": {
+                "Text": "musty and flat in smell: damp clothing, rice, sweet potatoes, salted fish, et al.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          },
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": "be, become musty.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            },
+            "Classes": [
+              "[B; b6]"
+            ]
+          }
+        ]
+      },
+      {
+        "Headword": "-un(→)",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "DefEx": {
+              "Def": {
+                "Text": "of a musty kind.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 9,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abiábi"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "show hospitality to."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Mu giyud ning táwung iládu, abiabíhun giyud sa mga tagilungsud,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The townspeople show hospitality to any famous visitor."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "maabiabíhun, manggiabiabíhun"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "hospitable."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abiábi",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": "show hospitality to.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Mu giyud ning táwung iládu, abiabíhun giyud sa mga tagilungsud,",
+                  "Gloss": "The townspeople show hospitality to any famous visitor."
+                }
+              ]
+            },
+            "Classes": [
+              "[A; a12]"
+            ]
+          }
+        ]
+      },
+      {
+        "Headword": "maabiabíhun, manggiabiabíhun",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "DefEx": {
+              "Def": {
+                "Text": "hospitable.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 9,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abíba, abibar"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; b5]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "cheer one on, encourage to do."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nag-abíba sa mga bátag binúang,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Egging the children on in their naughtiness."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "encouragement, egging on."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "maabibáhun"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "giving encouragement, egging on."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abíba, abibar",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": "cheer one on, encourage to do.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Nag-abíba sa mga bátag binúang,",
+                  "Gloss": "Egging the children on in their naughtiness."
+                }
+              ]
+            },
+            "Classes": [
+              "[A; b5]"
+            ]
+          },
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "encouragement, egging on.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Headword": "maabibáhun",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "DefEx": {
+              "Def": {
+                "Text": "giving encouragement, egging on.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 11,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abíhid"
+      },
+      {
+        "Type": "LINK",
+        "Content": "alabíhid"
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abíhid",
+        "DefEx": {
+          "Def": {
+            "Text": null,
+            "Links": [
+              "alabíhid"
+            ],
+            "Word": null
+          },
+          "Examples": []
+        }
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abilay"
+      },
+      {
+        "Type": "LINK",
+        "Content": "sambilay"
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abilay",
+        "DefEx": {
+          "Def": {
+            "Text": null,
+            "Links": [
+              "sambilay"
+            ],
+            "Word": null
+          },
+          "Examples": []
+        }
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abilidad"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "ability, capacity or skill to accomplish s.t."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "obtain a certain ability."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "abilidaran"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "skilled, able."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abilidaran nà si Tunyu. Bansayng mutínis,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Tony has talent. He plays tennis well."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abilidad",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "ability, capacity or skill to accomplish s.t.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          },
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": "obtain a certain ability.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            },
+            "Classes": [
+              "[A12]"
+            ]
+          }
+        ]
+      },
+      {
+        "Headword": "abilidaran",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "DefEx": {
+              "Def": {
+                "Text": "skilled, able.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Abilidaran nà si Tunyu. Bansayng mutínis,",
+                  "Gloss": "Tony has talent. He plays tennis well."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 11,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abilyána"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "tan-colored shoes."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "tan polish."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A13]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "polish shoes with a light tan polish, color them tan."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abilyanáha (abilyanáhi) ning sapátus kung putì,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Dye these shoes of mine tan."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Wà kuy bitung itum. Abilyanáhi lang,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I don’t have any black polish. Just put tan polish on them."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abilyána",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "DefEx": {
+              "Def": {
+                "Text": "tan-colored shoes.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          },
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "tan polish.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          },
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": "polish shoes with a light tan polish, color them tan.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Abilyanáha (abilyanáhi) ning sapátus kung putì,",
+                  "Gloss": "Dye these shoes of mine tan."
+                },
+                {
+                  "Phrase": "Wà kuy bitung itum. Abilyanáhi lang,",
+                  "Gloss": "I don’t have any black polish. Just put tan polish on them."
+                }
+              ]
+            },
+            "Classes": [
+              "[A13]"
+            ]
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 12,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "ábin"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2C; b]"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "engage in an enterprise or game together."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Mag-ábin ta sa pamaligyag pagkáun,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Let’s become partners in selling food."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "ally on oneself with."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Mga hakug sa gahum ang miábin kaníya,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "People who were greedy for power allied themselves with him."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nakig-ábin aku kaníya sa íyang mga panglantaw sa unáhan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I share his views of the future."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "partner in business or game."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ug siyay ákung ábin sa bíku kanúnay ming mudaug,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "When she is my partner in hopscotch, we always win."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "ka-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "LINK",
+        "Content": "ábin"
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "ábin",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Text": "engage in an enterprise or game together.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Mag-ábin ta sa pamaligyag pagkáun,",
+                      "Gloss": "Let’s become partners in selling food."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Text": "ally on oneself with.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Mga hakug sa gahum ang miábin kaníya,",
+                      "Gloss": "People who were greedy for power allied themselves with him."
+                    },
+                    {
+                      "Phrase": "Nakig-ábin aku kaníya sa íyang mga panglantaw sa unáhan,",
+                      "Gloss": "I share his views of the future."
+                    }
+                  ]
+                }
+              }
+            ],
+            "Classes": [
+              "[A2C; b]"
+            ]
+          },
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "partner in business or game.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Ug siyay ákung ábin sa bíku kanúnay ming mudaug,",
+                  "Gloss": "When she is my partner in hopscotch, we always win."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Headword": "ka-",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": null,
+                "Links": [
+                  "ábin"
+                ],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 20,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abintúra"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "adventures."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "adventure film, story."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Makítà siya sa mga lílas abintúra,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He appears in adventure films."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; b5]"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "try going s.w. for the adventure of it."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nag-abintúra mig katkat sa Manunggal,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "We went on an expedition to Mt. Manunggal."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "LINK",
+        "Content": "abinturar"
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abintúra",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Text": "adventures.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Text": "adventure film, story.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Makítà siya sa mga lílas abintúra,",
+                      "Gloss": "He appears in adventure films."
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "WordType": "v",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Text": "try going s.w. for the adventure of it.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Nag-abintúra mig katkat sa Manunggal,",
+                      "Gloss": "We went on an expedition to Mt. Manunggal."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Text": null,
+                    "Links": [
+                      "abinturar"
+                    ],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              }
+            ],
+            "Classes": [
+              "[A; b5]"
+            ]
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 16,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abinturar"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[AN; b5]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "try one’s luck."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Miabinturar (nangabinturar) lang siyag aplay básig madáwat,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He tried his luck in applying in hopes he might be accepted."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abinturahi (abinturaha) lang si Maríyag hangyù,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Try your luck with Maria and ask her."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "abinturíru, -a"
+      },
+      {
+        "Type": "LINK",
+        "Content": "abinturista"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "abinturista"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "adventurous, tending to try things out without knowing the outcome."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Dì ku mugugul ug kwarta niánà kay dì ku abinturista. Básig dì musalir,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I won’t invest my money on that because I’m not daring. It might just fail."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abinturar",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": "try one’s luck.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Miabinturar (nangabinturar) lang siyag aplay básig madáwat,",
+                  "Gloss": "He tried his luck in applying in hopes he might be accepted."
+                },
+                {
+                  "Phrase": "Abinturahi (abinturaha) lang si Maríyag hangyù,",
+                  "Gloss": "Try your luck with Maria and ask her."
+                }
+              ]
+            },
+            "Classes": [
+              "[AN; b5]"
+            ]
+          }
+        ]
+      },
+      {
+        "Headword": "abinturíru, -a",
+        "DefEx": {
+          "Def": {
+            "Text": null,
+            "Links": [
+              "abinturista"
+            ],
+            "Word": null
+          },
+          "Examples": []
+        }
+      },
+      {
+        "Headword": "abinturista",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "DefEx": {
+              "Def": {
+                "Text": "adventurous, tending to try things out without knowing the outcome.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Dì ku mugugul ug kwarta niánà kay dì ku abinturista. Básig dì musalir,",
+                  "Gloss": "I won’t invest my money on that because I’m not daring. It might just fail."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 15,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abir"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "particle used in calling attention to a point in contention."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ang diyus makagagáhum. Abir, unsáun man nímu pagpangutána diin siya manukad,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "God is almighty. All right then, how can you ask where He comes from?"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "particle used in inciting a person to do s.t."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abir, sulayi ug musalir ba nang paagíha,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "O.K. Just see if that procedure works out."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abir, sumbága kunu ku kay isumbung tikaw ni Pápa,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "All right, just try hitting me, and I’ll tell Daddy on you."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "pause word expressing hesitation when one doesn’t know how to do s.t."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abir, lisúa nag hínay dúngan sa pagtulbuk ári,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Let’s see now, turn that slowly and press this at the same time."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "LINK",
+        "Content": "ambi"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "4"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[AN; ac]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "try one’s luck, take a stab at."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nangabir (miabir) lang siyag panlútù. Dì hinúun siya kamau,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He just took a try at cooking. He doesn’t really know how."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abirun unyà nákug hangyù si Maríya,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I’ll just take a stab at asking Maria."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Iabir kunu ni sa ahinsiya ug dawátun ba,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Try taking this to the pawnshop and see if they will accept it."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abir",
+        "NumberedDefs": [
+          {
+            "Number": "1",
+            "DefEx": {
+              "Def": {
+                "Text": "particle used in calling attention to a point in contention.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Ang diyus makagagáhum. Abir, unsáun man nímu pagpangutána diin siya manukad,",
+                  "Gloss": "God is almighty. All right then, how can you ask where He comes from?"
+                }
+              ]
+            }
+          },
+          {
+            "Number": "1a",
+            "DefEx": {
+              "Def": {
+                "Text": "particle used in inciting a person to do s.t.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Abir, sulayi ug musalir ba nang paagíha,",
+                  "Gloss": "O.K. Just see if that procedure works out."
+                },
+                {
+                  "Phrase": "Abir, sumbága kunu ku kay isumbung tikaw ni Pápa,",
+                  "Gloss": "All right, just try hitting me, and I’ll tell Daddy on you."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "2",
+            "DefEx": {
+              "Def": {
+                "Text": "pause word expressing hesitation when one doesn’t know how to do s.t.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Abir, lisúa nag hínay dúngan sa pagtulbuk ári,",
+                  "Gloss": "Let’s see now, turn that slowly and press this at the same time."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "3",
+            "DefEx": {
+              "Def": {
+                "Text": null,
+                "Links": [
+                  "ambi"
+                ],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Headword": "4",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": "try one’s luck, take a stab at.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Nangabir (miabir) lang siyag panlútù. Dì hinúun siya kamau,",
+                  "Gloss": "He just took a try at cooking. He doesn’t really know how."
+                },
+                {
+                  "Phrase": "Abirun unyà nákug hangyù si Maríya,",
+                  "Gloss": "I’ll just take a stab at asking Maria."
+                },
+                {
+                  "Phrase": "Iabir kunu ni sa ahinsiya ug dawátun ba,",
+                  "Gloss": "Try taking this to the pawnshop and see if they will accept it."
+                }
+              ]
+            },
+            "Classes": [
+              "[AN; ac]"
+            ]
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 27,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abirids"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "average, the usual size or quantity."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "average rating in school."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Pasar ku kay utsinta ákung abirids,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I passed because my average was eighty."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A]"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "average so and so much."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Makaabirids mig lima adlaw-adlaw,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "We can sell on the average five every day."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "have an average grade of."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abirids",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Text": "average, the usual size or quantity.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Text": "average rating in school.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Pasar ku kay utsinta ákung abirids,",
+                      "Gloss": "I passed because my average was eighty."
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "WordType": "v",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Text": "average so and so much.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Makaabirids mig lima adlaw-adlaw,",
+                      "Gloss": "We can sell on the average five every day."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Text": "have an average grade of.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              }
+            ],
+            "Classes": [
+              "[A]"
+            ]
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 16,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abiríya"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be broken, inoperative."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B]"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "for an engine to break down."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Kining trak dílì magámit. Nag-abiríya man,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "This truck cannot be used. It is broken."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be under the weather."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Naabiríya aku kay nagkalíbang aku gahápun,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I’m not feeling well because I had diarrhea yesterday."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abiríya",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "DefEx": {
+              "Def": {
+                "Text": "be broken, inoperative.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          },
+          {
+            "WordType": "v",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Text": "for an engine to break down.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Kining trak dílì magámit. Nag-abiríya man,",
+                      "Gloss": "This truck cannot be used. It is broken."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Text": "be under the weather.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Naabiríya aku kay nagkalíbang aku gahápun,",
+                      "Gloss": "I’m not feeling well because I had diarrhea yesterday."
+                    }
+                  ]
+                }
+              }
+            ],
+            "Classes": [
+              "[B]"
+            ]
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 13,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abirtu"
+      },
+      {
+        "Type": "LINK",
+        "Content": "abyirtu"
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abirtu",
+        "DefEx": {
+          "Def": {
+            "Text": null,
+            "Links": [
+              "abyirtu"
+            ],
+            "Word": null
+          },
+          "Examples": []
+        }
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abis"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; ab7]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "slice with a curved blade, cut a small or thin part from a bigger piece."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abisig diyútay nà,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Slice a piece off of it."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "paN-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "slice the terminal portion of a coconut bud to induce sap flow."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Kaduha sila mangabis káda adlaw,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "They make an incision in the bud twice a day."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abis",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": "slice with a curved blade, cut a small or thin part from a bigger piece.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Abisig diyútay nà,",
+                  "Gloss": "Slice a piece off of it."
+                }
+              ]
+            },
+            "Classes": [
+              "[A; ab7]"
+            ]
+          }
+        ]
+      },
+      {
+        "Headword": "paN-",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": "slice the terminal portion of a coconut bud to induce sap flow.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Kaduha sila mangabis káda adlaw,",
+                  "Gloss": "They make an incision in the bud twice a day."
+                }
+              ]
+            },
+            "Classes": [
+              "[A2]"
+            ]
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 12,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abitsuylas"
+      },
+      {
+        "Type": "LINK",
+        "Content": "habitsuylas"
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abitsuylas",
+        "DefEx": {
+          "Def": {
+            "Text": null,
+            "Links": [
+              "habitsuylas"
+            ],
+            "Word": null
+          },
+          "Examples": []
+        }
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abitu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "habit, a distinctive apparel worn by devotees, priests, monks, and the like."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "wear a habit."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abitu",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "habit, a distinctive apparel worn by devotees, priests, monks, and the like.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          },
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": "wear a habit.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            },
+            "Classes": [
+              "[A]"
+            ]
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abíyu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "food, provisions, money, supplies for daily consumption."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; c]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "provide food, etc."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Báhin sa mga kinahanglanun matag adlaw akuy muabíyu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "As far as your daily needs go, I will provide."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abyúhan ta lang mug usa ka sákung humay matag búlan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "We’ll supply you with one sack of rice a month."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abíyu",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "food, provisions, money, supplies for daily consumption.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          },
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": "provide food, etc.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Báhin sa mga kinahanglanun matag adlaw akuy muabíyu,",
+                  "Gloss": "As far as your daily needs go, I will provide."
+                },
+                {
+                  "Phrase": "Abyúhan ta lang mug usa ka sákung humay matag búlan,",
+                  "Gloss": "We’ll supply you with one sack of rice a month."
+                }
+              ]
+            },
+            "Classes": [
+              "[A; c]"
+            ]
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 10,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abiyun"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "airplane."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "ka-an(←)"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "group of airplanes."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abiyun",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "airplane.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Headword": "ka-an(←)",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "group of airplanes.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abkay"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "dig up, out."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abkáyun ku ang kwarta nga ákung gilubung dinhi,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I will dig up the money that I buried here."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abkay",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": "dig up, out.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Abkáyun ku ang kwarta nga ákung gilubung dinhi,",
+                  "Gloss": "I will dig up the money that I buried here."
+                }
+              ]
+            },
+            "Classes": [
+              "[A; a]"
+            ]
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abla"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; c]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "speak to s.o. with some purpose in mind."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abláhi kunu si Máma, básin pag musugut,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Try to talk mother into it. She might let us."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "persuasive talk."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Dílì ka sugtun niánang bayhána kun walà kay abla,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "That woman will not accept you if you don’t sweet-talk her."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "big talk."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abla lay nagdaghan. Walay líhuk,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "It was all just big talk. No action."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "paN-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "art or technique of expressing one’s viewpoint."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Malampúsun siyang abugádu kay maáyu siya sa pangabla,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He is a successful lawyer because he has a good technique in talking."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abla",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": "speak to s.o. with some purpose in mind.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Abláhi kunu si Máma, básin pag musugut,",
+                  "Gloss": "Try to talk mother into it. She might let us."
+                }
+              ]
+            },
+            "Classes": [
+              "[A; c]"
+            ]
+          },
+          {
+            "WordType": "n",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Text": "persuasive talk.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Dílì ka sugtun niánang bayhána kun walà kay abla,",
+                      "Gloss": "That woman will not accept you if you don’t sweet-talk her."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Text": "big talk.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Abla lay nagdaghan. Walay líhuk,",
+                      "Gloss": "It was all just big talk. No action."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Headword": "paN-",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "art or technique of expressing one’s viewpoint.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Malampúsun siyang abugádu kay maáyu siya sa pangabla,",
+                  "Gloss": "He is a successful lawyer because he has a good technique in talking."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 20,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abládu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "delivered in spoken fashion."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ang kúru abládu, dílì kantáhun,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The chorus is spoken, not sung."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "lines of a play."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "speak lines."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abládu",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Text": "delivered in spoken fashion.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Ang kúru abládu, dílì kantáhun,",
+                      "Gloss": "The chorus is spoken, not sung."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Text": "lines of a play.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              }
+            ]
+          },
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": "speak lines.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            },
+            "Classes": [
+              "[A]"
+            ]
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 11,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "ablása"
+      },
+      {
+        "Type": "LINK",
+        "Content": "abrása"
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "ablása",
+        "DefEx": {
+          "Def": {
+            "Text": null,
+            "Links": [
+              "abrása"
+            ],
+            "Word": null
+          },
+          "Examples": []
+        }
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abli"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[AB; b5]"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "open s.t., be open."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ikaw bay nag-abli sa pultahan?"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Were you the one who opened the door?"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Sulud lang kay nag-abli ang pultahan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Just come right in. The door is open."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "begin, start a class, business, etc."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Muabli ang klási sa Hunyu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Classes begin in June."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ablíhag (ablíhug) sayu ang klási sunud túig,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Classes will open early next year."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "found, establish an enterprise."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Anus-a man ablíhi (ablíha) ang inyung iskuylahan sa panahì?"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "When will you open your sewing school?"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "opening."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Dakug abli nang tarúha,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "That can has a big opening."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "opening of classes."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "open."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abli ang bintánà. Sirhi ra gud,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The window is open. Please close it."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be started."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abli na ang tindáhan. Palit ngadtug kapi,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The store is open now. Go buy some coffee."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abli",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Text": "open s.t., be open.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Ikaw bay nag-abli sa pultahan?",
+                      "Gloss": "Were you the one who opened the door?"
+                    },
+                    {
+                      "Phrase": "Sulud lang kay nag-abli ang pultahan,",
+                      "Gloss": "Just come right in. The door is open."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Text": "begin, start a class, business, etc.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Muabli ang klási sa Hunyu,",
+                      "Gloss": "Classes begin in June."
+                    },
+                    {
+                      "Phrase": "Ablíhag (ablíhug) sayu ang klási sunud túig,",
+                      "Gloss": "Classes will open early next year."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "3",
+                "DefEx": {
+                  "Def": {
+                    "Text": "found, establish an enterprise.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Anus-a man ablíhi (ablíha) ang inyung iskuylahan sa panahì?",
+                      "Gloss": "When will you open your sewing school?"
+                    }
+                  ]
+                }
+              }
+            ],
+            "Classes": [
+              "[AB; b5]"
+            ]
+          },
+          {
+            "WordType": "n",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Text": "opening.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Dakug abli nang tarúha,",
+                      "Gloss": "That can has a big opening."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Text": "opening of classes.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              }
+            ]
+          },
+          {
+            "WordType": "a",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Text": "open.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Abli ang bintánà. Sirhi ra gud,",
+                      "Gloss": "The window is open. Please close it."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Text": "be started.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Abli na ang tindáhan. Palit ngadtug kapi,",
+                      "Gloss": "The store is open now. Go buy some coffee."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 35,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "Abr."
+      },
+      {
+        "Type": "TEXT",
+        "Content": "abbreviation for"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abril,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "‘April’."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "Abr.",
+        "DefEx": {
+          "Def": {
+            "Text": "abbreviation for",
+            "Links": [],
+            "Word": null
+          },
+          "Examples": [
+            {
+              "Phrase": "Abril,",
+              "Gloss": "‘April’."
+            }
+          ]
+        }
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 4,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abrap"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "sudden."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abrap ra kaáyu nang ímung pag-anhi,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Your coming is very sudden."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "brusque."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B12; c1]"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be sudden, do s.t. by plunging right into it."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be brusque."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Naabrap ra tu nímu pagkatubag,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "You answered in a brusque way."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abrap",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Text": "sudden.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Abrap ra kaáyu nang ímung pag-anhi,",
+                      "Gloss": "Your coming is very sudden."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Text": "brusque.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              }
+            ]
+          },
+          {
+            "WordType": "v",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Text": "be sudden, do s.t. by plunging right into it.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Text": "be brusque.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Naabrap ra tu nímu pagkatubag,",
+                      "Gloss": "You answered in a brusque way."
+                    }
+                  ]
+                }
+              }
+            ],
+            "Classes": [
+              "[B12; c1]"
+            ]
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 16,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abrása"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[AC; bc3]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "walk side by side with."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Hulat kay muabrása kug lakaw ninyu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Wait for me. I’m going to walk next to you."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Dílì ta mag-abrásag lakaw sa karsádang hagip-ut,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "We shouldn’t walk side by side on a narrow street."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abrása",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": "walk side by side with.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Hulat kay muabrása kug lakaw ninyu,",
+                  "Gloss": "Wait for me. I’m going to walk next to you."
+                },
+                {
+                  "Phrase": "Dílì ta mag-abrásag lakaw sa karsádang hagip-ut,",
+                  "Gloss": "We shouldn’t walk side by side on a narrow street."
+                }
+              ]
+            },
+            "Classes": [
+              "[AC; bc3]"
+            ]
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 8,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abrasíti"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[C2; c2]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "promenade arm in arm or side by side."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nakit-an kung ímung bánang may giabrasíting (giabrasitíhang) babáyi,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I saw your husband walking arm in arm with a woman (with a woman holding on to his arms)."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abrasíti",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": "promenade arm in arm or side by side.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Nakit-an kung ímung bánang may giabrasíting (giabrasitíhang) babáyi,",
+                  "Gloss": "I saw your husband walking arm in arm with a woman (with a woman holding on to his arms)."
+                }
+              ]
+            },
+            "Classes": [
+              "[C2; c2]"
+            ]
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abrasyíti"
+      },
+      {
+        "Type": "LINK",
+        "Content": "abrasíti"
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abrasyíti",
+        "DefEx": {
+          "Def": {
+            "Text": null,
+            "Links": [
+              "abrasíti"
+            ],
+            "Word": null
+          },
+          "Examples": []
+        }
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abri<sub>1</sub>"
+      },
+      {
+        "Type": "LINK",
+        "Content": "abli"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "-dur"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "opener.†"
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abri<sub>1</sub>",
+        "DefEx": {
+          "Def": {
+            "Text": null,
+            "Links": [
+              "abli"
+            ],
+            "Word": null
+          },
+          "Examples": []
+        }
+      },
+      {
+        "Headword": "-dur",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "opener.†",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 5,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abri<sub>2</sub>"
+      },
+      {
+        "Type": "LINK",
+        "Content": "abyirtu2"
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abri<sub>2</sub>",
+        "DefEx": {
+          "Def": {
+            "Text": null,
+            "Links": [
+              "abyirtu2"
+            ],
+            "Word": null
+          },
+          "Examples": []
+        }
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abrigána"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "s.t. that stimulates the appetite."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Maáyung abrigána ang bír,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Beer is good to stimulate the appetite."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abrigána",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "s.t. that stimulates the appetite.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Maáyung abrigána ang bír,",
+                  "Gloss": "Beer is good to stimulate the appetite."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 5,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abrigáwu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "apprentice on a ship."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "one who works on a boat for his passage."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A1; a12]"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be an apprentice, apprentice s.o. to."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "work in lieu of paying passage."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abrigáwu",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Text": "apprentice on a ship.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Text": "one who works on a boat for his passage.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              }
+            ]
+          },
+          {
+            "WordType": "v",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Text": "be an apprentice, apprentice s.o. to.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Text": "work in lieu of paying passage.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              }
+            ],
+            "Classes": [
+              "[A1; a12]"
+            ]
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 12,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abrígu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "shawl."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A1; a]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "wear, make, receive a shawl."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abrígu",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "shawl.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          },
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": "wear, make, receive a shawl.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            },
+            "Classes": [
+              "[A1; a]"
+            ]
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "Abril"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "April."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[a]"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "do s.t. in April."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Magbakasyun mu sa Hunyu? Ah, Abrila lang,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Will you take your vacation in June? Oh, just make it in April."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "write down April in a document."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Máyu ímung nabutang? Abrila lang hinúun,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Did you write May? It should be April."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "Abril",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "April.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          },
+          {
+            "WordType": "v",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Text": "do s.t. in April.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Magbakasyun mu sa Hunyu? Ah, Abrila lang,",
+                      "Gloss": "Will you take your vacation in June? Oh, just make it in April."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Text": "write down April in a document.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Máyu ímung nabutang? Abrila lang hinúun,",
+                      "Gloss": "Did you write May? It should be April."
+                    }
+                  ]
+                }
+              }
+            ],
+            "Classes": [
+              "[a]"
+            ]
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 13,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abriláta"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "can opener."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abriláta",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "can opener.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "absin"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2; b6]"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "absent, fail to attend work or class."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Absínig kas-a nang klasíha nímu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Just miss your class this one time."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "mark one absent."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Absínan tikaw,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I’ll mark you absent."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "absence, time away from class."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Daghag absin nímu Dyú, lagmit ka mahagbung,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "How many absences you have, Joe! You’re likely to flunk."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "hiN-, pala-, absiníru, absinus"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "given to missing classes."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Anus-a gud nà siya makapasar nga absinus man nà sa klási,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "How can he pass if he always misses classes?"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— mayindid"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "absent-minded."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "absin",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Text": "absent, fail to attend work or class.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Absínig kas-a nang klasíha nímu,",
+                      "Gloss": "Just miss your class this one time."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Text": "mark one absent.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Absínan tikaw,",
+                      "Gloss": "I’ll mark you absent."
+                    }
+                  ]
+                }
+              }
+            ],
+            "Classes": [
+              "[A2; b6]"
+            ]
+          },
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "absence, time away from class.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Daghag absin nímu Dyú, lagmit ka mahagbung,",
+                  "Gloss": "How many absences you have, Joe! You’re likely to flunk."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Headword": "hiN-, pala-, absiníru, absinus",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "DefEx": {
+              "Def": {
+                "Text": "given to missing classes.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Anus-a gud nà siya makapasar nga absinus man nà sa klási,",
+                  "Gloss": "How can he pass if he always misses classes?"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Headword": "— mayindid",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "DefEx": {
+              "Def": {
+                "Text": "absent-minded.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 23,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "absinus"
+      },
+      {
+        "Type": "LINK",
+        "Content": "absin"
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "absinus",
+        "DefEx": {
+          "Def": {
+            "Text": null,
+            "Links": [
+              "absin"
+            ],
+            "Word": null
+          },
+          "Examples": []
+        }
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "absulusiyun"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "absolution."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[b6]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "give absolution."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Gilubung siya nga walà gánì kaabsulusyuni,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He was buried without having received absolution."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "absulusiyun",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "absolution.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          },
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": "give absolution.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Gilubung siya nga walà gánì kaabsulusyuni,",
+                  "Gloss": "He was buried without having received absolution."
+                }
+              ]
+            },
+            "Classes": [
+              "[b6]"
+            ]
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 8,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "absuwiltu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "acquitted in court."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A3P; a12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "acquit."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "absuwiltu",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "acquitted in court.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          },
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": "acquit.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            },
+            "Classes": [
+              "[A3P; a12]"
+            ]
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abtung"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "rope used for tying the plow to the crosstree."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abtung",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "rope used for tying the plow to the crosstree.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abuábu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "k.o. fish."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abuábu",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "k.o. fish.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; c]"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "throw grains, throw grains to."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ang bukbukung mais mauy iábud sa manuk,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Throw the beetle-infested corn to the chickens."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "drop grains into a hole in planting."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Mag-abud sila sa ílang baul,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "They will plant their field."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "feed grain into a mill."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "ímu síging abdan (abúran) ang galingan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Keep feeding grains into the mill."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "4"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "supply a factory with raw materials."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Kanang kumpaniyáha mauy tig-abud sa mga papil sa imprinta,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "That company supplies paper to the printing press."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "5"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "feed news, gossip. Aha!"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ikaw diay nag-abud sa mga nutisya,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "So you were the one who spread the news!"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "feed for fowls."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "one’s turn to throw grains."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "ákù na rung abud,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "It’s my turn to feed (the chickens)."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "alabdan"
+      },
+      {
+        "Type": "LINK",
+        "Content": "abud"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "2."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abud, ábud<sub>1</sub>",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Text": "throw grains, throw grains to.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Ang bukbukung mais mauy iábud sa manuk,",
+                      "Gloss": "Throw the beetle-infested corn to the chickens."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Text": "drop grains into a hole in planting.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Mag-abud sila sa ílang baul,",
+                      "Gloss": "They will plant their field."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "3",
+                "DefEx": {
+                  "Def": {
+                    "Text": "feed grain into a mill.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "ímu síging abdan (abúran) ang galingan,",
+                      "Gloss": "Keep feeding grains into the mill."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "4",
+                "DefEx": {
+                  "Def": {
+                    "Text": "supply a factory with raw materials.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Kanang kumpaniyáha mauy tig-abud sa mga papil sa imprinta,",
+                      "Gloss": "That company supplies paper to the printing press."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "5",
+                "DefEx": {
+                  "Def": {
+                    "Text": "feed news, gossip. Aha!",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Ikaw diay nag-abud sa mga nutisya,",
+                      "Gloss": "So you were the one who spread the news!"
+                    }
+                  ]
+                }
+              }
+            ],
+            "Classes": [
+              "[A; c]"
+            ]
+          },
+          {
+            "WordType": "n",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Text": "feed for fowls.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Text": "one’s turn to throw grains.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "ákù na rung abud,",
+                      "Gloss": "It’s my turn to feed (the chickens)."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Headword": "alabdan",
+        "DefEx": {
+          "Def": {
+            "Text": null,
+            "Links": [
+              "abud"
+            ],
+            "Word": null
+          },
+          "Examples": [
+            {
+              "Phrase": "n",
+              "Gloss": "2."
+            }
+          ]
+        }
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 34,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "ábud<sub>2</sub>"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "ornamental bulbous plant: <b lang=\"la\"><i>Eurycles amboinensis</i></b>. The leaves are applied over the bladder to facilitate urination."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "ábud<sub>2</sub>",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "ornamental bulbous plant: <b lang=\"la\"><i>Eurycles amboinensis</i></b>. The leaves are applied over the bladder to facilitate urination.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "ábug<sub>1</sub>"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a]"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "chase, drive, drive away."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abúga ang bábuy ngadtu sa tangkal,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Drive the pig into the pen."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abúgi sa lángaw ang lamísa,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Drive the flies away from the table."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "drive s.o. to do s.t."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ang kaúlaw mauy nag-ábug kanákù pagpaháwà sa ámung lungsud,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Shame drove me to move out of town."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "(→)"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "stick with strips of paper, plastic, etc., attached on one end, used to chase flies away."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "-an(→)"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "an enclosure of the fish corral into which the fish are driven before being caught."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "ábug<sub>1</sub>",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Text": "chase, drive, drive away.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Abúga ang bábuy ngadtu sa tangkal,",
+                      "Gloss": "Drive the pig into the pen."
+                    },
+                    {
+                      "Phrase": "Abúgi sa lángaw ang lamísa,",
+                      "Gloss": "Drive the flies away from the table."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Text": "drive s.o. to do s.t.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Ang kaúlaw mauy nag-ábug kanákù pagpaháwà sa ámung lungsud,",
+                      "Gloss": "Shame drove me to move out of town."
+                    }
+                  ]
+                }
+              }
+            ],
+            "Classes": [
+              "[A; a]"
+            ]
+          }
+        ]
+      },
+      {
+        "Headword": "(→)",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "stick with strips of paper, plastic, etc., attached on one end, used to chase flies away.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Headword": "-an(→)",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "an enclosure of the fish corral into which the fish are driven before being caught.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 19,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "ábug<sub>2</sub>"
+      },
+      {
+        "Type": "LINK",
+        "Content": "abyug"
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "ábug<sub>2</sub>",
+        "DefEx": {
+          "Def": {
+            "Text": null,
+            "Links": [
+              "abyug"
+            ],
+            "Word": null
+          },
+          "Examples": []
+        }
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abugáda"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "female lawyer."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abugáda",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "female lawyer.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abugágu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "dumb lawyer (play on the words"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "abugádu"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "‘lawyer’ and"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "gágu"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "‘stupid’)."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abugágu",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "dumb lawyer (play on the words",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "abugádu",
+                  "Gloss": "‘lawyer’ and"
+                },
+                {
+                  "Phrase": "gágu",
+                  "Gloss": "‘stupid’)."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 7,
     "ParseDiagnostics": []
   }
 ]

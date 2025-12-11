@@ -339,6 +339,30 @@ function Strip-Corr {
     }
 }
 
+# strip punctuation and whitespace only text segments
+# they are from text formatting and usually don't help with definitions or examples
+function Strip-Punct {
+    param (
+        [Parameter(ValueFromPipeline=$true)]
+        $token
+    )
+    process {
+        # If not a TEXT token, pass through unchanged
+        if ($token.Type -ne "TEXT") {
+            $token
+            return
+        }
+
+        $content = $token.Content
+        # If content is only punctuation or whitespace, skip it
+        if ($content -match '^[\s\.,;:!\?\-()"\'']*$') {
+            return
+        }
+
+        # Otherwise, emit the token unchanged
+        $token
+    }
+}
 
 function Get-Token {
     param([object[]]$Tokens, [int]$i)
@@ -538,7 +562,6 @@ function Parse-NumDef {
     }
 }
 
-
 function Parse-WtDef {
     <#
       WTDEF ::= WORDTYPE [CLASS+] ( NUMDEF+ | DEFEX )
@@ -601,6 +624,7 @@ function Parse-WtDef {
 
         $node = [pscustomobject]@{
             WordType     = $wtTok.Content
+            Classes      = $classes
             NumberedDefs = $numdefs
         }
         if ($classes.Count -gt 0) {
@@ -845,7 +869,7 @@ function Tokenize {
         # notes:
         # - corr must be processed before splitting words, since it is usally inside of the word block
         # - split links must be processed before cebuano phrases because of some bad formatting (they use <i lang="ceb"> as a way to make the word "see" italic, e.g. in "see otherword")
-        $token | Strip-Corr | Split-Classes | Split-Cebuano-Words | Split-Types | Split-Nums | Split-Links | Split-Cebuano-Phrases
+        $token | Strip-Corr | Split-Classes | Split-Cebuano-Words | Split-Types | Split-Nums | Split-Links | Split-Cebuano-Phrases | Strip-Punct
     }
 }
 
