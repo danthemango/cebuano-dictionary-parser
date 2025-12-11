@@ -32,7 +32,8 @@ function Remove-PageNums {
     return [regex]::Replace($content, '<span[^>]*class="pagenum"[^>]*>.*?</span>', '', $opts)
 }
 
-function Split-Words {
+# look for paragraphs inside of each letter div
+function Split-Paragraphs {
     param (
         [Parameter(ValueFromPipeline=$true)]
         [xml]$inxml
@@ -46,27 +47,7 @@ function Split-Words {
             $divBodies = $node.ChildNodes | Where-Object class -eq divBody
             foreach ($divBody in $divBodies) {
                 foreach ($para in $divBody.p) {
-                    $cebs = $para.SelectNodes(".//b[@lang='ceb']")
-                    if (-not $cebs -or $cebs.Count -eq 0) { continue }
-
-                    $word = $cebs[0].InnerText
-                    # reduce whitespace
-                    $word = reduceWS($word)
-
-                    if ([string]::IsNullOrEmpty($word)) { continue }
-
-                    # Get all content after the word node by collecting sibling nodes
-                    $wordNode = $cebs[0]
-                    $contentNodes = @()
-                    $node = $wordNode.NextSibling
-                    while ($node) {
-                        $contentNodes += $node
-                        $node = $node.NextSibling
-                    }
-
-                    $content = ($contentNodes | ForEach-Object {
-                        if ($_.NodeType -eq "Text") { $_.Value } else { $_.OuterXml }
-                    }) -join ""
+                    $content = $para.InnerXML
 
                     # remove page numbers
                     $content = Remove-PageNums $content
@@ -82,7 +63,6 @@ function Split-Words {
 
                     [PSCustomObject]@{
                         letter  = $letter
-                        word    = $word
                         tokens = @($contentToken)
                     }
                 }
@@ -127,10 +107,10 @@ function Split-TokensByPattern {
     param (
         [Parameter(ValueFromPipeline=$true)]
         $token,
-        
+
         [Parameter(Mandatory=$true)]
         [string]$pattern,
-        
+
         [Parameter(Mandatory=$true)]
         [string]$tokenType
     )
@@ -203,7 +183,32 @@ function Split-Types {
     }
 }
 
-# parse links
+# find other words that are included
+# they may be separate conjugations listed with their own definitions (including definition types and numbers)
+# other words, variations, conjugations, affixes
+# <b lang=""ceb"">adtuúnun, aladtúun</b>
+function Split-Cebuano {
+    param (
+        [Parameter(ValueFromPipeline=$true)]
+        $token
+    )
+    process {
+        $pattern1 = "<b lang=""ceb"">\s*(.*?)\s*</b>"
+        # the id is likely used to be the target of the internal links, not sure if that information can be used later.
+        $pattern2 = "<b id=""[^""]+"" lang=""ceb"">\s*(.*?)\s*</b>"
+
+        $token | Split-TokensByPattern -pattern $pattern1 -tokenType "WORD" | Split-TokensByPattern -pattern $pattern2 -tokenType "WORD"
+    }
+}
+
+# there are also latin words marked, such as:
+# <b lang="la"><i>Musa textilis</i></b>.
+# <b lang="la"><i>Balamcanda chinensis</i></b>.
+# <b lang="la"><i>Eurycles amboinensis</i></b>.
+# <b lang="la"><i>Persea sp</i></b>.
+# but I think I can just leave them in place, the usually are part of a definition.
+
+# find other words that are being linked to
 # the links are in a span with class "sc", and may or may not be in an <a> (which may be discarded)
 # I'd like to add a new field "links", which is a semicolon-separated list of words that are linked to this one
 # removing the "=", the "short for", and the "see" words before and the optional dot at the end.
@@ -225,10 +230,10 @@ function Split-Links {
 
         $content = $token.Content
         $opts = [System.Text.RegularExpressions.RegexOptions]::Singleline
-        
+
         # Pattern: <span class="sc" ...>...</span> with optional <a> inside
         $pattern = '<span[^>]*class="sc"[^>]*>.*?</span>'
-        
+
         $splits = [regex]::Split($content, $pattern)
         $matches = [regex]::Matches($content, $pattern, $opts)
 
@@ -246,7 +251,7 @@ function Split-Links {
             $beforeText = $beforeText -replace '<i[^>]*lang="ceb"[^>]*>\s*see\s*</i>\s*$', ''
             $beforeText = $beforeText -replace 'short for ?$', ''
             $beforeText = reduceWS($beforeText)
-            
+
             if ($beforeText -ne "") {
                 [PSCustomObject]@{
                     Type    = "TEXT"
@@ -258,11 +263,11 @@ function Split-Links {
         # Alternating: matched span, then content after it
         for ($i = 0; $i -lt $matches.Count; $i++) {
             $spanMatch = $matches[$i].Value
-            
+
             # remove tags
             $linkText = $spanMatch -replace '<[^>]*>', ''
             $linkText = reduceWS($linkText)
-            
+
             [PSCustomObject]@{
                 Type    = "LINK"
                 Content = $linkText
@@ -275,7 +280,7 @@ function Split-Links {
                 # Clean up prefixes and suffixes
                 $afterText = $afterText -replace '^\.?\s*', ''
                 $afterText = reduceWS($afterText)
-                
+
                 if ($afterText -ne "") {
                     [PSCustomObject]@{
                         Type    = "TEXT"
@@ -296,4 +301,4 @@ function Split-Links {
 
 # main
 # Parse words and process their tokens through type and number splitting
-$inxml | Split-Words | foreach { $_.tokens } | Split-Types | Split-Nums | Split-Links
+$inxml | Split-Paragraphs | foreach { $_.tokens } | Split-Cebuano | Split-Types | Split-Nums | Split-Links
