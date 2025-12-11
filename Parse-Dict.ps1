@@ -18,7 +18,6 @@ param (
 # and may also have zero or more numbered definitions
 # there may be a conjugation that is part of a definition (e.g. after the word type or the word conjugation)
 
-
 # Utility function to convert multiple whitespace to single space
 function reduceWS($text) {
     return ($text -replace "\s+", " ").Trim()
@@ -467,6 +466,17 @@ function Parse-Sense {
         Diagnostics = $diag
     }
 }
+
+# a DEF (definition) is a TEXT, LINK, or TEXT+LINK or CEBWORD
+# LET EX (example) be a CEBPHRASE (cebuano phrase block) + TEXT (assumed to be english)
+# let a DEFEX be a block of DEF + a list of zero or more EX
+# let NUMDEF be a NUMBER followed by DEFEX
+# let WTDEF (word type definition) be a WORDTYPE (noun, verb) follow by a DEFEX or list of NUMDEFS
+# let WORDDEF (word definition) be either
+# - a CEBWORD + a list of one or more WTDEF
+# - a CEBWORD + a list of one or more NUMDEF
+# - a CEBWORD + DEFEX
+# each row will have one or more WORDDEF
 
 function Parse-Row {
     <#
