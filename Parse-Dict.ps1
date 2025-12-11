@@ -123,26 +123,6 @@ function Split-Words {
 #     }
 # }
 
-# parse links
-# the links are in a span with class "sc", and may or may not be in an <a> (which may be discarded)
-# I'd like to add a new field "links", which is a semicolon-separated list of words that are linked to this one
-# removing the "=", the "short for", and the "see" words before and the optional dot at the end.
-# e.g.:
-# = <span class="sc" lang="ceb"><a href="#balbal">balbal</a></span>.
-# short for <span class="sc" lang="ceb"><a href="#niadtu">niadtu</a></span>.
-# <i lang="ceb">see</i><span class="sc" lang="ceb"><a href="#abay">abay</a></span>.
-# function Parse-Links {
-#     param (
-#         [Parameter(ValueFromPipeline=$true)]
-#         $item
-#     )
-#     process {
-#         $content = $item.content
-#         $opts = [System.Text.RegularExpressions.RegexOptions]::Singleline
-#         $matches = [regex]::Matches($content, '<span[^>]*class="sc"[^>]*>(.*?)</span>', $opts)
-
-# }
-
 function Split-TokensByPattern {
     param (
         [Parameter(ValueFromPipeline=$true)]
@@ -211,16 +191,109 @@ function Split-Nums {
     }
 }
 
+# parse word types / parts of speech
+# e.g. nouns (<i>n</i>), verbs (<i>v</i>), adjectives (<i>a</i>), etc.
 function Split-Types {
     param (
         [Parameter(ValueFromPipeline=$true)]
         $token
     )
     process {
-        $token | Split-TokensByPattern -pattern "<i>([a-z])</i>" -tokenType "WORDTYPE"
+        $token | Split-TokensByPattern -pattern "<i>([anv])</i>" -tokenType "WORDTYPE"
     }
 }
 
+# parse links
+# the links are in a span with class "sc", and may or may not be in an <a> (which may be discarded)
+# I'd like to add a new field "links", which is a semicolon-separated list of words that are linked to this one
+# removing the "=", the "short for", and the "see" words before and the optional dot at the end.
+# e.g.:
+# = <span class="sc" lang="ceb"><a href="#balbal">balbal</a></span>.
+# short for <span class="sc" lang="ceb"><a href="#niadtu">niadtu</a></span>.
+# <i lang="ceb">see</i><span class="sc" lang="ceb"><a href="#abay">abay</a></span>.
+function Split-Links {
+    param (
+        [Parameter(ValueFromPipeline=$true)]
+        $token
+    )
+    process {
+        # If not a TEXT token, pass through unchanged
+        if ($token.Type -ne "TEXT") {
+            $token
+            return
+        }
+
+        $content = $token.Content
+        $opts = [System.Text.RegularExpressions.RegexOptions]::Singleline
+        
+        # Pattern: <span class="sc" ...>...</span> with optional <a> inside
+        $pattern = '<span[^>]*class="sc"[^>]*>.*?</span>'
+        
+        $splits = [regex]::Split($content, $pattern)
+        $matches = [regex]::Matches($content, $pattern, $opts)
+
+        # If no matches, return original token
+        if ($matches.Count -eq 0) {
+            $token
+            return
+        }
+
+        # Output content before first match (with prefix cleanup)
+        if ($splits[0].Trim() -ne "") {
+            $beforeText = $splits[0]
+            # Remove common prefixes and suffixes before links
+            $beforeText = $beforeText -replace '\s*=\s*$', ''
+            $beforeText = $beforeText -replace '<i[^>]*lang="ceb"[^>]*>\s*see\s*</i>\s*$', ''
+            $beforeText = $beforeText -replace 'short for ?$', ''
+            $beforeText = reduceWS($beforeText)
+            
+            if ($beforeText -ne "") {
+                [PSCustomObject]@{
+                    Type    = "TEXT"
+                    Content = $beforeText
+                }
+            }
+        }
+
+        # Alternating: matched span, then content after it
+        for ($i = 0; $i -lt $matches.Count; $i++) {
+            $spanMatch = $matches[$i].Value
+            
+            # remove tags
+            $linkText = $spanMatch -replace '<[^>]*>', ''
+            $linkText = reduceWS($linkText)
+            
+            [PSCustomObject]@{
+                Type    = "LINK"
+                Content = $linkText
+            }
+
+            # Output content after this match
+            $afterMatch = if ($i + 1 -lt $splits.Count) { $splits[$i + 1] } else { "" }
+            if ($afterMatch.Trim() -ne "") {
+                $afterText = $afterMatch
+                # Clean up prefixes and suffixes
+                $afterText = $afterText -replace '^\.?\s*', ''
+                $afterText = reduceWS($afterText)
+                
+                if ($afterText -ne "") {
+                    [PSCustomObject]@{
+                        Type    = "TEXT"
+                        Content = $afterText
+                    }
+                }
+            }
+        }
+    }
+}
+
+# class
+# <span class=""rm"">[A2; b3c]</span>
+
+# variations
+# other words, conjugations, affixes
+# <b lang=""ceb"">adtuúnun, aladtúun</b>
+
 # main
 # Parse words and process their tokens through type and number splitting
-$inxml | Split-Words | foreach { $_.tokens } | Split-Types | Split-Nums
+$inxml | Split-Words | foreach { $_.tokens } | Split-Types | Split-Nums | Split-Links
