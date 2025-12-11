@@ -4,250 +4,6 @@
     "tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "á"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "particle used as a pause word before starting to speak."
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "1"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "as a filler."
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "á, muanhi ka ugmà?"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "Um, are you going to come here tomorrow?"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "2"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "deprecating or showing unimportance of what just preceded."
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "á, paríha ra nákù,"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "Oh, it’s all the same to me."
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "á, nagkumidiya lang siya,"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "Oh, he’s just joking."
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "3"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "showing mild disapproval."
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "á, dì nà mahímù,"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "Oh, you can’t do that."
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "4"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "recalling or conceding s.t."
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "á, duha diay tu,"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "Oh, yes. There were two of them, weren’t there."
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "4a"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "preceding s.t. just found out."
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "á, Lítu diay ímung ngálan,"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "Oh, so your name is Lito."
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "á, kanindut,"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "Oh, how nice!"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "5"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "expressing relief."
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "á, nahuwasan ku,"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "Ah, what a relief!"
-      }
-    ],
-    "WordDefs": [
-      {
-        "Headword": "á",
-        "DefEx": {
-          "Def": {
-            "Text": "particle used as a pause word before starting to speak.",
-            "Links": [],
-            "Word": null
-          },
-          "Examples": []
-        }
-      }
-    ],
-    "ParseOk": false,
-    "ParseNextIndex": 2,
-    "ParseDiagnostics": [
-      {
-        "Index": 2,
-        "Message": "Trailing token after WORDDEF: NUMBER",
-        "Token": {
-          "Type": "NUMBER",
-          "Content": "1"
-        }
-      }
-    ]
-  },
-  {
-    "letter": "a",
-    "tokens": [
-      {
-        "Type": "CEBWORD",
-        "Content": "à"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "particle preceding or following a sentence with an adjective predicate."
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "1"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "dismissing s.t. as impractical, too easy, impossible, etc."
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "à, mu ra diay nà? Kasayun à!"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "Oh, is that all there is to it? How easy it is!"
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "à, ása man ku mutúu nímu,"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "Hm, you think I could believe you?"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "2"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "showing disapproval."
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "à, hináya nímung mulíhuk,"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "Hm! You sure work slowly!"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "3"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "showing surprise."
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "à, kanindut nímug sinínà,"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "How come you have such a beautiful dress on!"
-      }
-    ],
-    "WordDefs": [
-      {
-        "Headword": "à",
-        "DefEx": {
-          "Def": {
-            "Text": "particle preceding or following a sentence with an adjective predicate.",
-            "Links": [],
-            "Word": null
-          },
-          "Examples": []
-        }
-      }
-    ],
-    "ParseOk": false,
-    "ParseNextIndex": 2,
-    "ParseDiagnostics": [
-      {
-        "Index": 2,
-        "Message": "Trailing token after WORDDEF: NUMBER",
-        "Token": {
-          "Type": "NUMBER",
-          "Content": "1"
-        }
-      }
-    ]
-  },
-  {
-    "letter": "a",
-    "tokens": [
-      {
-        "Type": "CEBWORD",
         "Content": "*abab"
       },
       {
@@ -321,162 +77,6 @@
         "Token": {
           "Type": "WORDTYPE",
           "Content": "n"
-        }
-      }
-    ]
-  },
-  {
-    "letter": "a",
-    "tokens": [
-      {
-        "Type": "CEBWORD",
-        "Content": "ab-ab"
-      },
-      {
-        "Type": "WORDTYPE",
-        "Content": "v"
-      },
-      {
-        "Type": "CLASS",
-        "Content": "[A; a]"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "1"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "chew to pieces."
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "Ab-ábun sa irù ang íyang hikut,"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "The dog will chew up his rope."
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "2"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "eat away, erode."
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "Ang pagluib ni Maríya nag-ab-ab sa íyang balatían,"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "Maria’s infidelity ate away at his insides."
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "Giab-ab ang íyang pinútì sa tayà,"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "His sword was eaten away by rust."
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "3"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "fester."
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "Ang nag-ab-ab kung núka,"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "My festering wound.†"
-      }
-    ],
-    "WordDefs": [],
-    "ParseOk": false,
-    "ParseNextIndex": 0,
-    "ParseDiagnostics": [
-      {
-        "Index": 2,
-        "Message": "DEF: unexpected CLASS",
-        "Token": {
-          "Type": "CLASS",
-          "Content": "[A; a]"
-        }
-      }
-    ]
-  },
-  {
-    "letter": "a",
-    "tokens": [
-      {
-        "Type": "CEBWORD",
-        "Content": "ábag"
-      },
-      {
-        "Type": "WORDTYPE",
-        "Content": "v"
-      },
-      {
-        "Type": "CLASS",
-        "Content": "[A; b]"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "give material help, help do work."
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "Kinsa may mag-ábag nímu sa ímung pag-iskuyla?"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "Who will help pay for your schooling?"
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "Abági ku áring pagsilhig,"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "Help me sweep."
-      },
-      {
-        "Type": "WORDTYPE",
-        "Content": "n"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "help given."
-      },
-      {
-        "Type": "CEBWORD",
-        "Content": "ka-"
-      },
-      {
-        "Type": "WORDTYPE",
-        "Content": "n"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "helper."
-      }
-    ],
-    "WordDefs": [],
-    "ParseOk": false,
-    "ParseNextIndex": 0,
-    "ParseDiagnostics": [
-      {
-        "Index": 2,
-        "Message": "DEF: unexpected CLASS",
-        "Token": {
-          "Type": "CLASS",
-          "Content": "[A; b]"
         }
       }
     ]
@@ -581,16 +181,86 @@
         "Content": "broad-shouldered."
       }
     ],
-    "WordDefs": [],
+    "WordDefs": [
+      {
+        "Headword": "abága",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "shoulder.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          },
+          {
+            "WordType": "v",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Text": "take financial responsibility.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Abagáhun (pangabagáhun, pangabagáhan) ni Mánuy níya ang galastúhan sa pag-iskuyla,",
+                      "Gloss": "His brother will shoulder his school expenses."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Text": "take responsibility for accomplishing s.t.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Kita giyuy muabága (mangabága) áning prugramáha,",
+                      "Gloss": "We must undertake to carry out this program."
+                    }
+                  ]
+                }
+              }
+            ],
+            "Classes": [
+              "[A2SN; b5]"
+            ]
+          }
+        ]
+      },
+      {
+        "Headword": "(→)",
+        "DefEx": {
+          "Def": {
+            "Text": null,
+            "Links": [
+              "abága"
+            ],
+            "Word": null
+          },
+          "Examples": []
+        }
+      }
+    ],
     "ParseOk": false,
-    "ParseNextIndex": 0,
+    "ParseNextIndex": 15,
     "ParseDiagnostics": [
       {
-        "Index": 4,
-        "Message": "DEF: unexpected CLASS",
+        "Index": 15,
+        "Message": "Trailing token after WORDDEF: TEXT",
         "Token": {
-          "Type": "CLASS",
-          "Content": "[A2SN; b5]"
+          "Type": "TEXT",
+          "Content": ","
         }
       }
     ]
@@ -637,105 +307,6 @@
         "Token": {
           "Type": "WORDTYPE",
           "Content": "n"
-        }
-      }
-    ]
-  },
-  {
-    "letter": "a",
-    "tokens": [
-      {
-        "Type": "CEBWORD",
-        "Content": "abaka"
-      },
-      {
-        "Type": "WORDTYPE",
-        "Content": "n"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "1"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "abaca plant: <b lang=\"la\"><i>Musa textilis</i></b>."
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "2"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "abaca fiber."
-      },
-      {
-        "Type": "CEBWORD",
-        "Content": "abakahan, abakanhan, abakal"
-      },
-      {
-        "Type": "WORDTYPE",
-        "Content": "n"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "abaca plantation."
-      },
-      {
-        "Type": "WORDTYPE",
-        "Content": "v"
-      },
-      {
-        "Type": "CLASS",
-        "Content": "[A3]"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "own an abaca plantation."
-      }
-    ],
-    "WordDefs": [
-      {
-        "Headword": "abaka",
-        "WordTypeDefs": [
-          {
-            "WordType": "n",
-            "NumberedDefs": [
-              {
-                "Number": "1",
-                "DefEx": {
-                  "Def": {
-                    "Text": "abaca plant: <b lang=\"la\"><i>Musa textilis</i></b>.",
-                    "Links": [],
-                    "Word": null
-                  },
-                  "Examples": []
-                }
-              },
-              {
-                "Number": "2",
-                "DefEx": {
-                  "Def": {
-                    "Text": "abaca fiber.",
-                    "Links": [],
-                    "Word": null
-                  },
-                  "Examples": []
-                }
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "ParseOk": false,
-    "ParseNextIndex": 6,
-    "ParseDiagnostics": [
-      {
-        "Index": 10,
-        "Message": "DEF: unexpected CLASS",
-        "Token": {
-          "Type": "CLASS",
-          "Content": "[A3]"
         }
       }
     ]

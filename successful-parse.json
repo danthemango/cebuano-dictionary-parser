@@ -247,6 +247,392 @@
     "tokens": [
       {
         "Type": "CEBWORD",
+        "Content": "á"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "particle used as a pause word before starting to speak."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "as a filler."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "á, muanhi ka ugmà?"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Um, are you going to come here tomorrow?"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "deprecating or showing unimportance of what just preceded."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "á, paríha ra nákù,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Oh, it’s all the same to me."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "á, nagkumidiya lang siya,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Oh, he’s just joking."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "showing mild disapproval."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "á, dì nà mahímù,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Oh, you can’t do that."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "4"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "recalling or conceding s.t."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "á, duha diay tu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Oh, yes. There were two of them, weren’t there."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "4a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "preceding s.t. just found out."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "á, Lítu diay ímung ngálan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Oh, so your name is Lito."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "á, kanindut,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Oh, how nice!"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "5"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "expressing relief."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "á, nahuwasan ku,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Ah, what a relief!"
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "á",
+        "DefExLead": {
+          "Def": {
+            "Text": "particle used as a pause word before starting to speak.",
+            "Links": [],
+            "Word": null
+          },
+          "Examples": []
+        },
+        "NumberedDefs": [
+          {
+            "Number": "1",
+            "DefEx": {
+              "Def": {
+                "Text": "as a filler.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "á, muanhi ka ugmà?",
+                  "Gloss": "Um, are you going to come here tomorrow?"
+                }
+              ]
+            }
+          },
+          {
+            "Number": "2",
+            "DefEx": {
+              "Def": {
+                "Text": "deprecating or showing unimportance of what just preceded.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "á, paríha ra nákù,",
+                  "Gloss": "Oh, it’s all the same to me."
+                },
+                {
+                  "Phrase": "á, nagkumidiya lang siya,",
+                  "Gloss": "Oh, he’s just joking."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "3",
+            "DefEx": {
+              "Def": {
+                "Text": "showing mild disapproval.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "á, dì nà mahímù,",
+                  "Gloss": "Oh, you can’t do that."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "4",
+            "DefEx": {
+              "Def": {
+                "Text": "recalling or conceding s.t.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "á, duha diay tu,",
+                  "Gloss": "Oh, yes. There were two of them, weren’t there."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "4a",
+            "DefEx": {
+              "Def": {
+                "Text": "preceding s.t. just found out.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "á, Lítu diay ímung ngálan,",
+                  "Gloss": "Oh, so your name is Lito."
+                },
+                {
+                  "Phrase": "á, kanindut,",
+                  "Gloss": "Oh, how nice!"
+                }
+              ]
+            }
+          },
+          {
+            "Number": "5",
+            "DefEx": {
+              "Def": {
+                "Text": "expressing relief.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "á, nahuwasan ku,",
+                  "Gloss": "Ah, what a relief!"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 30,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "à"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "particle preceding or following a sentence with an adjective predicate."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "dismissing s.t. as impractical, too easy, impossible, etc."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "à, mu ra diay nà? Kasayun à!"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Oh, is that all there is to it? How easy it is!"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "à, ása man ku mutúu nímu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Hm, you think I could believe you?"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "showing disapproval."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "à, hináya nímung mulíhuk,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Hm! You sure work slowly!"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "showing surprise."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "à, kanindut nímug sinínà,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "How come you have such a beautiful dress on!"
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "à",
+        "DefExLead": {
+          "Def": {
+            "Text": "particle preceding or following a sentence with an adjective predicate.",
+            "Links": [],
+            "Word": null
+          },
+          "Examples": []
+        },
+        "NumberedDefs": [
+          {
+            "Number": "1",
+            "DefEx": {
+              "Def": {
+                "Text": "dismissing s.t. as impractical, too easy, impossible, etc.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "à, mu ra diay nà? Kasayun à!",
+                  "Gloss": "Oh, is that all there is to it? How easy it is!"
+                },
+                {
+                  "Phrase": "à, ása man ku mutúu nímu,",
+                  "Gloss": "Hm, you think I could believe you?"
+                }
+              ]
+            }
+          },
+          {
+            "Number": "2",
+            "DefEx": {
+              "Def": {
+                "Text": "showing disapproval.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "à, hináya nímung mulíhuk,",
+                  "Gloss": "Hm! You sure work slowly!"
+                }
+              ]
+            }
+          },
+          {
+            "Number": "3",
+            "DefEx": {
+              "Def": {
+                "Text": "showing surprise.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "à, kanindut nímug sinínà,",
+                  "Gloss": "How come you have such a beautiful dress on!"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 16,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
         "Content": "ā̀"
       },
       {
@@ -454,6 +840,149 @@
     "tokens": [
       {
         "Type": "CEBWORD",
+        "Content": "ab-ab"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a]"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "chew to pieces."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ab-ábun sa irù ang íyang hikut,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The dog will chew up his rope."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "eat away, erode."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ang pagluib ni Maríya nag-ab-ab sa íyang balatían,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Maria’s infidelity ate away at his insides."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Giab-ab ang íyang pinútì sa tayà,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "His sword was eaten away by rust."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "fester."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ang nag-ab-ab kung núka,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "My festering wound.†"
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "ab-ab",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Text": "chew to pieces.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Ab-ábun sa irù ang íyang hikut,",
+                      "Gloss": "The dog will chew up his rope."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Text": "eat away, erode.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Ang pagluib ni Maríya nag-ab-ab sa íyang balatían,",
+                      "Gloss": "Maria’s infidelity ate away at his insides."
+                    },
+                    {
+                      "Phrase": "Giab-ab ang íyang pinútì sa tayà,",
+                      "Gloss": "His sword was eaten away by rust."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "3",
+                "DefEx": {
+                  "Def": {
+                    "Text": "fester.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Ang nag-ab-ab kung núka,",
+                      "Gloss": "My festering wound.†"
+                    }
+                  ]
+                }
+              }
+            ],
+            "Classes": [
+              "[A; a]"
+            ]
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 17,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
         "Content": "abad"
       },
       {
@@ -492,6 +1021,123 @@
     "tokens": [
       {
         "Type": "CEBWORD",
+        "Content": "ábag"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; b]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "give material help, help do work."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Kinsa may mag-ábag nímu sa ímung pag-iskuyla?"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Who will help pay for your schooling?"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abági ku áring pagsilhig,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Help me sweep."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "help given."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "ka-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "helper."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "ábag",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": "give material help, help do work.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Kinsa may mag-ábag nímu sa ímung pag-iskuyla?",
+                  "Gloss": "Who will help pay for your schooling?"
+                },
+                {
+                  "Phrase": "Abági ku áring pagsilhig,",
+                  "Gloss": "Help me sweep."
+                }
+              ]
+            },
+            "Classes": [
+              "[A; b]"
+            ]
+          },
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "help given.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Headword": "ka-",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "helper.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 13,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
         "Content": "abaga"
       },
       {
@@ -523,6 +1169,126 @@
     ],
     "ParseOk": true,
     "ParseNextIndex": 3,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abaka"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "abaca plant: <b lang=\"la\"><i>Musa textilis</i></b>."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "abaca fiber."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "abakahan, abakanhan, abakal"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "abaca plantation."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A3]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "own an abaca plantation."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abaka",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Text": "abaca plant: <b lang=\"la\"><i>Musa textilis</i></b>.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Text": "abaca fiber.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Headword": "abakahan, abakanhan, abakal",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Text": "abaca plantation.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          },
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Text": "own an abaca plantation.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            },
+            "Classes": [
+              "[A3]"
+            ]
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 12,
     "ParseDiagnostics": []
   },
   {

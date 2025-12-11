@@ -538,27 +538,52 @@ function Parse-NumDef {
     }
 }
 
+
 function Parse-WtDef {
     <#
-      WTDEF ::= WORDTYPE ( DEFEX | NUMDEF+ )
+      WTDEF ::= WORDTYPE [CLASS+] ( NUMDEF+ | DEFEX )
+
+      Output examples:
+        When numbered:
+          {
+            WordType     = 'n',
+            Classes      = ['archaic','gram'],
+            NumberedDefs = [ { Number, DefEx }, ... ]
+          }
+
+        When unnumbered:
+          {
+            WordType = 'n',
+            Classes  = ['archaic'],
+            DefEx    = { Def:{Text|Links|Word}, Examples:[...] }
+          }
     #>
     param([object[]]$Tokens, [int]$StartIndex)
     $i = $StartIndex; $diag = @()
 
+    # Require WORDTYPE
     $wtTok = Get-Token $Tokens $i
     if (-not (IsType $wtTok 'WORDTYPE')) {
         return [pscustomobject]@{
             Success     = $false
             NextIndex   = $i
             WtDef       = $null
-            Diagnostics = $diag + [pscustomobject]@{ Index=$i; Message='WTDEF: expected WORDTYPE'; Token=$wtTok }
+            Diagnostics = $diag + [pscustomobject]@{
+                Index = $i; Message = 'WTDEF: expected WORDTYPE'; Token = $wtTok
+            }
         }
     }
     $i++
 
-    # Branch: if next is NUMBER => NUMDEF+
-    $tok = Get-Token $Tokens $i
-    if (IsType $tok 'NUMBER') {
+    # NEW: collect optional CLASS+ right after WORDTYPE (applies to both branches)
+    $classes = @()
+    while (IsType (Get-Token $Tokens $i) 'CLASS') {
+        $classes += (Get-Token $Tokens $i).Content
+        $i++
+    }
+
+    # Branch A: NUMDEF+ (NUMBER DEFEX), after optional classes
+    if (IsType (Get-Token $Tokens $i) 'NUMBER') {
         $numdefs = @()
         while (IsType (Get-Token $Tokens $i) 'NUMBER') {
             $nd = Parse-NumDef -Tokens $Tokens -StartIndex $i
@@ -573,18 +598,24 @@ function Parse-WtDef {
             $numdefs += $nd.NumDef
             $i = $nd.NextIndex
         }
+
+        $node = [pscustomobject]@{
+            WordType     = $wtTok.Content
+            NumberedDefs = $numdefs
+        }
+        if ($classes.Count -gt 0) {
+            $node | Add-Member -NotePropertyName Classes -NotePropertyValue $classes -Force
+        }
+
         return [pscustomobject]@{
-            Success   = $true
-            NextIndex = $i
-            WtDef     = [pscustomobject]@{
-                WordType    = $wtTok.Content
-                NumberedDefs= $numdefs
-            }
+            Success     = $true
+            NextIndex   = $i
+            WtDef       = $node
             Diagnostics = $diag
         }
     }
 
-    # Otherwise DEFEX
+    # Branch B: DEFEX (unnumbered), after optional classes
     $defex = Parse-DefEx -Tokens $Tokens -StartIndex $i
     if (-not $defex.Success) {
         return [pscustomobject]@{
@@ -596,17 +627,21 @@ function Parse-WtDef {
     }
     $i = $defex.NextIndex
 
-    [pscustomobject]@{
-        Success   = $true
-        NextIndex = $i
-        WtDef     = [pscustomobject]@{
-            WordType = $wtTok.Content
-            DefEx    = $defex.DefEx
-        }
+    $node2 = [pscustomobject]@{
+        WordType = $wtTok.Content
+        DefEx    = $defex.DefEx
+    }
+    if ($classes.Count -gt 0) {
+        $node2 | Add-Member -NotePropertyName Classes -NotePropertyValue $classes -Force
+    }
+
+    return [pscustomobject]@{
+        Success     = $true
+        NextIndex   = $i
+        WtDef       = $node2
         Diagnostics = $diag
     }
 }
-
 
 function Parse-WordDef {
     <#
@@ -831,20 +866,6 @@ $paragraphs | foreach {
         Content=""
     }
 } | Tokenize | Export-Csv -Encoding utf8 -NoTypeInformation -Path "tokenlist.csv"
-
-# tokenize each paragraph
-# $inxml |
-#     Split-Paragraphs |
-#     ForEach-Object {
-#         $_.Tokens = ($_.Tokens |
-#             Strip-Corr |
-#             Split-Classes |
-#             Split-Cebuano-Words |
-#             Split-Types |
-#             Split-Nums |
-#             Split-Links)
-#         $_  # emit the updated object
-#     }
 
 $parsed = $paragraphs |
     ForEach-Object {
