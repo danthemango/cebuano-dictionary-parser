@@ -29,6 +29,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "letter A.",
@@ -177,6 +178,7 @@
         "NumberedDefs": [
           {
             "Number": "1",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "affix added to nouns forming words which refer to a specific one of several:",
@@ -197,6 +199,7 @@
           },
           {
             "Number": "1a",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "added to possessive pronouns: the particular one that belongs to [so-and-so].",
@@ -213,6 +216,7 @@
           },
           {
             "Number": "2",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "affix added to adjectives to form exclamation.",
@@ -380,6 +384,7 @@
         "NumberedDefs": [
           {
             "Number": "1",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "as a filler.",
@@ -396,6 +401,7 @@
           },
           {
             "Number": "2",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "deprecating or showing unimportance of what just preceded.",
@@ -416,6 +422,7 @@
           },
           {
             "Number": "3",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "showing mild disapproval.",
@@ -432,6 +439,7 @@
           },
           {
             "Number": "4",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "recalling or conceding s.t.",
@@ -448,6 +456,7 @@
           },
           {
             "Number": "4a",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "preceding s.t. just found out.",
@@ -468,6 +477,7 @@
           },
           {
             "Number": "5",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "expressing relief.",
@@ -571,6 +581,7 @@
         "NumberedDefs": [
           {
             "Number": "1",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "dismissing s.t. as impractical, too easy, impossible, etc.",
@@ -591,6 +602,7 @@
           },
           {
             "Number": "2",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "showing disapproval.",
@@ -607,6 +619,7 @@
           },
           {
             "Number": "3",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "showing surprise.",
@@ -681,6 +694,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "breast of fowls.",
@@ -919,6 +933,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "chew to pieces.",
@@ -935,6 +950,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "eat away, erode.",
@@ -955,6 +971,7 @@
               },
               {
                 "Number": "3",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "fester.",
@@ -1000,6 +1017,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "abbot.",
@@ -1078,6 +1096,9 @@
         "WordTypeDefs": [
           {
             "WordType": "v",
+            "Classes": [
+              "[A; b]"
+            ],
             "DefEx": {
               "Def": {
                 "Text": "give material help, help do work.",
@@ -1098,6 +1119,7 @@
           },
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "help given.",
@@ -1114,6 +1136,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "helper.",
@@ -1152,6 +1175,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "sweet potatoes growing from the outer vines and not from the main root.",
@@ -1230,6 +1254,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "abaca plant: <b lang=\"la\"><i>Musa textilis</i></b>.",
@@ -1241,6 +1266,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "abaca fiber.",
@@ -1259,6 +1285,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "abaca plantation.",
@@ -1270,6 +1297,9 @@
           },
           {
             "WordType": "v",
+            "Classes": [
+              "[A3]"
+            ],
             "DefEx": {
               "Def": {
                 "Text": "own an abaca plantation.",
@@ -1308,6 +1338,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "alphabet.",
@@ -1385,6 +1416,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": null,
@@ -1398,6 +1430,7 @@
           },
           {
             "WordType": "v",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": null,
@@ -1466,6 +1499,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "assessed value.",
@@ -1477,6 +1511,9 @@
           },
           {
             "WordType": "v",
+            "Classes": [
+              "[AB56; b5c]"
+            ],
             "DefEx": {
               "Def": {
                 "Text": "assess, be assessed at.",
@@ -1532,6 +1569,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "assessment.",
@@ -1627,6 +1665,9 @@
         "WordTypeDefs": [
           {
             "WordType": "v",
+            "Classes": [
+              "[A3P; c1]"
+            ],
             "DefEx": {
               "Def": {
                 "Text": "abandon, neglect.",
@@ -1656,6 +1697,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "abandoned.",
@@ -1667,6 +1709,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "neglectful.",
@@ -1680,6 +1723,7 @@
           },
           {
             "WordType": "v",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": null,
@@ -1734,6 +1778,270 @@
     "tokens": [
       {
         "Type": "CEBWORD",
+        "Content": "ábang"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2S; b]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "rent."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ang usa ka kwartu giabángan sa tigúlang,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The old man rents one of the rooms."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[b]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "hire a prostitute."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2; c]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "make an offering to a supernatural being for the use of land which is thought to be in his possession."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Iábang ni nákung baktína álang sa uma,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I will sacrifice this pig as rental for the land."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "rent paid."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Pilay ábang nímu sa libru?"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "How much rent did you pay for the book?"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "money paid a prostitute."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "toil taken by supernatural beings."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Kadtung nalumus dinhi ábang kunu tu sa ingkantu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The man who drowned here is said to have been the rent collected by the supernatural spirit."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "paN-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "patronize a prostitute. <b lang=\"ceb\">-an(→)"
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "ábang",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "Classes": [
+                  "[A2S; b]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Text": "rent.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Ang usa ka kwartu giabángan sa tigúlang,",
+                      "Gloss": "The old man rents one of the rooms."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "Classes": [
+                  "[b]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Text": "hire a prostitute.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "3",
+                "Classes": [
+                  "[A2; c]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Text": "make an offering to a supernatural being for the use of land which is thought to be in his possession.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Iábang ni nákung baktína álang sa uma,",
+                      "Gloss": "I will sacrifice this pig as rental for the land."
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "WordType": "n",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "Classes": [],
+                "DefEx": {
+                  "Def": {
+                    "Text": "rent paid.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Pilay ábang nímu sa libru?",
+                      "Gloss": "How much rent did you pay for the book?"
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "Classes": [],
+                "DefEx": {
+                  "Def": {
+                    "Text": "money paid a prostitute.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "3",
+                "Classes": [],
+                "DefEx": {
+                  "Def": {
+                    "Text": "toil taken by supernatural beings.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Kadtung nalumus dinhi ábang kunu tu sa ingkantu,",
+                      "Gloss": "The man who drowned here is said to have been the rent collected by the supernatural spirit."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Headword": "paN-",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "Classes": [
+              "[A2]"
+            ],
+            "DefEx": {
+              "Def": {
+                "Text": "patronize a prostitute. <b lang=\"ceb\">-an(→)",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 30,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
         "Content": "abánid"
       },
       {
@@ -1779,6 +2087,9 @@
         "WordTypeDefs": [
           {
             "WordType": "v",
+            "Classes": [
+              "[A; c1]"
+            ],
             "DefEx": {
               "Def": {
                 "Text": "do s.t. step by step, and in sequence.",
@@ -1795,6 +2106,7 @@
           },
           {
             "WordType": "a",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "done in succession, order.",
@@ -1866,6 +2178,7 @@
         "WordTypeDefs": [
           {
             "WordType": "a",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "exposed to the wind.",
@@ -1877,6 +2190,9 @@
           },
           {
             "WordType": "v",
+            "Classes": [
+              "[B12; c1]"
+            ],
             "DefEx": {
               "Def": {
                 "Text": "for s.t. to be directly open to the wind.",
@@ -1936,6 +2252,9 @@
         "WordTypeDefs": [
           {
             "WordType": "v",
+            "Classes": [
+              "[A]"
+            ],
             "DefEx": {
               "Def": {
                 "Text": "advance, for a body of people to move forward.",
@@ -1955,6 +2274,861 @@
     ],
     "ParseOk": true,
     "ParseNextIndex": 6,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abanti"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "forward, ahead."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abanti ka rang milingkud,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "You took a seat too far to the front."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "ahead in score."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1a"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2; c]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "move forward."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Muabanti kag diyútay, matambug ka sa bangag,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "If you move forward any more, you will fall into the hole."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Iabanti nang ímung awtug diyútay,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Move your car forward a bit."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1b"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be ahead, have more points in a game."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Naabantíhan mu námug diyis puntus,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "We were ten points ahead of you."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2; a12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "keep up with s.t."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Dì ku makaabanti sa galastúhan sa iskuylahan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I cannot keep up with the school payments."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2; a12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "endure work."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Dì ku makaabanti sa pagdáru kay dautun ku,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I can’t keep up with the plowing because I’m sickly."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "4a"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "ask part payment in advance, especially in salary."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "4b"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[c]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "give s.o. a cash advance on his salary or other payment."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "front wheel(s)."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nahiyus ang abanti sa mutur,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The front tire of the motorcycle is flat."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "forward gear."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "front seat in a car."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "atras —"
+      },
+      {
+        "Type": "LINK",
+        "Content": "atras"
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abanti",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "Classes": [],
+                "DefEx": {
+                  "Def": {
+                    "Text": "forward, ahead.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Abanti ka rang milingkud,",
+                      "Gloss": "You took a seat too far to the front."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "Classes": [],
+                "DefEx": {
+                  "Def": {
+                    "Text": "ahead in score.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              }
+            ]
+          },
+          {
+            "WordType": "v",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1a",
+                "Classes": [
+                  "[A2; c]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Text": "move forward.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Muabanti kag diyútay, matambug ka sa bangag,",
+                      "Gloss": "If you move forward any more, you will fall into the hole."
+                    },
+                    {
+                      "Phrase": "Iabanti nang ímung awtug diyútay,",
+                      "Gloss": "Move your car forward a bit."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "1b",
+                "Classes": [
+                  "[A; a]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Text": "be ahead, have more points in a game.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Naabantíhan mu námug diyis puntus,",
+                      "Gloss": "We were ten points ahead of you."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "Classes": [
+                  "[A2; a12]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Text": "keep up with s.t.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Dì ku makaabanti sa galastúhan sa iskuylahan,",
+                      "Gloss": "I cannot keep up with the school payments."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "3",
+                "Classes": [
+                  "[A2; a12]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Text": "endure work.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Dì ku makaabanti sa pagdáru kay dautun ku,",
+                      "Gloss": "I can’t keep up with the plowing because I’m sickly."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "4a",
+                "Classes": [
+                  "[A]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Text": "ask part payment in advance, especially in salary.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "4b",
+                "Classes": [
+                  "[c]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Text": "give s.o. a cash advance on his salary or other payment.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              }
+            ]
+          },
+          {
+            "WordType": "n",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "Classes": [],
+                "DefEx": {
+                  "Def": {
+                    "Text": "front wheel(s).",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Nahiyus ang abanti sa mutur,",
+                      "Gloss": "The front tire of the motorcycle is flat."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "Classes": [],
+                "DefEx": {
+                  "Def": {
+                    "Text": "forward gear.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "3",
+                "Classes": [],
+                "DefEx": {
+                  "Def": {
+                    "Text": "front seat in a car.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Headword": "atras —",
+        "DefEx": {
+          "Def": {
+            "Text": null,
+            "Links": [
+              "atras"
+            ],
+            "Word": null
+          },
+          "Examples": []
+        }
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 48,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abánu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "factory-made cigar."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "make into a cigar."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A123S]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "have, obtain a cigar."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "paN-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "smoke a cigar."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abánu",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "Classes": [],
+            "DefEx": {
+              "Def": {
+                "Text": "factory-made cigar.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          },
+          {
+            "WordType": "v",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "Classes": [
+                  "[A; a12]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Text": "make into a cigar.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "2",
+                "Classes": [
+                  "[A123S]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Text": "have, obtain a cigar.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Headword": "paN-",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "Classes": [
+              "[A2]"
+            ],
+            "DefEx": {
+              "Def": {
+                "Text": "smoke a cigar.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 14,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abat"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "any supernatural being or human with supernatural powers which shows itself in an unexpected and startling way."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "one who is ‘it’ in games."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2; a2]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "head off s.o."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Maapsan pa nímu siya ug ímung abatun sa iskína,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "You can still catch up with him if you head him off at the corner."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[AN; a12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "frighten s.o. by appearing suddenly or otherwise startling him."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ig-ági níya, abta siya,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "When he comes by, give him a scare."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "alabtan, abtanan"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "haunted, place where things appear suddenly."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "alabtun"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "s.o. to whom spirits tend to show themselves."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "abat-ábat"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "game of tag."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A13]"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "play tag."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "try to meet without succeeding."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Wà giyud mi magkítà, nag-abat-ábat lang,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "We just kept missing each other."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abat",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "Classes": [],
+                "DefEx": {
+                  "Def": {
+                    "Text": "any supernatural being or human with supernatural powers which shows itself in an unexpected and startling way.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "2",
+                "Classes": [],
+                "DefEx": {
+                  "Def": {
+                    "Text": "one who is ‘it’ in games.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              }
+            ]
+          },
+          {
+            "WordType": "v",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "Classes": [
+                  "[A2; a2]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Text": "head off s.o.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Maapsan pa nímu siya ug ímung abatun sa iskína,",
+                      "Gloss": "You can still catch up with him if you head him off at the corner."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "Classes": [
+                  "[AN; a12]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Text": "frighten s.o. by appearing suddenly or otherwise startling him.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Ig-ági níya, abta siya,",
+                      "Gloss": "When he comes by, give him a scare."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Headword": "alabtan, abtanan",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "Classes": [],
+            "DefEx": {
+              "Def": {
+                "Text": "haunted, place where things appear suddenly.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Headword": "alabtun",
+        "DefEx": {
+          "Def": {
+            "Text": "s.o. to whom spirits tend to show themselves.",
+            "Links": [],
+            "Word": null
+          },
+          "Examples": []
+        }
+      },
+      {
+        "Headword": "abat-ábat",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "Classes": [],
+            "DefEx": {
+              "Def": {
+                "Text": "game of tag.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          },
+          {
+            "WordType": "v",
+            "Classes": [
+              "[A13]"
+            ],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "Classes": [],
+                "DefEx": {
+                  "Def": {
+                    "Text": "play tag.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "2",
+                "Classes": [],
+                "DefEx": {
+                  "Def": {
+                    "Text": "try to meet without succeeding.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Wà giyud mi magkítà, nag-abat-ábat lang,",
+                      "Gloss": "We just kept missing each other."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 33,
     "ParseDiagnostics": []
   },
   {
@@ -2003,6 +3177,9 @@
         "WordTypeDefs": [
           {
             "WordType": "v",
+            "Classes": [
+              "[A2S; b6]"
+            ],
             "DefEx": {
               "Def": {
                 "Text": "hold on to s.t. fixed to support oneself.",
@@ -2024,6 +3201,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "a railing in shape of a ladder for baby to cling to when he starts to walk.",
@@ -2038,6 +3216,176 @@
     ],
     "ParseOk": true,
     "ParseNextIndex": 9,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "ábat<sub>2</sub>"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a1]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "feel with the hands, esp. to find s.t. out."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nag-ábat siya sa yáwi sa íyang bulsa kung wà ba hibyai,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He felt for the key in his pocket to see if he hadn’t left it behind."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abátun ku ang íyang agtang ug hilanatun ba,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I’ll touch her forehead to see if she is feverish."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A123S; a12b2]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "feel s.t. with the sense of touch."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nakaabat ku sa kabugnaw sa sinihan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I felt the coolness of the movie house."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abátun gánì nímu ang kasakit, musamut giyud,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "If you think about the pain, it will get worse."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A123S; b2]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "happen to notice, sense s.t."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nakaabat kung mu rag may misaka sa ámung báy,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I sensed that s.o. had entered our house."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "ábat<sub>2</sub>",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "Classes": [
+                  "[A; a1]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Text": "feel with the hands, esp. to find s.t. out.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Nag-ábat siya sa yáwi sa íyang bulsa kung wà ba hibyai,",
+                      "Gloss": "He felt for the key in his pocket to see if he hadn’t left it behind."
+                    },
+                    {
+                      "Phrase": "Abátun ku ang íyang agtang ug hilanatun ba,",
+                      "Gloss": "I’ll touch her forehead to see if she is feverish."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "Classes": [
+                  "[A123S; a12b2]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Text": "feel s.t. with the sense of touch.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Nakaabat ku sa kabugnaw sa sinihan,",
+                      "Gloss": "I felt the coolness of the movie house."
+                    },
+                    {
+                      "Phrase": "Abátun gánì nímu ang kasakit, musamut giyud,",
+                      "Gloss": "If you think about the pain, it will get worse."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "3",
+                "Classes": [
+                  "[A123S; b2]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Text": "happen to notice, sense s.t.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Nakaabat kung mu rag may misaka sa ámung báy,",
+                      "Gloss": "I sensed that s.o. had entered our house."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 21,
     "ParseDiagnostics": []
   },
   {
@@ -2083,6 +3431,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "k.o. snapper with a yellow streak along the body: <b><i>Lutianus sp</i></b>.",
@@ -2165,6 +3514,9 @@
         "WordTypeDefs": [
           {
             "WordType": "v",
+            "Classes": [
+              "[A; b5]"
+            ],
             "DefEx": {
               "Def": {
                 "Text": "diminish s.t. by taking away or destroying part of it.",
@@ -2181,6 +3533,7 @@
           },
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "hole left when s.t. is chopped off, out.",
@@ -2197,6 +3550,7 @@
           },
           {
             "WordType": "a",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "done in such a way that s.t. is chopped off.",
@@ -2295,6 +3649,7 @@
         "WordTypeDefs": [
           {
             "WordType": "a",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "musty and flat in smell: damp clothing, rice, sweet potatoes, salted fish, et al.",
@@ -2306,6 +3661,9 @@
           },
           {
             "WordType": "v",
+            "Classes": [
+              "[B; b6]"
+            ],
             "DefEx": {
               "Def": {
                 "Text": "be, become musty.",
@@ -2322,6 +3680,7 @@
         "WordTypeDefs": [
           {
             "WordType": "a",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "of a musty kind.",
@@ -2384,6 +3743,9 @@
         "WordTypeDefs": [
           {
             "WordType": "v",
+            "Classes": [
+              "[A; a12]"
+            ],
             "DefEx": {
               "Def": {
                 "Text": "show hospitality to.",
@@ -2405,6 +3767,7 @@
         "WordTypeDefs": [
           {
             "WordType": "a",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "hospitable.",
@@ -2475,6 +3838,9 @@
         "WordTypeDefs": [
           {
             "WordType": "v",
+            "Classes": [
+              "[A; b5]"
+            ],
             "DefEx": {
               "Def": {
                 "Text": "cheer one on, encourage to do.",
@@ -2491,6 +3857,7 @@
           },
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "encouragement, egging on.",
@@ -2507,6 +3874,7 @@
         "WordTypeDefs": [
           {
             "WordType": "a",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "giving encouragement, egging on.",
@@ -2639,6 +4007,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "ability, capacity or skill to accomplish s.t.",
@@ -2650,6 +4019,9 @@
           },
           {
             "WordType": "v",
+            "Classes": [
+              "[A12]"
+            ],
             "DefEx": {
               "Def": {
                 "Text": "obtain a certain ability.",
@@ -2666,6 +4038,7 @@
         "WordTypeDefs": [
           {
             "WordType": "a",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "skilled, able.",
@@ -2745,6 +4118,7 @@
         "WordTypeDefs": [
           {
             "WordType": "a",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "tan-colored shoes.",
@@ -2756,6 +4130,7 @@
           },
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "tan polish.",
@@ -2767,6 +4142,9 @@
           },
           {
             "WordType": "v",
+            "Classes": [
+              "[A13]"
+            ],
             "DefEx": {
               "Def": {
                 "Text": "polish shoes with a light tan polish, color them tan.",
@@ -2888,6 +4266,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "engage in an enterprise or game together.",
@@ -2904,6 +4283,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "ally on oneself with.",
@@ -2926,6 +4306,7 @@
           },
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "partner in business or game.",
@@ -2947,6 +4328,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": null,
@@ -3043,6 +4425,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "adventures.",
@@ -3054,6 +4437,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "adventure film, story.",
@@ -3078,6 +4462,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "try going s.w. for the adventure of it.",
@@ -3094,6 +4479,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": null,
@@ -3184,6 +4570,9 @@
         "WordTypeDefs": [
           {
             "WordType": "v",
+            "Classes": [
+              "[AN; b5]"
+            ],
             "DefEx": {
               "Def": {
                 "Text": "try one’s luck.",
@@ -3222,6 +4611,7 @@
         "WordTypeDefs": [
           {
             "WordType": "a",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "adventurous, tending to try things out without knowing the outcome.",
@@ -3361,6 +4751,7 @@
         "NumberedDefs": [
           {
             "Number": "1",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "particle used in calling attention to a point in contention.",
@@ -3377,6 +4768,7 @@
           },
           {
             "Number": "1a",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "particle used in inciting a person to do s.t.",
@@ -3397,6 +4789,7 @@
           },
           {
             "Number": "2",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "pause word expressing hesitation when one doesn’t know how to do s.t.",
@@ -3413,6 +4806,7 @@
           },
           {
             "Number": "3",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": null,
@@ -3431,6 +4825,9 @@
         "WordTypeDefs": [
           {
             "WordType": "v",
+            "Classes": [
+              "[AN; ac]"
+            ],
             "DefEx": {
               "Def": {
                 "Text": "try one’s luck, take a stab at.",
@@ -3538,6 +4935,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "average, the usual size or quantity.",
@@ -3549,6 +4947,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "average rating in school.",
@@ -3573,6 +4972,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "average so and so much.",
@@ -3589,6 +4989,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "have an average grade of.",
@@ -3669,6 +5070,7 @@
         "WordTypeDefs": [
           {
             "WordType": "a",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "be broken, inoperative.",
@@ -3686,6 +5088,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "for an engine to break down.",
@@ -3702,6 +5105,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "be under the weather.",
@@ -3814,6 +5218,9 @@
         "WordTypeDefs": [
           {
             "WordType": "v",
+            "Classes": [
+              "[A; ab7]"
+            ],
             "DefEx": {
               "Def": {
                 "Text": "slice with a curved blade, cut a small or thin part from a bigger piece.",
@@ -3835,6 +5242,9 @@
         "WordTypeDefs": [
           {
             "WordType": "v",
+            "Classes": [
+              "[A2]"
+            ],
             "DefEx": {
               "Def": {
                 "Text": "slice the terminal portion of a coconut bud to induce sap flow.",
@@ -3854,6 +5264,133 @@
     ],
     "ParseOk": true,
     "ParseNextIndex": 12,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abísu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "announcement of s.t. to come."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; c]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "announce s.t. to come."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nag-abísu ang radyu nga adúnay bagyung umaábut,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The radio announced that there is a typhoon coming."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "receive an announcement."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nakaabísu ming way túbig ugmà,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "We received the announcement that there would be no water tomorrow."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abísu",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "Classes": [],
+            "DefEx": {
+              "Def": {
+                "Text": "announcement of s.t. to come.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          },
+          {
+            "WordType": "v",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "Classes": [
+                  "[A; c]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Text": "announce s.t. to come.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Nag-abísu ang radyu nga adúnay bagyung umaábut,",
+                      "Gloss": "The radio announced that there is a typhoon coming."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "Classes": [
+                  "[A12]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Text": "receive an announcement.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Nakaabísu ming way túbig ugmà,",
+                      "Gloss": "We received the announcement that there would be no water tomorrow."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 14,
     "ParseDiagnostics": []
   },
   {
@@ -3921,6 +5458,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "habit, a distinctive apparel worn by devotees, priests, monks, and the like.",
@@ -3932,6 +5470,9 @@
           },
           {
             "WordType": "v",
+            "Classes": [
+              "[A]"
+            ],
             "DefEx": {
               "Def": {
                 "Text": "wear a habit.",
@@ -3998,6 +5539,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "food, provisions, money, supplies for daily consumption.",
@@ -4009,6 +5551,9 @@
           },
           {
             "WordType": "v",
+            "Classes": [
+              "[A; c]"
+            ],
             "DefEx": {
               "Def": {
                 "Text": "provide food, etc.",
@@ -4068,6 +5613,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "airplane.",
@@ -4084,6 +5630,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "group of airplanes.",
@@ -4134,6 +5681,9 @@
         "WordTypeDefs": [
           {
             "WordType": "v",
+            "Classes": [
+              "[A; a]"
+            ],
             "DefEx": {
               "Def": {
                 "Text": "dig up, out.",
@@ -4245,6 +5795,9 @@
         "WordTypeDefs": [
           {
             "WordType": "v",
+            "Classes": [
+              "[A; c]"
+            ],
             "DefEx": {
               "Def": {
                 "Text": "speak to s.o. with some purpose in mind.",
@@ -4265,6 +5818,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "persuasive talk.",
@@ -4281,6 +5835,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "big talk.",
@@ -4304,6 +5859,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "art or technique of expressing one’s viewpoint.",
@@ -4383,6 +5939,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "delivered in spoken fashion.",
@@ -4399,6 +5956,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "lines of a play.",
@@ -4412,6 +5970,9 @@
           },
           {
             "WordType": "v",
+            "Classes": [
+              "[A]"
+            ],
             "DefEx": {
               "Def": {
                 "Text": "speak lines.",
@@ -4615,6 +6176,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "open s.t., be open.",
@@ -4635,6 +6197,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "begin, start a class, business, etc.",
@@ -4655,6 +6218,7 @@
               },
               {
                 "Number": "3",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "found, establish an enterprise.",
@@ -4677,6 +6241,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "opening.",
@@ -4693,6 +6258,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "opening of classes.",
@@ -4710,6 +6276,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "open.",
@@ -4726,6 +6293,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "be started.",
@@ -4869,6 +6437,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "sudden.",
@@ -4885,6 +6454,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "brusque.",
@@ -4904,6 +6474,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "be sudden, do s.t. by plunging right into it.",
@@ -4915,6 +6486,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "be brusque.",
@@ -4980,6 +6552,9 @@
         "WordTypeDefs": [
           {
             "WordType": "v",
+            "Classes": [
+              "[AC; bc3]"
+            ],
             "DefEx": {
               "Def": {
                 "Text": "walk side by side with.",
@@ -5039,6 +6614,9 @@
         "WordTypeDefs": [
           {
             "WordType": "v",
+            "Classes": [
+              "[C2; c2]"
+            ],
             "DefEx": {
               "Def": {
                 "Text": "promenade arm in arm or side by side.",
@@ -5134,6 +6712,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "opener.†",
@@ -5211,6 +6790,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "s.t. that stimulates the appetite.",
@@ -5294,6 +6874,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "apprentice on a ship.",
@@ -5305,6 +6886,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "one who works on a boat for his passage.",
@@ -5324,6 +6906,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "be an apprentice, apprentice s.o. to.",
@@ -5335,6 +6918,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "work in lieu of paying passage.",
@@ -5387,6 +6971,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "shawl.",
@@ -5398,6 +6983,9 @@
           },
           {
             "WordType": "v",
+            "Classes": [
+              "[A1; a]"
+            ],
             "DefEx": {
               "Def": {
                 "Text": "wear, make, receive a shawl.",
@@ -5476,6 +7064,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "April.",
@@ -5493,6 +7082,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "do s.t. in April.",
@@ -5509,6 +7099,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "write down April in a document.",
@@ -5554,6 +7145,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "can opener.",
@@ -5678,6 +7270,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "absent, fail to attend work or class.",
@@ -5694,6 +7287,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "mark one absent.",
@@ -5712,6 +7306,7 @@
           },
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "absence, time away from class.",
@@ -5733,6 +7328,7 @@
         "WordTypeDefs": [
           {
             "WordType": "a",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "given to missing classes.",
@@ -5754,6 +7350,7 @@
         "WordTypeDefs": [
           {
             "WordType": "a",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "absent-minded.",
@@ -5843,6 +7440,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "absolution.",
@@ -5854,6 +7452,9 @@
           },
           {
             "WordType": "v",
+            "Classes": [
+              "[b6]"
+            ],
             "DefEx": {
               "Def": {
                 "Text": "give absolution.",
@@ -5909,6 +7510,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "acquitted in court.",
@@ -5920,6 +7522,9 @@
           },
           {
             "WordType": "v",
+            "Classes": [
+              "[A3P; a12]"
+            ],
             "DefEx": {
               "Def": {
                 "Text": "acquit.",
@@ -5934,6 +7539,328 @@
     ],
     "ParseOk": true,
     "ParseNextIndex": 6,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abtik"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "nimble, quick in reaction."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ang musáyaw sa tinikling kinahanglang abtik ug tiil,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Whoever dances the"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "tinikling"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "has to have nimble feet."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "fast, live in action."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Mahuman ni dáyug abtik lang mutrabáhu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "It will get done right away if you work rapidly."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "cunning, sly."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abtik giyud siya kay midáwat imbis mubáyad,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He sure is sharp. Instead of paying as he should have, he got paid."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B]"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "get to be nimble."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "get to be fast in action."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Muabtik (maabtik) lagi ang íyang panglíhuk basta pakit-ug sápì,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He’ll get moving fast as long as you show him money."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "get to be cunning, sly."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "4"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[b4(1)]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "outsmart."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Naabtikan sad ku sa bátà,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The child put one over on me."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "paN-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2; b6]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "engage in chicanery."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ayaw kug pangabtíki kay suhítu ku,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Don’t try to put a fast one over on me, because I know my way around."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abtik",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "Classes": [],
+                "DefEx": {
+                  "Def": {
+                    "Text": "nimble, quick in reaction.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Ang musáyaw sa tinikling kinahanglang abtik ug tiil,",
+                      "Gloss": "Whoever dances the"
+                    },
+                    {
+                      "Phrase": "tinikling",
+                      "Gloss": "has to have nimble feet."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "Classes": [],
+                "DefEx": {
+                  "Def": {
+                    "Text": "fast, live in action.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Mahuman ni dáyug abtik lang mutrabáhu,",
+                      "Gloss": "It will get done right away if you work rapidly."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "3",
+                "Classes": [],
+                "DefEx": {
+                  "Def": {
+                    "Text": "cunning, sly.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Abtik giyud siya kay midáwat imbis mubáyad,",
+                      "Gloss": "He sure is sharp. Instead of paying as he should have, he got paid."
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "WordType": "v",
+            "Classes": [
+              "[B]"
+            ],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "Classes": [],
+                "DefEx": {
+                  "Def": {
+                    "Text": "get to be nimble.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "2",
+                "Classes": [],
+                "DefEx": {
+                  "Def": {
+                    "Text": "get to be fast in action.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Muabtik (maabtik) lagi ang íyang panglíhuk basta pakit-ug sápì,",
+                      "Gloss": "He’ll get moving fast as long as you show him money."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "3",
+                "Classes": [
+                  "[B12]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Text": "get to be cunning, sly.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "4",
+                "Classes": [
+                  "[b4(1)]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Text": "outsmart.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Naabtikan sad ku sa bátà,",
+                      "Gloss": "The child put one over on me."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Headword": "paN-",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "Classes": [
+              "[A2; b6]"
+            ],
+            "DefEx": {
+              "Def": {
+                "Text": "engage in chicanery.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Ayaw kug pangabtíki kay suhítu ku,",
+                  "Gloss": "Don’t try to put a fast one over on me, because I know my way around."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 38,
     "ParseDiagnostics": []
   },
   {
@@ -5958,6 +7885,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "rope used for tying the plow to the crosstree.",
@@ -5972,6 +7900,284 @@
     ],
     "ParseOk": true,
     "ParseNextIndex": 3,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "ashes."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "LINK",
+        "Content": "alabúhan"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "make ashes."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abuha nang mga palwa ug gam-ang sabun,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Make the palm stems into ashes to make soap out of."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B1256]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be razed or burned to the ground."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Pag-abut nákù naabu na ang balay,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "When I arrived, the house was already burned to the ground."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "ka-(←)"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A13]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "get ashes all over one."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nagkaábu ku kay misum-uk ku sa nasunúgan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I got ashes all over me because I went into the burned-out area."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "alabúhan"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "stove or any place a fire for cooking is built."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "abuhun"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "ash-colored."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Manuk nga abuhun,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Gray-colored cock."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abu",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "Classes": [],
+                "DefEx": {
+                  "Def": {
+                    "Text": "ashes.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "2",
+                "Classes": [],
+                "DefEx": {
+                  "Def": {
+                    "Text": null,
+                    "Links": [
+                      "alabúhan"
+                    ],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              }
+            ]
+          },
+          {
+            "WordType": "v",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "Classes": [
+                  "[A; a12]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Text": "make ashes.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Abuha nang mga palwa ug gam-ang sabun,",
+                      "Gloss": "Make the palm stems into ashes to make soap out of."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "Classes": [
+                  "[B1256]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Text": "be razed or burned to the ground.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Pag-abut nákù naabu na ang balay,",
+                      "Gloss": "When I arrived, the house was already burned to the ground."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Headword": "ka-(←)",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "Classes": [
+              "[A13]"
+            ],
+            "DefEx": {
+              "Def": {
+                "Text": "get ashes all over one.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Nagkaábu ku kay misum-uk ku sa nasunúgan,",
+                  "Gloss": "I got ashes all over me because I went into the burned-out area."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Headword": "alabúhan",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "Classes": [],
+            "DefEx": {
+              "Def": {
+                "Text": "stove or any place a fire for cooking is built.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Headword": "abuhun",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "Classes": [],
+            "DefEx": {
+              "Def": {
+                "Text": "ash-colored.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Manuk nga abuhun,",
+                  "Gloss": "Gray-colored cock."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 31,
     "ParseDiagnostics": []
   },
   {
@@ -5996,6 +8202,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "k.o. fish.",
@@ -6164,6 +8371,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "throw grains, throw grains to.",
@@ -6180,6 +8388,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "drop grains into a hole in planting.",
@@ -6196,6 +8405,7 @@
               },
               {
                 "Number": "3",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "feed grain into a mill.",
@@ -6212,6 +8422,7 @@
               },
               {
                 "Number": "4",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "supply a factory with raw materials.",
@@ -6228,6 +8439,7 @@
               },
               {
                 "Number": "5",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "feed news, gossip. Aha!",
@@ -6250,6 +8462,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "feed for fowls.",
@@ -6261,6 +8474,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "one’s turn to throw grains.",
@@ -6324,6 +8538,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "ornamental bulbous plant: <b lang=\"la\"><i>Eurycles amboinensis</i></b>. The leaves are applied over the bladder to facilitate urination.",
@@ -6338,6 +8553,266 @@
     ],
     "ParseOk": true,
     "ParseNextIndex": 3,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abug<sub>1</sub>"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "dust."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B46; a4b4(1)]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "become dusty."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Muabug ang karsáda ug dúgayng uwanun,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The road gets dusty if the rains come late."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Giabug ang ámung balay kay dúgay na nga wà puy-i,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Our house became all dusty because it hadn’t been lived in for a long time."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Tabúni ang libru arun dílì maabugan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Cover the books so they won’t get dusty."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B1256]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "turn into dust."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Sa kadugáyan kitang tanan maabug,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "In the end we will all turn to dust."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "ka-(←)"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A13]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "get dust all over it."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nagkaábug ang ákung buhuk tungud sa byáhi,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "My hair is all covered with dust because I’ve just gotten off the bus."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "-un"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "dusty."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "-l-an(←)"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "exposed to dust."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Kining kwartúha alabúgan. Duul man gud sa karsáda,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "This room is exposed to dust. It’s close to the street."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abug<sub>1</sub>",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "Classes": [],
+            "DefEx": {
+              "Def": {
+                "Text": "dust.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          },
+          {
+            "WordType": "v",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "Classes": [
+                  "[B46; a4b4(1)]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Text": "become dusty.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Muabug ang karsáda ug dúgayng uwanun,",
+                      "Gloss": "The road gets dusty if the rains come late."
+                    },
+                    {
+                      "Phrase": "Giabug ang ámung balay kay dúgay na nga wà puy-i,",
+                      "Gloss": "Our house became all dusty because it hadn’t been lived in for a long time."
+                    },
+                    {
+                      "Phrase": "Tabúni ang libru arun dílì maabugan,",
+                      "Gloss": "Cover the books so they won’t get dusty."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "Classes": [
+                  "[B1256]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Text": "turn into dust.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Sa kadugáyan kitang tanan maabug,",
+                      "Gloss": "In the end we will all turn to dust."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Headword": "ka-(←)",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "Classes": [
+              "[A13]"
+            ],
+            "DefEx": {
+              "Def": {
+                "Text": "get dust all over it.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Nagkaábug ang ákung buhuk tungud sa byáhi,",
+                  "Gloss": "My hair is all covered with dust because I’ve just gotten off the bus."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Headword": "-un",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "Classes": [],
+            "DefEx": {
+              "Def": {
+                "Text": "dusty.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Headword": "-l-an(←)",
+        "DefEx": {
+          "Def": {
+            "Text": "exposed to dust.",
+            "Links": [],
+            "Word": null
+          },
+          "Examples": [
+            {
+              "Phrase": "Kining kwartúha alabúgan. Duul man gud sa karsáda,",
+              "Gloss": "This room is exposed to dust. It’s close to the street."
+            }
+          ]
+        }
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 31,
     "ParseDiagnostics": []
   },
   {
@@ -6432,6 +8907,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "chase, drive, drive away.",
@@ -6452,6 +8928,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Text": "drive s.o. to do s.t.",
@@ -6475,6 +8952,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "stick with strips of paper, plastic, etc., attached on one end, used to chase flies away.",
@@ -6491,6 +8969,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "an enclosure of the fish corral into which the fish are driven before being caught.",
@@ -6560,6 +9039,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "female lawyer.",
@@ -6574,6 +9054,162 @@
     ],
     "ParseOk": true,
     "ParseNextIndex": 3,
+    "ParseDiagnostics": []
+  },
+  {
+    "letter": "a",
+    "tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abugádu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "lawyer."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B16; a2]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be, become a lawyer."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; b]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "speak for s.o."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abugadúhan ta lang ka kay wà kay pangabla,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I’ll speak for you because you don’t have the knack of saying what you want."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "abugaduhun"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "lawyer-like."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abugaduhung pangatarúngan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Lawyer-like reasoning."
+      }
+    ],
+    "WordDefs": [
+      {
+        "Headword": "abugádu",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "Classes": [],
+            "DefEx": {
+              "Def": {
+                "Text": "lawyer.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": []
+            }
+          },
+          {
+            "WordType": "v",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "Classes": [
+                  "[B16; a2]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Text": "be, become a lawyer.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "2",
+                "Classes": [
+                  "[A; b]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Text": "speak for s.o.",
+                    "Links": [],
+                    "Word": null
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Abugadúhan ta lang ka kay wà kay pangabla,",
+                      "Gloss": "I’ll speak for you because you don’t have the knack of saying what you want."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Headword": "abugaduhun",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "Classes": [],
+            "DefEx": {
+              "Def": {
+                "Text": "lawyer-like.",
+                "Links": [],
+                "Word": null
+              },
+              "Examples": [
+                {
+                  "Phrase": "Abugaduhung pangatarúngan,",
+                  "Gloss": "Lawyer-like reasoning."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "ParseOk": true,
+    "ParseNextIndex": 17,
     "ParseDiagnostics": []
   },
   {
@@ -6614,6 +9250,7 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Text": "dumb lawyer (play on the words",

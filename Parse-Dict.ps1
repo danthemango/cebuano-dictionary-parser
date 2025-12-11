@@ -540,6 +540,13 @@ function Parse-NumDef {
     }
     $i++
 
+    # collect CLASS*
+    $classes = @()
+    while (IsType (Get-Token $Tokens $i) 'CLASS') {
+        $classes += (Get-Token $Tokens $i).Content
+        $i++
+    }
+
     $defex = Parse-DefEx -Tokens $Tokens -StartIndex $i
     if (-not $defex.Success) {
         return [pscustomobject]@{
@@ -556,6 +563,7 @@ function Parse-NumDef {
         NextIndex = $i
         NumDef    = [pscustomobject]@{
             Number = $numTok.Content
+            Classes     = $classes
             DefEx  = $defex.DefEx
         }
         Diagnostics = $diag
@@ -564,22 +572,7 @@ function Parse-NumDef {
 
 function Parse-WtDef {
     <#
-      WTDEF ::= WORDTYPE [CLASS+] ( NUMDEF+ | DEFEX )
-
-      Output examples:
-        When numbered:
-          {
-            WordType     = 'n',
-            Classes      = ['archaic','gram'],
-            NumberedDefs = [ { Number, DefEx }, ... ]
-          }
-
-        When unnumbered:
-          {
-            WordType = 'n',
-            Classes  = ['archaic'],
-            DefEx    = { Def:{Text|Links|Word}, Examples:[...] }
-          }
+      WTDEF ::= WORDTYPE CLASS* ( NUMDEF+ | DEFEX )
     #>
     param([object[]]$Tokens, [int]$StartIndex)
     $i = $StartIndex; $diag = @()
@@ -598,7 +591,7 @@ function Parse-WtDef {
     }
     $i++
 
-    # NEW: collect optional CLASS+ right after WORDTYPE (applies to both branches)
+    # collect CLASS*
     $classes = @()
     while (IsType (Get-Token $Tokens $i) 'CLASS') {
         $classes += (Get-Token $Tokens $i).Content
@@ -650,13 +643,13 @@ function Parse-WtDef {
 
     $node2 = [pscustomobject]@{
         WordType = $wtTok.Content
+        Classes     = $classes
         DefEx    = $defex.DefEx
     }
 
     return [pscustomobject]@{
         Success     = $true
         NextIndex   = $i
-        Classes     = $classes
         WtDef       = $node2
         Diagnostics = $diag
     }
