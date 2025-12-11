@@ -308,4 +308,17 @@ function Split-Classes {
 
 # main
 # Parse words and process their tokens through type and number splitting
-$inxml | Split-Paragraphs | foreach { $_.tokens } | Split-Classes | Split-Cebuano-Words | Split-Types | Split-Nums | Split-Links
+# $inxml | Split-Paragraphs | foreach { $_.tokens } | Strip-Corr | Split-Classes | Split-Cebuano-Words | Split-Types | Split-Nums | Split-Links
+
+$inxml |
+    Split-Paragraphs |
+    ForEach-Object {
+        $_.Tokens = ($_.Tokens |
+            Strip-Corr |
+            Split-Classes |
+            Split-Cebuano-Words |
+            Split-Types |
+            Split-Nums |
+            Split-Links)
+        $_  # emit the updated object
+    }
