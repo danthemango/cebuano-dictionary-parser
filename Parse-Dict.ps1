@@ -1,6 +1,14 @@
 # .EXAMPLE
 # .\HTML-to-XML.ps1 | .\Parse-Dict.ps1 | Export-Csv .\cebuano-dictionary.csv
 
+# after the word, there may be one or more types (e.g. <i>n</i>, <i>v</i>, <i>a</i>)
+# then each type may have one or more numbered definitions
+# and a definition may be a conjugation
+# then after all numbered definitions there may be one or more conjugations
+# which also may have zero or more types of its own
+# and may also have zero or more numbered definitions
+# there may be a conjugation that is part of a definition (e.g. after the word type or the word conjugation)
+
 param (
     # accept input as xml object piped in, mandatory
     [Parameter(ValueFromPipeline=$true, Mandatory=$true)]
@@ -112,6 +120,7 @@ function Split-Words {
                     [PSCustomObject]@{
                         letter  = $letter
                         word    = $word
+                        conj    = ""
                         class   = ""
                         type    = ""
                         number  = ""
@@ -120,6 +129,38 @@ function Split-Words {
                     }
                 }
             }
+        }
+    }
+}
+
+# split each entry by conjugation, e.g.
+# <b lang=""ceb"">pakataga-</b>
+# if there is any text prior to the conjugation (or none found), set conj = "" and leave content as is,
+# else set conj to the conjugation found
+function Split-Conjs {
+    param (
+        [Parameter(ValueFromPipeline=$true)]
+        $item
+    )
+    process {
+        $content = $item.content
+
+        # regex to find conjugation: <b lang="ceb">...</b>
+        $conjMatch = [regex]::Match($content, '<b[^>]*lang="ceb"[^>]*>(.*?)</b>')
+
+        if ($conjMatch.Success) {
+            $conj = reduceWS($conjMatch.Groups[1].Value)
+            # Remove the conjugation from content
+            $content = [regex]::Replace($content, '<b[^>]*lang="ceb"[^>]*>.*?</b>', '', 1)
+
+            $item.conj = $conj
+            $item.content = reduceWS($content)
+            $item
+        } else {
+            # no conjugation found
+            $item.conj = ""
+            $item.content = reduceWS($content)
+            $item
         }
     }
 }
@@ -133,28 +174,35 @@ function Split-Types {
         $item
     )
     process {
-        $type = ""
         $content = $item.content
+        $opts = [System.Text.RegularExpressions.RegexOptions]::Singleline
+        $matches = [regex]::Matches($content, '<i[^>]*>\s*([A-Za-z])\s*</i>', $opts)
 
-        # Fast path: regex over HTML fragment
-        $m = [regex]::Match($content, '<i[^>]*>\s*([A-Za-z])\s*</i>')
-        if ($m.Success) {
-            $type = $m.Groups[1].Value.ToLower()
-            # Remove the first match from content
-            $content = [regex]::Replace($content, '<i[^>]*>\s*[A-Za-z]\s*</i>', '', 1)
+        if ($matches.Count -eq 0) {
+            # no types found: keep item as-is
+            $item.type = ""
+            $item.content = reduceWS($content)
+            $item
+            return
         }
 
-        # if class found, use it, else default to what was passed in
-        # parse class from content, if any
-        $newClass, $content = Parse-ClassContent $content
+        # For each type match, emit one item where content is the text between this <i> and the next <i>
+        for ($i = 0; $i -lt $matches.Count; $i++) {
+            $m = $matches[$i]
+            $typeChar = $m.Groups[1].Value.ToLower()
 
-        if ($newClass) {
-            $item.class = $newClass
+            $startAfter = $m.Index + $m.Length
+            $nextIndex = if ($i + 1 -lt $matches.Count) { $matches[$i + 1].Index } else { $content.Length }
+            $segment = ""
+            if ($nextIndex -gt $startAfter) {
+                $segment = $content.Substring($startAfter, $nextIndex - $startAfter)
+            }
+
+            $newItem = $item | Select-Object *
+            $newItem.type = $typeChar
+            $newItem.content = reduceWS($segment)
+            $newItem
         }
-
-        $item.type = $type
-        $item.content = reduceWS($content)
-        $item
     }
 }
 
@@ -217,34 +265,72 @@ function Parse-Links {
     )
     process {
         $content = $item.content
-        $links = @()
-
-        # regex to find spans with class "sc"
         $opts = [System.Text.RegularExpressions.RegexOptions]::Singleline
         $matches = [regex]::Matches($content, '<span[^>]*class="sc"[^>]*>(.*?)</span>', $opts)
 
-        foreach ($match in $matches) {
-            $innerHtml = $match.Groups[1].Value
-
-            # extract the linked word, either from <a> or directly
-            $linkMatch = [regex]::Match($innerHtml, '<a[^>]*>(.*?)</a>')
-            if ($linkMatch.Success) {
-                $links += reduceWS($linkMatch.Groups[1].Value)
-            } else {
-                $links += reduceWS($innerHtml)
-            }
+        if ($matches.Count -eq 0) {
+            # no links: preserve item, ensure links empty and normalized content
+            $item.links = ""
+            $item.content = reduceWS($content)
+            $item
+            return
         }
 
-        # remove the link spans from content
-        # $cleanContent = [regex]::Replace($content, '=? ?<span[^>]*class="sc"[^>]*>.*?</span>\.?', '', $opts)
-        # and remove <i lang="ceb">see</i> if found before the span
-        $cleanContent = [regex]::Replace($content, '=? ?(<i[^>]*>\s*see\s*</i>\s*)?<span[^>]*class="sc"[^>]*>.*?</span>\.?', '', $opts)
+        # Emit the text before the first span (if any)
+        $prevEnd = 0
+        for ($i = 0; $i -lt $matches.Count; $i++) {
+            $m = $matches[$i]
+            $start = $m.Index
 
-        $item.links = ($links -join "; ")
-        $item.content = reduceWS($cleanContent)
-        $item
+            # text before this match
+            if ($start -gt $prevEnd) {
+                $before = $content.Substring($prevEnd, $start - $prevEnd)
+                if ($before.Trim() -ne "") {
+                    $preItem = $item | Select-Object *
+                    $preItem.links = ""
+                    $preItem.content = reduceWS($before)
+                    $preItem
+                }
+            }
+
+            # extract the link text from the matched span
+            $innerHtml = $m.Groups[1].Value
+            $linkMatch = [regex]::Match($innerHtml, '<a[^>]*>(.*?)</a>')
+            if ($linkMatch.Success) {
+                $linkText = reduceWS($linkMatch.Groups[1].Value)
+            } else {
+                $linkText = reduceWS($innerHtml -replace '<[^>]*>', '')
+            }
+
+            # determine text between this span and the next span (or end)
+            $nextStart = $m.Index + $m.Length
+            $nextMatchStart = if ($i + 1 -lt $matches.Count) { $matches[$i + 1].Index } else { $content.Length }
+            $between = ""
+            if ($nextMatchStart -gt $nextStart) {
+                $between = $content.Substring($nextStart, $nextMatchStart - $nextStart)
+            }
+
+            # emit an item for this link, with content equal to the following text segment
+            $linkItem = $item | Select-Object *
+            $linkItem.links = $linkText
+            $linkItem.content = reduceWS($between)
+            $linkItem
+
+            $prevEnd = $nextStart
+        }
+
+        # if any trailing text after the last span, emit it
+        if ($prevEnd -lt $content.Length) {
+            $trail = $content.Substring($prevEnd)
+            if ($trail.Trim() -ne "") {
+                $trailItem = $item | Select-Object *
+                $trailItem.links = ""
+                $trailItem.content = reduceWS($trail)
+                $trailItem
+            }
+        }
     }
 }
 
 # main
-$inxml | Split-Words | Parse-Class | Split-Types | Split-Nums | Parse-Class | Parse-Links
+$inxml | Split-Words | Split-Types | Split-Nums | Split-Conjs | Parse-Links
