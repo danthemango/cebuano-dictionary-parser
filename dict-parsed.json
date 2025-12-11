@@ -92,7 +92,23 @@
       },
       {
         "Type": "TEXT",
-        "Content": "affix added to nouns forming words which refer to a specific one of several: <i lang=\"ceb\">Kanang isdáa, dílì kadtu,</i> That fish there, not that one further over. <i lang=\"ceb\">Háing baláya ang íla?</i> Which house is theirs?"
+        "Content": "affix added to nouns forming words which refer to a specific one of several:"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Kanang isdáa, dílì kadtu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "That fish there, not that one further over."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Háing baláya ang íla?"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Which house is theirs?"
       },
       {
         "Type": "NUMBER",
@@ -100,7 +116,15 @@
       },
       {
         "Type": "TEXT",
-        "Content": "added to possessive pronouns: the particular one that belongs to [so-and-so]. <i lang=\"ceb\">Dakù ang amúang balay, gamay tung iláha,</i> Our house is large, and theirs is small."
+        "Content": "added to possessive pronouns: the particular one that belongs to [so-and-so]."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Dakù ang amúang balay, gamay tung iláha,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Our house is large, and theirs is small."
       },
       {
         "Type": "NUMBER",
@@ -108,7 +132,31 @@
       },
       {
         "Type": "TEXT",
-        "Content": "affix added to adjectives to form exclamation. <i lang=\"ceb\">Dakúa uy!</i> My! How big it is! <i lang=\"ceb\">Patyun tikaw, irúa ka!</i> I’ll kill you, you dog you! <i lang=\"ceb\">Ngilngígang awtúha à!</i> That’s some car!"
+        "Content": "affix added to adjectives to form exclamation."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Dakúa uy!"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "My! How big it is!"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Patyun tikaw, irúa ka!"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I’ll kill you, you dog you!"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ngilngígang awtúha à!"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "That’s some car!"
       }
     ],
     "Parsed": {
@@ -118,26 +166,53 @@
       "Senses": [
         {
           "Number": "1",
-          "Text": "affix added to nouns forming words which refer to a specific one of several: <i lang=\"ceb\">Kanang isdáa, dílì kadtu,</i> That fish there, not that one further over. <i lang=\"ceb\">Háing baláya ang íla?</i> Which house is theirs?",
-          "Examples": [],
+          "Text": "affix added to nouns forming words which refer to a specific one of several:",
+          "Examples": [
+            {
+              "Phrase": "Kanang isdáa, dílì kadtu,",
+              "Gloss": "That fish there, not that one further over."
+            },
+            {
+              "Phrase": "Háing baláya ang íla?",
+              "Gloss": "Which house is theirs?"
+            }
+          ],
           "Links": []
         },
         {
           "Number": "1a",
-          "Text": "added to possessive pronouns: the particular one that belongs to [so-and-so]. <i lang=\"ceb\">Dakù ang amúang balay, gamay tung iláha,</i> Our house is large, and theirs is small.",
-          "Examples": [],
+          "Text": "added to possessive pronouns: the particular one that belongs to [so-and-so].",
+          "Examples": [
+            {
+              "Phrase": "Dakù ang amúang balay, gamay tung iláha,",
+              "Gloss": "Our house is large, and theirs is small."
+            }
+          ],
           "Links": []
         },
         {
           "Number": "2",
-          "Text": "affix added to adjectives to form exclamation. <i lang=\"ceb\">Dakúa uy!</i> My! How big it is! <i lang=\"ceb\">Patyun tikaw, irúa ka!</i> I’ll kill you, you dog you! <i lang=\"ceb\">Ngilngígang awtúha à!</i> That’s some car!",
-          "Examples": [],
+          "Text": "affix added to adjectives to form exclamation.",
+          "Examples": [
+            {
+              "Phrase": "Dakúa uy!",
+              "Gloss": "My! How big it is!"
+            },
+            {
+              "Phrase": "Patyun tikaw, irúa ka!",
+              "Gloss": "I’ll kill you, you dog you!"
+            },
+            {
+              "Phrase": "Ngilngígang awtúha à!",
+              "Gloss": "That’s some car!"
+            }
+          ],
           "Links": []
         }
       ]
     },
     "ParseOk": true,
-    "ParseNextIndex": 7,
+    "ParseNextIndex": 19,
     "ParseDiagnostics": []
   },
   {
@@ -157,7 +232,15 @@
       },
       {
         "Type": "TEXT",
-        "Content": "as a filler. <i lang=\"ceb\">á, muanhi ka ugmà?</i> Um, are you going to come here tomorrow?"
+        "Content": "as a filler."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "á, muanhi ka ugmà?"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Um, are you going to come here tomorrow?"
       },
       {
         "Type": "NUMBER",
@@ -165,7 +248,23 @@
       },
       {
         "Type": "TEXT",
-        "Content": "deprecating or showing unimportance of what just preceded. <i lang=\"ceb\">á, paríha ra nákù,</i> Oh, it’s all the same to me. <i lang=\"ceb\">á, nagkumidiya lang siya,</i> Oh, he’s just joking."
+        "Content": "deprecating or showing unimportance of what just preceded."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "á, paríha ra nákù,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Oh, it’s all the same to me."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "á, nagkumidiya lang siya,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Oh, he’s just joking."
       },
       {
         "Type": "NUMBER",
@@ -173,7 +272,15 @@
       },
       {
         "Type": "TEXT",
-        "Content": "showing mild disapproval. <i lang=\"ceb\">á, dì nà mahímù,</i> Oh, you can’t do that."
+        "Content": "showing mild disapproval."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "á, dì nà mahímù,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Oh, you can’t do that."
       },
       {
         "Type": "NUMBER",
@@ -181,7 +288,15 @@
       },
       {
         "Type": "TEXT",
-        "Content": "recalling or conceding s.t. <i lang=\"ceb\">á, duha diay tu,</i> Oh, yes. There were two of them, weren’t there."
+        "Content": "recalling or conceding s.t."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "á, duha diay tu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Oh, yes. There were two of them, weren’t there."
       },
       {
         "Type": "NUMBER",
@@ -189,7 +304,23 @@
       },
       {
         "Type": "TEXT",
-        "Content": "preceding s.t. just found out. <i lang=\"ceb\">á, Lítu diay ímung ngálan,</i> Oh, so your name is Lito. <i lang=\"ceb\">á, kanindut,</i> Oh, how nice!"
+        "Content": "preceding s.t. just found out."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "á, Lítu diay ímung ngálan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Oh, so your name is Lito."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "á, kanindut,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Oh, how nice!"
       },
       {
         "Type": "NUMBER",
@@ -197,7 +328,15 @@
       },
       {
         "Type": "TEXT",
-        "Content": "expressing relief. <i lang=\"ceb\">á, nahuwasan ku,</i> Ah, what a relief!"
+        "Content": "expressing relief."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "á, nahuwasan ku,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Ah, what a relief!"
       }
     ],
     "Parsed": {
@@ -236,7 +375,23 @@
       },
       {
         "Type": "TEXT",
-        "Content": "dismissing s.t. as impractical, too easy, impossible, etc. <i lang=\"ceb\">à, mu ra diay nà? Kasayun à!</i> Oh, is that all there is to it? How easy it is! <i lang=\"ceb\">à, ása man ku mutúu nímu,</i> Hm, you think I could believe you?"
+        "Content": "dismissing s.t. as impractical, too easy, impossible, etc."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "à, mu ra diay nà? Kasayun à!"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Oh, is that all there is to it? How easy it is!"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "à, ása man ku mutúu nímu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Hm, you think I could believe you?"
       },
       {
         "Type": "NUMBER",
@@ -244,7 +399,15 @@
       },
       {
         "Type": "TEXT",
-        "Content": "showing disapproval. <i lang=\"ceb\">à, hináya nímung mulíhuk,</i> Hm! You sure work slowly!"
+        "Content": "showing disapproval."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "à, hináya nímung mulíhuk,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Hm! You sure work slowly!"
       },
       {
         "Type": "NUMBER",
@@ -252,7 +415,15 @@
       },
       {
         "Type": "TEXT",
-        "Content": "showing surprise. <i lang=\"ceb\">à, kanindut nímug sinínà,</i> How come you have such a beautiful dress on!"
+        "Content": "showing surprise."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "à, kanindut nímug sinínà,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "How come you have such a beautiful dress on!"
       }
     ],
     "Parsed": {
@@ -351,7 +522,15 @@
       },
       {
         "Type": "TEXT",
-        "Content": "exclamation of pleasure and surprise. <i lang=\"ceb\">Aba! Nakadaug ku,</i> My! I won!"
+        "Content": "exclamation of pleasure and surprise."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Aba! Nakadaug ku,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "My! I won!"
       }
     ],
     "Parsed": {
@@ -368,7 +547,7 @@
         "Message": "Trailing token after senses: TEXT",
         "Token": {
           "Type": "TEXT",
-          "Content": "exclamation of pleasure and surprise. <i lang=\"ceb\">Aba! Nakadaug ku,</i> My! I won!"
+          "Content": "exclamation of pleasure and surprise."
         }
       }
     ]
@@ -382,7 +561,23 @@
       },
       {
         "Type": "TEXT",
-        "Content": "(from <i lang=\"ceb\">sábà dihà untuy</i>) shut up! <i lang=\"ceb\">ábà tuy, maáyu ka lang sa tayáda, wà kay tadtad,</i> Shut up! You’re great at talking, but let’s see you do s.t."
+        "Content": "(from"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "sábà dihà untuy"
+      },
+      {
+        "Type": "TEXT",
+        "Content": ") shut up!"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "ábà tuy, maáyu ka lang sa tayáda, wà kay tadtad,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Shut up! You’re great at talking, but let’s see you do s.t."
       }
     ],
     "Parsed": {
@@ -399,7 +594,7 @@
         "Message": "Trailing token after senses: TEXT",
         "Token": {
           "Type": "TEXT",
-          "Content": "(from <i lang=\"ceb\">sábà dihà untuy</i>) shut up! <i lang=\"ceb\">ábà tuy, maáyu ka lang sa tayáda, wà kay tadtad,</i> Shut up! You’re great at talking, but let’s see you do s.t."
+          "Content": "(from"
         }
       }
     ]
@@ -413,7 +608,15 @@
       },
       {
         "Type": "TEXT",
-        "Content": "particle indicating disapproval (literary). <i lang=\"ceb\">Abaa! Mahū́g ka gánì dihà!</i> Stop that! You might fall!"
+        "Content": "particle indicating disapproval (literary)."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abaa! Mahū́g ka gánì dihà!"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Stop that! You might fall!"
       }
     ],
     "Parsed": {
@@ -430,7 +633,7 @@
         "Message": "Trailing token after senses: TEXT",
         "Token": {
           "Type": "TEXT",
-          "Content": "particle indicating disapproval (literary). <i lang=\"ceb\">Abaa! Mahū́g ka gánì dihà!</i> Stop that! You might fall!"
+          "Content": "particle indicating disapproval (literary)."
         }
       }
     ]
@@ -468,7 +671,15 @@
       },
       {
         "Type": "TEXT",
-        "Content": "act, treat like, consider a hillbilly. <i lang=\"ceb\">Gipakatagaabab lang ku ninyu. Ihása,</i> You just think I’m a hillbilly. Don’t try to fool me."
+        "Content": "act, treat like, consider a hillbilly."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Gipakatagaabab lang ku ninyu. Ihása,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "You just think I’m a hillbilly. Don’t try to fool me."
       },
       {
         "Type": "CEBWORD",
@@ -527,7 +738,15 @@
       },
       {
         "Type": "TEXT",
-        "Content": "chew to pieces. <i lang=\"ceb\">Ab-ábun sa irù ang íyang hikut,</i> The dog will chew up his rope."
+        "Content": "chew to pieces."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ab-ábun sa irù ang íyang hikut,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The dog will chew up his rope."
       },
       {
         "Type": "NUMBER",
@@ -535,7 +754,23 @@
       },
       {
         "Type": "TEXT",
-        "Content": "eat away, erode. <i lang=\"ceb\">Ang pagluib ni Maríya nag-ab-ab sa íyang balatían,</i> Maria’s infidelity ate away at his insides. <i lang=\"ceb\">Giab-ab ang íyang pinútì sa tayà,</i> His sword was eaten away by rust."
+        "Content": "eat away, erode."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ang pagluib ni Maríya nag-ab-ab sa íyang balatían,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Maria’s infidelity ate away at his insides."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Giab-ab ang íyang pinútì sa tayà,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "His sword was eaten away by rust."
       },
       {
         "Type": "NUMBER",
@@ -543,7 +778,15 @@
       },
       {
         "Type": "TEXT",
-        "Content": "fester. <i lang=\"ceb\">Ang nag-ab-ab kung núka,</i> My festering wound.†"
+        "Content": "fester."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ang nag-ab-ab kung núka,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "My festering wound.†"
       }
     ],
     "Parsed": {
@@ -621,7 +864,23 @@
       },
       {
         "Type": "TEXT",
-        "Content": "give material help, help do work. <i lang=\"ceb\">Kinsa may mag-ábag nímu sa ímung pag-iskuyla?</i> Who will help pay for your schooling? <i lang=\"ceb\">Abági ku áring pagsilhig,</i> Help me sweep."
+        "Content": "give material help, help do work."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Kinsa may mag-ábag nímu sa ímung pag-iskuyla?"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Who will help pay for your schooling?"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abági ku áring pagsilhig,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Help me sweep."
       },
       {
         "Type": "WORDTYPE",
@@ -731,7 +990,15 @@
       },
       {
         "Type": "TEXT",
-        "Content": "take financial responsibility. <i lang=\"ceb\">Abagáhun (pangabagáhun, pangabagáhan) ni Mánuy níya ang galastúhan sa pag-iskuyla,</i> His brother will shoulder his school expenses."
+        "Content": "take financial responsibility."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abagáhun (pangabagáhun, pangabagáhan) ni Mánuy níya ang galastúhan sa pag-iskuyla,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "His brother will shoulder his school expenses."
       },
       {
         "Type": "NUMBER",
@@ -739,7 +1006,15 @@
       },
       {
         "Type": "TEXT",
-        "Content": "take responsibility for accomplishing s.t. <i lang=\"ceb\">Kita giyuy muabága (mangabága) áning prugramáha,</i> We must undertake to carry out this program."
+        "Content": "take responsibility for accomplishing s.t."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Kita giyuy muabága (mangabága) áning prugramáha,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "We must undertake to carry out this program."
       },
       {
         "Type": "CEBWORD",
@@ -751,7 +1026,15 @@
       },
       {
         "Type": "TEXT",
-        "Content": ", <i lang=\"ceb\">v</i>."
+        "Content": ","
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "v"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "."
       },
       {
         "Type": "CEBWORD",

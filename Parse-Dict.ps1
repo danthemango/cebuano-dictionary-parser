@@ -1,3 +1,5 @@
+# .EXAMPLE
+# .\HTML-to-XML.ps1 | .\Parse-Dict.ps1 -Limit 20
 param (
     # accept input as xml object piped in, mandatory
     [Parameter(ValueFromPipeline=$true, Mandatory=$true)]
@@ -7,9 +9,6 @@ param (
     [Parameter(Mandatory=$true)]
     [int]$Limit
 )
-
-# .EXAMPLE
-# .\HTML-to-XML.ps1 | .\Parse-Dict.ps1
 
 # after the word, there may be one or more types (e.g. <i>n</i>, <i>v</i>, <i>a</i>)
 # then each type may have one or more numbered definitions
@@ -75,38 +74,6 @@ function Split-Paragraphs {
         }
     }
 }
-
-# split each entry by conjugation, e.g.
-# <b lang=""ceb"">pakataga-</b>
-# if there is any text prior to the conjugation (or none found), set conj = "" and leave content as is,
-# else set conj to the conjugation found
-# function Split-Conjs {
-#     param (
-#         [Parameter(ValueFromPipeline=$true)]
-#         $item
-#     )
-#     process {
-#         $content = $item.content
-
-#         # regex to find conjugation: <b lang="ceb">...</b>
-#         $conjMatch = [regex]::Match($content, '<b[^>]*lang="ceb"[^>]*>(.*?)</b>')
-
-#         if ($conjMatch.Success) {
-#             $conj = reduceWS($conjMatch.Groups[1].Value)
-#             # Remove the conjugation from content
-#             $content = [regex]::Replace($content, '<b[^>]*lang="ceb"[^>]*>.*?</b>', '', 1)
-
-#             $item.conj = $conj
-#             $item.content = reduceWS($content)
-#             $item
-#         } else {
-#             # no conjugation found
-#             $item.conj = ""
-#             $item.content = reduceWS($content)
-#             $item
-#         }
-#     }
-# }
 
 function Split-TokensByPattern {
     param (
@@ -191,7 +158,7 @@ function Split-Types {
 # find other words that are included
 # they may be separate conjugations listed with their own definitions (including definition types and numbers)
 # other words, variations, conjugations, affixes
-# <b lang=""ceb"">adtuúnun, aladtúun</b>
+# <b lang="ceb">adtuúnun, aladtúun</b>
 function Split-Cebuano-Words {
     param (
         [Parameter(ValueFromPipeline=$true)]
@@ -206,12 +173,25 @@ function Split-Cebuano-Words {
     }
 }
 
+# find cebuano phrases
+# e.g.:
+# <i lang=""ceb"">Dakúa uy!</i>
+function Split-Cebuano-Phrases {
+    param (
+        [Parameter(ValueFromPipeline=$true)]
+        $token
+    )
+    process {
+        $token | Split-TokensByPattern -pattern '<i lang="ceb">(.*?)</i>' -tokenType "CEBPHRASE"
+    }
+}
+
 # there are also latin words marked, such as:
 # <b lang="la"><i>Musa textilis</i></b>.
 # <b lang="la"><i>Balamcanda chinensis</i></b>.
 # <b lang="la"><i>Eurycles amboinensis</i></b>.
 # <b lang="la"><i>Persea sp</i></b>.
-# but I think I can just leave them in place, the usually are part of a definition.
+# but only a few, and usually are part of a definition.
 
 # find other words that are being linked to
 # the links are in a span with class "sc", and may or may not be in an <a> (which may be discarded)
@@ -406,7 +386,7 @@ function Parse-Examples {
     $examples = @()
     while ($true) {
         $phraseTok = Get-Token $Tokens $i
-        if (-not (IsType $phraseTok 'CEBWORD')) { break }
+        if (-not (IsType $phraseTok 'CEBPHRASE')) { break }
 
         $i++  # consumed phrase
         $glossTok = Get-Token $Tokens $i
@@ -594,6 +574,21 @@ function Parse-Row {
     }
 }
 
+# iterates through the list of tokens and for each text token we process more specific tokens where found
+# we usually start with a single text token per row
+function Tokenize {
+    param (
+        [Parameter(ValueFromPipeline=$true)]
+        $token
+    )
+    process {
+        # notes:
+        # - corr must be processed before splitting words, since it is usally inside of the word block
+        # - split links must be processed before cebuano phrases because of some bad formatting (they use <i lang="ceb"> as a way to make the word "see" italic, e.g. in "see otherword")
+        $token | Strip-Corr | Split-Classes | Split-Cebuano-Words | Split-Types | Split-Nums | Split-Links | Split-Cebuano-Phrases
+    }
+}
+
 # main
 $paragraphs = $inxml | Split-Paragraphs
 
@@ -602,7 +597,7 @@ if ($Limit) {
 }
 
 # DEBUG pipe plain tokens to csv, for tokenizing development
-$paragraphs | foreach { $_.tokens } | Strip-Corr | Split-Classes | Split-Cebuano-Words | Split-Types | Split-Nums | Split-Links | Export-Csv -Encoding utf8 -NoTypeInformation -Path "tokenlist.csv"
+$paragraphs | foreach { $_.tokens } | Tokenize | Export-Csv -Encoding utf8 -NoTypeInformation -Path "tokenlist.csv"
 
 # tokenize each paragraph
 # $inxml |
@@ -621,13 +616,7 @@ $paragraphs | foreach { $_.tokens } | Strip-Corr | Split-Classes | Split-Cebuano
 $parsed = $paragraphs |
     ForEach-Object {
         # Keep your token normalization passes
-        $_.Tokens = ($_.Tokens |
-            Strip-Corr |
-            Split-Classes |
-            Split-Cebuano-Words |
-            Split-Types |
-            Split-Nums |
-            Split-Links)
+        $_.Tokens = ($_.Tokens | Tokenize)
 
         # Parse the normalized token array into a structured tree
         $res = Parse-Row -Tokens $_.Tokens
