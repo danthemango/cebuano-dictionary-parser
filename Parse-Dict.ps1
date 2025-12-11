@@ -123,14 +123,6 @@ function Split-Words {
 #     }
 # }
 
-# e.g. nouns, verbs, adverbs
-# looks for <i>n</i>, <i>v</i>, <i>a</i>, etc. (single-char)
-# if none found set field "type" to "", else set "type" to the letter (n, v, a, etc.)
-# function Split-Types {
-# }
-
-# TODO parse the equal to links separately, since they are supposed to be perfectly equivalent
-
 # parse links
 # the links are in a span with class "sc", and may or may not be in an <a> (which may be discarded)
 # I'd like to add a new field "links", which is a semicolon-separated list of words that are linked to this one
@@ -151,43 +143,60 @@ function Split-Words {
 
 # }
 
-# returns a type object if one found at the start of the content, e.g. for nouns: <i>n<i>
-# and returns the rest of the content with it removed
-# function Parse-Type {
-#     param (
-#         [string]$content
-#     )
+function Split-TokensByPattern {
+    param (
+        [Parameter(ValueFromPipeline=$true)]
+        $token,
+        
+        [Parameter(Mandatory=$true)]
+        [string]$pattern,
+        
+        [Parameter(Mandatory=$true)]
+        [string]$tokenType
+    )
+    process {
+        # If not a TEXT token, pass through unchanged
+        if ($token.Type -ne "TEXT") {
+            $token
+            return
+        }
 
-#     $opts = [System.Text.RegularExpressions.RegexOptions]::Singleline
-#     $pattern = '^\s*<i[^>]*>\s*([A-Za-z])\s*</i>\s*'
-#     $match = [regex]::Match($content, $pattern, $opts)
-#     if ($match.Success) {
-#         $matched = $match.Groups[1].Value
-#         $restContent = $content -replace $pattern, ''
-#         @($matched, (reduceWS $restContent))
-#     } else {
-#         @($null, ($content))
-#     }
-# }
+        $content = $token.Content
+        $splits = [regex]::Split($content, $pattern)
 
-# parses a def number, e.g. <b>1</b>, <b>2</b>, <b>2a</b>
-# function Parse-Num {
-#     param (
-#         [string]$content
-#     )
+        # If no matches (only one part after split), return original token
+        if ($splits.Count -le 1) {
+            $token
+            return
+        }
 
-#     $opts = [System.Text.RegularExpressions.RegexOptions]::Singleline
-#     $pattern = '^\s*<b[^>]*>\s*(\d+[a-z]*)\s*</b>\s*'
-#     # $pattern = '^\s*<b[^>]*>\s*(\d+)*'
-#     $match = [regex]::Match($content, $pattern, $opts)
-#     if ($match.Success) {
-#         $matched = $match.Groups[1].Value.ToLower()
-#         $restContent = $content -replace $pattern, ''
-#         @($matched, (reduceWS $restContent))
-#     } else {
-#         @($null, ($content))
-#     }
-# }
+        # Output content before first match
+        if ($splits[0].Trim() -ne "") {
+            [PSCustomObject]@{
+                Type    = "TEXT"
+                Content = reduceWS($splits[0])
+            }
+        }
+
+        # Alternating: captured group (the match), then content after it
+        for ($i = 1; $i -lt $splits.Count; $i += 2) {
+            # Output the matched token (e.g., NUMBER)
+            [PSCustomObject]@{
+                Type    = $tokenType
+                Content = $splits[$i]
+            }
+
+            # Output content after this match
+            $afterMatch = if ($i + 1 -lt $splits.Count) { $splits[$i + 1] } else { "" }
+            if ($afterMatch.Trim() -ne "") {
+                [PSCustomObject]@{
+                    Type    = "TEXT"
+                    Content = reduceWS($afterMatch)
+                }
+            }
+        }
+    }
+}
 
 # parses a def number, e.g. <b>1</b>, <b>2</b>, <b>2a</b>
 # accept as input an array of tokens, and for each text token
@@ -198,76 +207,20 @@ function Split-Nums {
         $token
     )
     process {
-        if ($token.Type -ne "TEXT") {
-            return $token
-        }
-
-        # Split by numbered definitions using regex: <b>(\d+)</b>
-        $defSplits = [regex]::Split($token.Content, "<b>(\d+[a-z]?)</b>")
-
-        # If no numbered definitions found, output single token as-is
-        if ($defSplits.Count -le 1) {
-            return $token
-        }
-
-        $tokens = New-Object System.Collections.Generic.List[PSObject]
-        # $defSplits[0] is content before first number (treat as text token)
-        if ($defSplits[0].Trim() -ne "") {
-            $newToken = [PSCustomObject]@{
-                Type  = "TEXT"
-                Content  = reduceWS($defSplits[0])
-            }
-            $tokens.Add($newToken)
-        }
-        # Then alternating: number, content for that number
-        $currentIndex = $token.Index + $defSplits[0].Length
-        for ($i = 1; $i -lt $defSplits.Count; $i += 2) {
-            $num = $defSplits[$i]
-            $defContent = if ($i + 1 -lt $defSplits.Count) { $defSplits[$i + 1] } else { "" }
-
-            # Number token
-            $numToken = [PSCustomObject]@{
-                Type  = "NUMBER"
-                Content  = $num
-            }
-            $tokens.Add($numToken)
-            $currentIndex += $numToken.Length
-
-            # Content token
-            if ($defContent.Trim() -ne "") {
-                $contentToken = [PSCustomObject]@{
-                    Type  = "TEXT"
-                    Content  = reduceWS($defContent)
-                }
-                $tokens.Add($contentToken)
-                $currentIndex += $contentToken.Length
-            }
-        }
-        return $tokens
+        $token | Split-TokensByPattern -pattern "<b>(\d+[a-z]?)</b>" -tokenType "NUMBER"
     }
 }
 
-# generic function for parsing tokens content into links and remaining content
-function Split-By-Token {
+function Split-Types {
     param (
-        [string]$pattern,
-        [string]$type
+        [Parameter(ValueFromPipeline=$true)]
+        $token
     )
+    process {
+        $token | Split-TokensByPattern -pattern "<i>([a-z])</i>" -tokenType "WORDTYPE"
+    }
 }
 
 # main
-# $inxml | Split-Words | foreach { $_.content } # | foreach { Tokenize-Content $_.content }
-
-# test parsing type
-# $inxml | Split-Words | foreach { $_.content } | foreach {
-#     $type, $rest = Parse-Num $_
-#     [PSCustomObject]@{
-#         type = $type
-#         rest = $rest
-#     }
-# }
-
-# test the num parser on the first word
-$inxml | Split-Words | select -first 3 | foreach { $_.tokens } | Split-Nums
-
-# | Split-Types | Split-Nums | Split-Conjs | Parse-Links
+# Parse words and process their tokens through type and number splitting
+$inxml | Split-Words | foreach { $_.tokens } | Split-Types | Split-Nums
