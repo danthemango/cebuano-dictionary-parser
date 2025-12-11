@@ -332,5 +332,86 @@ function Parse-Links {
     }
 }
 
+function Tokenize-Content {
+    param (
+        [Parameter(Mandatory=$true)]
+        [string]$html
+    )
+
+    $tokens = New-Object System.Collections.Generic.List[PSObject]
+    if ([string]::IsNullOrEmpty($html)) { return $tokens }
+
+    $opts = [System.Text.RegularExpressions.RegexOptions]::IgnoreCase -bor `
+            [System.Text.RegularExpressions.RegexOptions]::Singleline
+
+    # Match order matters: conjugation (b with lang=ceb) first, then numbered <b>, then <i> types,
+    # then class spans, sc link spans, other <b> tags, plain text, and generic tags.
+    $pattern = '(?<conj><b[^>]*\blang=(?:"|''?)ceb(?:"|''?)[^>]*>.*?<\/b>)|' +
+               '(?<num><b>\s*(\d+[a-z]?)\s*<\/b>)|' +
+               '(?<type><i[^>]*>\s*([A-Za-z])\s*<\/i>)|' +
+               '(?<class><span[^>]*class=(?:"|''?)rm(?:"|''?)[^>]*>\[[^\]]+\]<\/span>)|' +
+               '(?<link><span[^>]*class=(?:"|''?)sc(?:"|''?)[^>]*>.*?<\/span>)|' +
+               '(?<btag><b[^>]*>.*?<\/b>)|' +
+               '(?<text>[^<]+)|(?<tag><[^>]+>)'
+
+    $pos = 0
+    while ($pos -lt $html.Length) {
+        $m = [regex]::Match($html, $pattern, $opts, $pos)
+        if (-not $m.Success) { break }
+
+        $tokenType = $null
+        if ($m.Groups['conj'].Success)   { $tokenType = 'CONJ' ; $raw = $m.Groups['conj'].Value }
+        elseif ($m.Groups['num'].Success){ $tokenType = 'NUMBER'; $raw = $m.Groups['num'].Value }
+        elseif ($m.Groups['type'].Success){ $tokenType = 'TYPE'; $raw = $m.Groups['type'].Value }
+        elseif ($m.Groups['class'].Success){ $tokenType = 'CLASS'; $raw = $m.Groups['class'].Value }
+        elseif ($m.Groups['link'].Success){ $tokenType = 'LINKSPAN'; $raw = $m.Groups['link'].Value }
+        elseif ($m.Groups['btag'].Success){ $tokenType = 'BTAG'; $raw = $m.Groups['btag'].Value }
+        elseif ($m.Groups['text'].Success){ $tokenType = 'TEXT'; $raw = $m.Groups['text'].Value }
+        else { $tokenType = 'TAG'; $raw = $m.Value }
+
+        # Cleaned/text value for convenience
+        switch ($tokenType) {
+            'CONJ' {
+                $inner = [regex]::Match($raw, '<b[^>]*>(.*?)<\/b>', $opts).Groups[1].Value
+                $text = ( ($inner) -replace '<[^>]*>', '' ) -replace '\s+', ' '
+            }
+            'NUMBER' {
+                $num = [regex]::Match($raw, '\d+[a-z]?', $opts).Value
+                $text = $num
+            }
+            'TYPE' {
+                $t = [regex]::Match($raw, '([A-Za-z])', $opts).Groups[1].Value
+                $text = $t.ToLower()
+            }
+            'CLASS' {
+                $c = [regex]::Match($raw, '\[([^\]]+)\]', $opts).Groups[1].Value
+                $text = $c
+            }
+            'LINKSPAN' {
+                $a = [regex]::Match($raw, '<a[^>]*>(.*?)<\/a>', $opts)
+                if ($a.Success) { $text = ($a.Groups[1].Value -replace '<[^>]*>', '') -replace '\s+', ' ' }
+                else { $text = ($raw -replace '<[^>]*>', '') -replace '\s+', ' ' }
+            }
+            'BTAG' { $text = ($raw -replace '<[^>]*>', '') -replace '\s+', ' ' }
+            'TEXT' { $text = $raw -replace '\s+', ' ' }
+            default { $text = $raw -replace '<[^>]*>', '' -replace '\s+', ' ' }
+        }
+
+        $tokens.Add([PSCustomObject]@{
+            Type  = $tokenType
+            Raw   = $raw
+            Text  = ($text.Trim())
+            Index = $m.Index
+            Length = $m.Length
+        })
+
+        $pos = $m.Index + $m.Length
+    }
+
+    return ,$tokens
+}
+
 # main
-$inxml | Split-Words | Split-Types | Split-Nums | Split-Conjs | Parse-Links
+$inxml | Split-Words | foreach { Tokenize-Content $_.content }
+
+# | Split-Types | Split-Nums | Split-Conjs | Parse-Links
