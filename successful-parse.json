@@ -1,74 +1,20 @@
 [
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "a"
-      },
-      {
-        "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "-a",
+        "Word": "-a"
       },
       {
         "Type": "TEXT",
-        "Content": "letter A."
-      },
-      {
-        "Type": "CEBWORD",
-        "Content": "walay —"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "illiterate."
-      }
-    ],
-    "WordDef": {
-      "Word": "a",
-      "WordTypeDefs": [
-        {
-          "WordType": "n",
-          "Classes": [],
-          "DefEx": {
-            "Def": {
-              "Text": "letter A.",
-              "Links": [],
-              "Word": null
-            },
-            "Examples": []
-          }
-        }
-      ],
-      "Conjugations": {
-        "Word": "walay —",
-        "DefEx": {
-          "Def": {
-            "Text": "illiterate.",
-            "Links": [],
-            "Word": null
-          },
-          "Examples": []
-        }
-      }
-    },
-    "ParseOk": true,
-    "ParseNextIndex": 5,
-    "ParseDiagnostics": []
-  },
-  {
-    "letter": "a",
-    "tokens": [
-      {
-        "Type": "CEBWORD",
-        "Content": "-a"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "subjunctive direct passive affix."
+        "Content": "subjunctive direct passive affix.",
+        "Word": "-a"
       },
       {
         "Type": "LINK",
-        "Content": "-un"
+        "Content": "-un",
+        "Word": "-a"
       }
     ],
     "WordDef": {
@@ -89,83 +35,101 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "-a(←)"
+        "Content": "-a(←)",
+        "Word": "-a(←)"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "-a(←)"
       },
       {
         "Type": "TEXT",
-        "Content": "affix added to nouns forming words which refer to a specific one of several:"
+        "Content": "affix added to nouns forming words which refer to a specific one of several:",
+        "Word": "-a(←)"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Kanang isdáa, dílì kadtu,"
+        "Content": "Kanang isdáa, dílì kadtu,",
+        "Word": "-a(←)"
       },
       {
         "Type": "TEXT",
-        "Content": "That fish there, not that one further over."
+        "Content": "That fish there, not that one further over.",
+        "Word": "-a(←)"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Háing baláya ang íla?"
+        "Content": "Háing baláya ang íla?",
+        "Word": "-a(←)"
       },
       {
         "Type": "TEXT",
-        "Content": "Which house is theirs?"
+        "Content": "Which house is theirs?",
+        "Word": "-a(←)"
       },
       {
         "Type": "NUMBER",
-        "Content": "1a"
+        "Content": "1a",
+        "Word": "-a(←)"
       },
       {
         "Type": "TEXT",
-        "Content": "added to possessive pronouns: the particular one that belongs to [so-and-so]."
+        "Content": "added to possessive pronouns: the particular one that belongs to [so-and-so].",
+        "Word": "-a(←)"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Dakù ang amúang balay, gamay tung iláha,"
+        "Content": "Dakù ang amúang balay, gamay tung iláha,",
+        "Word": "-a(←)"
       },
       {
         "Type": "TEXT",
-        "Content": "Our house is large, and theirs is small."
+        "Content": "Our house is large, and theirs is small.",
+        "Word": "-a(←)"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "-a(←)"
       },
       {
         "Type": "TEXT",
-        "Content": "affix added to adjectives to form exclamation."
+        "Content": "affix added to adjectives to form exclamation.",
+        "Word": "-a(←)"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Dakúa uy!"
+        "Content": "Dakúa uy!",
+        "Word": "-a(←)"
       },
       {
         "Type": "TEXT",
-        "Content": "My! How big it is!"
+        "Content": "My! How big it is!",
+        "Word": "-a(←)"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Patyun tikaw, irúa ka!"
+        "Content": "Patyun tikaw, irúa ka!",
+        "Word": "-a(←)"
       },
       {
         "Type": "TEXT",
-        "Content": "I’ll kill you, you dog you!"
+        "Content": "I’ll kill you, you dog you!",
+        "Word": "-a(←)"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Ngilngígang awtúha à!"
+        "Content": "Ngilngígang awtúha à!",
+        "Word": "-a(←)"
       },
       {
         "Type": "TEXT",
-        "Content": "That’s some car!"
+        "Content": "That’s some car!",
+        "Word": "-a(←)"
       }
     ],
     "WordDef": {
@@ -241,127 +205,216 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "á"
+        "Content": "a",
+        "Word": "a"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n",
+        "Word": "a"
       },
       {
         "Type": "TEXT",
-        "Content": "particle used as a pause word before starting to speak."
+        "Content": "letter A.",
+        "Word": "a"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "walay —",
+        "Word": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "illiterate.",
+        "Word": "a"
+      }
+    ],
+    "WordDef": {
+      "Word": "a",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Text": "letter A.",
+              "Links": [],
+              "Word": null
+            },
+            "Examples": []
+          }
+        }
+      ],
+      "Conjugations": {
+        "Word": "walay —",
+        "DefEx": {
+          "Def": {
+            "Text": "illiterate.",
+            "Links": [],
+            "Word": null
+          },
+          "Examples": []
+        }
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 5,
+    "ParseDiagnostics": []
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "á",
+        "Word": "á"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "particle used as a pause word before starting to speak.",
+        "Word": "á"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "á"
       },
       {
         "Type": "TEXT",
-        "Content": "as a filler."
+        "Content": "as a filler.",
+        "Word": "á"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "á, muanhi ka ugmà?"
+        "Content": "á, muanhi ka ugmà?",
+        "Word": "á"
       },
       {
         "Type": "TEXT",
-        "Content": "Um, are you going to come here tomorrow?"
+        "Content": "Um, are you going to come here tomorrow?",
+        "Word": "á"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "á"
       },
       {
         "Type": "TEXT",
-        "Content": "deprecating or showing unimportance of what just preceded."
+        "Content": "deprecating or showing unimportance of what just preceded.",
+        "Word": "á"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "á, paríha ra nákù,"
+        "Content": "á, paríha ra nákù,",
+        "Word": "á"
       },
       {
         "Type": "TEXT",
-        "Content": "Oh, it’s all the same to me."
+        "Content": "Oh, it’s all the same to me.",
+        "Word": "á"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "á, nagkumidiya lang siya,"
+        "Content": "á, nagkumidiya lang siya,",
+        "Word": "á"
       },
       {
         "Type": "TEXT",
-        "Content": "Oh, he’s just joking."
+        "Content": "Oh, he’s just joking.",
+        "Word": "á"
       },
       {
         "Type": "NUMBER",
-        "Content": "3"
+        "Content": "3",
+        "Word": "á"
       },
       {
         "Type": "TEXT",
-        "Content": "showing mild disapproval."
+        "Content": "showing mild disapproval.",
+        "Word": "á"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "á, dì nà mahímù,"
+        "Content": "á, dì nà mahímù,",
+        "Word": "á"
       },
       {
         "Type": "TEXT",
-        "Content": "Oh, you can’t do that."
+        "Content": "Oh, you can’t do that.",
+        "Word": "á"
       },
       {
         "Type": "NUMBER",
-        "Content": "4"
+        "Content": "4",
+        "Word": "á"
       },
       {
         "Type": "TEXT",
-        "Content": "recalling or conceding s.t."
+        "Content": "recalling or conceding s.t.",
+        "Word": "á"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "á, duha diay tu,"
+        "Content": "á, duha diay tu,",
+        "Word": "á"
       },
       {
         "Type": "TEXT",
-        "Content": "Oh, yes. There were two of them, weren’t there."
+        "Content": "Oh, yes. There were two of them, weren’t there.",
+        "Word": "á"
       },
       {
         "Type": "NUMBER",
-        "Content": "4a"
+        "Content": "4a",
+        "Word": "á"
       },
       {
         "Type": "TEXT",
-        "Content": "preceding s.t. just found out."
+        "Content": "preceding s.t. just found out.",
+        "Word": "á"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "á, Lítu diay ímung ngálan,"
+        "Content": "á, Lítu diay ímung ngálan,",
+        "Word": "á"
       },
       {
         "Type": "TEXT",
-        "Content": "Oh, so your name is Lito."
+        "Content": "Oh, so your name is Lito.",
+        "Word": "á"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "á, kanindut,"
+        "Content": "á, kanindut,",
+        "Word": "á"
       },
       {
         "Type": "TEXT",
-        "Content": "Oh, how nice!"
+        "Content": "Oh, how nice!",
+        "Word": "á"
       },
       {
         "Type": "NUMBER",
-        "Content": "5"
+        "Content": "5",
+        "Word": "á"
       },
       {
         "Type": "TEXT",
-        "Content": "expressing relief."
+        "Content": "expressing relief.",
+        "Word": "á"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "á, nahuwasan ku,"
+        "Content": "á, nahuwasan ku,",
+        "Word": "á"
       },
       {
         "Type": "TEXT",
-        "Content": "Ah, what a relief!"
+        "Content": "Ah, what a relief!",
+        "Word": "á"
       }
     ],
     "WordDef": {
@@ -492,71 +545,86 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "à"
+        "Content": "à",
+        "Word": "à"
       },
       {
         "Type": "TEXT",
-        "Content": "particle preceding or following a sentence with an adjective predicate."
+        "Content": "particle preceding or following a sentence with an adjective predicate.",
+        "Word": "à"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "à"
       },
       {
         "Type": "TEXT",
-        "Content": "dismissing s.t. as impractical, too easy, impossible, etc."
+        "Content": "dismissing s.t. as impractical, too easy, impossible, etc.",
+        "Word": "à"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "à, mu ra diay nà? Kasayun à!"
+        "Content": "à, mu ra diay nà? Kasayun à!",
+        "Word": "à"
       },
       {
         "Type": "TEXT",
-        "Content": "Oh, is that all there is to it? How easy it is!"
+        "Content": "Oh, is that all there is to it? How easy it is!",
+        "Word": "à"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "à, ása man ku mutúu nímu,"
+        "Content": "à, ása man ku mutúu nímu,",
+        "Word": "à"
       },
       {
         "Type": "TEXT",
-        "Content": "Hm, you think I could believe you?"
+        "Content": "Hm, you think I could believe you?",
+        "Word": "à"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "à"
       },
       {
         "Type": "TEXT",
-        "Content": "showing disapproval."
+        "Content": "showing disapproval.",
+        "Word": "à"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "à, hináya nímung mulíhuk,"
+        "Content": "à, hináya nímung mulíhuk,",
+        "Word": "à"
       },
       {
         "Type": "TEXT",
-        "Content": "Hm! You sure work slowly!"
+        "Content": "Hm! You sure work slowly!",
+        "Word": "à"
       },
       {
         "Type": "NUMBER",
-        "Content": "3"
+        "Content": "3",
+        "Word": "à"
       },
       {
         "Type": "TEXT",
-        "Content": "showing surprise."
+        "Content": "showing surprise.",
+        "Word": "à"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "à, kanindut nímug sinínà,"
+        "Content": "à, kanindut nímug sinínà,",
+        "Word": "à"
       },
       {
         "Type": "TEXT",
-        "Content": "How come you have such a beautiful dress on!"
+        "Content": "How come you have such a beautiful dress on!",
+        "Word": "à"
       }
     ],
     "WordDef": {
@@ -632,15 +700,16 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "ā̀"
+        "Content": "ā̀",
+        "Word": "ā̀"
       },
       {
         "Type": "LINK",
-        "Content": "álà"
+        "Content": "álà",
+        "Word": "ā̀"
       }
     ],
     "WordDef": {
@@ -661,244 +730,91 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "aba<sub>1</sub>"
+        "Content": "ab-ab",
+        "Word": "ab-ab"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "breast of fowls."
-      }
-    ],
-    "WordDef": {
-      "Word": "aba<sub>1</sub>",
-      "WordTypeDefs": [
-        {
-          "WordType": "n",
-          "Classes": [],
-          "DefEx": {
-            "Def": {
-              "Text": "breast of fowls.",
-              "Links": [],
-              "Word": null
-            },
-            "Examples": []
-          }
-        }
-      ]
-    },
-    "ParseOk": true,
-    "ParseNextIndex": 3,
-    "ParseDiagnostics": []
-  },
-  {
-    "letter": "a",
-    "tokens": [
-      {
-        "Type": "CEBWORD",
-        "Content": "aba<sub>2</sub>"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "exclamation of pleasure and surprise."
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "Aba! Nakadaug ku,"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "My! I won!"
-      }
-    ],
-    "WordDef": {
-      "Word": "aba<sub>2</sub>",
-      "DefEx": {
-        "Def": {
-          "Text": "exclamation of pleasure and surprise.",
-          "Links": [],
-          "Word": null
-        },
-        "Examples": [
-          {
-            "Phrase": "Aba! Nakadaug ku,",
-            "Gloss": "My! I won!"
-          }
-        ]
-      }
-    },
-    "ParseOk": true,
-    "ParseNextIndex": 4,
-    "ParseDiagnostics": []
-  },
-  {
-    "letter": "a",
-    "tokens": [
-      {
-        "Type": "CEBWORD",
-        "Content": "ábà tuy"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "(from"
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "sábà dihà untuy"
-      },
-      {
-        "Type": "TEXT",
-        "Content": ") shut up!"
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "ábà tuy, maáyu ka lang sa tayáda, wà kay tadtad,"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "Shut up! You’re great at talking, but let’s see you do s.t."
-      }
-    ],
-    "WordDef": {
-      "Word": "ábà tuy",
-      "DefEx": {
-        "Def": {
-          "Text": "(from",
-          "Links": [],
-          "Word": null
-        },
-        "Examples": [
-          {
-            "Phrase": "sábà dihà untuy",
-            "Gloss": ") shut up!"
-          },
-          {
-            "Phrase": "ábà tuy, maáyu ka lang sa tayáda, wà kay tadtad,",
-            "Gloss": "Shut up! You’re great at talking, but let’s see you do s.t."
-          }
-        ]
-      }
-    },
-    "ParseOk": true,
-    "ParseNextIndex": 6,
-    "ParseDiagnostics": []
-  },
-  {
-    "letter": "a",
-    "tokens": [
-      {
-        "Type": "CEBWORD",
-        "Content": "abaa"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "particle indicating disapproval (literary)."
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "Abaa! Mahū́g ka gánì dihà!"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "Stop that! You might fall!"
-      }
-    ],
-    "WordDef": {
-      "Word": "abaa",
-      "DefEx": {
-        "Def": {
-          "Text": "particle indicating disapproval (literary).",
-          "Links": [],
-          "Word": null
-        },
-        "Examples": [
-          {
-            "Phrase": "Abaa! Mahū́g ka gánì dihà!",
-            "Gloss": "Stop that! You might fall!"
-          }
-        ]
-      }
-    },
-    "ParseOk": true,
-    "ParseNextIndex": 4,
-    "ParseDiagnostics": []
-  },
-  {
-    "letter": "a",
-    "tokens": [
-      {
-        "Type": "CEBWORD",
-        "Content": "ab-ab"
-      },
-      {
-        "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "ab-ab"
       },
       {
         "Type": "CLASS",
-        "Content": "[A; a]"
+        "Content": "[A; a]",
+        "Word": "ab-ab"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "ab-ab"
       },
       {
         "Type": "TEXT",
-        "Content": "chew to pieces."
+        "Content": "chew to pieces.",
+        "Word": "ab-ab"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Ab-ábun sa irù ang íyang hikut,"
+        "Content": "Ab-ábun sa irù ang íyang hikut,",
+        "Word": "ab-ab"
       },
       {
         "Type": "TEXT",
-        "Content": "The dog will chew up his rope."
+        "Content": "The dog will chew up his rope.",
+        "Word": "ab-ab"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "ab-ab"
       },
       {
         "Type": "TEXT",
-        "Content": "eat away, erode."
+        "Content": "eat away, erode.",
+        "Word": "ab-ab"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Ang pagluib ni Maríya nag-ab-ab sa íyang balatían,"
+        "Content": "Ang pagluib ni Maríya nag-ab-ab sa íyang balatían,",
+        "Word": "ab-ab"
       },
       {
         "Type": "TEXT",
-        "Content": "Maria’s infidelity ate away at his insides."
+        "Content": "Maria’s infidelity ate away at his insides.",
+        "Word": "ab-ab"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Giab-ab ang íyang pinútì sa tayà,"
+        "Content": "Giab-ab ang íyang pinútì sa tayà,",
+        "Word": "ab-ab"
       },
       {
         "Type": "TEXT",
-        "Content": "His sword was eaten away by rust."
+        "Content": "His sword was eaten away by rust.",
+        "Word": "ab-ab"
       },
       {
         "Type": "NUMBER",
-        "Content": "3"
+        "Content": "3",
+        "Word": "ab-ab"
       },
       {
         "Type": "TEXT",
-        "Content": "fester."
+        "Content": "fester.",
+        "Word": "ab-ab"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Ang nag-ab-ab kung núka,"
+        "Content": "Ang nag-ab-ab kung núka,",
+        "Word": "ab-ab"
       },
       {
         "Type": "TEXT",
-        "Content": "My festering wound.†"
+        "Content": "My festering wound.†",
+        "Word": "ab-ab"
       }
     ],
     "WordDef": {
@@ -974,19 +890,203 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abad"
-      },
-      {
-        "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "ábà tuy",
+        "Word": "ábà tuy"
       },
       {
         "Type": "TEXT",
-        "Content": "abbot."
+        "Content": "(from",
+        "Word": "ábà tuy"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "sábà dihà untuy",
+        "Word": "ábà tuy"
+      },
+      {
+        "Type": "TEXT",
+        "Content": ") shut up!",
+        "Word": "ábà tuy"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "ábà tuy, maáyu ka lang sa tayáda, wà kay tadtad,",
+        "Word": "ábà tuy"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Shut up! You’re great at talking, but let’s see you do s.t.",
+        "Word": "ábà tuy"
+      }
+    ],
+    "WordDef": {
+      "Word": "ábà tuy",
+      "DefEx": {
+        "Def": {
+          "Text": "(from",
+          "Links": [],
+          "Word": null
+        },
+        "Examples": [
+          {
+            "Phrase": "sábà dihà untuy",
+            "Gloss": ") shut up!"
+          },
+          {
+            "Phrase": "ábà tuy, maáyu ka lang sa tayáda, wà kay tadtad,",
+            "Gloss": "Shut up! You’re great at talking, but let’s see you do s.t."
+          }
+        ]
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": []
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "aba<sub>1</sub>",
+        "Word": "aba<sub>1</sub>"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n",
+        "Word": "aba<sub>1</sub>"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "breast of fowls.",
+        "Word": "aba<sub>1</sub>"
+      }
+    ],
+    "WordDef": {
+      "Word": "aba<sub>1</sub>",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Text": "breast of fowls.",
+              "Links": [],
+              "Word": null
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": []
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "aba<sub>2</sub>",
+        "Word": "aba<sub>2</sub>"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "exclamation of pleasure and surprise.",
+        "Word": "aba<sub>2</sub>"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Aba! Nakadaug ku,",
+        "Word": "aba<sub>2</sub>"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "My! I won!",
+        "Word": "aba<sub>2</sub>"
+      }
+    ],
+    "WordDef": {
+      "Word": "aba<sub>2</sub>",
+      "DefEx": {
+        "Def": {
+          "Text": "exclamation of pleasure and surprise.",
+          "Links": [],
+          "Word": null
+        },
+        "Examples": [
+          {
+            "Phrase": "Aba! Nakadaug ku,",
+            "Gloss": "My! I won!"
+          }
+        ]
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 4,
+    "ParseDiagnostics": []
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abaa",
+        "Word": "abaa"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "particle indicating disapproval (literary).",
+        "Word": "abaa"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abaa! Mahū́g ka gánì dihà!",
+        "Word": "abaa"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Stop that! You might fall!",
+        "Word": "abaa"
+      }
+    ],
+    "WordDef": {
+      "Word": "abaa",
+      "DefEx": {
+        "Def": {
+          "Text": "particle indicating disapproval (literary).",
+          "Links": [],
+          "Word": null
+        },
+        "Examples": [
+          {
+            "Phrase": "Abaa! Mahū́g ka gánì dihà!",
+            "Gloss": "Stop that! You might fall!"
+          }
+        ]
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 4,
+    "ParseDiagnostics": []
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abad",
+        "Word": "abad"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n",
+        "Word": "abad"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "abbot.",
+        "Word": "abad"
       }
     ],
     "WordDef": {
@@ -1011,59 +1111,71 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "ábag"
+        "Content": "ábag",
+        "Word": "ábag"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "ábag"
       },
       {
         "Type": "CLASS",
-        "Content": "[A; b]"
+        "Content": "[A; b]",
+        "Word": "ábag"
       },
       {
         "Type": "TEXT",
-        "Content": "give material help, help do work."
+        "Content": "give material help, help do work.",
+        "Word": "ábag"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Kinsa may mag-ábag nímu sa ímung pag-iskuyla?"
+        "Content": "Kinsa may mag-ábag nímu sa ímung pag-iskuyla?",
+        "Word": "ábag"
       },
       {
         "Type": "TEXT",
-        "Content": "Who will help pay for your schooling?"
+        "Content": "Who will help pay for your schooling?",
+        "Word": "ábag"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Abági ku áring pagsilhig,"
+        "Content": "Abági ku áring pagsilhig,",
+        "Word": "ábag"
       },
       {
         "Type": "TEXT",
-        "Content": "Help me sweep."
+        "Content": "Help me sweep.",
+        "Word": "ábag"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "ábag"
       },
       {
         "Type": "TEXT",
-        "Content": "help given."
+        "Content": "help given.",
+        "Word": "ábag"
       },
       {
         "Type": "CEBWORD",
-        "Content": "ka-"
+        "Content": "ka-",
+        "Word": "ábag"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "ábag"
       },
       {
         "Type": "TEXT",
-        "Content": "helper."
+        "Content": "helper.",
+        "Word": "ábag"
       }
     ],
     "WordDef": {
@@ -1128,19 +1240,21 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abaga"
+        "Content": "abaga",
+        "Word": "abaga"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abaga"
       },
       {
         "Type": "TEXT",
-        "Content": "sweet potatoes growing from the outer vines and not from the main root."
+        "Content": "sweet potatoes growing from the outer vines and not from the main root.",
+        "Word": "abaga"
       }
     ],
     "WordDef": {
@@ -1165,55 +1279,66 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abaka"
+        "Content": "abaka",
+        "Word": "abaka"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abaka"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abaka"
       },
       {
         "Type": "TEXT",
-        "Content": "abaca plant: <b lang=\"la\"><i>Musa textilis</i></b>."
+        "Content": "abaca plant: <b lang=\"la\"><i>Musa textilis</i></b>.",
+        "Word": "abaka"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abaka"
       },
       {
         "Type": "TEXT",
-        "Content": "abaca fiber."
+        "Content": "abaca fiber.",
+        "Word": "abaka"
       },
       {
         "Type": "CEBWORD",
-        "Content": "abakahan, abakanhan, abakal"
+        "Content": "abakahan, abakanhan, abakal",
+        "Word": "abaka"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abaka"
       },
       {
         "Type": "TEXT",
-        "Content": "abaca plantation."
+        "Content": "abaca plantation.",
+        "Word": "abaka"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abaka"
       },
       {
         "Type": "CLASS",
-        "Content": "[A3]"
+        "Content": "[A3]",
+        "Word": "abaka"
       },
       {
         "Type": "TEXT",
-        "Content": "own an abaca plantation."
+        "Content": "own an abaca plantation.",
+        "Word": "abaka"
       }
     ],
     "WordDef": {
@@ -1287,19 +1412,21 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abakáda"
+        "Content": "abakáda",
+        "Word": "abakáda"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abakáda"
       },
       {
         "Type": "TEXT",
-        "Content": "alphabet."
+        "Content": "alphabet.",
+        "Word": "abakáda"
       }
     ],
     "WordDef": {
@@ -1324,15 +1451,16 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abakal"
+        "Content": "abakal",
+        "Word": "abakal"
       },
       {
         "Type": "LINK",
-        "Content": "abaka"
+        "Content": "abaka",
+        "Word": "abakal"
       }
     ],
     "WordDef": {
@@ -1353,27 +1481,31 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abal"
+        "Content": "abal",
+        "Word": "abal"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abal"
       },
       {
         "Type": "LINK",
-        "Content": "balbal"
+        "Content": "balbal",
+        "Word": "abal"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abal"
       },
       {
         "Type": "LINK",
-        "Content": "abat"
+        "Content": "abat",
+        "Word": "abal"
       }
     ],
     "WordDef": {
@@ -1414,47 +1546,56 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abalu"
+        "Content": "abalu",
+        "Word": "abalu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abalu"
       },
       {
         "Type": "TEXT",
-        "Content": "assessed value."
+        "Content": "assessed value.",
+        "Word": "abalu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abalu"
       },
       {
         "Type": "CLASS",
-        "Content": "[AB56; b5c]"
+        "Content": "[AB56; b5c]",
+        "Word": "abalu"
       },
       {
         "Type": "TEXT",
-        "Content": "assess, be assessed at."
+        "Content": "assess, be assessed at.",
+        "Word": "abalu"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Ug ikaw muabalu sa ákung yútà, ayawg dak-a,"
+        "Content": "Ug ikaw muabalu sa ákung yútà, ayawg dak-a,",
+        "Word": "abalu"
       },
       {
         "Type": "TEXT",
-        "Content": "If you assess my land, don’t set it too high."
+        "Content": "If you assess my land, don’t set it too high.",
+        "Word": "abalu"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Ang yútà miabalu (giabalu, giabaluhan) ug singkwinta mil,"
+        "Content": "Ang yútà miabalu (giabalu, giabaluhan) ug singkwinta mil,",
+        "Word": "abalu"
       },
       {
         "Type": "TEXT",
-        "Content": "The land was assessed at fifty thousand pesos."
+        "Content": "The land was assessed at fifty thousand pesos.",
+        "Word": "abalu"
       }
     ],
     "WordDef": {
@@ -1502,27 +1643,31 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abalwasiyun"
+        "Content": "abalwasiyun",
+        "Word": "abalwasiyun"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abalwasiyun"
       },
       {
         "Type": "TEXT",
-        "Content": "assessment."
+        "Content": "assessment.",
+        "Word": "abalwasiyun"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Purus dagkug abalwasiyun ang mga yútà dinhi sa syudad,"
+        "Content": "Purus dagkug abalwasiyun ang mga yútà dinhi sa syudad,",
+        "Word": "abalwasiyun"
       },
       {
         "Type": "TEXT",
-        "Content": "The lots in the city all have high assessments."
+        "Content": "The lots in the city all have high assessments.",
+        "Word": "abalwasiyun"
       }
     ],
     "WordDef": {
@@ -1552,71 +1697,86 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abandunar"
+        "Content": "abandunar",
+        "Word": "abandunar"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abandunar"
       },
       {
         "Type": "CLASS",
-        "Content": "[A3P; c1]"
+        "Content": "[A3P; c1]",
+        "Word": "abandunar"
       },
       {
         "Type": "TEXT",
-        "Content": "abandon, neglect."
+        "Content": "abandon, neglect.",
+        "Word": "abandunar"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Nag-abandunar na lang siya sa íyang kaugalíngun sukad mamatay ang íyang asáwa,"
+        "Content": "Nag-abandunar na lang siya sa íyang kaugalíngun sukad mamatay ang íyang asáwa,",
+        "Word": "abandunar"
       },
       {
         "Type": "TEXT",
-        "Content": "He neglected himself entirely after his wife died."
+        "Content": "He neglected himself entirely after his wife died.",
+        "Word": "abandunar"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Ayaw abandunaha (iabandunar) ang ímung pamilya,"
+        "Content": "Ayaw abandunaha (iabandunar) ang ímung pamilya,",
+        "Word": "abandunar"
       },
       {
         "Type": "TEXT",
-        "Content": "Do not abandon your family."
+        "Content": "Do not abandon your family.",
+        "Word": "abandunar"
       },
       {
         "Type": "CEBWORD",
-        "Content": "abandunádu"
+        "Content": "abandunádu",
+        "Word": "abandunar"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "a"
+        "Content": "a",
+        "Word": "abandunar"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abandunar"
       },
       {
         "Type": "TEXT",
-        "Content": "abandoned."
+        "Content": "abandoned.",
+        "Word": "abandunar"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abandunar"
       },
       {
         "Type": "TEXT",
-        "Content": "neglectful."
+        "Content": "neglectful.",
+        "Word": "abandunar"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abandunar"
       },
       {
         "Type": "LINK",
-        "Content": "abandunar"
+        "Content": "abandunar",
+        "Word": "abandunar"
       }
     ],
     "WordDef": {
@@ -1701,15 +1861,16 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abandúnu"
+        "Content": "abandúnu",
+        "Word": "abandúnu"
       },
       {
         "Type": "LINK",
-        "Content": "abandunar"
+        "Content": "abandunar",
+        "Word": "abandúnu"
       }
     ],
     "WordDef": {
@@ -1730,127 +1891,156 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "ábang"
+        "Content": "ábang",
+        "Word": "ábang"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "ábang"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "ábang"
       },
       {
         "Type": "CLASS",
-        "Content": "[A2S; b]"
+        "Content": "[A2S; b]",
+        "Word": "ábang"
       },
       {
         "Type": "TEXT",
-        "Content": "rent."
+        "Content": "rent.",
+        "Word": "ábang"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Ang usa ka kwartu giabángan sa tigúlang,"
+        "Content": "Ang usa ka kwartu giabángan sa tigúlang,",
+        "Word": "ábang"
       },
       {
         "Type": "TEXT",
-        "Content": "The old man rents one of the rooms."
+        "Content": "The old man rents one of the rooms.",
+        "Word": "ábang"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "ábang"
       },
       {
         "Type": "CLASS",
-        "Content": "[b]"
+        "Content": "[b]",
+        "Word": "ábang"
       },
       {
         "Type": "TEXT",
-        "Content": "hire a prostitute."
+        "Content": "hire a prostitute.",
+        "Word": "ábang"
       },
       {
         "Type": "NUMBER",
-        "Content": "3"
+        "Content": "3",
+        "Word": "ábang"
       },
       {
         "Type": "CLASS",
-        "Content": "[A2; c]"
+        "Content": "[A2; c]",
+        "Word": "ábang"
       },
       {
         "Type": "TEXT",
-        "Content": "make an offering to a supernatural being for the use of land which is thought to be in his possession."
+        "Content": "make an offering to a supernatural being for the use of land which is thought to be in his possession.",
+        "Word": "ábang"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Iábang ni nákung baktína álang sa uma,"
+        "Content": "Iábang ni nákung baktína álang sa uma,",
+        "Word": "ábang"
       },
       {
         "Type": "TEXT",
-        "Content": "I will sacrifice this pig as rental for the land."
+        "Content": "I will sacrifice this pig as rental for the land.",
+        "Word": "ábang"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "ábang"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "ábang"
       },
       {
         "Type": "TEXT",
-        "Content": "rent paid."
+        "Content": "rent paid.",
+        "Word": "ábang"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Pilay ábang nímu sa libru?"
+        "Content": "Pilay ábang nímu sa libru?",
+        "Word": "ábang"
       },
       {
         "Type": "TEXT",
-        "Content": "How much rent did you pay for the book?"
+        "Content": "How much rent did you pay for the book?",
+        "Word": "ábang"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "ábang"
       },
       {
         "Type": "TEXT",
-        "Content": "money paid a prostitute."
+        "Content": "money paid a prostitute.",
+        "Word": "ábang"
       },
       {
         "Type": "NUMBER",
-        "Content": "3"
+        "Content": "3",
+        "Word": "ábang"
       },
       {
         "Type": "TEXT",
-        "Content": "toil taken by supernatural beings."
+        "Content": "toil taken by supernatural beings.",
+        "Word": "ábang"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Kadtung nalumus dinhi ábang kunu tu sa ingkantu,"
+        "Content": "Kadtung nalumus dinhi ábang kunu tu sa ingkantu,",
+        "Word": "ábang"
       },
       {
         "Type": "TEXT",
-        "Content": "The man who drowned here is said to have been the rent collected by the supernatural spirit."
+        "Content": "The man who drowned here is said to have been the rent collected by the supernatural spirit.",
+        "Word": "ábang"
       },
       {
         "Type": "CEBWORD",
-        "Content": "paN-"
+        "Content": "paN-",
+        "Word": "ábang"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "ábang"
       },
       {
         "Type": "CLASS",
-        "Content": "[A2]"
+        "Content": "[A2]",
+        "Word": "ábang"
       },
       {
         "Type": "TEXT",
-        "Content": "patronize a prostitute. <b lang=\"ceb\">-an(→)"
+        "Content": "patronize a prostitute. <b lang=\"ceb\">-an(→)",
+        "Word": "ábang"
       }
     ],
     "WordDef": {
@@ -1992,47 +2182,56 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abánid"
+        "Content": "abánid",
+        "Word": "abánid"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abánid"
       },
       {
         "Type": "CLASS",
-        "Content": "[A; c1]"
+        "Content": "[A; c1]",
+        "Word": "abánid"
       },
       {
         "Type": "TEXT",
-        "Content": "do s.t. step by step, and in sequence."
+        "Content": "do s.t. step by step, and in sequence.",
+        "Word": "abánid"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Iabánid (abaníra) kini pagpintal arun dílì magkampat,"
+        "Content": "Iabánid (abaníra) kini pagpintal arun dílì magkampat,",
+        "Word": "abánid"
       },
       {
         "Type": "TEXT",
-        "Content": "Paint it one square at a time so it will come out even."
+        "Content": "Paint it one square at a time so it will come out even.",
+        "Word": "abánid"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "a"
+        "Content": "a",
+        "Word": "abánid"
       },
       {
         "Type": "TEXT",
-        "Content": "done in succession, order."
+        "Content": "done in succession, order.",
+        "Word": "abánid"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Abánid ang íyang pagsukut sa mga istudyanti,"
+        "Content": "Abánid ang íyang pagsukut sa mga istudyanti,",
+        "Word": "abánid"
       },
       {
         "Type": "TEXT",
-        "Content": "He asked the students one after another in turn."
+        "Content": "He asked the students one after another in turn.",
+        "Word": "abánid"
       }
     ],
     "WordDef": {
@@ -2081,47 +2280,56 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abansáda"
+        "Content": "abansáda",
+        "Word": "abansáda"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "a"
+        "Content": "a",
+        "Word": "abansáda"
       },
       {
         "Type": "TEXT",
-        "Content": "exposed to the wind."
+        "Content": "exposed to the wind.",
+        "Word": "abansáda"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abansáda"
       },
       {
         "Type": "CLASS",
-        "Content": "[B12; c1]"
+        "Content": "[B12; c1]",
+        "Word": "abansáda"
       },
       {
         "Type": "TEXT",
-        "Content": "for s.t. to be directly open to the wind."
+        "Content": "for s.t. to be directly open to the wind.",
+        "Word": "abansáda"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Naabansáda sa hángin ang ákung bukubuku, maung gisip-un ku,"
+        "Content": "Naabansáda sa hángin ang ákung bukubuku, maung gisip-un ku,",
+        "Word": "abansáda"
       },
       {
         "Type": "TEXT",
-        "Content": "My back was directly exposed to the wind. That’s why I caught cold."
+        "Content": "My back was directly exposed to the wind. That’s why I caught cold.",
+        "Word": "abansáda"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Ayaw abansadáha (iabansáda) sa hángin ang inyung bintánà,"
+        "Content": "Ayaw abansadáha (iabansáda) sa hángin ang inyung bintánà,",
+        "Word": "abansáda"
       },
       {
         "Type": "TEXT",
-        "Content": "Don’t put a window right where it catches the full breeze."
+        "Content": "Don’t put a window right where it catches the full breeze.",
+        "Word": "abansáda"
       }
     ],
     "WordDef": {
@@ -2169,31 +2377,36 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abansin"
+        "Content": "abansin",
+        "Word": "abansin"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abansin"
       },
       {
         "Type": "CLASS",
-        "Content": "[A]"
+        "Content": "[A]",
+        "Word": "abansin"
       },
       {
         "Type": "TEXT",
-        "Content": "advance, for a body of people to move forward."
+        "Content": "advance, for a body of people to move forward.",
+        "Word": "abansin"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Ang mga Hapúnis miabansin sa pátag sa Lusun,"
+        "Content": "Ang mga Hapúnis miabansin sa pátag sa Lusun,",
+        "Word": "abansin"
       },
       {
         "Type": "TEXT",
-        "Content": "The Japanese advanced over the plains of Luzon."
+        "Content": "The Japanese advanced over the plains of Luzon.",
+        "Word": "abansin"
       }
     ],
     "WordDef": {
@@ -2225,199 +2438,246 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abanti"
+        "Content": "abanti",
+        "Word": "abanti"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "a"
+        "Content": "a",
+        "Word": "abanti"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abanti"
       },
       {
         "Type": "TEXT",
-        "Content": "forward, ahead."
+        "Content": "forward, ahead.",
+        "Word": "abanti"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Abanti ka rang milingkud,"
+        "Content": "Abanti ka rang milingkud,",
+        "Word": "abanti"
       },
       {
         "Type": "TEXT",
-        "Content": "You took a seat too far to the front."
+        "Content": "You took a seat too far to the front.",
+        "Word": "abanti"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abanti"
       },
       {
         "Type": "TEXT",
-        "Content": "ahead in score."
+        "Content": "ahead in score.",
+        "Word": "abanti"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abanti"
       },
       {
         "Type": "NUMBER",
-        "Content": "1a"
+        "Content": "1a",
+        "Word": "abanti"
       },
       {
         "Type": "CLASS",
-        "Content": "[A2; c]"
+        "Content": "[A2; c]",
+        "Word": "abanti"
       },
       {
         "Type": "TEXT",
-        "Content": "move forward."
+        "Content": "move forward.",
+        "Word": "abanti"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Muabanti kag diyútay, matambug ka sa bangag,"
+        "Content": "Muabanti kag diyútay, matambug ka sa bangag,",
+        "Word": "abanti"
       },
       {
         "Type": "TEXT",
-        "Content": "If you move forward any more, you will fall into the hole."
+        "Content": "If you move forward any more, you will fall into the hole.",
+        "Word": "abanti"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Iabanti nang ímung awtug diyútay,"
+        "Content": "Iabanti nang ímung awtug diyútay,",
+        "Word": "abanti"
       },
       {
         "Type": "TEXT",
-        "Content": "Move your car forward a bit."
+        "Content": "Move your car forward a bit.",
+        "Word": "abanti"
       },
       {
         "Type": "NUMBER",
-        "Content": "1b"
+        "Content": "1b",
+        "Word": "abanti"
       },
       {
         "Type": "CLASS",
-        "Content": "[A; a]"
+        "Content": "[A; a]",
+        "Word": "abanti"
       },
       {
         "Type": "TEXT",
-        "Content": "be ahead, have more points in a game."
+        "Content": "be ahead, have more points in a game.",
+        "Word": "abanti"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Naabantíhan mu námug diyis puntus,"
+        "Content": "Naabantíhan mu námug diyis puntus,",
+        "Word": "abanti"
       },
       {
         "Type": "TEXT",
-        "Content": "We were ten points ahead of you."
+        "Content": "We were ten points ahead of you.",
+        "Word": "abanti"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abanti"
       },
       {
         "Type": "CLASS",
-        "Content": "[A2; a12]"
+        "Content": "[A2; a12]",
+        "Word": "abanti"
       },
       {
         "Type": "TEXT",
-        "Content": "keep up with s.t."
+        "Content": "keep up with s.t.",
+        "Word": "abanti"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Dì ku makaabanti sa galastúhan sa iskuylahan,"
+        "Content": "Dì ku makaabanti sa galastúhan sa iskuylahan,",
+        "Word": "abanti"
       },
       {
         "Type": "TEXT",
-        "Content": "I cannot keep up with the school payments."
+        "Content": "I cannot keep up with the school payments.",
+        "Word": "abanti"
       },
       {
         "Type": "NUMBER",
-        "Content": "3"
+        "Content": "3",
+        "Word": "abanti"
       },
       {
         "Type": "CLASS",
-        "Content": "[A2; a12]"
+        "Content": "[A2; a12]",
+        "Word": "abanti"
       },
       {
         "Type": "TEXT",
-        "Content": "endure work."
+        "Content": "endure work.",
+        "Word": "abanti"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Dì ku makaabanti sa pagdáru kay dautun ku,"
+        "Content": "Dì ku makaabanti sa pagdáru kay dautun ku,",
+        "Word": "abanti"
       },
       {
         "Type": "TEXT",
-        "Content": "I can’t keep up with the plowing because I’m sickly."
+        "Content": "I can’t keep up with the plowing because I’m sickly.",
+        "Word": "abanti"
       },
       {
         "Type": "NUMBER",
-        "Content": "4a"
+        "Content": "4a",
+        "Word": "abanti"
       },
       {
         "Type": "CLASS",
-        "Content": "[A]"
+        "Content": "[A]",
+        "Word": "abanti"
       },
       {
         "Type": "TEXT",
-        "Content": "ask part payment in advance, especially in salary."
+        "Content": "ask part payment in advance, especially in salary.",
+        "Word": "abanti"
       },
       {
         "Type": "NUMBER",
-        "Content": "4b"
+        "Content": "4b",
+        "Word": "abanti"
       },
       {
         "Type": "CLASS",
-        "Content": "[c]"
+        "Content": "[c]",
+        "Word": "abanti"
       },
       {
         "Type": "TEXT",
-        "Content": "give s.o. a cash advance on his salary or other payment."
+        "Content": "give s.o. a cash advance on his salary or other payment.",
+        "Word": "abanti"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abanti"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abanti"
       },
       {
         "Type": "TEXT",
-        "Content": "front wheel(s)."
+        "Content": "front wheel(s).",
+        "Word": "abanti"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Nahiyus ang abanti sa mutur,"
+        "Content": "Nahiyus ang abanti sa mutur,",
+        "Word": "abanti"
       },
       {
         "Type": "TEXT",
-        "Content": "The front tire of the motorcycle is flat."
+        "Content": "The front tire of the motorcycle is flat.",
+        "Word": "abanti"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abanti"
       },
       {
         "Type": "TEXT",
-        "Content": "forward gear."
+        "Content": "forward gear.",
+        "Word": "abanti"
       },
       {
         "Type": "NUMBER",
-        "Content": "3"
+        "Content": "3",
+        "Word": "abanti"
       },
       {
         "Type": "TEXT",
-        "Content": "front seat in a car."
+        "Content": "front seat in a car.",
+        "Word": "abanti"
       },
       {
         "Type": "CEBWORD",
-        "Content": "atras —"
+        "Content": "atras —",
+        "Word": "abanti"
       },
       {
         "Type": "LINK",
-        "Content": "atras"
+        "Content": "atras",
+        "Word": "abanti"
       }
     ],
     "WordDef": {
@@ -2639,63 +2899,76 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abánu"
+        "Content": "abánu",
+        "Word": "abánu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abánu"
       },
       {
         "Type": "TEXT",
-        "Content": "factory-made cigar."
+        "Content": "factory-made cigar.",
+        "Word": "abánu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abánu"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abánu"
       },
       {
         "Type": "CLASS",
-        "Content": "[A; a12]"
+        "Content": "[A; a12]",
+        "Word": "abánu"
       },
       {
         "Type": "TEXT",
-        "Content": "make into a cigar."
+        "Content": "make into a cigar.",
+        "Word": "abánu"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abánu"
       },
       {
         "Type": "CLASS",
-        "Content": "[A123S]"
+        "Content": "[A123S]",
+        "Word": "abánu"
       },
       {
         "Type": "TEXT",
-        "Content": "have, obtain a cigar."
+        "Content": "have, obtain a cigar.",
+        "Word": "abánu"
       },
       {
         "Type": "CEBWORD",
-        "Content": "paN-"
+        "Content": "paN-",
+        "Word": "abánu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abánu"
       },
       {
         "Type": "CLASS",
-        "Content": "[A2]"
+        "Content": "[A2]",
+        "Word": "abánu"
       },
       {
         "Type": "TEXT",
-        "Content": "smoke a cigar."
+        "Content": "smoke a cigar.",
+        "Word": "abánu"
       }
     ],
     "WordDef": {
@@ -2773,139 +3046,171 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abat"
+        "Content": "abat",
+        "Word": "abat"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abat"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abat"
       },
       {
         "Type": "TEXT",
-        "Content": "any supernatural being or human with supernatural powers which shows itself in an unexpected and startling way."
+        "Content": "any supernatural being or human with supernatural powers which shows itself in an unexpected and startling way.",
+        "Word": "abat"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abat"
       },
       {
         "Type": "TEXT",
-        "Content": "one who is ‘it’ in games."
+        "Content": "one who is ‘it’ in games.",
+        "Word": "abat"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abat"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abat"
       },
       {
         "Type": "CLASS",
-        "Content": "[A2; a2]"
+        "Content": "[A2; a2]",
+        "Word": "abat"
       },
       {
         "Type": "TEXT",
-        "Content": "head off s.o."
+        "Content": "head off s.o.",
+        "Word": "abat"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Maapsan pa nímu siya ug ímung abatun sa iskína,"
+        "Content": "Maapsan pa nímu siya ug ímung abatun sa iskína,",
+        "Word": "abat"
       },
       {
         "Type": "TEXT",
-        "Content": "You can still catch up with him if you head him off at the corner."
+        "Content": "You can still catch up with him if you head him off at the corner.",
+        "Word": "abat"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abat"
       },
       {
         "Type": "CLASS",
-        "Content": "[AN; a12]"
+        "Content": "[AN; a12]",
+        "Word": "abat"
       },
       {
         "Type": "TEXT",
-        "Content": "frighten s.o. by appearing suddenly or otherwise startling him."
+        "Content": "frighten s.o. by appearing suddenly or otherwise startling him.",
+        "Word": "abat"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Ig-ági níya, abta siya,"
+        "Content": "Ig-ági níya, abta siya,",
+        "Word": "abat"
       },
       {
         "Type": "TEXT",
-        "Content": "When he comes by, give him a scare."
+        "Content": "When he comes by, give him a scare.",
+        "Word": "abat"
       },
       {
         "Type": "CEBWORD",
-        "Content": "alabtan, abtanan"
+        "Content": "alabtan, abtanan",
+        "Word": "abat"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "a"
+        "Content": "a",
+        "Word": "abat"
       },
       {
         "Type": "TEXT",
-        "Content": "haunted, place where things appear suddenly."
+        "Content": "haunted, place where things appear suddenly.",
+        "Word": "abat"
       },
       {
         "Type": "CEBWORD",
-        "Content": "alabtun"
+        "Content": "alabtun",
+        "Word": "abat"
       },
       {
         "Type": "TEXT",
-        "Content": "s.o. to whom spirits tend to show themselves."
+        "Content": "s.o. to whom spirits tend to show themselves.",
+        "Word": "abat"
       },
       {
         "Type": "CEBWORD",
-        "Content": "abat-ábat"
+        "Content": "abat-ábat",
+        "Word": "abat"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abat"
       },
       {
         "Type": "TEXT",
-        "Content": "game of tag."
+        "Content": "game of tag.",
+        "Word": "abat"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abat"
       },
       {
         "Type": "CLASS",
-        "Content": "[A13]"
+        "Content": "[A13]",
+        "Word": "abat"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abat"
       },
       {
         "Type": "TEXT",
-        "Content": "play tag."
+        "Content": "play tag.",
+        "Word": "abat"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abat"
       },
       {
         "Type": "TEXT",
-        "Content": "try to meet without succeeding."
+        "Content": "try to meet without succeeding.",
+        "Word": "abat"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Wà giyud mi magkítà, nag-abat-ábat lang,"
+        "Content": "Wà giyud mi magkítà, nag-abat-ábat lang,",
+        "Word": "abat"
       },
       {
         "Type": "TEXT",
-        "Content": "We just kept missing each other."
+        "Content": "We just kept missing each other.",
+        "Word": "abat"
       }
     ],
     "WordDef": {
@@ -3076,43 +3381,51 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "ábat<sub>1</sub>"
+        "Content": "ábat<sub>1</sub>",
+        "Word": "ábat<sub>1</sub>"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "ábat<sub>1</sub>"
       },
       {
         "Type": "CLASS",
-        "Content": "[A2S; b6]"
+        "Content": "[A2S; b6]",
+        "Word": "ábat<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "hold on to s.t. fixed to support oneself."
+        "Content": "hold on to s.t. fixed to support oneself.",
+        "Word": "ábat<sub>1</sub>"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Ang tigúwang miábat sa pasamánu paingun sa táas,"
+        "Content": "Ang tigúwang miábat sa pasamánu paingun sa táas,",
+        "Word": "ábat<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "The old man held on to the bannister while going upstairs."
+        "Content": "The old man held on to the bannister while going upstairs.",
+        "Word": "ábat<sub>1</sub>"
       },
       {
         "Type": "CEBWORD",
-        "Content": "-an(→)"
+        "Content": "-an(→)",
+        "Word": "ábat<sub>1</sub>"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "ábat<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "a railing in shape of a ladder for baby to cling to when he starts to walk."
+        "Content": "a railing in shape of a ladder for baby to cling to when he starts to walk.",
+        "Word": "ábat<sub>1</sub>"
       }
     ],
     "WordDef": {
@@ -3161,91 +3474,111 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "ábat<sub>2</sub>"
+        "Content": "ábat<sub>2</sub>",
+        "Word": "ábat<sub>2</sub>"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "ábat<sub>2</sub>"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "ábat<sub>2</sub>"
       },
       {
         "Type": "CLASS",
-        "Content": "[A; a1]"
+        "Content": "[A; a1]",
+        "Word": "ábat<sub>2</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "feel with the hands, esp. to find s.t. out."
+        "Content": "feel with the hands, esp. to find s.t. out.",
+        "Word": "ábat<sub>2</sub>"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Nag-ábat siya sa yáwi sa íyang bulsa kung wà ba hibyai,"
+        "Content": "Nag-ábat siya sa yáwi sa íyang bulsa kung wà ba hibyai,",
+        "Word": "ábat<sub>2</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "He felt for the key in his pocket to see if he hadn’t left it behind."
+        "Content": "He felt for the key in his pocket to see if he hadn’t left it behind.",
+        "Word": "ábat<sub>2</sub>"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Abátun ku ang íyang agtang ug hilanatun ba,"
+        "Content": "Abátun ku ang íyang agtang ug hilanatun ba,",
+        "Word": "ábat<sub>2</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "I’ll touch her forehead to see if she is feverish."
+        "Content": "I’ll touch her forehead to see if she is feverish.",
+        "Word": "ábat<sub>2</sub>"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "ábat<sub>2</sub>"
       },
       {
         "Type": "CLASS",
-        "Content": "[A123S; a12b2]"
+        "Content": "[A123S; a12b2]",
+        "Word": "ábat<sub>2</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "feel s.t. with the sense of touch."
+        "Content": "feel s.t. with the sense of touch.",
+        "Word": "ábat<sub>2</sub>"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Nakaabat ku sa kabugnaw sa sinihan,"
+        "Content": "Nakaabat ku sa kabugnaw sa sinihan,",
+        "Word": "ábat<sub>2</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "I felt the coolness of the movie house."
+        "Content": "I felt the coolness of the movie house.",
+        "Word": "ábat<sub>2</sub>"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Abátun gánì nímu ang kasakit, musamut giyud,"
+        "Content": "Abátun gánì nímu ang kasakit, musamut giyud,",
+        "Word": "ábat<sub>2</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "If you think about the pain, it will get worse."
+        "Content": "If you think about the pain, it will get worse.",
+        "Word": "ábat<sub>2</sub>"
       },
       {
         "Type": "NUMBER",
-        "Content": "3"
+        "Content": "3",
+        "Word": "ábat<sub>2</sub>"
       },
       {
         "Type": "CLASS",
-        "Content": "[A123S; b2]"
+        "Content": "[A123S; b2]",
+        "Word": "ábat<sub>2</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "happen to notice, sense s.t."
+        "Content": "happen to notice, sense s.t.",
+        "Word": "ábat<sub>2</sub>"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Nakaabat kung mu rag may misaka sa ámung báy,"
+        "Content": "Nakaabat kung mu rag may misaka sa ámung báy,",
+        "Word": "ábat<sub>2</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "I sensed that s.o. had entered our house."
+        "Content": "I sensed that s.o. had entered our house.",
+        "Word": "ábat<sub>2</sub>"
       }
     ],
     "WordDef": {
@@ -3329,27 +3662,31 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abgaw"
+        "Content": "abgaw",
+        "Word": "abgaw"
       },
       {
         "Type": "LINK",
-        "Content": "adgaw"
+        "Content": "adgaw",
+        "Word": "abgaw"
       },
       {
         "Type": "CEBWORD",
-        "Content": "-un"
+        "Content": "-un",
+        "Word": "abgaw"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abgaw"
       },
       {
         "Type": "TEXT",
-        "Content": "k.o. snapper with a yellow streak along the body: <b><i>Lutianus sp</i></b>."
+        "Content": "k.o. snapper with a yellow streak along the body: <b><i>Lutianus sp</i></b>.",
+        "Word": "abgaw"
       }
     ],
     "WordDef": {
@@ -3387,63 +3724,76 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abhak"
+        "Content": "abhak",
+        "Word": "abhak"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abhak"
       },
       {
         "Type": "CLASS",
-        "Content": "[A; b5]"
+        "Content": "[A; b5]",
+        "Word": "abhak"
       },
       {
         "Type": "TEXT",
-        "Content": "diminish s.t. by taking away or destroying part of it."
+        "Content": "diminish s.t. by taking away or destroying part of it.",
+        "Word": "abhak"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Naabhak (naabhákan) ang íyang abága sa bála,"
+        "Content": "Naabhak (naabhákan) ang íyang abága sa bála,",
+        "Word": "abhak"
       },
       {
         "Type": "TEXT",
-        "Content": "The bullet tore a huge piece out of his shoulder."
+        "Content": "The bullet tore a huge piece out of his shoulder.",
+        "Word": "abhak"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abhak"
       },
       {
         "Type": "TEXT",
-        "Content": "hole left when s.t. is chopped off, out."
+        "Content": "hole left when s.t. is chopped off, out.",
+        "Word": "abhak"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Dakù kaáyu ang abhak sa káhuy,"
+        "Content": "Dakù kaáyu ang abhak sa káhuy,",
+        "Word": "abhak"
       },
       {
         "Type": "TEXT",
-        "Content": "There’s a big cut in the tree."
+        "Content": "There’s a big cut in the tree.",
+        "Word": "abhak"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "a"
+        "Content": "a",
+        "Word": "abhak"
       },
       {
         "Type": "TEXT",
-        "Content": "done in such a way that s.t. is chopped off."
+        "Content": "done in such a way that s.t. is chopped off.",
+        "Word": "abhak"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Abhak nga pagkabuldúsir ang inyung nataran,"
+        "Content": "Abhak nga pagkabuldúsir ang inyung nataran,",
+        "Word": "abhak"
       },
       {
         "Type": "TEXT",
-        "Content": "Your yard was bulldozed clean."
+        "Content": "Your yard was bulldozed clean.",
+        "Word": "abhak"
       }
     ],
     "WordDef": {
@@ -3509,15 +3859,16 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abhul"
+        "Content": "abhul",
+        "Word": "abhul"
       },
       {
         "Type": "LINK",
-        "Content": "abhung"
+        "Content": "abhung",
+        "Word": "abhul"
       }
     ],
     "WordDef": {
@@ -3538,43 +3889,51 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abhung"
+        "Content": "abhung",
+        "Word": "abhung"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "a"
+        "Content": "a",
+        "Word": "abhung"
       },
       {
         "Type": "TEXT",
-        "Content": "musty and flat in smell: damp clothing, rice, sweet potatoes, salted fish, et al."
+        "Content": "musty and flat in smell: damp clothing, rice, sweet potatoes, salted fish, et al.",
+        "Word": "abhung"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abhung"
       },
       {
         "Type": "CLASS",
-        "Content": "[B; b6]"
+        "Content": "[B; b6]",
+        "Word": "abhung"
       },
       {
         "Type": "TEXT",
-        "Content": "be, become musty."
+        "Content": "be, become musty.",
+        "Word": "abhung"
       },
       {
         "Type": "CEBWORD",
-        "Content": "-un(→)"
+        "Content": "-un(→)",
+        "Word": "abhung"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "a"
+        "Content": "a",
+        "Word": "abhung"
       },
       {
         "Type": "TEXT",
-        "Content": "of a musty kind."
+        "Content": "of a musty kind.",
+        "Word": "abhung"
       }
     ],
     "WordDef": {
@@ -3630,43 +3989,51 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abiábi"
+        "Content": "abiábi",
+        "Word": "abiábi"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abiábi"
       },
       {
         "Type": "CLASS",
-        "Content": "[A; a12]"
+        "Content": "[A; a12]",
+        "Word": "abiábi"
       },
       {
         "Type": "TEXT",
-        "Content": "show hospitality to."
+        "Content": "show hospitality to.",
+        "Word": "abiábi"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Mu giyud ning táwung iládu, abiabíhun giyud sa mga tagilungsud,"
+        "Content": "Mu giyud ning táwung iládu, abiabíhun giyud sa mga tagilungsud,",
+        "Word": "abiábi"
       },
       {
         "Type": "TEXT",
-        "Content": "The townspeople show hospitality to any famous visitor."
+        "Content": "The townspeople show hospitality to any famous visitor.",
+        "Word": "abiábi"
       },
       {
         "Type": "CEBWORD",
-        "Content": "maabiabíhun, manggiabiabíhun"
+        "Content": "maabiabíhun, manggiabiabíhun",
+        "Word": "abiábi"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "a"
+        "Content": "a",
+        "Word": "abiábi"
       },
       {
         "Type": "TEXT",
-        "Content": "hospitable."
+        "Content": "hospitable.",
+        "Word": "abiábi"
       }
     ],
     "WordDef": {
@@ -3715,51 +4082,61 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abíba, abibar"
+        "Content": "abíba, abibar",
+        "Word": "abíba, abibar"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abíba, abibar"
       },
       {
         "Type": "CLASS",
-        "Content": "[A; b5]"
+        "Content": "[A; b5]",
+        "Word": "abíba, abibar"
       },
       {
         "Type": "TEXT",
-        "Content": "cheer one on, encourage to do."
+        "Content": "cheer one on, encourage to do.",
+        "Word": "abíba, abibar"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Nag-abíba sa mga bátag binúang,"
+        "Content": "Nag-abíba sa mga bátag binúang,",
+        "Word": "abíba, abibar"
       },
       {
         "Type": "TEXT",
-        "Content": "Egging the children on in their naughtiness."
+        "Content": "Egging the children on in their naughtiness.",
+        "Word": "abíba, abibar"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abíba, abibar"
       },
       {
         "Type": "TEXT",
-        "Content": "encouragement, egging on."
+        "Content": "encouragement, egging on.",
+        "Word": "abíba, abibar"
       },
       {
         "Type": "CEBWORD",
-        "Content": "maabibáhun"
+        "Content": "maabibáhun",
+        "Word": "abíba, abibar"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "a"
+        "Content": "a",
+        "Word": "abíba, abibar"
       },
       {
         "Type": "TEXT",
-        "Content": "giving encouragement, egging on."
+        "Content": "giving encouragement, egging on.",
+        "Word": "abíba, abibar"
       }
     ],
     "WordDef": {
@@ -3820,15 +4197,16 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abíhid"
+        "Content": "abíhid",
+        "Word": "abíhid"
       },
       {
         "Type": "LINK",
-        "Content": "alabíhid"
+        "Content": "alabíhid",
+        "Word": "abíhid"
       }
     ],
     "WordDef": {
@@ -3849,15 +4227,16 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abilay"
+        "Content": "abilay",
+        "Word": "abilay"
       },
       {
         "Type": "LINK",
-        "Content": "sambilay"
+        "Content": "sambilay",
+        "Word": "abilay"
       }
     ],
     "WordDef": {
@@ -3878,51 +4257,61 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abilidad"
+        "Content": "abilidad",
+        "Word": "abilidad"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abilidad"
       },
       {
         "Type": "TEXT",
-        "Content": "ability, capacity or skill to accomplish s.t."
+        "Content": "ability, capacity or skill to accomplish s.t.",
+        "Word": "abilidad"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abilidad"
       },
       {
         "Type": "CLASS",
-        "Content": "[A12]"
+        "Content": "[A12]",
+        "Word": "abilidad"
       },
       {
         "Type": "TEXT",
-        "Content": "obtain a certain ability."
+        "Content": "obtain a certain ability.",
+        "Word": "abilidad"
       },
       {
         "Type": "CEBWORD",
-        "Content": "abilidaran"
+        "Content": "abilidaran",
+        "Word": "abilidad"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "a"
+        "Content": "a",
+        "Word": "abilidad"
       },
       {
         "Type": "TEXT",
-        "Content": "skilled, able."
+        "Content": "skilled, able.",
+        "Word": "abilidad"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Abilidaran nà si Tunyu. Bansayng mutínis,"
+        "Content": "Abilidaran nà si Tunyu. Bansayng mutínis,",
+        "Word": "abilidad"
       },
       {
         "Type": "TEXT",
-        "Content": "Tony has talent. He plays tennis well."
+        "Content": "Tony has talent. He plays tennis well.",
+        "Word": "abilidad"
       }
     ],
     "WordDef": {
@@ -3983,55 +4372,66 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abilyána"
+        "Content": "abilyána",
+        "Word": "abilyána"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "a"
+        "Content": "a",
+        "Word": "abilyána"
       },
       {
         "Type": "TEXT",
-        "Content": "tan-colored shoes."
+        "Content": "tan-colored shoes.",
+        "Word": "abilyána"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abilyána"
       },
       {
         "Type": "TEXT",
-        "Content": "tan polish."
+        "Content": "tan polish.",
+        "Word": "abilyána"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abilyána"
       },
       {
         "Type": "CLASS",
-        "Content": "[A13]"
+        "Content": "[A13]",
+        "Word": "abilyána"
       },
       {
         "Type": "TEXT",
-        "Content": "polish shoes with a light tan polish, color them tan."
+        "Content": "polish shoes with a light tan polish, color them tan.",
+        "Word": "abilyána"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Abilyanáha (abilyanáhi) ning sapátus kung putì,"
+        "Content": "Abilyanáha (abilyanáhi) ning sapátus kung putì,",
+        "Word": "abilyána"
       },
       {
         "Type": "TEXT",
-        "Content": "Dye these shoes of mine tan."
+        "Content": "Dye these shoes of mine tan.",
+        "Word": "abilyána"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Wà kuy bitung itum. Abilyanáhi lang,"
+        "Content": "Wà kuy bitung itum. Abilyanáhi lang,",
+        "Word": "abilyána"
       },
       {
         "Type": "TEXT",
-        "Content": "I don’t have any black polish. Just put tan polish on them."
+        "Content": "I don’t have any black polish. Just put tan polish on them.",
+        "Word": "abilyána"
       }
     ],
     "WordDef": {
@@ -4091,87 +4491,106 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "ábin"
+        "Content": "ábin",
+        "Word": "ábin"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "ábin"
       },
       {
         "Type": "CLASS",
-        "Content": "[A2C; b]"
+        "Content": "[A2C; b]",
+        "Word": "ábin"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "ábin"
       },
       {
         "Type": "TEXT",
-        "Content": "engage in an enterprise or game together."
+        "Content": "engage in an enterprise or game together.",
+        "Word": "ábin"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Mag-ábin ta sa pamaligyag pagkáun,"
+        "Content": "Mag-ábin ta sa pamaligyag pagkáun,",
+        "Word": "ábin"
       },
       {
         "Type": "TEXT",
-        "Content": "Let’s become partners in selling food."
+        "Content": "Let’s become partners in selling food.",
+        "Word": "ábin"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "ábin"
       },
       {
         "Type": "TEXT",
-        "Content": "ally on oneself with."
+        "Content": "ally on oneself with.",
+        "Word": "ábin"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Mga hakug sa gahum ang miábin kaníya,"
+        "Content": "Mga hakug sa gahum ang miábin kaníya,",
+        "Word": "ábin"
       },
       {
         "Type": "TEXT",
-        "Content": "People who were greedy for power allied themselves with him."
+        "Content": "People who were greedy for power allied themselves with him.",
+        "Word": "ábin"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Nakig-ábin aku kaníya sa íyang mga panglantaw sa unáhan,"
+        "Content": "Nakig-ábin aku kaníya sa íyang mga panglantaw sa unáhan,",
+        "Word": "ábin"
       },
       {
         "Type": "TEXT",
-        "Content": "I share his views of the future."
+        "Content": "I share his views of the future.",
+        "Word": "ábin"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "ábin"
       },
       {
         "Type": "TEXT",
-        "Content": "partner in business or game."
+        "Content": "partner in business or game.",
+        "Word": "ábin"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Ug siyay ákung ábin sa bíku kanúnay ming mudaug,"
+        "Content": "Ug siyay ákung ábin sa bíku kanúnay ming mudaug,",
+        "Word": "ábin"
       },
       {
         "Type": "TEXT",
-        "Content": "When she is my partner in hopscotch, we always win."
+        "Content": "When she is my partner in hopscotch, we always win.",
+        "Word": "ábin"
       },
       {
         "Type": "CEBWORD",
-        "Content": "ka-"
+        "Content": "ka-",
+        "Word": "ábin"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "ábin"
       },
       {
         "Type": "LINK",
-        "Content": "ábin"
+        "Content": "ábin",
+        "Word": "ábin"
       }
     ],
     "WordDef": {
@@ -4266,71 +4685,86 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abintúra"
+        "Content": "abintúra",
+        "Word": "abintúra"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abintúra"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abintúra"
       },
       {
         "Type": "TEXT",
-        "Content": "adventures."
+        "Content": "adventures.",
+        "Word": "abintúra"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abintúra"
       },
       {
         "Type": "TEXT",
-        "Content": "adventure film, story."
+        "Content": "adventure film, story.",
+        "Word": "abintúra"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Makítà siya sa mga lílas abintúra,"
+        "Content": "Makítà siya sa mga lílas abintúra,",
+        "Word": "abintúra"
       },
       {
         "Type": "TEXT",
-        "Content": "He appears in adventure films."
+        "Content": "He appears in adventure films.",
+        "Word": "abintúra"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abintúra"
       },
       {
         "Type": "CLASS",
-        "Content": "[A; b5]"
+        "Content": "[A; b5]",
+        "Word": "abintúra"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abintúra"
       },
       {
         "Type": "TEXT",
-        "Content": "try going s.w. for the adventure of it."
+        "Content": "try going s.w. for the adventure of it.",
+        "Word": "abintúra"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Nag-abintúra mig katkat sa Manunggal,"
+        "Content": "Nag-abintúra mig katkat sa Manunggal,",
+        "Word": "abintúra"
       },
       {
         "Type": "TEXT",
-        "Content": "We went on an expedition to Mt. Manunggal."
+        "Content": "We went on an expedition to Mt. Manunggal.",
+        "Word": "abintúra"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abintúra"
       },
       {
         "Type": "LINK",
-        "Content": "abinturar"
+        "Content": "abinturar",
+        "Word": "abintúra"
       }
     ],
     "WordDef": {
@@ -4417,67 +4851,81 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abinturar"
+        "Content": "abinturar",
+        "Word": "abinturar"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abinturar"
       },
       {
         "Type": "CLASS",
-        "Content": "[AN; b5]"
+        "Content": "[AN; b5]",
+        "Word": "abinturar"
       },
       {
         "Type": "TEXT",
-        "Content": "try one’s luck."
+        "Content": "try one’s luck.",
+        "Word": "abinturar"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Miabinturar (nangabinturar) lang siyag aplay básig madáwat,"
+        "Content": "Miabinturar (nangabinturar) lang siyag aplay básig madáwat,",
+        "Word": "abinturar"
       },
       {
         "Type": "TEXT",
-        "Content": "He tried his luck in applying in hopes he might be accepted."
+        "Content": "He tried his luck in applying in hopes he might be accepted.",
+        "Word": "abinturar"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Abinturahi (abinturaha) lang si Maríyag hangyù,"
+        "Content": "Abinturahi (abinturaha) lang si Maríyag hangyù,",
+        "Word": "abinturar"
       },
       {
         "Type": "TEXT",
-        "Content": "Try your luck with Maria and ask her."
+        "Content": "Try your luck with Maria and ask her.",
+        "Word": "abinturar"
       },
       {
         "Type": "CEBWORD",
-        "Content": "abinturíru, -a"
+        "Content": "abinturíru, -a",
+        "Word": "abinturar"
       },
       {
         "Type": "LINK",
-        "Content": "abinturista"
+        "Content": "abinturista",
+        "Word": "abinturar"
       },
       {
         "Type": "CEBWORD",
-        "Content": "abinturista"
+        "Content": "abinturista",
+        "Word": "abinturar"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "a"
+        "Content": "a",
+        "Word": "abinturar"
       },
       {
         "Type": "TEXT",
-        "Content": "adventurous, tending to try things out without knowing the outcome."
+        "Content": "adventurous, tending to try things out without knowing the outcome.",
+        "Word": "abinturar"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Dì ku mugugul ug kwarta niánà kay dì ku abinturista. Básig dì musalir,"
+        "Content": "Dì ku mugugul ug kwarta niánà kay dì ku abinturista. Básig dì musalir,",
+        "Word": "abinturar"
       },
       {
         "Type": "TEXT",
-        "Content": "I won’t invest my money on that because I’m not daring. It might just fail."
+        "Content": "I won’t invest my money on that because I’m not daring. It might just fail.",
+        "Word": "abinturar"
       }
     ],
     "WordDef": {
@@ -4550,115 +4998,141 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abir"
+        "Content": "abir",
+        "Word": "abir"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abir"
       },
       {
         "Type": "TEXT",
-        "Content": "particle used in calling attention to a point in contention."
+        "Content": "particle used in calling attention to a point in contention.",
+        "Word": "abir"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Ang diyus makagagáhum. Abir, unsáun man nímu pagpangutána diin siya manukad,"
+        "Content": "Ang diyus makagagáhum. Abir, unsáun man nímu pagpangutána diin siya manukad,",
+        "Word": "abir"
       },
       {
         "Type": "TEXT",
-        "Content": "God is almighty. All right then, how can you ask where He comes from?"
+        "Content": "God is almighty. All right then, how can you ask where He comes from?",
+        "Word": "abir"
       },
       {
         "Type": "NUMBER",
-        "Content": "1a"
+        "Content": "1a",
+        "Word": "abir"
       },
       {
         "Type": "TEXT",
-        "Content": "particle used in inciting a person to do s.t."
+        "Content": "particle used in inciting a person to do s.t.",
+        "Word": "abir"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Abir, sulayi ug musalir ba nang paagíha,"
+        "Content": "Abir, sulayi ug musalir ba nang paagíha,",
+        "Word": "abir"
       },
       {
         "Type": "TEXT",
-        "Content": "O.K. Just see if that procedure works out."
+        "Content": "O.K. Just see if that procedure works out.",
+        "Word": "abir"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Abir, sumbága kunu ku kay isumbung tikaw ni Pápa,"
+        "Content": "Abir, sumbága kunu ku kay isumbung tikaw ni Pápa,",
+        "Word": "abir"
       },
       {
         "Type": "TEXT",
-        "Content": "All right, just try hitting me, and I’ll tell Daddy on you."
+        "Content": "All right, just try hitting me, and I’ll tell Daddy on you.",
+        "Word": "abir"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abir"
       },
       {
         "Type": "TEXT",
-        "Content": "pause word expressing hesitation when one doesn’t know how to do s.t."
+        "Content": "pause word expressing hesitation when one doesn’t know how to do s.t.",
+        "Word": "abir"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Abir, lisúa nag hínay dúngan sa pagtulbuk ári,"
+        "Content": "Abir, lisúa nag hínay dúngan sa pagtulbuk ári,",
+        "Word": "abir"
       },
       {
         "Type": "TEXT",
-        "Content": "Let’s see now, turn that slowly and press this at the same time."
+        "Content": "Let’s see now, turn that slowly and press this at the same time.",
+        "Word": "abir"
       },
       {
         "Type": "NUMBER",
-        "Content": "3"
+        "Content": "3",
+        "Word": "abir"
       },
       {
         "Type": "LINK",
-        "Content": "ambi"
+        "Content": "ambi",
+        "Word": "abir"
       },
       {
         "Type": "CEBWORD",
-        "Content": "4"
+        "Content": "4",
+        "Word": "abir"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abir"
       },
       {
         "Type": "CLASS",
-        "Content": "[AN; ac]"
+        "Content": "[AN; ac]",
+        "Word": "abir"
       },
       {
         "Type": "TEXT",
-        "Content": "try one’s luck, take a stab at."
+        "Content": "try one’s luck, take a stab at.",
+        "Word": "abir"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Nangabir (miabir) lang siyag panlútù. Dì hinúun siya kamau,"
+        "Content": "Nangabir (miabir) lang siyag panlútù. Dì hinúun siya kamau,",
+        "Word": "abir"
       },
       {
         "Type": "TEXT",
-        "Content": "He just took a try at cooking. He doesn’t really know how."
+        "Content": "He just took a try at cooking. He doesn’t really know how.",
+        "Word": "abir"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Abirun unyà nákug hangyù si Maríya,"
+        "Content": "Abirun unyà nákug hangyù si Maríya,",
+        "Word": "abir"
       },
       {
         "Type": "TEXT",
-        "Content": "I’ll just take a stab at asking Maria."
+        "Content": "I’ll just take a stab at asking Maria.",
+        "Word": "abir"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Iabir kunu ni sa ahinsiya ug dawátun ba,"
+        "Content": "Iabir kunu ni sa ahinsiya ug dawátun ba,",
+        "Word": "abir"
       },
       {
         "Type": "TEXT",
-        "Content": "Try taking this to the pawnshop and see if they will accept it."
+        "Content": "Try taking this to the pawnshop and see if they will accept it.",
+        "Word": "abir"
       }
     ],
     "WordDef": {
@@ -4772,71 +5246,86 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abirids"
+        "Content": "abirids",
+        "Word": "abirids"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abirids"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abirids"
       },
       {
         "Type": "TEXT",
-        "Content": "average, the usual size or quantity."
+        "Content": "average, the usual size or quantity.",
+        "Word": "abirids"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abirids"
       },
       {
         "Type": "TEXT",
-        "Content": "average rating in school."
+        "Content": "average rating in school.",
+        "Word": "abirids"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Pasar ku kay utsinta ákung abirids,"
+        "Content": "Pasar ku kay utsinta ákung abirids,",
+        "Word": "abirids"
       },
       {
         "Type": "TEXT",
-        "Content": "I passed because my average was eighty."
+        "Content": "I passed because my average was eighty.",
+        "Word": "abirids"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abirids"
       },
       {
         "Type": "CLASS",
-        "Content": "[A]"
+        "Content": "[A]",
+        "Word": "abirids"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abirids"
       },
       {
         "Type": "TEXT",
-        "Content": "average so and so much."
+        "Content": "average so and so much.",
+        "Word": "abirids"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Makaabirids mig lima adlaw-adlaw,"
+        "Content": "Makaabirids mig lima adlaw-adlaw,",
+        "Word": "abirids"
       },
       {
         "Type": "TEXT",
-        "Content": "We can sell on the average five every day."
+        "Content": "We can sell on the average five every day.",
+        "Word": "abirids"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abirids"
       },
       {
         "Type": "TEXT",
-        "Content": "have an average grade of."
+        "Content": "have an average grade of.",
+        "Word": "abirids"
       }
     ],
     "WordDef": {
@@ -4921,59 +5410,71 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abiríya"
+        "Content": "abiríya",
+        "Word": "abiríya"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "a"
+        "Content": "a",
+        "Word": "abiríya"
       },
       {
         "Type": "TEXT",
-        "Content": "be broken, inoperative."
+        "Content": "be broken, inoperative.",
+        "Word": "abiríya"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abiríya"
       },
       {
         "Type": "CLASS",
-        "Content": "[B]"
+        "Content": "[B]",
+        "Word": "abiríya"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abiríya"
       },
       {
         "Type": "TEXT",
-        "Content": "for an engine to break down."
+        "Content": "for an engine to break down.",
+        "Word": "abiríya"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Kining trak dílì magámit. Nag-abiríya man,"
+        "Content": "Kining trak dílì magámit. Nag-abiríya man,",
+        "Word": "abiríya"
       },
       {
         "Type": "TEXT",
-        "Content": "This truck cannot be used. It is broken."
+        "Content": "This truck cannot be used. It is broken.",
+        "Word": "abiríya"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abiríya"
       },
       {
         "Type": "TEXT",
-        "Content": "be under the weather."
+        "Content": "be under the weather.",
+        "Word": "abiríya"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Naabiríya aku kay nagkalíbang aku gahápun,"
+        "Content": "Naabiríya aku kay nagkalíbang aku gahápun,",
+        "Word": "abiríya"
       },
       {
         "Type": "TEXT",
-        "Content": "I’m not feeling well because I had diarrhea yesterday."
+        "Content": "I’m not feeling well because I had diarrhea yesterday.",
+        "Word": "abiríya"
       }
     ],
     "WordDef": {
@@ -5040,15 +5541,16 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abirtu"
+        "Content": "abirtu",
+        "Word": "abirtu"
       },
       {
         "Type": "LINK",
-        "Content": "abyirtu"
+        "Content": "abyirtu",
+        "Word": "abirtu"
       }
     ],
     "WordDef": {
@@ -5069,55 +5571,66 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abis"
+        "Content": "abis",
+        "Word": "abis"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abis"
       },
       {
         "Type": "CLASS",
-        "Content": "[A; ab7]"
+        "Content": "[A; ab7]",
+        "Word": "abis"
       },
       {
         "Type": "TEXT",
-        "Content": "slice with a curved blade, cut a small or thin part from a bigger piece."
+        "Content": "slice with a curved blade, cut a small or thin part from a bigger piece.",
+        "Word": "abis"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Abisig diyútay nà,"
+        "Content": "Abisig diyútay nà,",
+        "Word": "abis"
       },
       {
         "Type": "TEXT",
-        "Content": "Slice a piece off of it."
+        "Content": "Slice a piece off of it.",
+        "Word": "abis"
       },
       {
         "Type": "CEBWORD",
-        "Content": "paN-"
+        "Content": "paN-",
+        "Word": "abis"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abis"
       },
       {
         "Type": "CLASS",
-        "Content": "[A2]"
+        "Content": "[A2]",
+        "Word": "abis"
       },
       {
         "Type": "TEXT",
-        "Content": "slice the terminal portion of a coconut bud to induce sap flow."
+        "Content": "slice the terminal portion of a coconut bud to induce sap flow.",
+        "Word": "abis"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Kaduha sila mangabis káda adlaw,"
+        "Content": "Kaduha sila mangabis káda adlaw,",
+        "Word": "abis"
       },
       {
         "Type": "TEXT",
-        "Content": "They make an incision in the bud twice a day."
+        "Content": "They make an incision in the bud twice a day.",
+        "Word": "abis"
       }
     ],
     "WordDef": {
@@ -5173,63 +5686,76 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abísu"
+        "Content": "abísu",
+        "Word": "abísu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abísu"
       },
       {
         "Type": "TEXT",
-        "Content": "announcement of s.t. to come."
+        "Content": "announcement of s.t. to come.",
+        "Word": "abísu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abísu"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abísu"
       },
       {
         "Type": "CLASS",
-        "Content": "[A; c]"
+        "Content": "[A; c]",
+        "Word": "abísu"
       },
       {
         "Type": "TEXT",
-        "Content": "announce s.t. to come."
+        "Content": "announce s.t. to come.",
+        "Word": "abísu"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Nag-abísu ang radyu nga adúnay bagyung umaábut,"
+        "Content": "Nag-abísu ang radyu nga adúnay bagyung umaábut,",
+        "Word": "abísu"
       },
       {
         "Type": "TEXT",
-        "Content": "The radio announced that there is a typhoon coming."
+        "Content": "The radio announced that there is a typhoon coming.",
+        "Word": "abísu"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abísu"
       },
       {
         "Type": "CLASS",
-        "Content": "[A12]"
+        "Content": "[A12]",
+        "Word": "abísu"
       },
       {
         "Type": "TEXT",
-        "Content": "receive an announcement."
+        "Content": "receive an announcement.",
+        "Word": "abísu"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Nakaabísu ming way túbig ugmà,"
+        "Content": "Nakaabísu ming way túbig ugmà,",
+        "Word": "abísu"
       },
       {
         "Type": "TEXT",
-        "Content": "We received the announcement that there would be no water tomorrow."
+        "Content": "We received the announcement that there would be no water tomorrow.",
+        "Word": "abísu"
       }
     ],
     "WordDef": {
@@ -5298,15 +5824,16 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abitsuylas"
+        "Content": "abitsuylas",
+        "Word": "abitsuylas"
       },
       {
         "Type": "LINK",
-        "Content": "habitsuylas"
+        "Content": "habitsuylas",
+        "Word": "abitsuylas"
       }
     ],
     "WordDef": {
@@ -5327,31 +5854,36 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abitu"
+        "Content": "abitu",
+        "Word": "abitu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abitu"
       },
       {
         "Type": "TEXT",
-        "Content": "habit, a distinctive apparel worn by devotees, priests, monks, and the like."
+        "Content": "habit, a distinctive apparel worn by devotees, priests, monks, and the like.",
+        "Word": "abitu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abitu"
       },
       {
         "Type": "CLASS",
-        "Content": "[A]"
+        "Content": "[A]",
+        "Word": "abitu"
       },
       {
         "Type": "TEXT",
-        "Content": "wear a habit."
+        "Content": "wear a habit.",
+        "Word": "abitu"
       }
     ],
     "WordDef": {
@@ -5390,47 +5922,56 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abíyu"
+        "Content": "abíyu",
+        "Word": "abíyu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abíyu"
       },
       {
         "Type": "TEXT",
-        "Content": "food, provisions, money, supplies for daily consumption."
+        "Content": "food, provisions, money, supplies for daily consumption.",
+        "Word": "abíyu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abíyu"
       },
       {
         "Type": "CLASS",
-        "Content": "[A; c]"
+        "Content": "[A; c]",
+        "Word": "abíyu"
       },
       {
         "Type": "TEXT",
-        "Content": "provide food, etc."
+        "Content": "provide food, etc.",
+        "Word": "abíyu"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Báhin sa mga kinahanglanun matag adlaw akuy muabíyu,"
+        "Content": "Báhin sa mga kinahanglanun matag adlaw akuy muabíyu,",
+        "Word": "abíyu"
       },
       {
         "Type": "TEXT",
-        "Content": "As far as your daily needs go, I will provide."
+        "Content": "As far as your daily needs go, I will provide.",
+        "Word": "abíyu"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Abyúhan ta lang mug usa ka sákung humay matag búlan,"
+        "Content": "Abyúhan ta lang mug usa ka sákung humay matag búlan,",
+        "Word": "abíyu"
       },
       {
         "Type": "TEXT",
-        "Content": "We’ll supply you with one sack of rice a month."
+        "Content": "We’ll supply you with one sack of rice a month.",
+        "Word": "abíyu"
       }
     ],
     "WordDef": {
@@ -5478,31 +6019,36 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abiyun"
+        "Content": "abiyun",
+        "Word": "abiyun"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abiyun"
       },
       {
         "Type": "TEXT",
-        "Content": "airplane."
+        "Content": "airplane.",
+        "Word": "abiyun"
       },
       {
         "Type": "CEBWORD",
-        "Content": "ka-an(←)"
+        "Content": "ka-an(←)",
+        "Word": "abiyun"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abiyun"
       },
       {
         "Type": "TEXT",
-        "Content": "group of airplanes."
+        "Content": "group of airplanes.",
+        "Word": "abiyun"
       }
     ],
     "WordDef": {
@@ -5544,31 +6090,36 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abkay"
+        "Content": "abkay",
+        "Word": "abkay"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abkay"
       },
       {
         "Type": "CLASS",
-        "Content": "[A; a]"
+        "Content": "[A; a]",
+        "Word": "abkay"
       },
       {
         "Type": "TEXT",
-        "Content": "dig up, out."
+        "Content": "dig up, out.",
+        "Word": "abkay"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Abkáyun ku ang kwarta nga ákung gilubung dinhi,"
+        "Content": "Abkáyun ku ang kwarta nga ákung gilubung dinhi,",
+        "Word": "abkay"
       },
       {
         "Type": "TEXT",
-        "Content": "I will dig up the money that I buried here."
+        "Content": "I will dig up the money that I buried here.",
+        "Word": "abkay"
       }
     ],
     "WordDef": {
@@ -5600,87 +6151,106 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abla"
+        "Content": "abla",
+        "Word": "abla"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abla"
       },
       {
         "Type": "CLASS",
-        "Content": "[A; c]"
+        "Content": "[A; c]",
+        "Word": "abla"
       },
       {
         "Type": "TEXT",
-        "Content": "speak to s.o. with some purpose in mind."
+        "Content": "speak to s.o. with some purpose in mind.",
+        "Word": "abla"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Abláhi kunu si Máma, básin pag musugut,"
+        "Content": "Abláhi kunu si Máma, básin pag musugut,",
+        "Word": "abla"
       },
       {
         "Type": "TEXT",
-        "Content": "Try to talk mother into it. She might let us."
+        "Content": "Try to talk mother into it. She might let us.",
+        "Word": "abla"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abla"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abla"
       },
       {
         "Type": "TEXT",
-        "Content": "persuasive talk."
+        "Content": "persuasive talk.",
+        "Word": "abla"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Dílì ka sugtun niánang bayhána kun walà kay abla,"
+        "Content": "Dílì ka sugtun niánang bayhána kun walà kay abla,",
+        "Word": "abla"
       },
       {
         "Type": "TEXT",
-        "Content": "That woman will not accept you if you don’t sweet-talk her."
+        "Content": "That woman will not accept you if you don’t sweet-talk her.",
+        "Word": "abla"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abla"
       },
       {
         "Type": "TEXT",
-        "Content": "big talk."
+        "Content": "big talk.",
+        "Word": "abla"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Abla lay nagdaghan. Walay líhuk,"
+        "Content": "Abla lay nagdaghan. Walay líhuk,",
+        "Word": "abla"
       },
       {
         "Type": "TEXT",
-        "Content": "It was all just big talk. No action."
+        "Content": "It was all just big talk. No action.",
+        "Word": "abla"
       },
       {
         "Type": "CEBWORD",
-        "Content": "paN-"
+        "Content": "paN-",
+        "Word": "abla"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abla"
       },
       {
         "Type": "TEXT",
-        "Content": "art or technique of expressing one’s viewpoint."
+        "Content": "art or technique of expressing one’s viewpoint.",
+        "Word": "abla"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Malampúsun siyang abugádu kay maáyu siya sa pangabla,"
+        "Content": "Malampúsun siyang abugádu kay maáyu siya sa pangabla,",
+        "Word": "abla"
       },
       {
         "Type": "TEXT",
-        "Content": "He is a successful lawyer because he has a good technique in talking."
+        "Content": "He is a successful lawyer because he has a good technique in talking.",
+        "Word": "abla"
       }
     ],
     "WordDef": {
@@ -5774,51 +6344,61 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abládu"
+        "Content": "abládu",
+        "Word": "abládu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abládu"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abládu"
       },
       {
         "Type": "TEXT",
-        "Content": "delivered in spoken fashion."
+        "Content": "delivered in spoken fashion.",
+        "Word": "abládu"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Ang kúru abládu, dílì kantáhun,"
+        "Content": "Ang kúru abládu, dílì kantáhun,",
+        "Word": "abládu"
       },
       {
         "Type": "TEXT",
-        "Content": "The chorus is spoken, not sung."
+        "Content": "The chorus is spoken, not sung.",
+        "Word": "abládu"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abládu"
       },
       {
         "Type": "TEXT",
-        "Content": "lines of a play."
+        "Content": "lines of a play.",
+        "Word": "abládu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abládu"
       },
       {
         "Type": "CLASS",
-        "Content": "[A]"
+        "Content": "[A]",
+        "Word": "abládu"
       },
       {
         "Type": "TEXT",
-        "Content": "speak lines."
+        "Content": "speak lines.",
+        "Word": "abládu"
       }
     ],
     "WordDef": {
@@ -5880,15 +6460,16 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "ablása"
+        "Content": "ablása",
+        "Word": "ablása"
       },
       {
         "Type": "LINK",
-        "Content": "abrása"
+        "Content": "abrása",
+        "Word": "ablása"
       }
     ],
     "WordDef": {
@@ -5909,147 +6490,181 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abli"
+        "Content": "abli",
+        "Word": "abli"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abli"
       },
       {
         "Type": "CLASS",
-        "Content": "[AB; b5]"
+        "Content": "[AB; b5]",
+        "Word": "abli"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abli"
       },
       {
         "Type": "TEXT",
-        "Content": "open s.t., be open."
+        "Content": "open s.t., be open.",
+        "Word": "abli"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Ikaw bay nag-abli sa pultahan?"
+        "Content": "Ikaw bay nag-abli sa pultahan?",
+        "Word": "abli"
       },
       {
         "Type": "TEXT",
-        "Content": "Were you the one who opened the door?"
+        "Content": "Were you the one who opened the door?",
+        "Word": "abli"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Sulud lang kay nag-abli ang pultahan,"
+        "Content": "Sulud lang kay nag-abli ang pultahan,",
+        "Word": "abli"
       },
       {
         "Type": "TEXT",
-        "Content": "Just come right in. The door is open."
+        "Content": "Just come right in. The door is open.",
+        "Word": "abli"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abli"
       },
       {
         "Type": "TEXT",
-        "Content": "begin, start a class, business, etc."
+        "Content": "begin, start a class, business, etc.",
+        "Word": "abli"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Muabli ang klási sa Hunyu,"
+        "Content": "Muabli ang klási sa Hunyu,",
+        "Word": "abli"
       },
       {
         "Type": "TEXT",
-        "Content": "Classes begin in June."
+        "Content": "Classes begin in June.",
+        "Word": "abli"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Ablíhag (ablíhug) sayu ang klási sunud túig,"
+        "Content": "Ablíhag (ablíhug) sayu ang klási sunud túig,",
+        "Word": "abli"
       },
       {
         "Type": "TEXT",
-        "Content": "Classes will open early next year."
+        "Content": "Classes will open early next year.",
+        "Word": "abli"
       },
       {
         "Type": "NUMBER",
-        "Content": "3"
+        "Content": "3",
+        "Word": "abli"
       },
       {
         "Type": "TEXT",
-        "Content": "found, establish an enterprise."
+        "Content": "found, establish an enterprise.",
+        "Word": "abli"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Anus-a man ablíhi (ablíha) ang inyung iskuylahan sa panahì?"
+        "Content": "Anus-a man ablíhi (ablíha) ang inyung iskuylahan sa panahì?",
+        "Word": "abli"
       },
       {
         "Type": "TEXT",
-        "Content": "When will you open your sewing school?"
+        "Content": "When will you open your sewing school?",
+        "Word": "abli"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abli"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abli"
       },
       {
         "Type": "TEXT",
-        "Content": "opening."
+        "Content": "opening.",
+        "Word": "abli"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Dakug abli nang tarúha,"
+        "Content": "Dakug abli nang tarúha,",
+        "Word": "abli"
       },
       {
         "Type": "TEXT",
-        "Content": "That can has a big opening."
+        "Content": "That can has a big opening.",
+        "Word": "abli"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abli"
       },
       {
         "Type": "TEXT",
-        "Content": "opening of classes."
+        "Content": "opening of classes.",
+        "Word": "abli"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "a"
+        "Content": "a",
+        "Word": "abli"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abli"
       },
       {
         "Type": "TEXT",
-        "Content": "open."
+        "Content": "open.",
+        "Word": "abli"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Abli ang bintánà. Sirhi ra gud,"
+        "Content": "Abli ang bintánà. Sirhi ra gud,",
+        "Word": "abli"
       },
       {
         "Type": "TEXT",
-        "Content": "The window is open. Please close it."
+        "Content": "The window is open. Please close it.",
+        "Word": "abli"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abli"
       },
       {
         "Type": "TEXT",
-        "Content": "be started."
+        "Content": "be started.",
+        "Word": "abli"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Abli na ang tindáhan. Palit ngadtug kapi,"
+        "Content": "Abli na ang tindáhan. Palit ngadtug kapi,",
+        "Word": "abli"
       },
       {
         "Type": "TEXT",
-        "Content": "The store is open now. Go buy some coffee."
+        "Content": "The store is open now. Go buy some coffee.",
+        "Word": "abli"
       }
     ],
     "WordDef": {
@@ -6204,23 +6819,26 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "Abr."
+        "Content": "Abr.",
+        "Word": "Abr."
       },
       {
         "Type": "TEXT",
-        "Content": "abbreviation for"
+        "Content": "abbreviation for",
+        "Word": "Abr."
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Abril,"
+        "Content": "Abril,",
+        "Word": "Abr."
       },
       {
         "Type": "TEXT",
-        "Content": "‘April’."
+        "Content": "‘April’.",
+        "Word": "Abr."
       }
     ],
     "WordDef": {
@@ -6244,71 +6862,86 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abrap"
+        "Content": "abrap",
+        "Word": "abrap"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "a"
+        "Content": "a",
+        "Word": "abrap"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abrap"
       },
       {
         "Type": "TEXT",
-        "Content": "sudden."
+        "Content": "sudden.",
+        "Word": "abrap"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Abrap ra kaáyu nang ímung pag-anhi,"
+        "Content": "Abrap ra kaáyu nang ímung pag-anhi,",
+        "Word": "abrap"
       },
       {
         "Type": "TEXT",
-        "Content": "Your coming is very sudden."
+        "Content": "Your coming is very sudden.",
+        "Word": "abrap"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abrap"
       },
       {
         "Type": "TEXT",
-        "Content": "brusque."
+        "Content": "brusque.",
+        "Word": "abrap"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abrap"
       },
       {
         "Type": "CLASS",
-        "Content": "[B12; c1]"
+        "Content": "[B12; c1]",
+        "Word": "abrap"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abrap"
       },
       {
         "Type": "TEXT",
-        "Content": "be sudden, do s.t. by plunging right into it."
+        "Content": "be sudden, do s.t. by plunging right into it.",
+        "Word": "abrap"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abrap"
       },
       {
         "Type": "TEXT",
-        "Content": "be brusque."
+        "Content": "be brusque.",
+        "Word": "abrap"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Naabrap ra tu nímu pagkatubag,"
+        "Content": "Naabrap ra tu nímu pagkatubag,",
+        "Word": "abrap"
       },
       {
         "Type": "TEXT",
-        "Content": "You answered in a brusque way."
+        "Content": "You answered in a brusque way.",
+        "Word": "abrap"
       }
     ],
     "WordDef": {
@@ -6393,39 +7026,46 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abrása"
+        "Content": "abrása",
+        "Word": "abrása"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abrása"
       },
       {
         "Type": "CLASS",
-        "Content": "[AC; bc3]"
+        "Content": "[AC; bc3]",
+        "Word": "abrása"
       },
       {
         "Type": "TEXT",
-        "Content": "walk side by side with."
+        "Content": "walk side by side with.",
+        "Word": "abrása"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Hulat kay muabrása kug lakaw ninyu,"
+        "Content": "Hulat kay muabrása kug lakaw ninyu,",
+        "Word": "abrása"
       },
       {
         "Type": "TEXT",
-        "Content": "Wait for me. I’m going to walk next to you."
+        "Content": "Wait for me. I’m going to walk next to you.",
+        "Word": "abrása"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Dílì ta mag-abrásag lakaw sa karsádang hagip-ut,"
+        "Content": "Dílì ta mag-abrásag lakaw sa karsádang hagip-ut,",
+        "Word": "abrása"
       },
       {
         "Type": "TEXT",
-        "Content": "We shouldn’t walk side by side on a narrow street."
+        "Content": "We shouldn’t walk side by side on a narrow street.",
+        "Word": "abrása"
       }
     ],
     "WordDef": {
@@ -6461,31 +7101,36 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abrasíti"
+        "Content": "abrasíti",
+        "Word": "abrasíti"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abrasíti"
       },
       {
         "Type": "CLASS",
-        "Content": "[C2; c2]"
+        "Content": "[C2; c2]",
+        "Word": "abrasíti"
       },
       {
         "Type": "TEXT",
-        "Content": "promenade arm in arm or side by side."
+        "Content": "promenade arm in arm or side by side.",
+        "Word": "abrasíti"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Nakit-an kung ímung bánang may giabrasíting (giabrasitíhang) babáyi,"
+        "Content": "Nakit-an kung ímung bánang may giabrasíting (giabrasitíhang) babáyi,",
+        "Word": "abrasíti"
       },
       {
         "Type": "TEXT",
-        "Content": "I saw your husband walking arm in arm with a woman (with a woman holding on to his arms)."
+        "Content": "I saw your husband walking arm in arm with a woman (with a woman holding on to his arms).",
+        "Word": "abrasíti"
       }
     ],
     "WordDef": {
@@ -6517,15 +7162,16 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abrasyíti"
+        "Content": "abrasyíti",
+        "Word": "abrasyíti"
       },
       {
         "Type": "LINK",
-        "Content": "abrasíti"
+        "Content": "abrasíti",
+        "Word": "abrasyíti"
       }
     ],
     "WordDef": {
@@ -6546,27 +7192,31 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abri<sub>1</sub>"
+        "Content": "abri<sub>1</sub>",
+        "Word": "abri<sub>1</sub>"
       },
       {
         "Type": "LINK",
-        "Content": "abli"
+        "Content": "abli",
+        "Word": "abri<sub>1</sub>"
       },
       {
         "Type": "CEBWORD",
-        "Content": "-dur"
+        "Content": "-dur",
+        "Word": "abri<sub>1</sub>"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abri<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "opener.†"
+        "Content": "opener.†",
+        "Word": "abri<sub>1</sub>"
       }
     ],
     "WordDef": {
@@ -6604,15 +7254,16 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abri<sub>2</sub>"
+        "Content": "abri<sub>2</sub>",
+        "Word": "abri<sub>2</sub>"
       },
       {
         "Type": "LINK",
-        "Content": "abyirtu2"
+        "Content": "abyirtu2",
+        "Word": "abri<sub>2</sub>"
       }
     ],
     "WordDef": {
@@ -6633,27 +7284,31 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abrigána"
+        "Content": "abrigána",
+        "Word": "abrigána"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abrigána"
       },
       {
         "Type": "TEXT",
-        "Content": "s.t. that stimulates the appetite."
+        "Content": "s.t. that stimulates the appetite.",
+        "Word": "abrigána"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Maáyung abrigána ang bír,"
+        "Content": "Maáyung abrigána ang bír,",
+        "Word": "abrigána"
       },
       {
         "Type": "TEXT",
-        "Content": "Beer is good to stimulate the appetite."
+        "Content": "Beer is good to stimulate the appetite.",
+        "Word": "abrigána"
       }
     ],
     "WordDef": {
@@ -6683,55 +7338,66 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abrigáwu"
+        "Content": "abrigáwu",
+        "Word": "abrigáwu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abrigáwu"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abrigáwu"
       },
       {
         "Type": "TEXT",
-        "Content": "apprentice on a ship."
+        "Content": "apprentice on a ship.",
+        "Word": "abrigáwu"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abrigáwu"
       },
       {
         "Type": "TEXT",
-        "Content": "one who works on a boat for his passage."
+        "Content": "one who works on a boat for his passage.",
+        "Word": "abrigáwu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abrigáwu"
       },
       {
         "Type": "CLASS",
-        "Content": "[A1; a12]"
+        "Content": "[A1; a12]",
+        "Word": "abrigáwu"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abrigáwu"
       },
       {
         "Type": "TEXT",
-        "Content": "be an apprentice, apprentice s.o. to."
+        "Content": "be an apprentice, apprentice s.o. to.",
+        "Word": "abrigáwu"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abrigáwu"
       },
       {
         "Type": "TEXT",
-        "Content": "work in lieu of paying passage."
+        "Content": "work in lieu of paying passage.",
+        "Word": "abrigáwu"
       }
     ],
     "WordDef": {
@@ -6806,31 +7472,36 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abrígu"
+        "Content": "abrígu",
+        "Word": "abrígu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abrígu"
       },
       {
         "Type": "TEXT",
-        "Content": "shawl."
+        "Content": "shawl.",
+        "Word": "abrígu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abrígu"
       },
       {
         "Type": "CLASS",
-        "Content": "[A1; a]"
+        "Content": "[A1; a]",
+        "Word": "abrígu"
       },
       {
         "Type": "TEXT",
-        "Content": "wear, make, receive a shawl."
+        "Content": "wear, make, receive a shawl.",
+        "Word": "abrígu"
       }
     ],
     "WordDef": {
@@ -6869,59 +7540,71 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "Abril"
+        "Content": "Abril",
+        "Word": "Abril"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "Abril"
       },
       {
         "Type": "TEXT",
-        "Content": "April."
+        "Content": "April.",
+        "Word": "Abril"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "Abril"
       },
       {
         "Type": "CLASS",
-        "Content": "[a]"
+        "Content": "[a]",
+        "Word": "Abril"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "Abril"
       },
       {
         "Type": "TEXT",
-        "Content": "do s.t. in April."
+        "Content": "do s.t. in April.",
+        "Word": "Abril"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Magbakasyun mu sa Hunyu? Ah, Abrila lang,"
+        "Content": "Magbakasyun mu sa Hunyu? Ah, Abrila lang,",
+        "Word": "Abril"
       },
       {
         "Type": "TEXT",
-        "Content": "Will you take your vacation in June? Oh, just make it in April."
+        "Content": "Will you take your vacation in June? Oh, just make it in April.",
+        "Word": "Abril"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "Abril"
       },
       {
         "Type": "TEXT",
-        "Content": "write down April in a document."
+        "Content": "write down April in a document.",
+        "Word": "Abril"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Máyu ímung nabutang? Abrila lang hinúun,"
+        "Content": "Máyu ímung nabutang? Abrila lang hinúun,",
+        "Word": "Abril"
       },
       {
         "Type": "TEXT",
-        "Content": "Did you write May? It should be April."
+        "Content": "Did you write May? It should be April.",
+        "Word": "Abril"
       }
     ],
     "WordDef": {
@@ -6988,19 +7671,21 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abriláta"
+        "Content": "abriláta",
+        "Word": "abriláta"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abriláta"
       },
       {
         "Type": "TEXT",
-        "Content": "can opener."
+        "Content": "can opener.",
+        "Word": "abriláta"
       }
     ],
     "WordDef": {
@@ -7025,99 +7710,121 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "absin"
+        "Content": "absin",
+        "Word": "absin"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "absin"
       },
       {
         "Type": "CLASS",
-        "Content": "[A2; b6]"
+        "Content": "[A2; b6]",
+        "Word": "absin"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "absin"
       },
       {
         "Type": "TEXT",
-        "Content": "absent, fail to attend work or class."
+        "Content": "absent, fail to attend work or class.",
+        "Word": "absin"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Absínig kas-a nang klasíha nímu,"
+        "Content": "Absínig kas-a nang klasíha nímu,",
+        "Word": "absin"
       },
       {
         "Type": "TEXT",
-        "Content": "Just miss your class this one time."
+        "Content": "Just miss your class this one time.",
+        "Word": "absin"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "absin"
       },
       {
         "Type": "TEXT",
-        "Content": "mark one absent."
+        "Content": "mark one absent.",
+        "Word": "absin"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Absínan tikaw,"
+        "Content": "Absínan tikaw,",
+        "Word": "absin"
       },
       {
         "Type": "TEXT",
-        "Content": "I’ll mark you absent."
+        "Content": "I’ll mark you absent.",
+        "Word": "absin"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "absin"
       },
       {
         "Type": "TEXT",
-        "Content": "absence, time away from class."
+        "Content": "absence, time away from class.",
+        "Word": "absin"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Daghag absin nímu Dyú, lagmit ka mahagbung,"
+        "Content": "Daghag absin nímu Dyú, lagmit ka mahagbung,",
+        "Word": "absin"
       },
       {
         "Type": "TEXT",
-        "Content": "How many absences you have, Joe! You’re likely to flunk."
+        "Content": "How many absences you have, Joe! You’re likely to flunk.",
+        "Word": "absin"
       },
       {
         "Type": "CEBWORD",
-        "Content": "hiN-, pala-, absiníru, absinus"
+        "Content": "hiN-, pala-, absiníru, absinus",
+        "Word": "absin"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "a"
+        "Content": "a",
+        "Word": "absin"
       },
       {
         "Type": "TEXT",
-        "Content": "given to missing classes."
+        "Content": "given to missing classes.",
+        "Word": "absin"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Anus-a gud nà siya makapasar nga absinus man nà sa klási,"
+        "Content": "Anus-a gud nà siya makapasar nga absinus man nà sa klási,",
+        "Word": "absin"
       },
       {
         "Type": "TEXT",
-        "Content": "How can he pass if he always misses classes?"
+        "Content": "How can he pass if he always misses classes?",
+        "Word": "absin"
       },
       {
         "Type": "CEBWORD",
-        "Content": "— mayindid"
+        "Content": "— mayindid",
+        "Word": "absin"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "a"
+        "Content": "a",
+        "Word": "absin"
       },
       {
         "Type": "TEXT",
-        "Content": "absent-minded."
+        "Content": "absent-minded.",
+        "Word": "absin"
       }
     ],
     "WordDef": {
@@ -7230,15 +7937,16 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "absinus"
+        "Content": "absinus",
+        "Word": "absinus"
       },
       {
         "Type": "LINK",
-        "Content": "absin"
+        "Content": "absin",
+        "Word": "absinus"
       }
     ],
     "WordDef": {
@@ -7259,39 +7967,46 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "absulusiyun"
+        "Content": "absulusiyun",
+        "Word": "absulusiyun"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "absulusiyun"
       },
       {
         "Type": "TEXT",
-        "Content": "absolution."
+        "Content": "absolution.",
+        "Word": "absulusiyun"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "absulusiyun"
       },
       {
         "Type": "CLASS",
-        "Content": "[b6]"
+        "Content": "[b6]",
+        "Word": "absulusiyun"
       },
       {
         "Type": "TEXT",
-        "Content": "give absolution."
+        "Content": "give absolution.",
+        "Word": "absulusiyun"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Gilubung siya nga walà gánì kaabsulusyuni,"
+        "Content": "Gilubung siya nga walà gánì kaabsulusyuni,",
+        "Word": "absulusiyun"
       },
       {
         "Type": "TEXT",
-        "Content": "He was buried without having received absolution."
+        "Content": "He was buried without having received absolution.",
+        "Word": "absulusiyun"
       }
     ],
     "WordDef": {
@@ -7335,31 +8050,36 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "absuwiltu"
+        "Content": "absuwiltu",
+        "Word": "absuwiltu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "absuwiltu"
       },
       {
         "Type": "TEXT",
-        "Content": "acquitted in court."
+        "Content": "acquitted in court.",
+        "Word": "absuwiltu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "absuwiltu"
       },
       {
         "Type": "CLASS",
-        "Content": "[A3P; a12]"
+        "Content": "[A3P; a12]",
+        "Word": "absuwiltu"
       },
       {
         "Type": "TEXT",
-        "Content": "acquit."
+        "Content": "acquit.",
+        "Word": "absuwiltu"
       }
     ],
     "WordDef": {
@@ -7398,159 +8118,196 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abtik"
+        "Content": "abtik",
+        "Word": "abtik"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "a"
+        "Content": "a",
+        "Word": "abtik"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abtik"
       },
       {
         "Type": "TEXT",
-        "Content": "nimble, quick in reaction."
+        "Content": "nimble, quick in reaction.",
+        "Word": "abtik"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Ang musáyaw sa tinikling kinahanglang abtik ug tiil,"
+        "Content": "Ang musáyaw sa tinikling kinahanglang abtik ug tiil,",
+        "Word": "abtik"
       },
       {
         "Type": "TEXT",
-        "Content": "Whoever dances the"
+        "Content": "Whoever dances the",
+        "Word": "abtik"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "tinikling"
+        "Content": "tinikling",
+        "Word": "abtik"
       },
       {
         "Type": "TEXT",
-        "Content": "has to have nimble feet."
+        "Content": "has to have nimble feet.",
+        "Word": "abtik"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abtik"
       },
       {
         "Type": "TEXT",
-        "Content": "fast, live in action."
+        "Content": "fast, live in action.",
+        "Word": "abtik"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Mahuman ni dáyug abtik lang mutrabáhu,"
+        "Content": "Mahuman ni dáyug abtik lang mutrabáhu,",
+        "Word": "abtik"
       },
       {
         "Type": "TEXT",
-        "Content": "It will get done right away if you work rapidly."
+        "Content": "It will get done right away if you work rapidly.",
+        "Word": "abtik"
       },
       {
         "Type": "NUMBER",
-        "Content": "3"
+        "Content": "3",
+        "Word": "abtik"
       },
       {
         "Type": "TEXT",
-        "Content": "cunning, sly."
+        "Content": "cunning, sly.",
+        "Word": "abtik"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Abtik giyud siya kay midáwat imbis mubáyad,"
+        "Content": "Abtik giyud siya kay midáwat imbis mubáyad,",
+        "Word": "abtik"
       },
       {
         "Type": "TEXT",
-        "Content": "He sure is sharp. Instead of paying as he should have, he got paid."
+        "Content": "He sure is sharp. Instead of paying as he should have, he got paid.",
+        "Word": "abtik"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abtik"
       },
       {
         "Type": "CLASS",
-        "Content": "[B]"
+        "Content": "[B]",
+        "Word": "abtik"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abtik"
       },
       {
         "Type": "TEXT",
-        "Content": "get to be nimble."
+        "Content": "get to be nimble.",
+        "Word": "abtik"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abtik"
       },
       {
         "Type": "TEXT",
-        "Content": "get to be fast in action."
+        "Content": "get to be fast in action.",
+        "Word": "abtik"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Muabtik (maabtik) lagi ang íyang panglíhuk basta pakit-ug sápì,"
+        "Content": "Muabtik (maabtik) lagi ang íyang panglíhuk basta pakit-ug sápì,",
+        "Word": "abtik"
       },
       {
         "Type": "TEXT",
-        "Content": "He’ll get moving fast as long as you show him money."
+        "Content": "He’ll get moving fast as long as you show him money.",
+        "Word": "abtik"
       },
       {
         "Type": "NUMBER",
-        "Content": "3"
+        "Content": "3",
+        "Word": "abtik"
       },
       {
         "Type": "CLASS",
-        "Content": "[B12]"
+        "Content": "[B12]",
+        "Word": "abtik"
       },
       {
         "Type": "TEXT",
-        "Content": "get to be cunning, sly."
+        "Content": "get to be cunning, sly.",
+        "Word": "abtik"
       },
       {
         "Type": "NUMBER",
-        "Content": "4"
+        "Content": "4",
+        "Word": "abtik"
       },
       {
         "Type": "CLASS",
-        "Content": "[b4(1)]"
+        "Content": "[b4(1)]",
+        "Word": "abtik"
       },
       {
         "Type": "TEXT",
-        "Content": "outsmart."
+        "Content": "outsmart.",
+        "Word": "abtik"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Naabtikan sad ku sa bátà,"
+        "Content": "Naabtikan sad ku sa bátà,",
+        "Word": "abtik"
       },
       {
         "Type": "TEXT",
-        "Content": "The child put one over on me."
+        "Content": "The child put one over on me.",
+        "Word": "abtik"
       },
       {
         "Type": "CEBWORD",
-        "Content": "paN-"
+        "Content": "paN-",
+        "Word": "abtik"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abtik"
       },
       {
         "Type": "CLASS",
-        "Content": "[A2; b6]"
+        "Content": "[A2; b6]",
+        "Word": "abtik"
       },
       {
         "Type": "TEXT",
-        "Content": "engage in chicanery."
+        "Content": "engage in chicanery.",
+        "Word": "abtik"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Ayaw kug pangabtíki kay suhítu ku,"
+        "Content": "Ayaw kug pangabtíki kay suhítu ku,",
+        "Word": "abtik"
       },
       {
         "Type": "TEXT",
-        "Content": "Don’t try to put a fast one over on me, because I know my way around."
+        "Content": "Don’t try to put a fast one over on me, because I know my way around.",
+        "Word": "abtik"
       }
     ],
     "WordDef": {
@@ -7718,19 +8475,21 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abtung"
+        "Content": "abtung",
+        "Word": "abtung"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abtung"
       },
       {
         "Type": "TEXT",
-        "Content": "rope used for tying the plow to the crosstree."
+        "Content": "rope used for tying the plow to the crosstree.",
+        "Word": "abtung"
       }
     ],
     "WordDef": {
@@ -7755,131 +8514,161 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abu"
+        "Content": "abu",
+        "Word": "abu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abu"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abu"
       },
       {
         "Type": "TEXT",
-        "Content": "ashes."
+        "Content": "ashes.",
+        "Word": "abu"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abu"
       },
       {
         "Type": "LINK",
-        "Content": "alabúhan"
+        "Content": "alabúhan",
+        "Word": "abu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abu"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abu"
       },
       {
         "Type": "CLASS",
-        "Content": "[A; a12]"
+        "Content": "[A; a12]",
+        "Word": "abu"
       },
       {
         "Type": "TEXT",
-        "Content": "make ashes."
+        "Content": "make ashes.",
+        "Word": "abu"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Abuha nang mga palwa ug gam-ang sabun,"
+        "Content": "Abuha nang mga palwa ug gam-ang sabun,",
+        "Word": "abu"
       },
       {
         "Type": "TEXT",
-        "Content": "Make the palm stems into ashes to make soap out of."
+        "Content": "Make the palm stems into ashes to make soap out of.",
+        "Word": "abu"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abu"
       },
       {
         "Type": "CLASS",
-        "Content": "[B1256]"
+        "Content": "[B1256]",
+        "Word": "abu"
       },
       {
         "Type": "TEXT",
-        "Content": "be razed or burned to the ground."
+        "Content": "be razed or burned to the ground.",
+        "Word": "abu"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Pag-abut nákù naabu na ang balay,"
+        "Content": "Pag-abut nákù naabu na ang balay,",
+        "Word": "abu"
       },
       {
         "Type": "TEXT",
-        "Content": "When I arrived, the house was already burned to the ground."
+        "Content": "When I arrived, the house was already burned to the ground.",
+        "Word": "abu"
       },
       {
         "Type": "CEBWORD",
-        "Content": "ka-(←)"
+        "Content": "ka-(←)",
+        "Word": "abu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abu"
       },
       {
         "Type": "CLASS",
-        "Content": "[A13]"
+        "Content": "[A13]",
+        "Word": "abu"
       },
       {
         "Type": "TEXT",
-        "Content": "get ashes all over one."
+        "Content": "get ashes all over one.",
+        "Word": "abu"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Nagkaábu ku kay misum-uk ku sa nasunúgan,"
+        "Content": "Nagkaábu ku kay misum-uk ku sa nasunúgan,",
+        "Word": "abu"
       },
       {
         "Type": "TEXT",
-        "Content": "I got ashes all over me because I went into the burned-out area."
+        "Content": "I got ashes all over me because I went into the burned-out area.",
+        "Word": "abu"
       },
       {
         "Type": "CEBWORD",
-        "Content": "alabúhan"
+        "Content": "alabúhan",
+        "Word": "abu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abu"
       },
       {
         "Type": "TEXT",
-        "Content": "stove or any place a fire for cooking is built."
+        "Content": "stove or any place a fire for cooking is built.",
+        "Word": "abu"
       },
       {
         "Type": "CEBWORD",
-        "Content": "abuhun"
+        "Content": "abuhun",
+        "Word": "abu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abu"
       },
       {
         "Type": "TEXT",
-        "Content": "ash-colored."
+        "Content": "ash-colored.",
+        "Word": "abu"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Manuk nga abuhun,"
+        "Content": "Manuk nga abuhun,",
+        "Word": "abu"
       },
       {
         "Type": "TEXT",
-        "Content": "Gray-colored cock."
+        "Content": "Gray-colored cock.",
+        "Word": "abu"
       }
     ],
     "WordDef": {
@@ -8033,19 +8822,21 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abuábu"
+        "Content": "abuábu",
+        "Word": "abuábu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abuábu"
       },
       {
         "Type": "TEXT",
-        "Content": "k.o. fish."
+        "Content": "k.o. fish.",
+        "Word": "abuábu"
       }
     ],
     "WordDef": {
@@ -8070,143 +8861,176 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abud, ábud<sub>1</sub>"
+        "Content": "abud, ábud<sub>1</sub>",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "CLASS",
-        "Content": "[A; c]"
+        "Content": "[A; c]",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "throw grains, throw grains to."
+        "Content": "throw grains, throw grains to.",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Ang bukbukung mais mauy iábud sa manuk,"
+        "Content": "Ang bukbukung mais mauy iábud sa manuk,",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "Throw the beetle-infested corn to the chickens."
+        "Content": "Throw the beetle-infested corn to the chickens.",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "drop grains into a hole in planting."
+        "Content": "drop grains into a hole in planting.",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Mag-abud sila sa ílang baul,"
+        "Content": "Mag-abud sila sa ílang baul,",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "They will plant their field."
+        "Content": "They will plant their field.",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "NUMBER",
-        "Content": "3"
+        "Content": "3",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "feed grain into a mill."
+        "Content": "feed grain into a mill.",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "ímu síging abdan (abúran) ang galingan,"
+        "Content": "ímu síging abdan (abúran) ang galingan,",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "Keep feeding grains into the mill."
+        "Content": "Keep feeding grains into the mill.",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "NUMBER",
-        "Content": "4"
+        "Content": "4",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "supply a factory with raw materials."
+        "Content": "supply a factory with raw materials.",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Kanang kumpaniyáha mauy tig-abud sa mga papil sa imprinta,"
+        "Content": "Kanang kumpaniyáha mauy tig-abud sa mga papil sa imprinta,",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "That company supplies paper to the printing press."
+        "Content": "That company supplies paper to the printing press.",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "NUMBER",
-        "Content": "5"
+        "Content": "5",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "feed news, gossip. Aha!"
+        "Content": "feed news, gossip. Aha!",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Ikaw diay nag-abud sa mga nutisya,"
+        "Content": "Ikaw diay nag-abud sa mga nutisya,",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "So you were the one who spread the news!"
+        "Content": "So you were the one who spread the news!",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "feed for fowls."
+        "Content": "feed for fowls.",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "one’s turn to throw grains."
+        "Content": "one’s turn to throw grains.",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "ákù na rung abud,"
+        "Content": "ákù na rung abud,",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "It’s my turn to feed (the chickens)."
+        "Content": "It’s my turn to feed (the chickens).",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "CEBWORD",
-        "Content": "alabdan"
+        "Content": "alabdan",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "LINK",
-        "Content": "abud"
+        "Content": "abud",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abud, ábud<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "2."
+        "Content": "2.",
+        "Word": "abud, ábud<sub>1</sub>"
       }
     ],
     "WordDef": {
@@ -8365,19 +9189,21 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "ábud<sub>2</sub>"
+        "Content": "ábud<sub>2</sub>",
+        "Word": "ábud<sub>2</sub>"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "ábud<sub>2</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "ornamental bulbous plant: <b lang=\"la\"><i>Eurycles amboinensis</i></b>. The leaves are applied over the bladder to facilitate urination."
+        "Content": "ornamental bulbous plant: <b lang=\"la\"><i>Eurycles amboinensis</i></b>. The leaves are applied over the bladder to facilitate urination.",
+        "Word": "ábud<sub>2</sub>"
       }
     ],
     "WordDef": {
@@ -8402,131 +9228,161 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abug<sub>1</sub>"
+        "Content": "abug<sub>1</sub>",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "dust."
+        "Content": "dust.",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "CLASS",
-        "Content": "[B46; a4b4(1)]"
+        "Content": "[B46; a4b4(1)]",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "become dusty."
+        "Content": "become dusty.",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Muabug ang karsáda ug dúgayng uwanun,"
+        "Content": "Muabug ang karsáda ug dúgayng uwanun,",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "The road gets dusty if the rains come late."
+        "Content": "The road gets dusty if the rains come late.",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Giabug ang ámung balay kay dúgay na nga wà puy-i,"
+        "Content": "Giabug ang ámung balay kay dúgay na nga wà puy-i,",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "Our house became all dusty because it hadn’t been lived in for a long time."
+        "Content": "Our house became all dusty because it hadn’t been lived in for a long time.",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Tabúni ang libru arun dílì maabugan,"
+        "Content": "Tabúni ang libru arun dílì maabugan,",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "Cover the books so they won’t get dusty."
+        "Content": "Cover the books so they won’t get dusty.",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "CLASS",
-        "Content": "[B1256]"
+        "Content": "[B1256]",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "turn into dust."
+        "Content": "turn into dust.",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Sa kadugáyan kitang tanan maabug,"
+        "Content": "Sa kadugáyan kitang tanan maabug,",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "In the end we will all turn to dust."
+        "Content": "In the end we will all turn to dust.",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "CEBWORD",
-        "Content": "ka-(←)"
+        "Content": "ka-(←)",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "CLASS",
-        "Content": "[A13]"
+        "Content": "[A13]",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "get dust all over it."
+        "Content": "get dust all over it.",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Nagkaábug ang ákung buhuk tungud sa byáhi,"
+        "Content": "Nagkaábug ang ákung buhuk tungud sa byáhi,",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "My hair is all covered with dust because I’ve just gotten off the bus."
+        "Content": "My hair is all covered with dust because I’ve just gotten off the bus.",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "CEBWORD",
-        "Content": "-un"
+        "Content": "-un",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "a"
+        "Content": "a",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "dusty."
+        "Content": "dusty.",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "CEBWORD",
-        "Content": "-l-an(←)"
+        "Content": "-l-an(←)",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "exposed to dust."
+        "Content": "exposed to dust.",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Kining kwartúha alabúgan. Duul man gud sa karsáda,"
+        "Content": "Kining kwartúha alabúgan. Duul man gud sa karsáda,",
+        "Word": "abug<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "This room is exposed to dust. It’s close to the street."
+        "Content": "This room is exposed to dust. It’s close to the street.",
+        "Word": "abug<sub>1</sub>"
       }
     ],
     "WordDef": {
@@ -8662,83 +9518,101 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "ábug<sub>1</sub>"
+        "Content": "ábug<sub>1</sub>",
+        "Word": "ábug<sub>1</sub>"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "ábug<sub>1</sub>"
       },
       {
         "Type": "CLASS",
-        "Content": "[A; a]"
+        "Content": "[A; a]",
+        "Word": "ábug<sub>1</sub>"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "ábug<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "chase, drive, drive away."
+        "Content": "chase, drive, drive away.",
+        "Word": "ábug<sub>1</sub>"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Abúga ang bábuy ngadtu sa tangkal,"
+        "Content": "Abúga ang bábuy ngadtu sa tangkal,",
+        "Word": "ábug<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "Drive the pig into the pen."
+        "Content": "Drive the pig into the pen.",
+        "Word": "ábug<sub>1</sub>"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Abúgi sa lángaw ang lamísa,"
+        "Content": "Abúgi sa lángaw ang lamísa,",
+        "Word": "ábug<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "Drive the flies away from the table."
+        "Content": "Drive the flies away from the table.",
+        "Word": "ábug<sub>1</sub>"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "ábug<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "drive s.o. to do s.t."
+        "Content": "drive s.o. to do s.t.",
+        "Word": "ábug<sub>1</sub>"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Ang kaúlaw mauy nag-ábug kanákù pagpaháwà sa ámung lungsud,"
+        "Content": "Ang kaúlaw mauy nag-ábug kanákù pagpaháwà sa ámung lungsud,",
+        "Word": "ábug<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "Shame drove me to move out of town."
+        "Content": "Shame drove me to move out of town.",
+        "Word": "ábug<sub>1</sub>"
       },
       {
         "Type": "CEBWORD",
-        "Content": "(→)"
+        "Content": "(→)",
+        "Word": "ábug<sub>1</sub>"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "ábug<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "stick with strips of paper, plastic, etc., attached on one end, used to chase flies away."
+        "Content": "stick with strips of paper, plastic, etc., attached on one end, used to chase flies away.",
+        "Word": "ábug<sub>1</sub>"
       },
       {
         "Type": "CEBWORD",
-        "Content": "-an(→)"
+        "Content": "-an(→)",
+        "Word": "ábug<sub>1</sub>"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "ábug<sub>1</sub>"
       },
       {
         "Type": "TEXT",
-        "Content": "an enclosure of the fish corral into which the fish are driven before being caught."
+        "Content": "an enclosure of the fish corral into which the fish are driven before being caught.",
+        "Word": "ábug<sub>1</sub>"
       }
     ],
     "WordDef": {
@@ -8833,15 +9707,16 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "ábug<sub>2</sub>"
+        "Content": "ábug<sub>2</sub>",
+        "Word": "ábug<sub>2</sub>"
       },
       {
         "Type": "LINK",
-        "Content": "abyug"
+        "Content": "abyug",
+        "Word": "ábug<sub>2</sub>"
       }
     ],
     "WordDef": {
@@ -8862,19 +9737,21 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abugáda"
+        "Content": "abugáda",
+        "Word": "abugáda"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abugáda"
       },
       {
         "Type": "TEXT",
-        "Content": "female lawyer."
+        "Content": "female lawyer.",
+        "Word": "abugáda"
       }
     ],
     "WordDef": {
@@ -8899,75 +9776,91 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abugádu"
+        "Content": "abugádu",
+        "Word": "abugádu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abugádu"
       },
       {
         "Type": "TEXT",
-        "Content": "lawyer."
+        "Content": "lawyer.",
+        "Word": "abugádu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "v"
+        "Content": "v",
+        "Word": "abugádu"
       },
       {
         "Type": "NUMBER",
-        "Content": "1"
+        "Content": "1",
+        "Word": "abugádu"
       },
       {
         "Type": "CLASS",
-        "Content": "[B16; a2]"
+        "Content": "[B16; a2]",
+        "Word": "abugádu"
       },
       {
         "Type": "TEXT",
-        "Content": "be, become a lawyer."
+        "Content": "be, become a lawyer.",
+        "Word": "abugádu"
       },
       {
         "Type": "NUMBER",
-        "Content": "2"
+        "Content": "2",
+        "Word": "abugádu"
       },
       {
         "Type": "CLASS",
-        "Content": "[A; b]"
+        "Content": "[A; b]",
+        "Word": "abugádu"
       },
       {
         "Type": "TEXT",
-        "Content": "speak for s.o."
+        "Content": "speak for s.o.",
+        "Word": "abugádu"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Abugadúhan ta lang ka kay wà kay pangabla,"
+        "Content": "Abugadúhan ta lang ka kay wà kay pangabla,",
+        "Word": "abugádu"
       },
       {
         "Type": "TEXT",
-        "Content": "I’ll speak for you because you don’t have the knack of saying what you want."
+        "Content": "I’ll speak for you because you don’t have the knack of saying what you want.",
+        "Word": "abugádu"
       },
       {
         "Type": "CEBWORD",
-        "Content": "abugaduhun"
+        "Content": "abugaduhun",
+        "Word": "abugádu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "a"
+        "Content": "a",
+        "Word": "abugádu"
       },
       {
         "Type": "TEXT",
-        "Content": "lawyer-like."
+        "Content": "lawyer-like.",
+        "Word": "abugádu"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Abugaduhung pangatarúngan,"
+        "Content": "Abugaduhung pangatarúngan,",
+        "Word": "abugádu"
       },
       {
         "Type": "TEXT",
-        "Content": "Lawyer-like reasoning."
+        "Content": "Lawyer-like reasoning.",
+        "Word": "abugádu"
       }
     ],
     "WordDef": {
@@ -9053,35 +9946,41 @@
     "ParseDiagnostics": []
   },
   {
-    "letter": "a",
-    "tokens": [
+    "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "abugágu"
+        "Content": "abugágu",
+        "Word": "abugágu"
       },
       {
         "Type": "WORDTYPE",
-        "Content": "n"
+        "Content": "n",
+        "Word": "abugágu"
       },
       {
         "Type": "TEXT",
-        "Content": "dumb lawyer (play on the words"
+        "Content": "dumb lawyer (play on the words",
+        "Word": "abugágu"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "abugádu"
+        "Content": "abugádu",
+        "Word": "abugágu"
       },
       {
         "Type": "TEXT",
-        "Content": "‘lawyer’ and"
+        "Content": "‘lawyer’ and",
+        "Word": "abugágu"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "gágu"
+        "Content": "gágu",
+        "Word": "abugágu"
       },
       {
         "Type": "TEXT",
-        "Content": "‘stupid’)."
+        "Content": "‘stupid’).",
+        "Word": "abugágu"
       }
     ],
     "WordDef": {

@@ -18,9 +18,6 @@ Run html fixer:
 .\fix-html.ps1 -inpath ".\cebuano-dictionary.html"
 ```
 
-Check how to run this script using help:
-```ps1
-Get-Help .\Parse-Dict.ps1 -Examples
-```
+Then use `.\run.ps1`
 
 Then use the script.
