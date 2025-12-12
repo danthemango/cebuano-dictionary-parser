@@ -657,7 +657,7 @@ function Parse-WtDef {
 
 function Parse-WordDef {
     <#
-      WORDDEF ::= CEBWORD ( WTDEF+ | [DEFEX] NUMDEF+ | DEFEX )
+      WORDDEF ::= CEBWORD ( WTDEF+ | [DEFEX] NUMDEF+ | DEFEX | WORDDEF)
     #>
     param([object[]]$Tokens, [int]$StartIndex)
     $i = $StartIndex; $diag = @()
@@ -756,9 +756,9 @@ function Parse-WordDef {
                 Success   = $true
                 NextIndex = $i
                 WordDef   = [pscustomobject]@{
-                    Word             = $headTok.Content
-                    DefExLead    = $defexLead.DefEx
-                    NumberedDefs = $numdefs
+                    Word            = $headTok.Content
+                    DefExLead       = $defexLead.DefEx
+                    NumberedDefs    = $numdefs
                 }
                 Diagnostics = $diag
             }
@@ -775,6 +775,29 @@ function Parse-WordDef {
             Diagnostics = $diag
         }
     }
+
+    # TODO Branch 3: WORDDEF+ (list of conjugations)
+    # $worddefs = @()
+    # while (IsType $tok 'CEBWORD') {
+    #     $wd = Parse-WordDef -Tokens $Tokens -StartIndex $i
+    #     if ($wd.Success) {
+    #         $worddefs += $wd.WordDef
+    #         $i = $wd.NextIndex
+    #         $tok = Get-Token $Tokens $i
+    #     }
+    # }
+
+    # if ($worddefs.Count -gt 0) {
+    #     return [pscustomobject]@{
+    #         Success   = $true
+    #         NextIndex = $i
+    #         WordDef   = [pscustomobject]@{
+    #             Word         = $headTok.Content
+    #             Conjugations = $worddefs
+    #         }
+    #         Diagnostics = $diag
+    #     }
+    # }
 
     # If DEFEX failed here, we treat it as a hard failure for WORDDEF
     return [pscustomobject]@{
@@ -803,7 +826,7 @@ function Parse-WordDef {
 
 function Parse-Row {
     <#
-      ROW ::= WORDDEF+
+      ROW ::= WORDDEF+ (word definiton then conjugations)
       Success = consumed all tokens AND at least one WORDDEF produced, each subsequent worddef considered to be an affix
       Returns {Success, NextIndex, Row:{WordDefs[]}, Diagnostics}
     #>
