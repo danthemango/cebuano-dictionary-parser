@@ -1,6 +1,8 @@
 # cebuano-dictionary-parser
 convert cebuano dictionary to csv
 
+Powershell 7+ recommended.
+
 Original content source: https://www.gutenberg.org/files/40074/40074-h/40074-h.htm
 
 In powershell, download the file:
