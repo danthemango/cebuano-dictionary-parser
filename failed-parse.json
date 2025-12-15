@@ -207,7 +207,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -223,7 +222,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -467,7 +465,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": "[A2S; b]",
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -479,22 +476,22 @@
                     "Gloss": "The old man rents one of the rooms."
                   }
                 ]
-              }
+              },
+              "Class": "[A2S; b]"
             },
             {
               "Number": "2",
-              "Class": "[b]",
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
                   "Content": "hire a prostitute."
                 },
                 "Examples": []
-              }
+              },
+              "Class": "[b]"
             },
             {
               "Number": "3",
-              "Class": "[A2; c]",
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -506,7 +503,8 @@
                     "Gloss": "I will sacrifice this pig as rental for the land."
                   }
                 ]
-              }
+              },
+              "Class": "[A2; c]"
             }
           ]
         },
@@ -516,7 +514,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -532,7 +529,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -543,7 +539,6 @@
             },
             {
               "Number": "3",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -607,159 +602,6 @@
           "Type": "WORDTYPE",
           "Content": "n",
           "Word": "ábang"
-        }
-      }
-    ]
-  },
-  {
-    "Tokens": [
-      {
-        "Type": "CEBWORD",
-        "Content": "abaníku",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "WORDTYPE",
-        "Content": "n",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "1",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "folding fan.",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "1a",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "fan of any sort for fanning oneself.",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "2",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "blackberry lily, k.o. bulbous ornamental: <b lang=\"la\"><i>Balamcanda chinensis</i></b>. It is so called because the leaves are arranged like an opened fan.",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "3",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "LINK",
-        "Content": "baníku",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "4",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "CEBWORD",
-        "Content": "kurta di-",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "LINK",
-        "Content": "kurta1",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "WORDTYPE",
-        "Content": "v",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "1",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "CLASS",
-        "Content": "[a12]",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "make into a fan.",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "2",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "CLASS",
-        "Content": "[A; b6]",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "fan s.o.",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "CEBWORD",
-        "Content": "paN-",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "WORDTYPE",
-        "Content": "v",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "CLASS",
-        "Content": "[A2]",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "fan oneself.",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "CEBWORD",
-        "Content": "inabaníku",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "WORDTYPE",
-        "Content": "n",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "s.t. made in such a way that it can be folded for storage, e.g., a folding chair, jackknife.",
-        "Word": "abaníku"
-      }
-    ],
-    "WordDef": null,
-    "ParseOk": false,
-    "ParseNextIndex": 0,
-    "ParseDiagnostics": [
-      {
-        "Index": 11,
-        "Message": "DEF: unexpected CEBWORD",
-        "Token": {
-          "Type": "CEBWORD",
-          "Content": "kurta di-",
-          "Word": "abaníku"
         }
       }
     ]
@@ -1142,16 +984,113 @@
         "Word": "abay"
       }
     ],
-    "WordDef": null,
+    "WordDef": {
+      "Word": "abay",
+      "WordTypeDefs": [
+        {
+          "WordType": "v",
+          "Classes": [],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "move along together with s.t. moving."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Lagmit hiligsan ang bátà kay nag-abay sa tartanilya,",
+                    "Gloss": "The child is likely to be run over because he is running alongside of the rig."
+                  },
+                  {
+                    "Phrase": "Silang duha nag-ábay paglanguy,",
+                    "Gloss": "The two swam side by side."
+                  }
+                ]
+              },
+              "Class": "[AC; b6]"
+            },
+            {
+              "Number": "1a",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "have a snake born at the same time one is born. The snake is called one’s twin ("
+                },
+                "Examples": [
+                  {
+                    "Phrase": "kalúha",
+                    "Gloss": ") and is supposed to bring him and his family luck."
+                  },
+                  {
+                    "Phrase": "Pagkatáwu sa ákung iyaan, giabayan (giabyan) ug sawa. Mau nang nadátù ang íyang inahan,",
+                    "Gloss": "When my aunt was born, a twin snake was born with her, and so her mother became rich."
+                  }
+                ]
+              },
+              "Conjugation": "— ug sawa"
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "go in with s.o. who buys or invests in s.t."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Ug mupalit kag usa ka sákung humay muabay kug lima ka gantang,",
+                    "Gloss": "If you buy a sack of rice, I will go in with you for five ganta’s worth."
+                  },
+                  {
+                    "Phrase": "Giabyan níyag singku písus ang ákung pusta,",
+                    "Gloss": "He went in for five pesos on my bet."
+                  }
+                ]
+              },
+              "Class": "[A2; c]"
+            },
+            {
+              "Number": "3",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "go in together in a fishing operation which requires several hands."
+                },
+                "Examples": []
+              },
+              "Class": "[AN]"
+            },
+            {
+              "Number": "4",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "attach a gaff in the"
+                },
+                "Examples": [
+                  {
+                    "Phrase": "abay",
+                    "Gloss": "way ("
+                  }
+                ]
+              },
+              "Class": "[c1]"
+            }
+          ]
+        }
+      ]
+    },
     "ParseOk": false,
-    "ParseNextIndex": 0,
+    "ParseNextIndex": 31,
     "ParseDiagnostics": [
       {
-        "Index": 10,
-        "Message": "DEF: unexpected CEBWORD",
+        "Index": 31,
+        "Message": "Trailing token after WORDDEF: LINK",
         "Token": {
-          "Type": "CEBWORD",
-          "Content": "— ug sawa",
+          "Type": "LINK",
+          "Content": "abay",
           "Word": "abay"
         }
       }
@@ -1313,7 +1252,6 @@
       "NumberedDefs": [
         {
           "Number": "1",
-          "Class": null,
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -1597,7 +1535,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -1613,7 +1550,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -1629,7 +1565,6 @@
             },
             {
               "Number": "3",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -1645,7 +1580,6 @@
             },
             {
               "Number": "4",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -1661,7 +1595,6 @@
             },
             {
               "Number": "5",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -1683,7 +1616,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -1694,7 +1626,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",

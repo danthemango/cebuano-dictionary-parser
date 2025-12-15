@@ -140,7 +140,6 @@
       "NumberedDefs": [
         {
           "Number": "1",
-          "Class": null,
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -160,7 +159,6 @@
         },
         {
           "Number": "1a",
-          "Class": null,
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -176,7 +174,6 @@
         },
         {
           "Number": "2",
-          "Class": null,
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -827,7 +824,6 @@
       "NumberedDefs": [
         {
           "Number": "1",
-          "Class": null,
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -843,7 +839,6 @@
         },
         {
           "Number": "2",
-          "Class": null,
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -863,7 +858,6 @@
         },
         {
           "Number": "3",
-          "Class": null,
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -879,7 +873,6 @@
         },
         {
           "Number": "4",
-          "Class": null,
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -895,7 +888,6 @@
         },
         {
           "Number": "4a",
-          "Class": null,
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -915,7 +907,6 @@
         },
         {
           "Number": "5",
-          "Class": null,
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -1030,7 +1021,6 @@
       "NumberedDefs": [
         {
           "Number": "1",
-          "Class": null,
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -1050,7 +1040,6 @@
         },
         {
           "Number": "2",
-          "Class": null,
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -1066,7 +1055,6 @@
         },
         {
           "Number": "3",
-          "Class": null,
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -1212,7 +1200,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -1228,7 +1215,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -1248,7 +1234,6 @@
             },
             {
               "Number": "3",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -1722,7 +1707,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -1733,7 +1717,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -2169,7 +2152,6 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "Class": null,
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -2180,7 +2162,6 @@
               },
               {
                 "Number": "2",
-                "Class": null,
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -2383,6 +2364,274 @@
     },
     "ParseOk": true,
     "ParseNextIndex": 10,
+    "ParseDiagnostics": []
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abaníku",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "folding fan.",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1a",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "fan of any sort for fanning oneself.",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "blackberry lily, k.o. bulbous ornamental: <b lang=\"la\"><i>Balamcanda chinensis</i></b>. It is so called because the leaves are arranged like an opened fan.",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "LINK",
+        "Content": "baníku",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "4",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "kurta di-",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "LINK",
+        "Content": "kurta1",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[a12]",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "make into a fan.",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; b6]",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "fan s.o.",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "paN-",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2]",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "fan oneself.",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "inabaníku",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "s.t. made in such a way that it can be folded for storage, e.g., a folding chair, jackknife.",
+        "Word": "abaníku"
+      }
+    ],
+    "WordDef": {
+      "Word": "abaníku",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "folding fan."
+                },
+                "Examples": []
+              }
+            },
+            {
+              "Number": "1a",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "fan of any sort for fanning oneself."
+                },
+                "Examples": []
+              }
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "blackberry lily, k.o. bulbous ornamental: <b lang=\"la\"><i>Balamcanda chinensis</i></b>. It is so called because the leaves are arranged like an opened fan."
+                },
+                "Examples": []
+              }
+            },
+            {
+              "Number": "3",
+              "DefEx": {
+                "Def": {
+                  "Type": "LINK",
+                  "Content": "baníku"
+                },
+                "Examples": []
+              }
+            },
+            {
+              "Number": "4",
+              "DefEx": {
+                "Def": {
+                  "Type": "LINK",
+                  "Content": "kurta1"
+                },
+                "Examples": []
+              },
+              "Conjugation": "kurta di-"
+            }
+          ]
+        },
+        {
+          "WordType": "v",
+          "Classes": [],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "make into a fan."
+                },
+                "Examples": []
+              },
+              "Class": "[a12]"
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "fan s.o."
+                },
+                "Examples": []
+              },
+              "Class": "[A; b6]"
+            }
+          ]
+        }
+      ],
+      "Conjugations": [
+        {
+          "Word": "paN-",
+          "WordTypeDefs": [
+            {
+              "WordType": "v",
+              "Classes": [
+                "[A2]"
+              ],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "fan oneself."
+                },
+                "Examples": []
+              }
+            }
+          ]
+        },
+        {
+          "Word": "inabaníku",
+          "WordTypeDefs": [
+            {
+              "WordType": "n",
+              "Classes": [],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "s.t. made in such a way that it can be folded for storage, e.g., a folding chair, jackknife."
+                },
+                "Examples": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 27,
     "ParseDiagnostics": []
   },
   {
@@ -2792,7 +3041,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -2808,7 +3056,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -2825,7 +3072,6 @@
           "NumberedDefs": [
             {
               "Number": "1a",
-              "Class": "[A2; c]",
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -2841,11 +3087,11 @@
                     "Gloss": "Move your car forward a bit."
                   }
                 ]
-              }
+              },
+              "Class": "[A2; c]"
             },
             {
               "Number": "1b",
-              "Class": "[A; a]",
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -2857,11 +3103,11 @@
                     "Gloss": "We were ten points ahead of you."
                   }
                 ]
-              }
+              },
+              "Class": "[A; a]"
             },
             {
               "Number": "2",
-              "Class": "[A2; a12]",
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -2873,11 +3119,11 @@
                     "Gloss": "I cannot keep up with the school payments."
                   }
                 ]
-              }
+              },
+              "Class": "[A2; a12]"
             },
             {
               "Number": "3",
-              "Class": "[A2; a12]",
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -2889,29 +3135,30 @@
                     "Gloss": "I can’t keep up with the plowing because I’m sickly."
                   }
                 ]
-              }
+              },
+              "Class": "[A2; a12]"
             },
             {
               "Number": "4a",
-              "Class": "[A]",
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
                   "Content": "ask part payment in advance, especially in salary."
                 },
                 "Examples": []
-              }
+              },
+              "Class": "[A]"
             },
             {
               "Number": "4b",
-              "Class": "[c]",
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
                   "Content": "give s.o. a cash advance on his salary or other payment."
                 },
                 "Examples": []
-              }
+              },
+              "Class": "[c]"
             }
           ]
         },
@@ -2921,7 +3168,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -2937,7 +3183,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -2948,7 +3193,6 @@
             },
             {
               "Number": "3",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -3068,25 +3312,25 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": "[A; a12]",
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
                   "Content": "make into a cigar."
                 },
                 "Examples": []
-              }
+              },
+              "Class": "[A; a12]"
             },
             {
               "Number": "2",
-              "Class": "[A123S]",
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
                   "Content": "have, obtain a cigar."
                 },
                 "Examples": []
-              }
+              },
+              "Class": "[A123S]"
             }
           ]
         }
@@ -3291,7 +3535,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -3302,7 +3545,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -3319,7 +3561,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": "[A2; a2]",
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -3331,11 +3572,11 @@
                     "Gloss": "You can still catch up with him if you head him off at the corner."
                   }
                 ]
-              }
+              },
+              "Class": "[A2; a2]"
             },
             {
               "Number": "2",
-              "Class": "[AN; a12]",
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -3347,7 +3588,8 @@
                     "Gloss": "When he comes by, give him a scare."
                   }
                 ]
-              }
+              },
+              "Class": "[AN; a12]"
             }
           ]
         }
@@ -3401,7 +3643,6 @@
               "NumberedDefs": [
                 {
                   "Number": "1",
-                  "Class": null,
                   "DefEx": {
                     "Def": {
                       "Type": "TEXT",
@@ -3412,7 +3653,6 @@
                 },
                 {
                   "Number": "2",
-                  "Class": null,
                   "DefEx": {
                     "Def": {
                       "Type": "TEXT",
@@ -3644,7 +3884,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": "[A; a1]",
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -3660,11 +3899,11 @@
                     "Gloss": "I’ll touch her forehead to see if she is feverish."
                   }
                 ]
-              }
+              },
+              "Class": "[A; a1]"
             },
             {
               "Number": "2",
-              "Class": "[A123S; a12b2]",
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -3680,11 +3919,11 @@
                     "Gloss": "If you think about the pain, it will get worse."
                   }
                 ]
-              }
+              },
+              "Class": "[A123S; a12b2]"
             },
             {
               "Number": "3",
-              "Class": "[A123S; b2]",
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -3696,7 +3935,8 @@
                     "Gloss": "I sensed that s.o. had entered our house."
                   }
                 ]
-              }
+              },
+              "Class": "[A123S; b2]"
             }
           ]
         }
@@ -4619,7 +4859,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -4635,7 +4874,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -4785,7 +5023,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -4796,7 +5033,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -4820,7 +5056,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -4836,7 +5071,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "LINK",
@@ -5138,7 +5372,6 @@
       "NumberedDefs": [
         {
           "Number": "1",
-          "Class": null,
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -5154,7 +5387,6 @@
         },
         {
           "Number": "1a",
-          "Class": null,
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -5174,7 +5406,6 @@
         },
         {
           "Number": "2",
-          "Class": null,
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -5190,7 +5421,6 @@
         },
         {
           "Number": "3",
-          "Class": null,
           "DefEx": {
             "Def": {
               "Type": "LINK",
@@ -5328,7 +5558,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -5339,7 +5568,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -5363,7 +5591,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -5379,7 +5606,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -5486,7 +5712,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -5502,7 +5727,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -5757,7 +5981,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": "[A; c]",
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -5769,11 +5992,11 @@
                     "Gloss": "The radio announced that there is a typhoon coming."
                   }
                 ]
-              }
+              },
+              "Class": "[A; c]"
             },
             {
               "Number": "2",
-              "Class": "[A12]",
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -5785,7 +6008,8 @@
                     "Gloss": "We received the announcement that there would be no water tomorrow."
                   }
                 ]
-              }
+              },
+              "Class": "[A12]"
             }
           ]
         }
@@ -6242,7 +6466,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -6258,7 +6481,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -6368,7 +6590,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -6384,7 +6605,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -6630,7 +6850,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -6650,7 +6869,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -6670,7 +6888,6 @@
             },
             {
               "Number": "3",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -6692,7 +6909,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -6708,7 +6924,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -6725,7 +6940,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -6741,7 +6955,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -6897,7 +7110,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -6913,7 +7125,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -6932,7 +7143,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -6943,7 +7153,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -7336,7 +7545,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -7347,7 +7555,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -7366,7 +7573,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -7377,7 +7583,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -7550,7 +7755,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -7566,7 +7770,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -7755,7 +7958,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -7771,7 +7973,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -8224,7 +8425,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -8244,7 +8444,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -8260,7 +8459,6 @@
             },
             {
               "Number": "3",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -8284,7 +8482,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -8295,7 +8492,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -8311,18 +8507,17 @@
             },
             {
               "Number": "3",
-              "Class": "[B12]",
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
                   "Content": "get to be cunning, sly."
                 },
                 "Examples": []
-              }
+              },
+              "Class": "[B12]"
             },
             {
               "Number": "4",
-              "Class": "[b4(1)]",
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -8334,7 +8529,8 @@
                     "Gloss": "The child put one over on me."
                   }
                 ]
-              }
+              },
+              "Class": "[b4(1)]"
             }
           ]
         }
@@ -8572,7 +8768,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -8583,7 +8778,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "LINK",
@@ -8600,7 +8794,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": "[A; a12]",
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -8612,11 +8805,11 @@
                     "Gloss": "Make the palm stems into ashes to make soap out of."
                   }
                 ]
-              }
+              },
+              "Class": "[A; a12]"
             },
             {
               "Number": "2",
-              "Class": "[B1256]",
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -8628,7 +8821,8 @@
                     "Gloss": "When I arrived, the house was already burned to the ground."
                   }
                 ]
-              }
+              },
+              "Class": "[B1256]"
             }
           ]
         }
@@ -8954,7 +9148,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": "[B46; a4b4(1)]",
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -8974,11 +9167,11 @@
                     "Gloss": "Cover the books so they won’t get dusty."
                   }
                 ]
-              }
+              },
+              "Class": "[B46; a4b4(1)]"
             },
             {
               "Number": "2",
-              "Class": "[B1256]",
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -8990,7 +9183,8 @@
                     "Gloss": "In the end we will all turn to dust."
                   }
                 ]
-              }
+              },
+              "Class": "[B1256]"
             }
           ]
         }
@@ -9165,7 +9359,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -9185,7 +9378,6 @@
             },
             {
               "Number": "2",
-              "Class": null,
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -9414,18 +9606,17 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Class": "[B16; a2]",
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
                   "Content": "be, become a lawyer."
                 },
                 "Examples": []
-              }
+              },
+              "Class": "[B16; a2]"
             },
             {
               "Number": "2",
-              "Class": "[A; b]",
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -9437,7 +9628,8 @@
                     "Gloss": "I’ll speak for you because you don’t have the knack of saying what you want."
                   }
                 ]
-              }
+              },
+              "Class": "[A; b]"
             }
           ]
         }

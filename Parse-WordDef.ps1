@@ -173,7 +173,7 @@ function Parse-DefEx {
 
 function Parse-NumDef {
     <#
-      NUMDEF ::= NUMBER [CLASS] DEFEX
+      NUMDEF ::= NUMBER [CEBWORD] [CLASS] DEFEX
     #>
     param([object[]]$Tokens, [int]$StartIndex)
     $i = $StartIndex; $diag = @()
@@ -188,6 +188,13 @@ function Parse-NumDef {
         }
     }
     $i++
+
+    # collect CEBWORD conjugation
+    $conjugation = $null
+    if (IsType (Get-Token $Tokens $i) 'CEBWORD') {
+        $conjugation += (Get-Token $Tokens $i).Content
+        $i++
+    }
 
     # collect CLASS
     $class = $null
@@ -207,14 +214,24 @@ function Parse-NumDef {
     }
     $i = $defex.NextIndex
 
+
+    $numDef = [pscustomobject]@{
+        Number = $numTok.Content
+        DefEx  = $defex.DefEx
+    }
+
+    if ($null -ne $class) {
+        $numDef | Add-Member -MemberType NoteProperty -Name "Class" -Value $class
+    }
+
+    if ($null -ne $conjugation) {
+        $numDef | Add-Member -MemberType NoteProperty -Name "Conjugation" -Value $conjugation
+    }
+
     [pscustomobject]@{
         Success   = $true
         NextIndex = $i
-        NumDef    = [pscustomobject]@{
-            Number = $numTok.Content
-            Class     = $class
-            DefEx  = $defex.DefEx
-        }
+        NumDef    = $numDef
         Diagnostics = $diag
     }
 }
