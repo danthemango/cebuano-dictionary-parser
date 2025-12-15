@@ -173,7 +173,7 @@ function Parse-DefEx {
 
 function Parse-NumDef {
     <#
-      NUMDEF ::= NUMBER DEFEX
+      NUMDEF ::= NUMBER [CLASS] DEFEX
     #>
     param([object[]]$Tokens, [int]$StartIndex)
     $i = $StartIndex; $diag = @()
@@ -189,10 +189,10 @@ function Parse-NumDef {
     }
     $i++
 
-    # collect CLASS*
-    $classes = @()
-    while (IsType (Get-Token $Tokens $i) 'CLASS') {
-        $classes += (Get-Token $Tokens $i).Content
+    # collect CLASS
+    $class = $null
+    if (IsType (Get-Token $Tokens $i) 'CLASS') {
+        $class += (Get-Token $Tokens $i).Content
         $i++
     }
 
@@ -212,7 +212,7 @@ function Parse-NumDef {
         NextIndex = $i
         NumDef    = [pscustomobject]@{
             Number = $numTok.Content
-            Classes     = $classes
+            Class     = $class
             DefEx  = $defex.DefEx
         }
         Diagnostics = $diag
