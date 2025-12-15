@@ -1,5 +1,5 @@
 # .Description
-# parse a single word definition
+# parse a single word definition (a paragraph section in the dictionary)
 # .EXAMPLE
 # this script accepts an array of tokens per word group
 # Import-Csv .\tokenlist.csv | Group-Object word | ForEach-Object { .\Parse.ps1 -Tokens $_.Group }
@@ -13,11 +13,15 @@ function Get-Token {
     param([object[]]$Tokens, [int]$i)
     if ($i -ge 0 -and $i -lt $Tokens.Count) { $Tokens[$i] } else { $null }
 }
-function IsType { param($tok, [string]$type) $tok -and ($tok.Type -eq $type) }
+function IsType {
+    param($tok, [string]$type)
+    $tok -and ($tok.Type -eq $type)
+}
 
+# parse a definiton
 function Parse-Def {
     <#
-      DEF ::= TEXT [LINK*] | LINK+ | CEBWORD
+      DEF ::= (TEXT | LINK)+
       Returns {Success, NextIndex, Def:{Text, Links[], Word}, Diagnostics}
     #>
     param([object[]]$Tokens, [int]$StartIndex)
@@ -30,56 +34,56 @@ function Parse-Def {
         ) }
     }
 
-    # Case 1: TEXT with optional LINKs
-    if (IsType $tok 'TEXT') {
-        $text = $tok.Content; $i++
-        $links = @()
-        while ($true) {
-            $linkTok = Get-Token $Tokens $i
-            if (-not (IsType $linkTok 'LINK')) { break }
-            $links += $linkTok.Content
-            $i++
+    # Case 1: (TEXT | LINK)+
+    $text_link_arr = @()
+    while ((IsType $tok 'TEXT') -or (IsType $tok 'LINK'))
+    {
+        $text_link_arr += [PSCustomObject]@{
+            Type = $tok.Type
+            Content = $tok.Content
         }
-        return [pscustomobject]@{
-            Success   = $true
-            NextIndex = $i
-            Def       = [pscustomobject]@{ Text=$text; Links=$links; Word=$null }
-            Diagnostics = $diag
+
+        $i++
+        $tok = Get-Token $Tokens $i
+
+        # end of input
+        if (-not $tok) {
+            break
         }
     }
 
-    # Case 2: one or more LINKs
-    if (IsType $tok 'LINK') {
-        $links = @()
-        while (IsType (Get-Token $Tokens $i) 'LINK') {
-            $links += (Get-Token $Tokens $i).Content
-            $i++
+    # # Case 3: CEBWORD
+    # if (IsType $tok 'CEBWORD') {
+    #     $word = $tok.Content; $i++
+    #     return [pscustomobject]@{
+    #         Success   = $true
+    #         NextIndex = $i
+    #         Def       = [pscustomobject]@{ Text=$null; Links=@(); Word=$word }
+    #         Diagnostics = $diag
+    #     }
+    # }
+
+    if ($text_link_arr.Count -eq 0) {
+        [pscustomobject]@{
+            Success     = $false
+            NextIndex   = $i
+            Def         = $null
+            Diagnostics = $diag + [pscustomobject]@{ Index=$i; Message="DEF: unexpected $($tok.Type)"; Token=$tok }
         }
-        return [pscustomobject]@{
-            Success   = $true
-            NextIndex = $i
-            Def       = [pscustomobject]@{ Text=$null; Links=$links; Word=$null }
+    } elseif ($text_link_arr.Count -eq 1) {
+        [pscustomobject]@{
+            Success     = $true
+            NextIndex   = $i
+            Def         = $text_link_arr[0]
             Diagnostics = $diag
         }
-    }
-
-    # Case 3: CEBWORD
-    if (IsType $tok 'CEBWORD') {
-        $word = $tok.Content; $i++
-        return [pscustomobject]@{
-            Success   = $true
-            NextIndex = $i
-            Def       = [pscustomobject]@{ Text=$null; Links=@(); Word=$word }
+    } else {
+        [pscustomobject]@{
+            Success     = $true
+            NextIndex   = $i
+            Def         = $text_link_arr
             Diagnostics = $diag
         }
-    }
-
-    # Otherwise fail
-    [pscustomobject]@{
-        Success     = $false
-        NextIndex   = $i
-        Def         = $null
-        Diagnostics = $diag + [pscustomobject]@{ Index=$i; Message="DEF: unexpected $($tok.Type)"; Token=$tok }
     }
 }
 
@@ -302,7 +306,7 @@ function Parse-WtDef {
 
 function Parse-WordDef {
     <#
-      WORDDEF ::= CEBWORD ( WTDEF+ | [DEFEX] NUMDEF+ | DEFEX | WORDDEF)
+      WORDDEF ::= CEBWORD (WTDEF+ | [DEFEX] NUMDEF+ | DEFEX) WORDDEF*
     #>
     param([object[]]$Tokens, [int]$StartIndex)
     $i = $StartIndex; $diag = @()
@@ -320,7 +324,39 @@ function Parse-WordDef {
 
     $tok = Get-Token $Tokens $i
 
-    # Branch 1: WTDEF+
+    # Branch 1: WORDDEF+ (list of conjugations)
+    $worddefs = @()
+    if (IsType $tok 'CEBWORD') {
+        while (IsType $tok 'CEBWORD') {
+            $wd = Parse-WordDef -Tokens $Tokens -StartIndex $i
+            if ($wd.Success) {
+                $worddefs += $wd.WordDef
+                $i = $wd.NextIndex
+                $tok = Get-Token $Tokens $i
+            }
+        }
+
+        if ($worddefs.Count -gt 0) {
+            return [pscustomobject]@{
+                Success   = $true
+                NextIndex = $i
+                WordDef   = [pscustomobject]@{
+                    Word         = $headTok.Content
+                    Conjugations = $worddefs
+                }
+                Diagnostics = $diag
+            }
+        } else {
+            return [pscustomobject]@{
+                Success     = $false
+                NextIndex   = $i
+                WordDef     = $null
+                Diagnostics = $diag + [pscustomobject]@{ Index=$i; Message='WORDDEF: could not parse WORDDEF after CEBWORD'; Token=$headTok }
+            }
+        }
+    }
+
+    # Branch 2: WTDEF+
     if (IsType $tok 'WORDTYPE') {
         $wtdefs = @()
         while (IsType (Get-Token $Tokens $i) 'WORDTYPE') {
@@ -347,7 +383,7 @@ function Parse-WordDef {
         }
     }
 
-    # Branch 2a: NUMDEF+ (no leading DEFEX)
+    # Branch 3a: NUMDEF+ (no leading DEFEX)
     if (IsType $tok 'NUMBER') {
         $numdefs = @()
         while (IsType (Get-Token $Tokens $i) 'NUMBER') {
@@ -374,7 +410,7 @@ function Parse-WordDef {
         }
     }
 
-    # Branch 2b: optional leading DEFEX, then NUMDEF+ (if present)
+    # Branch 3b: optional leading DEFEX, then NUMDEF+ (if present)
     # If the next token is not WORDTYPE/NUMBER, attempt DEFEX
     $defexLead = Parse-DefEx -Tokens $Tokens -StartIndex $i
     if ($defexLead.Success) {
@@ -420,29 +456,6 @@ function Parse-WordDef {
             Diagnostics = $diag
         }
     }
-
-    # TODO Branch 3: WORDDEF+ (list of conjugations)
-    # $worddefs = @()
-    # while (IsType $tok 'CEBWORD') {
-    #     $wd = Parse-WordDef -Tokens $Tokens -StartIndex $i
-    #     if ($wd.Success) {
-    #         $worddefs += $wd.WordDef
-    #         $i = $wd.NextIndex
-    #         $tok = Get-Token $Tokens $i
-    #     }
-    # }
-
-    # if ($worddefs.Count -gt 0) {
-    #     return [pscustomobject]@{
-    #         Success   = $true
-    #         NextIndex = $i
-    #         WordDef   = [pscustomobject]@{
-    #             Word         = $headTok.Content
-    #             Conjugations = $worddefs
-    #         }
-    #         Diagnostics = $diag
-    #     }
-    # }
 
     # If DEFEX failed here, we treat it as a hard failure for WORDDEF
     return [pscustomobject]@{

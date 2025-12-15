@@ -148,7 +148,7 @@ function Split-Types {
         $token
     )
     process {
-        $token | Split-TokensByPattern -pattern "<i>([anv])</i>" -tokenType "WORDTYPE"
+        $token | Split-TokensByPattern -pattern "<i[^>]*>([anv])</i>" -tokenType "WORDTYPE"
     }
 }
 
@@ -373,7 +373,7 @@ function Tokenize {
         # notes:
         # - corr must be processed before splitting words, since it is usally inside of the word block
         # - split links must be processed before cebuano phrases because of some bad formatting (they use <i lang="ceb"> as a way to make the word "see" italic, e.g. in "see otherword")
-        $token | Strip-Corr | Split-Classes | Split-Cebuano-Words | Split-Types | Split-Nums | Split-Links | Split-Cebuano-Phrases | Strip-Punct
+        $token | Split-Classes | Split-Cebuano-Words | Split-Types | Split-Nums | Split-Links | Split-Cebuano-Phrases | Strip-Punct
     }
 }
 
