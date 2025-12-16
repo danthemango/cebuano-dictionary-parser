@@ -213,14 +213,15 @@ function Split-Links {
         $content = $token.Content
         $opts = [System.Text.RegularExpressions.RegexOptions]::Singleline
 
-        # Pattern: <span class="sc" ...>...</span> with optional <a> inside
-        $pattern = '<span[^>]*class="sc"[^>]*>.*?</span>'
+        # Pattern: <span class="sc" ...>...</span>. with optional <a> inside
+        # and it may have further references at the end (e.g. v, n 1, 2, 3.) which must always end in a period.
+        $pattern = '<span[^>]*class="sc"[^>]*>.*?</span>[^\.]*?\.'
 
         $splits = [regex]::Split($content, $pattern)
-        $matches = [regex]::Matches($content, $pattern, $opts)
+        $thematches = [regex]::Matches($content, $pattern, $opts)
 
         # If no matches, return original token
-        if ($matches.Count -eq 0) {
+        if ($thematches.Count -eq 0) {
             $token
             return
         }
@@ -228,6 +229,7 @@ function Split-Links {
         # Output content before first match (with prefix cleanup)
         if ($splits[0].Trim() -ne "") {
             $beforeText = $splits[0]
+            $beforeText = reduceWS($beforeText)
             # Remove common prefixes and suffixes before links
             $beforeText = $beforeText -replace '\s*=\s*$', ''
             $beforeText = $beforeText -replace '<i[^>]*lang="ceb"[^>]*>\s*see\s*</i>\s*$', ''
@@ -373,7 +375,7 @@ function Tokenize {
         # notes:
         # - corr must be processed before splitting words, since it is usally inside of the word block
         # - split links must be processed before cebuano phrases because of some bad formatting (they use <i lang="ceb"> as a way to make the word "see" italic, e.g. in "see otherword")
-        $token | Split-Classes | Split-Cebuano-Words | Split-Types | Split-Nums | Split-Links | Split-Cebuano-Phrases | Strip-Punct
+        $token | Split-Classes | Split-Links | Split-Cebuano-Words | Split-Types | Split-Nums | Split-Cebuano-Phrases | Strip-Punct
     }
 }
 

@@ -25,7 +25,11 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 # TODO
 - [ ] it currently fails on links to specific types and numbers (e.g. "= -kung v, n 1,2,3" which says the definition is equal to the linked definitions but only the verb and 1, 2, and 3 of the noun definitions)
     - see ábang, agdul, abi
-- [ ] abrasadur - failed because of link numbering
+- [ ] abrasadur - failed because of link numbering (CEBWORD "2" following link)
 - [ ] ábi: failed class tokenizing
 - [ ] it fails to parse when there is a cebuano word in the middle of a translation (see abay)
+    - we may use the fact that a translation will always end have punctuation separating the cebuano phrase from the
+    english phrase, it's usually a comma separating them and sometimes a question mark or exclamation mark, but never a period.
+    The english phrase will always end in a period.
 - [ ] can't parse the phrase "short form", I likely need another entry in definitions
+- [ ] can't parse link followed by bracketed explanation (e.g. kadtu (dialectical), adtu (colloquial))

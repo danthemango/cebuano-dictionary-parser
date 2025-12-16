@@ -13,7 +13,7 @@
       },
       {
         "Type": "LINK",
-        "Content": "-un",
+        "Content": "-un.",
         "Word": "-a"
       }
     ],
@@ -27,7 +27,7 @@
           },
           {
             "Type": "LINK",
-            "Content": "-un"
+            "Content": "-un."
           }
         ],
         "Examples": []
@@ -1083,7 +1083,7 @@
       },
       {
         "Type": "LINK",
-        "Content": "álà",
+        "Content": "álà.",
         "Word": "ā̀"
       }
     ],
@@ -1092,7 +1092,7 @@
       "DefEx": {
         "Def": {
           "Type": "LINK",
-          "Content": "álà"
+          "Content": "álà."
         },
         "Examples": []
       }
@@ -1639,6 +1639,216 @@
     "Tokens": [
       {
         "Type": "CEBWORD",
+        "Content": "abága",
+        "Word": "abága"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n",
+        "Word": "abága"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "shoulder.",
+        "Word": "abága"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v",
+        "Word": "abága"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2SN; b5]",
+        "Word": "abága"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1",
+        "Word": "abága"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "take financial responsibility.",
+        "Word": "abága"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abagáhun (pangabagáhun, pangabagáhan) ni Mánuy níya ang galastúhan sa pag-iskuyla,",
+        "Word": "abága"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "His brother will shoulder his school expenses.",
+        "Word": "abága"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2",
+        "Word": "abága"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "take responsibility for accomplishing s.t.",
+        "Word": "abága"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Kita giyuy muabága (mangabága) áning prugramáha,",
+        "Word": "abága"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "We must undertake to carry out this program.",
+        "Word": "abága"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "(→)",
+        "Word": "abága"
+      },
+      {
+        "Type": "LINK",
+        "Content": "abága, v.",
+        "Word": "abága"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "paN-",
+        "Word": "abága"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n",
+        "Word": "abága"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "right-hand-man.",
+        "Word": "abága"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "abagáhun",
+        "Word": "abága"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a",
+        "Word": "abága"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "broad-shouldered.",
+        "Word": "abága"
+      }
+    ],
+    "WordDef": {
+      "Word": "abága",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "shoulder."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A2SN; b5]"
+          ],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "take financial responsibility."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Abagáhun (pangabagáhun, pangabagáhan) ni Mánuy níya ang galastúhan sa pag-iskuyla,",
+                    "Gloss": "His brother will shoulder his school expenses."
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "take responsibility for accomplishing s.t."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Kita giyuy muabága (mangabága) áning prugramáha,",
+                    "Gloss": "We must undertake to carry out this program."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "Conjugations": [
+        {
+          "Word": "(→)",
+          "DefEx": {
+            "Def": {
+              "Type": "LINK",
+              "Content": "abága, v."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "Word": "paN-",
+          "WordTypeDefs": [
+            {
+              "WordType": "n",
+              "Classes": [],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "right-hand-man."
+                },
+                "Examples": []
+              }
+            }
+          ]
+        },
+        {
+          "Word": "abagáhun",
+          "WordTypeDefs": [
+            {
+              "WordType": "a",
+              "Classes": [],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "broad-shouldered."
+                },
+                "Examples": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 21,
+    "ParseDiagnostics": []
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
         "Content": "abaka",
         "Word": "abaka"
       },
@@ -1809,7 +2019,7 @@
       },
       {
         "Type": "LINK",
-        "Content": "abaka",
+        "Content": "abaka.",
         "Word": "abakal"
       }
     ],
@@ -1818,7 +2028,7 @@
       "DefEx": {
         "Def": {
           "Type": "LINK",
-          "Content": "abaka"
+          "Content": "abaka."
         },
         "Examples": []
       }
@@ -1841,7 +2051,7 @@
       },
       {
         "Type": "LINK",
-        "Content": "balbal",
+        "Content": "balbal.",
         "Word": "abal"
       },
       {
@@ -1850,8 +2060,13 @@
         "Word": "abal"
       },
       {
+        "Type": "TEXT",
+        "Content": "=",
+        "Word": "abal"
+      },
+      {
         "Type": "LINK",
-        "Content": "abat",
+        "Content": "abat.",
         "Word": "abal"
       }
     ],
@@ -1864,7 +2079,7 @@
           "DefEx": {
             "Def": {
               "Type": "LINK",
-              "Content": "balbal"
+              "Content": "balbal."
             },
             "Examples": []
           }
@@ -1873,17 +2088,23 @@
           "WordType": "v",
           "Classes": [],
           "DefEx": {
-            "Def": {
-              "Type": "LINK",
-              "Content": "abat"
-            },
+            "Def": [
+              {
+                "Type": "TEXT",
+                "Content": "="
+              },
+              {
+                "Type": "LINK",
+                "Content": "abat."
+              }
+            ],
             "Examples": []
           }
         }
       ]
     },
     "ParseOk": true,
-    "ParseNextIndex": 5,
+    "ParseNextIndex": 6,
     "ParseDiagnostics": []
   },
   {
@@ -2113,7 +2334,7 @@
       },
       {
         "Type": "LINK",
-        "Content": "abandunar",
+        "Content": "abandunar.",
         "Word": "abandunar"
       }
     ],
@@ -2178,7 +2399,7 @@
             "DefEx": {
               "Def": {
                 "Type": "LINK",
-                "Content": "abandunar"
+                "Content": "abandunar."
               },
               "Examples": []
             }
@@ -2199,7 +2420,7 @@
       },
       {
         "Type": "LINK",
-        "Content": "abandunar",
+        "Content": "abandunar.",
         "Word": "abandúnu"
       }
     ],
@@ -2208,13 +2429,358 @@
       "DefEx": {
         "Def": {
           "Type": "LINK",
-          "Content": "abandunar"
+          "Content": "abandunar."
         },
         "Examples": []
       }
     },
     "ParseOk": true,
     "ParseNextIndex": 2,
+    "ParseDiagnostics": []
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "ábang",
+        "Word": "ábang"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v",
+        "Word": "ábang"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1",
+        "Word": "ábang"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2S; b]",
+        "Word": "ábang"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "rent.",
+        "Word": "ábang"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ang usa ka kwartu giabángan sa tigúlang,",
+        "Word": "ábang"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The old man rents one of the rooms.",
+        "Word": "ábang"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2",
+        "Word": "ábang"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[b]",
+        "Word": "ábang"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "hire a prostitute.",
+        "Word": "ábang"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3",
+        "Word": "ábang"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2; c]",
+        "Word": "ábang"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "make an offering to a supernatural being for the use of land which is thought to be in his possession.",
+        "Word": "ábang"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Iábang ni nákung baktína álang sa uma,",
+        "Word": "ábang"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I will sacrifice this pig as rental for the land.",
+        "Word": "ábang"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n",
+        "Word": "ábang"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1",
+        "Word": "ábang"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "rent paid.",
+        "Word": "ábang"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Pilay ábang nímu sa libru?",
+        "Word": "ábang"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "How much rent did you pay for the book?",
+        "Word": "ábang"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2",
+        "Word": "ábang"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "money paid a prostitute.",
+        "Word": "ábang"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3",
+        "Word": "ábang"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "toil taken by supernatural beings.",
+        "Word": "ábang"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Kadtung nalumus dinhi ábang kunu tu sa ingkantu,",
+        "Word": "ábang"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The man who drowned here is said to have been the rent collected by the supernatural spirit.",
+        "Word": "ábang"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "paN-",
+        "Word": "ábang"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v",
+        "Word": "ábang"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2]",
+        "Word": "ábang"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "patronize a prostitute.",
+        "Word": "ábang"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "-an(→)<span class=\"corr\" id=\"xd20e5140\" title=\"Not in source\"><sub>1</sub></span>",
+        "Word": "ábang"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "<b>1, 2, 3</b>",
+        "Word": "ábang"
+      },
+      {
+        "Type": "LINK",
+        "Content": "ábang, n.",
+        "Word": "ábang"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "4",
+        "Word": "ábang"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "haunted place, place where departed spirits take a toll or rent.",
+        "Word": "ábang"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abangan kunu kanang baláya. Náa giyuy mamatay káda túig,",
+        "Word": "ábang"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "That house is haunted (lit. has a rental on it). Each year s.o. dies there.",
+        "Word": "ábang"
+      }
+    ],
+    "WordDef": {
+      "Word": "ábang",
+      "WordTypeDefs": [
+        {
+          "WordType": "v",
+          "Classes": [],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "rent."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Ang usa ka kwartu giabángan sa tigúlang,",
+                    "Gloss": "The old man rents one of the rooms."
+                  }
+                ]
+              },
+              "Class": "[A2S; b]"
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "hire a prostitute."
+                },
+                "Examples": []
+              },
+              "Class": "[b]"
+            },
+            {
+              "Number": "3",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "make an offering to a supernatural being for the use of land which is thought to be in his possession."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Iábang ni nákung baktína álang sa uma,",
+                    "Gloss": "I will sacrifice this pig as rental for the land."
+                  }
+                ]
+              },
+              "Class": "[A2; c]"
+            }
+          ]
+        },
+        {
+          "WordType": "n",
+          "Classes": [],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "rent paid."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Pilay ábang nímu sa libru?",
+                    "Gloss": "How much rent did you pay for the book?"
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "money paid a prostitute."
+                },
+                "Examples": []
+              }
+            },
+            {
+              "Number": "3",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "toil taken by supernatural beings."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Kadtung nalumus dinhi ábang kunu tu sa ingkantu,",
+                    "Gloss": "The man who drowned here is said to have been the rent collected by the supernatural spirit."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "Conjugations": [
+        {
+          "Word": "paN-",
+          "WordTypeDefs": [
+            {
+              "WordType": "v",
+              "Classes": [
+                "[A2]"
+              ],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "patronize a prostitute."
+                },
+                "Examples": []
+              }
+            }
+          ]
+        },
+        {
+          "Word": "-an(→)<span class=\"corr\" id=\"xd20e5140\" title=\"Not in source\"><sub>1</sub></span>",
+          "DefExLead": {
+            "Def": [
+              {
+                "Type": "TEXT",
+                "Content": "<b>1, 2, 3</b>"
+              },
+              {
+                "Type": "LINK",
+                "Content": "ábang, n."
+              }
+            ],
+            "Examples": []
+          },
+          "NumberedDefs": [
+            {
+              "Number": "4",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "haunted place, place where departed spirits take a toll or rent."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Abangan kunu kanang baláya. Náa giyuy mamatay káda túig,",
+                    "Gloss": "That house is haunted (lit. has a rental on it). Each year s.o. dies there."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 37,
     "ParseDiagnostics": []
   },
   {
@@ -2364,274 +2930,6 @@
     },
     "ParseOk": true,
     "ParseNextIndex": 10,
-    "ParseDiagnostics": []
-  },
-  {
-    "Tokens": [
-      {
-        "Type": "CEBWORD",
-        "Content": "abaníku",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "WORDTYPE",
-        "Content": "n",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "1",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "folding fan.",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "1a",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "fan of any sort for fanning oneself.",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "2",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "blackberry lily, k.o. bulbous ornamental: <b lang=\"la\"><i>Balamcanda chinensis</i></b>. It is so called because the leaves are arranged like an opened fan.",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "3",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "LINK",
-        "Content": "baníku",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "4",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "CEBWORD",
-        "Content": "kurta di-",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "LINK",
-        "Content": "kurta1",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "WORDTYPE",
-        "Content": "v",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "1",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "CLASS",
-        "Content": "[a12]",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "make into a fan.",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "2",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "CLASS",
-        "Content": "[A; b6]",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "fan s.o.",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "CEBWORD",
-        "Content": "paN-",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "WORDTYPE",
-        "Content": "v",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "CLASS",
-        "Content": "[A2]",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "fan oneself.",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "CEBWORD",
-        "Content": "inabaníku",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "WORDTYPE",
-        "Content": "n",
-        "Word": "abaníku"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "s.t. made in such a way that it can be folded for storage, e.g., a folding chair, jackknife.",
-        "Word": "abaníku"
-      }
-    ],
-    "WordDef": {
-      "Word": "abaníku",
-      "WordTypeDefs": [
-        {
-          "WordType": "n",
-          "Classes": [],
-          "NumberedDefs": [
-            {
-              "Number": "1",
-              "DefEx": {
-                "Def": {
-                  "Type": "TEXT",
-                  "Content": "folding fan."
-                },
-                "Examples": []
-              }
-            },
-            {
-              "Number": "1a",
-              "DefEx": {
-                "Def": {
-                  "Type": "TEXT",
-                  "Content": "fan of any sort for fanning oneself."
-                },
-                "Examples": []
-              }
-            },
-            {
-              "Number": "2",
-              "DefEx": {
-                "Def": {
-                  "Type": "TEXT",
-                  "Content": "blackberry lily, k.o. bulbous ornamental: <b lang=\"la\"><i>Balamcanda chinensis</i></b>. It is so called because the leaves are arranged like an opened fan."
-                },
-                "Examples": []
-              }
-            },
-            {
-              "Number": "3",
-              "DefEx": {
-                "Def": {
-                  "Type": "LINK",
-                  "Content": "baníku"
-                },
-                "Examples": []
-              }
-            },
-            {
-              "Number": "4",
-              "DefEx": {
-                "Def": {
-                  "Type": "LINK",
-                  "Content": "kurta1"
-                },
-                "Examples": []
-              },
-              "Conjugation": "kurta di-"
-            }
-          ]
-        },
-        {
-          "WordType": "v",
-          "Classes": [],
-          "NumberedDefs": [
-            {
-              "Number": "1",
-              "DefEx": {
-                "Def": {
-                  "Type": "TEXT",
-                  "Content": "make into a fan."
-                },
-                "Examples": []
-              },
-              "Class": "[a12]"
-            },
-            {
-              "Number": "2",
-              "DefEx": {
-                "Def": {
-                  "Type": "TEXT",
-                  "Content": "fan s.o."
-                },
-                "Examples": []
-              },
-              "Class": "[A; b6]"
-            }
-          ]
-        }
-      ],
-      "Conjugations": [
-        {
-          "Word": "paN-",
-          "WordTypeDefs": [
-            {
-              "WordType": "v",
-              "Classes": [
-                "[A2]"
-              ],
-              "DefEx": {
-                "Def": {
-                  "Type": "TEXT",
-                  "Content": "fan oneself."
-                },
-                "Examples": []
-              }
-            }
-          ]
-        },
-        {
-          "Word": "inabaníku",
-          "WordTypeDefs": [
-            {
-              "WordType": "n",
-              "Classes": [],
-              "DefEx": {
-                "Def": {
-                  "Type": "TEXT",
-                  "Content": "s.t. made in such a way that it can be folded for storage, e.g., a folding chair, jackknife."
-                },
-                "Examples": []
-              }
-            }
-          ]
-        }
-      ]
-    },
-    "ParseOk": true,
-    "ParseNextIndex": 27,
     "ParseDiagnostics": []
   },
   {
@@ -3028,7 +3326,7 @@
       },
       {
         "Type": "LINK",
-        "Content": "atras",
+        "Content": "atras.",
         "Word": "abanti"
       }
     ],
@@ -3209,7 +3507,7 @@
         "DefEx": {
           "Def": {
             "Type": "LINK",
-            "Content": "atras"
+            "Content": "atras."
           },
           "Examples": []
         }
@@ -3955,7 +4253,7 @@
       },
       {
         "Type": "LINK",
-        "Content": "adgaw",
+        "Content": "adgaw.",
         "Word": "abgaw"
       },
       {
@@ -3979,7 +4277,7 @@
       "DefEx": {
         "Def": {
           "Type": "LINK",
-          "Content": "adgaw"
+          "Content": "adgaw."
         },
         "Examples": []
       },
@@ -4145,7 +4443,7 @@
       },
       {
         "Type": "LINK",
-        "Content": "abhung",
+        "Content": "abhung.",
         "Word": "abhul"
       }
     ],
@@ -4154,7 +4452,7 @@
       "DefEx": {
         "Def": {
           "Type": "LINK",
-          "Content": "abhung"
+          "Content": "abhung."
         },
         "Examples": []
       }
@@ -4258,6 +4556,33 @@
     },
     "ParseOk": true,
     "ParseNextIndex": 9,
+    "ParseDiagnostics": []
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abi",
+        "Word": "abi"
+      },
+      {
+        "Type": "LINK",
+        "Content": "abir1, 2.",
+        "Word": "abi"
+      }
+    ],
+    "WordDef": {
+      "Word": "abi",
+      "DefEx": {
+        "Def": {
+          "Type": "LINK",
+          "Content": "abir1, 2."
+        },
+        "Examples": []
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 2,
     "ParseDiagnostics": []
   },
   {
@@ -4472,7 +4797,7 @@
       },
       {
         "Type": "LINK",
-        "Content": "alabíhid",
+        "Content": "alabíhid.",
         "Word": "abíhid"
       }
     ],
@@ -4481,7 +4806,7 @@
       "DefEx": {
         "Def": {
           "Type": "LINK",
-          "Content": "alabíhid"
+          "Content": "alabíhid."
         },
         "Examples": []
       }
@@ -4499,7 +4824,7 @@
       },
       {
         "Type": "LINK",
-        "Content": "sambilay",
+        "Content": "sambilay.",
         "Word": "abilay"
       }
     ],
@@ -4508,7 +4833,7 @@
       "DefEx": {
         "Def": {
           "Type": "LINK",
-          "Content": "sambilay"
+          "Content": "sambilay."
         },
         "Examples": []
       }
@@ -4844,7 +5169,7 @@
       },
       {
         "Type": "LINK",
-        "Content": "ábin",
+        "Content": "ábin.",
         "Word": "ábin"
       }
     ],
@@ -4919,7 +5244,7 @@
             "DefEx": {
               "Def": {
                 "Type": "LINK",
-                "Content": "ábin"
+                "Content": "ábin."
               },
               "Examples": []
             }
@@ -5010,7 +5335,7 @@
       },
       {
         "Type": "LINK",
-        "Content": "abinturar",
+        "Content": "abinturar.",
         "Word": "abintúra"
       }
     ],
@@ -5074,7 +5399,7 @@
               "DefEx": {
                 "Def": {
                   "Type": "LINK",
-                  "Content": "abinturar"
+                  "Content": "abinturar."
                 },
                 "Examples": []
               }
@@ -5136,7 +5461,7 @@
       },
       {
         "Type": "LINK",
-        "Content": "abinturista",
+        "Content": "abinturista.",
         "Word": "abinturar"
       },
       {
@@ -5197,7 +5522,7 @@
           "DefEx": {
             "Def": {
               "Type": "LINK",
-              "Content": "abinturista"
+              "Content": "abinturista."
             },
             "Examples": []
           }
@@ -5313,7 +5638,7 @@
       },
       {
         "Type": "LINK",
-        "Content": "ambi",
+        "Content": "",
         "Word": "abir"
       },
       {
@@ -5424,7 +5749,7 @@
           "DefEx": {
             "Def": {
               "Type": "LINK",
-              "Content": "ambi"
+              "Content": ""
             },
             "Examples": []
           }
@@ -5757,7 +6082,7 @@
       },
       {
         "Type": "LINK",
-        "Content": "abyirtu",
+        "Content": "abyirtu.",
         "Word": "abirtu"
       }
     ],
@@ -5766,7 +6091,7 @@
       "DefEx": {
         "Def": {
           "Type": "LINK",
-          "Content": "abyirtu"
+          "Content": "abyirtu."
         },
         "Examples": []
       }
@@ -6028,7 +6353,7 @@
       },
       {
         "Type": "LINK",
-        "Content": "habitsuylas",
+        "Content": "habitsuylas.",
         "Word": "abitsuylas"
       }
     ],
@@ -6037,7 +6362,7 @@
       "DefEx": {
         "Def": {
           "Type": "LINK",
-          "Content": "habitsuylas"
+          "Content": "habitsuylas."
         },
         "Examples": []
       }
@@ -6643,7 +6968,7 @@
       },
       {
         "Type": "LINK",
-        "Content": "abrása",
+        "Content": "abrása.",
         "Word": "ablása"
       }
     ],
@@ -6652,7 +6977,7 @@
       "DefEx": {
         "Def": {
           "Type": "LINK",
-          "Content": "abrása"
+          "Content": "abrása."
         },
         "Examples": []
       }
@@ -7252,6 +7577,76 @@
     "Tokens": [
       {
         "Type": "CEBWORD",
+        "Content": "abrasadur",
+        "Word": "abrasadur"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n",
+        "Word": "abrasadur"
+      },
+      {
+        "Type": "LINK",
+        "Content": "tangdayan.",
+        "Word": "abrasadur"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v",
+        "Word": "abrasadur"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "=",
+        "Word": "abrasadur"
+      },
+      {
+        "Type": "LINK",
+        "Content": "tangday, 2.",
+        "Word": "abrasadur"
+      }
+    ],
+    "WordDef": {
+      "Word": "abrasadur",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "LINK",
+              "Content": "tangdayan."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [],
+          "DefEx": {
+            "Def": [
+              {
+                "Type": "TEXT",
+                "Content": "="
+              },
+              {
+                "Type": "LINK",
+                "Content": "tangday, 2."
+              }
+            ],
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": []
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
         "Content": "abrasíti",
         "Word": "abrasíti"
       },
@@ -7317,7 +7712,7 @@
       },
       {
         "Type": "LINK",
-        "Content": "abrasíti",
+        "Content": "abrasíti.",
         "Word": "abrasyíti"
       }
     ],
@@ -7326,7 +7721,7 @@
       "DefEx": {
         "Def": {
           "Type": "LINK",
-          "Content": "abrasíti"
+          "Content": "abrasíti."
         },
         "Examples": []
       }
@@ -7344,7 +7739,7 @@
       },
       {
         "Type": "LINK",
-        "Content": "abli",
+        "Content": "abli.",
         "Word": "abri<sub>1</sub>"
       },
       {
@@ -7368,7 +7763,7 @@
       "DefEx": {
         "Def": {
           "Type": "LINK",
-          "Content": "abli"
+          "Content": "abli."
         },
         "Examples": []
       },
@@ -7402,7 +7797,7 @@
       },
       {
         "Type": "LINK",
-        "Content": "abyirtu2",
+        "Content": "abyirtu2.",
         "Word": "abri<sub>2</sub>"
       }
     ],
@@ -7411,7 +7806,7 @@
       "DefEx": {
         "Def": {
           "Type": "LINK",
-          "Content": "abyirtu2"
+          "Content": "abyirtu2."
         },
         "Examples": []
       }
@@ -8058,7 +8453,7 @@
       },
       {
         "Type": "LINK",
-        "Content": "absin",
+        "Content": "absin.",
         "Word": "absinus"
       }
     ],
@@ -8067,7 +8462,7 @@
       "DefEx": {
         "Def": {
           "Type": "LINK",
-          "Content": "absin"
+          "Content": "absin."
         },
         "Examples": []
       }
@@ -8630,7 +9025,7 @@
       },
       {
         "Type": "LINK",
-        "Content": "alabúhan",
+        "Content": "alabúhan.",
         "Word": "abu"
       },
       {
@@ -8781,7 +9176,7 @@
               "DefEx": {
                 "Def": {
                   "Type": "LINK",
-                  "Content": "alabúhan"
+                  "Content": "alabúhan."
                 },
                 "Examples": []
               }
@@ -8930,6 +9325,302 @@
     },
     "ParseOk": true,
     "ParseNextIndex": 3,
+    "ParseDiagnostics": []
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abud, ábud<sub>1</sub>",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; c]",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "throw grains, throw grains to.",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ang bukbukung mais mauy iábud sa manuk,",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Throw the beetle-infested corn to the chickens.",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "drop grains into a hole in planting.",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Mag-abud sila sa ílang baul,",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "They will plant their field.",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "feed grain into a mill.",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "ímu síging abdan (abúran) ang galingan,",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Keep feeding grains into the mill.",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "4",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "supply a factory with raw materials.",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Kanang kumpaniyáha mauy tig-abud sa mga papil sa imprinta,",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "That company supplies paper to the printing press.",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "5",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "feed news, gossip. Aha!",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ikaw diay nag-abud sa mga nutisya,",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "So you were the one who spread the news!",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "feed for fowls.",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "one’s turn to throw grains.",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "ákù na rung abud,",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "It’s my turn to feed (the chickens).",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "alabdan",
+        "Word": "abud, ábud<sub>1</sub>"
+      },
+      {
+        "Type": "LINK",
+        "Content": "abud, n 2.",
+        "Word": "abud, ábud<sub>1</sub>"
+      }
+    ],
+    "WordDef": {
+      "Word": "abud, ábud<sub>1</sub>",
+      "WordTypeDefs": [
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A; c]"
+          ],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "throw grains, throw grains to."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Ang bukbukung mais mauy iábud sa manuk,",
+                    "Gloss": "Throw the beetle-infested corn to the chickens."
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "drop grains into a hole in planting."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Mag-abud sila sa ílang baul,",
+                    "Gloss": "They will plant their field."
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "3",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "feed grain into a mill."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "ímu síging abdan (abúran) ang galingan,",
+                    "Gloss": "Keep feeding grains into the mill."
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "4",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "supply a factory with raw materials."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Kanang kumpaniyáha mauy tig-abud sa mga papil sa imprinta,",
+                    "Gloss": "That company supplies paper to the printing press."
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "5",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "feed news, gossip. Aha!"
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Ikaw diay nag-abud sa mga nutisya,",
+                    "Gloss": "So you were the one who spread the news!"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "WordType": "n",
+          "Classes": [],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "feed for fowls."
+                },
+                "Examples": []
+              }
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "one’s turn to throw grains."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "ákù na rung abud,",
+                    "Gloss": "It’s my turn to feed (the chickens)."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "Conjugations": {
+        "Word": "alabdan",
+        "DefEx": {
+          "Def": {
+            "Type": "LINK",
+            "Content": "abud, n 2."
+          },
+          "Examples": []
+        }
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 32,
     "ParseDiagnostics": []
   },
   {
@@ -9442,7 +10133,7 @@
       },
       {
         "Type": "LINK",
-        "Content": "abyug",
+        "Content": "abyug.",
         "Word": "ábug<sub>2</sub>"
       }
     ],
@@ -9451,7 +10142,7 @@
       "DefEx": {
         "Def": {
           "Type": "LINK",
-          "Content": "abyug"
+          "Content": "abyug."
         },
         "Examples": []
       }
