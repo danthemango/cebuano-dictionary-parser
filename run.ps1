@@ -5,9 +5,11 @@ param (
 $xml = .\HTML-to-XML.ps1
 
 # tokenize to file
-$xml | .\Tokenize.ps1 -Limit $Limit | Export-Csv -NoTypeInformation -Encoding utf8 -Path .\out\tokenlist.csv
-# parse from tokens file
-$parsed = .\Parse-WordDefs.ps1 -Tokens (Import-Csv .\out\tokenlist.csv)
+$tokens = $xml | .\Tokenize.ps1 -Limit $Limit
+$tokens | Export-Csv -NoTypeInformation -Encoding utf8 -Path .\out\tokenlist.csv
+
+# group tokens by word, and try to parse each word
+$parsed = $tokens | Group-Object Word | ForEach-Object { .\Parse-WordDef.ps1 -Tokens $_.Group }
 
 $total_num = $parsed.Count
 $num_success = ($parsed | Where-Object ParseOk -eq $true).Count
