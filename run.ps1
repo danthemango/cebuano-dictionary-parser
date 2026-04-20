@@ -1,10 +1,24 @@
+param (
+    [int]$Limit = 100
+)
+
 $xml = .\HTML-to-XML.ps1
-# tokenize the first 100 word definitions
-$tokens = $xml | .\Tokenize.ps1 -Limit 100
-# save to file for debugging purposes
-$tokens | Export-Csv -NoTypeInformation -Encoding utf8 -Path .\out\tokenlist.csv
 
-$parsed = .\Parse-WordDefs.ps1 -Tokens $tokens
+# tokenize to file
+$xml | .\Tokenize.ps1 -Limit $Limit | Export-Csv -NoTypeInformation -Encoding utf8 -Path .\out\tokenlist.csv
+# parse from tokens file
+$parsed = .\Parse-WordDefs.ps1 -Tokens (Import-Csv .\out\tokenlist.csv)
 
-$parsed | Where-Object ParseOk -eq $true | ConvertTo-Json -Depth 100 | Out-File "out\successful-parse.json"
-$parsed | Where-Object ParseOk -ne $true | ConvertTo-Json -Depth 100 | Out-File "out\failed-parse.json"
+$total_num = $parsed.Count
+$num_success = ($parsed | Where-Object ParseOk -eq $true).Count
+Write-Output "parsed $($num_success) / $($total_num)"
+
+$parsed |
+    Where-Object ParseOk -eq $true |
+    ConvertTo-Json -Depth 12 |
+    Set-Content -Encoding UTF8 -Path "out\successful-parse.json"
+
+$parsed |
+    Where-Object ParseOk -ne $true |
+    ConvertTo-Json -Depth 12 |
+    Set-Content -Encoding UTF8 -Path "out\failed-parse.json"

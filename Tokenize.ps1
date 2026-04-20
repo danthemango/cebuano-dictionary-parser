@@ -1,3 +1,5 @@
+# .Description
+# create a stream of tokens for each word definition, based on some established patterns
 # .EXAMPLE
 # .\HTML-to-XML.ps1 | .\Tokenize.ps1 -Limit 100 | Export-Csv -Encoding utf8 -NoTypeInformation -Path "tokenlist.csv"
 # .EXAMPLE
@@ -13,14 +15,6 @@ param (
     [Parameter(Mandatory=$true)]
     [int]$Limit
 )
-
-# after the word, there may be one or more types (e.g. <i>n</i>, <i>v</i>, <i>a</i>)
-# then each type may have one or more numbered definitions
-# and a definition may be a conjugation
-# then after all numbered definitions there may be one or more conjugations
-# which also may have zero or more types of its own
-# and may also have zero or more numbered definitions
-# there may be a conjugation that is part of a definition (e.g. after the word type or the word conjugation)
 
 # Utility function to convert multiple whitespace to single space
 function reduceWS($text) {
@@ -154,7 +148,7 @@ function Split-Types {
         $token
     )
     process {
-        $token | Split-TokensByPattern -pattern "<i>([anv])</i>" -tokenType "WORDTYPE"
+        $token | Split-TokensByPattern -pattern "<i[^>]*>([anv])</i>" -tokenType "WORDTYPE"
     }
 }
 
@@ -194,7 +188,7 @@ function Split-Cebuano-Phrases {
 # <b lang="la"><i>Balamcanda chinensis</i></b>.
 # <b lang="la"><i>Eurycles amboinensis</i></b>.
 # <b lang="la"><i>Persea sp</i></b>.
-# but only a few, and usually are part of a definition.
+# but only a few, and usually are part of a definition, so I'll leave them be
 
 # find other words that are being linked to
 # the links are in a span with class "sc", and may or may not be in an <a> (which may be discarded)
@@ -379,7 +373,7 @@ function Tokenize {
         # notes:
         # - corr must be processed before splitting words, since it is usally inside of the word block
         # - split links must be processed before cebuano phrases because of some bad formatting (they use <i lang="ceb"> as a way to make the word "see" italic, e.g. in "see otherword")
-        $token | Strip-Corr | Split-Classes | Split-Cebuano-Words | Split-Types | Split-Nums | Split-Links | Split-Cebuano-Phrases | Strip-Punct
+        $token | Split-Classes | Split-Cebuano-Words | Split-Types | Split-Nums | Split-Links | Split-Cebuano-Phrases | Strip-Punct
     }
 }
 

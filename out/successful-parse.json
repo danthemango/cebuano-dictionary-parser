@@ -20,13 +20,16 @@
     "WordDef": {
       "Word": "-a",
       "DefEx": {
-        "Def": {
-          "Text": "subjunctive direct passive affix.",
-          "Links": [
-            "-un"
-          ],
-          "Word": null
-        },
+        "Def": [
+          {
+            "Type": "TEXT",
+            "Content": "subjunctive direct passive affix."
+          },
+          {
+            "Type": "LINK",
+            "Content": "-un"
+          }
+        ],
         "Examples": []
       }
     },
@@ -137,12 +140,10 @@
       "NumberedDefs": [
         {
           "Number": "1",
-          "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "affix added to nouns forming words which refer to a specific one of several:",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "affix added to nouns forming words which refer to a specific one of several:"
             },
             "Examples": [
               {
@@ -158,12 +159,10 @@
         },
         {
           "Number": "1a",
-          "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "added to possessive pronouns: the particular one that belongs to [so-and-so].",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "added to possessive pronouns: the particular one that belongs to [so-and-so]."
             },
             "Examples": [
               {
@@ -175,12 +174,10 @@
         },
         {
           "Number": "2",
-          "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "affix added to adjectives to form exclamation.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "affix added to adjectives to form exclamation."
             },
             "Examples": [
               {
@@ -202,6 +199,406 @@
     },
     "ParseOk": true,
     "ParseNextIndex": 19,
+    "ParseDiagnostics": []
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "*abab",
+        "Word": "*abab"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "taga-",
+        "Word": "*abab"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n",
+        "Word": "*abab"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "hillbilly.",
+        "Word": "*abab"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "pakataga-",
+        "Word": "*abab"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v",
+        "Word": "*abab"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A13; a12]",
+        "Word": "*abab"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "act, treat like, consider a hillbilly.",
+        "Word": "*abab"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Gipakatagaabab lang ku ninyu. Ihása,",
+        "Word": "*abab"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "You just think I’m a hillbilly. Don’t try to fool me.",
+        "Word": "*abab"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— disáya",
+        "Word": "*abab"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a",
+        "Word": "*abab"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be the boss and not henpecked.",
+        "Word": "*abab"
+      }
+    ],
+    "WordDef": {
+      "Word": "*abab",
+      "Conjugations": [
+        {
+          "Word": "taga-",
+          "WordTypeDefs": [
+            {
+              "WordType": "n",
+              "Classes": [],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "hillbilly."
+                },
+                "Examples": []
+              }
+            }
+          ]
+        },
+        {
+          "Word": "pakataga-",
+          "WordTypeDefs": [
+            {
+              "WordType": "v",
+              "Classes": [
+                "[A13; a12]"
+              ],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "act, treat like, consider a hillbilly."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Gipakatagaabab lang ku ninyu. Ihása,",
+                    "Gloss": "You just think I’m a hillbilly. Don’t try to fool me."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "Word": "— disáya",
+          "WordTypeDefs": [
+            {
+              "WordType": "a",
+              "Classes": [],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "be the boss and not henpecked."
+                },
+                "Examples": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 13,
+    "ParseDiagnostics": []
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "*abáhu",
+        "Word": "*abáhu"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— kunsidirasiyun, dispusisiyun",
+        "Word": "*abáhu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n",
+        "Word": "*abáhu"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "bound by s.o.’s will.",
+        "Word": "*abáhu"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abáhu (báhu) <span class=\"corr\" id=\"xd20e4931\" title=\"Source: kunsididirasiyun\">kunsidirasiyun</span> ku sa ákung bána,",
+        "Word": "*abáhu"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I am bound by my husband’s decisions.",
+        "Word": "*abáhu"
+      }
+    ],
+    "WordDef": {
+      "Word": "*abáhu",
+      "Conjugations": [
+        {
+          "Word": "— kunsidirasiyun, dispusisiyun",
+          "WordTypeDefs": [
+            {
+              "WordType": "n",
+              "Classes": [],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "bound by s.o.’s will."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Abáhu (báhu) <span class=\"corr\" id=\"xd20e4931\" title=\"Source: kunsididirasiyun\">kunsidirasiyun</span> ku sa ákung bána,",
+                    "Gloss": "I am bound by my husband’s decisions."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": []
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "*abansi",
+        "Word": "*abansi"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "miting di —",
+        "Word": "*abansi"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "grand rally immediately prior to an election.",
+        "Word": "*abansi"
+      }
+    ],
+    "WordDef": {
+      "Word": "*abansi",
+      "Conjugations": [
+        {
+          "Word": "miting di —",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "grand rally immediately prior to an election."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": []
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "*abubhu",
+        "Word": "*abubhu"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "paN-",
+        "Word": "*abubhu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v",
+        "Word": "*abubhu"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2; b6]",
+        "Word": "*abubhu"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be jealous of a loved one.",
+        "Word": "*abubhu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n",
+        "Word": "*abubhu"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "jealousy.",
+        "Word": "*abubhu"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "abubhuan",
+        "Word": "*abubhu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a",
+        "Word": "*abubhu"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "jealous.",
+        "Word": "*abubhu"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abubhuang bána,",
+        "Word": "*abubhu"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "A jealous husband.",
+        "Word": "*abubhu"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "mapangabubhúun",
+        "Word": "*abubhu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a",
+        "Word": "*abubhu"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "of a jealous type.",
+        "Word": "*abubhu"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Mapangabubhúun nga pasiklap,",
+        "Word": "*abubhu"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "A jealous glance.",
+        "Word": "*abubhu"
+      }
+    ],
+    "WordDef": {
+      "Word": "*abubhu",
+      "Conjugations": [
+        {
+          "Word": "paN-",
+          "WordTypeDefs": [
+            {
+              "WordType": "v",
+              "Classes": [
+                "[A2; b6]"
+              ],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "be jealous of a loved one."
+                },
+                "Examples": []
+              }
+            },
+            {
+              "WordType": "n",
+              "Classes": [],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "jealousy."
+                },
+                "Examples": []
+              }
+            }
+          ]
+        },
+        {
+          "Word": "abubhuan",
+          "WordTypeDefs": [
+            {
+              "WordType": "a",
+              "Classes": [],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "jealous."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Abubhuang bána,",
+                    "Gloss": "A jealous husband."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "Word": "mapangabubhúun",
+          "WordTypeDefs": [
+            {
+              "WordType": "a",
+              "Classes": [],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "of a jealous type."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Mapangabubhúun nga pasiklap,",
+                    "Gloss": "A jealous glance."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 17,
     "ParseDiagnostics": []
   },
   {
@@ -240,9 +637,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "letter A.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "letter A."
             },
             "Examples": []
           }
@@ -252,9 +648,8 @@
         "Word": "walay —",
         "DefEx": {
           "Def": {
-            "Text": "illiterate.",
-            "Links": [],
-            "Word": null
+            "Type": "TEXT",
+            "Content": "illiterate."
           },
           "Examples": []
         }
@@ -421,21 +816,18 @@
       "Word": "á",
       "DefExLead": {
         "Def": {
-          "Text": "particle used as a pause word before starting to speak.",
-          "Links": [],
-          "Word": null
+          "Type": "TEXT",
+          "Content": "particle used as a pause word before starting to speak."
         },
         "Examples": []
       },
       "NumberedDefs": [
         {
           "Number": "1",
-          "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "as a filler.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "as a filler."
             },
             "Examples": [
               {
@@ -447,12 +839,10 @@
         },
         {
           "Number": "2",
-          "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "deprecating or showing unimportance of what just preceded.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "deprecating or showing unimportance of what just preceded."
             },
             "Examples": [
               {
@@ -468,12 +858,10 @@
         },
         {
           "Number": "3",
-          "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "showing mild disapproval.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "showing mild disapproval."
             },
             "Examples": [
               {
@@ -485,12 +873,10 @@
         },
         {
           "Number": "4",
-          "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "recalling or conceding s.t.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "recalling or conceding s.t."
             },
             "Examples": [
               {
@@ -502,12 +888,10 @@
         },
         {
           "Number": "4a",
-          "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "preceding s.t. just found out.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "preceding s.t. just found out."
             },
             "Examples": [
               {
@@ -523,12 +907,10 @@
         },
         {
           "Number": "5",
-          "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "expressing relief.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "expressing relief."
             },
             "Examples": [
               {
@@ -631,21 +1013,18 @@
       "Word": "à",
       "DefExLead": {
         "Def": {
-          "Text": "particle preceding or following a sentence with an adjective predicate.",
-          "Links": [],
-          "Word": null
+          "Type": "TEXT",
+          "Content": "particle preceding or following a sentence with an adjective predicate."
         },
         "Examples": []
       },
       "NumberedDefs": [
         {
           "Number": "1",
-          "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "dismissing s.t. as impractical, too easy, impossible, etc.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "dismissing s.t. as impractical, too easy, impossible, etc."
             },
             "Examples": [
               {
@@ -661,12 +1040,10 @@
         },
         {
           "Number": "2",
-          "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "showing disapproval.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "showing disapproval."
             },
             "Examples": [
               {
@@ -678,12 +1055,10 @@
         },
         {
           "Number": "3",
-          "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "showing surprise.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "showing surprise."
             },
             "Examples": [
               {
@@ -716,11 +1091,8 @@
       "Word": "ā̀",
       "DefEx": {
         "Def": {
-          "Text": null,
-          "Links": [
-            "álà"
-          ],
-          "Word": null
+          "Type": "LINK",
+          "Content": "álà"
         },
         "Examples": []
       }
@@ -828,12 +1200,10 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "chew to pieces.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "chew to pieces."
                 },
                 "Examples": [
                   {
@@ -845,12 +1215,10 @@
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "eat away, erode.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "eat away, erode."
                 },
                 "Examples": [
                   {
@@ -866,12 +1234,10 @@
             },
             {
               "Number": "3",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "fester.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "fester."
                 },
                 "Examples": [
                   {
@@ -926,9 +1292,8 @@
       "Word": "ábà tuy",
       "DefEx": {
         "Def": {
-          "Text": "(from",
-          "Links": [],
-          "Word": null
+          "Type": "TEXT",
+          "Content": "(from"
         },
         "Examples": [
           {
@@ -972,9 +1337,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "breast of fowls.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "breast of fowls."
             },
             "Examples": []
           }
@@ -1012,9 +1376,8 @@
       "Word": "aba<sub>2</sub>",
       "DefEx": {
         "Def": {
-          "Text": "exclamation of pleasure and surprise.",
-          "Links": [],
-          "Word": null
+          "Type": "TEXT",
+          "Content": "exclamation of pleasure and surprise."
         },
         "Examples": [
           {
@@ -1055,9 +1418,8 @@
       "Word": "abaa",
       "DefEx": {
         "Def": {
-          "Text": "particle indicating disapproval (literary).",
-          "Links": [],
-          "Word": null
+          "Type": "TEXT",
+          "Content": "particle indicating disapproval (literary)."
         },
         "Examples": [
           {
@@ -1097,9 +1459,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "abbot.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "abbot."
             },
             "Examples": []
           }
@@ -1188,9 +1549,8 @@
           ],
           "DefEx": {
             "Def": {
-              "Text": "give material help, help do work.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "give material help, help do work."
             },
             "Examples": [
               {
@@ -1209,9 +1569,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "help given.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "help given."
             },
             "Examples": []
           }
@@ -1225,9 +1584,8 @@
             "Classes": [],
             "DefEx": {
               "Def": {
-                "Text": "helper.",
-                "Links": [],
-                "Word": null
+                "Type": "TEXT",
+                "Content": "helper."
               },
               "Examples": []
             }
@@ -1265,9 +1623,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "sweet potatoes growing from the outer vines and not from the main root.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "sweet potatoes growing from the outer vines and not from the main root."
             },
             "Examples": []
           }
@@ -1350,24 +1707,20 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "abaca plant: <b lang=\"la\"><i>Musa textilis</i></b>.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "abaca plant: <b lang=\"la\"><i>Musa textilis</i></b>."
                 },
                 "Examples": []
               }
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "abaca fiber.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "abaca fiber."
                 },
                 "Examples": []
               }
@@ -1383,9 +1736,8 @@
             "Classes": [],
             "DefEx": {
               "Def": {
-                "Text": "abaca plantation.",
-                "Links": [],
-                "Word": null
+                "Type": "TEXT",
+                "Content": "abaca plantation."
               },
               "Examples": []
             }
@@ -1397,9 +1749,8 @@
             ],
             "DefEx": {
               "Def": {
-                "Text": "own an abaca plantation.",
-                "Links": [],
-                "Word": null
+                "Type": "TEXT",
+                "Content": "own an abaca plantation."
               },
               "Examples": []
             }
@@ -1437,9 +1788,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "alphabet.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "alphabet."
             },
             "Examples": []
           }
@@ -1467,11 +1817,8 @@
       "Word": "abakal",
       "DefEx": {
         "Def": {
-          "Text": null,
-          "Links": [
-            "abaka"
-          ],
-          "Word": null
+          "Type": "LINK",
+          "Content": "abaka"
         },
         "Examples": []
       }
@@ -1516,11 +1863,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": null,
-              "Links": [
-                "balbal"
-              ],
-              "Word": null
+              "Type": "LINK",
+              "Content": "balbal"
             },
             "Examples": []
           }
@@ -1530,11 +1874,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": null,
-              "Links": [
-                "abat"
-              ],
-              "Word": null
+              "Type": "LINK",
+              "Content": "abat"
             },
             "Examples": []
           }
@@ -1606,9 +1947,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "assessed value.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "assessed value."
             },
             "Examples": []
           }
@@ -1620,9 +1960,8 @@
           ],
           "DefEx": {
             "Def": {
-              "Text": "assess, be assessed at.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "assess, be assessed at."
             },
             "Examples": [
               {
@@ -1678,9 +2017,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "assessment.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "assessment."
             },
             "Examples": [
               {
@@ -1789,9 +2127,8 @@
           ],
           "DefEx": {
             "Def": {
-              "Text": "abandon, neglect.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "abandon, neglect."
             },
             "Examples": [
               {
@@ -1815,24 +2152,20 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "Classes": [],
                 "DefEx": {
                   "Def": {
-                    "Text": "abandoned.",
-                    "Links": [],
-                    "Word": null
+                    "Type": "TEXT",
+                    "Content": "abandoned."
                   },
                   "Examples": []
                 }
               },
               {
                 "Number": "2",
-                "Classes": [],
                 "DefEx": {
                   "Def": {
-                    "Text": "neglectful.",
-                    "Links": [],
-                    "Word": null
+                    "Type": "TEXT",
+                    "Content": "neglectful."
                   },
                   "Examples": []
                 }
@@ -1844,11 +2177,8 @@
             "Classes": [],
             "DefEx": {
               "Def": {
-                "Text": null,
-                "Links": [
-                  "abandunar"
-                ],
-                "Word": null
+                "Type": "LINK",
+                "Content": "abandunar"
               },
               "Examples": []
             }
@@ -1877,11 +2207,8 @@
       "Word": "abandúnu",
       "DefEx": {
         "Def": {
-          "Text": null,
-          "Links": [
-            "abandunar"
-          ],
-          "Word": null
+          "Type": "LINK",
+          "Content": "abandunar"
         },
         "Examples": []
       }
@@ -1894,291 +2221,53 @@
     "Tokens": [
       {
         "Type": "CEBWORD",
-        "Content": "ábang",
-        "Word": "ábang"
-      },
-      {
-        "Type": "WORDTYPE",
-        "Content": "v",
-        "Word": "ábang"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "1",
-        "Word": "ábang"
-      },
-      {
-        "Type": "CLASS",
-        "Content": "[A2S; b]",
-        "Word": "ábang"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "rent.",
-        "Word": "ábang"
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "Ang usa ka kwartu giabángan sa tigúlang,",
-        "Word": "ábang"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "The old man rents one of the rooms.",
-        "Word": "ábang"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "2",
-        "Word": "ábang"
-      },
-      {
-        "Type": "CLASS",
-        "Content": "[b]",
-        "Word": "ábang"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "hire a prostitute.",
-        "Word": "ábang"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "3",
-        "Word": "ábang"
-      },
-      {
-        "Type": "CLASS",
-        "Content": "[A2; c]",
-        "Word": "ábang"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "make an offering to a supernatural being for the use of land which is thought to be in his possession.",
-        "Word": "ábang"
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "Iábang ni nákung baktína álang sa uma,",
-        "Word": "ábang"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "I will sacrifice this pig as rental for the land.",
-        "Word": "ábang"
+        "Content": "abangan<span class=\"corr\" id=\"xd20e5164\" title=\"Not in source\"><sub>2</sub></span>",
+        "Word": "abangan<span class=\"corr\" id=\"xd20e5164\" title=\"Not in source\"><sub>2</sub></span>"
       },
       {
         "Type": "WORDTYPE",
         "Content": "n",
-        "Word": "ábang"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "1",
-        "Word": "ábang"
+        "Word": "abangan<span class=\"corr\" id=\"xd20e5164\" title=\"Not in source\"><sub>2</sub></span>"
       },
       {
         "Type": "TEXT",
-        "Content": "rent paid.",
-        "Word": "ábang"
+        "Content": "k.o. rattan used as anchor rope for a",
+        "Word": "abangan<span class=\"corr\" id=\"xd20e5164\" title=\"Not in source\"><sub>2</sub></span>"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "Pilay ábang nímu sa libru?",
-        "Word": "ábang"
+        "Content": "búbu",
+        "Word": "abangan<span class=\"corr\" id=\"xd20e5164\" title=\"Not in source\"><sub>2</sub></span>"
       },
       {
         "Type": "TEXT",
-        "Content": "How much rent did you pay for the book?",
-        "Word": "ábang"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "2",
-        "Word": "ábang"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "money paid a prostitute.",
-        "Word": "ábang"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "3",
-        "Word": "ábang"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "toil taken by supernatural beings.",
-        "Word": "ábang"
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "Kadtung nalumus dinhi ábang kunu tu sa ingkantu,",
-        "Word": "ábang"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "The man who drowned here is said to have been the rent collected by the supernatural spirit.",
-        "Word": "ábang"
-      },
-      {
-        "Type": "CEBWORD",
-        "Content": "paN-",
-        "Word": "ábang"
-      },
-      {
-        "Type": "WORDTYPE",
-        "Content": "v",
-        "Word": "ábang"
-      },
-      {
-        "Type": "CLASS",
-        "Content": "[A2]",
-        "Word": "ábang"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "patronize a prostitute. <b lang=\"ceb\">-an(→)",
-        "Word": "ábang"
+        "Content": "fish trap.",
+        "Word": "abangan<span class=\"corr\" id=\"xd20e5164\" title=\"Not in source\"><sub>2</sub></span>"
       }
     ],
     "WordDef": {
-      "Word": "ábang",
+      "Word": "abangan<span class=\"corr\" id=\"xd20e5164\" title=\"Not in source\"><sub>2</sub></span>",
       "WordTypeDefs": [
-        {
-          "WordType": "v",
-          "Classes": [],
-          "NumberedDefs": [
-            {
-              "Number": "1",
-              "Classes": [
-                "[A2S; b]"
-              ],
-              "DefEx": {
-                "Def": {
-                  "Text": "rent.",
-                  "Links": [],
-                  "Word": null
-                },
-                "Examples": [
-                  {
-                    "Phrase": "Ang usa ka kwartu giabángan sa tigúlang,",
-                    "Gloss": "The old man rents one of the rooms."
-                  }
-                ]
-              }
-            },
-            {
-              "Number": "2",
-              "Classes": [
-                "[b]"
-              ],
-              "DefEx": {
-                "Def": {
-                  "Text": "hire a prostitute.",
-                  "Links": [],
-                  "Word": null
-                },
-                "Examples": []
-              }
-            },
-            {
-              "Number": "3",
-              "Classes": [
-                "[A2; c]"
-              ],
-              "DefEx": {
-                "Def": {
-                  "Text": "make an offering to a supernatural being for the use of land which is thought to be in his possession.",
-                  "Links": [],
-                  "Word": null
-                },
-                "Examples": [
-                  {
-                    "Phrase": "Iábang ni nákung baktína álang sa uma,",
-                    "Gloss": "I will sacrifice this pig as rental for the land."
-                  }
-                ]
-              }
-            }
-          ]
-        },
         {
           "WordType": "n",
           "Classes": [],
-          "NumberedDefs": [
-            {
-              "Number": "1",
-              "Classes": [],
-              "DefEx": {
-                "Def": {
-                  "Text": "rent paid.",
-                  "Links": [],
-                  "Word": null
-                },
-                "Examples": [
-                  {
-                    "Phrase": "Pilay ábang nímu sa libru?",
-                    "Gloss": "How much rent did you pay for the book?"
-                  }
-                ]
-              }
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "k.o. rattan used as anchor rope for a"
             },
-            {
-              "Number": "2",
-              "Classes": [],
-              "DefEx": {
-                "Def": {
-                  "Text": "money paid a prostitute.",
-                  "Links": [],
-                  "Word": null
-                },
-                "Examples": []
+            "Examples": [
+              {
+                "Phrase": "búbu",
+                "Gloss": "fish trap."
               }
-            },
-            {
-              "Number": "3",
-              "Classes": [],
-              "DefEx": {
-                "Def": {
-                  "Text": "toil taken by supernatural beings.",
-                  "Links": [],
-                  "Word": null
-                },
-                "Examples": [
-                  {
-                    "Phrase": "Kadtung nalumus dinhi ábang kunu tu sa ingkantu,",
-                    "Gloss": "The man who drowned here is said to have been the rent collected by the supernatural spirit."
-                  }
-                ]
-              }
-            }
-          ]
-        }
-      ],
-      "Conjugations": {
-        "Word": "paN-",
-        "WordTypeDefs": [
-          {
-            "WordType": "v",
-            "Classes": [
-              "[A2]"
-            ],
-            "DefEx": {
-              "Def": {
-                "Text": "patronize a prostitute. <b lang=\"ceb\">-an(→)",
-                "Links": [],
-                "Word": null
-              },
-              "Examples": []
-            }
+            ]
           }
-        ]
-      }
+        }
+      ]
     },
     "ParseOk": true,
-    "ParseNextIndex": 30,
+    "ParseNextIndex": 5,
     "ParseDiagnostics": []
   },
   {
@@ -2244,9 +2333,8 @@
           ],
           "DefEx": {
             "Def": {
-              "Text": "do s.t. step by step, and in sequence.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "do s.t. step by step, and in sequence."
             },
             "Examples": [
               {
@@ -2261,9 +2349,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "done in succession, order.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "done in succession, order."
             },
             "Examples": [
               {
@@ -2277,6 +2364,274 @@
     },
     "ParseOk": true,
     "ParseNextIndex": 10,
+    "ParseDiagnostics": []
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abaníku",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "folding fan.",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1a",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "fan of any sort for fanning oneself.",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "blackberry lily, k.o. bulbous ornamental: <b lang=\"la\"><i>Balamcanda chinensis</i></b>. It is so called because the leaves are arranged like an opened fan.",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "LINK",
+        "Content": "baníku",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "4",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "kurta di-",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "LINK",
+        "Content": "kurta1",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[a12]",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "make into a fan.",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; b6]",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "fan s.o.",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "paN-",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2]",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "fan oneself.",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "inabaníku",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n",
+        "Word": "abaníku"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "s.t. made in such a way that it can be folded for storage, e.g., a folding chair, jackknife.",
+        "Word": "abaníku"
+      }
+    ],
+    "WordDef": {
+      "Word": "abaníku",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "folding fan."
+                },
+                "Examples": []
+              }
+            },
+            {
+              "Number": "1a",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "fan of any sort for fanning oneself."
+                },
+                "Examples": []
+              }
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "blackberry lily, k.o. bulbous ornamental: <b lang=\"la\"><i>Balamcanda chinensis</i></b>. It is so called because the leaves are arranged like an opened fan."
+                },
+                "Examples": []
+              }
+            },
+            {
+              "Number": "3",
+              "DefEx": {
+                "Def": {
+                  "Type": "LINK",
+                  "Content": "baníku"
+                },
+                "Examples": []
+              }
+            },
+            {
+              "Number": "4",
+              "DefEx": {
+                "Def": {
+                  "Type": "LINK",
+                  "Content": "kurta1"
+                },
+                "Examples": []
+              },
+              "Conjugation": "kurta di-"
+            }
+          ]
+        },
+        {
+          "WordType": "v",
+          "Classes": [],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "make into a fan."
+                },
+                "Examples": []
+              },
+              "Class": "[a12]"
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "fan s.o."
+                },
+                "Examples": []
+              },
+              "Class": "[A; b6]"
+            }
+          ]
+        }
+      ],
+      "Conjugations": [
+        {
+          "Word": "paN-",
+          "WordTypeDefs": [
+            {
+              "WordType": "v",
+              "Classes": [
+                "[A2]"
+              ],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "fan oneself."
+                },
+                "Examples": []
+              }
+            }
+          ]
+        },
+        {
+          "Word": "inabaníku",
+          "WordTypeDefs": [
+            {
+              "WordType": "n",
+              "Classes": [],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "s.t. made in such a way that it can be folded for storage, e.g., a folding chair, jackknife."
+                },
+                "Examples": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 27,
     "ParseDiagnostics": []
   },
   {
@@ -2340,9 +2695,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "exposed to the wind.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "exposed to the wind."
             },
             "Examples": []
           }
@@ -2354,9 +2708,8 @@
           ],
           "DefEx": {
             "Def": {
-              "Text": "for s.t. to be directly open to the wind.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "for s.t. to be directly open to the wind."
             },
             "Examples": [
               {
@@ -2419,9 +2772,8 @@
           ],
           "DefEx": {
             "Def": {
-              "Text": "advance, for a body of people to move forward.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "advance, for a body of people to move forward."
             },
             "Examples": [
               {
@@ -2689,12 +3041,10 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "forward, ahead.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "forward, ahead."
                 },
                 "Examples": [
                   {
@@ -2706,12 +3056,10 @@
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "ahead in score.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "ahead in score."
                 },
                 "Examples": []
               }
@@ -2724,14 +3072,10 @@
           "NumberedDefs": [
             {
               "Number": "1a",
-              "Classes": [
-                "[A2; c]"
-              ],
               "DefEx": {
                 "Def": {
-                  "Text": "move forward.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "move forward."
                 },
                 "Examples": [
                   {
@@ -2743,18 +3087,15 @@
                     "Gloss": "Move your car forward a bit."
                   }
                 ]
-              }
+              },
+              "Class": "[A2; c]"
             },
             {
               "Number": "1b",
-              "Classes": [
-                "[A; a]"
-              ],
               "DefEx": {
                 "Def": {
-                  "Text": "be ahead, have more points in a game.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "be ahead, have more points in a game."
                 },
                 "Examples": [
                   {
@@ -2762,18 +3103,15 @@
                     "Gloss": "We were ten points ahead of you."
                   }
                 ]
-              }
+              },
+              "Class": "[A; a]"
             },
             {
               "Number": "2",
-              "Classes": [
-                "[A2; a12]"
-              ],
               "DefEx": {
                 "Def": {
-                  "Text": "keep up with s.t.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "keep up with s.t."
                 },
                 "Examples": [
                   {
@@ -2781,18 +3119,15 @@
                     "Gloss": "I cannot keep up with the school payments."
                   }
                 ]
-              }
+              },
+              "Class": "[A2; a12]"
             },
             {
               "Number": "3",
-              "Classes": [
-                "[A2; a12]"
-              ],
               "DefEx": {
                 "Def": {
-                  "Text": "endure work.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "endure work."
                 },
                 "Examples": [
                   {
@@ -2800,35 +3135,30 @@
                     "Gloss": "I can’t keep up with the plowing because I’m sickly."
                   }
                 ]
-              }
+              },
+              "Class": "[A2; a12]"
             },
             {
               "Number": "4a",
-              "Classes": [
-                "[A]"
-              ],
               "DefEx": {
                 "Def": {
-                  "Text": "ask part payment in advance, especially in salary.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "ask part payment in advance, especially in salary."
                 },
                 "Examples": []
-              }
+              },
+              "Class": "[A]"
             },
             {
               "Number": "4b",
-              "Classes": [
-                "[c]"
-              ],
               "DefEx": {
                 "Def": {
-                  "Text": "give s.o. a cash advance on his salary or other payment.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "give s.o. a cash advance on his salary or other payment."
                 },
                 "Examples": []
-              }
+              },
+              "Class": "[c]"
             }
           ]
         },
@@ -2838,12 +3168,10 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "front wheel(s).",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "front wheel(s)."
                 },
                 "Examples": [
                   {
@@ -2855,24 +3183,20 @@
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "forward gear.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "forward gear."
                 },
                 "Examples": []
               }
             },
             {
               "Number": "3",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "front seat in a car.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "front seat in a car."
                 },
                 "Examples": []
               }
@@ -2884,11 +3208,8 @@
         "Word": "atras —",
         "DefEx": {
           "Def": {
-            "Text": null,
-            "Links": [
-              "atras"
-            ],
-            "Word": null
+            "Type": "LINK",
+            "Content": "atras"
           },
           "Examples": []
         }
@@ -2979,9 +3300,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "factory-made cigar.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "factory-made cigar."
             },
             "Examples": []
           }
@@ -2992,31 +3312,25 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [
-                "[A; a12]"
-              ],
               "DefEx": {
                 "Def": {
-                  "Text": "make into a cigar.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "make into a cigar."
                 },
                 "Examples": []
-              }
+              },
+              "Class": "[A; a12]"
             },
             {
               "Number": "2",
-              "Classes": [
-                "[A123S]"
-              ],
               "DefEx": {
                 "Def": {
-                  "Text": "have, obtain a cigar.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "have, obtain a cigar."
                 },
                 "Examples": []
-              }
+              },
+              "Class": "[A123S]"
             }
           ]
         }
@@ -3031,9 +3345,8 @@
             ],
             "DefEx": {
               "Def": {
-                "Text": "smoke a cigar.",
-                "Links": [],
-                "Word": null
+                "Type": "TEXT",
+                "Content": "smoke a cigar."
               },
               "Examples": []
             }
@@ -3222,24 +3535,20 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "any supernatural being or human with supernatural powers which shows itself in an unexpected and startling way.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "any supernatural being or human with supernatural powers which shows itself in an unexpected and startling way."
                 },
                 "Examples": []
               }
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "one who is ‘it’ in games.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "one who is ‘it’ in games."
                 },
                 "Examples": []
               }
@@ -3252,14 +3561,10 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [
-                "[A2; a2]"
-              ],
               "DefEx": {
                 "Def": {
-                  "Text": "head off s.o.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "head off s.o."
                 },
                 "Examples": [
                   {
@@ -3267,18 +3572,15 @@
                     "Gloss": "You can still catch up with him if you head him off at the corner."
                   }
                 ]
-              }
+              },
+              "Class": "[A2; a2]"
             },
             {
               "Number": "2",
-              "Classes": [
-                "[AN; a12]"
-              ],
               "DefEx": {
                 "Def": {
-                  "Text": "frighten s.o. by appearing suddenly or otherwise startling him.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "frighten s.o. by appearing suddenly or otherwise startling him."
                 },
                 "Examples": [
                   {
@@ -3286,7 +3588,8 @@
                     "Gloss": "When he comes by, give him a scare."
                   }
                 ]
-              }
+              },
+              "Class": "[AN; a12]"
             }
           ]
         }
@@ -3300,9 +3603,8 @@
               "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "haunted, place where things appear suddenly.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "haunted, place where things appear suddenly."
                 },
                 "Examples": []
               }
@@ -3313,9 +3615,8 @@
           "Word": "alabtun",
           "DefEx": {
             "Def": {
-              "Text": "s.o. to whom spirits tend to show themselves.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "s.o. to whom spirits tend to show themselves."
             },
             "Examples": []
           }
@@ -3328,9 +3629,8 @@
               "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "game of tag.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "game of tag."
                 },
                 "Examples": []
               }
@@ -3343,24 +3643,20 @@
               "NumberedDefs": [
                 {
                   "Number": "1",
-                  "Classes": [],
                   "DefEx": {
                     "Def": {
-                      "Text": "play tag.",
-                      "Links": [],
-                      "Word": null
+                      "Type": "TEXT",
+                      "Content": "play tag."
                     },
                     "Examples": []
                   }
                 },
                 {
                   "Number": "2",
-                  "Classes": [],
                   "DefEx": {
                     "Def": {
-                      "Text": "try to meet without succeeding.",
-                      "Links": [],
-                      "Word": null
+                      "Type": "TEXT",
+                      "Content": "try to meet without succeeding."
                     },
                     "Examples": [
                       {
@@ -3438,9 +3734,8 @@
           ],
           "DefEx": {
             "Def": {
-              "Text": "hold on to s.t. fixed to support oneself.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "hold on to s.t. fixed to support oneself."
             },
             "Examples": [
               {
@@ -3459,9 +3754,8 @@
             "Classes": [],
             "DefEx": {
               "Def": {
-                "Text": "a railing in shape of a ladder for baby to cling to when he starts to walk.",
-                "Links": [],
-                "Word": null
+                "Type": "TEXT",
+                "Content": "a railing in shape of a ladder for baby to cling to when he starts to walk."
               },
               "Examples": []
             }
@@ -3590,14 +3884,10 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [
-                "[A; a1]"
-              ],
               "DefEx": {
                 "Def": {
-                  "Text": "feel with the hands, esp. to find s.t. out.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "feel with the hands, esp. to find s.t. out."
                 },
                 "Examples": [
                   {
@@ -3609,18 +3899,15 @@
                     "Gloss": "I’ll touch her forehead to see if she is feverish."
                   }
                 ]
-              }
+              },
+              "Class": "[A; a1]"
             },
             {
               "Number": "2",
-              "Classes": [
-                "[A123S; a12b2]"
-              ],
               "DefEx": {
                 "Def": {
-                  "Text": "feel s.t. with the sense of touch.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "feel s.t. with the sense of touch."
                 },
                 "Examples": [
                   {
@@ -3632,18 +3919,15 @@
                     "Gloss": "If you think about the pain, it will get worse."
                   }
                 ]
-              }
+              },
+              "Class": "[A123S; a12b2]"
             },
             {
               "Number": "3",
-              "Classes": [
-                "[A123S; b2]"
-              ],
               "DefEx": {
                 "Def": {
-                  "Text": "happen to notice, sense s.t.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "happen to notice, sense s.t."
                 },
                 "Examples": [
                   {
@@ -3651,7 +3935,8 @@
                     "Gloss": "I sensed that s.o. had entered our house."
                   }
                 ]
-              }
+              },
+              "Class": "[A123S; b2]"
             }
           ]
         }
@@ -3693,11 +3978,8 @@
       "Word": "abgaw",
       "DefEx": {
         "Def": {
-          "Text": null,
-          "Links": [
-            "adgaw"
-          ],
-          "Word": null
+          "Type": "LINK",
+          "Content": "adgaw"
         },
         "Examples": []
       },
@@ -3709,9 +3991,8 @@
             "Classes": [],
             "DefEx": {
               "Def": {
-                "Text": "k.o. snapper with a yellow streak along the body: <b><i>Lutianus sp</i></b>.",
-                "Links": [],
-                "Word": null
+                "Type": "TEXT",
+                "Content": "k.o. snapper with a yellow streak along the body: <b><i>Lutianus sp</i></b>."
               },
               "Examples": []
             }
@@ -3806,9 +4087,8 @@
           ],
           "DefEx": {
             "Def": {
-              "Text": "diminish s.t. by taking away or destroying part of it.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "diminish s.t. by taking away or destroying part of it."
             },
             "Examples": [
               {
@@ -3823,9 +4103,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "hole left when s.t. is chopped off, out.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "hole left when s.t. is chopped off, out."
             },
             "Examples": [
               {
@@ -3840,9 +4119,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "done in such a way that s.t. is chopped off.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "done in such a way that s.t. is chopped off."
             },
             "Examples": [
               {
@@ -3875,11 +4153,8 @@
       "Word": "abhul",
       "DefEx": {
         "Def": {
-          "Text": null,
-          "Links": [
-            "abhung"
-          ],
-          "Word": null
+          "Type": "LINK",
+          "Content": "abhung"
         },
         "Examples": []
       }
@@ -3944,9 +4219,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "musty and flat in smell: damp clothing, rice, sweet potatoes, salted fish, et al.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "musty and flat in smell: damp clothing, rice, sweet potatoes, salted fish, et al."
             },
             "Examples": []
           }
@@ -3958,9 +4232,8 @@
           ],
           "DefEx": {
             "Def": {
-              "Text": "be, become musty.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "be, become musty."
             },
             "Examples": []
           }
@@ -3974,9 +4247,8 @@
             "Classes": [],
             "DefEx": {
               "Def": {
-                "Text": "of a musty kind.",
-                "Links": [],
-                "Word": null
+                "Type": "TEXT",
+                "Content": "of a musty kind."
               },
               "Examples": []
             }
@@ -4046,9 +4318,8 @@
           ],
           "DefEx": {
             "Def": {
-              "Text": "show hospitality to.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "show hospitality to."
             },
             "Examples": [
               {
@@ -4067,9 +4338,8 @@
             "Classes": [],
             "DefEx": {
               "Def": {
-                "Text": "hospitable.",
-                "Links": [],
-                "Word": null
+                "Type": "TEXT",
+                "Content": "hospitable."
               },
               "Examples": []
             }
@@ -4149,9 +4419,8 @@
           ],
           "DefEx": {
             "Def": {
-              "Text": "cheer one on, encourage to do.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "cheer one on, encourage to do."
             },
             "Examples": [
               {
@@ -4166,9 +4435,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "encouragement, egging on.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "encouragement, egging on."
             },
             "Examples": []
           }
@@ -4182,9 +4450,8 @@
             "Classes": [],
             "DefEx": {
               "Def": {
-                "Text": "giving encouragement, egging on.",
-                "Links": [],
-                "Word": null
+                "Type": "TEXT",
+                "Content": "giving encouragement, egging on."
               },
               "Examples": []
             }
@@ -4213,11 +4480,8 @@
       "Word": "abíhid",
       "DefEx": {
         "Def": {
-          "Text": null,
-          "Links": [
-            "alabíhid"
-          ],
-          "Word": null
+          "Type": "LINK",
+          "Content": "alabíhid"
         },
         "Examples": []
       }
@@ -4243,11 +4507,8 @@
       "Word": "abilay",
       "DefEx": {
         "Def": {
-          "Text": null,
-          "Links": [
-            "sambilay"
-          ],
-          "Word": null
+          "Type": "LINK",
+          "Content": "sambilay"
         },
         "Examples": []
       }
@@ -4322,9 +4583,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "ability, capacity or skill to accomplish s.t.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "ability, capacity or skill to accomplish s.t."
             },
             "Examples": []
           }
@@ -4336,9 +4596,8 @@
           ],
           "DefEx": {
             "Def": {
-              "Text": "obtain a certain ability.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "obtain a certain ability."
             },
             "Examples": []
           }
@@ -4352,9 +4611,8 @@
             "Classes": [],
             "DefEx": {
               "Def": {
-                "Text": "skilled, able.",
-                "Links": [],
-                "Word": null
+                "Type": "TEXT",
+                "Content": "skilled, able."
               },
               "Examples": [
                 {
@@ -4442,9 +4700,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "tan-colored shoes.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "tan-colored shoes."
             },
             "Examples": []
           }
@@ -4454,9 +4711,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "tan polish.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "tan polish."
             },
             "Examples": []
           }
@@ -4468,9 +4724,8 @@
           ],
           "DefEx": {
             "Def": {
-              "Text": "polish shoes with a light tan polish, color them tan.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "polish shoes with a light tan polish, color them tan."
             },
             "Examples": [
               {
@@ -4604,12 +4859,10 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "engage in an enterprise or game together.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "engage in an enterprise or game together."
                 },
                 "Examples": [
                   {
@@ -4621,12 +4874,10 @@
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "ally on oneself with.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "ally on oneself with."
                 },
                 "Examples": [
                   {
@@ -4647,9 +4898,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "partner in business or game.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "partner in business or game."
             },
             "Examples": [
               {
@@ -4668,11 +4918,8 @@
             "Classes": [],
             "DefEx": {
               "Def": {
-                "Text": null,
-                "Links": [
-                  "ábin"
-                ],
-                "Word": null
+                "Type": "LINK",
+                "Content": "ábin"
               },
               "Examples": []
             }
@@ -4776,24 +5023,20 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "adventures.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "adventures."
                 },
                 "Examples": []
               }
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "adventure film, story.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "adventure film, story."
                 },
                 "Examples": [
                   {
@@ -4813,12 +5056,10 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "try going s.w. for the adventure of it.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "try going s.w. for the adventure of it."
                 },
                 "Examples": [
                   {
@@ -4830,14 +5071,10 @@
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": null,
-                  "Links": [
-                    "abinturar"
-                  ],
-                  "Word": null
+                  "Type": "LINK",
+                  "Content": "abinturar"
                 },
                 "Examples": []
               }
@@ -4938,9 +5175,8 @@
           ],
           "DefEx": {
             "Def": {
-              "Text": "try one’s luck.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "try one’s luck."
             },
             "Examples": [
               {
@@ -4960,11 +5196,8 @@
           "Word": "abinturíru, -a",
           "DefEx": {
             "Def": {
-              "Text": null,
-              "Links": [
-                "abinturista"
-              ],
-              "Word": null
+              "Type": "LINK",
+              "Content": "abinturista"
             },
             "Examples": []
           }
@@ -4977,9 +5210,8 @@
               "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "adventurous, tending to try things out without knowing the outcome.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "adventurous, tending to try things out without knowing the outcome."
                 },
                 "Examples": [
                   {
@@ -5140,12 +5372,10 @@
       "NumberedDefs": [
         {
           "Number": "1",
-          "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "particle used in calling attention to a point in contention.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "particle used in calling attention to a point in contention."
             },
             "Examples": [
               {
@@ -5157,12 +5387,10 @@
         },
         {
           "Number": "1a",
-          "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "particle used in inciting a person to do s.t.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "particle used in inciting a person to do s.t."
             },
             "Examples": [
               {
@@ -5178,12 +5406,10 @@
         },
         {
           "Number": "2",
-          "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "pause word expressing hesitation when one doesn’t know how to do s.t.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "pause word expressing hesitation when one doesn’t know how to do s.t."
             },
             "Examples": [
               {
@@ -5195,14 +5421,10 @@
         },
         {
           "Number": "3",
-          "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": null,
-              "Links": [
-                "ambi"
-              ],
-              "Word": null
+              "Type": "LINK",
+              "Content": "ambi"
             },
             "Examples": []
           }
@@ -5218,9 +5440,8 @@
             ],
             "DefEx": {
               "Def": {
-                "Text": "try one’s luck, take a stab at.",
-                "Links": [],
-                "Word": null
+                "Type": "TEXT",
+                "Content": "try one’s luck, take a stab at."
               },
               "Examples": [
                 {
@@ -5337,24 +5558,20 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "average, the usual size or quantity.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "average, the usual size or quantity."
                 },
                 "Examples": []
               }
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "average rating in school.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "average rating in school."
                 },
                 "Examples": [
                   {
@@ -5374,12 +5591,10 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "average so and so much.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "average so and so much."
                 },
                 "Examples": [
                   {
@@ -5391,12 +5606,10 @@
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "have an average grade of.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "have an average grade of."
                 },
                 "Examples": []
               }
@@ -5485,9 +5698,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "be broken, inoperative.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "be broken, inoperative."
             },
             "Examples": []
           }
@@ -5500,12 +5712,10 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "for an engine to break down.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "for an engine to break down."
                 },
                 "Examples": [
                   {
@@ -5517,12 +5727,10 @@
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "be under the weather.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "be under the weather."
                 },
                 "Examples": [
                   {
@@ -5557,11 +5765,8 @@
       "Word": "abirtu",
       "DefEx": {
         "Def": {
-          "Text": null,
-          "Links": [
-            "abyirtu"
-          ],
-          "Word": null
+          "Type": "LINK",
+          "Content": "abyirtu"
         },
         "Examples": []
       }
@@ -5643,9 +5848,8 @@
           ],
           "DefEx": {
             "Def": {
-              "Text": "slice with a curved blade, cut a small or thin part from a bigger piece.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "slice with a curved blade, cut a small or thin part from a bigger piece."
             },
             "Examples": [
               {
@@ -5666,9 +5870,8 @@
             ],
             "DefEx": {
               "Def": {
-                "Text": "slice the terminal portion of a coconut bud to induce sap flow.",
-                "Links": [],
-                "Word": null
+                "Type": "TEXT",
+                "Content": "slice the terminal portion of a coconut bud to induce sap flow."
               },
               "Examples": [
                 {
@@ -5766,9 +5969,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "announcement of s.t. to come.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "announcement of s.t. to come."
             },
             "Examples": []
           }
@@ -5779,14 +5981,10 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [
-                "[A; c]"
-              ],
               "DefEx": {
                 "Def": {
-                  "Text": "announce s.t. to come.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "announce s.t. to come."
                 },
                 "Examples": [
                   {
@@ -5794,18 +5992,15 @@
                     "Gloss": "The radio announced that there is a typhoon coming."
                   }
                 ]
-              }
+              },
+              "Class": "[A; c]"
             },
             {
               "Number": "2",
-              "Classes": [
-                "[A12]"
-              ],
               "DefEx": {
                 "Def": {
-                  "Text": "receive an announcement.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "receive an announcement."
                 },
                 "Examples": [
                   {
@@ -5813,7 +6008,8 @@
                     "Gloss": "We received the announcement that there would be no water tomorrow."
                   }
                 ]
-              }
+              },
+              "Class": "[A12]"
             }
           ]
         }
@@ -5840,11 +6036,8 @@
       "Word": "abitsuylas",
       "DefEx": {
         "Def": {
-          "Text": null,
-          "Links": [
-            "habitsuylas"
-          ],
-          "Word": null
+          "Type": "LINK",
+          "Content": "habitsuylas"
         },
         "Examples": []
       }
@@ -5894,9 +6087,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "habit, a distinctive apparel worn by devotees, priests, monks, and the like.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "habit, a distinctive apparel worn by devotees, priests, monks, and the like."
             },
             "Examples": []
           }
@@ -5908,9 +6100,8 @@
           ],
           "DefEx": {
             "Def": {
-              "Text": "wear a habit.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "wear a habit."
             },
             "Examples": []
           }
@@ -5982,9 +6173,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "food, provisions, money, supplies for daily consumption.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "food, provisions, money, supplies for daily consumption."
             },
             "Examples": []
           }
@@ -5996,9 +6186,8 @@
           ],
           "DefEx": {
             "Def": {
-              "Text": "provide food, etc.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "provide food, etc."
             },
             "Examples": [
               {
@@ -6059,9 +6248,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "airplane.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "airplane."
             },
             "Examples": []
           }
@@ -6075,9 +6263,8 @@
             "Classes": [],
             "DefEx": {
               "Def": {
-                "Text": "group of airplanes.",
-                "Links": [],
-                "Word": null
+                "Type": "TEXT",
+                "Content": "group of airplanes."
               },
               "Examples": []
             }
@@ -6132,9 +6319,8 @@
           ],
           "DefEx": {
             "Def": {
-              "Text": "dig up, out.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "dig up, out."
             },
             "Examples": [
               {
@@ -6263,9 +6449,8 @@
           ],
           "DefEx": {
             "Def": {
-              "Text": "speak to s.o. with some purpose in mind.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "speak to s.o. with some purpose in mind."
             },
             "Examples": [
               {
@@ -6281,12 +6466,10 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "persuasive talk.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "persuasive talk."
                 },
                 "Examples": [
                   {
@@ -6298,12 +6481,10 @@
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "big talk.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "big talk."
                 },
                 "Examples": [
                   {
@@ -6324,9 +6505,8 @@
             "Classes": [],
             "DefEx": {
               "Def": {
-                "Text": "art or technique of expressing one’s viewpoint.",
-                "Links": [],
-                "Word": null
+                "Type": "TEXT",
+                "Content": "art or technique of expressing one’s viewpoint."
               },
               "Examples": [
                 {
@@ -6410,12 +6590,10 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "delivered in spoken fashion.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "delivered in spoken fashion."
                 },
                 "Examples": [
                   {
@@ -6427,12 +6605,10 @@
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "lines of a play.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "lines of a play."
                 },
                 "Examples": []
               }
@@ -6446,9 +6622,8 @@
           ],
           "DefEx": {
             "Def": {
-              "Text": "speak lines.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "speak lines."
             },
             "Examples": []
           }
@@ -6476,11 +6651,8 @@
       "Word": "ablása",
       "DefEx": {
         "Def": {
-          "Text": null,
-          "Links": [
-            "abrása"
-          ],
-          "Word": null
+          "Type": "LINK",
+          "Content": "abrása"
         },
         "Examples": []
       }
@@ -6678,12 +6850,10 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "open s.t., be open.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "open s.t., be open."
                 },
                 "Examples": [
                   {
@@ -6699,12 +6869,10 @@
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "begin, start a class, business, etc.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "begin, start a class, business, etc."
                 },
                 "Examples": [
                   {
@@ -6720,12 +6888,10 @@
             },
             {
               "Number": "3",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "found, establish an enterprise.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "found, establish an enterprise."
                 },
                 "Examples": [
                   {
@@ -6743,12 +6909,10 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "opening.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "opening."
                 },
                 "Examples": [
                   {
@@ -6760,12 +6924,10 @@
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "opening of classes.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "opening of classes."
                 },
                 "Examples": []
               }
@@ -6778,12 +6940,10 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "open.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "open."
                 },
                 "Examples": [
                   {
@@ -6795,12 +6955,10 @@
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "be started.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "be started."
                 },
                 "Examples": [
                   {
@@ -6845,9 +7003,8 @@
       "Word": "Abr.",
       "DefEx": {
         "Def": {
-          "Text": "abbreviation for",
-          "Links": [],
-          "Word": null
+          "Type": "TEXT",
+          "Content": "abbreviation for"
         },
         "Examples": [
           {
@@ -6953,12 +7110,10 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "sudden.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "sudden."
                 },
                 "Examples": [
                   {
@@ -6970,12 +7125,10 @@
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "brusque.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "brusque."
                 },
                 "Examples": []
               }
@@ -6990,24 +7143,20 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "be sudden, do s.t. by plunging right into it.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "be sudden, do s.t. by plunging right into it."
                 },
                 "Examples": []
               }
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "be brusque.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "be brusque."
                 },
                 "Examples": [
                   {
@@ -7078,9 +7227,8 @@
           ],
           "DefEx": {
             "Def": {
-              "Text": "walk side by side with.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "walk side by side with."
             },
             "Examples": [
               {
@@ -7143,9 +7291,8 @@
           ],
           "DefEx": {
             "Def": {
-              "Text": "promenade arm in arm or side by side.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "promenade arm in arm or side by side."
             },
             "Examples": [
               {
@@ -7178,11 +7325,8 @@
       "Word": "abrasyíti",
       "DefEx": {
         "Def": {
-          "Text": null,
-          "Links": [
-            "abrasíti"
-          ],
-          "Word": null
+          "Type": "LINK",
+          "Content": "abrasíti"
         },
         "Examples": []
       }
@@ -7223,11 +7367,8 @@
       "Word": "abri<sub>1</sub>",
       "DefEx": {
         "Def": {
-          "Text": null,
-          "Links": [
-            "abli"
-          ],
-          "Word": null
+          "Type": "LINK",
+          "Content": "abli"
         },
         "Examples": []
       },
@@ -7239,9 +7380,8 @@
             "Classes": [],
             "DefEx": {
               "Def": {
-                "Text": "opener.†",
-                "Links": [],
-                "Word": null
+                "Type": "TEXT",
+                "Content": "opener.†"
               },
               "Examples": []
             }
@@ -7270,11 +7410,8 @@
       "Word": "abri<sub>2</sub>",
       "DefEx": {
         "Def": {
-          "Text": null,
-          "Links": [
-            "abyirtu2"
-          ],
-          "Word": null
+          "Type": "LINK",
+          "Content": "abyirtu2"
         },
         "Examples": []
       }
@@ -7319,9 +7456,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "s.t. that stimulates the appetite.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "s.t. that stimulates the appetite."
             },
             "Examples": [
               {
@@ -7409,24 +7545,20 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "apprentice on a ship.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "apprentice on a ship."
                 },
                 "Examples": []
               }
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "one who works on a boat for his passage.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "one who works on a boat for his passage."
                 },
                 "Examples": []
               }
@@ -7441,24 +7573,20 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "be an apprentice, apprentice s.o. to.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "be an apprentice, apprentice s.o. to."
                 },
                 "Examples": []
               }
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "work in lieu of paying passage.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "work in lieu of paying passage."
                 },
                 "Examples": []
               }
@@ -7512,9 +7640,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "shawl.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "shawl."
             },
             "Examples": []
           }
@@ -7526,9 +7653,8 @@
           ],
           "DefEx": {
             "Def": {
-              "Text": "wear, make, receive a shawl.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "wear, make, receive a shawl."
             },
             "Examples": []
           }
@@ -7615,9 +7741,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "April.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "April."
             },
             "Examples": []
           }
@@ -7630,12 +7755,10 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "do s.t. in April.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "do s.t. in April."
                 },
                 "Examples": [
                   {
@@ -7647,12 +7770,10 @@
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "write down April in a document.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "write down April in a document."
                 },
                 "Examples": [
                   {
@@ -7696,9 +7817,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "can opener.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "can opener."
             },
             "Examples": []
           }
@@ -7838,12 +7958,10 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "absent, fail to attend work or class.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "absent, fail to attend work or class."
                 },
                 "Examples": [
                   {
@@ -7855,12 +7973,10 @@
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "mark one absent.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "mark one absent."
                 },
                 "Examples": [
                   {
@@ -7877,9 +7993,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "absence, time away from class.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "absence, time away from class."
             },
             "Examples": [
               {
@@ -7899,9 +8014,8 @@
               "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "given to missing classes.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "given to missing classes."
                 },
                 "Examples": [
                   {
@@ -7921,9 +8035,8 @@
               "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "absent-minded.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "absent-minded."
                 },
                 "Examples": []
               }
@@ -7953,11 +8066,8 @@
       "Word": "absinus",
       "DefEx": {
         "Def": {
-          "Text": null,
-          "Links": [
-            "absin"
-          ],
-          "Word": null
+          "Type": "LINK",
+          "Content": "absin"
         },
         "Examples": []
       }
@@ -8017,9 +8127,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "absolution.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "absolution."
             },
             "Examples": []
           }
@@ -8031,9 +8140,8 @@
           ],
           "DefEx": {
             "Def": {
-              "Text": "give absolution.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "give absolution."
             },
             "Examples": [
               {
@@ -8090,9 +8198,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "acquitted in court.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "acquitted in court."
             },
             "Examples": []
           }
@@ -8104,9 +8211,8 @@
           ],
           "DefEx": {
             "Def": {
-              "Text": "acquit.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "acquit."
             },
             "Examples": []
           }
@@ -8319,12 +8425,10 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "nimble, quick in reaction.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "nimble, quick in reaction."
                 },
                 "Examples": [
                   {
@@ -8340,12 +8444,10 @@
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "fast, live in action.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "fast, live in action."
                 },
                 "Examples": [
                   {
@@ -8357,12 +8459,10 @@
             },
             {
               "Number": "3",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "cunning, sly.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "cunning, sly."
                 },
                 "Examples": [
                   {
@@ -8382,24 +8482,20 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "get to be nimble.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "get to be nimble."
                 },
                 "Examples": []
               }
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "get to be fast in action.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "get to be fast in action."
                 },
                 "Examples": [
                   {
@@ -8411,28 +8507,21 @@
             },
             {
               "Number": "3",
-              "Classes": [
-                "[B12]"
-              ],
               "DefEx": {
                 "Def": {
-                  "Text": "get to be cunning, sly.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "get to be cunning, sly."
                 },
                 "Examples": []
-              }
+              },
+              "Class": "[B12]"
             },
             {
               "Number": "4",
-              "Classes": [
-                "[b4(1)]"
-              ],
               "DefEx": {
                 "Def": {
-                  "Text": "outsmart.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "outsmart."
                 },
                 "Examples": [
                   {
@@ -8440,7 +8529,8 @@
                     "Gloss": "The child put one over on me."
                   }
                 ]
-              }
+              },
+              "Class": "[b4(1)]"
             }
           ]
         }
@@ -8455,9 +8545,8 @@
             ],
             "DefEx": {
               "Def": {
-                "Text": "engage in chicanery.",
-                "Links": [],
-                "Word": null
+                "Type": "TEXT",
+                "Content": "engage in chicanery."
               },
               "Examples": [
                 {
@@ -8500,9 +8589,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "rope used for tying the plow to the crosstree.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "rope used for tying the plow to the crosstree."
             },
             "Examples": []
           }
@@ -8680,26 +8768,20 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "ashes.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "ashes."
                 },
                 "Examples": []
               }
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": null,
-                  "Links": [
-                    "alabúhan"
-                  ],
-                  "Word": null
+                  "Type": "LINK",
+                  "Content": "alabúhan"
                 },
                 "Examples": []
               }
@@ -8712,14 +8794,10 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [
-                "[A; a12]"
-              ],
               "DefEx": {
                 "Def": {
-                  "Text": "make ashes.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "make ashes."
                 },
                 "Examples": [
                   {
@@ -8727,18 +8805,15 @@
                     "Gloss": "Make the palm stems into ashes to make soap out of."
                   }
                 ]
-              }
+              },
+              "Class": "[A; a12]"
             },
             {
               "Number": "2",
-              "Classes": [
-                "[B1256]"
-              ],
               "DefEx": {
                 "Def": {
-                  "Text": "be razed or burned to the ground.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "be razed or burned to the ground."
                 },
                 "Examples": [
                   {
@@ -8746,7 +8821,8 @@
                     "Gloss": "When I arrived, the house was already burned to the ground."
                   }
                 ]
-              }
+              },
+              "Class": "[B1256]"
             }
           ]
         }
@@ -8762,9 +8838,8 @@
               ],
               "DefEx": {
                 "Def": {
-                  "Text": "get ashes all over one.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "get ashes all over one."
                 },
                 "Examples": [
                   {
@@ -8784,9 +8859,8 @@
               "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "stove or any place a fire for cooking is built.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "stove or any place a fire for cooking is built."
                 },
                 "Examples": []
               }
@@ -8801,9 +8875,8 @@
               "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "ash-colored.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "ash-colored."
                 },
                 "Examples": [
                   {
@@ -8847,9 +8920,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "k.o. fish.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "k.o. fish."
             },
             "Examples": []
           }
@@ -8858,334 +8930,6 @@
     },
     "ParseOk": true,
     "ParseNextIndex": 3,
-    "ParseDiagnostics": []
-  },
-  {
-    "Tokens": [
-      {
-        "Type": "CEBWORD",
-        "Content": "abud, ábud<sub>1</sub>",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "WORDTYPE",
-        "Content": "v",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "CLASS",
-        "Content": "[A; c]",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "1",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "throw grains, throw grains to.",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "Ang bukbukung mais mauy iábud sa manuk,",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "Throw the beetle-infested corn to the chickens.",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "2",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "drop grains into a hole in planting.",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "Mag-abud sila sa ílang baul,",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "They will plant their field.",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "3",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "feed grain into a mill.",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "ímu síging abdan (abúran) ang galingan,",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "Keep feeding grains into the mill.",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "4",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "supply a factory with raw materials.",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "Kanang kumpaniyáha mauy tig-abud sa mga papil sa imprinta,",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "That company supplies paper to the printing press.",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "5",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "feed news, gossip. Aha!",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "Ikaw diay nag-abud sa mga nutisya,",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "So you were the one who spread the news!",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "WORDTYPE",
-        "Content": "n",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "1",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "feed for fowls.",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "NUMBER",
-        "Content": "2",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "one’s turn to throw grains.",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "ákù na rung abud,",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "It’s my turn to feed (the chickens).",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "CEBWORD",
-        "Content": "alabdan",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "LINK",
-        "Content": "abud",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "n",
-        "Word": "abud, ábud<sub>1</sub>"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "2.",
-        "Word": "abud, ábud<sub>1</sub>"
-      }
-    ],
-    "WordDef": {
-      "Word": "abud, ábud<sub>1</sub>",
-      "WordTypeDefs": [
-        {
-          "WordType": "v",
-          "Classes": [
-            "[A; c]"
-          ],
-          "NumberedDefs": [
-            {
-              "Number": "1",
-              "Classes": [],
-              "DefEx": {
-                "Def": {
-                  "Text": "throw grains, throw grains to.",
-                  "Links": [],
-                  "Word": null
-                },
-                "Examples": [
-                  {
-                    "Phrase": "Ang bukbukung mais mauy iábud sa manuk,",
-                    "Gloss": "Throw the beetle-infested corn to the chickens."
-                  }
-                ]
-              }
-            },
-            {
-              "Number": "2",
-              "Classes": [],
-              "DefEx": {
-                "Def": {
-                  "Text": "drop grains into a hole in planting.",
-                  "Links": [],
-                  "Word": null
-                },
-                "Examples": [
-                  {
-                    "Phrase": "Mag-abud sila sa ílang baul,",
-                    "Gloss": "They will plant their field."
-                  }
-                ]
-              }
-            },
-            {
-              "Number": "3",
-              "Classes": [],
-              "DefEx": {
-                "Def": {
-                  "Text": "feed grain into a mill.",
-                  "Links": [],
-                  "Word": null
-                },
-                "Examples": [
-                  {
-                    "Phrase": "ímu síging abdan (abúran) ang galingan,",
-                    "Gloss": "Keep feeding grains into the mill."
-                  }
-                ]
-              }
-            },
-            {
-              "Number": "4",
-              "Classes": [],
-              "DefEx": {
-                "Def": {
-                  "Text": "supply a factory with raw materials.",
-                  "Links": [],
-                  "Word": null
-                },
-                "Examples": [
-                  {
-                    "Phrase": "Kanang kumpaniyáha mauy tig-abud sa mga papil sa imprinta,",
-                    "Gloss": "That company supplies paper to the printing press."
-                  }
-                ]
-              }
-            },
-            {
-              "Number": "5",
-              "Classes": [],
-              "DefEx": {
-                "Def": {
-                  "Text": "feed news, gossip. Aha!",
-                  "Links": [],
-                  "Word": null
-                },
-                "Examples": [
-                  {
-                    "Phrase": "Ikaw diay nag-abud sa mga nutisya,",
-                    "Gloss": "So you were the one who spread the news!"
-                  }
-                ]
-              }
-            }
-          ]
-        },
-        {
-          "WordType": "n",
-          "Classes": [],
-          "NumberedDefs": [
-            {
-              "Number": "1",
-              "Classes": [],
-              "DefEx": {
-                "Def": {
-                  "Text": "feed for fowls.",
-                  "Links": [],
-                  "Word": null
-                },
-                "Examples": []
-              }
-            },
-            {
-              "Number": "2",
-              "Classes": [],
-              "DefEx": {
-                "Def": {
-                  "Text": "one’s turn to throw grains.",
-                  "Links": [],
-                  "Word": null
-                },
-                "Examples": [
-                  {
-                    "Phrase": "ákù na rung abud,",
-                    "Gloss": "It’s my turn to feed (the chickens)."
-                  }
-                ]
-              }
-            }
-          ]
-        }
-      ],
-      "Conjugations": {
-        "Word": "alabdan",
-        "DefEx": {
-          "Def": {
-            "Text": null,
-            "Links": [
-              "abud"
-            ],
-            "Word": null
-          },
-          "Examples": [
-            {
-              "Phrase": "n",
-              "Gloss": "2."
-            }
-          ]
-        }
-      }
-    },
-    "ParseOk": true,
-    "ParseNextIndex": 34,
     "ParseDiagnostics": []
   },
   {
@@ -9214,9 +8958,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "ornamental bulbous plant: <b lang=\"la\"><i>Eurycles amboinensis</i></b>. The leaves are applied over the bladder to facilitate urination.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "ornamental bulbous plant: <b lang=\"la\"><i>Eurycles amboinensis</i></b>. The leaves are applied over the bladder to facilitate urination."
             },
             "Examples": []
           }
@@ -9393,9 +9136,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "dust.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "dust."
             },
             "Examples": []
           }
@@ -9406,14 +9148,10 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [
-                "[B46; a4b4(1)]"
-              ],
               "DefEx": {
                 "Def": {
-                  "Text": "become dusty.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "become dusty."
                 },
                 "Examples": [
                   {
@@ -9429,18 +9167,15 @@
                     "Gloss": "Cover the books so they won’t get dusty."
                   }
                 ]
-              }
+              },
+              "Class": "[B46; a4b4(1)]"
             },
             {
               "Number": "2",
-              "Classes": [
-                "[B1256]"
-              ],
               "DefEx": {
                 "Def": {
-                  "Text": "turn into dust.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "turn into dust."
                 },
                 "Examples": [
                   {
@@ -9448,7 +9183,8 @@
                     "Gloss": "In the end we will all turn to dust."
                   }
                 ]
-              }
+              },
+              "Class": "[B1256]"
             }
           ]
         }
@@ -9464,9 +9200,8 @@
               ],
               "DefEx": {
                 "Def": {
-                  "Text": "get dust all over it.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "get dust all over it."
                 },
                 "Examples": [
                   {
@@ -9486,9 +9221,8 @@
               "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "dusty.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "dusty."
                 },
                 "Examples": []
               }
@@ -9499,9 +9233,8 @@
           "Word": "-l-an(←)",
           "DefEx": {
             "Def": {
-              "Text": "exposed to dust.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "exposed to dust."
             },
             "Examples": [
               {
@@ -9626,12 +9359,10 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "chase, drive, drive away.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "chase, drive, drive away."
                 },
                 "Examples": [
                   {
@@ -9647,12 +9378,10 @@
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "drive s.o. to do s.t.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "drive s.o. to do s.t."
                 },
                 "Examples": [
                   {
@@ -9674,9 +9403,8 @@
               "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "stick with strips of paper, plastic, etc., attached on one end, used to chase flies away.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "stick with strips of paper, plastic, etc., attached on one end, used to chase flies away."
                 },
                 "Examples": []
               }
@@ -9691,9 +9419,8 @@
               "Classes": [],
               "DefEx": {
                 "Def": {
-                  "Text": "an enclosure of the fish corral into which the fish are driven before being caught.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "an enclosure of the fish corral into which the fish are driven before being caught."
                 },
                 "Examples": []
               }
@@ -9723,11 +9450,8 @@
       "Word": "ábug<sub>2</sub>",
       "DefEx": {
         "Def": {
-          "Text": null,
-          "Links": [
-            "abyug"
-          ],
-          "Word": null
+          "Type": "LINK",
+          "Content": "abyug"
         },
         "Examples": []
       }
@@ -9762,9 +9486,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "female lawyer.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "female lawyer."
             },
             "Examples": []
           }
@@ -9871,9 +9594,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "lawyer.",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "lawyer."
             },
             "Examples": []
           }
@@ -9884,28 +9606,21 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [
-                "[B16; a2]"
-              ],
               "DefEx": {
                 "Def": {
-                  "Text": "be, become a lawyer.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "be, become a lawyer."
                 },
                 "Examples": []
-              }
+              },
+              "Class": "[B16; a2]"
             },
             {
               "Number": "2",
-              "Classes": [
-                "[A; b]"
-              ],
               "DefEx": {
                 "Def": {
-                  "Text": "speak for s.o.",
-                  "Links": [],
-                  "Word": null
+                  "Type": "TEXT",
+                  "Content": "speak for s.o."
                 },
                 "Examples": [
                   {
@@ -9913,7 +9628,8 @@
                     "Gloss": "I’ll speak for you because you don’t have the knack of saying what you want."
                   }
                 ]
-              }
+              },
+              "Class": "[A; b]"
             }
           ]
         }
@@ -9926,9 +9642,8 @@
             "Classes": [],
             "DefEx": {
               "Def": {
-                "Text": "lawyer-like.",
-                "Links": [],
-                "Word": null
+                "Type": "TEXT",
+                "Content": "lawyer-like."
               },
               "Examples": [
                 {
@@ -9991,9 +9706,8 @@
           "Classes": [],
           "DefEx": {
             "Def": {
-              "Text": "dumb lawyer (play on the words",
-              "Links": [],
-              "Word": null
+              "Type": "TEXT",
+              "Content": "dumb lawyer (play on the words"
             },
             "Examples": [
               {
