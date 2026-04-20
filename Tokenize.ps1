@@ -394,15 +394,8 @@ $paragraphs | ForEach-Object {
         $Word = $cebWords[0].Content
     }
 
-    $_.tokens | Add-Member -NotePropertyName "Word" -NotePropertyValue $Word -Force
-    $_.tokens
-
-    # $firstCebWord = ($cebWords | Select-Object -First 1).Content
-
-    # # # add the word as column
-    # # foreach ($token in $_.tokens) {
-    # # }
-
-    # # emit the tokens
-    # $_.tokens
+    [PSCustomObject]@{
+        Word = $Word
+        Tokens = $_.tokens
+    }
 }
