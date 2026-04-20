@@ -13,7 +13,8 @@ $parsed = $tokens | Group-Object Word | ForEach-Object { .\Parse-WordDef.ps1 -To
 
 $total_num = $parsed.Count
 $num_success = ($parsed | Where-Object ParseOk -eq $true).Count
-Write-Output "parsed $($num_success) / $($total_num)"
+$perc = [math]::Round(100 * ($num_success / $total_num),1)
+Write-Output "parsed $num_success / $total_num ($perc)%"
 
 $parsed |
     Where-Object ParseOk -eq $true |
