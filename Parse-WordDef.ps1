@@ -548,9 +548,9 @@ $res = Parse-Row -Tokens $Tokens
 # # Finally, write the whole set to JSON
 # $faileds |
 #     ConvertTo-Json -Depth 100 |
-#     Set-Content -Encoding UTF8 -Path "failed-parse.json"
+#     Set-Content -Encoding UTF8 -Path "out\failed-parse.json"
 
 # # $successfuls.WordDef |
 # $successfuls |
 #     ConvertTo-Json -Depth 100 |
-#     Set-Content -Encoding UTF8 -Path "successful-parse.json"
+#     Set-Content -Encoding UTF8 -Path "out\successful-parse.json"
