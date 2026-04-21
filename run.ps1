@@ -2,7 +2,7 @@ param (
     [int]$Limit = 100
 )
 
-$xml = .\HTML-to-XML.ps1
+$xml = .\HTML-to-XML.ps1 -Path ".\cebuano-dictionary-fixed.html"
 
 if (Test-Path ".\out\tokenlist.ndjson") {
     Remove-Item ".\out\tokenlist.ndjson"
@@ -17,7 +17,7 @@ if (Test-Path "out\failed-parse.ndjson") {
 }
 
 # tokenize to file
-$xml | .\Tokenize.ps1 -Limit $Limit | ForEach-Object {
+$parsed = $xml | .\Tokenize.ps1 -Limit $Limit | ForEach-Object {
     # export tokens to file
     $_ | ConvertTo-Json -Depth 12 -Compress | Add-Content -Encoding UTF8 -Path "out\tokenlist.ndjson"
     $_
@@ -29,10 +29,10 @@ $xml | .\Tokenize.ps1 -Limit $Limit | ForEach-Object {
     } else {
         $_ | ConvertTo-Json -Depth 12 -Compress | Add-Content -Encoding UTF8 -Path "out\failed-parse.ndjson"
     }
+    $_
 }
 
-# $total_num = $parsed.Count
-# $num_success = ($parsed | Where-Object ParseOk -eq $true).Count
-# $perc = [math]::Round(100 * ($num_success / $total_num),1)
-# Write-Output "parsed $num_success / $total_num ($perc)%"
-
+$total_num = $parsed.Count
+$num_success = ($parsed | Where-Object ParseOk -eq $true).Count
+$perc = [math]::Round(100 * ($num_success / $total_num),1)
+Write-Output "parsed $num_success / $total_num ($perc)%"

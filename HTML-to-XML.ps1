@@ -1,8 +1,14 @@
+<#
+.SYNOPSIS
+    Converts the HTML doc to xml
+.PARAMETER Path
+    The path to the html file
+#>
 param (
-    [string]$inpath = ".\cebuano-dictionary.html"
+    [string]$Path = ".\cebuano-dictionary-fixed.html"
 )
 
-$html = Get-Content $inpath
+$html = Get-Content $path
 
 [xml]$xml = $html
 if (-not $xml) {

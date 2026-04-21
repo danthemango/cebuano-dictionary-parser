@@ -1,4 +1,4 @@
-# cebuano-dictionary-parser
+# cebuano-dictionary-fixed-parser
 convert cebuano dictionary to csv
 
 Powershell 7+ recommended.
@@ -7,7 +7,7 @@ Original content source: https://www.gutenberg.org/files/40074/40074-h/40074-h.h
 
 - In powershell, download the file:
 ```ps1
-Invoke-WebRequest -Uri "https://www.gutenberg.org/files/40074/40074-h/40074-h.htm" -OutFile "cebuano-dictionary.html"
+Invoke-WebRequest -Uri "https://www.gutenberg.org/files/40074/40074-h/40074-h.htm" -OutFile "cebuano-dictionary-fixed.html"
 ```
 
 - Skip digital signing requirement:
@@ -17,10 +17,10 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 - Run html fixer:
 ```ps1
-.\fix-html.ps1 -inpath ".\cebuano-dictionary.html"
+.\fix-html.ps1 -Inpath .\cebuano-dictionary.html -Outpath .\cebuano-dictionary-fixed.html
 ```
 
-- `.\run.ps1`
+- `.\run.ps1 -Limit 100`
 
 # Progress
 - First 100 words: ![91% Success](https://img.shields.io/badge/success-91%25-green "91% success")
@@ -32,4 +32,4 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 - [ ] abrasadur - failed because of link numbering
 - [ ] ábi: failed class tokenizing
 - [ ] it fails to parse when there is a cebuano word in the middle of a translation (see abay)
- [ ] can't parse the phrase "short form", I likely need another entry in definitions
+- [ ] can't parse the phrase "short form", I likely need another entry in definitions

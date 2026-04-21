@@ -384,7 +384,6 @@ if ($Limit) {
     $paragraphs = $paragraphs | Select-Object -First $Limit
 }
 
-# basic tokenization saved to file for review
 $paragraphs | ForEach-Object {
     $_.tokens = $_.tokens | Tokenize
     $cebWords = $_.tokens | Where-Object Type -eq "CEBWORD"
