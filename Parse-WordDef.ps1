@@ -19,7 +19,7 @@ function IsType {
 }
 
 # parse a definiton
-function Parse-Def {
+function Set-Def {
     <#
       DEF ::= (TEXT | LINK)+
       Returns {Success, NextIndex, Def:{Text, Links[], Word}, Diagnostics}
@@ -87,7 +87,7 @@ function Parse-Def {
     }
 }
 
-function Parse-Example {
+function Set-Example {
     <#
       EX ::= CEBPHRASE TEXT
       Returns {Success, NextIndex, Example:{Phrase, Gloss}, Diagnostics}
@@ -125,7 +125,7 @@ function Parse-Example {
     }
 }
 
-function Parse-Examples {
+function Set-Examples {
     <#
       Parse zero or more EX pairs.
       Returns {Examples[], NextIndex}
@@ -134,7 +134,7 @@ function Parse-Examples {
     $i = $StartIndex
     $examples = @()
     while ($true) {
-        $ex = Parse-Example -Tokens $Tokens -StartIndex $i
+        $ex = Set-Example -Tokens $Tokens -StartIndex $i
         if (-not $ex.Success) { break }
         $examples += $ex.Example
         $i = $ex.NextIndex
@@ -142,14 +142,14 @@ function Parse-Examples {
     [pscustomobject]@{ Examples=$examples; NextIndex=$i }
 }
 
-function Parse-DefEx {
+function Set-DefEx {
     <#
       DEFEX ::= DEF EX*
     #>
     param([object[]]$Tokens, [int]$StartIndex)
     $i = $StartIndex; $diag = @()
 
-    $def = Parse-Def -Tokens $Tokens -StartIndex $i
+    $def = Set-Def -Tokens $Tokens -StartIndex $i
     if (-not $def.Success) {
         return [pscustomobject]@{
             Success     = $false
@@ -160,7 +160,7 @@ function Parse-DefEx {
     }
     $i = $def.NextIndex
 
-    $exs = Parse-Examples -Tokens $Tokens -StartIndex $i
+    $exs = Set-Examples -Tokens $Tokens -StartIndex $i
     $i = $exs.NextIndex
 
     [pscustomobject]@{
@@ -171,7 +171,7 @@ function Parse-DefEx {
     }
 }
 
-function Parse-NumDef {
+function Set-NumDef {
     <#
       NUMDEF ::= NUMBER [CEBWORD] [CLASS] DEFEX
     #>
@@ -203,7 +203,7 @@ function Parse-NumDef {
         $i++
     }
 
-    $defex = Parse-DefEx -Tokens $Tokens -StartIndex $i
+    $defex = Set-DefEx -Tokens $Tokens -StartIndex $i
     if (-not $defex.Success) {
         return [pscustomobject]@{
             Success     = $false
@@ -236,7 +236,7 @@ function Parse-NumDef {
     }
 }
 
-function Parse-WtDef {
+function Set-WtDef {
     <#
       WTDEF ::= WORDTYPE CLASS* ( NUMDEF+ | DEFEX )
     #>
@@ -268,7 +268,7 @@ function Parse-WtDef {
     if (IsType (Get-Token $Tokens $i) 'NUMBER') {
         $numdefs = @()
         while (IsType (Get-Token $Tokens $i) 'NUMBER') {
-            $nd = Parse-NumDef -Tokens $Tokens -StartIndex $i
+            $nd = Set-NumDef -Tokens $Tokens -StartIndex $i
             if (-not $nd.Success) {
                 return [pscustomobject]@{
                     Success     = $false
@@ -296,7 +296,7 @@ function Parse-WtDef {
     }
 
     # Branch B: DEFEX (unnumbered), after optional classes
-    $defex = Parse-DefEx -Tokens $Tokens -StartIndex $i
+    $defex = Set-DefEx -Tokens $Tokens -StartIndex $i
     if (-not $defex.Success) {
         return [pscustomobject]@{
             Success     = $false
@@ -321,7 +321,7 @@ function Parse-WtDef {
     }
 }
 
-function Parse-WordDef {
+function Set-WordDef {
     <#
       WORDDEF ::= CEBWORD (WTDEF+ | [DEFEX] NUMDEF+ | DEFEX) WORDDEF*
     #>
@@ -345,7 +345,7 @@ function Parse-WordDef {
     $worddefs = @()
     if (IsType $tok 'CEBWORD') {
         while (IsType $tok 'CEBWORD') {
-            $wd = Parse-WordDef -Tokens $Tokens -StartIndex $i
+            $wd = Set-WordDef -Tokens $Tokens -StartIndex $i
             if ($wd.Success) {
                 $worddefs += $wd.WordDef
                 $i = $wd.NextIndex
@@ -377,7 +377,7 @@ function Parse-WordDef {
     if (IsType $tok 'WORDTYPE') {
         $wtdefs = @()
         while (IsType (Get-Token $Tokens $i) 'WORDTYPE') {
-            $wtr = Parse-WtDef -Tokens $Tokens -StartIndex $i
+            $wtr = Set-WtDef -Tokens $Tokens -StartIndex $i
             if (-not $wtr.Success) {
                 return [pscustomobject]@{
                     Success     = $false
@@ -404,7 +404,7 @@ function Parse-WordDef {
     if (IsType $tok 'NUMBER') {
         $numdefs = @()
         while (IsType (Get-Token $Tokens $i) 'NUMBER') {
-            $nd = Parse-NumDef -Tokens $Tokens -StartIndex $i
+            $nd = Set-NumDef -Tokens $Tokens -StartIndex $i
             if (-not $nd.Success) {
                 return [pscustomobject]@{
                     Success     = $false
@@ -429,7 +429,7 @@ function Parse-WordDef {
 
     # Branch 3b: optional leading DEFEX, then NUMDEF+ (if present)
     # If the next token is not WORDTYPE/NUMBER, attempt DEFEX
-    $defexLead = Parse-DefEx -Tokens $Tokens -StartIndex $i
+    $defexLead = Set-DefEx -Tokens $Tokens -StartIndex $i
     if ($defexLead.Success) {
         $i = $defexLead.NextIndex
 
@@ -437,7 +437,7 @@ function Parse-WordDef {
         if (IsType (Get-Token $Tokens $i) 'NUMBER') {
             $numdefs = @()
             while (IsType (Get-Token $Tokens $i) 'NUMBER') {
-                $nd = Parse-NumDef -Tokens $Tokens -StartIndex $i
+                $nd = Set-NumDef -Tokens $Tokens -StartIndex $i
                 if (-not $nd.Success) {
                     return [pscustomobject]@{
                         Success     = $false
@@ -509,7 +509,7 @@ function Parse-WordDef {
 # - a CEBWORD + DEFEX
 # each row will have one or more WORDDEF
 
-function Parse-Row {
+function Set-Row {
     <#
       ROW ::= WORDDEF+ (word definiton then conjugations)
       Success = consumed all tokens AND at least one WORDDEF produced, each subsequent worddef considered to be an affix
@@ -519,7 +519,7 @@ function Parse-Row {
     $i = 0; $diag = @(); $worddefs = @()
 
     while ($i -lt $Tokens.Count) {
-        $wd = Parse-WordDef -Tokens $Tokens -StartIndex $i
+        $wd = Set-WordDef -Tokens $Tokens -StartIndex $i
         if (-not $wd.Success) {
             $diag += $wd.Diagnostics
             break
@@ -536,7 +536,7 @@ function Parse-Row {
         if (IsType $next 'CEBWORD') { continue }
 
         # Otherwise, if we see legal continuations (e.g., more WTDEF/NUMDEF),
-        # they would have been consumed inside Parse-WordDef; anything else is trailing.
+        # they would have been consumed inside Set-WordDef; anything else is trailing.
         if ($next) {
             $diag += [pscustomobject]@{
                 Index=$i; Message="Trailing token after WORDDEF: $($next.Type)"; Token=$next
@@ -562,7 +562,7 @@ function Parse-Row {
 }
 
 # Parse the normalized token array into a structured tree
-$res = Parse-Row -Tokens $Tokens
+$res = Set-Row -Tokens $Tokens
 
 [pscustomobject] @{
     Tokens           = $Tokens
