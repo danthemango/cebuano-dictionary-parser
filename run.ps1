@@ -1,11 +1,12 @@
 param (
-    [int]$Limit = 100
+    [int]$Limit = 100,
+    [string]$SearchWord = $null
 )
 
-$xml = .\HTML-to-XML.ps1 -Path ".\cebuano-dictionary-fixed.html"
+$xml = .\src\HTML-to-XML.ps1 -Path "cebuano-dictionary-fixed.html"
 
-if (Test-Path ".\out\tokenlist.ndjson") {
-    Remove-Item ".\out\tokenlist.ndjson"
+if (Test-Path "out\tokenlist.ndjson") {
+    Remove-Item "out\tokenlist.ndjson"
 }
 
 if (Test-Path "out\successful-parse.ndjson") {
@@ -17,12 +18,12 @@ if (Test-Path "out\failed-parse.ndjson") {
 }
 
 # tokenize to file
-$parsed = $xml | .\Tokenize.ps1 -Limit $Limit | ForEach-Object {
+$parsed = $xml | .\src\Tokenize.ps1 -Limit $Limit -SearchWord $SearchWord | ForEach-Object {
     # export tokens to file
     $_ | ConvertTo-Json -Depth 12 -Compress | Add-Content -Encoding UTF8 -Path "out\tokenlist.ndjson"
     $_
 } | ForEach-Object {
-    .\Parse-WordDef.ps1 -Tokens $_.Tokens
+    .\src\Parse-WordDef.ps1 -Tokens $_.Tokens
 } | ForEach-Object {
     if ($_.ParseOk) {
         $_ | ConvertTo-Json -Depth 12 -Compress | Add-Content -Encoding UTF8 -Path "out\successful-parse.ndjson"
@@ -33,6 +34,11 @@ $parsed = $xml | .\Tokenize.ps1 -Limit $Limit | ForEach-Object {
 }
 
 $total_num = $parsed.Count
-$num_success = ($parsed | Where-Object ParseOk -eq $true).Count
-$perc = [math]::Round(100 * ($num_success / $total_num),1)
-Write-Output "parsed $num_success / $total_num ($perc)%"
+if ($total_num -eq 0) {
+    Write-Output "No paragraphs parsed."
+    exit
+} else {
+    $num_success = ($parsed | Where-Object ParseOk -eq $true).Count
+    $perc = [math]::Round(100 * ($num_success / $total_num),1)
+    Write-Output "parsed $num_success / $total_num ($perc)%"
+}

@@ -571,16 +571,3 @@ $res = Set-Row -Tokens $Tokens
     ParseNextIndex   = $res.NextIndex
     ParseDiagnostics = $res.Diagnostics
 }
-
-# $successfuls = $parsed | Where-Object { $_.ParseOk }
-# $faileds = $parsed | Where-Object { -not $_.ParseOk }
-
-# # Finally, write the whole set to JSON
-# $faileds |
-#     ConvertTo-Json -Depth 100 |
-#     Set-Content -Encoding UTF8 -Path "out\failed-parse.json"
-
-# # $successfuls.WordDef |
-# $successfuls |
-#     ConvertTo-Json -Depth 100 |
-#     Set-Content -Encoding UTF8 -Path "out\successful-parse.json"

@@ -1,21 +1,3 @@
-# .Description
-# create a stream of tokens for each word definition, based on some established patterns
-# .EXAMPLE
-# .\HTML-to-XML.ps1 | .\Tokenize.ps1 -Limit 100 | Export-Csv -Encoding utf8 -NoTypeInformation -Path "tokenlist.csv"
-# .EXAMPLE
-# $xml = .\HTML-to-XML.ps1
-# $tokens = $xml | .\Tokenize.ps1 -Limit 100
-# $tokens | Export-Csv -Encoding utf8 -NoTypeInformation -Path "tokenlist.csv"
-param (
-    # accept input as xml object piped in, mandatory
-    [Parameter(ValueFromPipeline=$true, Mandatory=$true)]
-    [xml]$inxml = $null,
-    # limit the number of paragraphs to parse for testing
-    # set Limit = $null for no limit
-    [Parameter(Mandatory=$true)]
-    [int]$Limit
-)
-
 # Utility function to convert multiple whitespace to single space
 function reduceWS($text) {
     return ($text -replace "\s+", " ").Trim()
@@ -25,7 +7,7 @@ function reduceWS($text) {
 # <span class="pagenum">[<a id="xd20e22720" href="#xd20e22720">40</a>]</span>
 function Remove-PageNums {
     param (
-        [Parameter(Mandatory=$true)]
+        [Parameter(Mandatory = $true)]
         [string]$content
     )
 
@@ -36,7 +18,7 @@ function Remove-PageNums {
 # look for paragraphs inside of each letter div
 function Split-Paragraphs {
     param (
-        [Parameter(ValueFromPipeline=$true)]
+        [Parameter(ValueFromPipeline = $true)]
         [xml]$inxml
     )
 
@@ -58,12 +40,12 @@ function Split-Paragraphs {
 
                     # set content as a token of type text
                     $contentToken = [PSCustomObject]@{
-                        Type  = "TEXT"
-                        Content  = $content
+                        Type    = "TEXT"
+                        Content = $content
                     }
 
                     [PSCustomObject]@{
-                        letter  = $letter
+                        letter = $letter
                         tokens = @($contentToken)
                     }
                 }
@@ -74,28 +56,28 @@ function Split-Paragraphs {
 
 function Split-TokensByPattern {
     param (
-        [Parameter(ValueFromPipeline=$true)]
-        $token,
+        [Parameter(ValueFromPipeline = $true)]
+        $Token,
 
-        [Parameter(Mandatory=$true)]
+        [Parameter(Mandatory = $true)]
         [string]$pattern,
 
-        [Parameter(Mandatory=$true)]
-        [string]$tokenType
+        [Parameter(Mandatory = $true)]
+        [string]$TokenType
     )
     process {
         # If not a TEXT token, pass through unchanged
-        if ($token.Type -ne "TEXT") {
-            $token
+        if ($Token.Type -ne "TEXT") {
+            $Token
             return
         }
 
-        $content = $token.Content
+        $content = $Token.Content
         $splits = [regex]::Split($content, $pattern)
 
         # If no matches (only one part after split), return original token
         if ($splits.Count -le 1) {
-            $token
+            $Token
             return
         }
 
@@ -111,7 +93,7 @@ function Split-TokensByPattern {
         for ($i = 1; $i -lt $splits.Count; $i += 2) {
             # Output the matched token (e.g., NUMBER)
             [PSCustomObject]@{
-                Type    = $tokenType
+                Type    = $TokenType
                 Content = $splits[$i]
             }
 
@@ -132,11 +114,11 @@ function Split-TokensByPattern {
 # return the number tokens and text tokens for all text found between them
 function Split-Nums {
     param (
-        [Parameter(ValueFromPipeline=$true)]
-        $token
+        [Parameter(ValueFromPipeline = $true)]
+        $Token
     )
     process {
-        $token | Split-TokensByPattern -pattern "<b>(\d+[a-z]?)</b>" -tokenType "NUMBER"
+        $Token | Split-TokensByPattern -pattern "<b>(\d+[a-z]?)</b>" -tokenType "NUMBER"
     }
 }
 
@@ -144,11 +126,11 @@ function Split-Nums {
 # e.g. nouns (<i>n</i>), verbs (<i>v</i>), adjectives (<i>a</i>), etc.
 function Split-Types {
     param (
-        [Parameter(ValueFromPipeline=$true)]
-        $token
+        [Parameter(ValueFromPipeline = $true)]
+        $Token
     )
     process {
-        $token | Split-TokensByPattern -pattern "<i[^>]*>([anv])</i>" -tokenType "WORDTYPE"
+        $Token | Split-TokensByPattern -pattern "<i[^>]*>([anv])</i>" -tokenType "WORDTYPE"
     }
 }
 
@@ -158,15 +140,15 @@ function Split-Types {
 # <b lang="ceb">adtuúnun, aladtúun</b>
 function Split-Cebuano-Words {
     param (
-        [Parameter(ValueFromPipeline=$true)]
-        $token
+        [Parameter(ValueFromPipeline = $true)]
+        $Token
     )
     process {
         $pattern1 = "<b lang=""ceb"">\s*(.*?)\s*</b>"
         # the id is likely used to be the target of the internal links, not sure if that information can be used later.
         $pattern2 = "<b id=""[^""]+"" lang=""ceb"">\s*(.*?)\s*</b>"
 
-        $token | Split-TokensByPattern -pattern $pattern1 -tokenType "CEBWORD" | Split-TokensByPattern -pattern $pattern2 -tokenType "CEBWORD"
+        $Token | Split-TokensByPattern -pattern $pattern1 -tokenType "CEBWORD" | Split-TokensByPattern -pattern $pattern2 -tokenType "CEBWORD"
     }
 }
 
@@ -175,11 +157,11 @@ function Split-Cebuano-Words {
 # <i lang=""ceb"">Dakúa uy!</i>
 function Split-Cebuano-Phrases {
     param (
-        [Parameter(ValueFromPipeline=$true)]
-        $token
+        [Parameter(ValueFromPipeline = $true)]
+        $Token
     )
     process {
-        $token | Split-TokensByPattern -pattern '<i lang="ceb">(.*?)</i>' -tokenType "CEBPHRASE"
+        $Token | Split-TokensByPattern -pattern '<i lang="ceb">(.*?)</i>' -tokenType "CEBPHRASE"
     }
 }
 
@@ -200,17 +182,17 @@ function Split-Cebuano-Phrases {
 # <i lang="ceb">see</i><span class="sc" lang="ceb"><a href="#abay">abay</a></span>.
 function Split-Links {
     param (
-        [Parameter(ValueFromPipeline=$true)]
-        $token
+        [Parameter(ValueFromPipeline = $true)]
+        $Token
     )
     process {
         # If not a TEXT token, pass through unchanged
-        if ($token.Type -ne "TEXT") {
-            $token
+        if ($Token.Type -ne "TEXT") {
+            $Token
             return
         }
 
-        $content = $token.Content
+        $content = $Token.Content
         $opts = [System.Text.RegularExpressions.RegexOptions]::Singleline
 
         # Pattern: <span class="sc" ...>...</span> with optional <a> inside
@@ -221,7 +203,7 @@ function Split-Links {
 
         # If no matches, return original token
         if ($mymatches.Count -eq 0) {
-            $token
+            $Token
             return
         }
 
@@ -279,12 +261,12 @@ function Split-Links {
 # <span class=""rm"">[<i lang=""ceb"">gen.</i>]</span>
 function Split-Classes {
     param (
-        [Parameter(ValueFromPipeline=$true)]
-        $token
+        [Parameter(ValueFromPipeline = $true)]
+        $Token
     )
     process {
         $pattern = '<span class="rm">(.*?)</span>'
-        $token | Split-TokensByPattern -pattern $pattern -tokenType "CLASS"
+        $Token | Split-TokensByPattern -pattern $pattern -tokenType "CLASS"
     }
 }
 
@@ -293,17 +275,17 @@ function Split-Classes {
 # <span class="corr" id="xd20e5140" title="Not in source"><sub>1</sub></span>
 function Strip-Corr {
     param (
-        [Parameter(ValueFromPipeline=$true)]
-        $token
+        [Parameter(ValueFromPipeline = $true)]
+        $Token
     )
     process {
         # If not a TEXT token, pass through unchanged
-        if ($token.Type -ne "TEXT") {
-            $token
+        if ($Token.Type -ne "TEXT") {
+            $Token
             return
         }
 
-        $content = $token.Content
+        $content = $Token.Content
         $opts = [System.Text.RegularExpressions.RegexOptions]::Singleline
 
         # Pattern: <span class="corr" ...>...</span>
@@ -312,7 +294,7 @@ function Strip-Corr {
         $mymatches = [regex]::Matches($content, $pattern, $opts)
         # If no matches, return original token
         if ($mymatches.Count -eq 0) {
-            $token
+            $Token
             return
         }
 
@@ -341,24 +323,24 @@ function Strip-Corr {
 # they are from text formatting and usually don't help with definitions or examples
 function Strip-Punct {
     param (
-        [Parameter(ValueFromPipeline=$true)]
-        $token
+        [Parameter(ValueFromPipeline = $true)]
+        $Token
     )
     process {
         # If not a TEXT token, pass through unchanged
-        if ($token.Type -ne "TEXT") {
-            $token
+        if ($Token.Type -ne "TEXT") {
+            $Token
             return
         }
 
-        $content = $token.Content
+        $content = $Token.Content
         # If content is only punctuation or whitespace, skip it
         if ($content -match '^[\s\.,;:!\?\-()"\'']*$') {
             return
         }
 
         # Otherwise, emit the token unchanged
-        $token
+        $Token
     }
 }
 
@@ -366,35 +348,13 @@ function Strip-Punct {
 # we usually start with a single text token per row
 function Tokenize {
     param (
-        [Parameter(ValueFromPipeline=$true)]
-        $token
+        [Parameter(ValueFromPipeline = $true)]
+        $Token
     )
     process {
         # notes:
         # - corr must be processed before splitting words, since it is usally inside of the word block
         # - split links must be processed before cebuano phrases because of some bad formatting (they use <i lang="ceb"> as a way to make the word "see" italic, e.g. in "see otherword")
-        $token | Split-Classes | Split-Cebuano-Words | Split-Types | Split-Nums | Split-Links | Split-Cebuano-Phrases | Strip-Punct
-    }
-}
-
-# main
-$paragraphs = $inxml | Split-Paragraphs
-
-if ($Limit) {
-    $paragraphs = $paragraphs | Select-Object -First $Limit
-}
-
-$paragraphs | ForEach-Object {
-    $_.tokens = $_.tokens | Tokenize
-    $cebWords = $_.tokens | Where-Object Type -eq "CEBWORD"
-    if ($cebWords.Count -eq 0) {
-        $Word = ""
-    } else {
-        $Word = $cebWords[0].Content
-    }
-
-    [PSCustomObject]@{
-        Word = $Word
-        Tokens = $_.tokens
+        $Token | Split-Classes | Split-Cebuano-Words | Split-Types | Split-Nums | Split-Links | Split-Cebuano-Phrases | Strip-Punct
     }
 }

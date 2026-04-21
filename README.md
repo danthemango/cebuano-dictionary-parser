@@ -22,6 +22,10 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 - `.\run.ps1 -Limit 100`
 
+# Testing
+- `Install-Module Pester`
+- `Invoke-Pester`
+
 # Progress
 - First 100 words: ![91% Success](https://img.shields.io/badge/success-91%25-green "91% success")
 - First 1000 words: ![84% Success](https://img.shields.io/badge/success-84%25-green "84% success")
