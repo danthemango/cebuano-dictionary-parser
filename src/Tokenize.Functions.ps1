@@ -110,16 +110,22 @@ function Split-TokensByPattern {
     }
 }
 
-# parses a def number, e.g. <b>1</b>, <b>2</b>, <b>2a</b>
-# accept as input an array of tokens, and for each text token
-# return the number tokens and text tokens for all text found between them
+<#
+.SYNOPSIS
+    Parses definition numbers from text tokens.
+.DESCRIPTION
+    parses a def number, e.g. <b>1</b>, <b>2</b>, <b>2a</b>
+    or a comma-separated list of def numbers, e.g. <b>1, 2a, 3</b>
+    accept as input an array of tokens, and for each text token
+    return the number tokens and text tokens for all text found between them
+#>
 function Split-Nums {
     param (
         [Parameter(ValueFromPipeline = $true)]
         $Token
     )
     process {
-        $Token | Split-TokensByPattern -pattern "<b>(\d+[a-z]?)</b>" -tokenType "NUMBER"
+        $Token | Split-TokensByPattern -pattern "<b>(\d+[a-z]?(?:,\s*\d+[a-z]?)*?)</b>" -tokenType "NUMBER"
     }
 }
 
@@ -181,55 +187,48 @@ function Split-Cebuano-Phrases {
 # = <span class="sc" lang="ceb"><a href="#balbal">balbal</a></span>.
 # short for <span class="sc" lang="ceb"><a href="#niadtu">niadtu</a></span>.
 # <i lang="ceb">see</i><span class="sc" lang="ceb"><a href="#abay">abay</a></span>.
+# = <span class=\"sc\" lang=\"ceb\"><a href=\"#abir\">abir</a></span>
 function Split-Links {
     param (
         [Parameter(ValueFromPipeline = $true)]
         $Token
     )
     process {
-        # If not a TEXT token, pass through unchanged
-        if ($Token.Type -ne "TEXT") {
-            $Token
-            return
-        }
+        if ($Token.Type -ne "TEXT") { $Token; return }
 
         $content = $Token.Content
         $opts = [System.Text.RegularExpressions.RegexOptions]::Singleline
 
-        # Pattern: <span class="sc" ...>...</span> with optional <a> inside
-        $pattern = '<span[^>]*class="sc"[^>]*>.*?</span>'
+        # Capture the span separately; require a trailing period, and consume it (so it won't appear in output).
+        # Group "span" is the span markup we want, the trailing dot is matched but not captured.
+        $pattern = '(?<span><span[^>]*class="sc"[^>]*>.*?</span>)\s*\.'
 
-        $splits = [regex]::Split($content, $pattern)
         $mymatches = [regex]::Matches($content, $pattern, $opts)
+        if ($mymatches.Count -eq 0) { $Token; return }
 
-        # If no matches, return original token
-        if ($mymatches.Count -eq 0) {
-            $Token
-            return
-        }
+        $pos = 0
 
-        # Output content before first match (with prefix cleanup)
-        if ($splits[0].Trim() -ne "") {
-            $beforeText = $splits[0]
-            # Remove common prefixes and suffixes before links
-            $beforeText = $beforeText -replace '\s*=\s*$', ''
-            $beforeText = $beforeText -replace '<i[^>]*lang="ceb"[^>]*>\s*see\s*</i>\s*$', ''
-            $beforeText = $beforeText -replace 'short for ?$', ''
-            $beforeText = reduceWS($beforeText)
+        foreach ($m in $mymatches) {
+            # Text before this match
+            $before = $content.Substring($pos, $m.Index - $pos)
+            if ($before.Trim() -ne "") {
+                $beforeText = $before
+                $beforeText = $beforeText -replace '\s*=\s*$', ''
+                $beforeText = $beforeText -replace '<i[^>]*lang="ceb"[^>]*>\s*see\s*</i>\s*$', ''
+                $beforeText = $beforeText -replace 'short for ?$', ''
+                $beforeText = reduceWS($beforeText)
 
-            if ($beforeText -ne "") {
-                [PSCustomObject]@{
-                    Type    = "TEXT"
-                    Content = $beforeText
+                if ($beforeText -ne "") {
+                    [PSCustomObject]@{
+                        Type    = "TEXT"
+                        Content = $beforeText
+                    }
                 }
             }
-        }
 
-        # Alternating: matched span, then content after it
-        for ($i = 0; $i -lt $mymatches.Count; $i++) {
-            $spanMatch = $mymatches[$i].Value
+            # The span itself (without the period)
+            $spanMatch = $m.Groups['span'].Value
 
-            # remove tags
             $linkText = $spanMatch -replace '<[^>]*>', ''
             $linkText = reduceWS($linkText)
 
@@ -238,19 +237,23 @@ function Split-Links {
                 Content = $linkText
             }
 
-            # Output content after this match
-            $afterMatch = if ($i + 1 -lt $splits.Count) { $splits[$i + 1] } else { "" }
-            if ($afterMatch.Trim() -ne "") {
-                $afterText = $afterMatch
-                # Clean up prefixes and suffixes
-                $afterText = $afterText -replace '^\.?\s*', ''
-                $afterText = reduceWS($afterText)
+            # Advance position to end of entire match (including the period we consumed)
+            $pos = $m.Index + $m.Length
+        }
 
-                if ($afterText -ne "") {
-                    [PSCustomObject]@{
-                        Type    = "TEXT"
-                        Content = $afterText
-                    }
+        # Remaining trailing text after the last match
+        $tail = $content.Substring($pos)
+        if ($tail.Trim() -ne "") {
+            $afterText = $tail
+            # With this approach, the dot is already consumed; you can drop this line,
+            # but it's harmless if you want to keep it defensive:
+            # $afterText = $afterText -replace '^\.\s*', ''
+            $afterText = reduceWS($afterText)
+
+            if ($afterText -ne "") {
+                [PSCustomObject]@{
+                    Type    = "TEXT"
+                    Content = $afterText
                 }
             }
         }
@@ -322,28 +325,29 @@ function Strip-Corr {
 
 # strip punctuation and whitespace only text segments
 # they are from text formatting and usually don't help with definitions or examples
-function Strip-Punct {
-    param (
-        [Parameter(ValueFromPipeline = $true)]
-        $Token
-    )
-    process {
-        # If not a TEXT token, pass through unchanged
-        if ($Token.Type -ne "TEXT") {
-            $Token
-            return
-        }
+# TODO delete if never used
+# function Strip-Punct {
+#     param (
+#         [Parameter(ValueFromPipeline = $true)]
+#         $Token
+#     )
+#     process {
+#         # If not a TEXT token, pass through unchanged
+#         if ($Token.Type -ne "TEXT") {
+#             $Token
+#             return
+#         }
 
-        $content = $Token.Content
-        # If content is only punctuation or whitespace, skip it
-        if ($content -match '^[\s\.,;:!\?\-()"\'']*$') {
-            return
-        }
+#         $content = $Token.Content
+#         # If content is only punctuation or whitespace, skip it
+#         if ($content -match '^[\s\.,;:!\?\-()"\'']*$') {
+#             return
+#         }
 
-        # Otherwise, emit the token unchanged
-        $Token
-    }
-}
+#         # Otherwise, emit the token unchanged
+#         $Token
+#     }
+# }
 
 # iterates through the list of tokens and for each text token we process more specific tokens where found
 # we usually start with a single text token per row
@@ -356,6 +360,6 @@ function Tokenize {
         # notes:
         # - corr must be processed before splitting words, since it is usally inside of the word block
         # - split links must be processed before cebuano phrases because of some bad formatting (they use <i lang="ceb"> as a way to make the word "see" italic, e.g. in "see otherword")
-        $Token | Split-Classes | Split-Cebuano-Words | Split-Types | Split-Nums | Split-Links | Split-Cebuano-Phrases | Strip-Punct
+        $Token | Split-Classes | Split-Nums | Split-Cebuano-Words | Split-Types | Split-Links | Split-Cebuano-Phrases
     }
 }
