@@ -217,10 +217,10 @@ function Split-Links {
         $pattern = '<span[^>]*class="sc"[^>]*>.*?</span>'
 
         $splits = [regex]::Split($content, $pattern)
-        $matches = [regex]::Matches($content, $pattern, $opts)
+        $mymatches = [regex]::Matches($content, $pattern, $opts)
 
         # If no matches, return original token
-        if ($matches.Count -eq 0) {
+        if ($mymatches.Count -eq 0) {
             $token
             return
         }
@@ -243,8 +243,8 @@ function Split-Links {
         }
 
         # Alternating: matched span, then content after it
-        for ($i = 0; $i -lt $matches.Count; $i++) {
-            $spanMatch = $matches[$i].Value
+        for ($i = 0; $i -lt $mymatches.Count; $i++) {
+            $spanMatch = $mymatches[$i].Value
 
             # remove tags
             $linkText = $spanMatch -replace '<[^>]*>', ''
@@ -309,19 +309,19 @@ function Strip-Corr {
         # Pattern: <span class="corr" ...>...</span>
         $pattern = '<span[^>]*class="corr"[^>]*>.*?</span>'
         $splits = [regex]::Split($content, $pattern)
-        $matches = [regex]::Matches($content, $pattern, $opts)
+        $mymatches = [regex]::Matches($content, $pattern, $opts)
         # If no matches, return original token
-        if ($matches.Count -eq 0) {
+        if ($mymatches.Count -eq 0) {
             $token
             return
         }
 
         # if there are any matches, remove the span (and sub) tags from the text but leave the content in-place
         $newContent = ""
-        for ($i = 0; $i -lt $matches.Count; $i++) {
+        for ($i = 0; $i -lt $mymatches.Count; $i++) {
             $newContent += $splits[$i]
 
-            $spanMatch = $matches[$i].Value
+            $spanMatch = $mymatches[$i].Value
             # remove tags
             $innerText = $spanMatch -replace '<[^>]*>', ''
             # check if innerText has any non-numeric characters
