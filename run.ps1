@@ -40,5 +40,6 @@ if ($total_num -eq 0) {
 }
 
 if ($SearchWord -ne $null) {
-    $parsed | Where-Object { $_.WordDef.Word -eq $SearchWord }
+    $parsed | Where-Object { $_.WordDef.Word -eq $SearchWord } | ConvertTo-Json -Depth 12 | Set-Content -Encoding utf8BOM ".\out\searchword.json"
+    Write-Output "Saved to out\searchword.json"
 }
