@@ -1,6 +1,7 @@
 param (
     [int]$Limit = 100,
-    [string]$SearchWord = $null
+    [string]$SearchWord = $null,
+    [switch]$Passthru = $false
 )
 
 $xml = .\src\HTML-to-XML.ps1 -Path "cebuano-dictionary-fixed.html"
@@ -40,6 +41,10 @@ if ($total_num -eq 0) {
 }
 
 if ($SearchWord -ne $null) {
-    $parsed | Where-Object { $_.WordDef.Word -eq $SearchWord } | ConvertTo-Json -Depth 12 | Set-Content -Encoding utf8BOM ".\out\searchword.json"
+    $parsed | Where-Object Word -eq $SearchWord | ConvertTo-Json -Depth 12 | Set-Content -Encoding utf8BOM ".\out\searchword.json"
     Write-Output "Saved to out\searchword.json"
+}
+
+if ($Passthru) {
+    return $parsed
 }

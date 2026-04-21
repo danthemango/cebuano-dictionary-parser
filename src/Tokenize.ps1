@@ -18,7 +18,7 @@ param (
     [xml]$xml = $null,
     [Parameter(Mandatory = $true)]
     [int]$Limit = $null,
-    [string]$SearchWord = $null
+    [string]$SearchWord = ""
 )
 
 . $PSScriptRoot\Tokenize.Functions.ps1
@@ -30,7 +30,7 @@ if ($Limit) {
     $paragraphs = $paragraphs | Select-Object -First $Limit
 }
 
-if ($SearchWord -ne $null) {
+if ($SearchWord -ne "") {
     $paragraphs = $paragraphs | Where-Object {
         $_.Tokens.Content -like "*$SearchWord*"
     }
@@ -44,6 +44,11 @@ $paragraphs | ForEach-Object {
     }
     else {
         $Word = $cebWords[0].Content
+    }
+
+    # return nothing if this is not the $SearchWord (if specified)
+    if ($SearchWord -ne "" -and $Word -ne $SearchWord) {
+        return
     }
 
     [PSCustomObject]@{
