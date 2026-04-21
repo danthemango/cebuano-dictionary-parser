@@ -19,11 +19,7 @@ if (Test-Path "out\failed-parse.ndjson") {
 
 # tokenize to file
 $parsed = $xml | .\src\Tokenize.ps1 -Limit $Limit -SearchWord $SearchWord | ForEach-Object {
-    # export tokens to file
-    $_ | ConvertTo-Json -Depth 12 -Compress | Add-Content -Encoding UTF8 -Path "out\tokenlist.ndjson"
-    $_
-} | ForEach-Object {
-    .\src\Parse-WordDef.ps1 -Tokens $_.Tokens
+    .\src\Parse-WordDef.ps1 -Word $_
 } | ForEach-Object {
     if ($_.ParseOk) {
         $_ | ConvertTo-Json -Depth 12 -Compress | Add-Content -Encoding UTF8 -Path "out\successful-parse.ndjson"
@@ -41,4 +37,8 @@ if ($total_num -eq 0) {
     $num_success = ($parsed | Where-Object ParseOk -eq $true).Count
     $perc = [math]::Round(100 * ($num_success / $total_num),1)
     Write-Output "parsed $num_success / $total_num ($perc)%"
+}
+
+if ($SearchWord -ne $null) {
+    $parsed | Where-Object { $_.WordDef.Word -eq $SearchWord }
 }

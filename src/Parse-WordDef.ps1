@@ -5,8 +5,8 @@
 # Import-Csv .\tokenlist.csv | Group-Object word | ForEach-Object { .\Parse.ps1 -Tokens $_.Group }
 param (
     # accept array of tokens for the definition paragraph
-    [Parameter(ValueFromPipeline=$true, Mandatory=$true)]
-    $Tokens
+    [Parameter(Mandatory=$true)]
+    $Word
 )
 
 function Get-Token {
@@ -562,12 +562,13 @@ function Set-Row {
 }
 
 # Parse the normalized token array into a structured tree
-$res = Set-Row -Tokens $Tokens
+$res = Set-Row -Tokens $Word.Tokens
 
 [pscustomobject] @{
-    Tokens           = $Tokens
+    Tokens           = $Word.Tokens
     WordDef          = $res.WordDef
     ParseOk          = $res.Success
     ParseNextIndex   = $res.NextIndex
     ParseDiagnostics = $res.Diagnostics
+    Raw      = $Word.Raw
 }

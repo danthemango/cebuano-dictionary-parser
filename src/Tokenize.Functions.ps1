@@ -45,8 +45,9 @@ function Split-Paragraphs {
                     }
 
                     [PSCustomObject]@{
-                        letter = $letter
-                        tokens = @($contentToken)
+                        Letter = $letter
+                        Tokens = @($contentToken)
+                        Raw = $content
                     }
                 }
             }

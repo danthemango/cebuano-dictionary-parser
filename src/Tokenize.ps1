@@ -32,13 +32,13 @@ if ($Limit) {
 
 if ($SearchWord -ne $null) {
     $paragraphs = $paragraphs | Where-Object {
-        $_.tokens.Content -like "*$SearchWord*"
+        $_.Tokens.Content -like "*$SearchWord*"
     }
 }
 
 $paragraphs | ForEach-Object {
-    $_.tokens = $_.tokens | Tokenize
-    $cebWords = $_.tokens | Where-Object Type -eq "CEBWORD"
+    $_.Tokens = $_.Tokens | Tokenize
+    $cebWords = $_.Tokens | Where-Object Type -eq "CEBWORD"
     if ($cebWords.Count -eq 0) {
         $Word = ""
     }
@@ -48,6 +48,7 @@ $paragraphs | ForEach-Object {
 
     [PSCustomObject]@{
         Word   = $Word
-        Tokens = $_.tokens
+        Tokens = $_.Tokens
+        Raw = $_.Raw
     }
 }
