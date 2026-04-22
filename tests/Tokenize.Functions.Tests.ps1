@@ -73,6 +73,14 @@ Describe Split-Links {
         $tokens[0].Content | Should -Be 'tangdayan'
         $tokens[0].Type | Should -Be "LINK"
     }
+
+    It "Should parse a link with wordtype v number 1 and a dot inside of the tag" {
+        $content = '= <span class="sc" lang="ceb"><a href="#tangdiq">tangdì</a></span>, <i lang="ceb">v1.</i>'
+        $textToken = Get-TextToken -Text $content
+        $tokens = Split-Links -Token $textToken
+        $tokens[0].Content | Should -Be 'tangdì: v1'
+        $tokens[0].Type | Should -Be "LINK"
+    }
 }
 
 Describe Tokenize {
