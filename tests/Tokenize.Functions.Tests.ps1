@@ -62,7 +62,16 @@ Describe Split-Links {
         $content = '(<i lang="ceb">see</i><span class="sc" lang="ceb"><a href="#abay">abay</a></span>, <i lang="ceb">n</i><b lang="ceb">4</b>).'
         $textToken = Get-TextToken -Text $content
         $tokens = Split-Links -Token $textToken
-        # $tokens | Should -Be ""
+        $tokens[0].Content | Should -Be "abay: n 4"
+        $tokens[0].Type | Should -Be "LINK"
+    }
+
+    It "Should parse links without href" {
+        $content = '= <span class="sc" lang="ceb">tangdayan</span>.'
+        $textToken = Get-TextToken -Text $content
+        $tokens = Split-Links -Token $textToken
+        $tokens[0].Content | Should -Be 'tangdayan'
+        $tokens[0].Type | Should -Be "LINK"
     }
 }
 

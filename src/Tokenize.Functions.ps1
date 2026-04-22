@@ -204,7 +204,7 @@ function Split-Links {
         $opts = [System.Text.RegularExpressions.RegexOptions]::Singleline
 
         # capture the entire link block, including optional "see", "short for", or "=" at the beginning, and optional wordtype and numbers at the end, and optional parentheses around the whole thing, and an optional period at the end.
-        $pattern = "[(]?(= |short for |<i lang=""ceb"">see</i>|)?<span class=""sc"" lang=""ceb""><a href=""#.*?"">(?<name>.*?)</a></span>(, )?(<i lang=""ceb"">(?<wordtype>[avn])</i>)?(<b lang=""ceb"">(?<numbers>[0-9, ]+)</b>)?[)]?\."
+        $pattern = "[(]?(= |short for |<i lang=""ceb"">see</i>|)?<span class=""sc"" lang=""ceb"">(<a href=""#.*?"">)?(?<name>.*?)(</a>)?</span>(, )?(<i lang=""ceb"">(?<wordtype>[avn])</i>)?(<b lang=""ceb"">(?<numbers>[0-9, ]+)</b>)?[)]?\."
 
         $mymatches = [regex]::Matches($content, $pattern, $opts)
         if ($mymatches.Count -eq 0) { $Token; return }
