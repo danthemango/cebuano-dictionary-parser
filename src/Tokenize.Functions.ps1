@@ -47,7 +47,7 @@ function Split-Paragraphs {
                     [PSCustomObject]@{
                         Letter = $letter
                         Tokens = @($contentToken)
-                        Raw = $content
+                        Raw    = $content
                     }
                 }
             }
@@ -190,6 +190,8 @@ function Split-Cebuano-Phrases {
 # = <span class="sc" lang="ceb"><a href="#abir">abir</a></span>.
 # = <span class="sc" lang="ceb"><a href="#abir">abir</a></span><b lang="ceb">1, 2</b>.
 # = <span class="sc" lang="ceb"><a href="#abaxga">abága</a></span>, <i lang="ceb">v</i>.
+# <i lang="ceb">see</i><span class="sc" lang="ceb"><a href="#abay">abay</a></span>, <i lang="ceb">n</i><b lang="ceb">4</b>.
+# (<i lang="ceb">see</i><span class="sc" lang="ceb"><a href="#abay">abay</a></span>, <i lang="ceb">n</i><b lang="ceb">4</b>).
 function Split-Links {
     param (
         [Parameter(ValueFromPipeline = $true)]
@@ -201,10 +203,8 @@ function Split-Links {
         $content = $Token.Content
         $opts = [System.Text.RegularExpressions.RegexOptions]::Singleline
 
-        # Capture the span separately; require a trailing period, and consume it (so it won't appear in output).
-        # Group "span" is the span markup we want, the trailing dot is matched but not captured.
-        # and may have a wordtype at the end (e.g. , <i lang=\"ceb\">v</i>.)
-        $pattern = "(?<span><span[^>]*class=""sc""[^>]*>.*?</span>(, )?(?:<[bi][^>]*>.+?</[bi]>)?)\s*\."
+        # capture the entire link block, including optional "see", "short for", or "=" at the beginning, and optional wordtype and numbers at the end, and optional parentheses around the whole thing, and an optional period at the end.
+        $pattern = "[(]?(= |short for |<i lang=""ceb"">see</i>|)?<span class=""sc"" lang=""ceb""><a href=""#.*?"">(?<name>.*?)</a></span>(, )?(<i lang=""ceb"">(?<wordtype>[avn])</i>)?(<b lang=""ceb"">(?<numbers>[0-9, ]+)</b>)?[)]?\."
 
         $mymatches = [regex]::Matches($content, $pattern, $opts)
         if ($mymatches.Count -eq 0) { $Token; return }
@@ -213,13 +213,9 @@ function Split-Links {
 
         foreach ($m in $mymatches) {
             # Text before this match
-            $before = $content.Substring($pos, $m.Index - $pos)
-            if ($before.Trim() -ne "") {
-                $beforeText = $before
-                $beforeText = $beforeText -replace '\s*=\s*$', ''
-                $beforeText = $beforeText -replace '<i[^>]*lang="ceb"[^>]*>\s*see\s*</i>\s*$', ''
-                $beforeText = $beforeText -replace 'short for ?$', ''
-                $beforeText = reduceWS($beforeText)
+            $beforeText = $content.Substring($pos, $m.Index - $pos)
+            $beforeText = reduceWS($beforeText)
+            if ($beforeText -ne "") {
 
                 if ($beforeText -ne "") {
                     [PSCustomObject]@{
@@ -229,11 +225,20 @@ function Split-Links {
                 }
             }
 
-            # The span itself (without the period)
-            $spanMatch = $m.Groups['span'].Value
+            # $spanMatch = $m.Groups['span'].Value
+            # the name of the link is in the "name" group
+            $linkText = $m.Groups['name'].Value
+            # throw if linkText is empty, since that means our regex is wrong
+            if ($linkText -eq "") {
+                throw "Link text is empty for match: $($m.Value)"
+            }
+            # add the wordtype and numbers if they exist
+            $wt = $m.Groups['wordtype'].Value
+            $nums = $m.Groups['numbers'].Value
 
-            $linkText = $spanMatch -replace '<[^>]*>', ''
-            $linkText = reduceWS($linkText)
+            if ($wt -or $nums) { $linkText += ":" }
+            if ($wt)   { $linkText += " $wt" }
+            if ($nums) { $linkText += " $nums" }
 
             [PSCustomObject]@{
                 Type    = "LINK"
@@ -244,13 +249,10 @@ function Split-Links {
             $pos = $m.Index + $m.Length
         }
 
-        # Remaining trailing text after the last match
+        # emit the remaining text of token
         $tail = $content.Substring($pos)
         if ($tail.Trim() -ne "") {
             $afterText = $tail
-            # With this approach, the dot is already consumed; you can drop this line,
-            # but it's harmless if you want to keep it defensive:
-            # $afterText = $afterText -replace '^\.\s*', ''
             $afterText = reduceWS($afterText)
 
             if ($afterText -ne "") {

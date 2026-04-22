@@ -40,7 +40,7 @@ Describe Split-Links {
         $tokens | Should -HaveCount 2
         $tokens[0].type | Should -Be "TEXT"
         $tokens[1].type | Should -Be "LINK"
-        $tokens[1].Content | Should -Be "abir1, 2"
+        $tokens[1].Content | Should -Be "abir: 1, 2"
     }
 
     It "Should parse links with wordtype v" {
@@ -48,18 +48,18 @@ Describe Split-Links {
         $textToken = Get-TextToken -Text $content
         $tokens = Split-Links -Token $textToken
         $tokens[0].Type | Should -Be "LINK"
-        $tokens[0].Content | Should -Be 'abága, v'
+        $tokens[0].Content | Should -Be 'abága: v'
     }
 
     It "Should parse links with wordtype n and number 4" {
-        $content = '<i lang=\"ceb\">see</i><span class=\"sc\" lang=\"ceb\"><a href=\"#abay\">abay</a></span>, <i lang=\"ceb\">n</i><b lang=\"ceb\">4</b>.'
+        $content = '<i lang="ceb">see</i><span class="sc" lang="ceb"><a href="#abay">abay</a></span>, <i lang="ceb">n</i><b lang="ceb">4</b>.'
         $textToken = Get-TextToken -Text $content
         $tokens = Split-Links -Token $textToken
-        $tokens[0].Content | Should -Be "abay, n4"
+        $tokens[0].Content | Should -Be "abay: n 4"
     }
 
     It "Should parse links with wordtype n and number 4 in brackets" {
-        $content = '(<i lang=\"ceb\">see</i><span class=\"sc\" lang=\"ceb\"><a href=\"#abay\">abay</a></span>, <i lang=\"ceb\">n</i><b lang=\"ceb\">4</b>).'
+        $content = '(<i lang="ceb">see</i><span class="sc" lang="ceb"><a href="#abay">abay</a></span>, <i lang="ceb">n</i><b lang="ceb">4</b>).'
         $textToken = Get-TextToken -Text $content
         $tokens = Split-Links -Token $textToken
         # $tokens | Should -Be ""
@@ -77,13 +77,13 @@ Describe Tokenize {
     It "Should parse links with numbers" {
         $textToken = Get-TextToken -Text '<b lang="ceb">abi</b> = <span class="sc" lang="ceb"><a href="#abir">abir</a></span><b lang="ceb">1, 2</b>.'
         $tokens = Tokenize -Token $textToken
-        $tokenlist = '[{"Type":"CEBWORD","Content":"abi"},{"Type":"LINK","Content":"abir1, 2"}]'
+        $tokenlist = '[{"Type":"CEBWORD","Content":"abi"},{"Type":"LINK","Content":"abir: 1, 2"}]'
         $tokens | ConvertTo-Json -Compress | Should -Be $tokenlist
     }
 
     It "Should parse links with wordtype v" {
         $textToken = Get-TextToken -Text '= <span class="sc" lang="ceb"><a href="#abaxga">abága</a></span>, <i lang="ceb">v</i>.'
         $tokens = Tokenize -Token $textToken
-        $tokens | ConvertTo-Json -Compress | Should -Be '{"Type":"LINK","Content":"abága, v"}'
+        $tokens | ConvertTo-Json -Compress | Should -Be '{"Type":"LINK","Content":"abága: v"}'
     }
 }
