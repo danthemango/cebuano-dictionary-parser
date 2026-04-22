@@ -361,6 +361,6 @@ function Tokenize {
         # notes:
         # - corr must be processed before splitting words, since it is usally inside of the word block
         # - split links must be processed before cebuano phrases because of some bad formatting (they use <i lang="ceb"> as a way to make the word "see" italic, e.g. in "see otherword")
-        $Token | Split-Classes | Split-Nums | Split-Cebuano-Words | Split-Types | Split-Links | Split-Cebuano-Phrases
+        $Token | Split-Classes | Split-Nums | Split-Links | Split-Cebuano-Words | Split-Types | Split-Cebuano-Phrases
     }
 }
