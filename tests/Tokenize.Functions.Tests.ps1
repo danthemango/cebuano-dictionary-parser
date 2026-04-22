@@ -23,6 +23,36 @@ Describe Split-Cebuano-Words {
     }
 }
 
+Describe Split-Links {
+    # It "Should split links" {
+    #     $textToken = Get-TextToken -Text 'see <span class="sc" lang="ceb"><a href="#abir">abir</a></span> and <span class="sc" lang="ceb"><a href="#abir">abir</a></span>.'
+    #     $tokens = Split-Links -Token $textToken
+    #     $tokens | Should -HaveCount 2
+    #     $tokens[0].Type | Should -Be "TEXT"
+    #     $tokens[1].Type | Should -Be "LINK"
+    #     $tokens[1].Content | Should -Be "abir"
+    # }
+
+    It "Should split links with other tokens" {
+        $textToken = Get-TextToken -Text '<b lang="ceb">-a</b> subjunctive direct passive affix. <i lang="ceb">see</i><span class="sc" lang="ceb"><a href="#x-un">-un</a></span>.'
+        $tokens = Split-Links -Token $textToken
+        $tokens | Should -HaveCount 2
+        $tokens[0].Type | Should -Be "TEXT"
+        $tokens[1].Type | Should -Be "LINK"
+        $tokens[1].Content | Should -Be "-un"
+    }
+
+    It "Should split links with other tokens" {
+        $content = '<b lang="ceb">abi</b> = <span class="sc" lang="ceb"><a href="#abir">abir</a></span><b lang="ceb">1, 2</b>.'
+        $textToken = Get-TextToken -Text $content
+        $tokens = Split-Links -Token $textToken
+        $tokens | Should -HaveCount 2
+        $tokens[0].type | Should -Be "TEXT"
+        $tokens[1].type | Should -Be "LINK"
+        $tokens[1].Content | Should -Be "abir1, 2"
+    }
+}
+
 # Describe Split-Nums {
 #     It "shoulde parse number lists" {
 #         $textToken = Get-TextToken -Text '<b lang="ceb">abi</b> = <span class="sc" lang="ceb"><a href="#abir">abir</a></span><b lang="ceb">1, 2</b>.'
