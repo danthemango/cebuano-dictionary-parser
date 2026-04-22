@@ -81,6 +81,14 @@ Describe Split-Links {
         $tokens[0].Content | Should -Be 'tangdì: v1'
         $tokens[0].Type | Should -Be "LINK"
     }
+
+    It "Should parse links with dangling number at end" {
+        $content = '= <span class="sc" lang="ceb"><a href="#abud">abud</a></span>, <i lang="ceb">n</i> 2.'
+        $textToken = Get-TextToken -Text $content
+        $tokens = Split-Links -Token $textToken
+        $tokens[0].Content | Should -Be 'abud: n 2'
+        $tokens[0].Type | Should -Be "LINK"
+    }
 }
 
 Describe Tokenize {
