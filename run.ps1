@@ -19,7 +19,10 @@ if (Test-Path "out\failed-parse.ndjson") {
 }
 
 # tokenize to file
-$parsed = $xml | .\src\Tokenize.ps1 -Limit $Limit -SearchWord $Word | ForEach-Object {
+$parsed = $xml | .\src\Tokenize.ps1 -Limit $Limit -SearchWord $Word | Where-Object {
+    # if the searchword is set, filter by word
+    return $Searchword -eq "" -or $Searchword -eq $_.Word
+} | ForEach-Object {
     $word = $_.Word
     $_.Tokens | ForEach-Object {
         [PSCustomObject]@{
@@ -50,8 +53,9 @@ if ($total_num -eq 0) {
     Write-Output "parsed $num_success / $total_num ($perc)%"
 }
 
+# if there's a searchword, output it cleanly for the one word
 if ($Searchword -ne "") {
-    $parsed | Where-Object Word -eq $Searchword | ConvertTo-Json -Depth 12 | Set-Content -Encoding utf8BOM ".\out\searchword.json"
+    $parsed | ConvertTo-Json -Depth 12 | Set-Content -Encoding utf8BOM ".\out\searchword.json"
     Write-Output "Saved to out\searchword.json"
 }
 
