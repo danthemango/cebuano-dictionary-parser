@@ -68,8 +68,8 @@ Describe Tokenize {
     }
 
     It "Should parse links with wordtype v" {
-        $textToken = Get-TextToken -Text '= <span class=\"sc\" lang=\"ceb\"><a href=\"#abaxga\">abága</a></span>, <i lang=\"ceb\">v</i>.'
+        $textToken = Get-TextToken -Text '= <span class="sc" lang="ceb"><a href="#abaxga">abága</a></span>, <i lang="ceb">v</i>.'
         $tokens = Tokenize -Token $textToken
-        $tokens | ConvertTo-Json -Compress | Should -Be ""
+        $tokens | ConvertTo-Json -Compress | Should -Be '{"Type":"LINK","Content":"abága, v"}'
     }
 }
