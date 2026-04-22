@@ -145,7 +145,7 @@ function Split-Types {
 # they may be separate conjugations listed with their own definitions (including definition types and numbers)
 # other words, variations, conjugations, affixes
 # <b lang="ceb">adtuúnun, aladtúun</b>
-function Split-Cebuano-Words {
+function Split-CebuanoWords {
     param (
         [Parameter(ValueFromPipeline = $true)]
         $Token
@@ -162,13 +162,13 @@ function Split-Cebuano-Words {
 # find cebuano phrases
 # e.g.:
 # <i lang=""ceb"">Dakúa uy!</i>
-function Split-Cebuano-Phrases {
+function Split-CebuanoPhrases {
     param (
         [Parameter(ValueFromPipeline = $true)]
         $Token
     )
     process {
-        $Token | Split-TokensByPattern -pattern '<i lang="ceb">(.*?)</i>' -tokenType "CEBPHRASE"
+        $Token | Split-TokensByPattern -pattern "<i lang=""ceb"">(.*?[,?!])</i>" -tokenType "CEBPHRASE"
     }
 }
 
@@ -369,6 +369,6 @@ function Tokenize {
         # notes:
         # - corr must be processed before splitting words, since it is usally inside of the word block
         # - split links must be processed before cebuano phrases because of some bad formatting (they use <i lang="ceb"> as a way to make the word "see" italic, e.g. in "see otherword")
-        $Token | Split-Classes | Split-Nums | Split-Links | Split-Cebuano-Words | Split-Types | Split-Cebuano-Phrases
+        $Token | Split-Classes | Split-Nums | Split-Links | Split-CebuanoWords | Split-Types | Split-CebuanoPhrases
     }
 }
