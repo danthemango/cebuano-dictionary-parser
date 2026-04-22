@@ -277,7 +277,7 @@ function Split-Classes {
 # remove corr elements, leaving the text contents if there are any non-numbers
 # <span class="corr" id="xd20e4931" title="Source: kunsididirasiyun">kunsidirasiyun</span>
 # <span class="corr" id="xd20e5140" title="Not in source"><sub>1</sub></span>
-function Strip-Corr {
+function Split-RemoveCorr {
     param (
         [Parameter(ValueFromPipeline = $true)]
         $Token
