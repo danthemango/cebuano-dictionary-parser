@@ -31,11 +31,13 @@ $parsed = $xml | .\src\Tokenize.ps1 -Limit $Limit -SearchWord $Searchword | Wher
 } | ForEach-Object {
     $word = $_.Word
     $_.Tokens | ForEach-Object {
-        [PSCustomObject]@{
-            Word = $word
-            Type = $_.Type
-            Content = $_.Content
-        } | Export-Csv -Encoding utf8BOM -Append -Path "out\tokenlist.csv"
+        if ($Searchword -eq "") {
+            [PSCustomObject]@{
+                Word = $word
+                Type = $_.Type
+                Content = $_.Content
+            } | Export-Csv -Encoding utf8BOM -Append -Path "out\tokenlist.csv"
+        }
     }
     $_
 } | ForEach-Object {
