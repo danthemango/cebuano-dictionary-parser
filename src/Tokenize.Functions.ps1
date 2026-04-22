@@ -187,8 +187,9 @@ function Split-Cebuano-Phrases {
 # = <span class="sc" lang="ceb"><a href="#balbal">balbal</a></span>.
 # short for <span class="sc" lang="ceb"><a href="#niadtu">niadtu</a></span>.
 # <i lang="ceb">see</i><span class="sc" lang="ceb"><a href="#abay">abay</a></span>.
-# = <span class=\"sc\" lang=\"ceb\"><a href=\"#abir\">abir</a></span>.
-# = <span class=""sc"" lang=""ceb""><a href=""#abir"">abir</a></span><b lang=""ceb"">1, 2</b>.
+# = <span class="sc" lang="ceb"><a href="#abir">abir</a></span>.
+# = <span class="sc" lang="ceb"><a href="#abir">abir</a></span><b lang="ceb">1, 2</b>.
+# = <span class="sc" lang="ceb"><a href="#abaxga">abága</a></span>, <i lang="ceb">v</i>.
 function Split-Links {
     param (
         [Parameter(ValueFromPipeline = $true)]
@@ -202,7 +203,8 @@ function Split-Links {
 
         # Capture the span separately; require a trailing period, and consume it (so it won't appear in output).
         # Group "span" is the span markup we want, the trailing dot is matched but not captured.
-        $pattern = '(?<span><span[^>]*class="sc"[^>]*>.*?</span>(?:<b[^>]*>.*?</b>)?)\s*\.'
+        # and may have a wordtype at the end (e.g. , <i lang=\"ceb\">v</i>.)
+        $pattern = "(?<span><span[^>]*class=""sc""[^>]*>.*?</span>(, )?(?:<[bi][^>]*>.+?</[bi]>)?)\s*\."
 
         $mymatches = [regex]::Matches($content, $pattern, $opts)
         if ($mymatches.Count -eq 0) { $Token; return }

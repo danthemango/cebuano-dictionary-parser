@@ -27,8 +27,8 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 - `Invoke-Pester`
 
 # Progress
-- First 100 words: ![91% Success](https://img.shields.io/badge/success-91%25-green "91% success")
-- First 1000 words: ![84% Success](https://img.shields.io/badge/success-84%25-green "84% success")
+- First 100 words: ![97% Success](https://img.shields.io/badge/success-97%25-green "97% success")
+- First 1000 words: ![87% Success](https://img.shields.io/badge/success-87%25-green "87% success")
 
 # TODO
 - [ ] it currently fails on links to specific types and numbers (e.g. "= -kung v, n 1,2,3" which says the definition is equal to the linked definitions but only the verb and 1, 2, and 3 of the noun definitions)
