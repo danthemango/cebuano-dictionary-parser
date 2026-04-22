@@ -1,10 +1,14 @@
 param (
     [int]$Limit = 100,
+    [string]$HtmlPath = "cebuano-dictionary-fixed.html",
     [string]$Searchword = "",
     [switch]$Passthru = $false
 )
 
-$xml = .\src\HTML-to-XML.ps1 -Path "cebuano-dictionary-fixed.html"
+[xml]$xml = Get-Content -Path $HtmlPath
+if (-not $xml) {
+    throw "could not parse $HtmlPath as xml"
+}
 
 if (Test-Path "out\tokenlist.csv") {
     Remove-Item "out\tokenlist.csv"
