@@ -1,8 +1,9 @@
 param (
-    [string] $inpath = ".\cebuano-dictionary.html"
-) 
+    [string]$Inpath = ".\cebuano-dictionary.html",
+    [string]$Outpath = ".\cebuano-dictionary-fixed.html"
+)
 
-$html = Get-Content $inpath -Raw
+$html = Get-Content $Inpath -Raw
 
 # Use SingleLine flag to make . match newlines too
 $options = [System.Text.RegularExpressions.RegexOptions]::Singleline
@@ -96,7 +97,7 @@ $html = $html -replace '&lt;', '&lt;'        # less than (already valid in XML)
 
 # Attempt to parse as XML to validate
 try {
-    $content = Get-Content -Path $inpath -Raw
+    $content = Get-Content -Inpath $Inpath -Raw
     [xml]$xml = $content
     Write-Host "HTML successfully parsed as XML!"
 }
@@ -111,5 +112,5 @@ Write-Host "  - Multi-line tags fixed"
 Write-Host "  - Common HTML entities converted to numeric form"
 
 # write back to file
-Set-Content -Path $inpath -Value $html -Encoding UTF8
-Write-Host "Fixed HTML written to $inpath"
+Set-Content -Inpath $Inpath -Value $html -Encoding UTF8
+Write-Host "Fixed HTML written to $Inpath"
