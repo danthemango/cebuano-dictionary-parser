@@ -50,6 +50,20 @@ Describe Split-Links {
         $tokens[0].Type | Should -Be "LINK"
         $tokens[0].Content | Should -Be 'abága, v'
     }
+
+    It "Should parse links with wordtype n and number 4" {
+        $content = '<i lang=\"ceb\">see</i><span class=\"sc\" lang=\"ceb\"><a href=\"#abay\">abay</a></span>, <i lang=\"ceb\">n</i><b lang=\"ceb\">4</b>.'
+        $textToken = Get-TextToken -Text $content
+        $tokens = Split-Links -Token $textToken
+        $tokens[0].Content | Should -Be "abay, n4"
+    }
+
+    It "Should parse links with wordtype n and number 4 in brackets" {
+        $content = '(<i lang=\"ceb\">see</i><span class=\"sc\" lang=\"ceb\"><a href=\"#abay\">abay</a></span>, <i lang=\"ceb\">n</i><b lang=\"ceb\">4</b>).'
+        $textToken = Get-TextToken -Text $content
+        $tokens = Split-Links -Token $textToken
+        # $tokens | Should -Be ""
+    }
 }
 
 Describe Tokenize {
