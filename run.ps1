@@ -1,13 +1,13 @@
 param (
     [int]$Limit = 100,
-    [string]$SearchWord = $null,
+    [string]$Searchword = "",
     [switch]$Passthru = $false
 )
 
 $xml = .\src\HTML-to-XML.ps1 -Path "cebuano-dictionary-fixed.html"
 
-if (Test-Path "out\tokenlist.ndjson") {
-    Remove-Item "out\tokenlist.ndjson"
+if (Test-Path "out\tokenlist.csv") {
+    Remove-Item "out\tokenlist.csv"
 }
 
 if (Test-Path "out\successful-parse.ndjson") {
@@ -19,7 +19,17 @@ if (Test-Path "out\failed-parse.ndjson") {
 }
 
 # tokenize to file
-$parsed = $xml | .\src\Tokenize.ps1 -Limit $Limit -SearchWord $SearchWord | ForEach-Object {
+$parsed = $xml | .\src\Tokenize.ps1 -Limit $Limit -SearchWord $Word | ForEach-Object {
+    $word = $_.Word
+    $_.Tokens | ForEach-Object {
+        [PSCustomObject]@{
+            Word = $word
+            Type = $_.Type
+            Content = $_.Content
+        } | Export-Csv -Encoding utf8BOM -Append -Path "out\tokenlist.csv"
+    }
+    $_
+} | ForEach-Object {
     .\src\Parse-WordDef.ps1 -Word $_
 } | ForEach-Object {
     if ($_.ParseOk) {
@@ -40,8 +50,8 @@ if ($total_num -eq 0) {
     Write-Output "parsed $num_success / $total_num ($perc)%"
 }
 
-if ($SearchWord -ne $null) {
-    $parsed | Where-Object Word -eq $SearchWord | ConvertTo-Json -Depth 12 | Set-Content -Encoding utf8BOM ".\out\searchword.json"
+if ($Searchword -ne "") {
+    $parsed | Where-Object Word -eq $Searchword | ConvertTo-Json -Depth 12 | Set-Content -Encoding utf8BOM ".\out\searchword.json"
     Write-Output "Saved to out\searchword.json"
 }
 
