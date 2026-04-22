@@ -192,6 +192,7 @@ function Split-Cebuano-Phrases {
 # = <span class="sc" lang="ceb"><a href="#abaxga">abága</a></span>, <i lang="ceb">v</i>.
 # <i lang="ceb">see</i><span class="sc" lang="ceb"><a href="#abay">abay</a></span>, <i lang="ceb">n</i><b lang="ceb">4</b>.
 # (<i lang="ceb">see</i><span class="sc" lang="ceb"><a href="#abay">abay</a></span>, <i lang="ceb">n</i><b lang="ceb">4</b>).
+# = <span class="sc" lang="ceb">tangdayan</span>.
 function Split-Links {
     param (
         [Parameter(ValueFromPipeline = $true)]
