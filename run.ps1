@@ -10,20 +10,22 @@ if (-not $xml) {
     throw "could not parse $HtmlPath as xml"
 }
 
-if (Test-Path "out\tokenlist.csv") {
-    Remove-Item "out\tokenlist.csv"
-}
+if ($Searchword -eq "") {
+    if (Test-Path "out\tokenlist.csv") {
+        Remove-Item "out\tokenlist.csv"
+    }
 
-if (Test-Path "out\successful-parse.ndjson") {
-    Remove-Item "out\successful-parse.ndjson"
-}
+    if (Test-Path "out\successful-parse.ndjson") {
+        Remove-Item "out\successful-parse.ndjson"
+    }
 
-if (Test-Path "out\failed-parse.ndjson") {
-    Remove-Item "out\failed-parse.ndjson"
+    if (Test-Path "out\failed-parse.ndjson") {
+        Remove-Item "out\failed-parse.ndjson"
+    }
 }
 
 # tokenize to file
-$parsed = $xml | .\src\Tokenize.ps1 -Limit $Limit -SearchWord $Word | Where-Object {
+$parsed = $xml | .\src\Tokenize.ps1 -Limit $Limit -SearchWord $Searchword | Where-Object {
     # if the searchword is set, filter by word
     return $Searchword -eq "" -or $Searchword -eq $_.Word
 } | ForEach-Object {
@@ -39,10 +41,12 @@ $parsed = $xml | .\src\Tokenize.ps1 -Limit $Limit -SearchWord $Word | Where-Obje
 } | ForEach-Object {
     .\src\Parse-WordDef.ps1 -Word $_
 } | ForEach-Object {
-    if ($_.ParseOk) {
-        $_ | ConvertTo-Json -Depth 12 -Compress | Add-Content -Encoding UTF8 -Path "out\successful-parse.ndjson"
-    } else {
-        $_ | ConvertTo-Json -Depth 12 -Compress | Add-Content -Encoding UTF8 -Path "out\failed-parse.ndjson"
+    if ($Searchword -eq "") {
+        if ($_.ParseOk) {
+            $_ | ConvertTo-Json -Depth 12 -Compress | Add-Content -Encoding UTF8 -Path "out\successful-parse.ndjson"
+        } else {
+            $_ | ConvertTo-Json -Depth 12 -Compress | Add-Content -Encoding UTF8 -Path "out\failed-parse.ndjson"
+        }
     }
     $_
 }
