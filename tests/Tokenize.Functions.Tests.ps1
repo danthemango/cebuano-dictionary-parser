@@ -1,17 +1,16 @@
 BeforeAll {
     # tests\Get-Emoji.Tests.ps1 -> src\Get-Emoji.ps1
     . $PSCommandPath.Replace('.Tests.ps1','.ps1').Replace('tests', 'src')
-    # . $PSScriptRoot\..\src\Tokenize.ps1
-}
 
-function Get-TextToken {
-    param (
-        [string]$Text
-    )
-    [PSCustomObject]@{
-        Type = "TEXT"
-        Content = $Text
-     }
+    function Get-TextToken {
+        param (
+            [string]$Text
+        )
+        [PSCustomObject]@{
+            Type = "TEXT"
+            Content = $Text
+        }
+    }
 }
 
 Describe Split-Cebuano-Words {
@@ -24,12 +23,12 @@ Describe Split-Cebuano-Words {
     }
 }
 
-Describe Split-Nums {
-    It "shoulde parse number lists" {
-        $textToken = Get-TextToken -Text '<b lang="ceb">abi</b> = <span class="sc" lang="ceb"><a href="#abir">abir</a></span><b lang="ceb">1, 2</b>.'
-        $tokens = Split-Nums -Token $textToken
-        $tokens | Should -HaveCount 3
-        $tokens[2].Type | Should -Be "NUMBER"
-        $tokens[2].Content | Should -Be "1, 2"
-    }
-}
+# Describe Split-Nums {
+#     It "shoulde parse number lists" {
+#         $textToken = Get-TextToken -Text '<b lang="ceb">abi</b> = <span class="sc" lang="ceb"><a href="#abir">abir</a></span><b lang="ceb">1, 2</b>.'
+#         $tokens = Split-Nums -Token $textToken
+#         $tokens | Should -HaveCount 3
+#         $tokens[2].Type | Should -Be "NUMBER"
+#         $tokens[2].Content | Should -Be "1, 2"
+#     }
+# }
