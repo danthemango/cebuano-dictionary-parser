@@ -74,7 +74,15 @@
     },
     {
       "Type": "TEXT",
-      "Content": "s.o. might think that. <i lang=\"ceb\">Súkul. ábi na lang, daug.</i> Fight back. They might think you give up."
+      "Content": "s.o. might think that."
+    },
+    {
+      "Type": "CEBPHRASE",
+      "Content": "Súkul. ábi na lang, daug."
+    },
+    {
+      "Type": "TEXT",
+      "Content": "Fight back. They might think you give up."
     }
   ],
   "Word": "ábi",

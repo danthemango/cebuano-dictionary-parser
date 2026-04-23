@@ -161,14 +161,19 @@ function Split-CebuanoWords {
 
 # find cebuano phrases
 # e.g.:
-# <i lang=""ceb"">Dakúa uy!</i>
+# <i lang="ceb">Dakúa uy!</i>
+# <i lang="ceb">Abáhu (báhu) <span class="corr" id="xd20e4931" title="Source: kunsididirasiyun">kunsidirasiyun</span> ku sa ákung bána,</i> I am bound by my husband’’s decisions.
+# <i lang="ceb">Lagmit hiligsan ang bátà kay nag-abay sa tartanilya,</i>
 function Split-CebuanoPhrases {
     param (
         [Parameter(ValueFromPipeline = $true)]
         $Token
     )
     process {
-        $Token | Split-TokensByPattern -pattern "<i lang=""ceb"">(.*?[,?!])</i>" -tokenType "CEBPHRASE"
+        # note: this regex uses the negative lookahead: (?:(?!</i>).)*?
+        # it's the 0 or more lazy quantifier with non-capturing group containing negative lookahead </i>
+        # meaning: "capture any text as long as it's not </i>
+        $Token | Split-TokensByPattern -pattern '<i lang="ceb">((?:(?!</i>).)*?[,!?\.])</i>' -tokenType "CEBPHRASE"
     }
 }
 
@@ -204,13 +209,12 @@ function Split-Links {
         if ($Token.Type -ne "TEXT") { $Token; return }
 
         $content = $Token.Content
-        $opts = [System.Text.RegularExpressions.RegexOptions]::Singleline
 
         # capture the entire link block, including optional "see", "short for", or "=" at the beginning, and optional wordtype and numbers at the end, and optional parentheses around the whole thing, and an optional period at the end.
-        # note, edit this with regex101 
+        # see https://regex101.com/r/791KzX/1
         $pattern = "[(]?(= |short for |<i lang=""ceb"">see</i>|)?<span class=""sc"" lang=""ceb"">(<a href=""#.*?"">)?(?<name>.*?)(</a>)?</span>(, )?(<i lang=""ceb"">(?<wordtype>[avn])</i>)?(<b lang=""ceb"">(?<numbers>[0-9, ]+)</b>)?[)]?(<i lang=""ceb"">(?<numbers>.*?)\.?</i>| ?(?<numbers>\d)?\.)"
 
-        $mymatches = [regex]::Matches($content, $pattern, $opts)
+        $mymatches = [regex]::Matches($content, $pattern, [System.Text.RegularExpressions.RegexOptions]::Singleline)
         if ($mymatches.Count -eq 0) { $Token; return }
 
         $pos = 0
@@ -280,6 +284,28 @@ function Split-Classes {
     process {
         $pattern = '<span class="rm">(.*?)</span>'
         $Token | Split-TokensByPattern -pattern $pattern -tokenType "CLASS"
+    }
+}
+
+<#
+.SYNOPSIS
+    find and replace elements which appear like a cebphrase, but don't have a comma at the end of text inside the <i>, as expected.
+.DESCRIPTION
+    the problem is that these elements are put in an <i> element like a cebuano phrase, but are usually just one-off examples of a cebuano word in a definition (or a gloss?)
+.NOTES
+    this must happen after Split-Links, since they tagged the word "See" as if it is a cebuano phrase incorrectly.
+#>
+function Update-ChangeCebWord {
+    param (
+        [Parameter(ValueFromPipeline = $true)]
+        $Token
+    )
+    process {
+        if ($Token.Type -ne "TEXT") { $Token; return }
+        # if there is no comma at the end inside of the tags,
+        # replace lang="ceb" with lang="cebword"
+        $Token.Content = [regex]::Replace($Token.Content, '<i lang="ceb">(?<content>(?:(?!</i>).)*?[^,!?\.])</i>', '<i lang="cebword">${content}</i>')
+        $Token
     }
 }
 
@@ -369,6 +395,6 @@ function Tokenize {
         # notes:
         # - corr must be processed before splitting words, since it is usally inside of the word block
         # - split links must be processed before cebuano phrases because of some bad formatting (they use <i lang="ceb"> as a way to make the word "see" italic, e.g. in "see otherword")
-        $Token | Split-Classes | Split-Nums | Split-Links | Split-CebuanoWords | Split-Types | Split-CebuanoPhrases
+        $Token | Split-Classes | Split-Nums | Split-Links | Split-CebuanoWords | Split-Types | Update-ChangeCebWord | Split-CebuanoPhrases
     }
 }

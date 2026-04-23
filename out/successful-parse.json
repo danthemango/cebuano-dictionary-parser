@@ -723,11 +723,11 @@
       },
       {
         "Type": "TEXT",
-        "Content": "(from"
+        "Content": "(from <i lang=\"cebword\">sábà dihà untuy</i>) shut up!"
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "sábà dihà untuy</i>) shut up! <i lang=\"ceb\">ábà tuy, maáyu ka lang sa tayáda, wà kay tadtad,"
+        "Content": "ábà tuy, maáyu ka lang sa tayáda, wà kay tadtad,"
       },
       {
         "Type": "TEXT",
@@ -740,11 +740,11 @@
       "DefEx": {
         "Def": {
           "Type": "TEXT",
-          "Content": "(from"
+          "Content": "(from <i lang=\"cebword\">sábà dihà untuy</i>) shut up!"
         },
         "Examples": [
           {
-            "Phrase": "sábà dihà untuy</i>) shut up! <i lang=\"ceb\">ábà tuy, maáyu ka lang sa tayáda, wà kay tadtad,",
+            "Phrase": "ábà tuy, maáyu ka lang sa tayáda, wà kay tadtad,",
             "Gloss": "Shut up! You’re great at talking, but let’s see you do s.t."
           }
         ]
@@ -2356,7 +2356,7 @@
       },
       {
         "Type": "TEXT",
-        "Content": "k.o. rattan used as anchor rope for a <i lang=\"ceb\">búbu</i> fish trap."
+        "Content": "k.o. rattan used as anchor rope for a <i lang=\"cebword\">búbu</i> fish trap."
       }
     ],
     "Word": "abangan<span class=\"corr\" id=\"xd20e5164\" title=\"Not in source\"><sub>2</sub></span>",
@@ -2369,7 +2369,7 @@
           "DefEx": {
             "Def": {
               "Type": "TEXT",
-              "Content": "k.o. rattan used as anchor rope for a <i lang=\"ceb\">búbu</i> fish trap."
+              "Content": "k.o. rattan used as anchor rope for a <i lang=\"cebword\">búbu</i> fish trap."
             },
             "Examples": []
           }
@@ -3981,11 +3981,11 @@
       },
       {
         "Type": "TEXT",
-        "Content": "have a snake born at the same time one is born. The snake is called one’s twin ("
+        "Content": "have a snake born at the same time one is born. The snake is called one’s twin (<i lang=\"cebword\">kalúha</i>) and is supposed to bring him and his family luck."
       },
       {
         "Type": "CEBPHRASE",
-        "Content": "kalúha</i>) and is supposed to bring him and his family luck. <i lang=\"ceb\">Pagkatáwu sa ákung iyaan, giabayan (giabyan) ug sawa. Mau nang nadátù ang íyang inahan,"
+        "Content": "Pagkatáwu sa ákung iyaan, giabayan (giabyan) ug sawa. Mau nang nadátù ang íyang inahan,"
       },
       {
         "Type": "TEXT",
@@ -4041,7 +4041,7 @@
       },
       {
         "Type": "TEXT",
-        "Content": "attach a gaff in the <i lang=\"ceb\">abay</i> way"
+        "Content": "attach a gaff in the <i lang=\"cebword\">abay</i> way"
       },
       {
         "Type": "LINK",
@@ -4089,7 +4089,7 @@
       },
       {
         "Type": "TEXT",
-        "Content": "title used by males of the same age to each other. <i lang=\"ceb\">short form:</i>"
+        "Content": "title used by males of the same age to each other. <i lang=\"cebword\">short form:</i>"
       },
       {
         "Type": "CEBWORD",
@@ -4245,11 +4245,11 @@
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
-                  "Content": "have a snake born at the same time one is born. The snake is called one’s twin ("
+                  "Content": "have a snake born at the same time one is born. The snake is called one’s twin (<i lang=\"cebword\">kalúha</i>) and is supposed to bring him and his family luck."
                 },
                 "Examples": [
                   {
-                    "Phrase": "kalúha</i>) and is supposed to bring him and his family luck. <i lang=\"ceb\">Pagkatáwu sa ákung iyaan, giabayan (giabyan) ug sawa. Mau nang nadátù ang íyang inahan,",
+                    "Phrase": "Pagkatáwu sa ákung iyaan, giabayan (giabyan) ug sawa. Mau nang nadátù ang íyang inahan,",
                     "Gloss": "When my aunt was born, a twin snake was born with her, and so her mother became rich."
                   }
                 ]
@@ -4293,7 +4293,7 @@
                 "Def": [
                   {
                     "Type": "TEXT",
-                    "Content": "attach a gaff in the <i lang=\"ceb\">abay</i> way"
+                    "Content": "attach a gaff in the <i lang=\"cebword\">abay</i> way"
                   },
                   {
                     "Type": "LINK",
@@ -4350,7 +4350,7 @@
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
-                  "Content": "title used by males of the same age to each other. <i lang=\"ceb\">short form:</i>"
+                  "Content": "title used by males of the same age to each other. <i lang=\"cebword\">short form:</i>"
                 },
                 "Examples": []
               }
@@ -8540,7 +8540,7 @@
       },
       {
         "Type": "TEXT",
-        "Content": "Whoever dances the <i lang=\"ceb\">tinikling</i> has to have nimble feet."
+        "Content": "Whoever dances the <i lang=\"cebword\">tinikling</i> has to have nimble feet."
       },
       {
         "Type": "NUMBER",
@@ -8681,7 +8681,7 @@
                 "Examples": [
                   {
                     "Phrase": "Ang musáyaw sa tinikling kinahanglang abtik ug tiil,",
-                    "Gloss": "Whoever dances the <i lang=\"ceb\">tinikling</i> has to have nimble feet."
+                    "Gloss": "Whoever dances the <i lang=\"cebword\">tinikling</i> has to have nimble feet."
                   }
                 ]
               }
@@ -9614,7 +9614,7 @@
       },
       {
         "Type": "TEXT",
-        "Content": "k.o. head louse lighter in color and with a longer and more slender body than the ordinary head louse (<i lang=\"ceb\">kútu</i>)."
+        "Content": "k.o. head louse lighter in color and with a longer and more slender body than the ordinary head louse (<i lang=\"cebword\">kútu</i>)."
       }
     ],
     "Word": "ábud<sub>3</sub>",
@@ -9627,7 +9627,7 @@
           "DefEx": {
             "Def": {
               "Type": "TEXT",
-              "Content": "k.o. head louse lighter in color and with a longer and more slender body than the ordinary head louse (<i lang=\"ceb\">kútu</i>)."
+              "Content": "k.o. head louse lighter in color and with a longer and more slender body than the ordinary head louse (<i lang=\"cebword\">kútu</i>)."
             },
             "Examples": []
           }
@@ -10333,7 +10333,7 @@
       },
       {
         "Type": "TEXT",
-        "Content": "dumb lawyer (play on the words <i lang=\"ceb\">abugádu</i> ‘lawyer’ and <i lang=\"ceb\">gágu</i> ‘stupid’)."
+        "Content": "dumb lawyer (play on the words <i lang=\"cebword\">abugádu</i> ‘lawyer’ and <i lang=\"cebword\">gágu</i> ‘stupid’)."
       }
     ],
     "Word": "abugágu",
@@ -10346,7 +10346,7 @@
           "DefEx": {
             "Def": {
               "Type": "TEXT",
-              "Content": "dumb lawyer (play on the words <i lang=\"ceb\">abugádu</i> ‘lawyer’ and <i lang=\"ceb\">gágu</i> ‘stupid’)."
+              "Content": "dumb lawyer (play on the words <i lang=\"cebword\">abugádu</i> ‘lawyer’ and <i lang=\"cebword\">gágu</i> ‘stupid’)."
             },
             "Examples": []
           }
