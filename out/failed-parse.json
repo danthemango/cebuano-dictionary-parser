@@ -1,117 +1,3308 @@
-﻿{
-  "Tokens": [
-    {
-      "Type": "CEBWORD",
-      "Content": "ábi"
-    },
-    {
-      "Type": "NUMBER",
-      "Content": "1"
-    },
-    {
-      "Type": "TEXT",
-      "Content": "<b lang=\"ceb\">—"
-    },
-    {
-      "Type": "CLASS",
-      "Content": "[<i lang=\"ceb\">gen.</i>]"
-    },
-    {
-      "Type": "TEXT",
-      "Content": "</b> [gen.] thought, took for granted."
-    },
-    {
-      "Type": "CEBPHRASE",
-      "Content": "ábi nákug tinúud,"
-    },
-    {
-      "Type": "TEXT",
-      "Content": "I thought it was true."
-    },
-    {
-      "Type": "CEBWORD",
-      "Content": "— nímu"
-    },
-    {
-      "Type": "TEXT",
-      "Content": "<a id=\"xd20e5830\"></a> You know what?"
-    },
-    {
-      "Type": "CEBPHRASE",
-      "Content": "ábi nímu? Nakit-an ku siya nga láig kúyug,"
-    },
-    {
-      "Type": "TEXT",
-      "Content": "You know what? I saw him going out with s.o. else."
-    },
-    {
-      "Type": "NUMBER",
-      "Content": "2"
-    },
-    {
-      "Type": "CEBWORD",
-      "Content": "— kay"
-    },
-    {
-      "Type": "TEXT",
-      "Content": "just because."
-    },
-    {
-      "Type": "CEBPHRASE",
-      "Content": "ábi kay nakadaug sa byúti kuntis midakù na ang úlu,"
-    },
-    {
-      "Type": "TEXT",
-      "Content": "Just because she won the beauty contest she thinks she is s.t."
-    },
-    {
-      "Type": "NUMBER",
-      "Content": "3"
-    },
-    {
-      "Type": "CEBWORD",
-      "Content": "— na lang"
-    },
-    {
-      "Type": "TEXT",
-      "Content": "s.o. might think that."
-    },
-    {
-      "Type": "CEBPHRASE",
-      "Content": "Súkul. ábi na lang, daug."
-    },
-    {
-      "Type": "TEXT",
-      "Content": "Fight back. They might think you give up."
-    }
-  ],
-  "Word": "ábi",
-  "WordDef": {
-    "Word": "ábi",
-    "NumberedDefs": [
+﻿[
+  {
+    "Tokens": [
       {
-        "Number": "1",
+        "Type": "CEBWORD",
+        "Content": "ábi"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "<b lang=\"ceb\">—"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[<i lang=\"ceb\">gen.</i>]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "</b> [gen.] thought, took for granted."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "ábi nákug tinúud,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I thought it was true."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— nímu"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "<a id=\"xd20e5830\"></a> You know what?"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "ábi nímu? Nakit-an ku siya nga láig kúyug,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "You know what? I saw him going out with s.o. else."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— kay"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "just because."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "ábi kay nakadaug sa byúti kuntis midakù na ang úlu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Just because she won the beauty contest she thinks she is s.t."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— na lang"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "s.o. might think that."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Súkul. ábi na lang, daug."
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Fight back. They might think you give up."
+      }
+    ],
+    "Word": "ábi",
+    "WordDef": {
+      "Word": "ábi",
+      "NumberedDefs": [
+        {
+          "Number": "1",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "<b lang=\"ceb\">—"
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": [
+      {
+        "Index": 3,
+        "Message": "Trailing token after WORDDEF: CLASS",
+        "Token": {
+          "Type": "CLASS",
+          "Content": "[<i lang=\"ceb\">gen.</i>]"
+        }
+      }
+    ],
+    "Raw": "<b lang=\"ceb\">ábi</b><b>1</b><b lang=\"ceb\">— <span class=\"rm\">[<i lang=\"ceb\">gen.</i>]</span></b> [gen.] thought, took for granted. <i lang=\"ceb\">ábi nákug tinúud,</i> I thought it was true. <b lang=\"ceb\">— nímu</b><a id=\"xd20e5830\"></a> You know what? <i lang=\"ceb\">ábi nímu? Nakit-an ku siya nga láig kúyug,</i> You know what? I saw him going out with s.o. else. <b>2</b><b lang=\"ceb\">— kay</b> just because. <i lang=\"ceb\">ábi kay nakadaug sa byúti kuntis midakù na ang úlu,</i> Just because she won the beauty contest she thinks she is s.t. <b>3</b><b lang=\"ceb\">— na lang</b> s.o. might think that. <i lang=\"ceb\">Súkul. ábi na lang, daug.</i> Fight back. They might think you give up."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "ábung<sub>1</sub>"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; c]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "bar, block the way."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abúngan ta ning karsádag dakung batu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Let’s block the road with a big stone."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "k.o. fishing equipment consisting of dried coconut leaves tied to a raft."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "(→)"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "s.t. which blocks the way."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ang káhuy nga abung sa pultahan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The wood that was blocking the door."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "in the path of the wind, smoke, smells, and the like."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abung sa hángin,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Exposed to the wind."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abung ka kaáyu sa íyang dautang tingúhà,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "You are very much exposed to his evil powers."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "pa-(→), pa-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A13; ac]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "put in an exposed position."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ug magpaabung ka sa sílit sa túbig, mahumud ka,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "If you put yourself in the path of a jet of water, you’ll get wet."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Paabungig asu ang mangga,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "(Make the fire so that) the mango tree will be in the path of the smoke."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "k.o. fishing whereby a net is set across the path of a fish."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[a]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "give allowance in measuring s.t."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Paabungan ug diyútay ang sukud ígù pagsipilya,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Measure it with a little allowance for planing."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Mutíru gánì kag langgam nga naglupad paabungig diyútay,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "If you shoot at a flying bird, aim a little ahead."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "paN-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "do s.t. in anticipation of a favor or reward."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Buútan nà siya run kay nangábung man nga hitagaan ug diyis,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He’s obedient this time because he’s anticipating getting a dime."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "preparation of oil and plants medicinal roots and herbs used as a protection against some evil.†"
+      }
+    ],
+    "Word": "ábung<sub>1</sub>",
+    "WordDef": {
+      "Word": "ábung<sub>1</sub>",
+      "WordTypeDefs": [
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A; c]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "bar, block the way."
+            },
+            "Examples": [
+              {
+                "Phrase": "Abúngan ta ning karsádag dakung batu,",
+                "Gloss": "Let’s block the road with a big stone."
+              }
+            ]
+          }
+        },
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "k.o. fishing equipment consisting of dried coconut leaves tied to a raft."
+            },
+            "Examples": []
+          }
+        }
+      ],
+      "Conjugations": [
+        {
+          "Word": "(→)",
+          "WordTypeDefs": [
+            {
+              "WordType": "n",
+              "Classes": [],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "s.t. which blocks the way."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Ang káhuy nga abung sa pultahan,",
+                    "Gloss": "The wood that was blocking the door."
+                  }
+                ]
+              }
+            },
+            {
+              "WordType": "a",
+              "Classes": [],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "in the path of the wind, smoke, smells, and the like."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Abung sa hángin,",
+                    "Gloss": "Exposed to the wind."
+                  },
+                  {
+                    "Phrase": "Abung ka kaáyu sa íyang dautang tingúhà,",
+                    "Gloss": "You are very much exposed to his evil powers."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "Word": "pa-(→), pa-",
+          "WordTypeDefs": [
+            {
+              "WordType": "v",
+              "Classes": [],
+              "NumberedDefs": [
+                {
+                  "Number": "1",
+                  "DefEx": {
+                    "Def": {
+                      "Type": "TEXT",
+                      "Content": "put in an exposed position."
+                    },
+                    "Examples": [
+                      {
+                        "Phrase": "Ug magpaabung ka sa sílit sa túbig, mahumud ka,",
+                        "Gloss": "If you put yourself in the path of a jet of water, you’ll get wet."
+                      },
+                      {
+                        "Phrase": "Paabungig asu ang mangga,",
+                        "Gloss": "(Make the fire so that) the mango tree will be in the path of the smoke."
+                      }
+                    ]
+                  },
+                  "Class": "[A13; ac]"
+                }
+              ]
+            },
+            {
+              "WordType": "n",
+              "Classes": [],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "k.o. fishing whereby a net is set across the path of a fish."
+                },
+                "Examples": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 30,
+    "ParseDiagnostics": [
+      {
+        "Index": 30,
+        "Message": "Trailing token after WORDDEF: NUMBER",
+        "Token": {
+          "Type": "NUMBER",
+          "Content": "2"
+        }
+      }
+    ],
+    "Raw": "<b lang=\"ceb\">ábung<sub>1</sub></b><i>v</i><span class=\"rm\">[A; c]</span> bar, block the way. <i lang=\"ceb\">Abúngan ta ning karsádag dakung batu,</i> Let’s block the road with a big stone. <i>n</i> k.o. fishing equipment consisting of dried coconut leaves tied to a raft. <b lang=\"ceb\">(→)</b><i>n</i> s.t. which blocks the way. <i lang=\"ceb\">Ang káhuy nga abung sa pultahan,</i> The wood that was blocking the door. <i>a</i> in the path of the wind, smoke, smells, and the like. <i lang=\"ceb\">Abung sa hángin,</i> Exposed to the wind. <i lang=\"ceb\">Abung ka kaáyu sa íyang dautang tingúhà,</i> You are very much exposed to his evil powers. <b lang=\"ceb\">pa-(→), pa-</b><i>v</i><b>1</b><span class=\"rm\">[A13; ac]</span> put in an exposed position. <i lang=\"ceb\">Ug magpaabung ka sa sílit sa túbig, mahumud ka,</i> If you put yourself in the path of a jet of water, you’ll get wet. <i lang=\"ceb\">Paabungig asu ang mangga,</i> (Make the fire so that) the mango tree will be in the path of the smoke. <i>n</i> k.o. fishing whereby a net is set across the path of a fish. <b>2</b><span class=\"rm\">[a]</span> give allowance in measuring s.t. <i lang=\"ceb\">Paabungan ug diyútay ang sukud ígù pagsipilya,</i> Measure it with a little allowance for planing. <i lang=\"ceb\">Mutíru gánì kag langgam nga naglupad paabungig diyútay,</i> If you shoot at a flying bird, aim a little ahead. <b lang=\"ceb\">paN-</b><i>v</i><span class=\"rm\">[A2]</span> do s.t. in anticipation of a favor or reward. <i lang=\"ceb\">Buútan nà siya run kay nangábung man nga hitagaan ug diyis,</i> He’s obedient this time because he’s anticipating getting a dime. <i>n</i> preparation of oil and plants medicinal roots and herbs used as a protection against some evil.†"
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abungaw<sub>1</sub>"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "k.o. tiny, light brown insect which swarms over food and the like, similar in appearance to a fly."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[a4]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be infested with"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "abungaw."
+      }
+    ],
+    "Word": "abungaw<sub>1</sub>",
+    "WordDef": {
+      "Word": "abungaw<sub>1</sub>",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "k.o. tiny, light brown insect which swarms over food and the like, similar in appearance to a fly."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[a4]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "be infested with"
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": [
+      {
+        "Index": 6,
+        "Message": "Trailing token after WORDDEF: CEBPHRASE",
+        "Token": {
+          "Type": "CEBPHRASE",
+          "Content": "abungaw."
+        }
+      }
+    ],
+    "Raw": "<b id=\"abungaw\" lang=\"ceb\">abungaw<sub>1</sub></b><i>n</i> k.o. tiny, light brown insect which swarms over food and the like, similar in appearance to a fly. <i>v</i><span class=\"rm\">[a4]</span> be infested with <i lang=\"ceb\">abungaw.</i>"
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "aburídu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— ang úlu, pangísip"
+      },
+      {
+        "Type": "TEXT",
+        "Content": ", etc. be upset, irritable."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be upset."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Kadtung ímung tahù nakaaburídu (nakapaaburídu) sa ákung úlu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Your news got me all upset."
+      }
+    ],
+    "Word": "aburídu",
+    "WordDef": null,
+    "ParseOk": false,
+    "ParseNextIndex": 0,
+    "ParseDiagnostics": [
+      {
+        "Index": 2,
+        "Message": "DEF: unexpected CEBWORD",
+        "Token": {
+          "Type": "CEBWORD",
+          "Content": "— ang úlu, pangísip"
+        }
+      }
+    ],
+    "Raw": "<b id=\"aburixdu\" lang=\"ceb\">aburídu</b><i>a</i><b lang=\"ceb\">— ang úlu, pangísip</b>, etc. be upset, irritable. <i>v</i><span class=\"rm\">[B]</span> be upset. <i lang=\"ceb\">Kadtung ímung tahù nakaaburídu (nakapaaburídu) sa ákung úlu,</i> Your news got me all upset."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abut"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "arrive, reach a place."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Dì pa makaabut (maabut) ang suwat,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The letter won’t have arrived yet."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Duul ra. Maabut ug lud-an,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "It’s close by, within spitting distance (can be reached by spitting)."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1a"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; ac]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "lead to and reach a place."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Muabut ba ning karsadáha sa subà?"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Does this road reach the river?"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Kining lugára dílì abutun sa táub,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The tide doesn’t get as far as this place."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1b"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; ac]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "reach s.t. with the arms."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Maabut ba nímu ang sanga?"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Can you reach the branch?"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Iabut kunu nang ímung kamut sa bungbung,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Reach your hands out to the wall."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1c"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B; b4]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "reach an amount, last a certain length."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ang ákung swildu dílì muabut ug dus mil,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "My salary doesn’t reach two thousand."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Walà abtig duha ka adlaw ang bugas,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The rice did not last two days."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1d"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— sa hunàhúnà"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "come to the mind."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1e"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[b4]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "receive money."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abtan (abutan) ku tingálig kwarta rung hápun,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I’ll probably get my money this afternoon."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[a4]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "have a feeling come over one."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Giabut siyag kakulbà,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "A feeling of terror came over her."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3a"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A23; b4]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "catch s.o. doing s.t."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Si Turyuy nakaabut nílang nagháluk,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "It was Torio who came upon them kissing."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3b"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[b4]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be overtaken."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abtan kag gabíi sa dálan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "You will be overtaken by night on the road."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "4"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2; b4]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "come to an orgasm."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Dílì giyud muabut ang lamì,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "She won’t have an orgasm. (The delicious feeling will not arrive.)"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abtan ra gihápun síya basta maningkámut ang duruha,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "She will have an orgasm if both try their best."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "5"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A23]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "for an event or season of the year to come around."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Dì na madúgay muabut na ang Pasku,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "It won’t be long before Christmas comes."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "6"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A12; b]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be on time for s.t."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nakaabut ka ba sa panahun sa Katsílà?"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Do you go back as far as the Spanish times?"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Maabtan pa nímu ang barku,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "You can still catch the boat."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "7a"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A12; a1]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "afford to pay for s.t."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Dì ku makaabut ug palit niánà,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I can’t afford to buy that."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Wà siyay ikaabut sa báyad,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He has no funds to meet the payments with."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "7b"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[a3]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "can be done, reached."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Tabángan tikaw kútub sa ákung maabut,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I’ll help you as much as I can."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "8"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; b6]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "stay temporarily some place."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Háin man ka mag-abut run?"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Where are you staying now?"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "s.t. or s.o. that has arrived s.w."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Dílì ni karáan uy. Bag-u ning abut,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "This is not old stock. It just arrived."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Bag-u kung abut dinhi. Wà pa ku kadumdum,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I am a newcomer here. I don’t know how to get there."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "yield, proceeds from an effort, income, harvest."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Pilay abut sa yútà káda túig?"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "How much does the land yield each year?"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Gamay rag abut ang munisipyu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The town has a small income."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "(←)"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[C; ac]"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "meet together."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abútun nákù ang duha ka tumuy,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I will make the two ends meet."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Mau kadtung lugára ang ámung gikaabútan (gipanag-abútan),"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "That is the place where we met."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "overlap in time."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nag-ábut na man gánì ang sinanggì karun ug sa miáging túig,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "This year’s corn crop overlaps with last year’s. (I.e., this year’s crop was harvested before last year’s crop had been used up.)"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A13]"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— ang ginháwa"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be panting for breath (gasps of breath overlap)."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Giúyug siya sa ubu. Nag-ábut ang íyang pagginháwa,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He was shaken by his coughing fit. He was panting for breath."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "pa-(←)"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "wait in expectation for."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Dì na ku mupaábut sa kumbira,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I won’t wait for the party."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Paabútun tikaw hangtud sa alas kwatru,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I’ll wait for you until four o’clock."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "abut-abut"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A3; b6]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "arrive in close succession."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nag-abut-abut ang mga bisíta,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Visitors came one after another."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "abut-ábut"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A3; b6]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "go every now and then."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nag-abut-ábut nà siya sa Hungkung,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "She goes to Hong Kong often."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "siN-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A13]"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "for a time, event to approach."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nagsingabut ang pista,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The fiesta is approaching."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "for one’s time of the month to approach."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nagsingabut na, maung saputun,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "She’s in a bad mood because her time of the month is approaching."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be in expectations of, look forward to."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nagsingabut ku nga mahuman ang trabáhug sayu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I’m expecting to finish the work early."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "-l-un(←)"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "subject to periodic attacks of an illness."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "s.o. who has the fortune of getting a large yield from an effort."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "alabtan, abtanan"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "place one usually stays temporarily."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "-l-an-(←)"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "LINK",
+        "Content": "abtanan"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "place one meets s.o. else."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "um-r-(←), um-l-(←), tali-, tali-(←), sali-, sali-(←)"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "about to arrive."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "May umaábut (umalábut, taliabut, taliábut, saliabut, saliábut) nga mga bisíta,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "There are some visitors about to arrive.†"
+      }
+    ],
+    "Word": "abut",
+    "WordDef": {
+      "Word": "abut",
+      "WordTypeDefs": [
+        {
+          "WordType": "v",
+          "Classes": [],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "arrive, reach a place."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Dì pa makaabut (maabut) ang suwat,",
+                    "Gloss": "The letter won’t have arrived yet."
+                  },
+                  {
+                    "Phrase": "Duul ra. Maabut ug lud-an,",
+                    "Gloss": "It’s close by, within spitting distance (can be reached by spitting)."
+                  }
+                ]
+              },
+              "Class": "[A; a12]"
+            },
+            {
+              "Number": "1a",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "lead to and reach a place."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Muabut ba ning karsadáha sa subà?",
+                    "Gloss": "Does this road reach the river?"
+                  },
+                  {
+                    "Phrase": "Kining lugára dílì abutun sa táub,",
+                    "Gloss": "The tide doesn’t get as far as this place."
+                  }
+                ]
+              },
+              "Class": "[A; ac]"
+            },
+            {
+              "Number": "1b",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "reach s.t. with the arms."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Maabut ba nímu ang sanga?",
+                    "Gloss": "Can you reach the branch?"
+                  },
+                  {
+                    "Phrase": "Iabut kunu nang ímung kamut sa bungbung,",
+                    "Gloss": "Reach your hands out to the wall."
+                  }
+                ]
+              },
+              "Class": "[A; ac]"
+            },
+            {
+              "Number": "1c",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "reach an amount, last a certain length."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Ang ákung swildu dílì muabut ug dus mil,",
+                    "Gloss": "My salary doesn’t reach two thousand."
+                  },
+                  {
+                    "Phrase": "Walà abtig duha ka adlaw ang bugas,",
+                    "Gloss": "The rice did not last two days."
+                  }
+                ]
+              },
+              "Class": "[B; b4]"
+            },
+            {
+              "Number": "1d",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "come to the mind."
+                },
+                "Examples": []
+              },
+              "Conjugation": "— sa hunàhúnà"
+            },
+            {
+              "Number": "1e",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "receive money."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Abtan (abutan) ku tingálig kwarta rung hápun,",
+                    "Gloss": "I’ll probably get my money this afternoon."
+                  }
+                ]
+              },
+              "Class": "[b4]"
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "have a feeling come over one."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Giabut siyag kakulbà,",
+                    "Gloss": "A feeling of terror came over her."
+                  }
+                ]
+              },
+              "Class": "[a4]"
+            },
+            {
+              "Number": "3a",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "catch s.o. doing s.t."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Si Turyuy nakaabut nílang nagháluk,",
+                    "Gloss": "It was Torio who came upon them kissing."
+                  }
+                ]
+              },
+              "Class": "[A23; b4]"
+            },
+            {
+              "Number": "3b",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "be overtaken."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Abtan kag gabíi sa dálan,",
+                    "Gloss": "You will be overtaken by night on the road."
+                  }
+                ]
+              },
+              "Class": "[b4]"
+            },
+            {
+              "Number": "4",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "come to an orgasm."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Dílì giyud muabut ang lamì,",
+                    "Gloss": "She won’t have an orgasm. (The delicious feeling will not arrive.)"
+                  },
+                  {
+                    "Phrase": "Abtan ra gihápun síya basta maningkámut ang duruha,",
+                    "Gloss": "She will have an orgasm if both try their best."
+                  }
+                ]
+              },
+              "Class": "[A2; b4]"
+            },
+            {
+              "Number": "5",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "for an event or season of the year to come around."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Dì na madúgay muabut na ang Pasku,",
+                    "Gloss": "It won’t be long before Christmas comes."
+                  }
+                ]
+              },
+              "Class": "[A23]"
+            },
+            {
+              "Number": "6",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "be on time for s.t."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Nakaabut ka ba sa panahun sa Katsílà?",
+                    "Gloss": "Do you go back as far as the Spanish times?"
+                  },
+                  {
+                    "Phrase": "Maabtan pa nímu ang barku,",
+                    "Gloss": "You can still catch the boat."
+                  }
+                ]
+              },
+              "Class": "[A12; b]"
+            },
+            {
+              "Number": "7a",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "afford to pay for s.t."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Dì ku makaabut ug palit niánà,",
+                    "Gloss": "I can’t afford to buy that."
+                  },
+                  {
+                    "Phrase": "Wà siyay ikaabut sa báyad,",
+                    "Gloss": "He has no funds to meet the payments with."
+                  }
+                ]
+              },
+              "Class": "[A12; a1]"
+            },
+            {
+              "Number": "7b",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "can be done, reached."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Tabángan tikaw kútub sa ákung maabut,",
+                    "Gloss": "I’ll help you as much as I can."
+                  }
+                ]
+              },
+              "Class": "[a3]"
+            },
+            {
+              "Number": "8",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "stay temporarily some place."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Háin man ka mag-abut run?",
+                    "Gloss": "Where are you staying now?"
+                  }
+                ]
+              },
+              "Class": "[A; b6]"
+            }
+          ]
+        },
+        {
+          "WordType": "n",
+          "Classes": [],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "s.t. or s.o. that has arrived s.w."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Dílì ni karáan uy. Bag-u ning abut,",
+                    "Gloss": "This is not old stock. It just arrived."
+                  },
+                  {
+                    "Phrase": "Bag-u kung abut dinhi. Wà pa ku kadumdum,",
+                    "Gloss": "I am a newcomer here. I don’t know how to get there."
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "yield, proceeds from an effort, income, harvest."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Pilay abut sa yútà káda túig?",
+                    "Gloss": "How much does the land yield each year?"
+                  },
+                  {
+                    "Phrase": "Gamay rag abut ang munisipyu,",
+                    "Gloss": "The town has a small income."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 102,
+    "ParseDiagnostics": [
+      {
+        "Index": 117,
+        "Message": "DEF: unexpected CEBWORD",
+        "Token": {
+          "Type": "CEBWORD",
+          "Content": "— ang ginháwa"
+        }
+      }
+    ],
+    "Raw": "<b id=\"abut\" lang=\"ceb\">abut</b><i>v</i><b>1</b><span class=\"rm\">[A; a12]</span> arrive, reach a place. <i lang=\"ceb\">Dì pa makaabut (maabut) ang suwat,</i> The letter won’t have arrived yet. <i lang=\"ceb\">Duul ra. Maabut ug lud-an,</i> It’s close by, within spitting distance (can be reached by spitting). <b>1a</b><span class=\"rm\">[A; ac]</span> lead to and reach a place. <i lang=\"ceb\">Muabut ba ning karsadáha sa subà?</i> Does this road reach the river? <i lang=\"ceb\">Kining lugára dílì abutun sa táub,</i> The tide doesn’t get as far as this place. <b>1b</b><span class=\"rm\">[A; ac]</span> reach s.t. with the arms. <i lang=\"ceb\">Maabut ba nímu ang sanga?</i> Can you reach the branch? <i lang=\"ceb\">Iabut kunu nang ímung kamut sa bungbung,</i> Reach your hands out to the wall. <b>1c</b><span class=\"rm\">[B; b4]</span> reach an amount, last a certain length. <i lang=\"ceb\">Ang ákung swildu dílì muabut ug dus mil,</i> My salary doesn’t reach two thousand. <i lang=\"ceb\">Walà abtig duha ka adlaw ang bugas,</i> The rice did not last two days. <b>1d</b><b lang=\"ceb\">— sa hunàhúnà</b> come to the mind. <b>1e</b><span class=\"rm\">[b4]</span> receive money. <i lang=\"ceb\">Abtan (abutan) ku tingálig kwarta rung hápun,</i> I’ll probably get my money this afternoon. <b>2</b><span class=\"rm\">[a4]</span> have a feeling come over one. <i lang=\"ceb\">Giabut siyag kakulbà,</i> A feeling of terror came over her. <b>3a</b><span class=\"rm\">[A23; b4]</span> catch s.o. doing s.t. <i lang=\"ceb\">Si Turyuy nakaabut nílang nagháluk,</i> It was Torio who came upon them kissing. <b>3b</b><span class=\"rm\">[b4]</span> be overtaken. <i lang=\"ceb\">Abtan kag gabíi sa dálan,</i> You will be overtaken by night on the road. <b>4</b><span class=\"rm\">[A2; b4]</span> come to an orgasm. <i lang=\"ceb\">Dílì giyud muabut ang lamì,</i> She won’t have an orgasm. (The delicious feeling will not arrive.) <i lang=\"ceb\">Abtan ra gihápun síya basta maningkámut ang duruha,</i> She will have an orgasm if both try their best. <b>5</b><span class=\"rm\">[A23]</span> for an event or season of the year to come around. <i lang=\"ceb\">Dì na madúgay muabut na ang Pasku,</i> It won’t be long before Christmas comes. <b>6</b><span class=\"rm\">[A12; b]</span> be on time for s.t. <i lang=\"ceb\">Nakaabut ka ba sa panahun sa Katsílà?</i> Do you go back as far as the Spanish times? <i lang=\"ceb\">Maabtan pa nímu ang barku,</i> You can still catch the boat. <b>7a</b><span class=\"rm\">[A12; a1]</span> afford to pay for s.t. <i lang=\"ceb\">Dì ku makaabut ug palit niánà,</i> I can’t afford to buy that. <i lang=\"ceb\">Wà siyay ikaabut sa báyad,</i> He has no funds to meet the payments with. <b>7b</b><span class=\"rm\">[a3]</span> can be done, reached. <i lang=\"ceb\">Tabángan tikaw kútub sa ákung maabut,</i> I’ll help you as much as I can. <b>8</b><span class=\"rm\">[A; b6]</span> stay temporarily some place. <i lang=\"ceb\">Háin man ka mag-abut run?</i> Where are you staying now? <i>n</i><b>1</b> s.t. or s.o. that has arrived s.w. <i lang=\"ceb\">Dílì ni karáan uy. Bag-u ning abut,</i> This is not old stock. It just arrived. <i lang=\"ceb\">Bag-u kung abut dinhi. Wà pa ku kadumdum,</i> I am a newcomer here. I don’t know how to get there. <b>2</b> yield, proceeds from an effort, income, harvest. <i lang=\"ceb\">Pilay abut sa yútà káda túig?</i> How much does the land yield each year? <i lang=\"ceb\">Gamay rag abut ang munisipyu,</i> The town has a small income. <b lang=\"ceb\">(←)</b><i>v</i><span class=\"rm\">[C; ac]</span><b>1</b> meet together. <i lang=\"ceb\">Abútun nákù ang duha ka tumuy,</i> I will make the two ends meet. <i lang=\"ceb\">Mau kadtung lugára ang ámung gikaabútan (gipanag-abútan),</i> That is the place where we met. <b>2</b> overlap in time. <i lang=\"ceb\">Nag-ábut na man gánì ang sinanggì karun ug sa miáging túig,</i> This year’s corn crop overlaps with last year’s. (I.e., this year’s crop was harvested before last year’s crop had been used up.) <b>3</b><span class=\"rm\">[A13]</span><b lang=\"ceb\">— ang ginháwa</b> be panting for breath (gasps of breath overlap). <i lang=\"ceb\">Giúyug siya sa ubu. Nag-ábut ang íyang pagginháwa,</i> He was shaken by his coughing fit. He was panting for breath. <b lang=\"ceb\">pa-(←)</b><i>v</i><span class=\"rm\">[A; a]</span> wait in expectation for. <i lang=\"ceb\">Dì na ku mupaábut sa kumbira,</i> I won’t wait for the party. <i lang=\"ceb\">Paabútun tikaw hangtud sa alas kwatru,</i> I’ll wait for you until four o’clock. <b lang=\"ceb\">abut-abut</b><i>v</i><span class=\"rm\">[A3; b6]</span> arrive in close succession. <i lang=\"ceb\">Nag-abut-abut ang mga bisíta,</i> Visitors came one after another. <b lang=\"ceb\">abut-ábut</b><i>v</i><span class=\"rm\">[A3; b6]</span> go every now and then. <i lang=\"ceb\">Nag-abut-ábut nà siya sa Hungkung,</i> She goes to Hong Kong often. <b lang=\"ceb\">siN-</b><i>v</i><span class=\"rm\">[A13]</span><b>1</b> for a time, event to approach. <i lang=\"ceb\">Nagsingabut ang pista,</i> The fiesta is approaching. <b>1a</b> for one’s time of the month to approach. <i lang=\"ceb\">Nagsingabut na, maung saputun,</i> She’s in a bad mood because her time of the month is approaching. <b>2</b> be in expectations of, look forward to. <i lang=\"ceb\">Nagsingabut ku nga mahuman ang trabáhug sayu,</i> I’m expecting to finish the work early. <b lang=\"ceb\">-l-un(←)</b><i>n</i><b>1</b> subject to periodic attacks of an illness. <b>2</b> s.o. who has the fortune of getting a large yield from an effort. <b lang=\"ceb\">alabtan, abtanan</b><i>n</i> place one usually stays temporarily. <b lang=\"ceb\">-l-an-(←)</b><i>n</i><b>1</b> = <span class=\"sc\" lang=\"ceb\">abtanan</span>. <b>2</b> place one meets s.o. else. <b lang=\"ceb\">um-r-(←), um-l-(←), tali-, tali-(←), sali-, sali-(←)</b><i>n</i> about to arrive. <i lang=\"ceb\">May umaábut (umalábut, taliabut, taliábut, saliabut, saliábut) nga mga bisíta,</i> There are some visitors about to arrive.†"
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "áda"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "mythological beings represented as beautiful maidens living in forests, streams, etc."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B126]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "become an"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "áda."
+      }
+    ],
+    "Word": "áda",
+    "WordDef": {
+      "Word": "áda",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "mythological beings represented as beautiful maidens living in forests, streams, etc."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[B126]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "become an"
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": [
+      {
+        "Index": 6,
+        "Message": "Trailing token after WORDDEF: CEBPHRASE",
+        "Token": {
+          "Type": "CEBPHRASE",
+          "Content": "áda."
+        }
+      }
+    ],
+    "Raw": "<b lang=\"ceb\">áda</b><i>n</i> mythological beings represented as beautiful maidens living in forests, streams, etc. <i>v</i><span class=\"rm\">[B126]</span> become an <i lang=\"ceb\">áda.</i>"
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adlaw"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "sun."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "day."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "May adlaw nga magbásul ka,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The day will come that you will be sorry."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "day, as opposed to night."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "pila ka —"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "it won’t be long."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Pila ka adlaw makapánaw ta sa búwan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Soon we’ll be able to take trips to the moon."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2b"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "one’s day for winning."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "ímu tanang adlaw,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "You get all the breaks."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "birthday."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "4"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "amount earned in a day."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Singku ra may íyang adlaw niánà,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He only gets five pesos a day from it."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— sa minatay"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "All Soul’s Day."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "Mahal nga —"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Holy Week."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A3; b6]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "receive a certain amount daily."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Muadlaw kug tagduha ka líbu ka písus,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I net two thousand pesos a day."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Adláwi lang siyag tag-diyis,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Pay him ten pesos per day."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; b6]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "celebrate a birthday."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Adtu nyà sa ámù kay mag-adlaw ku,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Come to my house for my birthday party."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "adlaw-adlaw"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "every day."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "-an"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "for it to be daylight."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ayaw úsà pagpaúli. Adláwan pa bítaw,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Don’t go home yet! It’s still daylight anyway."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "-an(→)"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "food used to celebrate a birthday with."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Iháwa na ang adlawan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Slaughter the birthday pig."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "-in-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "daily, by the day."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "lukewarm (lit. put in the sun)."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Túbig inadlaw,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Warm water."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a2]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "do on a daily basis."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Inadlawun (inadláwun) ka nákug dúaw,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I will visit you daily."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; c1]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "make water warm."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "-in-an"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "birthday present."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "ka-an"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "birthday, day of patron saint."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "ka-un"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "dawn."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Mugíkan ku ugmà sa kaadláwun,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I’ll leave tomorrow at dawn."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "pang-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "s.t. used during daytime."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Sanínang pang-adlaw,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Dress for daytime wear."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "day shift work."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "tala-an"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "diary."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "ti-"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "LINK",
+        "Content": "ting-"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "2"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "sunny."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Sa buntag tiadlaw, apan sa hápun nag-ulan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "In the morning it was sunny, but in the afternoon it rained."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "ting-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "dry season.†"
+      }
+    ],
+    "Word": "adlaw",
+    "WordDef": {
+      "Word": "adlaw",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "sun."
+                },
+                "Examples": []
+              }
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "day."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "May adlaw nga magbásul ka,",
+                    "Gloss": "The day will come that you will be sorry."
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "2a",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "day, as opposed to night."
+                },
+                "Examples": []
+              }
+            }
+          ]
+        }
+      ],
+      "Conjugations": [
+        {
+          "Word": "pila ka —",
+          "DefExLead": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "it won’t be long."
+            },
+            "Examples": [
+              {
+                "Phrase": "Pila ka adlaw makapánaw ta sa búwan,",
+                "Gloss": "Soon we’ll be able to take trips to the moon."
+              }
+            ]
+          },
+          "NumberedDefs": [
+            {
+              "Number": "2b",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "one’s day for winning."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "ímu tanang adlaw,",
+                    "Gloss": "You get all the breaks."
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "3",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "birthday."
+                },
+                "Examples": []
+              }
+            },
+            {
+              "Number": "4",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "amount earned in a day."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Singku ra may íyang adlaw niánà,",
+                    "Gloss": "He only gets five pesos a day from it."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "Word": "— sa minatay",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "All Soul’s Day."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "Word": "Mahal nga —",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "Holy Week."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 28,
+    "ParseDiagnostics": [
+      {
+        "Index": 28,
+        "Message": "Trailing token after WORDDEF: WORDTYPE",
+        "Token": {
+          "Type": "WORDTYPE",
+          "Content": "v"
+        }
+      }
+    ],
+    "Raw": "<b lang=\"ceb\">adlaw</b><i>n</i><b>1</b> sun. <b>2</b> day. <i lang=\"ceb\">May adlaw nga magbásul ka,</i> The day will come that you will be sorry. <b>2a</b> day, as opposed to night. <b lang=\"ceb\">pila ka —</b> it won’t be long. <i lang=\"ceb\">Pila ka adlaw makapánaw ta sa búwan,</i> Soon we’ll be able to take trips to the moon. <b>2b</b> one’s day for winning. <i lang=\"ceb\">ímu tanang adlaw,</i> You get all the breaks. <b>3</b> birthday. <b>4</b> amount earned in a day. <i lang=\"ceb\">Singku ra may íyang adlaw niánà,</i> He only gets five pesos a day from it. <b lang=\"ceb\">— sa minatay</b> All Soul’s Day. <b lang=\"ceb\">Mahal nga —</b> Holy Week. <i>v</i><b>1</b><span class=\"rm\">[A3; b6]</span> receive a certain amount daily. <i lang=\"ceb\">Muadlaw kug tagduha ka líbu ka písus,</i> I net two thousand pesos a day. <i lang=\"ceb\">Adláwi lang siyag tag-diyis,</i> Pay him ten pesos per day. <b>2</b><span class=\"rm\">[A; b6]</span> celebrate a birthday. <i lang=\"ceb\">Adtu nyà sa ámù kay mag-adlaw ku,</i> Come to my house for my birthday party. <b lang=\"ceb\">adlaw-adlaw</b> every day. <b lang=\"ceb\">-an</b><i>a</i> for it to be daylight. <i lang=\"ceb\">Ayaw úsà pagpaúli. Adláwan pa bítaw,</i> Don’t go home yet! It’s still daylight anyway. <b lang=\"ceb\">-an(→)</b><i>n</i> food used to celebrate a birthday with. <i lang=\"ceb\">Iháwa na ang adlawan,</i> Slaughter the birthday pig. <b lang=\"ceb\">-in-</b><i>a</i><b>1</b> daily, by the day. <b>2</b> lukewarm (lit. put in the sun). <i lang=\"ceb\">Túbig inadlaw,</i> Warm water. <i>v</i><b>1</b><span class=\"rm\">[A; a2]</span> do on a daily basis. <i lang=\"ceb\">Inadlawun (inadláwun) ka nákug dúaw,</i> I will visit you daily. <b>2</b><span class=\"rm\">[A; c1]</span> make water warm. <b lang=\"ceb\">-in-an</b><i>n</i> birthday present. <b lang=\"ceb\">ka-an</b><i>n</i> birthday, day of patron saint. <b lang=\"ceb\">ka-un</b><i>n</i> dawn. <i lang=\"ceb\">Mugíkan ku ugmà sa kaadláwun,</i> I’ll leave tomorrow at dawn. <b lang=\"ceb\">pang-</b><i>n</i><b>1</b> s.t. used during daytime. <i lang=\"ceb\">Sanínang pang-adlaw,</i> Dress for daytime wear. <b>2</b> day shift work. <b lang=\"ceb\">tala-an</b><i>n</i> diary. <b lang=\"ceb\">ti-</b><b>1</b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#ting-\">ting-</a></span>. <b lang=\"ceb\">2</b><i>a</i> sunny. <i lang=\"ceb\">Sa buntag tiadlaw, apan sa hápun nag-ulan,</i> In the morning it was sunny, but in the afternoon it rained. <b lang=\"ceb\">ting-</b><i>n</i> dry season.†"
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adlib<sub>2</sub>, adlip<sub>1</sub>"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "ad lib in music."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; b6(1)]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "perform music ad lib."
+      }
+    ],
+    "Word": "adlib<sub>2</sub>, adlip<sub>1</sub>",
+    "WordDef": {
+      "Word": "adlib<sub>2</sub>, adlip<sub>1</sub>",
+      "DefEx": {
+        "Def": {
+          "Type": "TEXT",
+          "Content": "ad lib in music."
+        },
+        "Examples": []
+      }
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [
+      {
+        "Index": 2,
+        "Message": "Trailing token after WORDDEF: WORDTYPE",
+        "Token": {
+          "Type": "WORDTYPE",
+          "Content": "v"
+        }
+      }
+    ],
+    "Raw": "<b lang=\"ceb\">adlib<sub>2</sub>, adlip<sub>1</sub></b> ad lib in music. <i>v</i><span class=\"rm\">[A; b6(1)]</span> perform music ad lib."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adtu<sub>1</sub>"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "there (far away, future)."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Adtu ku higdà sa íla,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I will sleep there at their house."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "will go s.w. far."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Adtu ku sa Karbun,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I’m going to the market."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "there he (she, etc.) goes doing it (although he shouldn’t be)."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Adtu nanghambug na sad,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "There he goes again, showing off."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2; b3c]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "go, bring to a place."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nakaadtu na ku didtu kas-a,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I went there once."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Unsa mang lugára ang giadtúan ninyu?"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "What place did you go to?"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Iadtu kini ngadtu sa íla,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Go bring this to their house."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A13; a2]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "go get s.t."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ikaw bay nag-adtu kang Pidru arun paanhíun siya?"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Were you the one who went to Pedro’s to tell him to come?"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ug dì ka manáug ánang kahúya adtúun tika,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "If you do not come down from that tree, I’ll come up after you."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "hi-/ha-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B1256; b6]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "happen to go."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Diyútay ra kaáyu ang mahiadtu sa mga táwu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "A very small amount seeps down to the people."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "adtuan"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A13]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "always go s.w."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Mag-adtuan ku sa íla káda buntag,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I always go see them every morning."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "adtuúnun, aladtúun"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "things one has to get."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "hard to get to."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Dì ku muadtu sa inyu kay aladtúun kaáyu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I won’t go to your place because it is hard to get to."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "umaadtúay, umaadtu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "about to go."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "kaadtuun"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "feel very much like going s.w."
+      }
+    ],
+    "Word": "adtu<sub>1</sub>",
+    "WordDef": {
+      "Word": "adtu<sub>1</sub>",
+      "NumberedDefs": [
+        {
+          "Number": "1",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "there (far away, future)."
+            },
+            "Examples": [
+              {
+                "Phrase": "Adtu ku higdà sa íla,",
+                "Gloss": "I will sleep there at their house."
+              }
+            ]
+          }
+        },
+        {
+          "Number": "2",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "will go s.w. far."
+            },
+            "Examples": [
+              {
+                "Phrase": "Adtu ku sa Karbun,",
+                "Gloss": "I’m going to the market."
+              }
+            ]
+          }
+        },
+        {
+          "Number": "3",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "there he (she, etc.) goes doing it (although he shouldn’t be)."
+            },
+            "Examples": [
+              {
+                "Phrase": "Adtu nanghambug na sad,",
+                "Gloss": "There he goes again, showing off."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 13,
+    "ParseDiagnostics": [
+      {
+        "Index": 13,
+        "Message": "Trailing token after WORDDEF: WORDTYPE",
+        "Token": {
+          "Type": "WORDTYPE",
+          "Content": "v"
+        }
+      }
+    ],
+    "Raw": "<b id=\"adtu\" lang=\"ceb\">adtu<sub>1</sub></b><b>1</b> there (far away, future). <i lang=\"ceb\">Adtu ku higdà sa íla,</i> I will sleep there at their house. <b>2</b> will go s.w. far. <i lang=\"ceb\">Adtu ku sa Karbun,</i> I’m going to the market. <b>3</b> there he (she, etc.) goes doing it (although he shouldn’t be). <i lang=\"ceb\">Adtu nanghambug na sad,</i> There he goes again, showing off. <i>v</i><b>1</b><span class=\"rm\">[A2; b3c]</span> go, bring to a place. <i lang=\"ceb\">Nakaadtu na ku didtu kas-a,</i> I went there once. <i lang=\"ceb\">Unsa mang lugára ang giadtúan ninyu?</i> What place did you go to? <i lang=\"ceb\">Iadtu kini ngadtu sa íla,</i> Go bring this to their house. <b>2</b><span class=\"rm\">[A13; a2]</span> go get s.t. <i lang=\"ceb\">Ikaw bay nag-adtu kang Pidru arun paanhíun siya?</i> Were you the one who went to Pedro’s to tell him to come? <i lang=\"ceb\">Ug dì ka manáug ánang kahúya adtúun tika,</i> If you do not come down from that tree, I’ll come up after you. <b lang=\"ceb\">hi-/ha-</b><i>v</i><span class=\"rm\">[B1256; b6]</span> happen to go. <i lang=\"ceb\">Diyútay ra kaáyu ang mahiadtu sa mga táwu,</i> A very small amount seeps down to the people. <b lang=\"ceb\">adtuan</b><i>v</i><span class=\"rm\">[A13]</span> always go s.w. <i lang=\"ceb\">Mag-adtuan ku sa íla káda buntag,</i> I always go see them every morning. <b lang=\"ceb\">adtuúnun, aladtúun</b><i>n</i> things one has to get. <i>a</i> hard to get to. <i lang=\"ceb\">Dì ku muadtu sa inyu kay aladtúun kaáyu,</i> I won’t go to your place because it is hard to get to. <b lang=\"ceb\">umaadtúay, umaadtu</b><i>n</i> about to go. <b lang=\"ceb\">kaadtuun</b><i>a</i> feel very much like going s.w."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adubáwu<sub>1</sub>"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "meat cooked in salt, vinegar with spices then fried, with fat or liquid leftover."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "cook"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "adubáwu."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "átù lang adubawúhun ning bábuy,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "We’ll just make <i lang=\"cebword\">adubáwu</i> out of this pork."
+      }
+    ],
+    "Word": "adubáwu<sub>1</sub>",
+    "WordDef": {
+      "Word": "adubáwu<sub>1</sub>",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "meat cooked in salt, vinegar with spices then fried, with fat or liquid leftover."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A; a]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "cook"
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": [
+      {
+        "Index": 6,
+        "Message": "Trailing token after WORDDEF: CEBPHRASE",
+        "Token": {
+          "Type": "CEBPHRASE",
+          "Content": "adubáwu."
+        }
+      }
+    ],
+    "Raw": "<b id=\"adubaxwu\" lang=\"ceb\">adubáwu<sub>1</sub></b><i>n</i> meat cooked in salt, vinegar with spices then fried, with fat or liquid leftover. <i>v</i><span class=\"rm\">[A; a]</span> cook <i lang=\"ceb\">adubáwu.</i><i lang=\"ceb\">átù lang adubawúhun ning bábuy,</i> We’ll just make <i lang=\"ceb\">adubáwu</i> out of this pork."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adubáwu<sub>2</sub>"
+      },
+      {
+        "Type": "LINK",
+        "Content": "kútil: n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": ","
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "v1."
+      }
+    ],
+    "Word": "adubáwu<sub>2</sub>",
+    "WordDef": {
+      "Word": "adubáwu<sub>2</sub>",
+      "DefEx": {
+        "Def": [
+          {
+            "Type": "LINK",
+            "Content": "kútil: n"
+          },
+          {
+            "Type": "TEXT",
+            "Content": ","
+          }
+        ],
+        "Examples": []
+      }
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": [
+      {
+        "Index": 3,
+        "Message": "Trailing token after WORDDEF: CEBPHRASE",
+        "Token": {
+          "Type": "CEBPHRASE",
+          "Content": "v1."
+        }
+      }
+    ],
+    "Raw": "<b lang=\"ceb\">adubáwu<sub>2</sub></b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#kuxtil\">kútil</a></span>, <i lang=\"ceb\">n</i>, <i lang=\"ceb\">v1.</i>"
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adúbu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "meat fried in salt and vinegar."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "cook"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "adúbu."
+      }
+    ],
+    "Word": "adúbu",
+    "WordDef": {
+      "Word": "adúbu",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "meat fried in salt and vinegar."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A; a]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "cook"
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": [
+      {
+        "Index": 6,
+        "Message": "Trailing token after WORDDEF: CEBPHRASE",
+        "Token": {
+          "Type": "CEBPHRASE",
+          "Content": "adúbu."
+        }
+      }
+    ],
+    "Raw": "<b lang=\"ceb\">adúbu</b><i>n</i> meat fried in salt and vinegar. <i>v</i><span class=\"rm\">[A; a]</span> cook <i lang=\"ceb\">adúbu.</i>"
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "*adult"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— idyukisyun"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "adult education.†"
+      }
+    ],
+    "Word": "*adult",
+    "WordDef": null,
+    "ParseOk": false,
+    "ParseNextIndex": 0,
+    "ParseDiagnostics": [
+      {
+        "Index": 2,
+        "Message": "DEF: unexpected CEBWORD",
+        "Token": {
+          "Type": "CEBWORD",
+          "Content": "— idyukisyun"
+        }
+      }
+    ],
+    "Raw": "<b lang=\"ceb\">*adult</b><i>n</i><b lang=\"ceb\">— idyukisyun</b> adult education.†"
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adúna"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "<i lang=\"cebword\">short form:</i>"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "dúna"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "there is, are, will be."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Dúnay libru sa lamísa,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "There is a book on the table. <b lang=\"ceb\">-y"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[<i lang=\"ceb\">subject</i>]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "</b> [subject] has."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Dúnay libru si Huwan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "John has a book."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "paka-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a]"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "strive to have s.t."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Bisag wà kuy kwarta, pakaadunáhun giyud aku nímu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Even though I have no money, you want to force me to get some."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "LINK",
+        "Content": "pakaadunáhan"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "adunáhan"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "wealthy."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Usa siya sa mga adunáhan sa ámung lungsud,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He is one of the wealthy people in our town."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "pakaadunáhan"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A13; a12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "pretend to be wealthy, consider to be wealthy."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nagpakaadunáhan siya bisag way nahut,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He pretends to be rich even though he hasn’t got a penny."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Gipakaadunáhan ba aku nímu?"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Do you think I’m rich?"
+      }
+    ],
+    "Word": "adúna",
+    "WordDef": {
+      "Word": "adúna",
+      "DefEx": {
+        "Def": {
+          "Type": "TEXT",
+          "Content": "<i lang=\"cebword\">short form:</i>"
+        },
+        "Examples": []
+      },
+      "Conjugations": {
+        "Word": "dúna",
         "DefEx": {
           "Def": {
             "Type": "TEXT",
-            "Content": "<b lang=\"ceb\">—"
+            "Content": "there is, are, will be."
           },
-          "Examples": []
+          "Examples": [
+            {
+              "Phrase": "Dúnay libru sa lamísa,",
+              "Gloss": "There is a book on the table. <b lang=\"ceb\">-y"
+            }
+          ]
         }
       }
-    ]
-  },
-  "ParseOk": false,
-  "ParseNextIndex": 3,
-  "ParseDiagnostics": [
-    {
-      "Index": 3,
-      "Message": "Trailing token after WORDDEF: CLASS",
-      "Token": {
-        "Type": "CLASS",
-        "Content": "[<i lang=\"ceb\">gen.</i>]"
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": [
+      {
+        "Index": 6,
+        "Message": "Trailing token after WORDDEF: CLASS",
+        "Token": {
+          "Type": "CLASS",
+          "Content": "[<i lang=\"ceb\">subject</i>]"
+        }
       }
-    }
-  ],
-  "Raw": "<b lang=\"ceb\">ábi</b><b>1</b><b lang=\"ceb\">— <span class=\"rm\">[<i lang=\"ceb\">gen.</i>]</span></b> [gen.] thought, took for granted. <i lang=\"ceb\">ábi nákug tinúud,</i> I thought it was true. <b lang=\"ceb\">— nímu</b><a id=\"xd20e5830\"></a> You know what? <i lang=\"ceb\">ábi nímu? Nakit-an ku siya nga láig kúyug,</i> You know what? I saw him going out with s.o. else. <b>2</b><b lang=\"ceb\">— kay</b> just because. <i lang=\"ceb\">ábi kay nakadaug sa byúti kuntis midakù na ang úlu,</i> Just because she won the beauty contest she thinks she is s.t. <b>3</b><b lang=\"ceb\">— na lang</b> s.o. might think that. <i lang=\"ceb\">Súkul. ábi na lang, daug.</i> Fight back. They might think you give up."
-}
+    ],
+    "Raw": "<b id=\"aduxna\" lang=\"ceb\">adúna</b><i lang=\"ceb\">short form:</i><b lang=\"ceb\">dúna</b> there is, are, will be. <i lang=\"ceb\">Dúnay libru sa lamísa,</i> There is a book on the table. <b lang=\"ceb\">-y <span class=\"rm\">[<i lang=\"ceb\">subject</i>]</span></b> [subject] has. <i lang=\"ceb\">Dúnay libru si Huwan,</i> John has a book. <b lang=\"ceb\">paka-</b><i>v</i><span class=\"rm\">[A; a]</span><b>1</b> strive to have s.t. <i lang=\"ceb\">Bisag wà kuy kwarta, pakaadunáhun giyud aku nímu,</i> Even though I have no money, you want to force me to get some. <b>2</b> = <span class=\"sc\" lang=\"ceb\">pakaadunáhan</span>. <b lang=\"ceb\">adunáhan</b><i>a</i> wealthy. <i lang=\"ceb\">Usa siya sa mga adunáhan sa ámung lungsud,</i> He is one of the wealthy people in our town. <b lang=\"ceb\">pakaadunáhan</b><i>v</i><span class=\"rm\">[A13; a12]</span> pretend to be wealthy, consider to be wealthy. <i lang=\"ceb\">Nagpakaadunáhan siya bisag way nahut,</i> He pretends to be rich even though he hasn’t got a penny. <i lang=\"ceb\">Gipakaadunáhan ba aku nímu?</i> Do you think I’m rich?"
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "ag"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "<i lang=\"cebword\">short form:</i>"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "g"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "subject marker for specific or past time subject (dialectal)."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ag táwung gibukbuk sa buguy namatay ganíha,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The man that was mauled by the ruffian died a while ago."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— sa"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "past time substitute for"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "sa."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Pwirting uwánga ag sa irù,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "My, how that dog barked."
+      }
+    ],
+    "Word": "ag",
+    "WordDef": {
+      "Word": "ag",
+      "DefEx": {
+        "Def": {
+          "Type": "TEXT",
+          "Content": "<i lang=\"cebword\">short form:</i>"
+        },
+        "Examples": []
+      },
+      "Conjugations": [
+        {
+          "Word": "g",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "subject marker for specific or past time subject (dialectal)."
+            },
+            "Examples": [
+              {
+                "Phrase": "Ag táwung gibukbuk sa buguy namatay ganíha,",
+                "Gloss": "The man that was mauled by the ruffian died a while ago."
+              }
+            ]
+          }
+        },
+        {
+          "Word": "— sa",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "past time substitute for"
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 8,
+    "ParseDiagnostics": [
+      {
+        "Index": 8,
+        "Message": "Trailing token after WORDDEF: CEBPHRASE",
+        "Token": {
+          "Type": "CEBPHRASE",
+          "Content": "sa."
+        }
+      }
+    ],
+    "Raw": "<b lang=\"ceb\">ag</b><i lang=\"ceb\">short form:</i><b lang=\"ceb\">g</b> subject marker for specific or past time subject (dialectal). <i lang=\"ceb\">Ag táwung gibukbuk sa buguy namatay ganíha,</i> The man that was mauled by the ruffian died a while ago. <b lang=\"ceb\">— sa</b> past time substitute for <i lang=\"ceb\">sa.</i><i lang=\"ceb\">Pwirting uwánga ag sa irù,</i> My, how that dog barked."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "agálun"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "(from <i lang=\"cebword\">ágad</i>)"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "master, boss."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A123S]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "happen to get a master."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nakaagawun akug dagmalan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I happened to work for a cruel master."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2SN]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "for animals or possessions to allow only the owner to make use of it."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nag-agawun kining ákung kabáyù, aku ray makakabayù,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "My horse is choosy. I’m the only one who can ride on him."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "paN-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2S; b(1)]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "work for a master."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Mangagálun lang kug way láing kapangabuhían,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I’ll work as a servant if I can’t find any other job."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Insik ang íyang gipangagawunan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He worked for a Chinese.†"
+      }
+    ],
+    "Word": "agálun",
+    "WordDef": {
+      "Word": "agálun",
+      "DefEx": {
+        "Def": {
+          "Type": "TEXT",
+          "Content": "(from <i lang=\"cebword\">ágad</i>)"
+        },
+        "Examples": []
+      }
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [
+      {
+        "Index": 2,
+        "Message": "Trailing token after WORDDEF: WORDTYPE",
+        "Token": {
+          "Type": "WORDTYPE",
+          "Content": "n"
+        }
+      }
+    ],
+    "Raw": "<b id=\"agaxlun\" lang=\"ceb\">agálun</b> (from <i lang=\"ceb\">ágad</i>) <i>n</i> master, boss. <i>v</i><b>1</b><span class=\"rm\">[A123S]</span> happen to get a master. <i lang=\"ceb\">Nakaagawun akug dagmalan,</i> I happened to work for a cruel master. <b>2</b><span class=\"rm\">[A2SN]</span> for animals or possessions to allow only the owner to make use of it. <i lang=\"ceb\">Nag-agawun kining ákung kabáyù, aku ray makakabayù,</i> My horse is choosy. I’m the only one who can ride on him. <b lang=\"ceb\">paN-</b><i>v</i><span class=\"rm\">[A2S; b(1)]</span> work for a master. <i lang=\"ceb\">Mangagálun lang kug way láing kapangabuhían,</i> I’ll work as a servant if I can’t find any other job. <i lang=\"ceb\">Insik ang íyang gipangagawunan,</i> He worked for a Chinese.†"
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "agan-an"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "sand-like pellets which are the droppings of a k.o. wood-boring insect."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[a4b4]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be infested with wood-borers."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "-un(→)"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "having"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "agan-an."
+      }
+    ],
+    "Word": "agan-an",
+    "WordDef": {
+      "Word": "agan-an",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "sand-like pellets which are the droppings of a k.o. wood-boring insect."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[a4b4]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "be infested with wood-borers."
+            },
+            "Examples": []
+          }
+        }
+      ],
+      "Conjugations": {
+        "Word": "-un(→)",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "Classes": [],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "having"
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    },
+    "ParseOk": false,
+    "ParseNextIndex": 9,
+    "ParseDiagnostics": [
+      {
+        "Index": 9,
+        "Message": "Trailing token after WORDDEF: CEBPHRASE",
+        "Token": {
+          "Type": "CEBPHRASE",
+          "Content": "agan-an."
+        }
+      }
+    ],
+    "Raw": "<b id=\"agan-an\" lang=\"ceb\">agan-an</b><i>n</i> sand-like pellets which are the droppings of a k.o. wood-boring insect. <i>v</i><span class=\"rm\">[a4b4]</span> be infested with wood-borers. <b lang=\"ceb\">-un(→)</b><i>a</i> having <i lang=\"ceb\">agan-an.</i>"
+  }
+]

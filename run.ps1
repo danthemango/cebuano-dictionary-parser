@@ -1,5 +1,5 @@
 param (
-    [int]$Limit = 100,
+    [int]$Limit = 200,
     [string]$HtmlPath = "cebuano-dictionary-fixed.html",
     [string]$Searchword = "",
     [switch]$Passthru = $false

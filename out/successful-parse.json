@@ -10357,5 +10357,5605 @@
     "ParseNextIndex": 3,
     "ParseDiagnostics": [],
     "Raw": "<b lang=\"ceb\">abugágu</b><i>n</i> dumb lawyer (play on the words <i lang=\"ceb\">abugádu</i> ‘lawyer’ and <i lang=\"ceb\">gágu</i> ‘stupid’)."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abugar"
+      },
+      {
+        "Type": "LINK",
+        "Content": "abugádu: v 2"
+      }
+    ],
+    "Word": "abugar",
+    "WordDef": {
+      "Word": "abugar",
+      "DefEx": {
+        "Def": {
+          "Type": "LINK",
+          "Content": "abugádu: v 2"
+        },
+        "Examples": []
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">abugar</b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#abugaxdu\">abugádu</a></span>, <i lang=\"ceb\">v</i><b lang=\"ceb\">2</b>."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abugasíya"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "law course."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "law profession."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Sa abugasíya kinahanglan mamakak ug panalagsa,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "In the law profession it is necessary to lie once in a while."
+      }
+    ],
+    "Word": "abugasíya",
+    "WordDef": {
+      "Word": "abugasíya",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "law course."
+                },
+                "Examples": []
+              }
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "law profession."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Sa abugasíya kinahanglan mamakak ug panalagsa,",
+                    "Gloss": "In the law profession it is necessary to lie once in a while."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 8,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">abugasíya</b><i>n</i><b>1</b> law course. <b>2</b> law profession. <i lang=\"ceb\">Sa abugasíya kinahanglan mamakak ug panalagsa,</i> In the law profession it is necessary to lie once in a while."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abughu, abughù"
+      },
+      {
+        "Type": "LINK",
+        "Content": "*abubhu"
+      }
+    ],
+    "Word": "abughu, abughù",
+    "WordDef": {
+      "Word": "abughu, abughù",
+      "DefEx": {
+        "Def": {
+          "Type": "LINK",
+          "Content": "*abubhu"
+        },
+        "Examples": []
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">abughu, abughù</b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#xxabubhu\">*abubhu</a></span>."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abukádu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "avocado or alligator pear: <b lang=\"la\"><i>Persea sp</i></b>. It is usually eaten with sugar and milk."
+      }
+    ],
+    "Word": "abukádu",
+    "WordDef": {
+      "Word": "abukádu",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "avocado or alligator pear: <b lang=\"la\"><i>Persea sp</i></b>. It is usually eaten with sugar and milk."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": [],
+    "Raw": "<b id=\"abukaxdu\" lang=\"ceb\">abukádu</b><i>n</i> avocado or alligator pear: <b lang=\"la\"><i>Persea sp</i></b>. It is usually eaten with sugar and milk."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abúkay"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "k.o. white cockatoo, often kept as pet: <b><i>Cacatua haematuropygia</i></b>."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "(→), abúkay"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "for babies to make noises like a cockatoo."
+      }
+    ],
+    "Word": "abúkay",
+    "WordDef": {
+      "Word": "abúkay",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "k.o. white cockatoo, often kept as pet: <b><i>Cacatua haematuropygia</i></b>."
+            },
+            "Examples": []
+          }
+        }
+      ],
+      "Conjugations": {
+        "Word": "(→), abúkay",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "Classes": [
+              "[A]"
+            ],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "for babies to make noises like a cockatoo."
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 7,
+    "ParseDiagnostics": [],
+    "Raw": "<b id=\"abuxkay\" lang=\"ceb\">abúkay</b><i>n</i> k.o. white cockatoo, often kept as pet: <b><i>Cacatua haematuropygia</i></b>. <b lang=\"ceb\">(→), abúkay</b><i>v</i><span class=\"rm\">[A]</span> for babies to make noises like a cockatoo."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abunansiya"
+      },
+      {
+        "Type": "LINK",
+        "Content": "abunda"
+      }
+    ],
+    "Word": "abunansiya",
+    "WordDef": {
+      "Word": "abunansiya",
+      "DefEx": {
+        "Def": {
+          "Type": "LINK",
+          "Content": "abunda"
+        },
+        "Examples": []
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">abunansiya</b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#abunda\">abunda</a></span>."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abunda"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "abundant."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abunda ang bugas karun,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "There’s plenty of rice now."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "have plenty."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ug abunda ka sa sápì, mamalit kag yútà,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "If you have lots of money, you should buy land."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be, become abundant."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Unyà ra ta mamalit ug mangga ug muabunda (maabunda) na,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "We will buy mangoes later when they become abundant."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "abundance."
+      }
+    ],
+    "Word": "abunda",
+    "WordDef": {
+      "Word": "abunda",
+      "WordTypeDefs": [
+        {
+          "WordType": "a",
+          "Classes": [],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "abundant."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Abunda ang bugas karun,",
+                    "Gloss": "There’s plenty of rice now."
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "have plenty."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Ug abunda ka sa sápì, mamalit kag yútà,",
+                    "Gloss": "If you have lots of money, you should buy land."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[B]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "be, become abundant."
+            },
+            "Examples": [
+              {
+                "Phrase": "Unyà ra ta mamalit ug mangga ug muabunda (maabunda) na,",
+                "Gloss": "We will buy mangoes later when they become abundant."
+              }
+            ]
+          }
+        },
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "abundance."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 17,
+    "ParseDiagnostics": [],
+    "Raw": "<b id=\"abunda\" lang=\"ceb\">abunda</b><i>a</i><b>1</b> abundant. <i lang=\"ceb\">Abunda ang bugas karun,</i> There’s plenty of rice now. <b>2</b> have plenty. <i lang=\"ceb\">Ug abunda ka sa sápì, mamalit kag yútà,</i> If you have lots of money, you should buy land. <i>v</i><span class=\"rm\">[B]</span> be, become abundant. <i lang=\"ceb\">Unyà ra ta mamalit ug mangga ug muabunda (maabunda) na,</i> We will buy mangoes later when they become abundant. <i>n</i> abundance."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abundansiya"
+      },
+      {
+        "Type": "LINK",
+        "Content": "abunda"
+      }
+    ],
+    "Word": "abundansiya",
+    "WordDef": {
+      "Word": "abundansiya",
+      "DefEx": {
+        "Def": {
+          "Type": "LINK",
+          "Content": "abunda"
+        },
+        "Examples": []
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">abundansiya</b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#abunda\">abunda</a></span>."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abungaw<sub>2</sub>"
+      },
+      {
+        "Type": "LINK",
+        "Content": "bungaw"
+      }
+    ],
+    "Word": "abungaw<sub>2</sub>",
+    "WordDef": {
+      "Word": "abungaw<sub>2</sub>",
+      "DefEx": {
+        "Def": {
+          "Type": "LINK",
+          "Content": "bungaw"
+        },
+        "Examples": []
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">abungaw<sub>2</sub></b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#bungaw\">bungaw</a></span>."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abúnu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "fertilizer."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "transfusion or infusion."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nagkinahanglan siyag abúnu kay gisulgan sa dugù,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He needs a transfusion because he lost a lot of blood."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; c]"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "put fertilizer on."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abunúhi ang rúsas,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Put fertilizer on the roses."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "give a transfusion or infusion."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "supplement, fill in."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ikaw bay mag-abúnu sa kúlang?"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Will you make up the lack?"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ang gísu mauy iabúnu sa batsi,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "They use limestone to fill the rough spots in the road."
+      }
+    ],
+    "Word": "abúnu",
+    "WordDef": {
+      "Word": "abúnu",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "fertilizer."
+                },
+                "Examples": []
+              }
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "transfusion or infusion."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Nagkinahanglan siyag abúnu kay gisulgan sa dugù,",
+                    "Gloss": "He needs a transfusion because he lost a lot of blood."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A; c]"
+          ],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "put fertilizer on."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Abunúhi ang rúsas,",
+                    "Gloss": "Put fertilizer on the roses."
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "give a transfusion or infusion."
+                },
+                "Examples": []
+              }
+            },
+            {
+              "Number": "3",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "supplement, fill in."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Ikaw bay mag-abúnu sa kúlang?",
+                    "Gloss": "Will you make up the lack?"
+                  },
+                  {
+                    "Phrase": "Ang gísu mauy iabúnu sa batsi,",
+                    "Gloss": "They use limestone to fill the rough spots in the road."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 22,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">abúnu</b><i>n</i><b>1</b> fertilizer. <b>2</b> transfusion or infusion. <i lang=\"ceb\">Nagkinahanglan siyag abúnu kay gisulgan sa dugù,</i> He needs a transfusion because he lost a lot of blood. <i>v</i><span class=\"rm\">[A; c]</span><b>1</b> put fertilizer on. <i lang=\"ceb\">Abunúhi ang rúsas,</i> Put fertilizer on the roses. <b>2</b> give a transfusion or infusion. <b>3</b> supplement, fill in. <i lang=\"ceb\">Ikaw bay mag-abúnu sa kúlang?</i> Will you make up the lack? <i lang=\"ceb\">Ang gísu mauy iabúnu sa batsi,</i> They use limestone to fill the rough spots in the road."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abusáda"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "= <span class=\"sc\" lang=\"ceb\"><a href=\"#abusaxdu\">abusádu</a></span> (female)."
+      }
+    ],
+    "Word": "abusáda",
+    "WordDef": {
+      "Word": "abusáda",
+      "DefEx": {
+        "Def": {
+          "Type": "TEXT",
+          "Content": "= <span class=\"sc\" lang=\"ceb\"><a href=\"#abusaxdu\">abusádu</a></span> (female)."
+        },
+        "Examples": []
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">abusáda</b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#abusaxdu\">abusádu</a></span> (female)."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abusádu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "tending to take advantage, infringe on rights."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abusádu ang mga kutsíru dinhi. Basta muulan, pabayrun ta nílag dubli,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The rig drivers are abusive. If it rains, they double the fare."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nagníwang lang nà siya kay abusádu man gud sa íyang láwas,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He is thin because he neglects his body."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B126]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "become abusive."
+      }
+    ],
+    "Word": "abusádu",
+    "WordDef": {
+      "Word": "abusádu",
+      "WordTypeDefs": [
+        {
+          "WordType": "a",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "tending to take advantage, infringe on rights."
+            },
+            "Examples": [
+              {
+                "Phrase": "Abusádu ang mga kutsíru dinhi. Basta muulan, pabayrun ta nílag dubli,",
+                "Gloss": "The rig drivers are abusive. If it rains, they double the fare."
+              },
+              {
+                "Phrase": "Nagníwang lang nà siya kay abusádu man gud sa íyang láwas,",
+                "Gloss": "He is thin because he neglects his body."
+              }
+            ]
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[B126]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "become abusive."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 10,
+    "ParseDiagnostics": [],
+    "Raw": "<b id=\"abusaxdu\" lang=\"ceb\">abusádu</b><i>a</i> tending to take advantage, infringe on rights. <i lang=\"ceb\">Abusádu ang mga kutsíru dinhi. Basta muulan, pabayrun ta nílag dubli,</i> The rig drivers are abusive. If it rains, they double the fare. <i lang=\"ceb\">Nagníwang lang nà siya kay abusádu man gud sa íyang láwas,</i> He is thin because he neglects his body. <i>v</i><span class=\"rm\">[B126]</span> become abusive."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abusar"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A3; b(1)]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "a do s.t. one is not entitled to, take advantage of s.o. by infringing on his rights."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nag-abusar siya paggáwì sa makinilya nga way pananghid,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He took the liberty of using the typewriter without permission."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Giabusahan sila sa magbabaligyà kay way kumpitinsiya,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The storekeeper took advantage of them because there was no competition. <b>b</b> mistreat one’s health."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nag-abusar ka lang sa ímung láwas sa ímung pag-inum,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "You’re abusing your health with all your drinking."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "do s.t. to a superfluous degree."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Wà na nà magkaun; nag-abusar na nà,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "That is not eating; that is excessive indulgence."
+      }
+    ],
+    "Word": "abusar",
+    "WordDef": {
+      "Word": "abusar",
+      "WordTypeDefs": [
+        {
+          "WordType": "v",
+          "Classes": [],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "a do s.t. one is not entitled to, take advantage of s.o. by infringing on his rights."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Nag-abusar siya paggáwì sa makinilya nga way pananghid,",
+                    "Gloss": "He took the liberty of using the typewriter without permission."
+                  },
+                  {
+                    "Phrase": "Giabusahan sila sa magbabaligyà kay way kumpitinsiya,",
+                    "Gloss": "The storekeeper took advantage of them because there was no competition. <b>b</b> mistreat one’s health."
+                  },
+                  {
+                    "Phrase": "Nag-abusar ka lang sa ímung láwas sa ímung pag-inum,",
+                    "Gloss": "You’re abusing your health with all your drinking."
+                  }
+                ]
+              },
+              "Class": "[A3; b(1)]"
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "do s.t. to a superfluous degree."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Wà na nà magkaun; nag-abusar na nà,",
+                    "Gloss": "That is not eating; that is excessive indulgence."
+                  }
+                ]
+              },
+              "Class": "[A]"
+            }
+          ]
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 16,
+    "ParseDiagnostics": [],
+    "Raw": "<b id=\"abusar\" lang=\"ceb\">abusar</b><i>v</i><b>1</b><span class=\"rm\">[A3; b(1)]</span> a do s.t. one is not entitled to, take advantage of s.o. by infringing on his rights. <i lang=\"ceb\">Nag-abusar siya paggáwì sa makinilya nga way pananghid,</i> He took the liberty of using the typewriter without permission. <i lang=\"ceb\">Giabusahan sila sa magbabaligyà kay way kumpitinsiya,</i> The storekeeper took advantage of them because there was no competition. <b>b</b> mistreat one’s health. <i lang=\"ceb\">Nag-abusar ka lang sa ímung láwas sa ímung pag-inum,</i> You’re abusing your health with all your drinking. <b>2</b><span class=\"rm\">[A]</span> do s.t. to a superfluous degree. <i lang=\"ceb\">Wà na nà magkaun; nag-abusar na nà,</i> That is not eating; that is excessive indulgence."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abúsu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "taking advantage, acting beyond one’s rights."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ang pagdáwat sa suburnu usa sa mga abúsu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Taking bribes is one of their abuses."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "LINK",
+        "Content": "abusar"
+      }
+    ],
+    "Word": "abúsu",
+    "WordDef": {
+      "Word": "abúsu",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "taking advantage, acting beyond one’s rights."
+            },
+            "Examples": [
+              {
+                "Phrase": "Ang pagdáwat sa suburnu usa sa mga abúsu,",
+                "Gloss": "Taking bribes is one of their abuses."
+              }
+            ]
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "LINK",
+              "Content": "abusar"
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 7,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">abúsu</b><i>n</i> taking advantage, acting beyond one’s rights. <i lang=\"ceb\">Ang pagdáwat sa suburnu usa sa mga abúsu,</i> Taking bribes is one of their abuses. <i>v</i> = <span class=\"sc\" lang=\"ceb\"><a href=\"#abusar\">abusar</a></span>."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abwag"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[AP; c1]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "break up, scatter."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Miabwag ang mitambung sa ráli pag-ulan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The people at the rally scattered when it started to rain."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abwagun (iabwag) nátù ang mga papil,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Let us scatter the pieces of paper."
+      }
+    ],
+    "Word": "abwag",
+    "WordDef": {
+      "Word": "abwag",
+      "WordTypeDefs": [
+        {
+          "WordType": "v",
+          "Classes": [
+            "[AP; c1]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "break up, scatter."
+            },
+            "Examples": [
+              {
+                "Phrase": "Miabwag ang mitambung sa ráli pag-ulan,",
+                "Gloss": "The people at the rally scattered when it started to rain."
+              },
+              {
+                "Phrase": "Abwagun (iabwag) nátù ang mga papil,",
+                "Gloss": "Let us scatter the pieces of paper."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 8,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">abwag</b><i>v</i><span class=\"rm\">[AP; c1]</span> break up, scatter. <i lang=\"ceb\">Miabwag ang mitambung sa ráli pag-ulan,</i> The people at the rally scattered when it started to rain. <i lang=\"ceb\">Abwagun (iabwag) nátù ang mga papil,</i> Let us scatter the pieces of paper."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abyadur"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "aviator."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B156; a12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be, make into an aviator.†"
+      }
+    ],
+    "Word": "abyadur",
+    "WordDef": {
+      "Word": "abyadur",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "aviator."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[B156; a12]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "be, make into an aviator.†"
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">abyadur</b><i>n</i> aviator. <i>v</i><span class=\"rm\">[B156; a12]</span> be, make into an aviator.†"
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abyan"
+      },
+      {
+        "Type": "LINK",
+        "Content": "abay"
+      }
+    ],
+    "Word": "abyan",
+    "WordDef": {
+      "Word": "abyan",
+      "DefEx": {
+        "Def": {
+          "Type": "LINK",
+          "Content": "abay"
+        },
+        "Examples": []
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">abyan</b><i lang=\"ceb\">see</i><span class=\"sc\" lang=\"ceb\"><a href=\"#abay\">abay</a></span>."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abyasiyun, abyasyun"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "aviation."
+      }
+    ],
+    "Word": "abyasiyun, abyasyun",
+    "WordDef": {
+      "Word": "abyasiyun, abyasyun",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "aviation."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">abyasiyun, abyasyun</b><i>n</i> aviation."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abyirtu<sub>1</sub>"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "open."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abyirtu ang ganghaan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The door is open."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2PB; c1]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "open s.t.; be opened."
+      }
+    ],
+    "Word": "abyirtu<sub>1</sub>",
+    "WordDef": {
+      "Word": "abyirtu<sub>1</sub>",
+      "WordTypeDefs": [
+        {
+          "WordType": "a",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "open."
+            },
+            "Examples": [
+              {
+                "Phrase": "Abyirtu ang ganghaan,",
+                "Gloss": "The door is open."
+              }
+            ]
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A2PB; c1]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "open s.t.; be opened."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 8,
+    "ParseDiagnostics": [],
+    "Raw": "<b id=\"abyirtu\" lang=\"ceb\">abyirtu<sub>1</sub></b><i>a</i> open. <i lang=\"ceb\">Abyirtu ang ganghaan,</i> The door is open. <i>v</i><span class=\"rm\">[A2PB; c1]</span> open s.t.; be opened."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abyirtu<sub>2</sub>"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "seventh chord."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2; c1]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "play a seventh chord."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Iabyirtu (abyirtúha) ang tapuy ig-abut sa dapit nga muingun ‘Matam-is uyámut’,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "When you get to the part that goes ‘How very sweet ...’ play a seventh chord."
+      }
+    ],
+    "Word": "abyirtu<sub>2</sub>",
+    "WordDef": {
+      "Word": "abyirtu<sub>2</sub>",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "seventh chord."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A2; c1]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "play a seventh chord."
+            },
+            "Examples": [
+              {
+                "Phrase": "Iabyirtu (abyirtúha) ang tapuy ig-abut sa dapit nga muingun ‘Matam-is uyámut’,",
+                "Gloss": "When you get to the part that goes ‘How very sweet ...’ play a seventh chord."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 8,
+    "ParseDiagnostics": [],
+    "Raw": "<b id=\"abyirtu2\" lang=\"ceb\">abyirtu<sub>2</sub></b><i>n</i> seventh chord. <i>v</i><span class=\"rm\">[A2; c1]</span> play a seventh chord. <i lang=\"ceb\">Iabyirtu (abyirtúha) ang tapuy ig-abut sa dapit nga muingun ‘Matam-is uyámut’,</i> When you get to the part that goes ‘How very sweet ...’ play a seventh chord."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "abyug"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; c1]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "rock s.t. hanging back and forth."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Abyúga (iabyug) lang ang bátà sa dúyan kun muhílak na,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Just rock the baby in the hammock if he starts to cry."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "action of rocking s.t."
+      }
+    ],
+    "Word": "abyug",
+    "WordDef": {
+      "Word": "abyug",
+      "WordTypeDefs": [
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A; c1]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "rock s.t. hanging back and forth."
+            },
+            "Examples": [
+              {
+                "Phrase": "Abyúga (iabyug) lang ang bátà sa dúyan kun muhílak na,",
+                "Gloss": "Just rock the baby in the hammock if he starts to cry."
+              }
+            ]
+          }
+        },
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "action of rocking s.t."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 8,
+    "ParseDiagnostics": [],
+    "Raw": "<b id=\"abyug\" lang=\"ceb\">abyug</b><i>v</i><span class=\"rm\">[A; c1]</span> rock s.t. hanging back and forth. <i lang=\"ceb\">Abyúga (iabyug) lang ang bátà sa dúyan kun muhílak na,</i> Just rock the baby in the hammock if he starts to cry. <i>n</i> action of rocking s.t."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "A.D."
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Anno Domini."
+      }
+    ],
+    "Word": "A.D.",
+    "WordDef": {
+      "Word": "A.D.",
+      "DefEx": {
+        "Def": {
+          "Type": "TEXT",
+          "Content": "Anno Domini."
+        },
+        "Examples": []
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">A.D.</b> Anno Domini."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "ád<sub>1</sub>"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; ac]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "add up."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "ádun (adun) nátù ni,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Let’s add this up."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Iád ang kwatru ári,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Add the four to this column."
+      }
+    ],
+    "Word": "ád<sub>1</sub>",
+    "WordDef": {
+      "Word": "ád<sub>1</sub>",
+      "WordTypeDefs": [
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A; ac]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "add up."
+            },
+            "Examples": [
+              {
+                "Phrase": "ádun (adun) nátù ni,",
+                "Gloss": "Let’s add this up."
+              },
+              {
+                "Phrase": "Iád ang kwatru ári,",
+                "Gloss": "Add the four to this column."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 8,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">ád<sub>1</sub></b><i>v</i><span class=\"rm\">[A; ac]</span> add up. <i lang=\"ceb\">ádun (adun) nátù ni,</i> Let’s add this up. <i lang=\"ceb\">Iád ang kwatru ári,</i> Add the four to this column."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "ád<sub>2</sub>"
+      },
+      {
+        "Type": "LINK",
+        "Content": "álad"
+      }
+    ],
+    "Word": "ád<sub>2</sub>",
+    "WordDef": {
+      "Word": "ád<sub>2</sub>",
+      "DefEx": {
+        "Def": {
+          "Type": "LINK",
+          "Content": "álad"
+        },
+        "Examples": []
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">ád<sub>2</sub></b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#axlad\">álad</a></span>."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "ada"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "particle showing that s.t. is not important."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ada, irù ra gud tu. Kahadluk na man nímu!"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Heck, that was just a dog. What a scaredy cat you are!"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "particle expressing annoyance."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ada! Sábà na,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Oh, be quiet!"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— uruy"
+      },
+      {
+        "Type": "LINK",
+        "Content": "ada: 1"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— uy"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "particle expressing exasperation at being unable to cope with s.t. (used only by women)."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Da uy, lisud kaáyu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Oh dear! That is so hard!"
+      }
+    ],
+    "Word": "ada",
+    "WordDef": {
+      "Word": "ada",
+      "NumberedDefs": [
+        {
+          "Number": "1",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "particle showing that s.t. is not important."
+            },
+            "Examples": [
+              {
+                "Phrase": "Ada, irù ra gud tu. Kahadluk na man nímu!",
+                "Gloss": "Heck, that was just a dog. What a scaredy cat you are!"
+              }
+            ]
+          }
+        },
+        {
+          "Number": "2",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "particle expressing annoyance."
+            },
+            "Examples": [
+              {
+                "Phrase": "Ada! Sábà na,",
+                "Gloss": "Oh, be quiet!"
+              }
+            ]
+          }
+        }
+      ],
+      "Conjugations": [
+        {
+          "Word": "— uruy",
+          "DefEx": {
+            "Def": {
+              "Type": "LINK",
+              "Content": "ada: 1"
+            },
+            "Examples": []
+          }
+        },
+        {
+          "Word": "— uy",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "particle expressing exasperation at being unable to cope with s.t. (used only by women)."
+            },
+            "Examples": [
+              {
+                "Phrase": "Da uy, lisud kaáyu,",
+                "Gloss": "Oh dear! That is so hard!"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 15,
+    "ParseDiagnostics": [],
+    "Raw": "<b id=\"ada\" lang=\"ceb\">ada</b><b>1</b> particle showing that s.t. is not important. <i lang=\"ceb\">Ada, irù ra gud tu. Kahadluk na man nímu!</i> Heck, that was just a dog. What a scaredy cat you are! <b>2</b> particle expressing annoyance. <i lang=\"ceb\">Ada! Sábà na,</i> Oh, be quiet! <b lang=\"ceb\">— uruy</b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#ada\">ada</a></span>, <b lang=\"ceb\">1</b>. <b lang=\"ceb\">— uy</b> particle expressing exasperation at being unable to cope with s.t. (used only by women). <i lang=\"ceb\">Da uy, lisud kaáyu,</i> Oh dear! That is so hard!"
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adá"
+      },
+      {
+        "Type": "LINK",
+        "Content": "ada"
+      }
+    ],
+    "Word": "adá",
+    "WordDef": {
+      "Word": "adá",
+      "DefEx": {
+        "Def": {
+          "Type": "LINK",
+          "Content": "ada"
+        },
+        "Examples": []
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adá</b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#ada\">ada</a></span>."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "ad-ad"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "slice into thin, but not long pieces."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ang baláni ad-árun únà iláwug sa bábuy,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The banana trunk is chopped up finely before it is fed to the pigs."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "ad-aran"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "slicing board."
+      }
+    ],
+    "Word": "ad-ad",
+    "WordDef": {
+      "Word": "ad-ad",
+      "WordTypeDefs": [
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A; a]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "slice into thin, but not long pieces."
+            },
+            "Examples": [
+              {
+                "Phrase": "Ang baláni ad-árun únà iláwug sa bábuy,",
+                "Gloss": "The banana trunk is chopped up finely before it is fed to the pigs."
+              }
+            ]
+          }
+        }
+      ],
+      "Conjugations": {
+        "Word": "ad-aran",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "Classes": [],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "slicing board."
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 9,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">ad-ad</b><i>v</i><span class=\"rm\">[A; a]</span> slice into thin, but not long pieces. <i lang=\"ceb\">Ang baláni ad-árun únà iláwug sa bábuy,</i> The banana trunk is chopped up finely before it is fed to the pigs. <b lang=\"ceb\">ad-aran</b><i>n</i> slicing board."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "Adan"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "<i lang=\"cebword\">name:</i> Adam."
+      }
+    ],
+    "Word": "Adan",
+    "WordDef": {
+      "Word": "Adan",
+      "DefEx": {
+        "Def": {
+          "Type": "TEXT",
+          "Content": "<i lang=\"cebword\">name:</i> Adam."
+        },
+        "Examples": []
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">Adan</b><i lang=\"ceb\">name:</i> Adam."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adbans"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "advance payment on a salary, debt, etc."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[AP; cP]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "give an advance."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Adbansan ka nákug singku,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I’ll advance you five pesos."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "ask for an advance."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Muadbans akug singku pára sa kumpra,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I would like to have five pesos in advance for shopping."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; c]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "for soldiers to advance."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Miadbans ang mga Hapun,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The Japanese advanced."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "ílang giadbans ang mga kanyun,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "They put the artillery on the front line."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— gard"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "a contingent sent ahead to the front."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "s.t. sent s.w. to prepare the way (humorous metaphor)."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nag-una ang mga adbans gard kay silay magpriparar,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The advance guard has gone ahead because they will get things ready."
+      }
+    ],
+    "Word": "adbans",
+    "WordDef": {
+      "Word": "adbans",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "advance payment on a salary, debt, etc."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "give an advance."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Adbansan ka nákug singku,",
+                    "Gloss": "I’ll advance you five pesos."
+                  }
+                ]
+              },
+              "Class": "[AP; cP]"
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "ask for an advance."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Muadbans akug singku pára sa kumpra,",
+                    "Gloss": "I would like to have five pesos in advance for shopping."
+                  }
+                ]
+              },
+              "Class": "[A; a]"
+            },
+            {
+              "Number": "3",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "for soldiers to advance."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Miadbans ang mga Hapun,",
+                    "Gloss": "The Japanese advanced."
+                  },
+                  {
+                    "Phrase": "ílang giadbans ang mga kanyun,",
+                    "Gloss": "They put the artillery on the front line."
+                  }
+                ]
+              },
+              "Class": "[A; c]"
+            }
+          ]
+        }
+      ],
+      "Conjugations": {
+        "Word": "— gard",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "a contingent sent ahead to the front."
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "s.t. sent s.w. to prepare the way (humorous metaphor)."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Nag-una ang mga adbans gard kay silay magpriparar,",
+                      "Gloss": "The advance guard has gone ahead because they will get things ready."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 29,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adbans</b><i>n</i> advance payment on a salary, debt, etc. <i>v</i><b>1</b><span class=\"rm\">[AP; cP]</span> give an advance. <i lang=\"ceb\">Adbansan ka nákug singku,</i> I’ll advance you five pesos. <b>2</b><span class=\"rm\">[A; a]</span> ask for an advance. <i lang=\"ceb\">Muadbans akug singku pára sa kumpra,</i> I would like to have five pesos in advance for shopping. <b>3</b><span class=\"rm\">[A; c]</span> for soldiers to advance. <i lang=\"ceb\">Miadbans ang mga Hapun,</i> The Japanese advanced. <i lang=\"ceb\">ílang giadbans ang mga kanyun,</i> They put the artillery on the front line. <b lang=\"ceb\">— gard</b><i>n</i><b>1</b> a contingent sent ahead to the front. <b>2</b> s.t. sent s.w. to prepare the way (humorous metaphor). <i lang=\"ceb\">Nag-una ang mga adbans gard kay silay magpriparar,</i> The advance guard has gone ahead because they will get things ready."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adbaysir"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "adviser."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A13; b6]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "act as class adviser in school."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Giadbaysíran ku ang primíru anyu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I am adviser to the freshmen."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "klas —"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "class adviser in school."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "idituryal —"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "editorial advisor."
+      }
+    ],
+    "Word": "adbaysir",
+    "WordDef": {
+      "Word": "adbaysir",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "adviser."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A13; b6]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "act as class adviser in school."
+            },
+            "Examples": [
+              {
+                "Phrase": "Giadbaysíran ku ang primíru anyu,",
+                "Gloss": "I am adviser to the freshmen."
+              }
+            ]
+          }
+        }
+      ],
+      "Conjugations": [
+        {
+          "Word": "klas —",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "class adviser in school."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "Word": "idituryal —",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "editorial advisor."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 12,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adbaysir</b><i>n</i> adviser. <i>v</i><span class=\"rm\">[A13; b6]</span> act as class adviser in school. <i lang=\"ceb\">Giadbaysíran ku ang primíru anyu,</i> I am adviser to the freshmen. <b lang=\"ceb\">klas —</b> class adviser in school. <b lang=\"ceb\">idituryal —</b> editorial advisor."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adbintista"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "a Seventh Day Adventist."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B1256]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be, become a Seventh Day Adventist."
+      }
+    ],
+    "Word": "adbintista",
+    "WordDef": {
+      "Word": "adbintista",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "a Seventh Day Adventist."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[B1256]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "be, become a Seventh Day Adventist."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adbintista</b><i>n</i> a Seventh Day Adventist. <i>v</i><span class=\"rm\">[B1256]</span>be, become a Seventh Day Adventist."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adbirbiyu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "adverb."
+      }
+    ],
+    "Word": "adbirbiyu",
+    "WordDef": {
+      "Word": "adbirbiyu",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "adverb."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adbirbiyu</b><i>n</i> adverb."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "Adbiyintu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Advent."
+      }
+    ],
+    "Word": "Adbiyintu",
+    "WordDef": {
+      "Word": "Adbiyintu",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "Advent."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">Adbiyintu</b><i>n</i> Advent."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adgaw"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "k.o. small tree: <b><i>Premna odorata</i></b>. The leaves are fragrant and used medicinally."
+      }
+    ],
+    "Word": "adgaw",
+    "WordDef": {
+      "Word": "adgaw",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "k.o. small tree: <b><i>Premna odorata</i></b>. The leaves are fragrant and used medicinally."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": [],
+    "Raw": "<b id=\"adgaw\" lang=\"ceb\">adgaw</b><i>n</i> k.o. small tree: <b><i>Premna odorata</i></b>. The leaves are fragrant and used medicinally."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adía"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "<i lang=\"cebword\">short form:</i>"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "día"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "is here (nearer me than you)."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Adía sa táas ang lamísa, ikanáug,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The table is up here. Bring it downstairs."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "<i lang=\"cebword\">in narration:</i> now, at this juncture."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nalípay siya kay, día, nadátù na man pud siya,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He was happy because, here he was, he managed to become rich in turn."
+      }
+    ],
+    "Word": "adía",
+    "WordDef": {
+      "Word": "adía",
+      "DefEx": {
+        "Def": {
+          "Type": "TEXT",
+          "Content": "<i lang=\"cebword\">short form:</i>"
+        },
+        "Examples": []
+      },
+      "Conjugations": {
+        "Word": "día",
+        "NumberedDefs": [
+          {
+            "Number": "1",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "is here (nearer me than you)."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Adía sa táas ang lamísa, ikanáug,",
+                  "Gloss": "The table is up here. Bring it downstairs."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "2",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "<i lang=\"cebword\">in narration:</i> now, at this juncture."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Nalípay siya kay, día, nadátù na man pud siya,",
+                  "Gloss": "He was happy because, here he was, he managed to become rich in turn."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 11,
+    "ParseDiagnostics": [],
+    "Raw": "<b id=\"adixa\" lang=\"ceb\">adía</b><i lang=\"ceb\">short form:</i><b lang=\"ceb\">día</b><b>1</b> is here (nearer me than you). <i lang=\"ceb\">Adía sa táas ang lamísa, ikanáug,</i> The table is up here. Bring it downstairs. <b>2</b><i lang=\"ceb\">in narration:</i> now, at this juncture. <i lang=\"ceb\">Nalípay siya kay, día, nadátù na man pud siya,</i> He was happy because, here he was, he managed to become rich in turn."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "ádik"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "drug addict."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B1256]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "become a drug addict."
+      }
+    ],
+    "Word": "ádik",
+    "WordDef": {
+      "Word": "ádik",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "drug addict."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[B1256]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "become a drug addict."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">ádik</b><i>n</i> drug addict. <i>v</i><span class=\"rm\">[B1256]</span> become a drug addict."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adilantádu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "developed, advanced."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Adilantádu ang Pilipínas sa Aprika sa panguma,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The Philippines is ahead of Africa in agriculture."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "for a watch to be advanced."
+      }
+    ],
+    "Word": "adilantádu",
+    "WordDef": {
+      "Word": "adilantádu",
+      "WordTypeDefs": [
+        {
+          "WordType": "a",
+          "Classes": [],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "developed, advanced."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Adilantádu ang Pilipínas sa Aprika sa panguma,",
+                    "Gloss": "The Philippines is ahead of Africa in agriculture."
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "for a watch to be advanced."
+                },
+                "Examples": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 8,
+    "ParseDiagnostics": [],
+    "Raw": "<b id=\"adilantaxdu\" lang=\"ceb\">adilantádu</b><i>a</i><b>1</b> developed, advanced. <i lang=\"ceb\">Adilantádu ang Pilipínas sa Aprika sa panguma,</i> The Philippines is ahead of Africa in agriculture. <b>2</b> for a watch to be advanced."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adilantar"
+      },
+      {
+        "Type": "LINK",
+        "Content": "adilantu"
+      }
+    ],
+    "Word": "adilantar",
+    "WordDef": {
+      "Word": "adilantar",
+      "DefEx": {
+        "Def": {
+          "Type": "LINK",
+          "Content": "adilantu"
+        },
+        "Examples": []
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adilantar</b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#adilantu\">adilantu</a></span>."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adilantu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B2]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "become better."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Dílì ta muadilantu niánang pangitáa,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Our financial situation won’t improve if that is the only way we can make our living."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "kaadilantúhan"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "improvement."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Pára sa kaadilantúhan sa átung panimúyù,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "For the improvement of our standard of living."
+      }
+    ],
+    "Word": "adilantu",
+    "WordDef": {
+      "Word": "adilantu",
+      "WordTypeDefs": [
+        {
+          "WordType": "v",
+          "Classes": [
+            "[B2]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "become better."
+            },
+            "Examples": [
+              {
+                "Phrase": "Dílì ta muadilantu niánang pangitáa,",
+                "Gloss": "Our financial situation won’t improve if that is the only way we can make our living."
+              }
+            ]
+          }
+        }
+      ],
+      "Conjugations": {
+        "Word": "kaadilantúhan",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "Classes": [],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "improvement."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Pára sa kaadilantúhan sa átung panimúyù,",
+                  "Gloss": "For the improvement of our standard of living."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 11,
+    "ParseDiagnostics": [],
+    "Raw": "<b id=\"adilantu\" lang=\"ceb\">adilantu</b><i>v</i><span class=\"rm\">[B2]</span> become better. <i lang=\"ceb\">Dílì ta muadilantu niánang pangitáa,</i> Our financial situation won’t improve if that is the only way we can make our living. <b lang=\"ceb\">kaadilantúhan</b><i>n</i> improvement. <i lang=\"ceb\">Pára sa kaadilantúhan sa átung panimúyù,</i> For the improvement of our standard of living."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adilpa"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "oleander, k.o. highly poisonous, tall ornamental shrub with showy pink or white flowers: <b><i>Nerium indicum</i></b>."
+      }
+    ],
+    "Word": "adilpa",
+    "WordDef": {
+      "Word": "adilpa",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "oleander, k.o. highly poisonous, tall ornamental shrub with showy pink or white flowers: <b><i>Nerium indicum</i></b>."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adilpa</b><i>n</i> oleander, k.o. highly poisonous, tall ornamental shrub with showy pink or white flowers: <b><i>Nerium indicum</i></b>."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adimas"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "furthermore, besides."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Adimas utúkan man sab siya,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Besides, he’s intelligent, too."
+      }
+    ],
+    "Word": "adimas",
+    "WordDef": {
+      "Word": "adimas",
+      "DefEx": {
+        "Def": {
+          "Type": "TEXT",
+          "Content": "furthermore, besides."
+        },
+        "Examples": [
+          {
+            "Phrase": "Adimas utúkan man sab siya,",
+            "Gloss": "Besides, he’s intelligent, too."
+          }
+        ]
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 4,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adimas</b> furthermore, besides. <i lang=\"ceb\">Adimas utúkan man sab siya,</i> Besides, he’s intelligent, too."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adingmasin"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "adding machine."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[a12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "add up on a machine."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Adingmasina lang ni arun way sayup,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Add this up on the machine, so there won’t be any mistakes."
+      }
+    ],
+    "Word": "adingmasin",
+    "WordDef": {
+      "Word": "adingmasin",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "adding machine."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[a12]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "add up on a machine."
+            },
+            "Examples": [
+              {
+                "Phrase": "Adingmasina lang ni arun way sayup,",
+                "Gloss": "Add this up on the machine, so there won’t be any mistakes."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 8,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adingmasin</b><i>n</i> adding machine. <i>v</i><span class=\"rm\">[a12]</span> add up on a machine. <i lang=\"ceb\">Adingmasina lang ni arun way sayup,</i> Add this up on the machine, so there won’t be any mistakes."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adinúwid"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "adenoids."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[a4]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "have adenoid trouble."
+      }
+    ],
+    "Word": "adinúwid",
+    "WordDef": {
+      "Word": "adinúwid",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "adenoids."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[a4]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "have adenoid trouble."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adinúwid</b><i>n</i> adenoids. <i>v</i><span class=\"rm\">[a4]</span> have adenoid trouble."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adisir, adísir"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "before [so-and-so] happens."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Adisir ka muadtu, pagtilipunu úsà,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Before you go there, phone him first."
+      }
+    ],
+    "Word": "adisir, adísir",
+    "WordDef": {
+      "Word": "adisir, adísir",
+      "DefEx": {
+        "Def": {
+          "Type": "TEXT",
+          "Content": "before [so-and-so] happens."
+        },
+        "Examples": [
+          {
+            "Phrase": "Adisir ka muadtu, pagtilipunu úsà,",
+            "Gloss": "Before you go there, phone him first."
+          }
+        ]
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 4,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adisir, adísir</b> before [so-and-so] happens. <i lang=\"ceb\">Adisir ka muadtu, pagtilipunu úsà,</i> Before you go there, phone him first."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adiyus, adiyús"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "farewell (literary)."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— na lámang"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "never mind, forget about s.t. expended for nothing."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ug mupahulam ka níyag kwarta, adiyus na lang,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "If you lend him money, you might as well kiss it <span class=\"corr\" id=\"xd20e8434\" title=\"Source: good-bye\">goodbye</span>."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "exclamation at the unpleasant consequences of s.t. one has observed taking place."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Adiyús nabásag na hinúun,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Oh Jesus! It broke!"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Adiyús nalimtan nákù ag pitáka,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Jesus! I forgot my purse!"
+      }
+    ],
+    "Word": "adiyus, adiyús",
+    "WordDef": {
+      "Word": "adiyus, adiyús",
+      "NumberedDefs": [
+        {
+          "Number": "1",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "farewell (literary)."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "Number": "2",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "never mind, forget about s.t. expended for nothing."
+            },
+            "Examples": [
+              {
+                "Phrase": "Ug mupahulam ka níyag kwarta, adiyus na lang,",
+                "Gloss": "If you lend him money, you might as well kiss it <span class=\"corr\" id=\"xd20e8434\" title=\"Source: good-bye\">goodbye</span>."
+              }
+            ]
+          },
+          "Conjugation": "— na lámang"
+        },
+        {
+          "Number": "3",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "exclamation at the unpleasant consequences of s.t. one has observed taking place."
+            },
+            "Examples": [
+              {
+                "Phrase": "Adiyús nabásag na hinúun,",
+                "Gloss": "Oh Jesus! It broke!"
+              },
+              {
+                "Phrase": "Adiyús nalimtan nákù ag pitáka,",
+                "Gloss": "Jesus! I forgot my purse!"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 14,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adiyus, adiyús</b><b>1</b> farewell (literary). <b>2</b><b lang=\"ceb\">— na lámang</b> never mind, forget about s.t. expended for nothing. <i lang=\"ceb\">Ug mupahulam ka níyag kwarta, adiyus na lang,</i> If you lend him money, you might as well kiss it <span class=\"corr\" id=\"xd20e8434\" title=\"Source: good-bye\">goodbye</span>. <b>3</b> exclamation at the unpleasant consequences of s.t. one has observed taking place. <i lang=\"ceb\">Adiyús nabásag na hinúun,</i> Oh Jesus! It broke! <i lang=\"ceb\">Adiyús nalimtan nákù ag pitáka,</i> Jesus! I forgot my purse!"
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adlip<sub>2</sub>"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; ab27]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "slice into long pieces."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Adlípa ang mangga sa makatulu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Slice the mango into three pieces."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Hiadlipan ákung tudlù,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "My finger got cut as I was slicing s.t."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "slice."
+      }
+    ],
+    "Word": "adlip<sub>2</sub>",
+    "WordDef": {
+      "Word": "adlip<sub>2</sub>",
+      "WordTypeDefs": [
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A; ab27]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "slice into long pieces."
+            },
+            "Examples": [
+              {
+                "Phrase": "Adlípa ang mangga sa makatulu,",
+                "Gloss": "Slice the mango into three pieces."
+              },
+              {
+                "Phrase": "Hiadlipan ákung tudlù,",
+                "Gloss": "My finger got cut as I was slicing s.t."
+              }
+            ]
+          }
+        },
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "slice."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 10,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adlip<sub>2</sub></b><i>v</i><span class=\"rm\">[A; ab27]</span> slice into long pieces. <i lang=\"ceb\">Adlípa ang mangga sa makatulu,</i> Slice the mango into three pieces. <i lang=\"ceb\">Hiadlipan ákung tudlù,</i> My finger got cut as I was slicing s.t. <i>n</i> slice."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adlù"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "k.o. fish."
+      }
+    ],
+    "Word": "adlù",
+    "WordDef": {
+      "Word": "adlù",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "k.o. fish."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adlù</b><i>n</i> k.o. fish."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "administradur"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "administrator of an estate."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "head of a government agency."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a2]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be an administrator."
+      }
+    ],
+    "Word": "administradur",
+    "WordDef": {
+      "Word": "administradur",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "administrator of an estate."
+                },
+                "Examples": []
+              }
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "head of a government agency."
+                },
+                "Examples": []
+              }
+            }
+          ]
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A; a2]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "be an administrator."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 9,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">administradur</b><i>n</i><b>1</b> administrator of an estate. <b>2</b> head of a government agency. <i>v</i><span class=\"rm\">[A; a2]</span> be an administrator."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "administrasiyun"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "the administration incumbent at a certain period."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Sa administrasiyun ni Garsíya,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "During Garcia’s administration."
+      }
+    ],
+    "Word": "administrasiyun",
+    "WordDef": {
+      "Word": "administrasiyun",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "the administration incumbent at a certain period."
+            },
+            "Examples": [
+              {
+                "Phrase": "Sa administrasiyun ni Garsíya,",
+                "Gloss": "During Garcia’s administration."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 5,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">administrasiyun</b><i>n</i> the administration incumbent at a certain period. <i lang=\"ceb\">Sa administrasiyun ni Garsíya,</i> During Garcia’s administration."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "administratíbu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "administrative."
+      }
+    ],
+    "Word": "administratíbu",
+    "WordDef": {
+      "Word": "administratíbu",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "administrative."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">administratíbu</b><i>n</i> administrative."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "admirar"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; b]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "admire."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ug buhátun nà nímu, admirahan ka giyud,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "If you do that, people will admire you for it.†"
+      }
+    ],
+    "Word": "admirar",
+    "WordDef": {
+      "Word": "admirar",
+      "WordTypeDefs": [
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A; b]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "admire."
+            },
+            "Examples": [
+              {
+                "Phrase": "Ug buhátun nà nímu, admirahan ka giyud,",
+                "Gloss": "If you do that, people will admire you for it.†"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">admirar</b><i>v</i><span class=\"rm\">[A; b]</span> admire. <i lang=\"ceb\">Ug buhátun nà nímu, admirahan ka giyud,</i> If you do that, people will admire you for it.†"
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "admisiyun"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "general admission section in a theater or stadium."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "cost of admission in a theater or stadium."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "admission slip to an exam."
+      }
+    ],
+    "Word": "admisiyun",
+    "WordDef": {
+      "Word": "admisiyun",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "general admission section in a theater or stadium."
+                },
+                "Examples": []
+              }
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "cost of admission in a theater or stadium."
+                },
+                "Examples": []
+              }
+            },
+            {
+              "Number": "3",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "admission slip to an exam."
+                },
+                "Examples": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 8,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">admisiyun</b><i>n</i><b>1</b> general admission section in a theater or stadium. <b>2</b> cost of admission in a theater or stadium. <b>3</b> admission slip to an exam."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "admitar"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; b(1)]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "admit, concede a point."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Admitahi lang nà,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Just admit it."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "admit to a hospital."
+      }
+    ],
+    "Word": "admitar",
+    "WordDef": {
+      "Word": "admitar",
+      "WordTypeDefs": [
+        {
+          "WordType": "v",
+          "Classes": [],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "admit, concede a point."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Admitahi lang nà,",
+                    "Gloss": "Just admit it."
+                  }
+                ]
+              },
+              "Class": "[A; b(1)]"
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "admit to a hospital."
+                },
+                "Examples": []
+              },
+              "Class": "[A; a12]"
+            }
+          ]
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 10,
+    "ParseDiagnostics": [],
+    "Raw": "<b id=\"admitar\" lang=\"ceb\">admitar</b><i>v</i><b>1</b><span class=\"rm\">[A; b(1)]</span> admit, concede a point. <i lang=\"ceb\">Admitahi lang nà,</i> Just admit it. <b>2</b><span class=\"rm\">[A; a12]</span> admit to a hospital."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "admitídu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "one who has conceded a point, admitted s.t."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Admitídu siya nga siya nakadawat sa sulat,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He admits that he has received the letter."
+      }
+    ],
+    "Word": "admitídu",
+    "WordDef": {
+      "Word": "admitídu",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "one who has conceded a point, admitted s.t."
+            },
+            "Examples": [
+              {
+                "Phrase": "Admitídu siya nga siya nakadawat sa sulat,",
+                "Gloss": "He admits that he has received the letter."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 5,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">admitídu</b><i>n</i> one who has conceded a point, admitted s.t. <i lang=\"ceb\">Admitídu siya nga siya nakadawat sa sulat,</i> He admits that he has received the letter."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "admitir"
+      },
+      {
+        "Type": "LINK",
+        "Content": "admitar"
+      }
+    ],
+    "Word": "admitir",
+    "WordDef": {
+      "Word": "admitir",
+      "DefEx": {
+        "Def": {
+          "Type": "LINK",
+          "Content": "admitar"
+        },
+        "Examples": []
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">admitir</b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#admitar\">admitar</a></span>."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adngan"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "k.o. small fish."
+      }
+    ],
+    "Word": "adngan",
+    "WordDef": {
+      "Word": "adngan",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "k.o. small fish."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": [],
+    "Raw": "<b id=\"adngan\" lang=\"ceb\">adngan</b><i>n</i> k.o. small fish."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adpan"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B1; a4]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be slightly scorched to the point of being discolored."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Naadpan (giadpan) ang ákung pánit,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "My skin became tanned."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "-an"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "tending to get easily tanned."
+      }
+    ],
+    "Word": "adpan",
+    "WordDef": {
+      "Word": "adpan",
+      "WordTypeDefs": [
+        {
+          "WordType": "v",
+          "Classes": [
+            "[B1; a4]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "be slightly scorched to the point of being discolored."
+            },
+            "Examples": [
+              {
+                "Phrase": "Naadpan (giadpan) ang ákung pánit,",
+                "Gloss": "My skin became tanned."
+              }
+            ]
+          }
+        }
+      ],
+      "Conjugations": {
+        "Word": "-an",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "Classes": [],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "tending to get easily tanned."
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 9,
+    "ParseDiagnostics": [],
+    "Raw": "<b id=\"adpan\" lang=\"ceb\">adpan</b><i>v</i><span class=\"rm\">[B1; a4]</span> be slightly scorched to the point of being discolored. <i lang=\"ceb\">Naadpan (giadpan) ang ákung pánit,</i> My skin became tanned. <b lang=\"ceb\">-an</b><i>a</i> tending to get easily tanned."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adris"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "address."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "way —"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "tough guy, police character (lit. one who does not have an established residence)."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ikaw nga maistru makigbúnù ánang way adris,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "You, a teacher, want to fight with that police character?"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; c]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "write an address."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Unsay ákung iadris sa suwat?"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "What address shall I put on the letter?"
+      }
+    ],
+    "Word": "adris",
+    "WordDef": {
+      "Word": "adris",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "address."
+            },
+            "Examples": []
+          }
+        }
+      ],
+      "Conjugations": {
+        "Word": "way —",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "Classes": [],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "tough guy, police character (lit. one who does not have an established residence)."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Ikaw nga maistru makigbúnù ánang way adris,",
+                  "Gloss": "You, a teacher, want to fight with that police character?"
+                }
+              ]
+            }
+          },
+          {
+            "WordType": "v",
+            "Classes": [
+              "[A; c]"
+            ],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "write an address."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Unsay ákung iadris sa suwat?",
+                  "Gloss": "What address shall I put on the letter?"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 13,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adris</b><i>n</i> address. <b lang=\"ceb\">way —</b><i>n</i> tough guy, police character (lit. one who does not have an established residence). <i lang=\"ceb\">Ikaw nga maistru makigbúnù ánang way adris,</i> You, a teacher, want to fight with that police character? <i>v</i><span class=\"rm\">[A; c]</span> write an address. <i lang=\"ceb\">Unsay ákung iadris sa suwat?</i> What address shall I put on the letter?"
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adtu<sub>2</sub>"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "LINK",
+        "Content": "niadtu"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "LINK",
+        "Content": "kaniadtu"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "= <span class=\"sc\" lang=\"ceb\"><a href=\"#kadtu\">kadtu</a></span> (dialectal)."
+      }
+    ],
+    "Word": "adtu<sub>2</sub>",
+    "WordDef": {
+      "Word": "adtu<sub>2</sub>",
+      "NumberedDefs": [
+        {
+          "Number": "1",
+          "DefEx": {
+            "Def": {
+              "Type": "LINK",
+              "Content": "niadtu"
+            },
+            "Examples": []
+          }
+        },
+        {
+          "Number": "2",
+          "DefEx": {
+            "Def": {
+              "Type": "LINK",
+              "Content": "kaniadtu"
+            },
+            "Examples": []
+          }
+        },
+        {
+          "Number": "3",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "= <span class=\"sc\" lang=\"ceb\"><a href=\"#kadtu\">kadtu</a></span> (dialectal)."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 7,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adtu<sub>2</sub></b><b>1</b> short for <span class=\"sc\" lang=\"ceb\"><a href=\"#niadtu\">niadtu</a></span>. <b>2</b> short for <span class=\"sc\" lang=\"ceb\"><a href=\"#kaniadtu\">kaniadtu</a></span>. <b>3</b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#kadtu\">kadtu</a></span> (dialectal)."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adtut"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "= <span class=\"sc\" lang=\"ceb\"><a href=\"#adtu\">adtu</a></span> (colloquial)."
+      }
+    ],
+    "Word": "adtut",
+    "WordDef": {
+      "Word": "adtut",
+      "DefEx": {
+        "Def": {
+          "Type": "TEXT",
+          "Content": "= <span class=\"sc\" lang=\"ceb\"><a href=\"#adtu\">adtu</a></span> (colloquial)."
+        },
+        "Examples": []
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adtut</b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#adtu\">adtu</a></span> (colloquial)."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adubádu"
+      },
+      {
+        "Type": "LINK",
+        "Content": "adubáwu"
+      }
+    ],
+    "Word": "adubádu",
+    "WordDef": {
+      "Word": "adubádu",
+      "DefEx": {
+        "Def": {
+          "Type": "LINK",
+          "Content": "adubáwu"
+        },
+        "Examples": []
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adubádu</b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#adubaxwu\">adubáwu</a></span>."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adúbi"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "adobe, bricks made of clay."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "build s.t. with adobe."
+      }
+    ],
+    "Word": "adúbi",
+    "WordDef": {
+      "Word": "adúbi",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "adobe, bricks made of clay."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A; a12]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "build s.t. with adobe."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adúbi</b><i>n</i> adobe, bricks made of clay. <i>v</i><span class=\"rm\">[A; a12]</span> build s.t. with adobe."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adul"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "mentally deficient."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Dì giyud kasabut ang adul bísag unsáug isplikar,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "No matter how you explain it to the imbecile, he will never understand."
+      }
+    ],
+    "Word": "adul",
+    "WordDef": {
+      "Word": "adul",
+      "WordTypeDefs": [
+        {
+          "WordType": "a",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "mentally deficient."
+            },
+            "Examples": [
+              {
+                "Phrase": "Dì giyud kasabut ang adul bísag unsáug isplikar,",
+                "Gloss": "No matter how you explain it to the imbecile, he will never understand."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 5,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adul</b><i>a</i> mentally deficient. <i lang=\"ceb\">Dì giyud kasabut ang adul bísag unsáug isplikar,</i> No matter how you explain it to the imbecile, he will never understand."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adultiryu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "adultery."
+      }
+    ],
+    "Word": "adultiryu",
+    "WordDef": {
+      "Word": "adultiryu",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "adultery."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adultiryu</b><i>n</i> adultery."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "ad-un"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "= <span class=\"sc\" lang=\"ceb\"><a href=\"#aduxna\">adúna</a></span> (dialectal)."
+      }
+    ],
+    "Word": "ad-un",
+    "WordDef": {
+      "Word": "ad-un",
+      "DefEx": {
+        "Def": {
+          "Type": "TEXT",
+          "Content": "= <span class=\"sc\" lang=\"ceb\"><a href=\"#aduxna\">adúna</a></span> (dialectal)."
+        },
+        "Examples": []
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">ad-un</b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#aduxna\">adúna</a></span> (dialectal)."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "aduptǎr"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "adopt a child.†"
+      }
+    ],
+    "Word": "aduptǎr",
+    "WordDef": {
+      "Word": "aduptǎr",
+      "WordTypeDefs": [
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A; a12]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "adopt a child.†"
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 4,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">aduptǎr</b><i>v</i><span class=\"rm\">[A; a12]</span> adopt a child.†"
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adurnu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "decoration."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; c]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "decorate."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nindut kaáyu ang kapilya nga giadurnúhan ug búlak,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The chapel was beautifully decorated with flowers."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "paN-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "make oneself up, put on s.t. special."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nangadurnu ang mga dalága,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The girls are getting themselves all fixed up."
+      }
+    ],
+    "Word": "adurnu",
+    "WordDef": {
+      "Word": "adurnu",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "decoration."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A; c]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "decorate."
+            },
+            "Examples": [
+              {
+                "Phrase": "Nindut kaáyu ang kapilya nga giadurnúhan ug búlak,",
+                "Gloss": "The chapel was beautifully decorated with flowers."
+              }
+            ]
+          }
+        }
+      ],
+      "Conjugations": {
+        "Word": "paN-",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "Classes": [
+              "[A2]"
+            ],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "make oneself up, put on s.t. special."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Nangadurnu ang mga dalága,",
+                  "Gloss": "The girls are getting themselves all fixed up."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 14,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adurnu</b><i>n</i> decoration. <i>v</i><span class=\"rm\">[A; c]</span> decorate. <i lang=\"ceb\">Nindut kaáyu ang kapilya nga giadurnúhan ug búlak,</i> The chapel was beautifully decorated with flowers. <b lang=\"ceb\">paN-</b><i>v</i><span class=\"rm\">[A2]</span> make oneself up, put on s.t. special. <i lang=\"ceb\">Nangadurnu ang mga dalága,</i> The girls are getting themselves all fixed up."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adwána"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "customs.†"
+      }
+    ],
+    "Word": "adwána",
+    "WordDef": {
+      "Word": "adwána",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "customs.†"
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adwána</b><i>n</i> customs.†"
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "*adyà"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "-an"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "selective, choosy."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Adyaan man gud nang bayhána; mau nga wà maminyù,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "That woman is choosy; that is why she did not get married."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "become choosy."
+      }
+    ],
+    "Word": "*adyà",
+    "WordDef": {
+      "Word": "*adyà",
+      "Conjugations": [
+        {
+          "Word": "-an",
+          "WordTypeDefs": [
+            {
+              "WordType": "a",
+              "Classes": [],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "selective, choosy."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Adyaan man gud nang bayhána; mau nga wà maminyù,",
+                    "Gloss": "That woman is choosy; that is why she did not get married."
+                  }
+                ]
+              }
+            },
+            {
+              "WordType": "v",
+              "Classes": [
+                "[B12]"
+              ],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "become choosy."
+                },
+                "Examples": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 9,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">*adyà</b><b lang=\"ceb\">-an</b><i>a</i> selective, choosy. <i lang=\"ceb\">Adyaan man gud nang bayhána; mau nga wà maminyù,</i> That woman is choosy; that is why she did not get married. <i>v</i><span class=\"rm\">[B12]</span> become choosy."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adyaks"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "a brand name for a dish cleanser."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "prostitute (slang)."
+      }
+    ],
+    "Word": "adyaks",
+    "WordDef": {
+      "Word": "adyaks",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "a brand name for a dish cleanser."
+                },
+                "Examples": []
+              }
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "prostitute (slang)."
+                },
+                "Examples": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adyaks</b><i>n</i><b>1</b> a brand name for a dish cleanser. <b>2</b> prostitute (slang)."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adyas"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; c]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "put at a specific setting, adjust."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "ákung adyasun (iadyas) ang pabílu sa sugà,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I’ll adjust the lamp wick."
+      }
+    ],
+    "Word": "adyas",
+    "WordDef": {
+      "Word": "adyas",
+      "WordTypeDefs": [
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A; c]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "put at a specific setting, adjust."
+            },
+            "Examples": [
+              {
+                "Phrase": "ákung adyasun (iadyas) ang pabílu sa sugà,",
+                "Gloss": "I’ll adjust the lamp wick."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adyas</b><i>v</i><span class=\"rm\">[A; c]</span> put at a specific setting, adjust. <i lang=\"ceb\">ákung adyasun (iadyas) ang pabílu sa sugà,</i> I’ll adjust the lamp wick."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adyinda"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "agenda."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; c]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "put on the agenda."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Iadyinda nà sa sunud míting,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Put that in the agenda for the next meeting."
+      }
+    ],
+    "Word": "adyinda",
+    "WordDef": {
+      "Word": "adyinda",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "agenda."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A; c]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "put on the agenda."
+            },
+            "Examples": [
+              {
+                "Phrase": "Iadyinda nà sa sunud míting,",
+                "Gloss": "Put that in the agenda for the next meeting."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 8,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adyinda</b><i>n</i> agenda. <i>v</i><span class=\"rm\">[A; c]</span> put on the agenda. <i lang=\"ceb\">Iadyinda nà sa sunud míting,</i> Put that in the agenda for the next meeting."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adyinumútu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "brand of monosodium glutamate."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; bc]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "cook with Ajinomoto."
+      }
+    ],
+    "Word": "adyinumútu",
+    "WordDef": {
+      "Word": "adyinumútu",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "brand of monosodium glutamate."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A; bc]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "cook with Ajinomoto."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adyinumútu</b><i>n</i> brand of monosodium glutamate. <i>v</i><span class=\"rm\">[A; bc]</span> cook with Ajinomoto."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "agaab"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2; b3]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "cry out loudly."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Miagaab ang bátà kay giilúgan sa íyang duláan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The child cried loudly when his toys were snatched away."
+      }
+    ],
+    "Word": "agaab",
+    "WordDef": {
+      "Word": "agaab",
+      "WordTypeDefs": [
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A2; b3]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "cry out loudly."
+            },
+            "Examples": [
+              {
+                "Phrase": "Miagaab ang bátà kay giilúgan sa íyang duláan,",
+                "Gloss": "The child cried loudly when his toys were snatched away."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": [],
+    "Raw": "<b id=\"agaab\" lang=\"ceb\">agaab</b><i>v</i><span class=\"rm\">[A2; b3]</span> cry out loudly. <i lang=\"ceb\">Miagaab ang bátà kay giilúgan sa íyang duláan,</i> The child cried loudly when his toys were snatched away."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "agáak"
+      },
+      {
+        "Type": "LINK",
+        "Content": "akáak"
+      }
+    ],
+    "Word": "agáak",
+    "WordDef": {
+      "Word": "agáak",
+      "DefEx": {
+        "Def": {
+          "Type": "LINK",
+          "Content": "akáak"
+        },
+        "Examples": []
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">agáak</b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#akaxak\">akáak</a></span>."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "*agad"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— ug, y"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "it would be a good thing if such-and-such were the case."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Agad pag magtuun ka imbis magdúlà,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "It would be better for you to study instead of playing."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Agad pa untay nagduktur ka sa kaping mag-abugádu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "It would have been nice if you had become a doctor instead of a lawyer."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— nga"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "it was good enough as it was before a change took place."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Agad siyang natúlug, ngánu pa mang ímung gipúkaw?"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He was doing all right sleeping. What did you have to go and wake him up for?"
+      }
+    ],
+    "Word": "*agad",
+    "WordDef": {
+      "Word": "*agad",
+      "Conjugations": [
+        {
+          "Word": "— ug, y",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "it would be a good thing if such-and-such were the case."
+            },
+            "Examples": [
+              {
+                "Phrase": "Agad pag magtuun ka imbis magdúlà,",
+                "Gloss": "It would be better for you to study instead of playing."
+              },
+              {
+                "Phrase": "Agad pa untay nagduktur ka sa kaping mag-abugádu,",
+                "Gloss": "It would have been nice if you had become a doctor instead of a lawyer."
+              }
+            ]
+          }
+        },
+        {
+          "Word": "— nga",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "it was good enough as it was before a change took place."
+            },
+            "Examples": [
+              {
+                "Phrase": "Agad siyang natúlug, ngánu pa mang ímung gipúkaw?",
+                "Gloss": "He was doing all right sleeping. What did you have to go and wake him up for?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 11,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">*agad</b><b lang=\"ceb\">— ug, y</b> it would be a good thing if such-and-such were the case. <i lang=\"ceb\">Agad pag magtuun ka imbis magdúlà,</i> It would be better for you to study instead of playing. <i lang=\"ceb\">Agad pa untay nagduktur ka sa kaping mag-abugádu,</i> It would have been nice if you had become a doctor instead of a lawyer. <b lang=\"ceb\">— nga</b> it was good enough as it was before a change took place. <i lang=\"ceb\">Agad siyang natúlug, ngánu pa mang ímung gipúkaw?</i> He was doing all right sleeping. What did you have to go and wake him up for?"
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "ágad"
+      },
+      {
+        "Type": "LINK",
+        "Content": "alágad"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "paN-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A2; b6]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "for a prospective bridegroom to stay in the girl’s place just prior to the marriage ceremony in order to serve the family."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Pangagáran úsà nímu ang ginikánan arun kauyúnan ka níla,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "You serve the girl’s parents so that they will come to like you."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "-um-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "son-in-law."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A23S; a12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "take as a son-in-law."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "umagarun"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "prospective son-in-law."
+      }
+    ],
+    "Word": "ágad",
+    "WordDef": {
+      "Word": "ágad",
+      "DefEx": {
+        "Def": {
+          "Type": "LINK",
+          "Content": "alágad"
+        },
+        "Examples": []
+      },
+      "Conjugations": [
+        {
+          "Word": "paN-",
+          "WordTypeDefs": [
+            {
+              "WordType": "v",
+              "Classes": [
+                "[A2; b6]"
+              ],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "for a prospective bridegroom to stay in the girl’s place just prior to the marriage ceremony in order to serve the family."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Pangagáran úsà nímu ang ginikánan arun kauyúnan ka níla,",
+                    "Gloss": "You serve the girl’s parents so that they will come to like you."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "Word": "-um-",
+          "WordTypeDefs": [
+            {
+              "WordType": "n",
+              "Classes": [],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "son-in-law."
+                },
+                "Examples": []
+              }
+            },
+            {
+              "WordType": "v",
+              "Classes": [
+                "[A23S; a12]"
+              ],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "take as a son-in-law."
+                },
+                "Examples": []
+              }
+            }
+          ]
+        },
+        {
+          "Word": "umagarun",
+          "WordTypeDefs": [
+            {
+              "WordType": "n",
+              "Classes": [],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "prospective son-in-law."
+                },
+                "Examples": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 17,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">ágad</b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#alaxgad\">alágad</a></span>. <b lang=\"ceb\">paN-</b><i>v</i><span class=\"rm\">[A2; b6]</span> for a prospective bridegroom to stay in the girl’s place just prior to the marriage ceremony in order to serve the family. <i lang=\"ceb\">Pangagáran úsà nímu ang ginikánan arun kauyúnan ka níla,</i> You serve the girl’s parents so that they will come to like you. <b lang=\"ceb\">-um-</b><i>n</i> son-in-law. <i>v</i><span class=\"rm\">[A23S; a12]</span> take as a son-in-law. <b lang=\"ceb\">umagarun</b><i>n</i> prospective son-in-law."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "agad-ad<sub>1</sub>"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "slightly rubbery, but soft to chew."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ang alud-ud sa manuk agad-ad kaúnun,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Chicken cartilage is soft to chew."
+      }
+    ],
+    "Word": "agad-ad<sub>1</sub>",
+    "WordDef": {
+      "Word": "agad-ad<sub>1</sub>",
+      "WordTypeDefs": [
+        {
+          "WordType": "a",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "slightly rubbery, but soft to chew."
+            },
+            "Examples": [
+              {
+                "Phrase": "Ang alud-ud sa manuk agad-ad kaúnun,",
+                "Gloss": "Chicken cartilage is soft to chew."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 5,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">agad-ad<sub>1</sub></b><i>a</i> slightly rubbery, but soft to chew. <i lang=\"ceb\">Ang alud-ud sa manuk agad-ad kaúnun,</i> Chicken cartilage is soft to chew."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "agad-ad<sub>2</sub>"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "grunt contentedly."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Muagad-ad ang anay ug magpasúsu sa íyang mga baktin,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "A sow grunts when nursing its litter."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "prolonged grunt of contentment emitted by pigs."
+      }
+    ],
+    "Word": "agad-ad<sub>2</sub>",
+    "WordDef": {
+      "Word": "agad-ad<sub>2</sub>",
+      "WordTypeDefs": [
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "grunt contentedly."
+            },
+            "Examples": [
+              {
+                "Phrase": "Muagad-ad ang anay ug magpasúsu sa íyang mga baktin,",
+                "Gloss": "A sow grunts when nursing its litter."
+              }
+            ]
+          }
+        },
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "prolonged grunt of contentment emitted by pigs."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 8,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">agad-ad<sub>2</sub></b><i>v</i><span class=\"rm\">[A]</span> grunt contentedly. <i lang=\"ceb\">Muagad-ad ang anay ug magpasúsu sa íyang mga baktin,</i> A sow grunts when nursing its litter. <i>n</i> prolonged grunt of contentment emitted by pigs."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "ag-ag"
+      },
+      {
+        "Type": "LINK",
+        "Content": "alag-ag"
+      }
+    ],
+    "Word": "ag-ag",
+    "WordDef": {
+      "Word": "ag-ag",
+      "DefEx": {
+        "Def": {
+          "Type": "LINK",
+          "Content": "alag-ag"
+        },
+        "Examples": []
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 2,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">ag-ag</b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#alag-ag\">alag-ag</a></span>."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "*agagang"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "hi-/ha-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B1256]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "hesitate doing s.t. due to indecision or confusion."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nahiagagang siya pagdáwat sa rigálu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "She hesitated before accepting the present."
+      }
+    ],
+    "Word": "*agagang",
+    "WordDef": {
+      "Word": "*agagang",
+      "Conjugations": [
+        {
+          "Word": "hi-/ha-",
+          "WordTypeDefs": [
+            {
+              "WordType": "v",
+              "Classes": [
+                "[B1256]"
+              ],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "hesitate doing s.t. due to indecision or confusion."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Nahiagagang siya pagdáwat sa rigálu,",
+                    "Gloss": "She hesitated before accepting the present."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 7,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">*agagang</b><b lang=\"ceb\">hi-/ha-</b><i>v</i><span class=\"rm\">[B1256]</span> hesitate doing s.t. due to indecision or confusion. <i lang=\"ceb\">Nahiagagang siya pagdáwat sa rigálu,</i> She hesitated before accepting the present."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "agáhad"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; b6]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "clear one’s throat."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Miagáhad siya, unyà nangluwà,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He cleared his throat, then spat."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "action of clearing the throat."
+      }
+    ],
+    "Word": "agáhad",
+    "WordDef": {
+      "Word": "agáhad",
+      "WordTypeDefs": [
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A; b6]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "clear one’s throat."
+            },
+            "Examples": [
+              {
+                "Phrase": "Miagáhad siya, unyà nangluwà,",
+                "Gloss": "He cleared his throat, then spat."
+              }
+            ]
+          }
+        },
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "action of clearing the throat."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 8,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">agáhad</b><i>v</i><span class=\"rm\">[A; b6]</span> clear one’s throat. <i lang=\"ceb\">Miagáhad siya, unyà nangluwà,</i> He cleared his throat, then spat. <i>n</i> action of clearing the throat."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "ágak"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "give the hand to lead or lend support."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Akù siyang agákun tapun sa karsáda,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I’ll help him cross the street."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "guide s.o. in moral principles."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Kitang mga hamtung angayang muágak sa mga batan-un,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "We older folks should guide the younger generation."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "-ay"
+      },
+      {
+        "Type": "LINK",
+        "Content": "ágak"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "mag-r-(→), mag-r-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "trainer, one who guides others in learning s.t."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "-l-un(→)"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "weak, to be led when walking."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Gúlang na táwun si Lúlu alagakun ug mulakaw,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Grandpa is so old that he is to be led when he walks.†"
+      }
+    ],
+    "Word": "ágak",
+    "WordDef": {
+      "Word": "ágak",
+      "WordTypeDefs": [
+        {
+          "WordType": "v",
+          "Classes": [],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "give the hand to lead or lend support."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Akù siyang agákun tapun sa karsáda,",
+                    "Gloss": "I’ll help him cross the street."
+                  }
+                ]
+              },
+              "Class": "[A; a12]"
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "guide s.o. in moral principles."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Kitang mga hamtung angayang muágak sa mga batan-un,",
+                    "Gloss": "We older folks should guide the younger generation."
+                  }
+                ]
+              },
+              "Class": "[A; a12]"
+            }
+          ]
+        }
+      ],
+      "Conjugations": [
+        {
+          "Word": "-ay",
+          "DefEx": {
+            "Def": {
+              "Type": "LINK",
+              "Content": "ágak"
+            },
+            "Examples": []
+          }
+        },
+        {
+          "Word": "mag-r-(→), mag-r-",
+          "WordTypeDefs": [
+            {
+              "WordType": "n",
+              "Classes": [],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "trainer, one who guides others in learning s.t."
+                },
+                "Examples": []
+              }
+            }
+          ]
+        },
+        {
+          "Word": "-l-un(→)",
+          "WordTypeDefs": [
+            {
+              "WordType": "a",
+              "Classes": [],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "weak, to be led when walking."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Gúlang na táwun si Lúlu alagakun ug mulakaw,",
+                    "Gloss": "Grandpa is so old that he is to be led when he walks.†"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 22,
+    "ParseDiagnostics": [],
+    "Raw": "<b id=\"axgak\" lang=\"ceb\">ágak</b><i>v</i><b>1</b><span class=\"rm\">[A; a12]</span> give the hand to lead or lend support. <i lang=\"ceb\">Akù siyang agákun tapun sa karsáda,</i> I’ll help him cross the street. <b>2</b><span class=\"rm\">[A; a12]</span> guide s.o. in moral principles. <i lang=\"ceb\">Kitang mga hamtung angayang muágak sa mga batan-un,</i> We older folks should guide the younger generation. <b lang=\"ceb\">-ay</b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#axgak\">ágak</a></span>. <b lang=\"ceb\">mag-r-(→), mag-r-</b><i>n</i> trainer, one who guides others in learning s.t. <b lang=\"ceb\">-l-un(→)</b><i>a</i> weak, to be led when walking. <i lang=\"ceb\">Gúlang na táwun si Lúlu alagakun ug mulakaw,</i> Grandpa is so old that he is to be led when he walks.†"
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "agak-ak"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A]"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "for chickens to make the clucking sound of being disturbed."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Miagak-ak ang manuk kay nasangkilan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The chicken squawked when s.o. touched it."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "cackle, squawk with laughter."
+      }
+    ],
+    "Word": "agak-ak",
+    "WordDef": {
+      "Word": "agak-ak",
+      "WordTypeDefs": [
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A]"
+          ],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "for chickens to make the clucking sound of being disturbed."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Miagak-ak ang manuk kay nasangkilan,",
+                    "Gloss": "The chicken squawked when s.o. touched it."
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "cackle, squawk with laughter."
+                },
+                "Examples": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 9,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">agak-ak</b><i>v</i><span class=\"rm\">[A]</span><b>1</b> for chickens to make the clucking sound of being disturbed. <i lang=\"ceb\">Miagak-ak ang manuk kay nasangkilan,</i> The chicken squawked when s.o. touched it. <b>2</b> cackle, squawk with laughter."
   }
 ]
