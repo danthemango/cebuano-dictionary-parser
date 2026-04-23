@@ -10056,7 +10056,11 @@
       },
       {
         "Type": "LINK",
-        "Content": "<span class=\"corr\" id=\"xd20e7109\" title=\"Not in source\">*</span>abubhu"
+        "Content": "<span class=\"corr\" id=\"xd20e7109\" title=\"Not in source\">*"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "abubhu</a></span>."
       }
     ],
     "Word": "*abug<sub>2</sub>",
@@ -10077,7 +10081,11 @@
               },
               {
                 "Type": "LINK",
-                "Content": "<span class=\"corr\" id=\"xd20e7109\" title=\"Not in source\">*</span>abubhu"
+                "Content": "<span class=\"corr\" id=\"xd20e7109\" title=\"Not in source\">*"
+              },
+              {
+                "Type": "TEXT",
+                "Content": "abubhu</a></span>."
               }
             ],
             "Examples": []
@@ -10086,7 +10094,7 @@
       ]
     },
     "ParseOk": true,
-    "ParseNextIndex": 5,
+    "ParseNextIndex": 6,
     "ParseDiagnostics": [],
     "Raw": "<b lang=\"ceb\">*abug<sub>2</sub></b><b lang=\"ceb\">paN-</b> euphemism for <span class=\"sc\" lang=\"ceb\">pangabughu</span>. <i lang=\"ceb\">see</i><span class=\"sc\" lang=\"ceb\"><a href=\"#xxabubhu\"><span class=\"corr\" id=\"xd20e7109\" title=\"Not in source\">*</span>abubhu</a></span>."
   },
@@ -11225,23 +11233,33 @@
         "Content": "abusáda"
       },
       {
+        "Type": "LINK",
+        "Content": "abusádu"
+      },
+      {
         "Type": "TEXT",
-        "Content": "= <span class=\"sc\" lang=\"ceb\"><a href=\"#abusaxdu\">abusádu</a></span> (female)."
+        "Content": "(female)."
       }
     ],
     "Word": "abusáda",
     "WordDef": {
       "Word": "abusáda",
       "DefEx": {
-        "Def": {
-          "Type": "TEXT",
-          "Content": "= <span class=\"sc\" lang=\"ceb\"><a href=\"#abusaxdu\">abusádu</a></span> (female)."
-        },
+        "Def": [
+          {
+            "Type": "LINK",
+            "Content": "abusádu"
+          },
+          {
+            "Type": "TEXT",
+            "Content": "(female)."
+          }
+        ],
         "Examples": []
       }
     },
     "ParseOk": true,
-    "ParseNextIndex": 2,
+    "ParseNextIndex": 3,
     "ParseDiagnostics": [],
     "Raw": "<b lang=\"ceb\">abusáda</b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#abusaxdu\">abusádu</a></span> (female)."
   },
@@ -14514,8 +14532,12 @@
         "Content": "3"
       },
       {
+        "Type": "LINK",
+        "Content": "kadtu"
+      },
+      {
         "Type": "TEXT",
-        "Content": "= <span class=\"sc\" lang=\"ceb\"><a href=\"#kadtu\">kadtu</a></span> (dialectal)."
+        "Content": "(dialectal)."
       }
     ],
     "Word": "adtu<sub>2</sub>",
@@ -14545,17 +14567,23 @@
         {
           "Number": "3",
           "DefEx": {
-            "Def": {
-              "Type": "TEXT",
-              "Content": "= <span class=\"sc\" lang=\"ceb\"><a href=\"#kadtu\">kadtu</a></span> (dialectal)."
-            },
+            "Def": [
+              {
+                "Type": "LINK",
+                "Content": "kadtu"
+              },
+              {
+                "Type": "TEXT",
+                "Content": "(dialectal)."
+              }
+            ],
             "Examples": []
           }
         }
       ]
     },
     "ParseOk": true,
-    "ParseNextIndex": 7,
+    "ParseNextIndex": 8,
     "ParseDiagnostics": [],
     "Raw": "<b lang=\"ceb\">adtu<sub>2</sub></b><b>1</b> short for <span class=\"sc\" lang=\"ceb\"><a href=\"#niadtu\">niadtu</a></span>. <b>2</b> short for <span class=\"sc\" lang=\"ceb\"><a href=\"#kaniadtu\">kaniadtu</a></span>. <b>3</b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#kadtu\">kadtu</a></span> (dialectal)."
   },
@@ -14566,23 +14594,33 @@
         "Content": "adtut"
       },
       {
+        "Type": "LINK",
+        "Content": "adtu"
+      },
+      {
         "Type": "TEXT",
-        "Content": "= <span class=\"sc\" lang=\"ceb\"><a href=\"#adtu\">adtu</a></span> (colloquial)."
+        "Content": "(colloquial)."
       }
     ],
     "Word": "adtut",
     "WordDef": {
       "Word": "adtut",
       "DefEx": {
-        "Def": {
-          "Type": "TEXT",
-          "Content": "= <span class=\"sc\" lang=\"ceb\"><a href=\"#adtu\">adtu</a></span> (colloquial)."
-        },
+        "Def": [
+          {
+            "Type": "LINK",
+            "Content": "adtu"
+          },
+          {
+            "Type": "TEXT",
+            "Content": "(colloquial)."
+          }
+        ],
         "Examples": []
       }
     },
     "ParseOk": true,
-    "ParseNextIndex": 2,
+    "ParseNextIndex": 3,
     "ParseDiagnostics": [],
     "Raw": "<b lang=\"ceb\">adtut</b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#adtu\">adtu</a></span> (colloquial)."
   },
@@ -14696,32 +14734,22 @@
       },
       {
         "Type": "LINK",
-        "Content": "kútil: n"
-      },
-      {
-        "Type": "TEXT",
-        "Content": ", <i lang=\"cebword\">v1.</i>"
+        "Content": "kútil: n v1."
       }
     ],
     "Word": "adubáwu<sub>2</sub>",
     "WordDef": {
       "Word": "adubáwu<sub>2</sub>",
       "DefEx": {
-        "Def": [
-          {
-            "Type": "LINK",
-            "Content": "kútil: n"
-          },
-          {
-            "Type": "TEXT",
-            "Content": ", <i lang=\"cebword\">v1.</i>"
-          }
-        ],
+        "Def": {
+          "Type": "LINK",
+          "Content": "kútil: n v1."
+        },
         "Examples": []
       }
     },
     "ParseOk": true,
-    "ParseNextIndex": 3,
+    "ParseNextIndex": 2,
     "ParseDiagnostics": [],
     "Raw": "<b lang=\"ceb\">adubáwu<sub>2</sub></b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#kuxtil\">kútil</a></span>, <i lang=\"ceb\">n</i>, <i lang=\"ceb\">v1.</i>"
   },
@@ -14943,23 +14971,33 @@
         "Content": "ad-un"
       },
       {
+        "Type": "LINK",
+        "Content": "adúna"
+      },
+      {
         "Type": "TEXT",
-        "Content": "= <span class=\"sc\" lang=\"ceb\"><a href=\"#aduxna\">adúna</a></span> (dialectal)."
+        "Content": "(dialectal)."
       }
     ],
     "Word": "ad-un",
     "WordDef": {
       "Word": "ad-un",
       "DefEx": {
-        "Def": {
-          "Type": "TEXT",
-          "Content": "= <span class=\"sc\" lang=\"ceb\"><a href=\"#aduxna\">adúna</a></span> (dialectal)."
-        },
+        "Def": [
+          {
+            "Type": "LINK",
+            "Content": "adúna"
+          },
+          {
+            "Type": "TEXT",
+            "Content": "(dialectal)."
+          }
+        ],
         "Examples": []
       }
     },
     "ParseOk": true,
-    "ParseNextIndex": 2,
+    "ParseNextIndex": 3,
     "ParseDiagnostics": [],
     "Raw": "<b lang=\"ceb\">ad-un</b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#aduxna\">adúna</a></span> (dialectal)."
   },

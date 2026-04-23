@@ -68,13 +68,19 @@ Describe Split-CebuanoPhrases {
 }
 
 Describe Split-Links {
-    It "Should split links for abir" {
-        $textToken = Get-TextToken -Text '<b lang="ceb">-a</b> subjunctive direct passive affix. <i lang="ceb">see</i><span class="sc" lang="ceb"><a href="#x-un">-un</a></span>.'
-        $tokens = Split-Links -Token $textToken
-        $tokens | Should -HaveCount 2
+    It "Should split links" {
+        $content = '<b lang="ceb">-a</b> subjunctive direct passive affix. <i lang="ceb">see</i><span class="sc" lang="ceb"><a href="#x-un">-un</a></span>.'
+        $tokens = Get-TextToken -Text $content
+        $tokens = Split-Links -Token $tokens
+        $tokens[1].Content | Should -Be "-un"
         $tokens[0].Type | Should -Be "TEXT"
         $tokens[1].Type | Should -Be "LINK"
-        $tokens[1].Content | Should -Be "-un"
+
+        $content = '<b lang="ceb">adubáwu<sub>2</sub></b> = <span class="sc" lang="ceb"><a href="#kuxtil">kútil</a></span>, <i lang="cebword">n</i>, <i lang="ceb">v1.</i>'
+        $tokens = Get-TextToken -Text $content
+        $tokens = Split-Links -Token $tokens
+        $tokens[1].Content | Should -Be "kútil: n v1."
+        $tokens[1].Type | Should -Be "LINK"
     }
 
     It "Should split links with numbers" {
@@ -122,7 +128,7 @@ Describe Split-Links {
         $content = '= <span class="sc" lang="ceb"><a href="#tangdiq">tangdì</a></span>, <i lang="ceb">v1.</i>'
         $textToken = Get-TextToken -Text $content
         $tokens = Split-Links -Token $textToken
-        $tokens[0].Content | Should -Be 'tangdì: v1'
+        $tokens[0].Content | Should -Be 'tangdì: v1.'
         $tokens[0].Type | Should -Be "LINK"
     }
 

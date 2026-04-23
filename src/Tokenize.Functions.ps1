@@ -200,6 +200,7 @@ function Split-CebuanoPhrases {
 # = <span class="sc" lang="ceb">tangdayan</span>.
 # = <span class=\"sc\" lang=\"ceb\"><a href=\"#tangdiq\">tangdì</a></span>, <i lang=\"ceb\">v1.</i>
 # = <span class="sc" lang="ceb"><a href="#abud">abud</a></span>, <i lang="ceb">n</i> 2.
+# <b lang="ceb">adubáwu<sub>2</sub></b> = <span class="sc" lang="ceb"><a href="#kuxtil">kútil</a></span>, <i lang="ceb">n</i>, <i lang="ceb">v1.</i>
 function Split-Links {
     param (
         [Parameter(ValueFromPipeline = $true)]
@@ -212,7 +213,7 @@ function Split-Links {
 
         # capture the entire link block, including optional "see", "short for", or "=" at the beginning, and optional wordtype and numbers at the end, and optional parentheses around the whole thing, and an optional period at the end.
         # see https://regex101.com/r/791KzX/1
-        $pattern = "[(]?(= |short for |<i lang=""ceb"">see</i>|)?<span class=""sc"" lang=""ceb"">(<a href=""#.*?"">)?(?<name>.*?)(</a>)?</span>(, )?(<i lang=""ceb"">(?<wordtype>[avn])</i>)?(<b lang=""ceb"">(?<numbers>[0-9, ]+)</b>)?[)]?(<i lang=""ceb"">(?<numbers>.*?)\.?</i>| ?(?<numbers>\d)?\.)"
+        $pattern = '[(]?(= |short for |<i lang="ceb">see</i>|)?<span class="sc" lang="ceb">(<a href="#.*?">)?(?<name>.*?)(</a>)?</span>((, )?(<i lang="ceb">(?<wordtype>[avn])</i>)?(<b lang="ceb">(?<numbers>[0-9, ]+)</b>)?[)]?(<i lang="(ceb|cebword)">(?<numbers>[avn\d]*?\.?)\.?</i>| ?(?<numbers>\d)?\.))*'
 
         $mymatches = [regex]::Matches($content, $pattern, [System.Text.RegularExpressions.RegexOptions]::Singleline)
         if ($mymatches.Count -eq 0) { $Token; return }
@@ -241,8 +242,9 @@ function Split-Links {
                 throw "Link text is empty for match: $($m.Value)"
             }
             # add the wordtype and numbers if they exist
-            $wt = $m.Groups['wordtype'].Value
-            $nums = $m.Groups['numbers'].Value
+            # $wt = $m.Groups['wordtype'].Value
+            $wt = ($m.Groups['wordtype'].Captures | ForEach-Object Value) -join ' '
+            $nums = ($m.Groups['numbers'].Captures | ForEach-Object Value) -join ' '
 
             if ($wt -or $nums) { $linkText += ":" }
             if ($wt)   { $linkText += " $wt" }
