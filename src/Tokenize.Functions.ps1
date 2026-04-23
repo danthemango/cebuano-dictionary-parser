@@ -283,54 +283,54 @@ function Split-Classes {
     }
 }
 
-# remove corr elements, leaving the text contents if there are any non-numbers
-# <span class="corr" id="xd20e4931" title="Source: kunsididirasiyun">kunsidirasiyun</span>
-# <span class="corr" id="xd20e5140" title="Not in source"><sub>1</sub></span>
-function Split-RemoveCorr {
-    param (
-        [Parameter(ValueFromPipeline = $true)]
-        $Token
-    )
-    process {
-        # If not a TEXT token, pass through unchanged
-        if ($Token.Type -ne "TEXT") {
-            $Token
-            return
-        }
+# # remove corr elements, leaving the text contents if there are any non-numbers
+# # <span class="corr" id="xd20e4931" title="Source: kunsididirasiyun">kunsidirasiyun</span>
+# # <span class="corr" id="xd20e5140" title="Not in source"><sub>1</sub></span>
+# function Update-RemoveCorr {
+#     param (
+#         [Parameter(ValueFromPipeline = $true)]
+#         $Token
+#     )
+#     process {
+#         # If not a TEXT token, pass through unchanged
+#         if ($Token.Type -ne "TEXT") {
+#             $Token
+#             return
+#         }
 
-        $content = $Token.Content
-        $opts = [System.Text.RegularExpressions.RegexOptions]::Singleline
+#         $content = $Token.Content
+#         $opts = [System.Text.RegularExpressions.RegexOptions]::Singleline
 
-        # Pattern: <span class="corr" ...>...</span>
-        $pattern = '<span[^>]*class="corr"[^>]*>.*?</span>'
-        $splits = [regex]::Split($content, $pattern)
-        $mymatches = [regex]::Matches($content, $pattern, $opts)
-        # If no matches, return original token
-        if ($mymatches.Count -eq 0) {
-            $Token
-            return
-        }
+#         # Pattern: <span class="corr" ...>...</span>
+#         $pattern = '<span[^>]*class="corr"[^>]*>.*?</span>'
+#         $splits = [regex]::Split($content, $pattern)
+#         $mymatches = [regex]::Matches($content, $pattern, $opts)
+#         # If no matches, return original token
+#         if ($mymatches.Count -eq 0) {
+#             $Token
+#             return
+#         }
 
-        # if there are any matches, remove the span (and sub) tags from the text but leave the content in-place
-        $newContent = ""
-        for ($i = 0; $i -lt $mymatches.Count; $i++) {
-            $newContent += $splits[$i]
+#         # if there are any matches, remove the span (and sub) tags from the text but leave the content in-place
+#         $newContent = ""
+#         for ($i = 0; $i -lt $mymatches.Count; $i++) {
+#             $newContent += $splits[$i]
 
-            $spanMatch = $mymatches[$i].Value
-            # remove tags
-            $innerText = $spanMatch -replace '<[^>]*>', ''
-            # check if innerText has any non-numeric characters
-            if ($innerText -match '\D') {
-                $newContent += $innerText
-            }
-            # emit the content including before and after
-            [PSCustomObject]@{
-                Type    = "TEXT"
-                Content = reduceWS($newContent)
-            }
-        }
-    }
-}
+#             $spanMatch = $mymatches[$i].Value
+#             # remove tags
+#             $innerText = $spanMatch -replace '<[^>]*>', ''
+#             # check if innerText has any non-numeric characters
+#             if ($innerText -match '\D') {
+#                 $newContent += $innerText
+#             }
+#             # emit the content including before and after
+#             [PSCustomObject]@{
+#                 Type    = "TEXT"
+#                 Content = reduceWS($newContent)
+#             }
+#         }
+#     }
+# }
 
 # strip punctuation and whitespace only text segments
 # they are from text formatting and usually don't help with definitions or examples
