@@ -4822,6 +4822,165 @@
     "Tokens": [
       {
         "Type": "CEBWORD",
+        "Content": "ábi"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— <span class=\"rm\">[<i lang=\"ceb\">gen.</i>]</span>"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "[gen.] thought, took for granted."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "ábi nákug tinúud,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "I thought it was true."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— nímu"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "<a id=\"xd20e5830\"></a> You know what?"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "ábi nímu? Nakit-an ku siya nga láig kúyug,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "You know what? I saw him going out with s.o. else."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— kay"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "just because."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "ábi kay nakadaug sa byúti kuntis midakù na ang úlu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Just because she won the beauty contest she thinks she is s.t."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "3"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— na lang"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "s.o. might think that."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Súkul. ábi na lang, daug."
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Fight back. They might think you give up."
+      }
+    ],
+    "Word": "ábi",
+    "WordDef": {
+      "Word": "ábi",
+      "NumberedDefs": [
+        {
+          "Number": "1",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "[gen.] thought, took for granted."
+            },
+            "Examples": [
+              {
+                "Phrase": "ábi nákug tinúud,",
+                "Gloss": "I thought it was true."
+              }
+            ]
+          },
+          "Conjugation": "— <span class=\"rm\">[<i lang=\"ceb\">gen.</i>]</span>"
+        }
+      ],
+      "Conjugations": {
+        "Word": "— nímu",
+        "DefExLead": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "<a id=\"xd20e5830\"></a> You know what?"
+          },
+          "Examples": [
+            {
+              "Phrase": "ábi nímu? Nakit-an ku siya nga láig kúyug,",
+              "Gloss": "You know what? I saw him going out with s.o. else."
+            }
+          ]
+        },
+        "NumberedDefs": [
+          {
+            "Number": "2",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "just because."
+              },
+              "Examples": [
+                {
+                  "Phrase": "ábi kay nakadaug sa byúti kuntis midakù na ang úlu,",
+                  "Gloss": "Just because she won the beauty contest she thinks she is s.t."
+                }
+              ]
+            },
+            "Conjugation": "— kay"
+          },
+          {
+            "Number": "3",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "s.o. might think that."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Súkul. ábi na lang, daug.",
+                  "Gloss": "Fight back. They might think you give up."
+                }
+              ]
+            },
+            "Conjugation": "— na lang"
+          }
+        ]
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 20,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">ábi</b><b>1</b><b lang=\"ceb\">— <span class=\"rm\">[<i lang=\"ceb\">gen.</i>]</span></b> [gen.] thought, took for granted. <i lang=\"ceb\">ábi nákug tinúud,</i> I thought it was true. <b lang=\"ceb\">— nímu</b><a id=\"xd20e5830\"></a> You know what? <i lang=\"ceb\">ábi nímu? Nakit-an ku siya nga láig kúyug,</i> You know what? I saw him going out with s.o. else. <b>2</b><b lang=\"ceb\">— kay</b> just because. <i lang=\"ceb\">ábi kay nakadaug sa byúti kuntis midakù na ang úlu,</i> Just because she won the beauty contest she thinks she is s.t. <b>3</b><b lang=\"ceb\">— na lang</b> s.o. might think that. <i lang=\"ceb\">Súkul. ábi na lang, daug.</i> Fight back. They might think you give up."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
         "Content": "abiábi"
       },
       {
@@ -7310,15 +7469,7 @@
       },
       {
         "Type": "TEXT",
-        "Content": "abbreviation for"
-      },
-      {
-        "Type": "CEBPHRASE",
-        "Content": "Abril,"
-      },
-      {
-        "Type": "TEXT",
-        "Content": "‘April’."
+        "Content": "abbreviation for <i lang=\"cebword\">Abril,</i> ‘April’."
       }
     ],
     "Word": "Abr.",
@@ -7327,18 +7478,13 @@
       "DefEx": {
         "Def": {
           "Type": "TEXT",
-          "Content": "abbreviation for"
+          "Content": "abbreviation for <i lang=\"cebword\">Abril,</i> ‘April’."
         },
-        "Examples": [
-          {
-            "Phrase": "Abril,",
-            "Gloss": "‘April’."
-          }
-        ]
+        "Examples": []
       }
     },
     "ParseOk": true,
-    "ParseNextIndex": 4,
+    "ParseNextIndex": 2,
     "ParseDiagnostics": [],
     "Raw": "<b lang=\"ceb\">Abr.</b> abbreviation for <i lang=\"ceb\">Abril,</i> ‘April’."
   },
@@ -10802,6 +10948,68 @@
     "Tokens": [
       {
         "Type": "CEBWORD",
+        "Content": "abungaw<sub>1</sub>"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "k.o. tiny, light brown insect which swarms over food and the like, similar in appearance to a fly."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[a4]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be infested with <i lang=\"cebword\">abungaw.</i>"
+      }
+    ],
+    "Word": "abungaw<sub>1</sub>",
+    "WordDef": {
+      "Word": "abungaw<sub>1</sub>",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "k.o. tiny, light brown insect which swarms over food and the like, similar in appearance to a fly."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[a4]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "be infested with <i lang=\"cebword\">abungaw.</i>"
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": [],
+    "Raw": "<b id=\"abungaw\" lang=\"ceb\">abungaw<sub>1</sub></b><i>n</i> k.o. tiny, light brown insect which swarms over food and the like, similar in appearance to a fly. <i>v</i><span class=\"rm\">[a4]</span> be infested with <i lang=\"ceb\">abungaw.</i>"
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
         "Content": "abungaw<sub>2</sub>"
       },
       {
@@ -11988,6 +12196,68 @@
     "ParseNextIndex": 15,
     "ParseDiagnostics": [],
     "Raw": "<b id=\"ada\" lang=\"ceb\">ada</b><b>1</b> particle showing that s.t. is not important. <i lang=\"ceb\">Ada, irù ra gud tu. Kahadluk na man nímu!</i> Heck, that was just a dog. What a scaredy cat you are! <b>2</b> particle expressing annoyance. <i lang=\"ceb\">Ada! Sábà na,</i> Oh, be quiet! <b lang=\"ceb\">— uruy</b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#ada\">ada</a></span>, <b lang=\"ceb\">1</b>. <b lang=\"ceb\">— uy</b> particle expressing exasperation at being unable to cope with s.t. (used only by women). <i lang=\"ceb\">Da uy, lisud kaáyu,</i> Oh dear! That is so hard!"
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "áda"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "mythological beings represented as beautiful maidens living in forests, streams, etc."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[B126]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "become an <i lang=\"cebword\">áda.</i>"
+      }
+    ],
+    "Word": "áda",
+    "WordDef": {
+      "Word": "áda",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "mythological beings represented as beautiful maidens living in forests, streams, etc."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[B126]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "become an <i lang=\"cebword\">áda.</i>"
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">áda</b><i>n</i> mythological beings represented as beautiful maidens living in forests, streams, etc. <i>v</i><span class=\"rm\">[B126]</span> become an <i lang=\"ceb\">áda.</i>"
   },
   {
     "Tokens": [
@@ -14347,6 +14617,118 @@
     "Tokens": [
       {
         "Type": "CEBWORD",
+        "Content": "adubáwu<sub>1</sub>"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "meat cooked in salt, vinegar with spices then fried, with fat or liquid leftover."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "cook <i lang=\"cebword\">adubáwu.</i>"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "átù lang adubawúhun ning bábuy,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "We’ll just make <i lang=\"cebword\">adubáwu</i> out of this pork."
+      }
+    ],
+    "Word": "adubáwu<sub>1</sub>",
+    "WordDef": {
+      "Word": "adubáwu<sub>1</sub>",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "meat cooked in salt, vinegar with spices then fried, with fat or liquid leftover."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A; a]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "cook <i lang=\"cebword\">adubáwu.</i>"
+            },
+            "Examples": [
+              {
+                "Phrase": "átù lang adubawúhun ning bábuy,",
+                "Gloss": "We’ll just make <i lang=\"cebword\">adubáwu</i> out of this pork."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 8,
+    "ParseDiagnostics": [],
+    "Raw": "<b id=\"adubaxwu\" lang=\"ceb\">adubáwu<sub>1</sub></b><i>n</i> meat cooked in salt, vinegar with spices then fried, with fat or liquid leftover. <i>v</i><span class=\"rm\">[A; a]</span> cook <i lang=\"ceb\">adubáwu.</i><i lang=\"ceb\">átù lang adubawúhun ning bábuy,</i> We’ll just make <i lang=\"ceb\">adubáwu</i> out of this pork."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adubáwu<sub>2</sub>"
+      },
+      {
+        "Type": "LINK",
+        "Content": "kútil: n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": ", <i lang=\"cebword\">v1.</i>"
+      }
+    ],
+    "Word": "adubáwu<sub>2</sub>",
+    "WordDef": {
+      "Word": "adubáwu<sub>2</sub>",
+      "DefEx": {
+        "Def": [
+          {
+            "Type": "LINK",
+            "Content": "kútil: n"
+          },
+          {
+            "Type": "TEXT",
+            "Content": ", <i lang=\"cebword\">v1.</i>"
+          }
+        ],
+        "Examples": []
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 3,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adubáwu<sub>2</sub></b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#kuxtil\">kútil</a></span>, <i lang=\"ceb\">n</i>, <i lang=\"ceb\">v1.</i>"
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
         "Content": "adúbi"
       },
       {
@@ -14404,6 +14786,68 @@
     "ParseNextIndex": 6,
     "ParseDiagnostics": [],
     "Raw": "<b lang=\"ceb\">adúbi</b><i>n</i> adobe, bricks made of clay. <i>v</i><span class=\"rm\">[A; a12]</span> build s.t. with adobe."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adúbu"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "meat fried in salt and vinegar."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "cook <i lang=\"cebword\">adúbu.</i>"
+      }
+    ],
+    "Word": "adúbu",
+    "WordDef": {
+      "Word": "adúbu",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "meat fried in salt and vinegar."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A; a]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "cook <i lang=\"cebword\">adúbu.</i>"
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 6,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">adúbu</b><i>n</i> meat fried in salt and vinegar. <i>v</i><span class=\"rm\">[A; a]</span> cook <i lang=\"ceb\">adúbu.</i>"
   },
   {
     "Tokens": [
@@ -14518,6 +14962,271 @@
     "ParseNextIndex": 2,
     "ParseDiagnostics": [],
     "Raw": "<b lang=\"ceb\">ad-un</b> = <span class=\"sc\" lang=\"ceb\"><a href=\"#aduxna\">adúna</a></span> (dialectal)."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "adúna"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "<i lang=\"cebword\">short form:</i>"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "dúna"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "there is, are, will be."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Dúnay libru sa lamísa,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "There is a book on the table."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "-y <span class=\"rm\">[<i lang=\"ceb\">subject</i>]</span>"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "[subject] has."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Dúnay libru si Huwan,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "John has a book."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "paka-"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A; a]"
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "1"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "strive to have s.t."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Bisag wà kuy kwarta, pakaadunáhun giyud aku nímu,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Even though I have no money, you want to force me to get some."
+      },
+      {
+        "Type": "NUMBER",
+        "Content": "2"
+      },
+      {
+        "Type": "LINK",
+        "Content": "pakaadunáhan"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "adunáhan"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "wealthy."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Usa siya sa mga adunáhan sa ámung lungsud,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He is one of the wealthy people in our town."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "pakaadunáhan"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[A13; a12]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "pretend to be wealthy, consider to be wealthy."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Nagpakaadunáhan siya bisag way nahut,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "He pretends to be rich even though he hasn’t got a penny."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Gipakaadunáhan ba aku nímu?"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "Do you think I’m rich?"
+      }
+    ],
+    "Word": "adúna",
+    "WordDef": {
+      "Word": "adúna",
+      "DefEx": {
+        "Def": {
+          "Type": "TEXT",
+          "Content": "<i lang=\"cebword\">short form:</i>"
+        },
+        "Examples": []
+      },
+      "Conjugations": [
+        {
+          "Word": "dúna",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "there is, are, will be."
+            },
+            "Examples": [
+              {
+                "Phrase": "Dúnay libru sa lamísa,",
+                "Gloss": "There is a book on the table."
+              }
+            ]
+          }
+        },
+        {
+          "Word": "-y <span class=\"rm\">[<i lang=\"ceb\">subject</i>]</span>",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "[subject] has."
+            },
+            "Examples": [
+              {
+                "Phrase": "Dúnay libru si Huwan,",
+                "Gloss": "John has a book."
+              }
+            ]
+          }
+        },
+        {
+          "Word": "paka-",
+          "WordTypeDefs": [
+            {
+              "WordType": "v",
+              "Classes": [
+                "[A; a]"
+              ],
+              "NumberedDefs": [
+                {
+                  "Number": "1",
+                  "DefEx": {
+                    "Def": {
+                      "Type": "TEXT",
+                      "Content": "strive to have s.t."
+                    },
+                    "Examples": [
+                      {
+                        "Phrase": "Bisag wà kuy kwarta, pakaadunáhun giyud aku nímu,",
+                        "Gloss": "Even though I have no money, you want to force me to get some."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "Number": "2",
+                  "DefEx": {
+                    "Def": {
+                      "Type": "LINK",
+                      "Content": "pakaadunáhan"
+                    },
+                    "Examples": []
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Word": "adunáhan",
+          "WordTypeDefs": [
+            {
+              "WordType": "a",
+              "Classes": [],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "wealthy."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Usa siya sa mga adunáhan sa ámung lungsud,",
+                    "Gloss": "He is one of the wealthy people in our town."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "Word": "pakaadunáhan",
+          "WordTypeDefs": [
+            {
+              "WordType": "v",
+              "Classes": [
+                "[A13; a12]"
+              ],
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "pretend to be wealthy, consider to be wealthy."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Nagpakaadunáhan siya bisag way nahut,",
+                    "Gloss": "He pretends to be rich even though he hasn’t got a penny."
+                  },
+                  {
+                    "Phrase": "Gipakaadunáhan ba aku nímu?",
+                    "Gloss": "Do you think I’m rich?"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 32,
+    "ParseDiagnostics": [],
+    "Raw": "<b id=\"aduxna\" lang=\"ceb\">adúna</b><i lang=\"ceb\">short form:</i><b lang=\"ceb\">dúna</b> there is, are, will be. <i lang=\"ceb\">Dúnay libru sa lamísa,</i> There is a book on the table. <b lang=\"ceb\">-y <span class=\"rm\">[<i lang=\"ceb\">subject</i>]</span></b> [subject] has. <i lang=\"ceb\">Dúnay libru si Huwan,</i> John has a book. <b lang=\"ceb\">paka-</b><i>v</i><span class=\"rm\">[A; a]</span><b>1</b> strive to have s.t. <i lang=\"ceb\">Bisag wà kuy kwarta, pakaadunáhun giyud aku nímu,</i> Even though I have no money, you want to force me to get some. <b>2</b> = <span class=\"sc\" lang=\"ceb\">pakaadunáhan</span>. <b lang=\"ceb\">adunáhan</b><i>a</i> wealthy. <i lang=\"ceb\">Usa siya sa mga adunáhan sa ámung lungsud,</i> He is one of the wealthy people in our town. <b lang=\"ceb\">pakaadunáhan</b><i>v</i><span class=\"rm\">[A13; a12]</span> pretend to be wealthy, consider to be wealthy. <i lang=\"ceb\">Nagpakaadunáhan siya bisag way nahut,</i> He pretends to be rich even though he hasn’t got a penny. <i lang=\"ceb\">Gipakaadunáhan ba aku nímu?</i> Do you think I’m rich?"
   },
   {
     "Tokens": [
@@ -15061,6 +15770,97 @@
     "ParseNextIndex": 6,
     "ParseDiagnostics": [],
     "Raw": "<b lang=\"ceb\">adyinumútu</b><i>n</i> brand of monosodium glutamate. <i>v</i><span class=\"rm\">[A; bc]</span> cook with Ajinomoto."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "ag"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "<i lang=\"cebword\">short form:</i>"
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "g"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "subject marker for specific or past time subject (dialectal)."
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Ag táwung gibukbuk sa buguy namatay ganíha,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "The man that was mauled by the ruffian died a while ago."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "— sa"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "past time substitute for <i lang=\"cebword\">sa.</i>"
+      },
+      {
+        "Type": "CEBPHRASE",
+        "Content": "Pwirting uwánga ag sa irù,"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "My, how that dog barked."
+      }
+    ],
+    "Word": "ag",
+    "WordDef": {
+      "Word": "ag",
+      "DefEx": {
+        "Def": {
+          "Type": "TEXT",
+          "Content": "<i lang=\"cebword\">short form:</i>"
+        },
+        "Examples": []
+      },
+      "Conjugations": [
+        {
+          "Word": "g",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "subject marker for specific or past time subject (dialectal)."
+            },
+            "Examples": [
+              {
+                "Phrase": "Ag táwung gibukbuk sa buguy namatay ganíha,",
+                "Gloss": "The man that was mauled by the ruffian died a while ago."
+              }
+            ]
+          }
+        },
+        {
+          "Word": "— sa",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "past time substitute for <i lang=\"cebword\">sa.</i>"
+            },
+            "Examples": [
+              {
+                "Phrase": "Pwirting uwánga ag sa irù,",
+                "Gloss": "My, how that dog barked."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 10,
+    "ParseDiagnostics": [],
+    "Raw": "<b lang=\"ceb\">ag</b><i lang=\"ceb\">short form:</i><b lang=\"ceb\">g</b> subject marker for specific or past time subject (dialectal). <i lang=\"ceb\">Ag táwung gibukbuk sa buguy namatay ganíha,</i> The man that was mauled by the ruffian died a while ago. <b lang=\"ceb\">— sa</b> past time substitute for <i lang=\"ceb\">sa.</i><i lang=\"ceb\">Pwirting uwánga ag sa irù,</i> My, how that dog barked."
   },
   {
     "Tokens": [
@@ -15957,5 +16757,95 @@
     "ParseNextIndex": 9,
     "ParseDiagnostics": [],
     "Raw": "<b lang=\"ceb\">agak-ak</b><i>v</i><span class=\"rm\">[A]</span><b>1</b> for chickens to make the clucking sound of being disturbed. <i lang=\"ceb\">Miagak-ak ang manuk kay nasangkilan,</i> The chicken squawked when s.o. touched it. <b>2</b> cackle, squawk with laughter."
+  },
+  {
+    "Tokens": [
+      {
+        "Type": "CEBWORD",
+        "Content": "agan-an"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "n"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "sand-like pellets which are the droppings of a k.o. wood-boring insect."
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "v"
+      },
+      {
+        "Type": "CLASS",
+        "Content": "[a4b4]"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "be infested with wood-borers."
+      },
+      {
+        "Type": "CEBWORD",
+        "Content": "-un(→)"
+      },
+      {
+        "Type": "WORDTYPE",
+        "Content": "a"
+      },
+      {
+        "Type": "TEXT",
+        "Content": "having <i lang=\"cebword\">agan-an.</i>"
+      }
+    ],
+    "Word": "agan-an",
+    "WordDef": {
+      "Word": "agan-an",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "sand-like pellets which are the droppings of a k.o. wood-boring insect."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[a4b4]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "be infested with wood-borers."
+            },
+            "Examples": []
+          }
+        }
+      ],
+      "Conjugations": {
+        "Word": "-un(→)",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "Classes": [],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "having <i lang=\"cebword\">agan-an.</i>"
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    },
+    "ParseOk": true,
+    "ParseNextIndex": 9,
+    "ParseDiagnostics": [],
+    "Raw": "<b id=\"agan-an\" lang=\"ceb\">agan-an</b><i>n</i> sand-like pellets which are the droppings of a k.o. wood-boring insect. <i>v</i><span class=\"rm\">[a4b4]</span> be infested with wood-borers. <b lang=\"ceb\">-un(→)</b><i>a</i> having <i lang=\"ceb\">agan-an.</i>"
   }
 ]

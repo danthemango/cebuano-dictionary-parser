@@ -295,6 +295,8 @@ function Split-Classes {
 .NOTES
     this must happen after Split-Links, since they tagged the word "See" as if it is a cebuano phrase incorrectly.
 #>
+# examples:
+# be infested with <i lang="ceb">abungaw.</i>
 function Update-ChangeCebWord {
     param (
         [Parameter(ValueFromPipeline = $true)]
@@ -305,6 +307,28 @@ function Update-ChangeCebWord {
         # if there is no comma at the end inside of the tags,
         # replace lang="ceb" with lang="cebword"
         $Token.Content = [regex]::Replace($Token.Content, '<i lang="ceb">(?<content>(?:(?!</i>).)*?[^,!?\.])</i>', '<i lang="cebword">${content}</i>')
+        $Token.Content = [regex]::Replace($Token.Content, '<i lang="ceb">(?<content>(?:(?!</i>)[^\s])*?)</i>', '<i lang="cebword">${content}</i>')
+        $Token
+    }
+}
+
+<#
+.SYNOPSIS
+    Throws an exception if there is invalid xml in the content
+
+#>
+function Assert-ValidXML {
+    param (
+        [Parameter(ValueFromPipeline = $true)]
+        $Token
+    )
+    process {
+        $content = $Token.Content
+        try {
+            [xml]$xml = "<root>$content</root>"
+        } catch {
+            throw "Invalid XML in token content: $content. Error: $_"
+        }
         $Token
     }
 }
@@ -395,6 +419,6 @@ function Tokenize {
         # notes:
         # - corr must be processed before splitting words, since it is usally inside of the word block
         # - split links must be processed before cebuano phrases because of some bad formatting (they use <i lang="ceb"> as a way to make the word "see" italic, e.g. in "see otherword")
-        $Token | Split-Classes | Split-Nums | Split-Links | Split-CebuanoWords | Split-Types | Update-ChangeCebWord | Split-CebuanoPhrases
+        $Token | Split-Nums | Split-Links | Split-CebuanoWords | Split-Classes | Split-Types | Update-ChangeCebWord | Split-CebuanoPhrases | Assert-ValidXML
     }
 }

@@ -167,11 +167,19 @@ Describe Update-ChangeCebWord {
         $token = Update-ChangeCebWord -Token $token
         $token.Content | Should -Be '<i lang="ceb">Ngilngígang awtúha à!</i> That’’s some car!'
 
+
         # TODO
         # $content = 'nimble, quick in reaction. <i lang="ceb">Ang musáyaw sa tinikling kinahanglang abtik ug tiil,</i> Whoever dances the <i lang="ceb">tinikling</i> has to have nimble feet.'
         # $token = Get-TextToken -Text $content
         # $token = Update-ChangeCebWord -Token $token
         # $token.Content | Should -Be 'hello world'
+    }
+
+    It "Should recognize a pattern that has a dot but no spaces" {
+        $content = 'be infested with <i lang="ceb">abungaw.</i>'
+        $token = Get-TextToken -Text $content
+        $token = Update-ChangeCebWord -Token $token
+        $token.Content | Should -Be 'be infested with <i lang="cebword">abungaw.</i>'
     }
 }
 
