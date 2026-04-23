@@ -19,17 +19,20 @@ $parsed = $xml | .\src\Tokenize.ps1 -Limit $Limit -SearchWord $Searchword | Wher
 }
 
 # write to tokenlist.csv
-$parsed | Select-Object -ExpandProperty Tokens | ForEach-Object {
-    [PSCustomObject]@{
-        Word = $_.Word
-        Type = $_.Type
-        Content = $_.Content
-    } | Export-Csv -Encoding utf8BOM -Append -Path "out\tokenlist.csv"
-}
+$parsed | ForEach-Object {
+    $word = $_.Word
+    $_.Tokens | ForEach-Object {
+        [PSCustomObject]@{
+            Word = $word
+            Type = $_.Type
+            Content = $_.Content
+        } 
+    }
+} | Export-Csv -Encoding utf8BOM -Path "out\tokenlist.csv"
 
 # write to successful-parse.json and failed-parse.json
-$parsed | Where-Object ParseOk -eq $true | ConvertTo-Json -Depth 12 | Add-Content -Encoding UTF8 -Path "out\successful-parse.json"
-$parsed | Where-Object ParseOk -eq $false | ConvertTo-Json -Depth 12 | Add-Content -Encoding UTF8 -Path "out\failed-parse.json"
+$parsed | Where-Object ParseOk -eq $true | ConvertTo-Json -Depth 12 | Set-Content -Encoding utf8BOM -Path "out\successful-parse.json"
+$parsed | Where-Object ParseOk -eq $false | ConvertTo-Json -Depth 12 | Set-Content -Encoding utf8BOM -Path "out\failed-parse.json"
 
 $total_num = $parsed.Count
 if ($total_num -eq 0) {
