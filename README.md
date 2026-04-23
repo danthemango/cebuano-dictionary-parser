@@ -27,7 +27,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 - `Invoke-Pester`
 
 # Progress
-- First 100 words: ![97% Success](https://img.shields.io/badge/success-97%25-green "97% success")
+- First 100 words: ![99% Success](https://img.shields.io/badge/success-99%25-green "99% success")
 - First 1000 words: ![87% Success](https://img.shields.io/badge/success-87%25-green "87% success")
 
 # TODO

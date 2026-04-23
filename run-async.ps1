@@ -10,29 +10,48 @@ if (-not $xml) {
     throw "could not parse $HtmlPath as xml"
 }
 
+if ($Searchword -eq "") {
+    if (Test-Path "out\tokenlist.csv") {
+        Remove-Item "out\tokenlist.csv"
+    }
+
+    if (Test-Path "out\successful-parse.ndjson") {
+        Remove-Item "out\successful-parse.ndjson"
+    }
+
+    if (Test-Path "out\failed-parse.ndjson") {
+        Remove-Item "out\failed-parse.ndjson"
+    }
+}
+
 # tokenize to file
 $parsed = $xml | .\src\Tokenize.ps1 -Limit $Limit -SearchWord $Searchword | Where-Object {
     # if the searchword is set, filter by word
     return $Searchword -eq "" -or $Searchword -eq $_.Word
 } | ForEach-Object {
-    .\src\Parse-WordDef.ps1 -Word $_
-}
-
-# write to tokenlist.csv
-$parsed | ForEach-Object {
     $word = $_.Word
     $_.Tokens | ForEach-Object {
-        [PSCustomObject]@{
-            Word = $word
-            Type = $_.Type
-            Content = $_.Content
-        } 
+        if ($Searchword -eq "") {
+            [PSCustomObject]@{
+                Word = $word
+                Type = $_.Type
+                Content = $_.Content
+            } | Export-Csv -Encoding utf8BOM -Append -Path "out\tokenlist.csv"
+        }
     }
-} | Export-Csv -Encoding utf8BOM -Path "out\tokenlist.csv"
-
-# write to successful-parse.json and failed-parse.json
-$parsed | Where-Object ParseOk -eq $true | ConvertTo-Json -Depth 12 | Set-Content -Encoding utf8BOM -Path "out\successful-parse.json"
-$parsed | Where-Object ParseOk -eq $false | ConvertTo-Json -Depth 12 | Set-Content -Encoding utf8BOM -Path "out\failed-parse.json"
+    $_
+} | ForEach-Object {
+    .\src\Parse-WordDef.ps1 -Word $_
+} | ForEach-Object {
+    if ($Searchword -eq "") {
+        if ($_.ParseOk) {
+            $_ | ConvertTo-Json -Depth 12 -Compress | Add-Content -Encoding UTF8 -Path "out\successful-parse.ndjson"
+        } else {
+            $_ | ConvertTo-Json -Depth 12 -Compress | Add-Content -Encoding UTF8 -Path "out\failed-parse.ndjson"
+        }
+    }
+    $_
+}
 
 $total_num = $parsed.Count
 if ($total_num -eq 0) {

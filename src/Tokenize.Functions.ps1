@@ -145,7 +145,7 @@ function Split-Types {
 # they may be separate conjugations listed with their own definitions (including definition types and numbers)
 # other words, variations, conjugations, affixes
 # <b lang="ceb">adtuúnun, aladtúun</b>
-function Split-Cebuano-Words {
+function Split-CebuanoWords {
     param (
         [Parameter(ValueFromPipeline = $true)]
         $Token
@@ -161,14 +161,19 @@ function Split-Cebuano-Words {
 
 # find cebuano phrases
 # e.g.:
-# <i lang=""ceb"">Dakúa uy!</i>
-function Split-Cebuano-Phrases {
+# <i lang="ceb">Dakúa uy!</i>
+# <i lang="ceb">Abáhu (báhu) <span class="corr" id="xd20e4931" title="Source: kunsididirasiyun">kunsidirasiyun</span> ku sa ákung bána,</i> I am bound by my husband’’s decisions.
+# <i lang="ceb">Lagmit hiligsan ang bátà kay nag-abay sa tartanilya,</i>
+function Split-CebuanoPhrases {
     param (
         [Parameter(ValueFromPipeline = $true)]
         $Token
     )
     process {
-        $Token | Split-TokensByPattern -pattern '<i lang="ceb">(.*?)</i>' -tokenType "CEBPHRASE"
+        # note: this regex uses the negative lookahead: (?:(?!</i>).)*?
+        # it's the 0 or more lazy quantifier with non-capturing group containing negative lookahead </i>
+        # meaning: "capture any text as long as it's not </i>
+        $Token | Split-TokensByPattern -pattern '<i lang="ceb">((?:(?!</i>).)*?[,!?\.])</i>' -tokenType "CEBPHRASE"
     }
 }
 
@@ -204,13 +209,12 @@ function Split-Links {
         if ($Token.Type -ne "TEXT") { $Token; return }
 
         $content = $Token.Content
-        $opts = [System.Text.RegularExpressions.RegexOptions]::Singleline
 
         # capture the entire link block, including optional "see", "short for", or "=" at the beginning, and optional wordtype and numbers at the end, and optional parentheses around the whole thing, and an optional period at the end.
-        # note, edit this with regex101 
+        # see https://regex101.com/r/791KzX/1
         $pattern = "[(]?(= |short for |<i lang=""ceb"">see</i>|)?<span class=""sc"" lang=""ceb"">(<a href=""#.*?"">)?(?<name>.*?)(</a>)?</span>(, )?(<i lang=""ceb"">(?<wordtype>[avn])</i>)?(<b lang=""ceb"">(?<numbers>[0-9, ]+)</b>)?[)]?(<i lang=""ceb"">(?<numbers>.*?)\.?</i>| ?(?<numbers>\d)?\.)"
 
-        $mymatches = [regex]::Matches($content, $pattern, $opts)
+        $mymatches = [regex]::Matches($content, $pattern, [System.Text.RegularExpressions.RegexOptions]::Singleline)
         if ($mymatches.Count -eq 0) { $Token; return }
 
         $pos = 0
@@ -283,54 +287,76 @@ function Split-Classes {
     }
 }
 
-# remove corr elements, leaving the text contents if there are any non-numbers
-# <span class="corr" id="xd20e4931" title="Source: kunsididirasiyun">kunsidirasiyun</span>
-# <span class="corr" id="xd20e5140" title="Not in source"><sub>1</sub></span>
-function Split-RemoveCorr {
+<#
+.SYNOPSIS
+    find and replace elements which appear like a cebphrase, but don't have a comma at the end of text inside the <i>, as expected.
+.DESCRIPTION
+    the problem is that these elements are put in an <i> element like a cebuano phrase, but are usually just one-off examples of a cebuano word in a definition (or a gloss?)
+.NOTES
+    this must happen after Split-Links, since they tagged the word "See" as if it is a cebuano phrase incorrectly.
+#>
+function Update-ChangeCebWord {
     param (
         [Parameter(ValueFromPipeline = $true)]
         $Token
     )
     process {
-        # If not a TEXT token, pass through unchanged
-        if ($Token.Type -ne "TEXT") {
-            $Token
-            return
-        }
-
-        $content = $Token.Content
-        $opts = [System.Text.RegularExpressions.RegexOptions]::Singleline
-
-        # Pattern: <span class="corr" ...>...</span>
-        $pattern = '<span[^>]*class="corr"[^>]*>.*?</span>'
-        $splits = [regex]::Split($content, $pattern)
-        $mymatches = [regex]::Matches($content, $pattern, $opts)
-        # If no matches, return original token
-        if ($mymatches.Count -eq 0) {
-            $Token
-            return
-        }
-
-        # if there are any matches, remove the span (and sub) tags from the text but leave the content in-place
-        $newContent = ""
-        for ($i = 0; $i -lt $mymatches.Count; $i++) {
-            $newContent += $splits[$i]
-
-            $spanMatch = $mymatches[$i].Value
-            # remove tags
-            $innerText = $spanMatch -replace '<[^>]*>', ''
-            # check if innerText has any non-numeric characters
-            if ($innerText -match '\D') {
-                $newContent += $innerText
-            }
-            # emit the content including before and after
-            [PSCustomObject]@{
-                Type    = "TEXT"
-                Content = reduceWS($newContent)
-            }
-        }
+        if ($Token.Type -ne "TEXT") { $Token; return }
+        # if there is no comma at the end inside of the tags,
+        # replace lang="ceb" with lang="cebword"
+        $Token.Content = [regex]::Replace($Token.Content, '<i lang="ceb">(?<content>(?:(?!</i>).)*?[^,!?\.])</i>', '<i lang="cebword">${content}</i>')
+        $Token
     }
 }
+
+# # remove corr elements, leaving the text contents if there are any non-numbers
+# # <span class="corr" id="xd20e4931" title="Source: kunsididirasiyun">kunsidirasiyun</span>
+# # <span class="corr" id="xd20e5140" title="Not in source"><sub>1</sub></span>
+# function Update-RemoveCorr {
+#     param (
+#         [Parameter(ValueFromPipeline = $true)]
+#         $Token
+#     )
+#     process {
+#         # If not a TEXT token, pass through unchanged
+#         if ($Token.Type -ne "TEXT") {
+#             $Token
+#             return
+#         }
+
+#         $content = $Token.Content
+#         $opts = [System.Text.RegularExpressions.RegexOptions]::Singleline
+
+#         # Pattern: <span class="corr" ...>...</span>
+#         $pattern = '<span[^>]*class="corr"[^>]*>.*?</span>'
+#         $splits = [regex]::Split($content, $pattern)
+#         $mymatches = [regex]::Matches($content, $pattern, $opts)
+#         # If no matches, return original token
+#         if ($mymatches.Count -eq 0) {
+#             $Token
+#             return
+#         }
+
+#         # if there are any matches, remove the span (and sub) tags from the text but leave the content in-place
+#         $newContent = ""
+#         for ($i = 0; $i -lt $mymatches.Count; $i++) {
+#             $newContent += $splits[$i]
+
+#             $spanMatch = $mymatches[$i].Value
+#             # remove tags
+#             $innerText = $spanMatch -replace '<[^>]*>', ''
+#             # check if innerText has any non-numeric characters
+#             if ($innerText -match '\D') {
+#                 $newContent += $innerText
+#             }
+#             # emit the content including before and after
+#             [PSCustomObject]@{
+#                 Type    = "TEXT"
+#                 Content = reduceWS($newContent)
+#             }
+#         }
+#     }
+# }
 
 # strip punctuation and whitespace only text segments
 # they are from text formatting and usually don't help with definitions or examples
@@ -369,6 +395,6 @@ function Tokenize {
         # notes:
         # - corr must be processed before splitting words, since it is usally inside of the word block
         # - split links must be processed before cebuano phrases because of some bad formatting (they use <i lang="ceb"> as a way to make the word "see" italic, e.g. in "see otherword")
-        $Token | Split-Classes | Split-Nums | Split-Links | Split-Cebuano-Words | Split-Types | Split-Cebuano-Phrases
+        $Token | Split-Classes | Split-Nums | Split-Links | Split-CebuanoWords | Split-Types | Update-ChangeCebWord | Split-CebuanoPhrases
     }
 }
