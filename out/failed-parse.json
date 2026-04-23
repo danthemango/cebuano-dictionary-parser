@@ -1,0 +1,109 @@
+{
+  "Tokens": [
+    {
+      "Type": "CEBWORD",
+      "Content": "ábi"
+    },
+    {
+      "Type": "NUMBER",
+      "Content": "1"
+    },
+    {
+      "Type": "TEXT",
+      "Content": "<b lang=\"ceb\">—"
+    },
+    {
+      "Type": "CLASS",
+      "Content": "[<i lang=\"ceb\">gen.</i>]"
+    },
+    {
+      "Type": "TEXT",
+      "Content": "</b> [gen.] thought, took for granted."
+    },
+    {
+      "Type": "CEBPHRASE",
+      "Content": "ábi nákug tinúud,"
+    },
+    {
+      "Type": "TEXT",
+      "Content": "I thought it was true."
+    },
+    {
+      "Type": "CEBWORD",
+      "Content": "— nímu"
+    },
+    {
+      "Type": "TEXT",
+      "Content": "<a id=\"xd20e5830\"></a> You know what?"
+    },
+    {
+      "Type": "CEBPHRASE",
+      "Content": "ábi nímu? Nakit-an ku siya nga láig kúyug,"
+    },
+    {
+      "Type": "TEXT",
+      "Content": "You know what? I saw him going out with s.o. else."
+    },
+    {
+      "Type": "NUMBER",
+      "Content": "2"
+    },
+    {
+      "Type": "CEBWORD",
+      "Content": "— kay"
+    },
+    {
+      "Type": "TEXT",
+      "Content": "just because."
+    },
+    {
+      "Type": "CEBPHRASE",
+      "Content": "ábi kay nakadaug sa byúti kuntis midakù na ang úlu,"
+    },
+    {
+      "Type": "TEXT",
+      "Content": "Just because she won the beauty contest she thinks she is s.t."
+    },
+    {
+      "Type": "NUMBER",
+      "Content": "3"
+    },
+    {
+      "Type": "CEBWORD",
+      "Content": "— na lang"
+    },
+    {
+      "Type": "TEXT",
+      "Content": "s.o. might think that. <i lang=\"ceb\">Súkul. ábi na lang, daug.</i> Fight back. They might think you give up."
+    }
+  ],
+  "Word": "ábi",
+  "WordDef": {
+    "Word": "ábi",
+    "NumberedDefs": [
+      {
+        "Number": "1",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "<b lang=\"ceb\">—"
+          },
+          "Examples": []
+        }
+      }
+    ]
+  },
+  "ParseOk": false,
+  "ParseNextIndex": 3,
+  "ParseDiagnostics": [
+    {
+      "Index": 3,
+      "Message": "Trailing token after WORDDEF: CLASS",
+      "Token": {
+        "Type": "CLASS",
+        "Content": "[<i lang=\"ceb\">gen.</i>]"
+      }
+    }
+  ],
+  "Raw": "<b lang=\"ceb\">ábi</b><b>1</b><b lang=\"ceb\">— <span class=\"rm\">[<i lang=\"ceb\">gen.</i>]</span></b> [gen.] thought, took for granted. <i lang=\"ceb\">ábi nákug tinúud,</i> I thought it was true. <b lang=\"ceb\">— nímu</b><a id=\"xd20e5830\"></a> You know what? <i lang=\"ceb\">ábi nímu? Nakit-an ku siya nga láig kúyug,</i> You know what? I saw him going out with s.o. else. <b>2</b><b lang=\"ceb\">— kay</b> just because. <i lang=\"ceb\">ábi kay nakadaug sa byúti kuntis midakù na ang úlu,</i> Just because she won the beauty contest she thinks she is s.t. <b>3</b><b lang=\"ceb\">— na lang</b> s.o. might think that. <i lang=\"ceb\">Súkul. ábi na lang, daug.</i> Fight back. They might think you give up."
+}
