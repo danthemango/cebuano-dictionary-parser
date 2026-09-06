@@ -4,7 +4,7 @@ function reduceWS {
         [string]$Content
     )
     [string] $NewContent = $Content.Trim() -replace "\s+", " "
-    Assert-ValidXMLContent -Content $NewContent
+    Assert-ValidXMLContent -NewContent $NewContent -OldContent $Content
     return ($NewContent)
 }
 
@@ -18,7 +18,7 @@ function Remove-PageNums {
 
     $opts = [System.Text.RegularExpressions.RegexOptions]::Singleline
     [string] $NewContent = [regex]::Replace($Content, '<span[^>]*class="pagenum"[^>]*>.*?</span>', '', $opts)
-    Assert-ValidXMLContent -Content $NewContent
+    Assert-ValidXMLContent -NewContent $NewContent -OldContent $Content
     return $NewContent
 }
 
@@ -51,7 +51,7 @@ function Split-Paragraphs {
                         Content = $content
                     }
 
-                    Assert-ValidXMLContent -Content $content
+                    Assert-ValidXMLContent -NewContent $content -OldContent $Content
 
                     [PSCustomObject]@{
                         Letter = $letter
@@ -93,7 +93,7 @@ function Split-TokensByPattern {
 
         # Output content before first match
         if ($splits[0].Trim() -ne "") {
-            Assert-ValidXMLContent -Content $splits[0]
+            Assert-ValidXMLContent -NewContent $splits[0] -OldContent $Content
             [PSCustomObject]@{
                 Type    = "TEXT"
                 Content = reduceWS -Content $splits[0]
@@ -103,7 +103,7 @@ function Split-TokensByPattern {
         # Alternating: captured group (the match), then content after it
         for ($i = 1; $i -lt $splits.Count; $i += 2) {
             # Output the matched token (e.g., NUMBER)
-            Assert-ValidXMLContent -Content $splits[$i]
+            Assert-ValidXMLContent -NewContent $splits[$i] -OldContent $Content
             [PSCustomObject]@{
                 Type    = $TokenType
                 Content = $splits[$i]
@@ -112,7 +112,7 @@ function Split-TokensByPattern {
             # Output content after this match
             $afterMatch = if ($i + 1 -lt $splits.Count) { $splits[$i + 1] } else { "" }
             if ($afterMatch.Trim() -ne "") {
-                Assert-ValidXMLContent -Content $afterMatch
+                Assert-ValidXMLContent -NewContent $afterMatch -OldContent $Content
                 [PSCustomObject]@{
                     Type    = "TEXT"
                     Content = reduceWS -Content $afterMatch
@@ -239,7 +239,7 @@ function Split-Links {
             if ($beforeText -ne "") {
 
                 if ($beforeText -ne "") {
-                    Assert-ValidXMLContent -Content $beforeText
+                    Assert-ValidXMLContent -NewContent $beforeText -OldContent $Content
                     [PSCustomObject]@{
                         Type    = "TEXT"
                         Content = $beforeText
@@ -263,7 +263,7 @@ function Split-Links {
             if ($wt)   { $linkText += " $wt" }
             if ($nums) { $linkText += " $nums" }
 
-            Assert-ValidXMLContent -Content $linkText
+            Assert-ValidXMLContent -NewContent $linkText -OldContent $Content
             [PSCustomObject]@{
                 Type    = "LINK"
                 Content = $linkText
@@ -280,7 +280,7 @@ function Split-Links {
             $afterText = reduceWS -Content $afterText
 
             if ($afterText -ne "") {
-                Assert-ValidXMLContent -Content $afterText
+                Assert-ValidXMLContent -NewContent $afterText -OldContent $Content
                 [PSCustomObject]@{
                     Type    = "TEXT"
                     Content = $afterText
@@ -331,19 +331,31 @@ function Update-ChangeCebWord {
 
 function Assert-ValidXMLContent {
     param (
+        [string]$OldContent,
+        [string]$NewContent
+    )
+
+    if (-not (IsValidXML -Content $NewContent)) {
+        throw "Invalid XML content: $NewContent, original content: $OldContent"
+    }
+}
+
+function IsValidXML {
+    param (
         [string]$Content
     )
 
     # return if content is empty
     if ([string]::IsNullOrWhiteSpace($Content)) {
-        return
+        return $True
     }
 
     try {
         [xml]$xml = "<root>$Content</root>"
     } catch {
-        throw "Invalid XML in token content: $Content. Error: $_"
+        return $False
     }
+    return $True
 }
 
 <#
@@ -358,7 +370,9 @@ function Assert-ValidXML {
     )
     process {
         $content = $Token.Content
-        Assert-ValidXMLContent -Content $content
+        if (-not (IsValidXML -Content $content)) {
+            throw "Invalid XML content: $content"
+        }
         $Token
     }
 }
