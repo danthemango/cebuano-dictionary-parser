@@ -1,6 +1,11 @@
 # Utility function to convert multiple whitespace to single space
-function reduceWS($text) {
-    return ($text -replace "\s+", " ").Trim()
+function reduceWS {
+    param (
+        [string]$Content
+    )
+    [string] $NewContent = $Content.Trim() -replace "\s+", " "
+    Assert-ValidXMLContent -Content $NewContent
+    return ($NewContent)
 }
 
 # strip pagenums from content
@@ -8,11 +13,13 @@ function reduceWS($text) {
 function Remove-PageNums {
     param (
         [Parameter(Mandatory = $true)]
-        [string]$content
+        [string]$Content
     )
 
     $opts = [System.Text.RegularExpressions.RegexOptions]::Singleline
-    return [regex]::Replace($content, '<span[^>]*class="pagenum"[^>]*>.*?</span>', '', $opts)
+    [string] $NewContent = [regex]::Replace($Content, '<span[^>]*class="pagenum"[^>]*>.*?</span>', '', $opts)
+    Assert-ValidXMLContent -Content $NewContent
+    return $NewContent
 }
 
 # look for paragraphs inside of each letter div
@@ -33,16 +40,18 @@ function Split-Paragraphs {
                     $content = $para.InnerXML
 
                     # remove page numbers
-                    $content = Remove-PageNums $content
+                    $content = Remove-PageNums -Content $content
 
                     # reduce whitespace
-                    $content = reduceWS($content)
+                    $content = reduceWS -Content $content
 
                     # set content as a token of type text
                     $contentToken = [PSCustomObject]@{
                         Type    = "TEXT"
                         Content = $content
                     }
+
+                    Assert-ValidXMLContent -Content $content
 
                     [PSCustomObject]@{
                         Letter = $letter
@@ -84,15 +93,17 @@ function Split-TokensByPattern {
 
         # Output content before first match
         if ($splits[0].Trim() -ne "") {
+            Assert-ValidXMLContent -Content $splits[0]
             [PSCustomObject]@{
                 Type    = "TEXT"
-                Content = reduceWS($splits[0])
+                Content = reduceWS -Content $splits[0]
             }
         }
 
         # Alternating: captured group (the match), then content after it
         for ($i = 1; $i -lt $splits.Count; $i += 2) {
             # Output the matched token (e.g., NUMBER)
+            Assert-ValidXMLContent -Content $splits[$i]
             [PSCustomObject]@{
                 Type    = $TokenType
                 Content = $splits[$i]
@@ -101,9 +112,10 @@ function Split-TokensByPattern {
             # Output content after this match
             $afterMatch = if ($i + 1 -lt $splits.Count) { $splits[$i + 1] } else { "" }
             if ($afterMatch.Trim() -ne "") {
+                Assert-ValidXMLContent -Content $afterMatch
                 [PSCustomObject]@{
                     Type    = "TEXT"
-                    Content = reduceWS($afterMatch)
+                    Content = reduceWS -Content $afterMatch
                 }
             }
         }
@@ -125,7 +137,7 @@ function Split-Nums {
         $Token
     )
     process {
-        $Token | Split-TokensByPattern -pattern "<b>(\d+[a-z]?(?:,\s*\d+[a-z]?)*?)</b>" -tokenType "NUMBER"
+        $Token | Split-TokensByPattern -pattern "<b>(\d+[a-z]?(?:,\s*\d+[a-z]?)*?)</b>" -tokenType "NUMBER" | Assert-ValidXML
     }
 }
 
@@ -223,10 +235,11 @@ function Split-Links {
         foreach ($m in $mymatches) {
             # Text before this match
             $beforeText = $content.Substring($pos, $m.Index - $pos)
-            $beforeText = reduceWS($beforeText)
+            $beforeText = reduceWS -Content $beforeText
             if ($beforeText -ne "") {
 
                 if ($beforeText -ne "") {
+                    Assert-ValidXMLContent -Content $beforeText
                     [PSCustomObject]@{
                         Type    = "TEXT"
                         Content = $beforeText
@@ -250,6 +263,7 @@ function Split-Links {
             if ($wt)   { $linkText += " $wt" }
             if ($nums) { $linkText += " $nums" }
 
+            Assert-ValidXMLContent -Content $linkText
             [PSCustomObject]@{
                 Type    = "LINK"
                 Content = $linkText
@@ -263,9 +277,10 @@ function Split-Links {
         $tail = $content.Substring($pos)
         if ($tail.Trim() -ne "") {
             $afterText = $tail
-            $afterText = reduceWS($afterText)
+            $afterText = reduceWS -Content $afterText
 
             if ($afterText -ne "") {
+                Assert-ValidXMLContent -Content $afterText
                 [PSCustomObject]@{
                     Type    = "TEXT"
                     Content = $afterText
@@ -310,7 +325,24 @@ function Update-ChangeCebWord {
         # replace lang="ceb" with lang="cebword"
         $Token.Content = [regex]::Replace($Token.Content, '<i lang="ceb">(?<content>(?:(?!</i>).)*?[^,!?\.])</i>', '<i lang="cebword">${content}</i>')
         $Token.Content = [regex]::Replace($Token.Content, '<i lang="ceb">(?<content>(?:(?!</i>)[^\s])*?)</i>', '<i lang="cebword">${content}</i>')
-        $Token
+        $Token | Assert-ValidXML
+    }
+}
+
+function Assert-ValidXMLContent {
+    param (
+        [string]$Content
+    )
+
+    # return if content is empty
+    if ([string]::IsNullOrWhiteSpace($Content)) {
+        return
+    }
+
+    try {
+        [xml]$xml = "<root>$Content</root>"
+    } catch {
+        throw "Invalid XML in token content: $Content. Error: $_"
     }
 }
 
@@ -326,11 +358,7 @@ function Assert-ValidXML {
     )
     process {
         $content = $Token.Content
-        try {
-            [xml]$xml = "<root>$content</root>"
-        } catch {
-            throw "Invalid XML in token content: $content. Error: $_"
-        }
+        Assert-ValidXMLContent -Content $content
         $Token
     }
 }
@@ -422,6 +450,6 @@ function Tokenize {
         # - corr must be processed before splitting words, since it is usally inside of the word block
         # - split links must be processed before cebuano phrases because of some bad formatting (they use <i lang="ceb"> as a way to make the word "see" italic, e.g. in "see otherword")
         # I think each step should have valid XML, so we can assert valid XML after each step
-        $Token | Split-Nums | Assert-ValidXML | Split-Links | Assert-ValidXML | Split-CebuanoWords | Assert-ValidXML | Split-Classes | Assert-ValidXML | Split-Types | Assert-ValidXML | Update-ChangeCebWord | Assert-ValidXML | Split-CebuanoPhrases | Assert-ValidXML
+        $Token | Assert-ValidXML | Split-Nums | Split-Links | Assert-ValidXML | Split-CebuanoWords | Assert-ValidXML | Split-Classes | Assert-ValidXML | Split-Types | Assert-ValidXML | Update-ChangeCebWord | Assert-ValidXML | Split-CebuanoPhrases | Assert-ValidXML
     }
 }
