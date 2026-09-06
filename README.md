@@ -23,8 +23,20 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 - `.\run.ps1 -Limit 100`
 
 # Testing
-- `Install-Module Pester`
-- `Invoke-Pester`
+```ps1
+Install-Module Pester
+Invoke-Pester
+.\tests\Tokenize.Functions.Tests.ps1
+```
+
+```
+Tests completed in 700ms
+Tests Passed: 21, Failed: 1, Skipped: 0, Inconclusive: 0, NotRun: 0
+
+Starting discovery in 1 files.
+Discovery found 22 tests in 113ms.
+Running tests.
+```
 
 # Progress
 - First 200 words: ![92% Success](https://img.shields.io/badge/success-92%25-green "92% success")

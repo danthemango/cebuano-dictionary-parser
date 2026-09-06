@@ -223,4 +223,18 @@ Describe Tokenize {
     #     $tokens = Tokenize -Token $textToken
     #     $tokens | ConvertTo-Json -Compress | Should -Be 'Hello world'
     # }
+
+# failed tokenization or parsing
+# <b lang="ceb">*abug<sub>2</sub></b> <b lang="ceb">paN-</b> euphemism
+# for <span class="sc" lang="ceb">pangabughu</span>. <i lang=
+# "ceb">see</i> <span class="sc" lang="ceb"><a href=
+# "#xxabubhu"><span class="corr" id="xd20e7109" title=
+# "Not in source">*</span>abubhu</a></span>.
+    It "Should tokenize the *abug2 paN- euphemism definition" {
+        $content = '<b lang="ceb">*abug<sub>2</sub></b> <b lang="ceb">paN-</b> euphemism for <span class="sc" lang="ceb">pangabughu</span>. <i lang="ceb">see</i> <span class="sc" lang="ceb"><a href="#xxabubhu"><span class="corr" id="xd20e7109" title="Not in source">*</span>abubhu</a></span>.'
+        $textToken = Get-TextToken -Text $content
+        $tokens = Tokenize -Token $textToken
+        $tokens | ConvertTo-Json -Compress | Should -Be '[{"Type":"CEBWORD","Content":"*abug2"},{"Type":"CEBWORD","Content":"paN-"},{"Type":"TEXT","Content":"euphemism for "},{"Type":"LINK","Content":"pangabughu"},{"Type":"TEXT","Content":". see "},{"Type":"LINK","Content":"*abubhu"}]'
+    }
 }
+
