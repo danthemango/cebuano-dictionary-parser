@@ -450,6 +450,6 @@ function Tokenize {
         # - corr must be processed before splitting words, since it is usally inside of the word block
         # - split links must be processed before cebuano phrases because of some bad formatting (they use <i lang="ceb"> as a way to make the word "see" italic, e.g. in "see otherword")
         # I think each step should have valid XML, so we can assert valid XML after each step
-        $Token | Assert-ValidXML | Split-Nums | Split-Links | Assert-ValidXML | Split-CebuanoWords | Assert-ValidXML | Split-Classes | Assert-ValidXML | Split-Types | Assert-ValidXML | Update-ChangeCebWord | Assert-ValidXML | Split-CebuanoPhrases | Assert-ValidXML
+        $Token | Assert-ValidXML | Split-Nums | Split-Links | Split-CebuanoWords | Split-Classes | Split-Types | Update-ChangeCebWord | Split-CebuanoPhrases | Assert-ValidXML
     }
 }
