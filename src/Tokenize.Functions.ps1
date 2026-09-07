@@ -212,78 +212,160 @@ function Split-CebuanoPhrases {
 # = <span class="sc" lang="ceb">tangdayan</span>.
 # = <span class=\"sc\" lang=\"ceb\"><a href=\"#tangdiq\">tangdì</a></span>, <i lang=\"ceb\">v1.</i>
 # = <span class="sc" lang="ceb"><a href="#abud">abud</a></span>, <i lang="ceb">n</i> 2.
-# <b lang="ceb">adubáwu<sub>2</sub></b> = <span class="sc" lang="ceb"><a href="#kuxtil">kútil</a></span>, <i lang="ceb">n</i>, <i lang="ceb">v1.</i>
+# = <span class="sc" lang="ceb"><a href="#kuxtil">kútil</a></span>, <i lang="ceb">n</i>, <i lang="ceb">v1.</i>
 function Split-Links {
     param (
         [Parameter(ValueFromPipeline = $true)]
         $Token
     )
     process {
+        # # capture the entire link block, including optional "see", "short for", or "=" at the beginning, and optional wordtype and numbers at the end, and optional parentheses around the whole thing, and an optional period at the end.
+        # # see https://regex101.com/r/791KzX/1
+        # $pattern = '[(]?(= |short for |<i lang="ceb">see</i>|)?<span class="sc" lang="ceb">(<a href="#.*?">)?(?<name>.*?)(</a>)?</span>((, )?(<i lang="ceb">(?<wordtype>[avn])</i>)?(<b lang="ceb">(?<numbers>[0-9, ]+)</b>)?[)]?(<i lang="(ceb|cebword)">(?<numbers>[avn\d]*?\.?)\.?</i>| ?(?<numbers>\d)?\.))*'
+
+        # $mymatches = [regex]::Matches($content, $pattern, [System.Text.RegularExpressions.RegexOptions]::Singleline)
+        # if ($mymatches.Count -eq 0) { $Token; return }
+
+        # $pos = 0
+
+        # foreach ($m in $mymatches) {
+        #     # Text before this match
+        #     $beforeText = $content.Substring($pos, $m.Index - $pos)
+        #     $beforeText = reduceWS -Content $beforeText
+        #     if ($beforeText -ne "") {
+
+        #         if ($beforeText -ne "") {
+        #             Assert-ValidXMLContent -NewContent $beforeText -OldContent $Content
+        #             [PSCustomObject]@{
+        #                 Type    = "TEXT"
+        #                 Content = $beforeText
+        #             }
+        #         }
+        #     }
+
+        #     # $spanMatch = $m.Groups['span'].Value
+        #     # the name of the link is in the "name" group
+        #     $linkText = $m.Groups['name'].Value
+        #     # throw if linkText is empty, since that means our regex is wrong
+        #     if ($linkText -eq "") {
+        #         throw "Link text is empty for match: $($m.Value)"
+        #     }
+        #     # add the wordtype and numbers if they exist
+        #     # $wt = $m.Groups['wordtype'].Value
+        #     $wt = ($m.Groups['wordtype'].Captures | ForEach-Object Value) -join ' '
+        #     $nums = ($m.Groups['numbers'].Captures | ForEach-Object Value) -join ' '
+
+        #     if ($wt -or $nums) { $linkText += ":" }
+        #     if ($wt)   { $linkText += " $wt" }
+        #     if ($nums) { $linkText += " $nums" }
+
+        #     Assert-ValidXMLContent -NewContent $linkText -OldContent $Content
+        #     [PSCustomObject]@{
+        #         Type    = "LINK"
+        #         Content = $linkText
+        #     }
+
+        #     # Advance position to end of entire match (including the period we consumed)
+        #     $pos = $m.Index + $m.Length
+        # }
+
+        # # emit the remaining text of token
+        # $tail = $content.Substring($pos)
+        # if ($tail.Trim() -ne "") {
+        #     $afterText = $tail
+        #     $afterText = reduceWS -Content $afterText
+
+        #     if ($afterText -ne "") {
+        #         Assert-ValidXMLContent -NewContent $afterText -OldContent $Content
+        #         [PSCustomObject]@{
+        #             Type    = "TEXT"
+        #             Content = $afterText
+        #         }
+        #     }
+        # }
+
+
         if ($Token.Type -ne "TEXT") { $Token; return }
 
         $content = $Token.Content
+        if (-Not (IsValidXML -Content $content)) {
+            throw "Invalid XML content: $content"
+        }
 
-        # capture the entire link block, including optional "see", "short for", or "=" at the beginning, and optional wordtype and numbers at the end, and optional parentheses around the whole thing, and an optional period at the end.
-        # see https://regex101.com/r/791KzX/1
-        $pattern = '[(]?(= |short for |<i lang="ceb">see</i>|)?<span class="sc" lang="ceb">(<a href="#.*?">)?(?<name>.*?)(</a>)?</span>((, )?(<i lang="ceb">(?<wordtype>[avn])</i>)?(<b lang="ceb">(?<numbers>[0-9, ]+)</b>)?[)]?(<i lang="(ceb|cebword)">(?<numbers>[avn\d]*?\.?)\.?</i>| ?(?<numbers>\d)?\.))*'
+        # re-implement the regex logic with xml parsing instead, since nested tags are not being handled well
+        $xml = "<root>$content</root>"
+        [xml]$xmlDoc = $xml
+        $root = $xmlDoc.root
+        # check if the first child is a text node with '=', 'short for', or '<i lang="ceb">see</i>'
+        # if found, do not emit, but assume we have a link block, and emit if it is a valid link block, else throw an error
+        $firstChild = $root.ChildNodes[0]
+        [bool]$isLinkBlock = $false
+        if ($firstChild.NodeType -eq [System.Xml.XmlNodeType]::Text) {
+            $firstText = $firstChild.InnerText.Trim()
+            if ($firstText -eq "=" -or $firstText -eq "short for") {
+                # remove the first child
+                $root.RemoveChild($firstChild) | Out-Null
+                $isLinkBlock = $true
+            }
+        }
 
-        $mymatches = [regex]::Matches($content, $pattern, [System.Text.RegularExpressions.RegexOptions]::Singleline)
-        if ($mymatches.Count -eq 0) { $Token; return }
+        # if this element starts with '(', expect ').' at the end, remove the brackets
+        if ($root.InnerText.Trim().StartsWith("(") -and $root.InnerText.Trim().EndsWith(").")) {
+            $root.InnerText = $root.InnerText.Trim().Substring(1, $root.InnerText.Trim().Length - 2)
+            # put the '.' back at the end
+            $root.InnerText += "."
+        }
 
-        $pos = 0
+        # a valid link may be a span, i, with lang="ceb", and may have an a href inside
+        $validLink = $root.SelectSingleNode("span[@class='sc' and @lang='ceb'] | i[@lang='ceb']")
+        if ($null -ne $validLink) {
+            $linkText = $validLink.InnerText.Trim()
+            # if there is an <a> inside, use the inner text of the <a> instead
+            $aNode = $validLink.SelectSingleNode("a")
+            if ($null -ne $aNode) {
+                $linkText = $aNode.InnerText.Trim()
+            }
 
-        foreach ($m in $mymatches) {
-            # Text before this match
-            $beforeText = $content.Substring($pos, $m.Index - $pos)
-            $beforeText = reduceWS -Content $beforeText
-            if ($beforeText -ne "") {
+            # if this ends with a period, we are done, else expect one or more wordtype or number nodes that may have commas, e.g. <i lang="ceb">n</i>, <i lang="ceb">v1.</i>
+            # emit this like "abága: v", "kútil: n v1." and so on
+            # <b lang="ceb">1, 2</b>
+            # <i lang="ceb">n</i><b lang="ceb">4</b>
 
-                if ($beforeText -ne "") {
-                    Assert-ValidXMLContent -NewContent $beforeText -OldContent $Content
-                    [PSCustomObject]@{
-                        Type    = "TEXT"
-                        Content = $beforeText
+            [string]$linkTextSuffix = ""
+            
+            while ($null -ne $currentNode) {
+                # TODO should we break if we found a '.'?
+                if ($currentNode.NodeType -eq [System.Xml.XmlNodeType]::Element -and ($currentNode.Name -eq "i" -or $currentNode.Name -eq "b") -and $currentNode.Attributes["lang"] -ne $null -and $currentNode.Attributes["lang"].Value -eq "ceb") {
+                    $linkTextSuffix += " " + $currentNode.InnerText.Trim()
+                } elseif ($currentNode.NodeType -eq [System.Xml.XmlNodeType]::Text) {
+                    # if the text node is just whitespace or a comma, skip it
+                    if ($currentNode.InnerText.Trim() -eq "" -or $currentNode.InnerText.Trim() -eq ",") {
+                        # do nothing
+                    } else {
+                        break
                     }
+                } else {
+                    break
                 }
+                $currentNode = $currentNode.NextSibling
             }
 
-            # $spanMatch = $m.Groups['span'].Value
-            # the name of the link is in the "name" group
-            $linkText = $m.Groups['name'].Value
-            # throw if linkText is empty, since that means our regex is wrong
-            if ($linkText -eq "") {
-                throw "Link text is empty for match: $($m.Value)"
-            }
-            # add the wordtype and numbers if they exist
-            # $wt = $m.Groups['wordtype'].Value
-            $wt = ($m.Groups['wordtype'].Captures | ForEach-Object Value) -join ' '
-            $nums = ($m.Groups['numbers'].Captures | ForEach-Object Value) -join ' '
-
-            if ($wt -or $nums) { $linkText += ":" }
-            if ($wt)   { $linkText += " $wt" }
-            if ($nums) { $linkText += " $nums" }
-
+            $linkText += $linkTextSuffix.Trim()
             Assert-ValidXMLContent -NewContent $linkText -OldContent $Content
             [PSCustomObject]@{
                 Type    = "LINK"
                 Content = $linkText
             }
-
-            # Advance position to end of entire match (including the period we consumed)
-            $pos = $m.Index + $m.Length
-        }
-
-        # emit the remaining text of token
-        $tail = $content.Substring($pos)
-        if ($tail.Trim() -ne "") {
-            $afterText = $tail
-            $afterText = reduceWS -Content $afterText
-
-            if ($afterText -ne "") {
-                Assert-ValidXMLContent -NewContent $afterText -OldContent $Content
+        } else {
+            # if we have a link block, but no valid link, throw an error
+            if ($isLinkBlock) {
+                throw "Invalid link block: $content"
+            } else {
+                # otherwise, emit the original token as text
+                Assert-ValidXMLContent -NewContent $content -OldContent $Content
                 [PSCustomObject]@{
                     Type    = "TEXT"
-                    Content = $afterText
+                    Content = reduceWS -Content $content
                 }
             }
         }
