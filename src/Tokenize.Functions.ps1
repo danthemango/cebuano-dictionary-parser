@@ -210,9 +210,10 @@ function Split-CebuanoPhrases {
 # <i lang="ceb">see</i><span class="sc" lang="ceb"><a href="#abay">abay</a></span>, <i lang="ceb">n</i><b lang="ceb">4</b>.
 # (<i lang="ceb">see</i><span class="sc" lang="ceb"><a href="#abay">abay</a></span>, <i lang="ceb">n</i><b lang="ceb">4</b>).
 # = <span class="sc" lang="ceb">tangdayan</span>.
-# = <span class=\"sc\" lang=\"ceb\"><a href=\"#tangdiq\">tangdì</a></span>, <i lang=\"ceb\">v1.</i>
+# = <span class="sc" lang="ceb"><a href="#tangdiq">tangdì</a></span>, <i lang="ceb">v1.</i>
 # = <span class="sc" lang="ceb"><a href="#abud">abud</a></span>, <i lang="ceb">n</i> 2.
 # = <span class="sc" lang="ceb"><a href="#kuxtil">kútil</a></span>, <i lang="ceb">n</i>, <i lang="ceb">v1.</i>
+# <span class="sc" lang="ceb"><a href="#xxabubhu"><span class="corr" id="xd20e7109" title="Not in source">*</span>abubhu</a></span>.
 function Split-Links {
     param (
         [Parameter(ValueFromPipeline = $true)]
