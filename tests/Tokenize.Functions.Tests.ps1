@@ -188,7 +188,7 @@ Describe Split-Links {
         $tokens[0].Type | Should -Be "LINK"
     }
 
-    It "TODO" {
+    It "Should Parse links in abága" {
         $content = '= <span class="sc" lang="ceb"><a href="#abaxga">abága</a></span>, <i lang="ceb">v</i>.'
         $textToken = Get-TextToken -Text $content
         $tokens = Split-Links -Token $textToken
@@ -196,7 +196,7 @@ Describe Split-Links {
         $tokens[0].Type | Should -Be "LINK"
     }
 
-    It "TODO" {
+    It "Should Parse links in abay" {
         $content = '(<i lang="ceb">see</i><span class="sc" lang="ceb"><a href="#abay">abay</a></span>, <i lang="ceb">n</i><b lang="ceb">4</b>).'
         $textToken = Get-TextToken -Text $content
         $tokens = Split-Links -Token $textToken
@@ -204,7 +204,7 @@ Describe Split-Links {
         $tokens[0].Type | Should -Be "LINK"
     }
 
-    It "TODO" {
+    It "Should Parse links in tangdayan" {
         $content = '= <span class="sc" lang="ceb">tangdayan</span>.'
         $textToken = Get-TextToken -Text $content
         $tokens = Split-Links -Token $textToken
@@ -212,7 +212,7 @@ Describe Split-Links {
         $tokens[0].Type | Should -Be "LINK"
     }
 
-    It "TODO" {
+    It "Should Parse links in tangdì" {
         $content = '= <span class=\"sc\" lang=\"ceb\"><a href=\"#tangdiq\">tangdì</a></span>, <i lang=\"ceb\">v1.</i>'
         $textToken = Get-TextToken -Text $content
         $tokens = Split-Links -Token $textToken
@@ -220,7 +220,7 @@ Describe Split-Links {
         $tokens[0].Type | Should -Be "LINK"
     }
     
-    It "TODO" {
+    It "Should Parse links in abud" {
         $content = '= <span class="sc" lang="ceb"><a href="#abud">abud</a></span>, <i lang="ceb">n</i> 2.'
         $textToken = Get-TextToken -Text $content
         $tokens = Split-Links -Token $textToken
@@ -228,7 +228,7 @@ Describe Split-Links {
         $tokens[0].Type | Should -Be "LINK"
     }
 
-    It "TODO" {
+    It "Should Parse links in kútil" {
         $content = '<b lang="ceb">adubáwu<sub>2</sub></b> = <span class="sc" lang="ceb"><a href="#kuxtil">kútil</a></span>, <i lang="ceb">n</i>, <i lang="ceb">v1.</i>'
         $textToken = Get-TextToken -Text $content
         $tokens = Split-Links -Token $textToken
