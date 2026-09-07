@@ -144,7 +144,7 @@ Describe Split-Links {
         $content = '<span class="sc" lang="ceb"><a href="#xxabubhu"><span class="corr" id="xd20e7109" title="Not in source">*</span>abubhu</a></span>.'
         $textToken = Get-TextToken -Text $content
         $tokens = Split-Links -Token $textToken
-        $tokens[0].Content | Should -Be '*abubhu'
+        $tokens[0].Content | Should -Be '<corr id=''xd20e7109'' title=''Not in source''>*</corr>abubhu'
         $tokens[0].Type | Should -Be "LINK"
     }
 
@@ -324,7 +324,7 @@ Describe Tokenize {
         $content = '<span class="sc" lang="ceb"><a href="#xxabubhu"><span class="corr" id="xd20e7109" title="Not in source">*</span>abubhu</a></span>.'
         $textToken = Get-TextToken -Text $content
         $tokens = Tokenize -Token $textToken
-        $tokens | ConvertTo-Json -Compress | Should -Be '[{"Type":"LINK","Content":"*abubhu"}]'
+        $tokens | ConvertTo-Json -Compress | Should -Be '{"Type":"LINK","Content":"<corr id=''xd20e7109'' title=''Not in source''>*</corr>abubhu"}'
     }
 }
 
