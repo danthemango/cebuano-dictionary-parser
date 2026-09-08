@@ -35,6 +35,12 @@ mkdir step3_tokenize
 # TODO
 ```
 
+## optional: create index
+```powershell
+step3_tokenize\CreateIndex.ps1
+```
+This should write `step3_tokenize\index.csv`
+
 ## step 4, parse
 ```powershell
 mkdir step4_parse
@@ -60,6 +66,7 @@ Running tests.
 ```
 
 # TODO
+- [ ] create index of word to ID (since we have special chars in many words, I don't think I can put the word as the filename, so I need a table of contents or something instead)
 - [ ] move all tokenize tests into expected folder
 - [ ] it currently fails on links to specific types and numbers (e.g. "= -kung v, n 1,2,3" which says the definition is equal to the linked definitions but only the verb and 1, 2, and 3 of the noun definitions)
     - see ábang, agdul, abi
