@@ -82,8 +82,8 @@ function Split-Nums {
     )
     process {
         # move the corr span after a type, so we retain the info but capture the wordtype as expected
-        # e.g. <span class="corr" id="xd20e31735" title="Not in source"><b>1</b></span>
-        $Token.Content = [regex]::Replace($Token.Content, '<span class="corr" id="(?<id>[^"]+)" title="(?<title>[^"]*)"><b>(?<num>[\d])</b></span>', '<b>${num}</b> <corr id="${id}" title="${title}"></corr>')
+        # e.g. '<corr id="xd20e31735" title="Not in source"><b>1</b></corr>' -> '<b>1</b> <corr id="xd20e31735" title="Not in source"></corr>'
+        $Token.Content = [regex]::Replace($Token.Content, '<corr id="(?<id>[^"]+)" title="(?<title>[^"]*)"><b>(?<num>[\d])</b></corr>', '<b>${num}</b> <corr id="${id}" title="${title}"></corr>')
 
         $Token | Split-TokensByPattern -pattern "<b>(\d+[a-z]?(?:,\s*\d+[a-z]?)*?)</b>" -tokenType "NUMBER" | Assert-ValidXML
     }
@@ -99,8 +99,8 @@ function Split-Types {
     process {
         # move the corr span after a type, so we retain the info but capture the wordtype as expected
         # also change the span type to corr type
-        # e.g. '<span class="corr" id="xd20e30951" title="Not in source"><i>a</i></span>' -> '<i>a</i> <corr id="xd20e30951" title="Not in source"></corr>'
-        $Token.Content = [regex]::Replace($Token.Content, '<span class="corr" id="(?<id>[^"]+)" title="(?<title>[^"]*)"><i>(?<type>[anv])</i></span>', '<i>${type}</i> <corr id="${id}" title="${title}"></corr>')
+        # e.g. '<corr id="xd20e30951" title="Not in source"><i>a</i></corr>' -> '<i>a</i> <corr id="xd20e30951" title="Not in source"></corr>'
+        $Token.Content = [regex]::Replace($Token.Content, '<corr id="(?<id>[^"]+)" title="(?<title>[^"]*)"><i>(?<type>[anv])</i></corr>', '<i>${type}</i> <corr id="${id}" title="${title}"></corr>')
 
         $Token | Split-TokensByPattern -pattern "<i[^>]*>([anv])</i>" -tokenType "WORDTYPE"
     }
@@ -173,19 +173,6 @@ function Split-Links {
         $Token
     )
     process {
-        # I found a link may also have <span class="corr" id="xd20e7109" title="Not in source">*</span>
-        # and since it's difficult to write the regex to handle nested spans, I'm going to replace the <span> with <corr>
-        # replace only the span word with <corr>...</corr>, leaving the rest of the link and attributes intact
-        $content = [Regex]::Replace(
-            $Token.Content,
-            '<span class="corr" id="(?<id>[^"]+)" title="(?<title>[^"]*)">(?<content>.*?)</span>',
-            {
-                param($m)
-                "<corr id='$($m.Groups['id'].Value)' title='$($m.Groups['title'].Value)'>$($m.Groups['content'].Value)</corr>"
-            },
-            [System.Text.RegularExpressions.RegexOptions]::Singleline
-        )
-
         # capture the entire link block, including optional "see", "short for", or "=" at the beginning, and optional wordtype and numbers at the end, and optional parentheses around the whole thing, and an optional period at the end.
         # see https://regex101.com/r/791KzX/1
         $pattern = '[(]?(= |short for |<i lang="ceb">see</i>|)? *<span class="sc" lang="ceb">(<a href="#.*?">)?(?<name>.*?)(</a>)?</span>((, )?(<i lang="ceb">(?<wordtype>[avn])</i>)?(<b lang="ceb">(?<numbers>[0-9, ]+)</b>)?[)]?(<i lang="(ceb|cebword)">(?<numbers>[avn\d]*?\.?)\.?</i>| ?(?<numbers>\d)?\.))*'
@@ -288,6 +275,49 @@ function Update-ChangeCebWord {
         # replace lang="ceb" with lang="cebword"
         $Token.Content = [regex]::Replace($Token.Content, '<i lang="ceb">(?<content>(?:(?!</i>).)*?[^,!?\.])</i>', '<i lang="cebword">${content}</i>')
         $Token.Content = [regex]::Replace($Token.Content, '<i lang="ceb">(?<content>(?:(?!</i>)[^\s])*?)</i>', '<i lang="cebword">${content}</i>')
+        $Token | Assert-ValidXML
+    }
+}
+
+<#
+.DESCRIPTION
+    find and transform corr spans, so they don't interfere with further processing
+#>
+function Update-Corr {
+    param(
+        [Parameter(ValueFromPipeline)]
+        $Token
+    )
+
+    process {
+        if ($Token.Type -ne 'TEXT') {
+            $Token
+            return
+        }
+
+        $xml = [xml]("<root>$($Token.Content)</root>")
+
+        $corrSpans = $xml.SelectNodes('//span[@class="corr"]')
+
+        foreach ($span in @($corrSpans)) {
+
+            $corr = $xml.CreateElement('corr')
+
+            foreach ($attr in $span.Attributes) {
+                if ($attr.Name -ne 'class') {
+                    $corr.SetAttribute($attr.Name, $attr.Value)
+                }
+            }
+
+            while ($span.FirstChild) {
+                $corr.AppendChild($span.FirstChild) | Out-Null
+            }
+
+            $span.ParentNode.ReplaceChild($corr, $span) | Out-Null
+        }
+
+        $Token.Content = ($xml.DocumentElement.InnerXml)
+
         $Token | Assert-ValidXML
     }
 }
@@ -428,6 +458,6 @@ function Tokenize {
         # - corr must be processed before splitting words, since it is usally inside of the word block
         # - split links must be processed before cebuano phrases because of some bad formatting (they use <i lang="ceb"> as a way to make the word "see" italic, e.g. in "see otherword")
         # I think each step should have valid XML, so we can assert valid XML after each step
-        $Token | Assert-ValidXML | Split-Nums | Split-Links | Split-CebuanoWords | Split-Classes | Split-Types | Update-ChangeCebWord | Split-CebuanoPhrases | Assert-ValidXML
+        $Token | Assert-ValidXML | Update-Corr | Split-Nums | Split-Links | Split-CebuanoWords | Split-Classes | Split-Types | Update-ChangeCebWord | Split-CebuanoPhrases | Assert-ValidXML
     }
 }
