@@ -93,6 +93,11 @@ function Split-Types {
         $Token
     )
     process {
+        # move the corr span after a type, so we retain the info but capture the wordtype as expected
+        # also change the span type to corr type
+        # e.g. '<span class="corr" id="xd20e30951" title="Not in source"><i>a</i></span>' -> '<i>a</i> <corr id="xd20e30951" title="Not in source"></corr>'
+        $Token.Content = [regex]::Replace($Token.Content, '<span class="corr" id="(?<id>[^"]+)" title="(?<title>[^"]*)"><i>(?<type>[anv])</i></span>', '<i>${type}</i> <corr id="${id}" title="${title}"></corr>')
+
         $Token | Split-TokensByPattern -pattern "<i[^>]*>([anv])</i>" -tokenType "WORDTYPE"
     }
 }
