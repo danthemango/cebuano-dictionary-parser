@@ -8,62 +8,6 @@ function reduceWS {
     return ($NewContent)
 }
 
-# strip pagenums from content
-# <span class="pagenum">[<a id="xd20e22720" href="#xd20e22720">40</a>]</span>
-function Remove-PageNums {
-    param (
-        [Parameter(Mandatory = $true)]
-        [string]$Content
-    )
-
-    $opts = [System.Text.RegularExpressions.RegexOptions]::Singleline
-    [string] $NewContent = [regex]::Replace($Content, '<span[^>]*class="pagenum"[^>]*>.*?</span>', '', $opts)
-    Assert-ValidXMLContent -NewContent $NewContent -OldContent $Content
-    return $NewContent
-}
-
-# look for paragraphs inside of each letter div
-function Split-Paragraphs {
-    param (
-        [Parameter(ValueFromPipeline = $true)]
-        [xml]$inxml
-    )
-
-    foreach ($section in Select-Xml -Xml $inxml -XPath "//div[@class='div1 letter']") {
-        foreach ($node in $section.Node) {
-            # strip the text 'letter.' from id:
-            $letter = $node.id -replace "^letter\.", ""
-
-            $divBodies = $node.ChildNodes | Where-Object class -eq divBody
-            foreach ($divBody in $divBodies) {
-                foreach ($para in $divBody.p) {
-                    $content = $para.InnerXML
-
-                    # remove page numbers
-                    $content = Remove-PageNums -Content $content
-
-                    # reduce whitespace
-                    $content = reduceWS -Content $content
-
-                    # set content as a token of type text
-                    $contentToken = [PSCustomObject]@{
-                        Type    = "TEXT"
-                        Content = $content
-                    }
-
-                    Assert-ValidXMLContent -NewContent $content -OldContent $Content
-
-                    [PSCustomObject]@{
-                        Letter = $letter
-                        Tokens = @($contentToken)
-                        Raw    = $content
-                    }
-                }
-            }
-        }
-    }
-}
-
 function Split-TokensByPattern {
     param (
         [Parameter(ValueFromPipeline = $true)]
@@ -362,6 +306,7 @@ function IsValidXML {
 
     try {
         [xml]$xml = "<root>$Content</root>"
+        return $null -ne $xml.root
     } catch {
         return $False
     }

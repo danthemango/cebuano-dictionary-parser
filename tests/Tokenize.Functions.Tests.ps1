@@ -171,7 +171,7 @@ Describe Split-Links {
         $tokens[0].Content | Should -Be 'abay'
         $tokens[0].Type | Should -Be "LINK"
     }
-    
+
     It "Should tokenize links with no wordtype or number" {
         $content = '= <span class="sc" lang="ceb"><a href="#abir">abir</a></span>.'
         $textToken = Get-TextToken -Text $content
@@ -179,7 +179,7 @@ Describe Split-Links {
         $tokens[0].Content | Should -Be 'abir'
         $tokens[0].Type | Should -Be "LINK"
     }
-    
+
     It "Should tokenize links with no wordtype but with number" {
         $content = '= <span class="sc" lang="ceb"><a href="#abir">abir</a></span><b lang="ceb">1, 2</b>.'
         $textToken = Get-TextToken -Text $content
@@ -304,7 +304,7 @@ Describe Tokenize {
         $tokens = Tokenize -Token $textToken
         $tokens | ConvertTo-Json -Compress | Should -Be '[{"Type":"TEXT","Content":"nimble, quick in reaction."},{"Type":"CEBPHRASE","Content":"Ang musáyaw sa tinikling kinahanglang abtik ug tiil,"},{"Type":"TEXT","Content":"Whoever dances the <i lang=\"cebword\">tinikling</i> has to have nimble feet."}]'
     }
-    
+
     # It "Should tokenize the -a(←) definition" {
     #     $content = '<b lang="ceb">-a(←)</b><b>1</b> affix added to nouns forming words which refer to a specific one of several: <i lang="ceb">Kanang isdáa, dílì kadtu,</i> That fish there, not that one further over. <i lang="ceb">Háing baláya ang íla?</i> Which house is theirs? <b>1a</b> added to possessive pronouns: the particular one that belongs to [so-and-so]. <i lang="ceb">Dakù ang amúang balay, gamay tung iláha,</i> Our house is large, and theirs is small. <b>2</b> affix added to adjectives to form exclamation. <i lang="ceb">Dakúa uy!</i> My! How big it is! <i lang="ceb">Patyun tikaw, irúa ka!</i> I’’ll kill you, you dog you! <i lang="ceb">Ngilngígang awtúha à!</i> That’’s some car!'
     #     $textToken = Get-TextToken -Text $content
@@ -327,4 +327,3 @@ Describe Tokenize {
         $tokens | ConvertTo-Json -Compress | Should -Be '{"Type":"LINK","Content":"<corr id=''xd20e7109'' title=''Not in source''>*</corr>abubhu"}'
     }
 }
-

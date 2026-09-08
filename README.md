@@ -25,8 +25,8 @@ step1_fix_html\fix-html.ps1 -Inpath step0_get_html\cebuano-dictionary.html
 
 ## step 2, split definition paragraphs
 ```powershell
-mkdir step2_def_paras
-# TODO
+mkdir step2_split_paras
+step2_split_paras\SplitParas.ps1
 ```
 
 ## step 3, tokenize
