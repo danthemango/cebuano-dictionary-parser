@@ -60,6 +60,7 @@ Running tests.
 ```
 
 # TODO
+- [ ] move all tokenize tests into expected folder
 - [ ] it currently fails on links to specific types and numbers (e.g. "= -kung v, n 1,2,3" which says the definition is equal to the linked definitions but only the verb and 1, 2, and 3 of the noun definitions)
     - see ábang, agdul, abi
 - [ ] abrasadur - failed because of link numbering (CEBWORD "2" following link)
