@@ -1,6 +1,3 @@
-# e.g. step2_split_paras\data\para_a_0.xml
-# convert to: step2_split_paras\data\tokens_a_0.csv
-
 # Utility function to convert multiple whitespace to single space
 function reduceWS {
     param (
@@ -424,26 +421,4 @@ function Tokenize {
         # I think each step should have valid XML, so we can assert valid XML after each step
         $Token | Assert-ValidXML | Split-Nums | Split-Links | Split-CebuanoWords | Split-Classes | Split-Types | Update-ChangeCebWord | Split-CebuanoPhrases | Assert-ValidXML
     }
-}
-
-[string]$inDir = "step2_split_paras\data"
-[string]$outDir = "step3_tokenize\data"
-mkdir -Force $outDir
-
-foreach ($inFile in Get-ChildItem -Path $inDir -Filter "para_*.xml") {
-    $outFile = $inFile.FullName -replace "para_", "tokens_"
-    $outFile = $outFile -replace ".xml$", ".csv"
-    $outFile = Join-Path -Path $outDir -ChildPath (Split-Path -Leaf $outFile)
-
-    [xml]$xml = Get-Content $inFile.FullName
-
-    $textToken = [PSCustomObject]@{
-        Type    = "TEXT"
-        Content = $xml.root.innerXml
-    }
-
-    $tokens = $textToken | Tokenize
-
-    # output to CSV
-    $tokens | Export-Csv -Path $outFile -NoTypeInformation
 }
