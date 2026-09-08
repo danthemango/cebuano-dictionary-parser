@@ -19,20 +19,17 @@ Invoke-WebRequest -Uri "https://www.gutenberg.org/files/40074/40074-h/40074-h.ht
 
 ## step 1, clean HTML
 ```powershell
-mkdir step1_fix_html
 step1_fix_html\fix-html.ps1 -Inpath step0_get_html\cebuano-dictionary.html
 ```
 
 ## step 2, split definition paragraphs
 ```powershell
-mkdir step2_split_paras
 step2_split_paras\SplitParas.ps1
 ```
 
 ## step 3, tokenize
 ```powershell
-mkdir step3_tokenize
-# TODO
+step3_tokenize\TokenizeAll.ps1
 ```
 
 ## optional: create index

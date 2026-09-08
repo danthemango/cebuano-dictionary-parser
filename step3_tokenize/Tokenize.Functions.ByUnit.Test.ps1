@@ -318,12 +318,4 @@ Describe Tokenize {
         $tokens = Tokenize -Token $textToken
         $tokens | ConvertTo-Json -Compress | Should -Be '[{"Type":"CEBWORD","Content":"*abug<sub>2</sub>"},{"Type":"CEBWORD","Content":"paN-"},{"Type":"TEXT","Content":"euphemism for"},{"Type":"LINK","Content":"pangabughu"},{"Type":"LINK","Content":"<corr id=''xd20e7109'' title=''Not in source''>*</corr>abubhu"}]'
     }
-
-    # test just for <span class="sc" lang="ceb"><a href="#xxabubhu"><span class="corr" id="xd20e7109" title="Not in source">*</span>abubhu</a></span>.
-    It "Should tokenize the *abubhu link" {
-        $content = '<span class="sc" lang="ceb"><a href="#xxabubhu"><span class="corr" id="xd20e7109" title="Not in source">*</span>abubhu</a></span>.'
-        $textToken = Get-TextToken -Text $content
-        $tokens = Tokenize -Token $textToken
-        $tokens | ConvertTo-Json -Compress | Should -Be '{"Type":"LINK","Content":"<corr id=''xd20e7109'' title=''Not in source''>*</corr>abubhu"}'
-    }
 }
