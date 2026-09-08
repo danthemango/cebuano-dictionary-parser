@@ -81,6 +81,10 @@ function Split-Nums {
         $Token
     )
     process {
+        # move the corr span after a type, so we retain the info but capture the wordtype as expected
+        # e.g. <span class="corr" id="xd20e31735" title="Not in source"><b>1</b></span>
+        $Token.Content = [regex]::Replace($Token.Content, '<span class="corr" id="(?<id>[^"]+)" title="(?<title>[^"]*)"><b>(?<num>[\d])</b></span>', '<b>${num}</b> <corr id="${id}" title="${title}"></corr>')
+
         $Token | Split-TokensByPattern -pattern "<b>(\d+[a-z]?(?:,\s*\d+[a-z]?)*?)</b>" -tokenType "NUMBER" | Assert-ValidXML
     }
 }
