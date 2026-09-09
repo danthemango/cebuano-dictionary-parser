@@ -1,0 +1,16 @@
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_w_20599.xml Invalid XML content: -y <span class="rm">[<i lang="ceb">doubled verb base</i> or <b lang="ceb">Culu original content: <b lang="ceb">—y</b> there isn’t, wasn’t any. <i lang="ceb">Walay táwu,</i> There wasn’t anyone. <i lang="ceb">Walà nay (wan-ay) túbig,</i> There’s no more water. <b>2b1</b><b lang="ceb">-y <span class="rm">[<i lang="ceb">noun</i>] [<i lang="ceb">nom.</i>]</span></b> [nom.] does not have any [noun]. <i lang="ceb">Way kwarta si Huwan,</i> Juan has no money. <i lang="ceb">Walà ku árun,</i> I don’t know anything about this. <b>2b2</b><i lang="ceb">phrases with walay:</i><b lang="ceb">wà tay amígu</b> you’re not my friend (baby talk). <b lang="ceb">-y báli, kásu <span class="rm">[<i lang="ceb">dat.</i>]</span></b> it doesn’t matter to [dat.]. <i lang="ceb">Way báli nákù ug mabuak,</i> I don’t care if it breaks. <b lang="ceb">— pay</b> before there was any, before it got to be. <i lang="ceb">Sa wà pay gíra,</i> Before the war. <i lang="ceb">Wà pa gániy úras,</i> It hasn’t even been an hour. <b lang="ceb">-y láin kun dílì</b> none other than. <i lang="ceb">Ang mukanta way láin kun dì si Bin Abilyána,</i> Our singer is none other than Ben Abellana. <b>2b3</b><b lang="ceb">-y <span class="rm">[<i lang="ceb">doubled verb base</i> or <b lang="ceb">Culu</b>-<i lang="ceb">verb base</i>]</span></b> without doing. <i lang="ceb">Milakaw siya sa walay pupananghid (walay tingugtíngug),</i> He left without excusing himself (saying anything). <b>2b4</b><b lang="ceb">-y <span class="rm">[<i lang="ceb">verb base</i> + (→)]</span></b> without having done. <i lang="ceb">Bátang way ligù, way sudlay,</i> An unwashed, uncombed child. <i lang="ceb">Ulan nga way bugtù,</i> Rain without letup. <b lang="ceb">(←)</b><i>v</i>
+Stack Trace:
+at Assert-ValidXMLContent, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 332
+at Split-TokensByPattern<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 50
+at Split-CebuanoWords<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 123
+at Split-Links<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 181
+at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 370
+at Split-TokensByPattern<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 62
+at Split-Nums<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 88
+at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 370
+at Update-Corr<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 321
+at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 370
+at Tokenize<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 461
+at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.ps1: line 18
+at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 27
+at <ScriptBlock>, <No file>: line 1
