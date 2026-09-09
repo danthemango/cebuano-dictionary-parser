@@ -27,16 +27,17 @@ step1_fix_html\fix-html.ps1 -Inpath step0_get_html\cebuano-dictionary.html
 step2_split_paras\SplitParas.ps1
 ```
 
+## optional: create index
+```powershell
+step2_split_paras\CreateIndex.ps1
+```
+This should write `step2_split_paras\index.csv`
+
+
 ## step 3, tokenize
 ```powershell
 step3_tokenize\TokenizeAll.ps1
 ```
-
-## optional: create index
-```powershell
-step3_tokenize\CreateIndex.ps1
-```
-This should write `step3_tokenize\index.csv`
 
 ## step 4, parse
 ```powershell
