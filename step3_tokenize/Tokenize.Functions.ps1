@@ -329,6 +329,26 @@ function Update-Corr {
     }
 }
 
+function Update-ShortForm {
+    param(
+        [Parameter(ValueFromPipeline)]
+        $Token
+    )
+
+    process {
+        if ($Token.Type -ne 'TEXT') {
+            $Token
+            return
+        }
+        
+        if ($Token.Content -Like "*Short Form*") {
+            throw "'Short Form' tokenization not implementd yet."
+        }
+
+        $Token
+        return
+    }
+}
 function Assert-ValidXMLContent {
     param (
         [string]$OldContent,
@@ -465,6 +485,6 @@ function Tokenize {
         # - corr must be processed before splitting words, since it is usally inside of the word block
         # - split links must be processed before cebuano phrases because of some bad formatting (they use <i lang="ceb"> as a way to make the word "see" italic, e.g. in "see otherword")
         # I think each step should have valid XML, so we can assert valid XML after each step
-        $Token | Assert-ValidXML | Update-Corr | Split-Nums | Split-Links | Split-CebuanoWords | Split-Classes | Split-Types | Update-ChangeCebWord | Split-CebuanoPhrases | Assert-ValidXML
+        $Token | Assert-ValidXML | Update-ShortForm | Update-Corr | Split-Nums | Split-Links | Split-CebuanoWords | Split-Classes | Split-Types | Update-ChangeCebWord | Split-CebuanoPhrases | Assert-ValidXML
     }
 }
