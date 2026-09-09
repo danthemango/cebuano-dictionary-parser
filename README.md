@@ -64,6 +64,16 @@ Running tests.
 ```
 
 # TODO
+## major
+Let me start by correctly parsing the 5 longest definitions, and then checking everything else:
+- [ ] 13092
+- [ ] 10652
+- [ ] 15295
+    - [ ] fix `(<i lang=""cebword"">see also</i> 3c <i lang=""cebword"">and</i> 4d .)`
+- [ ] 10583
+- [ ] 20434
+
+## rest
 - [ ] create index of word to ID (since we have special chars in many words, I don't think I can put the word as the filename, so I need a table of contents or something instead)
 - [ ] move all tokenize tests into expected folder
 - [ ] it currently fails on links to specific types and numbers (e.g. "= -kung v, n 1,2,3" which says the definition is equal to the linked definitions but only the verb and 1, 2, and 3 of the noun definitions)
