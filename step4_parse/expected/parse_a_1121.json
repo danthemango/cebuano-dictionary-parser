@@ -1,0 +1,97 @@
+{
+  "Tokens": [
+    {
+      "Type": "CEBWORD",
+      "Content": "árab<sub>1</sub>"
+    },
+    {
+      "Type": "WORDTYPE",
+      "Content": "v"
+    },
+    {
+      "Type": "CLASS",
+      "Content": "[AB; c1]"
+    },
+    {
+      "Type": "TEXT",
+      "Content": "burn s.t. with a rapid bright flame and then die down."
+    },
+    {
+      "Type": "CEBPHRASE",
+      "Content": "Ang kaláyu miárab sa kakugnan,"
+    },
+    {
+      "Type": "TEXT",
+      "Content": "The fire burned the cogon grass."
+    },
+    {
+      "Type": "CEBWORD",
+      "Content": "(→)"
+    },
+    {
+      "Type": "WORDTYPE",
+      "Content": "a"
+    },
+    {
+      "Type": "TEXT",
+      "Content": "burning readily."
+    },
+    {
+      "Type": "CEBPHRASE",
+      "Content": "Kining tabakúa barut kay arab,"
+    },
+    {
+      "Type": "TEXT",
+      "Content": "This is a poor k.o. tobacco because it burns fast."
+    }
+  ],
+  "Word": "árab<sub>1</sub>",
+  "WordDef": {
+    "Word": "árab<sub>1</sub>",
+    "WordTypeDefs": [
+      {
+        "WordType": "v",
+        "Classes": [
+          "[AB; c1]"
+        ],
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "burn s.t. with a rapid bright flame and then die down."
+          },
+          "Examples": [
+            {
+              "Phrase": "Ang kaláyu miárab sa kakugnan,",
+              "Gloss": "The fire burned the cogon grass."
+            }
+          ]
+        }
+      }
+    ],
+    "Conjugations": {
+      "Word": "(→)",
+      "WordTypeDefs": [
+        {
+          "WordType": "a",
+          "Classes": [],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "burning readily."
+            },
+            "Examples": [
+              {
+                "Phrase": "Kining tabakúa barut kay arab,",
+                "Gloss": "This is a poor k.o. tobacco because it burns fast."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "ParseOk": true,
+  "ParseNextIndex": 11,
+  "ParseDiagnostics": [],
+  "Raw": null
+}

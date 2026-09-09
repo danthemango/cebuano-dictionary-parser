@@ -1,14 +1,3 @@
-# .Description
-# parse a single word definition (a paragraph section in the dictionary)
-# .EXAMPLE
-# this script accepts an array of tokens per word group
-# Import-Csv .\tokenlist.csv | Group-Object word | ForEach-Object { .\Parse.ps1 -Tokens $_.Group }
-param (
-    # accept array of tokens for the definition paragraph
-    [Parameter(Mandatory=$true)]
-    $Word
-)
-
 function Get-Token {
     param([object[]]$Tokens, [int]$i)
     if ($i -ge 0 -and $i -lt $Tokens.Count) { $Tokens[$i] } else { $null }
@@ -561,15 +550,25 @@ function Set-Row {
     }
 }
 
-# Parse the normalized token array into a structured tree
-$res = Set-Row -Tokens $Word.Tokens
+# .Description
+# parse a single word definition (a paragraph section in the dictionary)
+function Parse {
+    param (
+        # accept array of tokens for the definition paragraph
+        [Parameter(Mandatory=$true)]
+        $Word
+    )
 
-[pscustomobject] @{
-    Tokens           = $Word.Tokens
-    Word             = $Word.Word
-    WordDef          = $res.WordDef
-    ParseOk          = $res.Success
-    ParseNextIndex   = $res.NextIndex
-    ParseDiagnostics = $res.Diagnostics
-    Raw      = $Word.Raw
+    # Parse the normalized token array into a structured tree
+    $res = Set-Row -Tokens $Word.Tokens
+
+    [pscustomobject] @{
+        Tokens           = $Word.Tokens
+        Word             = $Word.Word
+        WordDef          = $res.WordDef
+        ParseOk          = $res.Success
+        ParseNextIndex   = $res.NextIndex
+        ParseDiagnostics = $res.Diagnostics
+        Raw      = $Word.Raw
+    }
 }
