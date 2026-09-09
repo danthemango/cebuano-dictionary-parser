@@ -1,16 +1,17 @@
 Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_l_10388.xml Invalid XML content: — nga <span class="rm">[<b lang="ceb">maka-/naka- original content: <b lang="ceb">hilabihan</b><i>a</i> carried out to excess. <i lang="ceb">Nahugù siya tungud sa kaguul nga hilabihan,</i> He became thin because of his excessive sorrows. <b lang="ceb">labihan, labian, hilabihan, ilabihan, hilabian, hinglabihan, labihánay, hilabihánay, labhan a — nga</b> [<i lang="ceb">adj.</i>] <b lang="ceb">-a, ka-</b>[<i lang="ceb">adj.</i>] how very! <i lang="ceb">Labihang mahála sa karni, Labihan kamahal sa karni!</i> How expensive the meat is! <b>b</b><b lang="ceb">— nga <span class="rm">[<b lang="ceb">maka-/naka-</b><i lang="ceb">verb</i>]</span></b> how it [did]. <i lang="ceb">Labihang makaulan dinhig mahulyu,</i> How it rains here during the month of July. <i lang="ceb">Labihan níyang nakaantus,</i> How he suffered! <b lang="ceb">labíhay, labihánay pud (sad)</b> It’s unbelievable. <i lang="ceb">Labihánay pud. Nakaáku (makaáku) siya niánà?</i> It seems incredible that he could do (would do) that!
 Stack Trace:
-at Assert-ValidXMLContent, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 339
+at Assert-ValidXMLContent, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 359
 at Split-TokensByPattern<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 50
 at Split-CebuanoWords<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 123
 at Split-Links<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 241
-at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 377
+at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
 at Split-TokensByPattern<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 62
 at Split-Nums<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 88
-at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 377
+at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
 at Update-Corr<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 328
-at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 377
-at Tokenize<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 468
+at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 348
+at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
+at Tokenize<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 488
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.ps1: line 18
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
