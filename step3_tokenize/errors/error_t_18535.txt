@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_t_18535.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_t_18535.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b lang="ceb">tatay, tátay</b><i>n</i> term of address to one’s father and sometimes uncle or grandfather. <i>v</i><b>1</b><span class="rm">[A; a12]</span> call s.o. father. <b>2</b><span class="rm">[B1256]</span> become a father. <b lang="ceb">(→)</b> voc. <i lang="ceb">short form:</i><b lang="ceb">tay</b>.

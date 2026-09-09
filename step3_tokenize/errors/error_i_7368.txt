@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_i_7368.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_i_7368.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b id="inday" lang="ceb">inday<sub>1</sub></b><i lang="ceb">short form:</i><b lang="ceb">day</b>. <i>n</i><b>1</b> title or term of address for a female the same age or younger than the speaker, often adopted as the informal first name. <i lang="ceb">ása ka Day (Inday)?</i> Where are you going, Miss? <i lang="ceb">Nagkasíra si Inday úping sa ámù,</i> Miss Oping boards in our house. <b>2</b> female, girl. <i lang="ceb">Tulu ka inday nga hidakpan sa balay sa kahiláyan,</i> Three girls were arrested in the bawdy house. <i>v</i><span class="rm">[A13; a12]</span> call s.o. <i lang="ceb">inday.</i><b lang="ceb">inday-inday</b><i>a</i><b>1</b> light and continuing wind or rain. <i lang="ceb">Dì man ni bagyu, inday-inday pa man ni,</i> This is no storm. It’s only a playful breeze. <b>2</b> slow and easy in gait. <b>2a</b> a slow easy bouncing game of table tennis, as between beginners. <b>3</b> k.o. flowering weed resembling a poinsettia: <b><i>Euphorbia heterophylla</i></b>. <i>v</i><span class="rm">[B456]</span> for wind or rain to be weak, be slow in gait. <i lang="ceb">Nag-inday-inday siyang naglakaw,</i> He’s walking slowly and leisurely.

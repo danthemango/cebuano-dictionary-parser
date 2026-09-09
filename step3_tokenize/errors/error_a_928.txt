@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_a_928.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_a_928.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b id="anixa" lang="ceb">anía</b><i lang="ceb">short form:</i><b lang="ceb">nía</b> is here, where you and I are. <i lang="ceb">Anía si Pidru sa Sibu,</i> Pedro is here in Cebu. <i lang="ceb">Aníay dus písus,</i> Here is two pesos. <i lang="ceb">Mau kanay nía sa ákung hunàhúnà,</i> That is what is (here) in my mind. <b lang="ceb">— kanákù</b><b>1</b> I have. <b>2</b> I’m menstruating.

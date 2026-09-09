@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_i_7509.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_i_7509.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b id="intaxwun" lang="ceb">intáwun</b><i lang="ceb">short form</i>: <b lang="ceb">táwun</b>. <b>1</b> particle expressing or asking for pity. <b>1a</b> in statements. <i lang="ceb">Daghan táwun ang namatay didtu,</i> A lot of people died in that place. <i lang="ceb">Mu man nà táwuy ákung panginabúhì,</i> That’s what we live from, poor us. <b>1b</b> with imperatives: please, have mercy. <i lang="ceb">Iúlì intáwun nà sa labing madalì,</i> Please return that at the earliest possible time. <b>2</b> expressing humility: I don’t necessarily deserve s.t. good. <i lang="ceb">Nahinumdum táwun siya nákù,</i> He remembers me (though I am not important enough to be remembered). <i lang="ceb">Nakadaug táwun ku,</i> I won just by luck. <b>2a</b> with statement praising oneself, expressing humility. <i lang="ceb">Kamau táwun ku ánà uy,</i> I know how to do that. (I don’t think I’m great guns, but I do know how to do it.) <b>2b</b> with statements that a catastrophe hasn’t happened: through the mercy of the Lord. <i lang="ceb">Wà táwun mi hitabuig iltur,</i> We haven’t been hit by El Tor, thank God. <b>3</b> with a sharp denial, taking the sting out of the denial. <i lang="ceb">‘Anak nu ka sa gawas ni Pidru.’—‘Dílì, tawun uy,’</i> ‘They say you’re Pedro’s illegitimate son.’—‘Good heavens, no! (Have mercy, don’t think of that.)’ <b lang="ceb">paN-</b><i>v</i><span class="rm">[A2S; b6]</span> say <i lang="ceb">intáwun</i>. <i lang="ceb">Nagpangintawun siya nga nanghulam nákù ug kwarta,</i> He kept on saying ‘poor me’ as he was borrowing the money.

@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_m_12216.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_m_12216.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b id="maxnuy" lang="ceb">mánuy</b><i>n</i><b>1</b> title for an elder brother or uncle. <b>2</b> expression used by a person who has been defeated in a scuffle to indicate submission. <i lang="ceb">Hala, mánuy arun dílì ku lubáun ning ímung buktun,</i> Go on, say ‘uncle’ so I won’t twist your arm. <i>v</i><span class="rm">[A; a12]</span> call s.o. <i lang="ceb">mánuy</i>. <b lang="ceb">(→)</b> voc. form. <i lang="ceb">Short form</i>: <b lang="ceb">nuy</b>.

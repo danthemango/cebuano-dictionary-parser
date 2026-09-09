@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_m_11993.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_m_11993.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b id="maka-" lang="ceb">maka-<sub>1</sub></b> potential active verb affix, future. (<i lang="ceb">Past</i>: <b lang="ceb">naka-</b>. <i lang="ceb">Subjunctive</i>: <b lang="ceb">maka-</b>. <i lang="ceb">Short form</i>: <b lang="ceb">ka-</b>.) <i lang="ceb">Dì ku makaalsa (kaalsa) niánà,</i> I cannot lift that. <i lang="ceb">Nakatilaw (katilaw) na ku niánà,</i> I have tried that. <i lang="ceb">Wà ku makasakay (kasakay),</i> I couldn’t get a ride. <b>1</b> refers to an action s.o. has the capability of doing. (Only the future form is used in this meaning.) <i lang="ceb">Makamau na kung mukinatsilà sa nag-idad kug diyis,</i> I knew how to speak Spanish when I was ten years old. <b>2</b> refers to an action which one had the opportunity or managed to do. <i lang="ceb">Ug makaadtu ku sa inyu human sa paniudtu, muhapit ku,</i> If I get a chance to go to your place after lunch, I’ll drop in. <i lang="ceb">Wà ku makalakaw kay síging abut ang mga bisíta,</i> I didn’t have a chance to go out because we kept having visitors. <b>2a</b><i lang="ceb">with nouns:</i> manage to get. <i lang="ceb">Ug trís ákung mahulbut run, makamadyung ku,</i> If I draw a three, I will get mahjong. <i lang="ceb">Niíning trabahúa hálus ta makasininà,</i> With this work I can hardly earn enough to buy a shirt. <b>3</b> refers to an accidental or unintentional action. <i lang="ceb">Diriyut siya makaihì sa dihang gilatigu siya sa íyang inahan,</i> Her mother whipped her so hard she nearly wet her pants. <i lang="ceb">Makaingun kag nindut ug makakità ka,</i> Once you see it, you won’t be able to help exclaiming at how beautiful it is.

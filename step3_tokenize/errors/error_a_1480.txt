@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_a_1480.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_a_1480.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b id="ayaw" lang="ceb">ayaw</b><i lang="ceb">short form:</i><b lang="ceb">ay</b> don’t do! <i lang="ceb">Ayaw ug syágit. Ayaw pagsiyágit,</i> Do not shout. <i lang="ceb">Ayaw ug kabaláka, ayaw kabaláka, ayaw pagkabaláka,</i> Don’t worry. <b lang="ceb">— lang</b><b>1</b> never mind doing. <i lang="ceb">Ayaw lang ug sirhi nang pwirta,</i> Don’t bother closing the door. <i lang="ceb">‘Gustu ka?’—‘Ayaw lang,’</i> ‘Do you want any?’—‘No, thanks.’ <b>2</b> don’t (it’s a small thing to ask). <i lang="ceb">Ay lang ingna ánà,</i> Don’t do like that! <b lang="ceb">— na</b> stop doing. <i lang="ceb">Ayaw nag hílak,</i> Stop crying. <i lang="ceb">Ayaw na, Tay. Dì na ku muusab,</i> That’s enough, Dad. I won’t do it again. <b lang="ceb">— na lang</b> don’t bother doing what you’ve started or made a motion to do. <i lang="ceb">Ay na lang kug ihatud,</i> Don’t bother taking me home. <b lang="ceb">— na lang ku ánà</b> don’t give me that reason. <i lang="ceb">Ay na lang ku ánà. Nakabatì na ku ánang rasúna,</i> Don’t give me that. I’ve heard that line before. <b lang="ceb">— na ku, ta (nímu)</b> don’t try to fool me. <i lang="ceb">Ay na lang ku nímu, Syu. Swítu na kaáyu ku nímu,</i> Don’t try to put one over me, Cio. I know you too well already.

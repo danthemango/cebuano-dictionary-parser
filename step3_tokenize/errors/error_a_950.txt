@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_a_950.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_a_950.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b id="anindut" lang="ceb">anindut</b><i lang="ceb">short form:</i><b lang="ceb">nindut</b><i>a</i> nice, beautiful. <i lang="ceb">Nindut ímung bistídu,</i> You have a beautiful dress on. <i lang="ceb">Kanindut sa pagkáun,</i> What nice food! <b lang="ceb">— nímu à</b> sarcastic expression of disapproval. <i lang="ceb">Nindut nímu à, ímung gilingkúran ang ákung kálù!</i> How nice of you to sit on my hat! <i>v</i><span class="rm">[APB; a2]</span> become, make s.t. beautiful. <i lang="ceb">Kinsay munindut (mupanindut) sa intabládu?</i> Who will beautify the stage? <i lang="ceb">Nindúta ang ímung diskursu,</i> Make your talk fancy. <b lang="ceb">ma-</b><i>a</i> nice, beautiful.

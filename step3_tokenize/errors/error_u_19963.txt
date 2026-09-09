@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_u_19963.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_u_19963.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b id="ugaxling" lang="ceb">ugáling</b><i lang="ceb">short form:</i><b lang="ceb">gáling</b>. = <span class="sc" lang="ceb"><a href="#gaxniq">gánì</a></span> in all meanings except <i lang="ceb">5.</i><b lang="ceb">ka-un</b><b>1</b> one’s own. <i lang="ceb">ákù ning kaugalíngung kutsi,</i> This is my own car. <i lang="ceb">May kaugalíngung banyu ang kwartu,</i> The room has its own bathroom. <i lang="ceb">Gigastu ku ang kaugalíngun kung kwarta,</i> I spent my own money. <b>1a</b> one’s home. <i lang="ceb">But-an ku nímu sa ákung kaugalíngun?</i> You dare dictate to me in my own house? <b>2</b> oneself. <i lang="ceb">Nagsulti siya sa íyang kaugalíngun,</i> She was talking to herself. <b lang="ceb">panga-un</b><i>v</i><span class="rm">[A2]</span> manage a home. <i lang="ceb">Hustu na siya sa idad nga mangugalíngun,</i> She is old enough to manage a home. <i>n</i> home, as it is managed. <b lang="ceb">kina-un(→)</b><i>v</i><span class="rm">[A13]</span><b>1</b> live on one’s own. <b>2</b> have one’s meals on one’s own. <i lang="ceb">Dì ta mangasíra. Magkinaugalingun lang ta,</i> Let’s not board. Let’s have our meals on our own. <b lang="ceb">kaugalingnan</b><i>n</i> independence of a nation. <i lang="ceb">Nagpakamatay si Risal álang sa kaugalingnan sa átung násud,</i> Rizal gave his life for the independence of our country.

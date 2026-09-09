@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_p_13137.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_p_13137.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b lang="ceb">pag-</b> prefix added to most bases which take the verbal inflectional affixes. <b>1</b> forming imperatives (used esp. after <i lang="ceb">ayaw</i> ‘don’t’). <i lang="ceb">short forms:</i><b lang="ceb">g</b>, or <b lang="ceb">ug</b>. <i lang="ceb">Ayaw paglakaw (ug lakaw, glakaw),</i> Don’t go away. <i lang="ceb">Ayaw siya pagpatya,</i> Don’t kill him. <b>2</b> forming infinitives. <i lang="ceb">Gisugdan níya pagtágik ang íyang bálak,</i> He began to compose his poem. <i lang="ceb">Arun sa pagbutyag sa íyang tinagúan,</i> In order to make his secrets public. <b>3</b> forming nouns meaning the action of [do]ing. <i lang="ceb">Dílì maáyu ang pagpalabi,</i> It’s no good to do things to excess. <i lang="ceb">Nakabungkag sa ílang pagpúyù,</i> Destroyed their life together. <i lang="ceb">Ang pagburunda sa simbahan dì na kinahanglan,</i> It is no longer necessary to wear a veil to church. <b>4</b> forming words which mean ‘when [so-and-so] was done’. <i lang="ceb">Pag-abut nákù sa balay, mau say íyang paglakaw,</i> When I arrived at the house, he left.

@@ -32,13 +32,11 @@ Get-ChildItem -Path $inDir -Filter "para_*.xml" | ForEach-Object {
                 Remove-Item $outFile
             }
 
-            $errorMessage = "Failed to tokenize $inFile $_"
+            $errorMessage = "Failed to tokenize $inFile`n$_"
             $errorMessage += "`nStack Trace:`n$($_.ScriptStackTrace)"
+            [xml]$inFileXml = Get-Content $inFile
+            $errorMessage += "`n`n$($inFileXml.root.InnerXml)"
             $errorMessage | Out-File -FilePath $errorFile -Encoding UTF8
-            if (Test-Path $inFile) {
-                $inFileContents = Get-Content $inFile
-                $errorMessage += "`n$inFileContents"
-            }
             Write-Error $errorMessage
         }
     }

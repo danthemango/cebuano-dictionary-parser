@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_t_18024.xml Invalid XML content: pseudonym, alias. <i lang="ceb">Ang  original content: pseudonym, alias. <i lang="ceb">Ang <span class="rm">‘O. Henry’</span> takuban ni Wilyam Sidni Purtir,</i> ‘O. Henry’ is the pen name of William Sidney Porter.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_t_18024.xml
+Invalid XML content: pseudonym, alias. <i lang="ceb">Ang  original content: pseudonym, alias. <i lang="ceb">Ang <span class="rm">‘O. Henry’</span> takuban ni Wilyam Sidni Purtir,</i> ‘O. Henry’ is the pen name of William Sidney Porter.
 Stack Trace:
 at Assert-ValidXMLContent, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 359
 at Split-TokensByPattern<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 40
@@ -19,3 +20,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b lang="ceb">takub</b><i>n</i> a cover or lid of s.t. which has a different shape from the thing it is put over and is not attached. <i lang="ceb">Ang takub sa pawuntin pin,</i> The fountain pen cover. <b lang="ceb">(←)</b><i>v</i><span class="rm">[A13; b6]</span> put a cover on. <i lang="ceb">Kinsay nagtákub sa kahun?</i> Who put the lid on the box? <b lang="ceb">-an</b><i>n</i><b>1</b> pseudonym, alias. <i lang="ceb">Ang <span class="rm">‘O. Henry’</span> takuban ni Wilyam Sidni Purtir,</i> ‘O. Henry’ is the pen name of William Sidney Porter. <b>2</b> disguise. <i>v</i><span class="rm">[A13; c6]</span><b>1</b> use an assumed or pen name. <b>2</b> wear a disguise. <i lang="ceb">Nagtakuban nga makililímus ang ditiktib,</i> The detective disguised himself as a beggar. <b lang="ceb">-an(←)</b> = <span class="sc" lang="ceb"><a href="#x-an">-an</a></span>, <i lang="ceb">v</i>.

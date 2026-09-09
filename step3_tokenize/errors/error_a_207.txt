@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_a_207.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_a_207.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b id="agaw" lang="ceb">agaw</b><i lang="ceb">short form:</i><b lang="ceb">gaw</b> title for people who are cousins. <i lang="ceb">Anía si Agaw Tídu,</i> Here is Cousin Tido. <b lang="ceb">ig-(←)</b><i>n</i> cousin: children of one’s parent’s sibling or parent’s <i lang="ceb">ig-ágaw.</i><b lang="ceb">ig-(←) igtagsa</b> first cousin, children of a parent’s siblings. <b lang="ceb">ig-(←) igtagurha</b> second cousin, children of a parent’s <i lang="ceb">ig-ágaw igtagsa.</i><b lang="ceb">ig-(←) igtagutlu</b> third cousin, children of a parent’s <i lang="ceb">ig-ágaw igtagurha.</i><b lang="ceb">ig-(←) sa kasingkásing</b><i>n</i> a lover one pretends is his cousin in public. <b lang="ceb">mag-(←), manag-(←)</b><i>n</i> people who are <i lang="ceb">ig-ágaw</i> with each other. <b lang="ceb">pag-agáwan, panag-agáwan</b><i>n</i><b lang="ceb">sa —</b> related by virtue of being <i lang="ceb">ig-ágaw</i> to the (grand)parents or (grand)children of one’s cousin. <i lang="ceb">Uyuan ku siya sa panag-agáwan,</i> He is my uncle by being a cousin of my parents. <i lang="ceb">Pag-umangkun ku siya sa panag-agáwan,</i> She is my niece by being a daughter of my cousin.†

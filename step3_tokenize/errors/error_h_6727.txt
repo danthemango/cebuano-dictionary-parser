@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_h_6727.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_h_6727.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b lang="ceb">hulì</b> (short form for <i lang="ceb">hiulì</i>) <i>v</i><span class="rm">[a3]</span> go home, return to the place one lives or stays. <i lang="ceb">Tagdugay giyud nà siyang mahulì sa balay,</i> He always goes home late. <b lang="ceb">pa-(←)</b><i>v</i><span class="rm">[A; c]</span> place s.t. back in its proper place or form. <i lang="ceb">Kamau kung mupahúlì sa makinang distrungkahun,</i> I know how to assemble the machine if it is dismantled. <i lang="ceb">Ipahúlì sa kahun ang gigámit nímung gabas,</i> Put the saw that you used back in its box.

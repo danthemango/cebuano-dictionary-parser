@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_m_12004.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_m_12004.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b lang="ceb">makig-(←)</b> prefix added to bases with a prefix <i lang="ceb">pakig-</i> to indicate future, volitional active forms. <i lang="ceb">Past</i>: <b lang="ceb">nakig-</b>. <i lang="ceb">Subjunctive:</i><b lang="ceb">makig-</b>. No durative or potential forms. (<i lang="ceb">See</i><span class="sc" lang="ceb">pakig-</span><i lang="ceb">for meanings</i>.) <i lang="ceb">Short forms</i>: <b lang="ceb">kig-</b> and <b lang="ceb">tig-</b>. <i lang="ceb">Makigkáun (kigkáun, tigkáun) siya nákù sa gawas,</i> He wants to take me out to eat. <i lang="ceb">Nakig-áway siyag dakung táwu,</i> He picked a fight with a large person. <i lang="ceb">Walà ku makigpustaánay níya,</i> I did not challenge him to bet.

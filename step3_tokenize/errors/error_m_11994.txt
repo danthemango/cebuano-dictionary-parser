@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_m_11994.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_m_11994.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b id="maka-2" lang="ceb">maka-<sub>2</sub></b><i lang="ceb">short form</i>: <b lang="ceb">ka-<sub>4</sub></b><i>n</i> affix added to numbers to form words which mean [do so-and-so] many times. <i lang="ceb">Makapila (kapila) ku na ikaw ingna?</i> How many times did I tell you? <i lang="ceb">Makaduha na ku malígù didtu,</i> I have gone swimming there twice. <i lang="ceb">Makadaghan na ku mabiktima,</i> I have been victimized many times.

@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_u_20436.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_u_20436.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b id="uxsaq" lang="ceb">úsà</b><i lang="ceb">short forms:</i><b lang="ceb">sà, usà</b>. <b>1</b> before [do]ing. <i lang="ceb">úsà ka mulakaw hipúsa ang ímung kwartu,</i> Before you go out, fix your room. <b>2</b> do [so-and-so] beforehand. <i lang="ceb">Mag-ílis úsà ku sa dì pa ta manglákaw,</i> I’ll change my clothes first before we go out. <b>3</b> for now, for the time being. <i lang="ceb">Ibutang úsà diri,</i> Put it down here for the moment. <i lang="ceb">Ayaw úsag lakaw,</i> Don’t go for the while. <b lang="ceb">— pa</b><b>3a</b> wait a minute. <i lang="ceb">úsà pa gánì,</i> Wait a minute, will you? <i lang="ceb">úsà pa kay ákung tawgun,</i> Just a second, because I’m going to call him. <b>3b</b> just a second, to change the subject. <i lang="ceb">úsà pa diay, kinsa tu ka?</i> By the way, who did you say you were? <b>4</b><b lang="ceb">— ka</b> you just wait. <i lang="ceb">Gihilabtan giyud nímu nang ákung búhat dà. úsà ka giyud run,</i> You touched my work, did you? Well you just wait what’s going to happen now.

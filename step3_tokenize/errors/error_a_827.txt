@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_a_827.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_a_827.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b id="anaxa" lang="ceb">anáa</b><i lang="ceb">short form:</i><b lang="ceb">náa</b>. <b>1</b> be there (near you). <i lang="ceb">Náa ba dihà ang yáwi?</i> Do you have (is there) the key? <b>1a</b> be employed at, work at. <i lang="ceb">Náa siya sa Atlas,</i> He works for Atlas. <i lang="ceb">Náa ra siya sa báy,</i> He is always at home. <b>2</b> there is. <i lang="ceb">Náay suwat pára nímu,</i> There is a letter for you. <b>3a</b><b lang="ceb">— <span class="rm"><i lang="ceb">dat.</i></span></b> [dat.] has. <i lang="ceb">Náa kaníya ang yáwi,</i> He has the key. <b>3b</b> it depends upon [dat.]. <i lang="ceb">Náa ra nímug muadtu ta,</i> It’s up to you if we should go. <b>3c</b> be menstruating. <i lang="ceb">Dílì mudúul ang bána ug náa sa asáwa,</i> A husband cannot have intercourse with his wife when she is menstruating. <b>4</b><b lang="ceb">unsa may — niánà, sa <span class="rm">[<i lang="ceb">noun</i>]</span>?</b> what does that, [noun] have to do with it? <i lang="ceb">Unsa ba guy náa sa idad?</i> And what does age have to do with it? <b lang="ceb">pagka-</b><i>n</i> the state of being there. <i lang="ceb">Ang íyang pagkaanáa sa balay,</i> His presence in the house. <b lang="ceb">paka-</b><i>v</i><span class="rm">[A13; a12]</span> strive to have s.t. <i lang="ceb">ímu kung pakaanaáhun bisan wà kuy nahut,</i> You try to get s.t. from me even though I haven’t anything. <b lang="ceb">anaáhun</b><i>a</i> well-to-do.

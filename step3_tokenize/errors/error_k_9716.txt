@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_k_9716.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_k_9716.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b id="kumaxri" lang="ceb">kumári</b><i>n</i> a woman who has one of the following relations to one: she is the mother, godmother, or mother-in-law of children to whom one also is a parent or godparent (but not one’s wife). <i lang="ceb">Kumári ku si Kurdaping sa tulu ka higayun: inahan siya sa ákung kinúgus, ug sa ákung linudhan, ug sa ákung binaláyi. Aku sad kumári níya,</i> Cordaping is my <i lang="ceb">kumári</i> on three grounds: she is the mother of my godson, and of another son whom I sponsored in marriage, and the mother of my daughter-in-law. And for that reason I am also her <i lang="ceb">kumári</i>. <b>a</b> term of address to a person with whom one has a relation of <i lang="ceb">kumári</i>. <b>b</b> friendly term of address to a woman of one’s own generation with whom one is familiar. <i lang="ceb">Short form:</i><b lang="ceb">mari</b>. <i lang="ceb">Kumusta mari?</i>How are you, dear? <i>v</i><span class="rm">[C; ac3]</span><b>1</b> be in the <i lang="ceb">kumári</i> relationship. <i lang="ceb">Gikakumári ku si Imilda kay siyay nagkúgus sa ákù pung gikúgus,</i> Imelda became my <i lang="ceb">kumári</i> because she sponsored a baby which I also sponsored. <b>2</b><span class="rm">[A; a]</span> call s.o. by this title. <i lang="ceb">Ayaw kug kulukumaríha dihà. Dì ka makapangútang nákù,</i> Don’t bother calling me <i lang="ceb">kumári</i>. You can’t borrow another cent from me. <b lang="ceb">— kumablit</b><i>n</i> a godmother who has some clandestine relationship with the father of her godchild.

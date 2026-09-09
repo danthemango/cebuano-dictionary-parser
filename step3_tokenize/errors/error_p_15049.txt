@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_p_15049.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_p_15049.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b id="pur-" lang="ceb">pur-</b><b>1</b> per, by the. <b lang="ceb">-díya</b> by the day. <i lang="ceb">Purdíya ámung swildu,</i> We are paid by the day. <i lang="ceb">Utsu písus purdíya,</i> Eight pesos a day. <b lang="ceb">-úra</b> by the hour. <b>2</b> prefix for exclamations. <b lang="ceb">-bída</b><i lang="ceb">short form:</i><b lang="ceb">bída</b><i>a</i> exclamation of surprise. <i lang="ceb">Purbídang lisúra,</i> My God! How difficult it is. <i lang="ceb">Purbídang gwapáha,</i> Jesus! How beautiful she is. <b>b</b> exclamation chiding. <i lang="ceb">Purbída sab ka! Wà ka makapakáun sa bátà?</i> Heavens! You mean you didn’t feed the baby? <b lang="ceb">-pabur</b><i lang="ceb">see</i><span class="sc" lang="ceb"><a href="#pabur">pabur</a></span>. <b lang="ceb">-diyus</b><i lang="ceb">see</i><span class="sc" lang="ceb"><a href="#purdiyus">purdiyus</a></span>. <i lang="ceb">in other phrases:</i><b lang="ceb">pur-abir</b><b>a1</b> testing s.t. out, not necessarily in earnest. <i lang="ceb">Wà kuy disíyu nga mupalit íning awtúha. Pur-abir lang tung ákù ug itúgut ba sa ákung hangyù,</i> I did not intend to buy this automobile. I was just trying to see if it could be gotten for the price I offered. <b>a2</b> trying s.t. on a long gamble where there is nothing to lose. <i lang="ceb">Pur-abir ning pagpaupira sa kansir, kay ug dílì upirahan, sigurádu man giyung patay,</i> The cancer operation is just a gamble. If you don’t operate, the man will die anyway. <b>b</b><b lang="ceb">-ihimplu</b> for example. <b>c</b><b lang="ceb">-ingkásu</b> = <span class="sc" lang="ceb">ingkásu</span>. <i lang="ceb">see also</i><span class="sc" lang="ceb">pur-ísu, purlumínus, purmidyu, *pursikásu</span>.

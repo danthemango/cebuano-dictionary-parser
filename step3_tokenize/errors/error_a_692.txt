@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_a_692.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_a_692.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b id="xxama" lang="ceb">*ama</b><b lang="ceb">— námù</b><i>n</i> the Lord’s Prayer. <i lang="ceb">short form:</i><b lang="ceb">manámù.</b><b lang="ceb">paN-</b><i>v</i><span class="rm">[A; b5]</span> go to s.o. as if he were one’s father to ask for help. <i lang="ceb">Kinsay inyung gipangama (gipangamahan) sa pagkasúd sa inyung bátà sa trabáhu?</i> Who did you approach to get a job for your son? <b lang="ceb">amaáma</b><i>n</i> stepfather. <b lang="ceb">amaáma sa buti</b><i>n</i> the first single eruption of smallpox before spreading. <b lang="ceb">amahan</b><i>n</i> father. <b lang="ceb">— námù</b><i>n</i> the Lord’s Prayer. <i>v</i><span class="rm">[A1]</span> act as, have a father. <i lang="ceb">Dimálas nga nakaamahan kag mangtas,</i> It is unfortunate that you have a beast for a father. <b lang="ceb">pangamahan</b><i>v</i><b>1</b><span class="rm">[A2]</span> act as a father. <i lang="ceb">Siya na lang ang nangamahan sa mga bátang ilu,</i> He was the only one left to act as a father to the orphaned children. <b>2</b><span class="rm">[A2; b(1)]</span> sponsor. <i lang="ceb">Ang balaudun gipangamahan ni Briyúnis,</i> The bill was sponsored by Briones. <b>3</b> = <span class="sc" lang="ceb">pangama</span>. <b lang="ceb">amáun</b><i>n</i> godfather in any ceremony.

@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_i_7653.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_i_7653.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b lang="ceb">ísà</b><i lang="ceb">short form:</i><b lang="ceb">sà</b>. <b>1</b> wait a second. <i lang="ceb">ísà pa kay pangutan-un pa nákù si Lurdis,</i> Just a minute. I’ll ask Lourdes first. <i lang="ceb">ísà pa ha kay ákung tawgun,</i> Just a second. I’ll call her. <b>1a</b><b lang="ceb">— ka run,</b> You just wait. I’ll get you! <b>2</b><i lang="ceb">expression used upon changing a subject:</i> by the way. <i lang="ceb">ísà pa, tagadiin tu ka?</i> By the way, where did you say you come from?

@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_s_17279.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_s_17279.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b id="suxkiq" lang="ceb">súkì</b><i>n</i> steady customer or seller. <i lang="ceb">short form in address:</i><b lang="ceb">kì</b>. <i lang="ceb">ákung súking butíka,</i> The drug store I always buy at. <i>v</i><span class="rm">[A2C; a2]</span> be in the <i lang="ceb">súkì</i> relation, i.e. that of a seller and buyer. <i lang="ceb">Magsúkì na ta. Dì ku mupalit sa láin,</i> From now on I’ll be a steady customer of yours and I won’t buy from anyone else.

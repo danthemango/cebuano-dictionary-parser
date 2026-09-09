@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_p_13318.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_p_13318.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b id="palanggaq" lang="ceb">palanggà</b> (from <i lang="ceb">danggà</i>) <i>v</i><span class="rm">[A; a12]</span> love and care for s.o. <i lang="ceb">Mupanggà ku sa bátang buútan,</i> I’ll love a good child. <i lang="ceb">Palanggáun ku ikaw hangtud sa kahangtúran,</i> I will love and care for you till the end of time. <i>n</i> dearest, darling. short form: <b lang="ceb">langgā̀</b>. <i lang="ceb">Natúlug ka na ba, palanggà?</i> Are you asleep, darling? <b lang="ceb">ma-in-un</b><i>a</i> bestowing loving care, full of love. <b lang="ceb">-in-</b> = <span class="sc" lang="ceb"><a href="#palanggaq">palanggà</a></span>, <i lang="ceb">n</i>.

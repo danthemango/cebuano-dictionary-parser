@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_a_177.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_a_177.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b id="aduxna" lang="ceb">adúna</b><i lang="ceb">short form:</i><b lang="ceb">dúna</b> there is, are, will be. <i lang="ceb">Dúnay libru sa lamísa,</i> There is a book on the table. <b lang="ceb">-y <span class="rm">[<i lang="ceb">subject</i>]</span></b> [subject] has. <i lang="ceb">Dúnay libru si Huwan,</i> John has a book. <b lang="ceb">paka-</b><i>v</i><span class="rm">[A; a]</span><b>1</b> strive to have s.t. <i lang="ceb">Bisag wà kuy kwarta, pakaadunáhun giyud aku nímu,</i> Even though I have no money, you want to force me to get some. <b>2</b> = <span class="sc" lang="ceb">pakaadunáhan</span>. <b lang="ceb">adunáhan</b><i>a</i> wealthy. <i lang="ceb">Usa siya sa mga adunáhan sa ámung lungsud,</i> He is one of the wealthy people in our town. <b lang="ceb">pakaadunáhan</b><i>v</i><span class="rm">[A13; a12]</span> pretend to be wealthy, consider to be wealthy. <i lang="ceb">Nagpakaadunáhan siya bisag way nahut,</i> He pretends to be rich even though he hasn’t got a penny. <i lang="ceb">Gipakaadunáhan ba aku nímu?</i> Do you think I’m rich?

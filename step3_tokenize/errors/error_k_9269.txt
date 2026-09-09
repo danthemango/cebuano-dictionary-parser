@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_k_9269.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_k_9269.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b id="kiri" lang="ceb">kiri</b><i lang="ceb">short form</i>: <b lang="ceb">ri</b>. <b>1</b> this (near speaker but not near hearer). <i lang="ceb">Dì nákù ihátag ring librúha nímu,</i> I won’t give you this book. <b>2</b> this (on side of speaker away from hearer). <i lang="ceb">Kawháta ring písì ug ihukut dihà sa pusti,</i> Grab this rope and tie it to that post. <b lang="ceb">niíri</b> gen. and dat. <i lang="ceb">Ag taklub niíring bulpin nabuak,</i> The cover of this ballpoint pen is broken. <i lang="ceb">Ibutang ang kahun niíring lamísa,</i> Put the box on this table. <b lang="ceb">íri, ári</b> = <span class="sc" lang="ceb"><a href="#niixri">niíri</a></span>.

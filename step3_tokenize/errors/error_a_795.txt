@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_a_795.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_a_795.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b lang="ceb">ámu</b><i lang="ceb">vocative short form:</i><b lang="ceb">mu</b><i>n</i> master, employer. <i lang="ceb">Makagáwì ba ta sa ímung tilipunu, mu?</i> May I use your phone, boss? <i>v</i><span class="rm">[A123S]</span> happen to have a master, employer. <i lang="ceb">Lisud ning makaamu tag istriktu,</i> It’s difficult if you happen to have a strict employer. <b lang="ceb">paN-</b><i>v</i><span class="rm">[A2]</span> have s.o. as an employer. <i lang="ceb">Nakapangámu na ku ug Katsílà,</i> I have already experienced having a Spaniard as employer. <b lang="ceb">maistru —</b><i>n</i> one who oversees the preparation of s.t., e.g. the head chef on a boat or the quality controller in a factory.

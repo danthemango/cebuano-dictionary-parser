@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_u_20523.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_u_20523.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b id="uxu" lang="ceb">úu</b><i lang="ceb">short form:</i><b lang="ceb">u</b>. <b>1</b> yes. <i lang="ceb">ú, túa na ku,</i> Yes, I’m coming. <b>2</b> in narrations, rhetorical answer to an unasked question. <i lang="ceb">Misulud siya sa lángub, ú misulud dáyun siya,</i> He went into the cave, yes, he went right in. <b lang="ceb">aw —</b> of course, it is obviously so. <i lang="ceb">Aw ú, unyà ra ka mubáyad ug ihatud na nákù dinhi,</i> Of course, you only have to pay when I deliver it. <b lang="ceb">— walay tiil, íkug</b> expression inquiring as to the sincerity of one’s intentions of doing s.t. (humorous). <i lang="ceb">‘Muari ka unyà sa balay?’—‘ú’—‘ú way tiil?’</i> ‘Will you come to the house later?’—‘Yes.’—‘Is that yes meaning no (lit. yes without legs)?’

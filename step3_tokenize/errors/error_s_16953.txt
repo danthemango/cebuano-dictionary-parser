@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_s_16953.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_s_16953.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b id="sinyuxra" lang="ceb">sinyúra</b><i>n</i><b>1</b><i lang="ceb">short form:</i><b lang="ceb">nyúra</b>. <i lang="ceb">term of address for a married woman of high position:</i> Mrs., madam. <i lang="ceb">Si Nyúra Pilang,</i> Mrs. Pilang. <b>2</b> in set usage before names of saints (not shortened). <b lang="ceb">Nwistra — sa Patima</b> Our Lady of Fatima. <b lang="ceb">Nwistra — sa Lurdis</b> Our Lady of Lourdes. <i>a</i> for a woman to demand solicitous service. <i lang="ceb">Sinyúra kaáyung bayhána kay patágay pag túbig,</i> She thinks herself a grand dame. She even has to have s.o. come to pour her water. <i>v</i><span class="rm">[A13; a12]</span> call s.o. <i lang="ceb">sinyúra</i>. <i>v</i><b>1</b><span class="rm">[A1]</span> move with measured and unhurried steps. <i lang="ceb">Makasinyúra nà siyag lakaw kay daghan mag masúgù,</i> She can afford to move leisurely because she has lots of servants. <b>2</b><span class="rm">[A]</span> not do any work. <i lang="ceb">Ayawg pakan-a ug magsinyúra sila,</i> Don’t feed them if they don’t do any work. <b lang="ceb">sinyurahun, sinyuranhun</b><i>a</i> of the <i lang="ceb">sinyúra</i> type.†

@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_k_9233.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_k_9233.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b id="kini" lang="ceb">kini<sub>1</sub></b> short forms: <b lang="ceb">ni, king</b><b>1</b> this (near speaker and person spoken to). <i lang="ceb">Pila man ni?</i> How much is this? <b>1a</b><b lang="ceb">mau -g —</b> expression used in lieu of giving reasons or excuses why s.o. failed to do s.t. or cannot do s.t. <i lang="ceb">Mau kinig kini, mau kanag kanà ... Sus, daghan kaáyug katarúngan,</i> Because of this and this, and that and that ... there’s no end to reasons why he couldn’t do it. <b>1b</b> this one now. <i lang="ceb">Tinúud na karun kining ákù,</i> What I am saying now is true. <b>2</b> this well-known kind of. <i lang="ceb">Natural, kay láin man ning kumbira ug walay bayli ug ínum!</i> Of course! Because a (lit. this) party is no good without dancing or drinking. <b>3</b> he, she (person just referred to). <i lang="ceb">átù ning tabangan,</i> Let’s gang up on him. <b>4</b><b lang="ceb">— nga</b> pause word used when one is hesitant about plunging into things. <i lang="ceb">Kining, nía ku kay dúna kuy ihangyù,</i> Err, I came here because I have a request. <b>4a</b> this action of, when one does. <i lang="ceb">Uh, unsa gud ning ámut na pud!</i> What’s all this stuff about contributions again! <b>4b</b> when, at that time you know well. <i lang="ceb">Pag-abut níya sa íla, kining pagsaka níya sa íla,</i> When he arrived home, when he went up the stairs. <b lang="ceb">niíni, niáni</b> gen., dat. <i lang="ceb">Niíni, nakat-un aku pag-amping,</i> Because of this, I learned to be careful. <i lang="ceb">Ang amahan niíni,</i> His father. <b lang="ceb">íni, áni</b> short for <b lang="ceb">niíni, niáni</b>.

@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_s_16955.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_s_16955.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b id="sinyurixta" lang="ceb">sinyuríta</b><i>n</i><b>1</b><i lang="ceb">short form:</i><b lang="ceb">nyuríta</b>. term of address to an unmarried lady of high station. <i lang="ceb">Si Nyuríta Maríya,</i> Miss Mary. <b>2</b> lady’s pistol, small pistol made esp. for ladies to use, usually of .22 caliber. <b lang="ceb">pistula, ribulbir nga —</b> = <span class="sc" lang="ceb"><a href="#sinyurixta">sinyuríta</a></span>, <i lang="ceb">n2.</i><i>a</i> wanting solicitous attention, considering oneself too classy to do any sort of work. <i lang="ceb">Sinyuríta kaáyu siya. Paípis pa giyug kapi,</i> She is very high class. She even has to have s.o. pour coffee for her. <i>v</i><span class="rm">[A13; a12]</span> call s.o. <i lang="ceb">sinyuríta</i>. <b lang="ceb">sinyuritahun</b><i>a</i> of the <i lang="ceb">sinyuríta</i> sort.

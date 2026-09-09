@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_p_13828.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_p_13828.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b id="pastilan" lang="ceb">pastilan</b><i lang="ceb">short form</i>: <b lang="ceb">tilan</b><b>1</b> expression of great worry or grief. <i lang="ceb">Pastilan ang ákung bátà naligsan sa trák,</i> Heavens! My son got run over by a truck! <b>2</b><i lang="ceb">expression of feigned surprise or concern, with a disdainful tone:</i> what are you worrying so much for? <i lang="ceb">Pastilan, Tiryú, kasayun niánà ug mahadluk kang mubúhat!</i> Goodness, Terio, that’s so easy and you’re scared to do it? <b>2a</b> expression of scorn or derision at s.o. trying to tell a lie. <i lang="ceb">Tilan nímu uy, bísag klárung bakak patuhúun gihápun ta ánà!</i> You sure are s.t.! It’s such an obvious lie and you expect me to believe it! <b>3</b> expression of pain or annoyance. <i lang="ceb">Tilan ning mga batáa, pagkasabaan!</i> My these children, how noisy they are! <i lang="ceb">Pastilang labára sa ákung úlu!</i> Oh! How my head aches! <b>4</b> exclamation of how intense s.t. is. <i lang="ceb">Pastilang gwapáhang bayhána!</i> What a beautiful woman!

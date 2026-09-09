@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_k_8150.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_k_8150.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b id="kadtu" lang="ceb">kadtu</b><i lang="ceb">short form</i>: <b lang="ceb">tu</b>. <b>1</b> that (far from speaker and hearer). <i lang="ceb">Kadtung balay sa unáhan kang Husi,</i> That house up ahead is Joe’s. <b>1a</b> he, she (far away). <i lang="ceb">Wà man gud tu makasabut sa ákung sulti,</i> He did not get what I said. <b>2</b> that one that was past in time. <i lang="ceb">Ngánu man kadtu?</i> Why did that happen? <i lang="ceb">Kadtung ákung giingun,</i> What I said. <b>2a</b> that was the case. <i lang="ceb">Dihà kadtuy higayun nga ...<span class="corr" id="xd20e199327" title="Not in source">,</span></i> It happened one time that ... <b>2b</b> he, she (referring to a person remote in time). <i lang="ceb">Nagtúu ang mga tulisan nga kadtu patay na,</i> The bandits believed that he was already dead. <b>3</b> followed by a verb: that time when. <i lang="ceb">Kadtung musumbag na siya, mulikay pud ku,</i> When he would strike me, I would also dodge. <b>4</b> the ones, those that are. <i lang="ceb">Kadtung nakaapil na walay lábut áning duláa,</i> Those who have already tried it once are not to take part this time. <b lang="ceb">niadtu</b><b>1</b><i lang="ceb">gen.</i>: of that. <i lang="ceb">Ang tag-íya niadtung sakayána,</i> The owner of that boat. <b>2</b><i lang="ceb">dat.</i>: to, on that. <i lang="ceb">Ihátag niadtung tawhána,</i> Give it to that man. <i lang="ceb">Niadtung adláwa migíkan siya pára sa Manílà,</i> On that day he left for Manila. <b>3</b> formerly <i lang="ceb">short for</i><b lang="ceb">kaniadtu</b>. <b lang="ceb">adtu</b> = <span class="sc" lang="ceb"><a href="#niadtu">niadtu</a></span>. <b lang="ceb">naadtu</b> = <span class="sc" lang="ceb"><a href="#niadtu">niadtu</a></span>.

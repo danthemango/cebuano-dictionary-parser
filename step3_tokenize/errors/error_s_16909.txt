@@ -1,4 +1,5 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_s_16909.xml 'Short Form' tokenization not implementd yet.
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_s_16909.xml
+'Short Form' tokenization not implementd yet.
 Stack Trace:
 at Update-ShortForm<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 345
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 397
@@ -7,3 +8,5 @@ at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeFile.p
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 28
 at <ScriptBlock>, C:\git\cebuano-dictionary-parser\step3_tokenize\TokenizeAll.ps1: line 12
 at <ScriptBlock>, <No file>: line 1
+
+<b id="siniyur" lang="ceb">siniyur</b><i>n</i> title of address for men of high station. <i lang="ceb">short form:</i><b lang="ceb">nyur</b><b>1</b> Mr., sir. <i lang="ceb">Si Nyur Pidru muabut rung hápun,</i> Mr. Peter will arrive this afternoon. <i lang="ceb">Andam na ang ímung awtu, nyur,</i> Your car is ready, sir. <b>1a</b> form of direct address between intimate male friends. <i lang="ceb">Kumusta, nyur!</i> How are you, man! <b>2</b> in set usage for names of saints (not shortened). <b lang="ceb">— San Pidru</b> St. Peter. <b lang="ceb">— San Bisinti</b> St. Vincent. <b lang="ceb">— Santu Ninyu</b> the Holy Child. <b lang="ceb">pista sa —</b> Feast of the Holy Child. <b lang="ceb">-un</b><i>a</i> detesting manual work. <i lang="ceb">Ságad sa mga dátù mga sinyurun ug kusug musúgù,</i> Most rich people are too good to do manual work and tell people to do things for them.
