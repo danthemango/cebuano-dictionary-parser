@@ -345,6 +345,10 @@ function Update-ShortForm {
             throw "'Short Form' tokenization not implementd yet."
         }
 
+        # if ($Token.Content -Like "*in set phrases*") {
+        #     throw "'in set phrases' tokenization not implementd yet."
+        # }
+
         $Token
         return
     }

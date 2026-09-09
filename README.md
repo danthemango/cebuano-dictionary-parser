@@ -33,7 +33,6 @@ step2_split_paras\CreateIndex.ps1
 ```
 This should write `step2_split_paras\index.csv`
 
-
 ## step 3, tokenize
 ```powershell
 step3_tokenize\TokenizeAll.ps1
@@ -72,6 +71,14 @@ Let me start by correctly parsing the 5 longest definitions, and then checking e
     - [ ] fix `(<i lang=""cebword"">see also</i> 3c <i lang=""cebword"">and</i> 4d .)`
 - [ ] 10583
 - [ ] 20434
+
+## manual fix
+- "in set phrase:" or "in set phrases"
+    - [ ] 8781
+    - [ ] 11979
+    - [ ] 13774
+    - [ ] 13875
+    - [ ] 14692
 
 ## rest
 - [ ] create index of word to ID (since we have special chars in many words, I don't think I can put the word as the filename, so I need a table of contents or something instead)
