@@ -175,9 +175,16 @@ function Split-Links {
     process {
         # capture the entire link block, including optional "see", "short for", or "=" at the beginning, and optional wordtype and numbers at the end, and optional parentheses around the whole thing, and an optional period at the end.
         # see https://regex101.com/r/791KzX/1
-        $pattern = '[(]?(= |short for |<i lang="ceb">see</i>|)? *<span class="sc" lang="ceb">(<a href="#.*?">)?(?<name>.*?)(</a>)?</span>((, )?(<i lang="ceb">(?<wordtype>[avn])</i>)?(<b lang="ceb">(?<numbers>[0-9, ]+)</b>)?[)]?(<i lang="(ceb|cebword)">(?<numbers>[avn\d]*?\.?)\.?</i>| ?(?<numbers>\d)?\.))*'
+        $pattern = '[(]?(= |short for |<i lang="ceb">see</i>|)? *<span class="sc" lang="ceb">(<a href="#.*?">)?(?<name>.*?)(</a>)?</span>((, )?(<i lang="ceb">(?<wordtype>[avn])</i>)?(<b lang="ceb">(?<numbers>[0-9, ]+)</b>)?[)]?(<i lang="(ceb|cebword)">(?<numbers>[avn\s\d]*?\.?)\.?</i>| ?(?<numbers>\d)?\.))*'
 
-        $mymatches = [regex]::Matches($content, $pattern, [System.Text.RegularExpressions.RegexOptions]::Singleline)
+        if ($Token.Type -ne "TEXT") {
+            $Token
+            return
+        }
+        
+        [string]$Content = $Token.Content
+
+        $mymatches = [regex]::Matches($Content, $pattern, [System.Text.RegularExpressions.RegexOptions]::Singleline)
         if ($mymatches.Count -eq 0) { $Token; return }
 
         $pos = 0
