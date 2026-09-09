@@ -1,9 +1,7 @@
-Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_w_20599.xml Invalid XML content: -y <span class="rm">[<i lang="ceb">doubled verb base</i> or <b lang="ceb">Culu original content: <b lang="ceb">-y <span class="rm">[<i lang="ceb">doubled verb base</i> or <b lang="ceb">Culu</b>-<i lang="ceb">verb base</i>]</span></b> without doing. <i lang="ceb">Milakaw siya sa walay pupananghid (walay tingugtíngug),</i> He left without excusing himself (saying anything).
+Failed to tokenize C:\git\cebuano-dictionary-parser\step2_split_paras\data\para_b_3199.xml Invalid XML content: MAN-R-(→)<span class="sc" lang="ceb">. original content: = <span class="sc" lang="ceb">MAN-R-(→)<span class="sc" lang="ceb">.</span></span><b lang="ceb">maN-r-(→)</b><i>n</i> one who makes things. <b lang="ceb">manggi-un, manggim-un</b><i>a</i> hard-working, industrious. <b lang="ceb">paN-</b><i>n</i> business of making s.t. <i lang="ceb">Maáyung nigusyu ang pamúhat ug mwiblis,</i> Furniture making is a good business. <b lang="ceb">pina-</b><i>n</i> s.t. made to order. <i lang="ceb">Sapátus nga pinabúhat,</i> Made-to-order shoes. <b lang="ceb">tali-, -um-r-</b><i>a</i> preparing to make s.t.†
 Stack Trace:
 at Assert-ValidXMLContent, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 339
-at Split-TokensByPattern<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 50
-at Split-CebuanoWords<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 123
-at Split-Links<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 188
+at Split-Links<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 223
 at Assert-ValidXML<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 377
 at Split-TokensByPattern<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 62
 at Split-Nums<Process>, C:\git\cebuano-dictionary-parser\step3_tokenize\Tokenize.Functions.ps1: line 88
