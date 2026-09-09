@@ -2,6 +2,9 @@ BeforeAll {
 }
 
 Describe "Tokenize" {
+    # load functions
+    . "$PSScriptRoot\Tokenize.Functions.ps1"
+
     $ExpectedFiles = Get-ChildItem "$PSScriptRoot\expected\tokens_*.csv" |
         ForEach-Object {
             $suffix = $_.BaseName -replace '^tokens_', ''
@@ -19,7 +22,7 @@ Describe "Tokenize" {
             $InputFile
         )
 
-        Test-Path $InputFile | Should -BeTrue
+        Test-Path $InputFile | Should -BeTrue -Because "Expecting file $InputFile"
 
         # Run tokenizer
         $actual = & "$PSScriptRoot\TokenizeFile.ps1" -InFile $InputFile
