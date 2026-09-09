@@ -78,3 +78,4 @@ Running tests.
 - [ ] can't parse link followed by bracketed explanation (e.g. kadtu (dialectical), adtu (colloquial))
 - [ ] parse `"TEXT","= <span class=""sc"" lang=""ceb"">palabi</span>, <i lang=""cebword"">2</i>."`
 - [ ] add tokenize exception to 18585, failed to parse `<i lang="ceb"><b>1</b>.</i>` (I think it's a formatting mistake, strip the i tag)
+- [ ] review 15 `"CEBWORD","(→)" "LINK","abága: v"`
