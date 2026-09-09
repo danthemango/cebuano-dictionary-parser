@@ -13,5 +13,6 @@ $textToken = [PSCustomObject]@{
     Type    = "TEXT"
     Content = $xml.root.innerXml
 }
+. $PSScriptRoot\Tokenize.Functions.ps1
 
 $textToken | Tokenize

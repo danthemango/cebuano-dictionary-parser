@@ -76,3 +76,4 @@ Running tests.
     The english phrase will always end in a period.
 - [ ] can't parse the phrase "short form", I likely need another entry in definitions
 - [ ] can't parse link followed by bracketed explanation (e.g. kadtu (dialectical), adtu (colloquial))
+- [ ] parse `"TEXT","= <span class=""sc"" lang=""ceb"">palabi</span>, <i lang=""cebword"">2</i>."`
