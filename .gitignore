@@ -3,4 +3,5 @@ step2_split_paras/data
 step3_tokenize/data
 step3_tokenize/data_tmp
 step4_parse/data
+step4_parse/errors
 .vscode

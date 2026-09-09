@@ -563,12 +563,10 @@ function Parse {
     $res = Set-Row -Tokens $Word.Tokens
 
     [pscustomobject] @{
-        Tokens           = $Word.Tokens
         Word             = $Word.Word
         WordDef          = $res.WordDef
         ParseOk          = $res.Success
         ParseNextIndex   = $res.NextIndex
         ParseDiagnostics = $res.Diagnostics
-        Raw      = $Word.Raw
     }
 }
