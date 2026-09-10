@@ -8,8 +8,11 @@ function Get-Token {
     returns true if the token has a given type
 #>
 function IsType {
-    param($tok, [string]$type)
-    $tok -and ($tok.Type -eq $type)
+    param(
+        $Token,
+        [string]$Type
+    )
+    $Token -and ($Token.Type -eq $Type)
 }
 
 <#
@@ -177,8 +180,9 @@ function Search-DefEx {
 function Search-NumDef {
     <#
         NUMDEF may be either:
-        - Number + one or more WORDDEFs (conjugations)
         - Number + DEFEX
+        - Number + CEBWORD
+        - Number + CEBWORD + DEFEX
     #>
     param([object[]]$Tokens, [int]$StartIndex)
     $i = $StartIndex;
@@ -196,45 +200,28 @@ function Search-NumDef {
     }
     $i++
 
-    # TODO class?
-    # one or more WORDDEFs (conjugations)
-    $worddefs = @()
-    $tok = Get-Token $Tokens $i
-    if (IsType $tok 'CEBWORD') {
-        while (IsType $tok 'CEBWORD') {
-            $wd = Search-WordDef -Tokens $Tokens -StartIndex $i
-            if ($wd.Found) {
-                $worddefs += $wd.WordDef
-                $i = $wd.NextIndex
-                $tok = Get-Token $Tokens $i
-            }
-        }
-
-        if ($worddefs.Count -gt 0) {
-            return [PSCustomObject]@{
-                Found   = $true
-                NextIndex = $i
-                WordDef   = [PSCustomObject]@{
-                    Word         = $headTok.Content
-                    Conjugations = $worddefs
-                }
-            }
-        } else {
-            return [PSCustomObject]@{
-                Found     = $false
-                NextIndex   = $i
-                WordDef     = $null
-                Diagnostics = [PSCustomObject]@{
-                    Index=$i
-                    Message='NUMDEF WORDDEF: could not parse WORDDEF after CEBWORD'
-                    Token=$headTok
-                }
+    # DEFEX
+    $defex = Search-DefEx -Tokens $Tokens -StartIndex $i
+    $numDef = $null
+    if ($defex.Found) {
+        return [PSCustomObject]@{
+            Found   = $true
+            NextIndex = $defex.NextIndex
+            NumDef    = [PSCustomObject]@{
+                Number = $numTok.Content
+                DefEx  = $defex.DefEx
             }
         }
     }
 
-    $defex = Search-DefEx -Tokens $Tokens -StartIndex $i
-    if (-Not $defex.Found) {
+    # CEBWORD
+    $tok = Get-Token -Tokens $Tokens -StartIndex $i
+    $cebword = $null
+    if (IsType -Token $tok -Type "CEBWORD") {
+        $cebword = $tok.Content
+        $i++
+    } else {
+        # none found
         return [PSCustomObject]@{
             Found     = $false
             NextIndex   = $defex.NextIndex
@@ -242,26 +229,29 @@ function Search-NumDef {
             Diagnostics = $defex.Diagnostics
         }
     }
-    $i = $defex.NextIndex
 
-
-    $numDef = [PSCustomObject]@{
-        Number = $numTok.Content
-        DefEx  = $defex.DefEx
-    }
-
-    if ($null -ne $class) {
-        $numDef | Add-Member -MemberType NoteProperty -Name "Class" -Value $class
-    }
-
-    if ($null -ne $conjugation) {
-        $numDef | Add-Member -MemberType NoteProperty -Name "Conjugation" -Value $conjugation
-    }
-
-    [PSCustomObject]@{
-        Found   = $true
-        NextIndex = $i
-        NumDef    = $numDef
+    # optional defex
+    $defex = Search-DefEx -Tokens $Tokens -StartIndex $i
+    if ($defex.Found) {
+        return [PSCustomObject]@{
+            Found   = $true
+            NextIndex = $defex.NextIndex
+            NumDef    = [PSCustomObject]@{
+                Number = $numTok.Content
+                CebWord = $cebword
+                DefEx  = $defex.DefEx
+            }
+        }
+    } else {
+        # cebword without defex
+        return [PSCustomObject]@{
+            Found   = $true
+            NextIndex = $i
+            NumDef    = [PSCustomObject]@{
+                Number = $numTok.Content
+                CebWord = $cebword
+            }
+        }
     }
 }
 

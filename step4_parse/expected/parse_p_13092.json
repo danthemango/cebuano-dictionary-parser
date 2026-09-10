@@ -1,0 +1,820 @@
+{
+  "WordDef": {
+    "Word": "pa<sub>1</sub>",
+    "NumberedDefs": [
+      {
+        "Number": "1",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "still, yet: up to now, up to a specific point in the past."
+          },
+          "Examples": [
+            {
+              "Phrase": "Natúlug pa si Pidru,",
+              "Gloss": "Pedro is still asleep."
+            },
+            {
+              "Phrase": "Si Huwan pay naabut,",
+              "Gloss": "So far only John has arrived."
+            }
+          ]
+        }
+      },
+      {
+        "Number": "1a",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "with measurements: only [so-and-so much] up to now."
+          },
+          "Examples": [
+            {
+              "Phrase": "Tungà pa ug túbig ang baril,",
+              "Gloss": "The barrel is still only half full of water."
+            }
+          ]
+        }
+      },
+      {
+        "Number": "1b",
+        "CebWord": "pa<sub>1</sub>"
+      },
+      {
+        "Number": "1b1",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "not yet."
+          },
+          "Examples": [
+            {
+              "Phrase": "Ang linung-ag nga ságing walà pa malútù,",
+              "Gloss": "The boiled bananas are not cooked yet."
+            }
+          ]
+        }
+      },
+      {
+        "Number": "1b2",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "before."
+          },
+          "Examples": [
+            {
+              "Phrase": "Hipúsa ang libru sa dílì pa si Pápa muabut,",
+              "Gloss": "Put the book away before Dad arrives."
+            },
+            {
+              "Phrase": "Sa wà pay gíra,",
+              "Gloss": "Before the war."
+            }
+          ]
+        }
+      },
+      {
+        "Number": "2",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "else, in addition."
+          },
+          "Examples": []
+        }
+      },
+      {
+        "Number": "2a",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "<i lang=\"cebword\">with future verb:</i> [so-and-so] will still happen."
+          },
+          "Examples": [
+            {
+              "Phrase": "Sulatan pa nákù si Husi,",
+              "Gloss": "I still have to write to José."
+            }
+          ]
+        }
+      },
+      {
+        "Number": "2b",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "with a past verb: [did] besides."
+          },
+          "Examples": [
+            {
+              "Phrase": "Human siya sagpáa, gisultían pa ug pait,",
+              "Gloss": "He was slapped and bitter words were said to him as well."
+            }
+          ]
+        }
+      },
+      {
+        "Number": "2c",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "<i lang=\"cebword\">with existential:</i> [so-and-so] also is in existence."
+          },
+          "Examples": [
+            {
+              "Phrase": "Náa pa bay túbig sa baril?",
+              "Gloss": "Is there any more water in the barrel?"
+            }
+          ]
+        }
+      },
+      {
+        "Number": "2d",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "<i lang=\"cebword\">interrogative —:</i>"
+          },
+          "Examples": []
+        }
+      },
+      {
+        "Number": "2d1",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "what, where, why, etc. else."
+          },
+          "Examples": [
+            {
+              "Phrase": "Kinsa pay muadtu?",
+              "Gloss": "Who else will go?"
+            }
+          ]
+        }
+      },
+      {
+        "Number": "2d2",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "what, where, why, etc. could it be."
+          },
+          "Examples": [
+            {
+              "Phrase": "Unsa pa ug dílì kwarta?",
+              "Gloss": "What could it be <corr id=\"xd20e323227\" title=\"Source: it\">if</corr> not money?"
+            },
+            {
+              "Phrase": "Ngánu pa nga ikaw giyud?",
+              "Gloss": "Why, oh why, was it you, of all people?"
+            }
+          ]
+        }
+      },
+      {
+        "Number": "2d3",
+        "CebWord": "pa<sub>1</sub>",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "<i lang=\"cebword\">[noun]-un</i> what [noun] are you talking about?"
+          },
+          "Examples": [
+            {
+              "Phrase": "Unsa pay radiyúhun nga dúgay nang gikáwat,",
+              "Gloss": "What radio are you talking about when it was stolen long ago."
+            }
+          ]
+        }
+      },
+      {
+        "Number": "2e",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "<i lang=\"cebword\">in phrases bringing up a new subject:</i>"
+          },
+          "Examples": []
+        }
+      }
+    ],
+    "Conjugations": [
+      {
+        "Word": "láin —y átù",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "by the way, to change the subject."
+          },
+          "Examples": [
+            {
+              "Phrase": "Láin pay átù, minyù ka na ba?",
+              "Gloss": "By the way, are you married?"
+            }
+          ]
+        }
+      },
+      {
+        "Word": "mau — diay átù",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "by the way, I just thought of it."
+          },
+          "Examples": [
+            {
+              "Phrase": "Mau pa diay átù, wà ta kadág abridur,",
+              "Gloss": "It just occurred to me. We didn’t bring a can opener."
+            }
+          ]
+        }
+      },
+      {
+        "Word": "úsà, ísà, tayim —",
+        "defex": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "excuse me a second (lit. one more second)."
+          },
+          "Examples": [
+            {
+              "Phrase": "ísà pa kay ákung pagngun ang radiyu,",
+              "Gloss": "Excuse me. I am going to turn off the radio."
+            }
+          ]
+        },
+        "NumberedDefs": [
+          {
+            "Number": "2f",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "<i lang=\"cebword\">in phrases meaning in addition:</i>"
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Word": "bísan —",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "even ... too, despite."
+          },
+          "Examples": [
+            {
+              "Phrase": "Bísan pa ang mga bátà giapil,",
+              "Gloss": "Even the children were included."
+            },
+            {
+              "Phrase": "Bísan pa niánà, dì ku muadtu,",
+              "Gloss": "Despite that, I won’t go!"
+            }
+          ]
+        }
+      },
+      {
+        "Word": "gawas, lábut —",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "besides."
+          },
+          "Examples": [
+            {
+              "Phrase": "Gawas (lábut) pa niánà, unsa pa may púlung níya?",
+              "Gloss": "Besides that, what else did he say?"
+            }
+          ]
+        }
+      },
+      {
+        "Word": "labaw —",
+        "defex": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "in addition to."
+          },
+          "Examples": [
+            {
+              "Phrase": "Labaw pa niánà tagáan tikag primiyu,",
+              "Gloss": "And in addition, I will give you a reward."
+            }
+          ]
+        },
+        "NumberedDefs": [
+          {
+            "Number": "3",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "[predicate] is <corr id=\"xd20e323305\" title=\"Source: superflous\">superfluous</corr>; [do] when one shouldn’t or shouldn’t have to."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Ug nagbayadbáyad pa siya nga wà man tu kinahanglána,",
+                  "Gloss": "And he was paying for it when there was no need."
+                },
+                {
+                  "Phrase": "Sus! Ipakítà pa giyud níya mu rag dílì baratuhun,",
+                  "Gloss": "Heavens! She has to show off, as if it weren’t s.t. cheap."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "3a",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "[do] some more so that [such-and-such] a bad thing will happen again."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Nasagpaan ka. Panabì pa,",
+                  "Gloss": "You got yourself a slapping. Go on. Blabber some more."
+                },
+                {
+                  "Phrase": "Nadagmà ka núun. Sígi, dágan pa,",
+                  "Gloss": "You fell down. Go on. Keep on running around (so you can fall again)."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "3b",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "that’s what happens when you do [so-and-so]."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Minyù pa. Mu ra na kag irung panit,",
+                  "Gloss": "That is what you get for getting married. You’re no better off than a mangy dog."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "3c",
+            "CebWord": "pa<sub>1</sub>",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "[<i lang=\"cebword\">doubled verb</i>] — didn’t even do [so-and-so] though it is customary."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Gipalit níya ang kutsi dihàdihà nga wà nay hangyùhangyù pa,",
+                  "Gloss": "He bought the car, then and there, without even bargaining."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "3d",
+            "CebWord": "pa<sub>1</sub>",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "[so-and-so] was the case, which was bad enough, but then ..."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Mau pay kisì, ímu pung iuran ug sígi, nadúnut,",
+                  "Gloss": "It was already torn. You kept wearing it, so it was ruined."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "3d1",
+            "CebWord": "pa<sub>1</sub>",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "he [did, does] and yet dared, dares to do [so-and-so] in addition."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Mau pay sad-an mau pay mangísug,",
+                  "Gloss": "He is at fault, but he dares to get mad."
+                },
+                {
+                  "Phrase": "Mau pay nangáyù mau pay mipílì,",
+                  "Gloss": "He is asking the favor and yet he is choosy."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "4",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "[subject] is still in a group with other things mentioned."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Ang íhu isdà. Isdà pa ba ang pági?",
+                  "Gloss": "Sharks are fish; are rays also considered fish?"
+                }
+              ]
+            }
+          },
+          {
+            "Number": "4a",
+            "CebWord": "pa<sub>1</sub>",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "that’s not so bad, is it?"
+              },
+              "Examples": [
+                {
+                  "Phrase": "Sígi málu pa nà ug makadiyis ka,",
+                  "Gloss": "Go ahead. If you make ten bucks on it, that ain’t bad."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "5",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "<i lang=\"cebword\">in comparisons:</i> even more."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Gwápa pa ka kang Maríya,",
+                  "Gloss": "You are more beautiful than Mary."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "5a",
+            "CebWord": "pa<sub>1</sub>",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "[subject] is more [adj.] than ..."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Lamì pay lamaw niíni,",
+                  "Gloss": "This is worse than garbage. (Lit. Garbage is more delicious than this.)"
+                },
+                {
+                  "Phrase": "Lisud pay magkaug mani,",
+                  "Gloss": "It’s harder to eat peanuts than do this."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "6",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "<i lang=\"cebword\">in quotations, preceded by gen.:</i> [gen.] said."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Ug mau tu ang nahitabù, níya pa,",
+                  "Gloss": "And that is all what happened, he said."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "6a",
+            "CebWord": "pa<sub>1</sub>",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "[<i lang=\"cebword\">gen.</i>] [gen.] says, said."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Mátud pa níla aku dílì ángay,",
+                  "Gloss": "They say I am not worthy."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "6b",
+            "CebWord": "pa<sub>1</sub>",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "he said."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Kay na, siya pa, unsáun man nákù?",
+                  "Gloss": "Well, said he, what can I do?"
+                }
+              ]
+            }
+          },
+          {
+            "Number": "6c",
+            "CebWord": "pa<sub>1</sub>",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "in other words."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Aw, sa átù pa diyis ákung ibáyad nímu,",
+                  "Gloss": "Oh, in other words, ten is what I pay you."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "7",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "with the apodosis of a condition contrary to fact."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Ug walà pa nímu kawáta, ngánung náa man nà nímu?",
+                  "Gloss": "If you hadn’t stolen it, why do you have it?"
+                }
+              ]
+            }
+          },
+          {
+            "Number": "7a",
+            "CebWord": "pa<sub>1</sub>",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "["
+              },
+              "Examples": [
+                {
+                  "Phrase": "noun, pronoun, adj.",
+                  "Gloss": "] if [noun] were [noun, pronoun, adj.]."
+                },
+                {
+                  "Phrase": "Aku pay Huwan,",
+                  "Gloss": "If I were John."
+                },
+                {
+                  "Phrase": "Aku pay ikaw (aku pa nímu),",
+                  "Gloss": "If I were you."
+                },
+                {
+                  "Phrase": "Aku pay dátù,",
+                  "Gloss": "If I were rich."
+                },
+                {
+                  "Phrase": "Aku pa nímu, níya,",
+                  "Gloss": "If I were you, him."
+                },
+                {
+                  "Phrase": "Kami pa ninyu, níla,",
+                  "Gloss": "If we were you, them."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "7b",
+            "CebWord": "pa<sub>1</sub>",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "! [so-and-so] is stupendous in quantity, quality (lit. if you could only see [such-and-such])."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Mais pay ímu, sus kadaghan!",
+                  "Gloss": "If you could only see my corn. My! There’s a lot."
+                },
+                {
+                  "Phrase": "Si Pidru pay ímu, káun giyud tug irù,",
+                  "Gloss": "Believe me, Pedro will eat dog meat, and how!"
+                }
+              ]
+            }
+          },
+          {
+            "Number": "7b1",
+            "CebWord": "pa<sub>1</sub>",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "I never thought [so-and-so] was what he was."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Si Pidru pay ákù may kirída diay nà siya,",
+                  "Gloss": "I never thought it was possible, but Pedro has a mistress."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "7c",
+            "CebWord": "pa<sub>1</sub>",
+            "DefEx": {
+              "Def": {
+                "Type": "LINK",
+                "Content": "lámang: 4b, c."
+              },
+              "Examples": []
+            }
+          },
+          {
+            "Number": "7d",
+            "CebWord": "pa<sub>1</sub>",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "it would be, would have been better if, it would have been good."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Maáyu (agad) pa untà ug átung napintálan ang kahun úsà gawía,",
+                  "Gloss": "It would have been better if we had painted the box before we used it."
+                },
+                {
+                  "Phrase": "Agad (maáyu) pa ug magtuun ka kay sa magkantakanta,",
+                  "Gloss": "You would do better to study than just sit around singing."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "7e",
+            "CebWord": "pa<sub>1</sub>",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "I hope that."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Hináut pang dílì muulan,",
+                  "Gloss": "I hope it won’t rain."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "8",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "<i lang=\"cebword\">modifying a phrase referring to time:</i> [so-and-so] recently happened, won’t happen until ..."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Dílì madala ug bálik ugmà, Huybis pa,",
+                  "Gloss": "I cannot bring it back tomorrow. Not until Thursday."
+                },
+                {
+                  "Phrase": "Bag-u pa siya nga milakaw,",
+                  "Gloss": "He left just now."
+                },
+                {
+                  "Phrase": "Gíkan pa siya sa Manílà,",
+                  "Gloss": "He is just back from Manila."
+                },
+                {
+                  "Phrase": "Karun pa siya muabut gíkan sa Buhul,",
+                  "Gloss": "He arrived just now from Bohol."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "8a1",
+            "CebWord": "pa<sub>1</sub>",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "only then [will so-and-so] happen."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Ayhà (anhà) pa siya mulíhuk ug pakit-an ug latigu,",
+                  "Gloss": "He only moves if he sees a whip."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "8a2",
+            "CebWord": "pa<sub>1</sub>",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "only then [so-and-so] happened."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Dihà pa siya mutuun nga hápit na ang iksámin,",
+                  "Gloss": "He only started to study when it was nearly exam time."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "8b",
+            "CebWord": "pa<sub>1</sub>",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "that is the first time [abstract] happened, [instrumental passive] will happen."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Mau pay pagkadungug nákù niánà,",
+                  "Gloss": "That is the first time I heard that."
+                },
+                {
+                  "Phrase": "Mau pay ilung-ag ug mudtu na,",
+                  "Gloss": "Don’t cook it until noon. (The first time to cook it when it’s noon.)"
+                }
+              ]
+            }
+          },
+          {
+            "Number": "8c",
+            "CebWord": "pa<sub>1</sub>",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "but then when [so-and-so] was done."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Dúgay nákung limpiyu sa salug. Baldiyúhan pa nákù, human dáyun,",
+                  "Gloss": "It took me a long time to clean the floor. But then when I hosed it down, it was finished right away."
+                },
+                {
+                  "Phrase": "Pag-abri pa nákù sa subri, wà diay sulud,",
+                  "Gloss": "When I opened the envelope, there was nothing in it after all."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Word": "dáan — <span class=\"rm\">[subject]</span>",
+        "defex": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "knew [so-and-so] in advance."
+          },
+          "Examples": [
+            {
+              "Phrase": "Dáan pa lagi ku,",
+              "Gloss": "I knew that long ago!"
+            }
+          ]
+        },
+        "NumberedDefs": [
+          {
+            "Number": "9",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "much less [do]."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Dì gánì aku makasulti, kanta pa,",
+                  "Gloss": "I cannot even talk, much less sing."
+                },
+                {
+                  "Phrase": "Dì gánì aku makahímù niánà, ikaw pa,",
+                  "Gloss": "I can’t even do that, much less you."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "Found": true,
+  "NextIndex": 246,
+  "Diagnostics": []
+}
