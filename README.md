@@ -65,12 +65,16 @@ Running tests.
 # TODO
 ## major
 Let me start by correctly parsing the 5 longest definitions, and then checking everything else:
-- [ ] 13092
+- [x] 13092 : this is successfully parsing, it is messing up the order of conjugations but I don't care particularly
 - [ ] 10652
 - [ ] 15295
     - [ ] fix `(<i lang=""cebword"">see also</i> 3c <i lang=""cebword"">and</i> 4d .)`
 - [ ] 10583
+    - [ ] fix `<i lang=\"cebword\">‘Wà na pud tingáli nay kwarta.’—‘May láin pa?’</i>`
+    - (should be "ceb" instead of "cebword")
 - [ ] 20434
+
+note: the `<i lang="cebword>english phrase</i>` is a common pattern I see that require one-off exceptions, which is one of the most common reason for parsing failures.
 
 ## manual fix
 - "in set phrase:" or "in set phrases"

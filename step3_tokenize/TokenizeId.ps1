@@ -23,6 +23,8 @@ $outFilePath = Join-Path -Path $outDir -ChildPath (Split-Path -Leaf $outFilePath
 . $PSScriptRoot\TokenizeFile.ps1 -InFile $inFile | Export-Csv -Path $outFilePath -NoTypeInformation
 Write-Host "Write $($outFilePath)"
 
+# TODO pipe to error on failed parse
+
 if ($CopyToExpected) {
     $inFile = Get-Item -Path  "$PSScriptRoot\..\step2_split_paras\data\para_*_$Id.xml"
     [string]$expectedDir = "$PSScriptRoot\expected"

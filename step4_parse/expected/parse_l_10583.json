@@ -1,0 +1,634 @@
+{
+  "WordDef": {
+    "Word": "láin",
+    "WordTypeDefs": [
+      {
+        "WordType": "a",
+        "Classes": [],
+        "NumberedDefs": [
+          {
+            "Number": "1",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "different, another."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Láin ning klasíha sa panaptun,",
+                  "Gloss": "This is a different k.o. cloth."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "1a",
+            "CebWord": "láin",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "of course, could it be different? <i lang=\"cebword\">‘Wà na pud tingáli nay kwarta.’—‘May láin pa?’</i> ‘He’s probably out of money again.’—‘Of course, could it be otherwise?’"
+              },
+              "Examples": []
+            }
+          },
+          {
+            "Number": "1b",
+            "CebWord": "láin",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "afterworld."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Adtu ta magkítà sa láing kalibútan,",
+                  "Gloss": "We’ll meet in the afterworld."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "1c",
+            "CebWord": "láin",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "on the other hand."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Hustu pud ang íyang sulti, apan sa láing báhin, sayup pud siya,",
+                  "Gloss": "What he said is true, but on the other hand, he’s also wrong in some ways."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "2",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "bad, sick."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Láin kaáyu ning ákung gibátì,",
+                  "Gloss": "I feel very sick."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "3",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "odd in behavior, different from what one would expect."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Kaláin nímu nga dílì gánì mupahíyum inighinagbù nátù!",
+                  "Gloss": "How odd of you not even to smile when we meet!"
+                },
+                {
+                  "Phrase": "Láin ug báhù ning agwáha,",
+                  "Gloss": "This perfume has a strange smell."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "3a",
+            "CebWord": "láin",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "unpredictable in behavior, somewhat crazy."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Ayaw nà siya kumpiyansáhi kay láin ra ba nag úlu,",
+                  "Gloss": "Don’t trust him, because he’s somewhat crazy."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "3b",
+            "CebWord": "láin",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "acting strangely, unexpectedly."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Láin siyag sabaw kay manáug manday nanghúkad,",
+                  "Gloss": "He’s a strange fellow. He leaves just when they are serving dinner."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "4",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "not of a good sort, bad."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Láin ang panahun run,",
+                  "Gloss": "The weather is no good now."
+                },
+                {
+                  "Phrase": "Láin kaáyu ug batásan nang íyang asáwa,",
+                  "Gloss": "That wife of his has very offensive manners."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "4a",
+            "CebWord": "láin",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "short-tempered."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Ayaw siya bikla kay láin ra ba nag buut (úlu),",
+                  "Gloss": "Don’t irritate him because he’s short-tempered."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "4b",
+            "CebWord": "láin",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "tending to steal."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Láin ug kamut tung ákung binatunan, Daghan ang nawā́,",
+                  "Gloss": "Our servant was a thief. So many things disappeared."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "4c",
+            "CebWord": "láin",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "sensitive, easily taking offense."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Láig sabawng bayhána. Wà bayà kuy gipasabut nga dautan!",
+                  "Gloss": "What a sensitive woman. I didn’t mean anything by that remark."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "5",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "for a person to be dangerous, capable of supernatural harm."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Láin kaáyu ang mga táwu sa Nága. Daghang mga unglù,",
+                  "Gloss": "The people in Naga are dangerous. There are lots of vampires."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "6",
+            "CebWord": "láin",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "unrelated person, outsider."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Nagbalunbálun pa man ka. Mau ra ka mag láing táwu,",
+                  "Gloss": "You’re bringing food, as if you weren’t related to us."
+                },
+                {
+                  "Phrase": "Way láing táwung pasudlun dinhi,",
+                  "Gloss": "No outsider is allowed in."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "7",
+            "CebWord": "láin"
+          },
+          {
+            "Number": "7a",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "by the way."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Láin pay átù, tagadiin man tu ka?",
+                  "Gloss": "By the way, where do you say you come from?"
+                }
+              ]
+            }
+          },
+          {
+            "Number": "7b",
+            "DefEx": {
+              "Def": {
+                "Type": "LINK",
+                "Content": "mau pay ákù"
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "WordType": "v",
+        "Classes": [],
+        "NumberedDefs": [
+          {
+            "Number": "1",
+            "CebWord": "láin",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "be, become different, unusual."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Ug muláin ang andar sa makina, pahunúnga,",
+                  "Gloss": "If the engine develops a strange sound, turn it off."
+                },
+                {
+                  "Phrase": "Ayaw laína pagsabut,",
+                  "Gloss": "Don’t take it the wrong way."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "1a",
+            "CebWord": "láin",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "become mentally deranged."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Nalaínan (naláin) siya tungud sa labihang kaguul,",
+                  "Gloss": "He went off his rocker because of his extreme grief."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "2",
+            "CebWord": "láin",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "be or feel bad, sick."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Nagláin ákung ginháwa,",
+                  "Gloss": "I feel sick."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "3",
+            "CebWord": "láin",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "get bad, worsen."
+              },
+              "Examples": []
+            }
+          },
+          {
+            "Number": "3a",
+            "CebWord": "láin",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "be disconcerted, feel distaste."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Naláin siya pagkabatì níya sa balità,",
+                  "Gloss": "He reacted with distaste upon hearing the news."
+                },
+                {
+                  "Phrase": "Gilaínan ku sa ákung pagkabutang,",
+                  "Gloss": "I feel uneasy in my situation."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "Conjugations": [
+      {
+        "Word": "dílì ig-",
+        "NumberedDefs": [
+          {
+            "Number": "1",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "related by blood."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Dílì ka nákù igláin,",
+                  "Gloss": "You’re not unrelated to me."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "2",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "of the same family as."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Ang barílis dílì igláin sa tulíngan,",
+                  "Gloss": "The tuna is not unrelated to the mackerel."
+                },
+                {
+                  "Phrase": "Ang arti sa panugilánun dílì igláin sa arti sa pamintal,",
+                  "Gloss": "The art of story writing is not unrelated to the art of painting."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Word": "(→)",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "CebWord": "láin",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "separate oneself from the group, do s.t. s.w. else or at another time."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Milain ang dalágag káun sa laláki,",
+                      "Gloss": "The girls ate apart from the boys."
+                    },
+                    {
+                      "Phrase": "Mulain ta kay lisud ug ípun ta sa mga bayaw,",
+                      "Gloss": "We will live separately because it is difficult to live with in-laws."
+                    },
+                    {
+                      "Phrase": "Lainun nákù ni ug anhi kay dì nákù madala run,",
+                      "Gloss": "I will come back for this some other time because I can not take it now."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "CebWord": "láin",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "separate s.t., set aside."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Laina ang hilaw ug ang hinug,",
+                      "Gloss": "Keep the unripe and the ripe ones separate."
+                    },
+                    {
+                      "Phrase": "Ilain kini pára níya,",
+                      "Gloss": "Set this aside for him."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Word": "lainlain",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "k.o. crazy."
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "thieves."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Kaning mga iskwátir mga lainlain,",
+                      "Gloss": "The squatters around here are a bunch of thieves."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "3",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "people of supernatural powers."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Dílì maáyung paliwatan nang mga tawhána nga lainlain,",
+                      "Gloss": "We mustn’t marry our children off to those people because they are thought to be vampires."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Word": "lainláin",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "Classes": [],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "various."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Lainláin ang mga klási sa pagkáun,",
+                  "Gloss": "There are all different kinds of food."
+                }
+              ]
+            }
+          },
+          {
+            "WordType": "v",
+            "Classes": [
+              "[A13; a12]"
+            ],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "be varied."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Lainlaínun nákù ang kulur sa bungbung,",
+                      "Gloss": "I’ll paint the walls all different colors."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "do s.t. separately or alone by oneself."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Ngánung naglainlàin ka mag káun dihà?",
+                      "Gloss": "Why are you eating alone by yourself there?"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Word": "kalainláin",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "Classes": [
+              "[A13]"
+            ],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "be all different."
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Word": "ka-an",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "difference."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Wà kay kalaínan sa kawatan,",
+                      "Gloss": "You’re no different from a thief."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "change."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Dakù ang kalaínan nga mahímù sa ímung pánit ug mugámit kag Kamay,",
+                      "Gloss": "It will make a great difference for your skin if you use Camay."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Found": false,
+  "NextIndex": 177,
+  "Diagnostics": [
+    {
+      "Index": 179,
+      "Message": "DEF: unexpected CEBWORD",
+      "Token": {
+        "Type": "CEBWORD",
+        "Content": "— ug buut, úlu, kamut, etc."
+      }
+    }
+  ]
+}
