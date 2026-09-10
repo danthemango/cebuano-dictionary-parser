@@ -520,7 +520,7 @@ function Set-WordDef {
 #   - CEBWORD + one or more WTDEFs
 # each row will have one or more WORDDEF
 
-function Parse-Tokens {
+function ConvertTo-Definition {
     <#
       ROW ::= WORDDEF+ (word definiton then conjugations)
       Success = consumed all tokens AND at least one WORDDEF produced, each subsequent worddef considered to be an affix
