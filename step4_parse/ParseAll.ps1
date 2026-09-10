@@ -49,7 +49,7 @@ Get-ChildItem -Path $inDir -Filter "tokens_*.csv" | ForEach-Object {
 
             $errorMessage | Out-File -FilePath $errorFile -Encoding UTF8
 
-            Write-Error $errorMessage
+            Write-Error "Error parsing $inFile"
         }
     }
 }

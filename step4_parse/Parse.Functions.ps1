@@ -16,19 +16,26 @@ function IsType {
 .DESCRIPTION
     parse definition
 #>
-function Set-Def {
+function Search-Def {
     <#
-      DEF ::= (TEXT | LINK)+
+      DEF ::= [Class] CEBWORD | (TEXT | LINK)+
       Returns {Found, NextIndex, Def:{Text, Links[], Word}, Diagnostics}
     #>
     param([object[]]$Tokens, [int]$StartIndex)
-    $i = $StartIndex; $diag = @()
+    $i = $StartIndex;
 
     $tok = Get-Token $Tokens $i
     if (-Not $tok) {
         return [PSCustomObject]@{ Found=$false; NextIndex=$i; Def=$null; Diagnostics=@(
             [PSCustomObject]@{ Index=$i; Message='DEF: no token'; Token=$null }
         ) }
+    }
+
+    # [class]
+    $class = $null
+    if (IsType (Get-Token $Tokens $i) 'CLASS') {
+        $class += (Get-Token $Tokens $i).Content
+        $i++
     }
 
     # Case 1: (TEXT | LINK)+
@@ -49,52 +56,62 @@ function Set-Def {
         }
     }
 
-    # # Case 3: CEBWORD
-    # if (IsType $tok 'CEBWORD') {
-    #     $word = $tok.Content; $i++
-    #     return [PSCustomObject]@{
-    #         Found   = $true
-    #         NextIndex = $i
-    #         Def       = [PSCustomObject]@{ Text=$null; Links=@(); Word=$word }
-    #         Diagnostics = $diag
-    #     }
-    # }
+    # Case 3: CEBWORD
+    if (IsType $tok 'CEBWORD') {
+        $word = $tok.Content; $i++
+        return [PSCustomObject]@{
+            Found   = $true
+            NextIndex = $i
+            Class       = $class
+            Def       = [PSCustomObject]@{ Text=$null; Links=@(); Word=$word }
+        }
+    }
 
     if ($text_link_arr.Count -eq 0) {
         [PSCustomObject]@{
             Found     = $false
             NextIndex   = $i
             Def         = $null
-            Diagnostics = $diag + [PSCustomObject]@{ Index=$i; Message="DEF: unexpected $($tok.Type)"; Token=$tok }
+            Diagnostics = @(
+                [PSCustomObject]@{
+                    Index=$i;
+                    Message="DEF: unexpected $($tok.Type)";
+                    Token=$tok
+                }
+            )
         }
     } elseif ($text_link_arr.Count -eq 1) {
         [PSCustomObject]@{
             Found     = $true
             NextIndex   = $i
+            Class       = $class
             Def         = $text_link_arr[0]
-            Diagnostics = $diag
         }
     } else {
         [PSCustomObject]@{
             Found     = $true
             NextIndex   = $i
+            Class       = $class
             Def         = $text_link_arr
-            Diagnostics = $diag
         }
     }
 }
 
-function Set-Example {
+function Search-Example {
     <#
       EX ::= CEBPHRASE TEXT
       Returns {Found, NextIndex, Example:{Phrase, Gloss}, Diagnostics}
     #>
     param([object[]]$Tokens, [int]$StartIndex)
-    $i = $StartIndex; $diag = @()
+    $i = $StartIndex;
 
     $phraseTok = Get-Token $Tokens $i
     if (-Not $phraseTok -or -Not ($phraseTok.Type -eq 'CEBPHRASE')) {
-        return [PSCustomObject]@{ Found=$false; NextIndex=$i; Example=$null; Diagnostics=$diag }
+        return [PSCustomObject]@{
+            Found=$false;
+            NextIndex=$i;
+            Example=$null;
+        }
     }
     $i++
 
@@ -104,9 +121,11 @@ function Set-Example {
             Found     = $false
             NextIndex   = $StartIndex     # roll back
             Example     = $null
-            Diagnostics = $diag + [PSCustomObject]@{
-                Index=$i; Message='EX: expected TEXT after phrase'; Token=$glossTok
-            }
+            Diagnostics = @(
+                [PSCustomObject]@{
+                    Index=$i; Message='EX: expected TEXT after phrase'; Token=$glossTok
+                }
+            )
         }
     }
     $i++
@@ -118,11 +137,10 @@ function Set-Example {
             Phrase = $phraseTok.Content
             Gloss  = $glossTok.Content
         }
-        Diagnostics = $diag
     }
 }
 
-function Set-Examples {
+function Search-Examples {
     <#
       Parse zero or more EX pairs.
       Returns {Examples[], NextIndex}
@@ -131,7 +149,7 @@ function Set-Examples {
     $i = $StartIndex
     $examples = @()
     while ($true) {
-        $ex = Set-Example -Tokens $Tokens -StartIndex $i
+        $ex = Search-Example -Tokens $Tokens -StartIndex $i
         if (-Not $ex.Found) { break }
         $examples += $ex.Example
         $i = $ex.NextIndex
@@ -144,9 +162,9 @@ function Search-DefEx {
       DEFEX ::= DEF EX*
     #>
     param([object[]]$Tokens, [int]$StartIndex)
-    $i = $StartIndex; $diag = @()
+    $i = $StartIndex;
 
-    $def = Set-Def -Tokens $Tokens -StartIndex $i
+    $def = Search-Def -Tokens $Tokens -StartIndex $i
     if (-Not $def.Found) {
         return [PSCustomObject]@{
             Found     = $false
@@ -157,23 +175,22 @@ function Search-DefEx {
     }
     $i = $def.NextIndex
 
-    $exs = Set-Examples -Tokens $Tokens -StartIndex $i
+    $exs = Search-Examples -Tokens $Tokens -StartIndex $i
     $i = $exs.NextIndex
 
     [PSCustomObject]@{
         Found   = $true
         NextIndex = $i
         DefEx     = [PSCustomObject]@{ Def=$def.Def; Examples=$exs.Examples }
-        Diagnostics = $diag
     }
 }
 
-function Set-NumDef {
+function Search-NumDef {
     <#
-      NUMDEF ::= NUMBER [CEBWORD] [CLASS] DEFEX
+      NUMDEF ::= NUMBER [CEBWORD] DEFEX
     #>
     param([object[]]$Tokens, [int]$StartIndex)
-    $i = $StartIndex; $diag = @()
+    $i = $StartIndex;
 
     $numTok = Get-Token $Tokens $i
     if (-Not (IsType $numTok 'NUMBER')) {
@@ -181,24 +198,14 @@ function Set-NumDef {
             Found     = $false
             NextIndex   = $i
             NumDef      = $null
-            Diagnostics = $diag + [PSCustomObject]@{ Index=$i; Message='NUMDEF: expected NUMBER'; Token=$numTok }
+            Diagnostics = @(
+                [PSCustomObject]@{ Index = $i; Message = 'NUMDEF: expected NUMBER'; Token = $numTok }
+            )
         }
     }
     $i++
 
-    # collect CEBWORD conjugation
-    $conjugation = $null
-    if (IsType (Get-Token $Tokens $i) 'CEBWORD') {
-        $conjugation += (Get-Token $Tokens $i).Content
-        $i++
-    }
-
-    # collect CLASS
-    $class = $null
-    if (IsType (Get-Token $Tokens $i) 'CLASS') {
-        $class += (Get-Token $Tokens $i).Content
-        $i++
-    }
+    # class?
 
     $defex = Search-DefEx -Tokens $Tokens -StartIndex $i
     if (-Not $defex.Found) {
@@ -206,7 +213,7 @@ function Set-NumDef {
             Found     = $false
             NextIndex   = $defex.NextIndex
             NumDef      = $null
-            Diagnostics = $diag + $defex.Diagnostics
+            Diagnostics = $defex.Diagnostics
         }
     }
     $i = $defex.NextIndex
@@ -229,16 +236,15 @@ function Set-NumDef {
         Found   = $true
         NextIndex = $i
         NumDef    = $numDef
-        Diagnostics = $diag
     }
 }
 
-function Set-WtDef {
+function Search-WtDef {
     <#
       WTDEF ::= WORDTYPE CLASS* ( NUMDEF+ | DEFEX )
     #>
     param([object[]]$Tokens, [int]$StartIndex)
-    $i = $StartIndex; $diag = @()
+    $i = $StartIndex;
 
     # Require WORDTYPE
     $wtTok = Get-Token $Tokens $i
@@ -247,9 +253,11 @@ function Set-WtDef {
             Found     = $false
             NextIndex   = $i
             WtDef       = $null
-            Diagnostics = $diag + [PSCustomObject]@{
-                Index = $i; Message = 'WTDEF: expected WORDTYPE'; Token = $wtTok
-            }
+            Diagnostics = @(
+                [PSCustomObject]@{
+                    Index = $i; Message = 'WTDEF: expected WORDTYPE'; Token = $wtTok
+                }
+            )
         }
     }
     $i++
@@ -265,13 +273,13 @@ function Set-WtDef {
     if (IsType (Get-Token $Tokens $i) 'NUMBER') {
         $numdefs = @()
         while (IsType (Get-Token $Tokens $i) 'NUMBER') {
-            $nd = Set-NumDef -Tokens $Tokens -StartIndex $i
+            $nd = Search-NumDef -Tokens $Tokens -StartIndex $i
             if (-Not $nd.Found) {
                 return [PSCustomObject]@{
                     Found     = $false
                     NextIndex   = $nd.NextIndex
                     WtDef       = $null
-                    Diagnostics = $diag + $nd.Diagnostics
+                    Diagnostics = $nd.Diagnostics
                 }
             }
             $numdefs += $nd.NumDef
@@ -288,7 +296,6 @@ function Set-WtDef {
             Found     = $true
             NextIndex   = $i
             WtDef       = $node
-            Diagnostics = $diag
         }
     }
 
@@ -299,7 +306,7 @@ function Set-WtDef {
             Found     = $false
             NextIndex   = $defex.NextIndex
             WtDef       = $null
-            Diagnostics = $diag + $defex.Diagnostics
+            Diagnostics = $defex.Diagnostics
         }
     }
     $i = $defex.NextIndex
@@ -314,7 +321,6 @@ function Set-WtDef {
         Found     = $true
         NextIndex   = $i
         WtDef       = $node2
-        Diagnostics = $diag
     }
 }
 
@@ -387,7 +393,7 @@ function Search-WordDef {
     if (IsType $tok 'WORDTYPE') {
         $wtdefs = @()
         while (IsType (Get-Token $Tokens $i) 'WORDTYPE') {
-            $wtr = Set-WtDef -Tokens $Tokens -StartIndex $i
+            $wtr = Search-WtDef -Tokens $Tokens -StartIndex $i
             if (-Not $wtr.Found) {
                 return [PSCustomObject]@{
                     Found     = $false
@@ -406,7 +412,6 @@ function Search-WordDef {
                 Word         = $headTok.Content
                 WordTypeDefs = $wtdefs
             }
-            Diagnostics = $diag
         }
     }
 
@@ -414,13 +419,13 @@ function Search-WordDef {
     if (IsType $tok 'NUMBER') {
         $numdefs = @()
         while (IsType (Get-Token $Tokens $i) 'NUMBER') {
-            $nd = Set-NumDef -Tokens $Tokens -StartIndex $i
+            $nd = Search-NumDef -Tokens $Tokens -StartIndex $i
             if (-Not $nd.Found) {
                 return [PSCustomObject]@{
                     Found     = $false
                     NextIndex   = $nd.NextIndex
                     WordDef     = $null
-                    Diagnostics = $diag + $nd.Diagnostics
+                    Diagnostics = $nd.Diagnostics
                 }
             }
             $numdefs += $nd.NumDef
@@ -433,7 +438,6 @@ function Search-WordDef {
                 Word         = $headTok.Content
                 NumberedDefs = $numdefs
             }
-            Diagnostics = $diag
         }
     }
 
@@ -448,13 +452,13 @@ function Search-WordDef {
         if (IsType (Get-Token $Tokens $i) 'NUMBER') {
             $numdefs = @()
             while (IsType (Get-Token $Tokens $i) 'NUMBER') {
-                $nd = Set-NumDef -Tokens $Tokens -StartIndex $i
+                $nd = Search-NumDef -Tokens $Tokens -StartIndex $i
                 if (-Not $nd.Found) {
                     return [PSCustomObject]@{
                         Found     = $false
                         NextIndex   = $nd.NextIndex
                         WordDef     = $null
-                        Diagnostics = $diag + $defex.Diagnostics + $nd.Diagnostics
+                        Diagnostics = $defex.Diagnostics + $nd.Diagnostics
                     }
                 }
                 $numdefs += $nd.NumDef
@@ -476,7 +480,7 @@ function Search-WordDef {
         if (IsType $tok 'WORDTYPE') {
             $wtdefs = @()
             while (IsType (Get-Token $Tokens $i) 'WORDTYPE') {
-                $wtr = Set-WtDef -Tokens $Tokens -StartIndex $i
+                $wtr = Search-WtDef -Tokens $Tokens -StartIndex $i
 
                 # failed to collect
                 if (-Not $wtr.Found) {
@@ -498,7 +502,6 @@ function Search-WordDef {
                     Word         = $headTok.Content
                     WordTypeDefs = $wtdefs
                 }
-                Diagnostics = $diag
             }
         }
 
@@ -510,7 +513,6 @@ function Search-WordDef {
                 Word     = $headTok.Content
                 DefEx    = $defex.DefEx
             }
-            Diagnostics = $diag
         }
     }
 
@@ -519,7 +521,7 @@ function Search-WordDef {
         Found     = $false
         NextIndex   = $defex.NextIndex
         WordDef     = $null
-        Diagnostics = $diag + $defex.Diagnostics + [PSCustomObject]@{
+        Diagnostics = $defex.Diagnostics + [PSCustomObject]@{
             Index   = $defex.NextIndex
             Message = 'WORDDEF: expected DEFEX|([DEFEX] WORDDEF+|WTDEF+|NUMDEF+)'
             Token   = Get-Token $Tokens $defex.NextIndex
@@ -566,7 +568,9 @@ function Search-Definition {
     param(
         [object[]]$Tokens
     )
-    $i = 0; $diag = @(); $worddefs = @()
+    $i = 0;
+    $worddefs = @()
+    [object[]]$diag = @()
 
     while ($i -lt $Tokens.Count) {
         $wd = Search-WordDef -Tokens $Tokens -StartIndex $i
