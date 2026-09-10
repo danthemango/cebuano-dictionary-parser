@@ -18,7 +18,7 @@ function IsType {
 #>
 function Search-Def {
     <#
-      DEF ::= [Class] CEBWORD | (TEXT | LINK)+
+      DEF ::= [Class] (TEXT | LINK)+
       Returns {Found, NextIndex, Def:{Text, Links[], Word}, Diagnostics}
     #>
     param([object[]]$Tokens, [int]$StartIndex)
@@ -53,17 +53,6 @@ function Search-Def {
         # end of input
         if (-Not $tok) {
             break
-        }
-    }
-
-    # Case 3: CEBWORD
-    if (IsType $tok 'CEBWORD') {
-        $word = $tok.Content; $i++
-        return [PSCustomObject]@{
-            Found   = $true
-            NextIndex = $i
-            Class       = $class
-            Def       = [PSCustomObject]@{ Text=$null; Links=@(); Word=$word }
         }
     }
 
@@ -187,7 +176,9 @@ function Search-DefEx {
 
 function Search-NumDef {
     <#
-      NUMDEF ::= NUMBER [CEBWORD] DEFEX
+        NUMDEF may be either:
+        - Number + one or more WORDDEFs (conjugations)
+        - Number + DEFEX
     #>
     param([object[]]$Tokens, [int]$StartIndex)
     $i = $StartIndex;
@@ -205,7 +196,42 @@ function Search-NumDef {
     }
     $i++
 
-    # class?
+    # TODO class?
+    # one or more WORDDEFs (conjugations)
+    $worddefs = @()
+    $tok = Get-Token $Tokens $i
+    if (IsType $tok 'CEBWORD') {
+        while (IsType $tok 'CEBWORD') {
+            $wd = Search-WordDef -Tokens $Tokens -StartIndex $i
+            if ($wd.Found) {
+                $worddefs += $wd.WordDef
+                $i = $wd.NextIndex
+                $tok = Get-Token $Tokens $i
+            }
+        }
+
+        if ($worddefs.Count -gt 0) {
+            return [PSCustomObject]@{
+                Found   = $true
+                NextIndex = $i
+                WordDef   = [PSCustomObject]@{
+                    Word         = $headTok.Content
+                    Conjugations = $worddefs
+                }
+            }
+        } else {
+            return [PSCustomObject]@{
+                Found     = $false
+                NextIndex   = $i
+                WordDef     = $null
+                Diagnostics = [PSCustomObject]@{
+                    Index=$i
+                    Message='NUMDEF WORDDEF: could not parse WORDDEF after CEBWORD'
+                    Token=$headTok
+                }
+            }
+        }
+    }
 
     $defex = Search-DefEx -Tokens $Tokens -StartIndex $i
     if (-Not $defex.Found) {

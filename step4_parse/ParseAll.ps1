@@ -3,11 +3,11 @@ param (
     [switch]$Force
 )
 
-[string]$inDir = "step3_tokenize\data"
-[string]$outDir = "step4_parse\data"
+[string]$inDir = "$PSScriptRoot\..\step3_tokenize\data"
+[string]$outDir = "$PSScriptRoot\data"
 mkdir -Force $outDir | Out-Null
 
-$errorDir = "step4_parse\errors"
+$errorDir = "$PSScriptRoot\errors"
 mkdir -Force $errorDir | Out-Null
 
 Get-ChildItem -Path $inDir -Filter "tokens_*.csv" | ForEach-Object {
@@ -28,7 +28,7 @@ Get-ChildItem -Path $inDir -Filter "tokens_*.csv" | ForEach-Object {
         }
 
         $parse = . $PSScriptRoot\ParseFile.ps1 -InFile $inFile
-        if ($parse.Success) {
+        if ($parse.Found) {
             $parse | ConvertTo-Json -Depth 100 | Set-Content -Path $outFile -Encoding UTF8
         } else {
             # delete the outFile if partially created
