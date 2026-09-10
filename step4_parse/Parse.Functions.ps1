@@ -2,12 +2,20 @@ function Get-Token {
     param([object[]]$Tokens, [int]$i)
     if ($i -ge 0 -and $i -lt $Tokens.Count) { $Tokens[$i] } else { $null }
 }
+
+<#
+.DESCRIPTION
+    returns true if the token has a given type
+#>
 function IsType {
     param($tok, [string]$type)
     $tok -and ($tok.Type -eq $type)
 }
 
-# parse a definiton
+<#
+.DESCRIPTION
+    parse definition
+#>
 function Set-Def {
     <#
       DEF ::= (TEXT | LINK)+
@@ -486,25 +494,41 @@ function Set-WordDef {
 
 # more formally:
 
-# a DEF (definition) is (optional) CLASS + TEXT or LINK or (TEXT+LINK) or CEBWORD
-# LET EX (example) be a CEBPHRASE (cebuano phrase block) + TEXT (assumed to be english)
-# let a DEFEX be a block of DEF + a list of zero or more EX
-# let NUMDEF be a NUMBER followed by DEFEX
-# let WTDEF (word type definition) be a WORDTYPE (noun, verb) follow by a DEFEX or list of NUMDEFS
-# let WORDDEF (word definition) be either
-# - a CEBWORD + a list of one or more WTDEF
-# - a CEBWORD + a list of one or more NUMDEF
-# - a CEBWORD + DEFEX + a list of one or more NUMDEF
-# - a CEBWORD + DEFEX
+# a DEF (definition) is:
+#   - zero or more CLASS + one or more TEXT or LINK
+# LET EX (example) be a CEBPHRASE (cebuano phrase block) + TEXT (assumed to be english) (note: this should also be terminating with a peridd)
+#   - TODO: the CEBPHRASE may have a comma (or ! or ?) and the english text should end with a period (or ! or ?)
+#   - if the parsing becomes difficult, consider using punctuation as a sanity-test
+# let a DEFEX be a block of DEF + zero or more EX
+# let NUMDEF (numbered definition) be NUMBER + DEFEX
+# let WTDEF (word type definition) be either:
+#   - WORDTYPE (noun, verb, adj) + DEFEX
+#   - WORDTYPE (noun, verb, adj) + DEFEX + one or more NUMDEFs
+#   - WORDTYPE (noun, verb, adj) + one or more NUMDEFs
+# let CONJDEF (conjugation definition) be either:
+#   - CEBWORD + DEFEX
+#   - CEBWORD + DEFEX + one or more NUMDEFs
+#   - CEBWORD + DEFEX + one or more WTDEFs
+#   - CEBWORD + one or more NUMDEFs
+#   - CEBWORD + one or more WTDEFs
+# let WORDDEF (word definition) be either:
+#   - CEBWORD + DEFEX
+#   - CEBWORD + DEFEX + one or more NUMDEFs
+#   - CEBWORD + DEFEX + one or more WTDEFs
+#   - CEBWORD + DEFEX + one or more CONJDEFs
+#   - CEBWORD + one or more NUMDEFs
+#   - CEBWORD + one or more WTDEFs
 # each row will have one or more WORDDEF
 
-function Set-Row {
+function Parse-Tokens {
     <#
       ROW ::= WORDDEF+ (word definiton then conjugations)
       Success = consumed all tokens AND at least one WORDDEF produced, each subsequent worddef considered to be an affix
       Returns {Success, NextIndex, Row:{WordDefs[]}, Diagnostics}
     #>
-    param([object[]]$Tokens)
+    param(
+        [object[]]$Tokens
+    )
     $i = 0; $diag = @(); $worddefs = @()
 
     while ($i -lt $Tokens.Count) {
@@ -543,29 +567,9 @@ function Set-Row {
     }
 
     [pscustomobject]@{
+        WordDef      = $worddef
         Success      = [bool]$success
         NextIndex    = $i
-        WordDef      = $worddef
         Diagnostics  = $diag
-    }
-}
-
-# .Description
-# parse a single word definition (a paragraph section in the dictionary)
-function Parse {
-    param (
-        # accept array of tokens for the definition paragraph
-        [Parameter(Mandatory=$true)]
-        $Word
-    )
-
-    # Parse the normalized token array into a structured tree
-    $res = Set-Row -Tokens $Word.Tokens
-
-    [pscustomobject] @{
-        WordDef          = $res.WordDef
-        ParseOk          = $res.Success
-        ParseNextIndex   = $res.NextIndex
-        ParseDiagnostics = $res.Diagnostics
     }
 }

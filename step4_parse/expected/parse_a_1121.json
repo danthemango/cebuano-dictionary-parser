@@ -43,7 +43,7 @@
       ]
     }
   },
-  "ParseOk": true,
-  "ParseNextIndex": 11,
-  "ParseDiagnostics": []
+  "Success": true,
+  "NextIndex": 11,
+  "Diagnostics": []
 }

@@ -28,7 +28,7 @@ Get-ChildItem -Path $inDir -Filter "tokens_*.csv" | ForEach-Object {
         }
 
         $parse = . $PSScriptRoot\ParseFile.ps1 -InFile $inFile
-        if ($parse.ParseOk) {
+        if ($parse.Success) {
             $parse | ConvertTo-Json -Depth 100 | Set-Content -Path $outFile -Encoding UTF8
         } else {
             # delete the outFile if partially created
@@ -40,7 +40,7 @@ Get-ChildItem -Path $inDir -Filter "tokens_*.csv" | ForEach-Object {
             $errorMessage += "`n`n"
             $errorMessage += $parse.ParseDiagnostics | ConvertTo-Json -Depth 100
             $errorMessage += "`n`n"
-            $errorMessage += $parse | ConvertTo-Json -Depth 100 
+            $errorMessage += $parse | ConvertTo-Json -Depth 100
             # $errorMessage += "`nStack Trace:`n$($_.ScriptStackTrace)"
 
             # Include input file contents for debugging
