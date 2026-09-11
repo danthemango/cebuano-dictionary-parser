@@ -1,0 +1,142 @@
+{
+  "WordDef": {
+    "Word": "ábung<sub>1</sub>",
+    "Class": [],
+    "WordTypeDefs": [
+      {
+        "WordType": "v",
+        "Classes": [
+          "[A; c]"
+        ],
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "bar, block the way."
+          },
+          "Examples": [
+            {
+              "Phrase": "Abúngan ta ning karsádag dakung batu,",
+              "Gloss": "Let’s block the road with a big stone."
+            }
+          ]
+        },
+        "CebWord": null
+      },
+      {
+        "WordType": "n",
+        "Classes": [],
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "k.o. fishing equipment consisting of dried coconut leaves tied to a raft."
+          },
+          "Examples": []
+        },
+        "CebWord": null
+      }
+    ],
+    "Conjugations": [
+      {
+        "Word": "(→)",
+        "Class": [],
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "Classes": [],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "s.t. which blocks the way."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Ang káhuy nga abung sa pultahan,",
+                  "Gloss": "The wood that was blocking the door."
+                }
+              ]
+            },
+            "CebWord": null
+          },
+          {
+            "WordType": "a",
+            "Classes": [],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "in the path of the wind, smoke, smells, and the like."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Abung sa hángin,",
+                  "Gloss": "Exposed to the wind."
+                },
+                {
+                  "Phrase": "Abung ka kaáyu sa íyang dautang tingúhà,",
+                  "Gloss": "You are very much exposed to his evil powers."
+                }
+              ]
+            },
+            "CebWord": null
+          }
+        ]
+      },
+      {
+        "Word": "pa-(→), pa-",
+        "Class": [],
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "CebWord": "ábung<sub>1</sub>",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "put in an exposed position."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Ug magpaabung ka sa sílit sa túbig, mahumud ka,",
+                      "Gloss": "If you put yourself in the path of a jet of water, you’ll get wet."
+                    },
+                    {
+                      "Phrase": "Paabungig asu ang mangga,",
+                      "Gloss": "(Make the fire so that) the mango tree will be in the path of the smoke."
+                    }
+                  ]
+                }
+              }
+            ],
+            "CebWord": null
+          },
+          {
+            "WordType": "n",
+            "Classes": [],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "k.o. fishing whereby a net is set across the path of a fish."
+              },
+              "Examples": []
+            },
+            "CebWord": null
+          }
+        ]
+      }
+    ]
+  },
+  "Found": false,
+  "NextIndex": 30,
+  "Diagnostics": [
+    {
+      "Index": 30,
+      "Message": "Trailing token after WORDDEF: NUMBER",
+      "Token": {
+        "Type": "NUMBER",
+        "Content": "2"
+      }
+    }
+  ]
+}

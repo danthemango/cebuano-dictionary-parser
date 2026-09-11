@@ -4,12 +4,6 @@ param (
 )
 
 [string]$inDir = "$PSScriptRoot\..\step3_tokenize\data"
-[string]$outDir = "$PSScriptRoot\data"
-mkdir -Force $outDir | Out-Null
-
-$errorDir = "$PSScriptRoot\errors"
-mkdir -Force $errorDir | Out-Null
-
 Get-ChildItem -Path $inDir -Filter "tokens_*.csv" | ForEach-Object {
     $inFile = $_
     # get the Id number from a file with pattern "tokens_[a-z]_[0-9]+.csv"

@@ -19,6 +19,13 @@ param (
     [switch]$Force
 )
 
+# [string]$inDir = "$PSScriptRoot\..\step3_tokenize\data"
+[string]$outDir = "$PSScriptRoot\data"
+mkdir -Force $outDir | Out-Null
+
+$errorDir = "$PSScriptRoot\errors"
+mkdir -Force $errorDir | Out-Null
+
 # find file in step3_tokenize\data
 $inFile = Get-Item -Path "$PSScriptRoot\..\step3_tokenize\data\tokens_*_$Id.csv"
 if (-Not $Silent) { Write-Host "Read $($inFile.FullName)" }

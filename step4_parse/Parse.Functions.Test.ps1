@@ -27,6 +27,7 @@ Describe "Parse" {
         # Run parser
         $actual = & "$PSScriptRoot\ParseFile.ps1" -InFile $InputFile
         $expected = Get-Content $ExpectedFile -Raw | ConvertFrom-Json
+        $actual.Found | Should -BeTrue
 
         $actualJson = $actual | ConvertTo-Json -Depth 100
         $expectedJson = $expected | ConvertTo-Json -Depth 100
