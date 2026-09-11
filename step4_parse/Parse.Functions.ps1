@@ -352,16 +352,17 @@ function Search-WtDef {
 function Search-WordDef {
     <#
         a WORDDEF may be either:
-        - CEBWORD + one or more WORDDEFs (conjugations)
-        - CEBWORD + one or more WTDEFs
-        - CEBWORD + one or more NUMDEFs
-        - CEBWORD + DEFEX + one or more WTDEFs
-        - CEBWORD + DEFEX + one or more NUMDEFs
-        - CEBWORD + DEFEX
+        - CEBWORD + [CLASS] + one or more WORDDEFs (conjugations)
+        - CEBWORD + [CLASS] + one or more WTDEFs
+        - CEBWORD + [CLASS] + one or more NUMDEFs
+        - CEBWORD + [CLASS] + DEFEX + one or more WTDEFs
+        - CEBWORD + [CLASS] + DEFEX + one or more NUMDEFs
+        - CEBWORD + [CLASS] + DEFEX
     #>
     param([object[]]$Tokens, [int]$StartIndex)
     $i = $StartIndex;
 
+    # a WORDDEF must begin with a CEBWORD
     $headTok = Get-Token $Tokens $i
     if (-Not (IsType $headTok 'CEBWORD')) {
         return [PSCustomObject]@{
@@ -378,6 +379,14 @@ function Search-WordDef {
     $i++
 
     $tok = Get-Token $Tokens $i
+
+    # [class]+
+    $class = @()
+    while (IsType $tok 'CLASS') {
+        $class += (Get-Token $Tokens $i).Content
+        $i++
+        $tok = Get-Token $Tokens $i
+    }
 
     # one or more WORDDEFs (conjugations)
     $worddefs = @()
@@ -399,6 +408,7 @@ function Search-WordDef {
                 NextIndex = $i
                 WordDef   = [PSCustomObject]@{
                     Word         = $headTok.Content
+                    Class        = $class
                     Conjugations = $worddefs
                 }
             }
@@ -437,6 +447,7 @@ function Search-WordDef {
             NextIndex = $i
             WordDef   = [PSCustomObject]@{
                 Word         = $headTok.Content
+                Class        = $class
                 WordTypeDefs = $wtdefs
             }
         }
@@ -463,6 +474,7 @@ function Search-WordDef {
             NextIndex = $i
             WordDef   = [PSCustomObject]@{
                 Word         = $headTok.Content
+                Class        = $class
                 NumberedDefs = $numdefs
             }
         }
@@ -497,7 +509,8 @@ function Search-WordDef {
                 NextIndex = $i
                 WordDef   = [PSCustomObject]@{
                     Word            = $headTok.Content
-                    defex           = $defex.DefEx
+                    Class           = $class
+                    Defex           = $defex.DefEx
                     NumberedDefs    = $numdefs
                 }
             }
@@ -527,6 +540,7 @@ function Search-WordDef {
                 NextIndex = $i
                 WordDef   = [PSCustomObject]@{
                     Word         = $headTok.Content
+                    Class        = $class
                     WordTypeDefs = $wtdefs
                 }
             }
@@ -538,6 +552,7 @@ function Search-WordDef {
             NextIndex = $i
             WordDef   = [PSCustomObject]@{
                 Word     = $headTok.Content
+                Class        = $class
                 DefEx    = $defex.DefEx
             }
         }

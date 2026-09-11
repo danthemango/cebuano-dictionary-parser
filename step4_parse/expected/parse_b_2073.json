@@ -1,9 +1,11 @@
 {
   "WordDef": {
     "Word": "*banà<sub>1</sub>",
+    "Class": [],
     "Conjugations": [
       {
         "Word": "ka-, paka-",
+        "Class": [],
         "WordTypeDefs": [
           {
             "WordType": "v",
@@ -32,6 +34,7 @@
       },
       {
         "Word": "banàbánà",
+        "Class": [],
         "WordTypeDefs": [
           {
             "WordType": "n",

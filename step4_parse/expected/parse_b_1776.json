@@ -1,0 +1,113 @@
+{
+  "WordDef": {
+    "Word": "baksiwà",
+    "Class": [],
+    "WordTypeDefs": [
+      {
+        "WordType": "a",
+        "Classes": [],
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "contrary, nonconforming."
+          },
+          "Examples": [
+            {
+              "Phrase": "Baksiwà nga pagkabátà,",
+              "Gloss": "A contrary child."
+            }
+          ]
+        },
+        "CebWord": null
+      },
+      {
+        "WordType": "v",
+        "Classes": [
+          "[AC; c1]"
+        ],
+        "NumberedDefs": [
+          {
+            "Number": "1",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "be contrary to, be not in conformity."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Mubaksiwà giyud nà siya sa gustu sa ámung inahan,",
+                  "Gloss": "She always does s.t. contrary to our mother’s wishes."
+                },
+                {
+                  "Phrase": "Nagkabaksíwa ang ílang pangatarúngan,",
+                  "Gloss": "Their reasons did not tally."
+                },
+                {
+                  "Phrase": "Baksiwaun (ibaksiwà) man gud nímug sabut ang ákung sulti,",
+                  "Gloss": "You always place a wrong meaning on what I say."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "2",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "put in a head to toe arrangement."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Nagbaksíwà sila paghigdà,",
+                  "Gloss": "They lay down beside each other with their heads on opposite ends."
+                },
+                {
+                  "Phrase": "Ibaksiwà (baksiwáun) nákù ang pagpahimútang sa káhuy,",
+                  "Gloss": "I will arrange the wood so that the bigger ends are next to the smaller ends."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "3",
+            "CebWord": "baksiwà",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "pass by one another without seeing each other."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Wà sila magkítà kay nagkabaksíwà lang sila sa dálan,",
+                  "Gloss": "They did not meet because they just passed each other on the road."
+                }
+              ]
+            }
+          }
+        ],
+        "CebWord": null
+      }
+    ],
+    "Conjugations": {
+      "Word": "(←)",
+      "Class": [
+        "[B]"
+      ],
+      "DefEx": {
+        "Def": {
+          "Type": "TEXT",
+          "Content": "be intertwining."
+        },
+        "Examples": [
+          {
+            "Phrase": "Bágun nga nagbaksíwà,",
+            "Gloss": "Intertwining vines."
+          }
+        ]
+      }
+    }
+  },
+  "Found": true,
+  "NextIndex": 31,
+  "Diagnostics": []
+}

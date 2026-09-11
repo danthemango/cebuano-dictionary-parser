@@ -1,6 +1,7 @@
 {
   "WordDef": {
     "Word": "pa<sub>1</sub>",
+    "Class": [],
     "NumberedDefs": [
       {
         "Number": "1",
@@ -203,6 +204,7 @@
     "Conjugations": [
       {
         "Word": "láin —y átù",
+        "Class": [],
         "DefEx": {
           "Def": {
             "Type": "TEXT",
@@ -218,6 +220,7 @@
       },
       {
         "Word": "mau — diay átù",
+        "Class": [],
         "DefEx": {
           "Def": {
             "Type": "TEXT",
@@ -233,7 +236,8 @@
       },
       {
         "Word": "úsà, ísà, tayim —",
-        "defex": {
+        "Class": [],
+        "Defex": {
           "Def": {
             "Type": "TEXT",
             "Content": "excuse me a second (lit. one more second)."
@@ -260,6 +264,7 @@
       },
       {
         "Word": "bísan —",
+        "Class": [],
         "DefEx": {
           "Def": {
             "Type": "TEXT",
@@ -279,6 +284,7 @@
       },
       {
         "Word": "gawas, lábut —",
+        "Class": [],
         "DefEx": {
           "Def": {
             "Type": "TEXT",
@@ -294,7 +300,8 @@
       },
       {
         "Word": "labaw —",
-        "defex": {
+        "Class": [],
+        "Defex": {
           "Def": {
             "Type": "TEXT",
             "Content": "in addition to."
@@ -778,7 +785,8 @@
       },
       {
         "Word": "dáan — <span class=\"rm\">[subject]</span>",
-        "defex": {
+        "Class": [],
+        "Defex": {
           "Def": {
             "Type": "TEXT",
             "Content": "knew [so-and-so] in advance."

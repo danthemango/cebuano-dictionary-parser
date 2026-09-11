@@ -1,6 +1,7 @@
 {
   "WordDef": {
     "Word": "láin",
+    "Class": [],
     "WordTypeDefs": [
       {
         "WordType": "a",
@@ -261,7 +262,8 @@
               "Examples": []
             }
           }
-        ]
+        ],
+        "CebWord": null
       },
       {
         "WordType": "v",
@@ -350,12 +352,14 @@
               ]
             }
           }
-        ]
+        ],
+        "CebWord": null
       }
     ],
     "Conjugations": [
       {
         "Word": "dílì ig-",
+        "Class": [],
         "NumberedDefs": [
           {
             "Number": "1",
@@ -395,6 +399,7 @@
       },
       {
         "Word": "(→)",
+        "Class": [],
         "WordTypeDefs": [
           {
             "WordType": "v",
@@ -444,12 +449,14 @@
                   ]
                 }
               }
-            ]
+            ],
+            "CebWord": null
           }
         ]
       },
       {
         "Word": "lainlain",
+        "Class": [],
         "WordTypeDefs": [
           {
             "WordType": "a",
@@ -495,12 +502,14 @@
                   ]
                 }
               }
-            ]
+            ],
+            "CebWord": null
           }
         ]
       },
       {
         "Word": "lainláin",
+        "Class": [],
         "WordTypeDefs": [
           {
             "WordType": "a",
@@ -516,7 +525,8 @@
                   "Gloss": "There are all different kinds of food."
                 }
               ]
-            }
+            },
+            "CebWord": null
           },
           {
             "WordType": "v",
@@ -554,12 +564,14 @@
                   ]
                 }
               }
-            ]
+            ],
+            "CebWord": null
           }
         ]
       },
       {
         "Word": "kalainláin",
+        "Class": [],
         "WordTypeDefs": [
           {
             "WordType": "v",
@@ -572,12 +584,14 @@
                 "Content": "be all different."
               },
               "Examples": []
-            }
+            },
+            "CebWord": null
           }
         ]
       },
       {
         "Word": "ka-an",
+        "Class": [],
         "WordTypeDefs": [
           {
             "WordType": "n",
@@ -613,22 +627,130 @@
                   ]
                 }
               }
-            ]
+            ],
+            "CebWord": null
+          }
+        ]
+      },
+      {
+        "Word": "-un(→)",
+        "Class": [],
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "Classes": [],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "of the sort that gets easily angered, tends to be crazy, tends to steal."
+              },
+              "Examples": []
+            },
+            "CebWord": "— ug buut, úlu, kamut, etc."
+          }
+        ]
+      },
+      {
+        "Word": "pa-(→)",
+        "Class": [],
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "Classes": [
+              "[A; b6]"
+            ],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "change the subject in a conversation."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Wà ku maagpas kay mipalain siya sa íyang isturya,",
+                  "Gloss": "I did not understand because he changed the tack of his story."
+                },
+                {
+                  "Phrase": "Palainan nátù ang sulti,",
+                  "Gloss": "Let’s change the tack of our conversation."
+                }
+              ]
+            },
+            "CebWord": null
+          }
+        ]
+      },
+      {
+        "Word": "panag-",
+        "Class": [],
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "Classes": [
+              "[c]"
+            ],
+            "DefEx": {
+              "Def": {
+                "Type": "LINK",
+                "Content": "panig-: 1."
+              },
+              "Examples": []
+            },
+            "CebWord": null
+          }
+        ]
+      },
+      {
+        "Word": "panig-",
+        "Class": [],
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "Classes": [],
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "CebWord": "láin",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "feel like a stranger, be treated like a stranger."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Dílì siya manigláin nákù kay dúgay na mi nga nagkaíla,",
+                      "Gloss": "He feels at home with me because we’ve been friends for a long time."
+                    },
+                    {
+                      "Phrase": "Mahiubus ku ug ímu kung paniglaínan (ipanigláin, ipanagláin),",
+                      "Gloss": "I will be hurt if you treat me like a stranger."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "CebWord": "láin",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "treat s.o. as if he were not related."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Dì ku manigláin sa paryinti sa ákung asáwa,",
+                      "Gloss": "I will not treat my wife’s relatives like outsiders."
+                    }
+                  ]
+                }
+              }
+            ],
+            "CebWord": null
           }
         ]
       }
     ]
   },
-  "Found": false,
-  "NextIndex": 177,
-  "Diagnostics": [
-    {
-      "Index": 179,
-      "Message": "DEF: unexpected CEBWORD",
-      "Token": {
-        "Type": "CEBWORD",
-        "Content": "— ug buut, úlu, kamut, etc."
-      }
-    }
-  ]
+  "Found": true,
+  "NextIndex": 207,
+  "Diagnostics": []
 }

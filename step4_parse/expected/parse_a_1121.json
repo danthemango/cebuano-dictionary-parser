@@ -1,6 +1,7 @@
 {
   "WordDef": {
     "Word": "árab<sub>1</sub>",
+    "Class": [],
     "WordTypeDefs": [
       {
         "WordType": "v",
@@ -18,11 +19,13 @@
               "Gloss": "The fire burned the cogon grass."
             }
           ]
-        }
+        },
+        "CebWord": null
       }
     ],
     "Conjugations": {
       "Word": "(→)",
+      "Class": [],
       "WordTypeDefs": [
         {
           "WordType": "a",
@@ -38,7 +41,8 @@
                 "Gloss": "This is a poor k.o. tobacco because it burns fast."
               }
             ]
-          }
+          },
+          "CebWord": null
         }
       ]
     }
