@@ -2,8 +2,8 @@
 convert cebuano dictionary to csv
 
 ## Project Progress
-- First 200 words: ![92% Success](https://img.shields.io/badge/success-92%25-green "92% success")
-- First 1000 words: ![87% Success](https://img.shields.io/badge/success-87%25-green "87% success")
+- Tokenization: ![99.57% Successful](https://img.shields.io/badge/success-99%25-green "99.57% Successful")
+- Parsing: ![93.41% Successful](https://img.shields.io/badge/success-93%25-green "93.41% Successful")
 
 ## prereqs
 - Install Powershell 7
