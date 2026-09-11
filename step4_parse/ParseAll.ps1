@@ -12,44 +12,7 @@ mkdir -Force $errorDir | Out-Null
 
 Get-ChildItem -Path $inDir -Filter "tokens_*.csv" | ForEach-Object {
     $inFile = $_
-
-    $outFile = $inFile.FullName -replace "tokens_", "parse_"
-    $outFile = $outFile -replace "\.csv$", ".json"
-    $outFile = Join-Path -Path $outDir -ChildPath (Split-Path -Leaf $outFile)
-
-    # delete the error file if it exists
-    $errorFile = $inFile.FullName -replace "tokens_", "error_"
-    $errorFile = $errorFile -replace "\.csv$", ".txt"
-    $errorFile = Join-Path -Path $errorDir -ChildPath (Split-Path -Leaf $errorFile)
-
-    if ((-not (Test-Path $outFile)) -or $Force) {
-        if (Test-Path $errorFile) {
-            Remove-Item -Path $errorFile -Force
-        }
-
-        $parse = . $PSScriptRoot\ParseFile.ps1 -InFile $inFile
-        if ($parse.Found) {
-            $parse | ConvertTo-Json -Depth 100 | Set-Content -Path $outFile -Encoding UTF8
-        } else {
-            # delete the outFile if partially created
-            if (Test-Path $outFile) {
-                Remove-Item $outFile
-            }
-
-            $errorMessage = "Failed to parse $inFile"
-            $errorMessage += "`n`n"
-            $errorMessage += $parse.ParseDiagnostics | ConvertTo-Json -Depth 100
-            $errorMessage += "`n`n"
-            $errorMessage += $parse | ConvertTo-Json -Depth 100
-            # $errorMessage += "`nStack Trace:`n$($_.ScriptStackTrace)"
-
-            # Include input file contents for debugging
-            $errorMessage += "`n`nInput File:`n"
-            $errorMessage += Get-Content $inFile -Raw
-
-            $errorMessage | Out-File -FilePath $errorFile -Encoding UTF8
-
-            Write-Error "Error parsing $inFile"
-        }
-    }
+    # get the Id number from a file with pattern "tokens_[a-z]_[0-9]+.csv"
+    $id = [regex]::Match($inFile.Name, 'tokens_[a-z]_(\d+)\.csv').Groups[1].Value
+    . $PSScriptRoot\ParseId.ps1 -Id $id -Silent -Force:$Force
 }
