@@ -1,0 +1,79 @@
+{
+  "WordDef": {
+    "Word": "*banà<sub>1</sub>",
+    "Conjugations": [
+      {
+        "Word": "ka-, paka-",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "Classes": [
+              "[A13; c]"
+            ],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "fail to pay attention, remain unconcerned."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Walà siya magkabanà (magpakabanà) sa ákung mga prublíma,",
+                  "Gloss": "He did not pay any attention to my problems."
+                },
+                {
+                  "Phrase": "Walà giyud níya ikabanà (ipakabanà) ang nahitabù nákù,",
+                  "Gloss": "He remained unconcerned about what happened to me."
+                }
+              ]
+            },
+            "CebWord": "dílì, walà —"
+          }
+        ]
+      },
+      {
+        "Word": "banàbánà",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "Classes": [],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "estimation."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Sa ímung banàbánà, maáyu ba siyang táwu?",
+                  "Gloss": "Do you size him up as a good man?"
+                }
+              ]
+            },
+            "CebWord": null
+          },
+          {
+            "WordType": "v",
+            "Classes": [
+              "[A; a12]"
+            ],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "make an estimate."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Banàbanáa kun pila,",
+                  "Gloss": "Estimate how much it will cost.†"
+                }
+              ]
+            },
+            "CebWord": null
+          }
+        ]
+      }
+    ]
+  },
+  "Found": true,
+  "NextIndex": 20,
+  "Diagnostics": []
+}

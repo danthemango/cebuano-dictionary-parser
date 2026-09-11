@@ -257,7 +257,7 @@ function Search-NumDef {
 
 function Search-WtDef {
     <#
-      WTDEF ::= WORDTYPE CLASS* ( NUMDEF+ | DEFEX )
+      WTDEF ::= WORDTYPE CLASS* [CEBWORD] ( NUMDEF+ | DEFEX )
     #>
     param([object[]]$Tokens, [int]$StartIndex)
     $i = $StartIndex;
@@ -285,6 +285,14 @@ function Search-WtDef {
         $i++
     }
 
+    # it may have a cebword in this position
+    $tok = Get-Token $Tokens $i
+    $cebword = $null
+    if (IsType $tok 'CEBWORD') {
+        $cebword = $tok.Content
+        $i++
+    }
+
     # Branch A: NUMDEF+ (NUMBER DEFEX), after optional classes
     if (IsType (Get-Token $Tokens $i) 'NUMBER') {
         $numdefs = @()
@@ -306,6 +314,7 @@ function Search-WtDef {
             WordType     = $wtTok.Content
             Classes      = $classes
             NumberedDefs = $numdefs
+            CebWord      = $cebword
         }
 
         return [PSCustomObject]@{
@@ -331,6 +340,7 @@ function Search-WtDef {
         WordType = $wtTok.Content
         Classes     = $classes
         DefEx    = $defex.DefEx
+        CebWord      = $cebword
     }
 
     return [PSCustomObject]@{
@@ -379,6 +389,8 @@ function Search-WordDef {
                 $worddefs += $wd.WordDef
                 $i = $wd.NextIndex
                 $tok = Get-Token $Tokens $i
+            } else {
+                break
             }
         }
 
