@@ -1,5 +1,5 @@
 $outdir = "step2_split_paras\data"
-mkdir -Force $outdir
+mkdir -Force $outdir | Out-Null
 
 # strip pagenums from content
 # <span class="pagenum">[<a id="xd20e22720" href="#xd20e22720">40</a>]</span>

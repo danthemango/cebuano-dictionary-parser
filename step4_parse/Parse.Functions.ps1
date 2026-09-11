@@ -202,7 +202,6 @@ function Search-NumDef {
 
     # DEFEX
     $defex = Search-DefEx -Tokens $Tokens -StartIndex $i
-    $numDef = $null
     if ($defex.Found) {
         return [PSCustomObject]@{
             Found   = $true
