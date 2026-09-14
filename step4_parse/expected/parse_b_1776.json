@@ -2,7 +2,6 @@
   "WordDef": {
     "Def": {
       "Word": "baksiwà",
-      "Class": [],
       "WordTypeDefs": [
         {
           "WordType": "a",
@@ -90,7 +89,7 @@
     "Conjugations": [
       {
         "Word": "(←)",
-        "Class": [
+        "Classes": [
           "[B]"
         ],
         "DefEx": {

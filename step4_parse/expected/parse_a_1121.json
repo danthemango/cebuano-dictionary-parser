@@ -2,7 +2,6 @@
   "WordDef": {
     "Def": {
       "Word": "árab<sub>1</sub>",
-      "Class": [],
       "WordTypeDefs": [
         {
           "WordType": "v",
@@ -27,7 +26,6 @@
     "Conjugations": [
       {
         "Word": "(→)",
-        "Class": [],
         "WordTypeDefs": [
           {
             "WordType": "a",

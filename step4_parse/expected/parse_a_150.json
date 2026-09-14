@@ -1,0 +1,441 @@
+{
+  "WordDef": {
+    "Def": {
+      "Word": "adlaw",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "sun."
+                },
+                "Examples": []
+              }
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "day."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "May adlaw nga magbásul ka,",
+                    "Gloss": "The day will come that you will be sorry."
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "2a",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "day, as opposed to night."
+                },
+                "Examples": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Conjugations": [
+      {
+        "Word": "pila ka —",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "it won’t be long."
+          },
+          "Examples": [
+            {
+              "Phrase": "Pila ka adlaw makapánaw ta sa búwan,",
+              "Gloss": "Soon we’ll be able to take trips to the moon."
+            }
+          ]
+        },
+        "NumberedDefs": [
+          {
+            "Number": "2b",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "one’s day for winning."
+              },
+              "Examples": [
+                {
+                  "Phrase": "ímu tanang adlaw,",
+                  "Gloss": "You get all the breaks."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "3",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "birthday."
+              },
+              "Examples": []
+            }
+          },
+          {
+            "Number": "4",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "amount earned in a day."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Singku ra may íyang adlaw niánà,",
+                  "Gloss": "He only gets five pesos a day from it."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Word": "— sa minatay",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "All Soul’s Day."
+          },
+          "Examples": []
+        }
+      },
+      {
+        "Word": "Mahal nga —",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "Holy Week."
+          },
+          "Examples": []
+        },
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "CebWord": "adlaw",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "receive a certain amount daily."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Muadlaw kug tagduha ka líbu ka písus,",
+                      "Gloss": "I net two thousand pesos a day."
+                    },
+                    {
+                      "Phrase": "Adláwi lang siyag tag-diyis,",
+                      "Gloss": "Pay him ten pesos per day."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "CebWord": "adlaw",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "celebrate a birthday."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Adtu nyà sa ámù kay mag-adlaw ku,",
+                      "Gloss": "Come to my house for my birthday party."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Word": "adlaw-adlaw",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "every day."
+          },
+          "Examples": []
+        }
+      },
+      {
+        "Word": "-an",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "for it to be daylight."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Ayaw úsà pagpaúli. Adláwan pa bítaw,",
+                  "Gloss": "Don’t go home yet! It’s still daylight anyway."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Word": "-an(→)",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "food used to celebrate a birthday with."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Iháwa na ang adlawan,",
+                  "Gloss": "Slaughter the birthday pig."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Word": "-in-",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "daily, by the day."
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "lukewarm (lit. put in the sun)."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Túbig inadlaw,",
+                      "Gloss": "Warm water."
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "WordType": "v",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "CebWord": "adlaw",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "do on a daily basis."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Inadlawun (inadláwun) ka nákug dúaw,",
+                      "Gloss": "I will visit you daily."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "CebWord": "adlaw",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "make water warm."
+                  },
+                  "Examples": []
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Word": "-in-an",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "birthday present."
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Word": "ka-an",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "birthday, day of patron saint."
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Word": "ka-un",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "dawn."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Mugíkan ku ugmà sa kaadláwun,",
+                  "Gloss": "I’ll leave tomorrow at dawn."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Word": "pang-",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "s.t. used during daytime."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Sanínang pang-adlaw,",
+                      "Gloss": "Dress for daytime wear."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "day shift work."
+                  },
+                  "Examples": []
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Word": "tala-an",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "diary."
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Word": "ti-",
+        "NumberedDefs": [
+          {
+            "Number": "1",
+            "DefEx": {
+              "Def": {
+                "Type": "LINK",
+                "Content": "ting-"
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Word": "2",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "sunny."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Sa buntag tiadlaw, apan sa hápun nag-ulan,",
+                  "Gloss": "In the morning it was sunny, but in the afternoon it rained."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Word": "ting-",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "dry season.†"
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "Found": true,
+  "NextIndex": 103,
+  "Diagnostics": []
+}

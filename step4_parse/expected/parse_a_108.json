@@ -2,7 +2,6 @@
   "WordDef": {
     "Def": {
       "Word": "ábung<sub>1</sub>",
-      "Class": [],
       "WordTypeDefs": [
         {
           "WordType": "v",
@@ -37,7 +36,6 @@
     "Conjugations": [
       {
         "Word": "(→)",
-        "Class": [],
         "WordTypeDefs": [
           {
             "WordType": "n",
@@ -77,7 +75,6 @@
       },
       {
         "Word": "pa-(→), pa-",
-        "Class": [],
         "WordTypeDefs": [
           {
             "WordType": "v",
@@ -140,7 +137,6 @@
       },
       {
         "Word": "paN-",
-        "Class": [],
         "WordTypeDefs": [
           {
             "WordType": "v",

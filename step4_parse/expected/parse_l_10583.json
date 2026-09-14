@@ -2,7 +2,6 @@
   "WordDef": {
     "Def": {
       "Word": "láin",
-      "Class": [],
       "WordTypeDefs": [
         {
           "WordType": "a",
@@ -357,7 +356,6 @@
     "Conjugations": [
       {
         "Word": "dílì ig-",
-        "Class": [],
         "NumberedDefs": [
           {
             "Number": "1",
@@ -397,7 +395,6 @@
       },
       {
         "Word": "(→)",
-        "Class": [],
         "WordTypeDefs": [
           {
             "WordType": "v",
@@ -452,7 +449,6 @@
       },
       {
         "Word": "lainlain",
-        "Class": [],
         "WordTypeDefs": [
           {
             "WordType": "a",
@@ -503,7 +499,6 @@
       },
       {
         "Word": "lainláin",
-        "Class": [],
         "WordTypeDefs": [
           {
             "WordType": "a",
@@ -562,7 +557,6 @@
       },
       {
         "Word": "kalainláin",
-        "Class": [],
         "WordTypeDefs": [
           {
             "WordType": "v",
@@ -581,7 +575,6 @@
       },
       {
         "Word": "ka-an",
-        "Class": [],
         "WordTypeDefs": [
           {
             "WordType": "n",
@@ -622,7 +615,6 @@
       },
       {
         "Word": "-un(→)",
-        "Class": [],
         "WordTypeDefs": [
           {
             "WordType": "a",
@@ -639,7 +631,6 @@
       },
       {
         "Word": "pa-(→)",
-        "Class": [],
         "WordTypeDefs": [
           {
             "WordType": "v",
@@ -667,7 +658,6 @@
       },
       {
         "Word": "panag-",
-        "Class": [],
         "WordTypeDefs": [
           {
             "WordType": "v",
@@ -686,7 +676,6 @@
       },
       {
         "Word": "panig-",
-        "Class": [],
         "WordTypeDefs": [
           {
             "WordType": "v",

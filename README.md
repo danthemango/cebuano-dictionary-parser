@@ -113,3 +113,6 @@ I'll loosen the rules.
     but I think that would indicate a badly written definition anyway.
 - [ ] if the def is only text, I'd like it to be only text
 - [ ] if there are no classes, don't add them to the resulting json
+- [ ] I want a -limit option in the *All.ps1 scripts
+- I found def 150 is failing because of something related to DefBody, I think I'll loosen the rules there too
+    - this one was fixed in this commit somehow
