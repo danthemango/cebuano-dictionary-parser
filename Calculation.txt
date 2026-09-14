@@ -1,8 +1,5 @@
-Paragraphs: 20982
-Tokenized: 20892
-Parsed: 1881
-Tokenization Errors: 90
-Parsing Errors: 173
-Tokenization Rate: 99.57%
-Parsing Rate: 91.58%
-Paragraph Parsing Rate: 8.96%
+Tokenization Rate: 20893 / 20983 99.57%
+Parsing Rate: 19543 / 20892 93.54%
+Total Paragraph Parsing Rate: 19543 / 20982 93.14%
+Tokenize Time: 00:00:09.7200506
+Parse Time: 00:14:04.9345424
