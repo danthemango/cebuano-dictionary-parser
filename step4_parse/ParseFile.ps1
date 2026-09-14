@@ -10,4 +10,4 @@ param (
 $Tokens = Import-Csv -Path $InFile
 
 . $PSScriptRoot\Parse.Functions.ps1
-Search-Definition -Tokens $Tokens
+Search-WordDef -Tokens $Tokens

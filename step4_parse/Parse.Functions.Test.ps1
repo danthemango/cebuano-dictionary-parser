@@ -34,13 +34,4 @@ Describe "Parse" {
 
         $actualJson | Should -BeExactly $expectedJson
     }
-
-    # It "Should parse 1776 correctly" -TestCases $ExpectedFiles {
-    #     $inputFile = Get-ChildItem "$PSScriptRoot\..\step3_tokenize\data\tokens_*_1776.csv"
-    #     Test-Path $InputFile | Should -BeTrue -Because "Expecting file $InputFile"
-
-    #     # Run parser
-    #     $actual = & "$PSScriptRoot\ParseFile.ps1" -InFile $InputFile
-    #     $actual.Found | Should -BeTrue
-    # }
 }
