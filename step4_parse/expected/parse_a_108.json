@@ -1,13 +1,9 @@
 {
-  "WordDef": {
+  "DefBody": {
     "Word": "ábung<sub>1</sub>",
     "Class": [],
     "WordTypeDefs": [
       {
-        "WordType": "v",
-        "Classes": [
-          "[A; c]"
-        ],
         "DefEx": {
           "Def": {
             "Type": "TEXT",
@@ -19,20 +15,16 @@
               "Gloss": "Let’s block the road with a big stone."
             }
           ]
-        },
-        "CebWord": null
+        }
       },
       {
-        "WordType": "n",
-        "Classes": [],
         "DefEx": {
           "Def": {
             "Type": "TEXT",
             "Content": "k.o. fishing equipment consisting of dried coconut leaves tied to a raft."
           },
           "Examples": []
-        },
-        "CebWord": null
+        }
       }
     ],
     "Conjugations": [
@@ -41,8 +33,6 @@
         "Class": [],
         "WordTypeDefs": [
           {
-            "WordType": "n",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -54,12 +44,9 @@
                   "Gloss": "The wood that was blocking the door."
                 }
               ]
-            },
-            "CebWord": null
+            }
           },
           {
-            "WordType": "a",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -75,8 +62,7 @@
                   "Gloss": "You are very much exposed to his evil powers."
                 }
               ]
-            },
-            "CebWord": null
+            }
           }
         ]
       },
@@ -85,8 +71,6 @@
         "Class": [],
         "WordTypeDefs": [
           {
-            "WordType": "v",
-            "Classes": [],
             "NumberedDefs": [
               {
                 "Number": "1",
@@ -108,12 +92,9 @@
                   ]
                 }
               }
-            ],
-            "CebWord": null
+            ]
           },
           {
-            "WordType": "n",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -121,22 +102,63 @@
               },
               "Examples": []
             },
-            "CebWord": null
+            "NumberedDefs": [
+              {
+                "Number": "2",
+                "CebWord": "ábung<sub>1</sub>",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "give allowance in measuring s.t."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Paabungan ug diyútay ang sukud ígù pagsipilya,",
+                      "Gloss": "Measure it with a little allowance for planing."
+                    },
+                    {
+                      "Phrase": "Mutíru gánì kag langgam nga naglupad paabungig diyútay,",
+                      "Gloss": "If you shoot at a flying bird, aim a little ahead."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Word": "paN-",
+        "Class": [],
+        "WordTypeDefs": [
+          {
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "do s.t. in anticipation of a favor or reward."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Buútan nà siya run kay nangábung man nga hitagaan ug diyis,",
+                  "Gloss": "He’s obedient this time because he’s anticipating getting a dime."
+                }
+              ]
+            }
+          },
+          {
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "preparation of oil and plants medicinal roots and herbs used as a protection against some evil.†"
+              },
+              "Examples": []
+            }
           }
         ]
       }
     ]
   },
-  "Found": false,
-  "NextIndex": 30,
-  "Diagnostics": [
-    {
-      "Index": 30,
-      "Message": "Trailing token after WORDDEF: NUMBER",
-      "Token": {
-        "Type": "NUMBER",
-        "Content": "2"
-      }
-    }
-  ]
+  "Found": true,
+  "NextIndex": 45,
+  "Diagnostics": []
 }

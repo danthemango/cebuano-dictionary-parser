@@ -101,3 +101,15 @@ note: the `<i lang="cebword>english phrase</i>` is a common pattern I see that r
 - [ ] add tokenize exception to 18585, failed to parse `<i lang="ceb"><b>1</b>.</i>` (I think it's a formatting mistake, strip the i tag)
 - [ ] review 15 `"CEBWORD","(→)" "LINK","abága: v"`
 - [ ] parse "short form:" and "short form for" defs
+
+## diary
+### 2026-09-14
+- I realized previously that there are a few tokenized defs that have an conjugation, I've allowed conjugation
+parsing without needing a definition body.
+- I realized today that I've duplicated the conjugation parsing step as a result, so I'll merge them together again.
+- I just realized I expect a WordType def to have EITHER a DefEx OR a NumDef, but that fails on def 108, which has both.
+I'll loosen the rules.
+    - I'll also allow a cebword-only definition, if a conjugation is intended then this may ruin the parsing
+    but I think that would indicate a badly written definition anyway.
+- [ ] if the def is only text, I'd like it to be only text
+- [ ] if there are no classes, don't add them to the resulting json
