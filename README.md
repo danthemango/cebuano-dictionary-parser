@@ -112,7 +112,14 @@ I'll loosen the rules.
     - I'll also allow a cebword-only definition, if a conjugation is intended then this may ruin the parsing
     but I think that would indicate a badly written definition anyway.
 - [ ] if the def is only text, I'd like it to be only text
-- [ ] if there are no classes, don't add them to the resulting json
 - [ ] I want a -limit option in the *All.ps1 scripts
 - I found def 150 is failing because of something related to DefBody, I think I'll loosen the rules there too
-    - this one was fixed in this commit somehow
+- 324 is failing because of a "see also" section, which the script can't tokenize yet
+    - [ ] throw exceptions on tokenize "see also"
+- 485 is failing because of `"TEXT","<corr id=""xd20e15781"" title=""Not in source""></corr>"`
+    - [ ] just remove a text segment with only a `<corr>` (I'm not sure if these will be useful, perhaps I should tokenize it and include some metadata on the def?)
+- 897 is failing because of a `short for` segment
+    - [ ] throw exception on `short for`
+- [ ] 1535 is parsing incorrectly because of a failed tokenize of `<b>a</b>`
+    - [ ] and failed tokenize of `<b>b</b>` `</b>c</b>`
+- it appears a single letter may be used as if it's a numbered segment. I don't have much in the way of parsing sub-numbers, but I think if I find a single letter the html tag is different between an adjective (wordtype 'a') and numbered 'a'.
