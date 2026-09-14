@@ -388,44 +388,6 @@ function Search-DefBody {
         $tok = Get-Token $Tokens $i
     }
 
-    # one or more WORDDEFs (conjugations)
-    $worddefs = @()
-    if (IsType $tok 'CEBWORD') {
-        while (IsType $tok 'CEBWORD') {
-            $wd = Search-DefBody -Tokens $Tokens -StartIndex $i
-            if ($wd.Found) {
-                $worddefs += $wd.DefBody
-                $i = $wd.NextIndex
-                $tok = Get-Token $Tokens $i
-            } else {
-                break
-            }
-        }
-
-        if ($worddefs.Count -gt 0) {
-            return [PSCustomObject]@{
-                Found   = $true
-                NextIndex = $i
-                DefBody   = [PSCustomObject]@{
-                    Word         = $headTok.Content
-                    Class        = $class
-                    Conjugations = $worddefs
-                }
-            }
-        } else {
-            return [PSCustomObject]@{
-                Found     = $false
-                NextIndex   = $i
-                DefBody     = $null
-                Diagnostics = [PSCustomObject]@{
-                    Index=$i
-                    Message='DefBody: could not parse DefBody after CEBWORD'
-                    Token=$headTok
-                }
-            }
-        }
-    }
-
     # one or more WTDEFs
     if (IsType $tok 'WORDTYPE') {
         $wtdefs = @()
@@ -603,7 +565,7 @@ function Search-DefBody {
 
 function Search-WordDef {
     <#
-      ROW ::= DefBody+ (word definiton then conjugations)
+      a word definition has either: a DefBody, one or more CEBWORD + DefBody pairs (conjugations), or both
       Found = consumed all tokens AND at least one DefBody produced, each subsequent DefBody considered to be an affix
       Returns {Found, NextIndex, Row:{WordDefs[]}, Diagnostics}
     #>
@@ -611,17 +573,13 @@ function Search-WordDef {
         [object[]]$Tokens
     )
     $i = 0;
-    $worddefs = @()
+    $defBodies = @()
     [object[]]$diag = @()
 
     while ($i -lt $Tokens.Count) {
-        $wd = Search-DefBody -Tokens $Tokens -StartIndex $i
-        if (-Not $wd.Found) {
-            $diag += $wd.Diagnostics
-            break
-        }
-        $worddefs += $wd.DefBody
-        $i = $wd.NextIndex
+        $defBody = Search-DefBody -Tokens $Tokens -StartIndex $i
+        $defBodies += $defBody.DefBody
+        $i = $defBody.NextIndex
 
         # If next token is not a WORDTYPE/NUMBER/DEFEX starter or new CEBWORD,
         # we either reached end or hit unexpected trailing material.
@@ -641,10 +599,10 @@ function Search-WordDef {
         }
     }
 
-    $Found = ($i -eq $Tokens.Count) -and ($worddefs.Count -ge 1)
+    $Found = ($i -eq $Tokens.Count) -and ($defBodies.Count -ge 1)
 
-    $DefBody = $worddefs | Select-Object -First 1
-    $conjugations = $worddefs | Select-Object -Skip 1
+    $DefBody = $defBodies | Select-Object -First 1
+    $conjugations = $defBodies | Select-Object -Skip 1
     if ($conjugations) {
         $DefBody | Add-Member -NotePropertyName Conjugations -NotePropertyValue $conjugations -Force
     }
