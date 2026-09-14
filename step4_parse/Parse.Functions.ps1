@@ -323,9 +323,14 @@ function Search-WtDef {
         }
     }
 
-    $def = [PSCustomObject]@{ }
+    $def = [PSCustomObject]@{
+        WordType = $wtTok.Content
+    }
     if ($null -ne $cebword) {
         $def | Add-Member -NotePropertyName CebWord -NotePropertyValue $cebword -Force
+    }
+    if ($classes.Count -gt 0) {
+        $def | Add-Member -NotePropertyName Classes -NotePropertyValue $classes -Force
     }
     if ($defex.Found) {
         $def | Add-Member -NotePropertyName DefEx -NotePropertyValue $defex.Def -Force
@@ -565,43 +570,46 @@ function Search-WordDef {
         [object[]]$Tokens
     )
     $i = 0;
-    $defBodies = @()
+
     [object[]]$diag = @()
 
-    while ($i -lt $Tokens.Count) {
-        $defBody = Search-DefBody -Tokens $Tokens -StartIndex $i
-        $defBodies += $defBody.DefBody
+    $conjugations = @()
+    $def = [PSCustomObject]@{ }
+    $defBody = Search-DefBody -Tokens $Tokens -StartIndex $i
+    if ($defBody.Found) {
+        $def | Add-Member -NotePropertyName Def -NotePropertyValue $defBody.DefBody -Force
         $i = $defBody.NextIndex
+    } else {
+        # else we will assume everything else is just a list of conjugations
+        $i++
+    }
 
-        # If next token is not a WORDTYPE/NUMBER/DEFEX starter or new CEBWORD,
-        # we either reached end or hit unexpected trailing material.
-        $next = Get-Token $Tokens $i
-        if (-Not $next) { break }
-
-        # If next begins another DefBody (CEBWORD), continue loop.
-        if (IsType $next 'CEBWORD') { continue }
-
-        # Otherwise, if we see legal continuations (e.g., more WTDEF/NUMDEF),
-        # they would have been consumed inside Search-DefBody; anything else is trailing.
-        if ($next) {
-            $diag += [PSCustomObject]@{
-                Index=$i; Message="Trailing token after DefBody: $($next.Type)"; Token=$next
-            }
+    while ($i -lt $Tokens.Count) {
+        $conj = Search-DefBody -Tokens $Tokens -StartIndex $i
+        if ($conj.Found) {
+            $conjugations += $conj.DefBody
+            $i = $conj.NextIndex
+        } else {
             break
         }
     }
 
-    $Found = ($i -eq $Tokens.Count) -and ($defBodies.Count -ge 1)
+    # we have found a proper word definition if we have consumed all tokens and discovered either a defBody, one or more conjugations, or both
+    $Found = ($i -eq $Tokens.Count) -and (($defBody.Found) -or ($conjugations.Count -gt 0))
+    if (-Not $Found) {
+        $next = Get-Token $Tokens $i
+        $diag += [PSCustomObject]@{
+            Index=$i; Message="Trailing token after DefBody: $($next.Type)"; Token=$next
+        }
+    }
 
-    $DefBody = $defBodies | Select-Object -First 1
-    $conjugations = $defBodies | Select-Object -Skip 1
-    if ($conjugations) {
-        $DefBody | Add-Member -NotePropertyName Conjugations -NotePropertyValue $conjugations -Force
+    if ($conjugations.Count -gt 0) {
+        $def | Add-Member -NotePropertyName Conjugations -NotePropertyValue $conjugations -Force
     }
 
     [PSCustomObject]@{
-        DefBody      = $DefBody
-        Found      = [bool]$Found
+        WordDef      = $def
+        Found        = [bool]$Found
         NextIndex    = $i
         Diagnostics  = $diag
     }

@@ -1,7 +1,5 @@
 {
   "WordDef": {
-    "Word": "*banà<sub>1</sub>",
-    "Class": [],
     "Conjugations": [
       {
         "Word": "ka-, paka-",
@@ -9,6 +7,7 @@
         "WordTypeDefs": [
           {
             "WordType": "v",
+            "CebWord": "dílì, walà —",
             "Classes": [
               "[A13; c]"
             ],
@@ -27,8 +26,7 @@
                   "Gloss": "He remained unconcerned about what happened to me."
                 }
               ]
-            },
-            "CebWord": "dílì, walà —"
+            }
           }
         ]
       },
@@ -38,7 +36,6 @@
         "WordTypeDefs": [
           {
             "WordType": "n",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -50,8 +47,7 @@
                   "Gloss": "Do you size him up as a good man?"
                 }
               ]
-            },
-            "CebWord": null
+            }
           },
           {
             "WordType": "v",
@@ -69,8 +65,7 @@
                   "Gloss": "Estimate how much it will cost.†"
                 }
               ]
-            },
-            "CebWord": null
+            }
           }
         ]
       }

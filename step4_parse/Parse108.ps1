@@ -1,1 +1,1 @@
-. $PSScriptRoot\ParseId.ps1 -Id 108
+. $PSScriptRoot\ParseId.ps1 -Id 108 -Force -CopyToExpected

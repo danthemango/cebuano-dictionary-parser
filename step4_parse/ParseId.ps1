@@ -74,6 +74,7 @@ if ($parse.Found) {
     $errorMessage | Out-File -FilePath $errorFile -Encoding UTF8
 
     Write-Error "Error parsing $inFile"
+    # if (-Not $Silent) { Write-Output $errorMessage }
 }
 
 if ($CopyToExpected) {

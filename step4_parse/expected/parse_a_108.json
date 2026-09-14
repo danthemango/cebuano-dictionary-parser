@@ -1,38 +1,46 @@
 {
-  "DefBody": {
-    "Word": "ábung<sub>1</sub>",
-    "Class": [],
-    "WordTypeDefs": [
-      {
-        "DefEx": {
-          "Def": {
-            "Type": "TEXT",
-            "Content": "bar, block the way."
-          },
-          "Examples": [
-            {
-              "Phrase": "Abúngan ta ning karsádag dakung batu,",
-              "Gloss": "Let’s block the road with a big stone."
-            }
-          ]
+  "WordDef": {
+    "Def": {
+      "Word": "ábung<sub>1</sub>",
+      "Class": [],
+      "WordTypeDefs": [
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A; c]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "bar, block the way."
+            },
+            "Examples": [
+              {
+                "Phrase": "Abúngan ta ning karsádag dakung batu,",
+                "Gloss": "Let’s block the road with a big stone."
+              }
+            ]
+          }
+        },
+        {
+          "WordType": "n",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "k.o. fishing equipment consisting of dried coconut leaves tied to a raft."
+            },
+            "Examples": []
+          }
         }
-      },
-      {
-        "DefEx": {
-          "Def": {
-            "Type": "TEXT",
-            "Content": "k.o. fishing equipment consisting of dried coconut leaves tied to a raft."
-          },
-          "Examples": []
-        }
-      }
-    ],
+      ]
+    },
     "Conjugations": [
       {
         "Word": "(→)",
         "Class": [],
         "WordTypeDefs": [
           {
+            "WordType": "n",
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -47,6 +55,7 @@
             }
           },
           {
+            "WordType": "a",
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -71,6 +80,7 @@
         "Class": [],
         "WordTypeDefs": [
           {
+            "WordType": "v",
             "NumberedDefs": [
               {
                 "Number": "1",
@@ -95,6 +105,7 @@
             ]
           },
           {
+            "WordType": "n",
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -132,6 +143,10 @@
         "Class": [],
         "WordTypeDefs": [
           {
+            "WordType": "v",
+            "Classes": [
+              "[A2]"
+            ],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -146,6 +161,7 @@
             }
           },
           {
+            "WordType": "n",
             "DefEx": {
               "Def": {
                 "Type": "TEXT",

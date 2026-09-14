@@ -32,6 +32,6 @@ Describe "Parse" {
         $actualJson = $actual | ConvertTo-Json -Depth 100
         $expectedJson = $expected | ConvertTo-Json -Depth 100
 
-        # $actualJson | Should -BeExactly $expectedJson
+        $actualJson | Should -BeExactly $expectedJson
     }
 }
