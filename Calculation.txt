@@ -1,0 +1,5 @@
+Paragraphs: 20982
+Tokenized: 20892
+Parsed: 1882
+Tokenization Rate: 99.57%
+Parsing Rate: 9.01%
