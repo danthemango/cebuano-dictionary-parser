@@ -21,7 +21,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -37,7 +36,6 @@
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",

@@ -8,7 +8,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -25,7 +24,6 @@
             {
               "Number": "1a",
               "CebWord": "may — pa",
-              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -37,7 +35,6 @@
             {
               "Number": "1b",
               "CebWord": "— nga kalibútan",
-              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -54,7 +51,6 @@
             {
               "Number": "1c",
               "CebWord": "sa — nga báhin",
-              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -70,7 +66,6 @@
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -86,7 +81,6 @@
             },
             {
               "Number": "3",
-              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -107,7 +101,6 @@
             {
               "Number": "3a",
               "CebWord": "— ug buut, úlu",
-              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -124,7 +117,6 @@
             {
               "Number": "3b",
               "CebWord": "— ug sabaw",
-              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -140,7 +132,6 @@
             },
             {
               "Number": "4",
-              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -161,7 +152,6 @@
             {
               "Number": "4a",
               "CebWord": "— ug buut, úlu",
-              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -178,7 +168,6 @@
             {
               "Number": "4b",
               "CebWord": "— ug kamut",
-              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -195,7 +184,6 @@
             {
               "Number": "4c",
               "CebWord": "— ug sabaw",
-              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -211,7 +199,6 @@
             },
             {
               "Number": "5",
-              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -228,7 +215,6 @@
             {
               "Number": "6",
               "CebWord": "— nga táwu",
-              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -248,12 +234,10 @@
             },
             {
               "Number": "7",
-              "CebWord": "— pay ákù, átù",
-              "Classes": []
+              "CebWord": "— pay ákù, átù"
             },
             {
               "Number": "7a",
-              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -269,7 +253,6 @@
             },
             {
               "Number": "7b",
-              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "LINK",
@@ -386,7 +369,6 @@
         "NumberedDefs": [
           {
             "Number": "1",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -402,7 +384,6 @@
           },
           {
             "Number": "2",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -488,7 +469,6 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -499,7 +479,6 @@
               },
               {
                 "Number": "2",
-                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -515,7 +494,6 @@
               },
               {
                 "Number": "3",
-                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -559,7 +537,6 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -575,7 +552,6 @@
               },
               {
                 "Number": "2",
-                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -619,7 +595,6 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -635,7 +610,6 @@
               },
               {
                 "Number": "2",
-                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",

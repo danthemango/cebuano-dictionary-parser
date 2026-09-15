@@ -5,7 +5,6 @@
       "NumberedDefs": [
         {
           "Number": "1",
-          "Classes": [],
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -25,7 +24,6 @@
         },
         {
           "Number": "1a",
-          "Classes": [],
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -41,12 +39,10 @@
         },
         {
           "Number": "1b",
-          "CebWord": "dílì, walà —",
-          "Classes": []
+          "CebWord": "dílì, walà —"
         },
         {
           "Number": "1b1",
-          "Classes": [],
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -62,7 +58,6 @@
         },
         {
           "Number": "1b2",
-          "Classes": [],
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -82,7 +77,6 @@
         },
         {
           "Number": "2",
-          "Classes": [],
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -93,7 +87,6 @@
         },
         {
           "Number": "2a",
-          "Classes": [],
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -109,7 +102,6 @@
         },
         {
           "Number": "2b",
-          "Classes": [],
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -125,7 +117,6 @@
         },
         {
           "Number": "2c",
-          "Classes": [],
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -141,7 +132,6 @@
         },
         {
           "Number": "2d",
-          "Classes": [],
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -152,7 +142,6 @@
         },
         {
           "Number": "2d1",
-          "Classes": [],
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -168,7 +157,6 @@
         },
         {
           "Number": "2d2",
-          "Classes": [],
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -189,7 +177,6 @@
         {
           "Number": "2d3",
           "CebWord": "unsa, háin -y",
-          "Classes": [],
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -205,7 +192,6 @@
         },
         {
           "Number": "2e",
-          "Classes": [],
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -264,7 +250,6 @@
         "NumberedDefs": [
           {
             "Number": "2f",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -326,7 +311,6 @@
         "NumberedDefs": [
           {
             "Number": "3",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -346,7 +330,6 @@
           },
           {
             "Number": "3a",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -366,7 +349,6 @@
           },
           {
             "Number": "3b",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -383,7 +365,6 @@
           {
             "Number": "3c",
             "CebWord": "walà nay",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -400,7 +381,6 @@
           {
             "Number": "3d",
             "CebWord": "mau —y <span class=\"rm\">[<i lang=\"ceb\">verb</i>]</span>",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -417,7 +397,6 @@
           {
             "Number": "3d1",
             "CebWord": "mau —y <span class=\"rm\">[<i lang=\"ceb\">verb, adj.</i>]</span> ... mau —y <span class=\"rm\">[<i lang=\"ceb\">verb, adj.</i>]</span>",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -437,7 +416,6 @@
           },
           {
             "Number": "4",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -454,7 +432,6 @@
           {
             "Number": "4a",
             "CebWord": "málu — nà",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -470,7 +447,6 @@
           },
           {
             "Number": "5",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -487,7 +463,6 @@
           {
             "Number": "5a",
             "CebWord": "<span class=\"rm\">[<i lang=\"ceb\">adj.</i>]</span> pay <span class=\"rm\">[<i lang=\"ceb\">subject</i>]</span>",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -507,7 +482,6 @@
           },
           {
             "Number": "6",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -524,7 +498,6 @@
           {
             "Number": "6a",
             "CebWord": "mátud —",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -541,7 +514,6 @@
           {
             "Number": "6b",
             "CebWord": "siya —",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -558,7 +530,6 @@
           {
             "Number": "6c",
             "CebWord": "sa átù —",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -574,7 +545,6 @@
           },
           {
             "Number": "7",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -591,7 +561,6 @@
           {
             "Number": "7a",
             "CebWord": "<span class=\"rm\">[<i lang=\"ceb\">noun</i>]</span> —y",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -628,7 +597,6 @@
           {
             "Number": "7b",
             "CebWord": "<span class=\"rm\">[<i lang=\"ceb\">predicate</i>]</span> —y ímu",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -649,7 +617,6 @@
           {
             "Number": "7b1",
             "CebWord": "<span class=\"rm\">[<i lang=\"ceb\">noun</i>]</span> —y ákù",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -666,7 +633,6 @@
           {
             "Number": "7c",
             "CebWord": "— lámang",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "LINK",
@@ -678,7 +644,6 @@
           {
             "Number": "7d",
             "CebWord": "agad, maáyu —",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -699,7 +664,6 @@
           {
             "Number": "7e",
             "CebWord": "hináut, básin, básun —",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -715,7 +679,6 @@
           },
           {
             "Number": "8",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -744,7 +707,6 @@
           {
             "Number": "8a1",
             "CebWord": "ayhà, anhà —",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -761,7 +723,6 @@
           {
             "Number": "8a2",
             "CebWord": "dihà —",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -778,7 +739,6 @@
           {
             "Number": "8b",
             "CebWord": "mau —y <span class=\"rm\">[<i lang=\"ceb\">abstract form</i>] or [<i lang=\"ceb\">instrumental passive</i>]</span>",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -799,7 +759,6 @@
           {
             "Number": "8c",
             "CebWord": "<span class=\"rm\">[<i lang=\"ceb\">future verb abstract form</i>] —</span>",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -836,7 +795,6 @@
         "NumberedDefs": [
           {
             "Number": "9",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
