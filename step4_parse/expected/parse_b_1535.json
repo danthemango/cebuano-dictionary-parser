@@ -1,0 +1,95 @@
+{
+  "WordDef": {
+    "Def": {
+      "Word": "bábuy<sub>1</sub>",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "pig, pork."
+            },
+            "Examples": [
+              {
+                "Phrase": "Mahal ang bábuy karun,",
+                "Gloss": "Pork is high now."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "Conjugations": [
+      {
+        "Word": "— ihálas, sulup",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "wild pig."
+          },
+          "Examples": []
+        },
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "CebWord": "bábuy<sub>1</sub>",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "obtain a pig."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "<corr id=\"xd20e39045\" title=\"Source: Nakababuy\">Nakabábuy</corr> aku ug tulu ka buuk sa pagbatun ku sa íyang anay,",
+                      "Gloss": "I got three pigs for taking care of his sow."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "CebWord": "bábuy<sub>1</sub>",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "<b>a</b> corner, pin down."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Nakabábuy (nakapabábuy) ang mga Písi sa mga Múrus sa pulù,",
+                      "Gloss": "The <span class=\"abbr\" title=\"Philippine Constabulary\"><abbr title=\"Philippine Constabulary\">P.C.</abbr></span> blockaded the Moros on the island."
+                    },
+                    {
+                      "Phrase": "Nabábuy kami tungud sa dakung bahà,",
+                      "Gloss": "We were blocked in because of the great flood. <b>b</b> checkmate (in chess)."
+                    },
+                    {
+                      "Phrase": "Babúyun nákù ang ímung piyun,",
+                      "Gloss": "I’m going to checkmate your pawn. <b>c</b>"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Found": false,
+  "NextIndex": 22,
+  "Diagnostics": [
+    {
+      "Index": 22,
+      "Message": "Trailing token after DefBody: CLASS",
+      "Token": {
+        "Type": "CLASS",
+        "Content": "[AP; c1]"
+      }
+    }
+  ]
+}

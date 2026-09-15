@@ -126,5 +126,5 @@ I'll loosen the rules.
 - the changes yesterday pushed the total parsing rate from 93.8% to 98.8%
 - [ ] throw exceptions on "see also"
 - [ ] throw exceptions on "short for"
-- [ ] add 1535 to parse testing
+- [x] add 1535 to parse and token testing
 - [ ] update num-parsing to include `<b>a</b>` `<b>b</b>` `</b>c</b>`
