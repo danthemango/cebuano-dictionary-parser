@@ -396,6 +396,33 @@ function Assert-ValidXML {
     }
 }
 
+<#
+.DESCRIPTION
+    throws an exception on a few known limitations
+#>
+function Assert-Implemented {
+    param (
+        [Parameter(ValueFromPipeline = $true)]
+        $Token
+    )
+    process {
+        $content = $Token.Content
+        # throw exceptions on specific keywords: "see also", "short for", "cf."
+        # case insensitive
+
+        if ($content -match "(?i)see also") {
+            throw "Not implemented: see also: $content"
+        }
+        if ($content -match "(?i)short for") {
+            throw "Not implemented: short for: $content"
+        }
+        if ($content -match "(?i)cf\.") {
+            throw "Not implemented: cf.: $content"
+        }
+        $Token
+    }
+}
+
 # # remove corr elements, leaving the text contents if there are any non-numbers
 # # <span class="corr" id="xd20e4931" title="Source: kunsididirasiyun">kunsidirasiyun</span>
 # # <span class="corr" id="xd20e5140" title="Not in source"><sub>1</sub></span>
@@ -483,6 +510,6 @@ function Tokenize {
         # - corr must be processed before splitting words, since it is usally inside of the word block
         # - split links must be processed before cebuano phrases because of some bad formatting (they use <i lang="ceb"> as a way to make the word "see" italic, e.g. in "see otherword")
         # I think each step should have valid XML, so we can assert valid XML after each step
-        $Token | Assert-ValidXML | Update-ShortForm | Update-Corr | Split-Nums | Split-Links | Split-CebuanoWords | Split-Classes | Split-Types | Update-ChangeCebWord | Split-CebuanoPhrases | Assert-ValidXML
+        $Token | Assert-Implemented | Assert-ValidXML | Update-ShortForm | Update-Corr | Split-Nums | Split-Links | Split-CebuanoWords | Split-Classes | Split-Types | Update-ChangeCebWord | Split-CebuanoPhrases | Assert-ValidXML
     }
 }

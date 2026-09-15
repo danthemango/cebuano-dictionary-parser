@@ -141,6 +141,7 @@ I'll loosen the rules.
 - elevate the "CopyExpecteds" script so all of the testing files are being updated for both tokenization and parsing.
 - [x] fix 150: accept a wtdef in the body of a numbdef
 - [ ] fix 686: links after examples
-- [ ] throw exceptions on "see also"
-- [ ] throw exceptions on "short for"
+- [x] throw exceptions on specific keywords: "see also", "short for", "cf."
 - I think some are failing because of number > number
+- [ ] rewrite the tokenizeall and tokenize ID so I can move error files correctly
+- [ ] fix 1632, class after cebword on numdef
