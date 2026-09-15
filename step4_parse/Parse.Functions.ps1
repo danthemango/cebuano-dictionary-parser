@@ -252,9 +252,26 @@ function Search-NumDef {
         $numDef | Add-Member -NotePropertyName DefEx -NotePropertyValue $defex.Def -Force
         $found = $true
         $i = $defex.NextIndex
-    } else {
+    }
+
+    # accept a nested number def if no defex found
+    if (-Not $defex.Found) {
+        $subNumDefs = @()
+        $subNumDef = Search-NumDef -Tokens $Tokens -StartIndex $i
+        while ($subNumDef.Found) {
+            $subNumDefs += $subNumDef.NumDef
+            $found = $true
+            $i = $subNumDef.NextIndex
+            $subNumDef = Search-NumDef -Tokens $Tokens -StartIndex $i
+        }
+        if ($subNumDefs.Count -gt 0) {
+            $numDef | Add-Member -NotePropertyName NumDefs -NotePropertyValue $subNumDefs -Force
+        }
+    }
+
+    # if no defex or subnumdefs found, see if a wtdef can be parsed
+    if ((-Not $defex.Found) -and ($subNumDefs.Count -eq 0)) {
         $wtdefs = @()
-        # accept a wtdef instead of a defex
         while (IsType (Get-Token $Tokens $i) 'WORDTYPE') {
             $wtDef = Search-WtDef -Tokens $Tokens -StartIndex $i
             if ($wtDef.Found) {

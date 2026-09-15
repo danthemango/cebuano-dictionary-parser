@@ -39,166 +39,168 @@
         },
         {
           "Number": "1b",
-          "CebWord": "dílì, walà —"
-        },
-        {
-          "Number": "1b1",
-          "DefEx": {
-            "Def": {
-              "Type": "TEXT",
-              "Content": "not yet."
-            },
-            "Examples": [
-              {
-                "Phrase": "Ang linung-ag nga ságing walà pa malútù,",
-                "Gloss": "The boiled bananas are not cooked yet."
+          "CebWord": "dílì, walà —",
+          "NumDefs": [
+            {
+              "Number": "1b1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "not yet."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Ang linung-ag nga ságing walà pa malútù,",
+                    "Gloss": "The boiled bananas are not cooked yet."
+                  }
+                ]
               }
-            ]
-          }
-        },
-        {
-          "Number": "1b2",
-          "DefEx": {
-            "Def": {
-              "Type": "TEXT",
-              "Content": "before."
             },
-            "Examples": [
-              {
-                "Phrase": "Hipúsa ang libru sa dílì pa si Pápa muabut,",
-                "Gloss": "Put the book away before Dad arrives."
-              },
-              {
-                "Phrase": "Sa wà pay gíra,",
-                "Gloss": "Before the war."
+            {
+              "Number": "1b2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "before."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Hipúsa ang libru sa dílì pa si Pápa muabut,",
+                    "Gloss": "Put the book away before Dad arrives."
+                  },
+                  {
+                    "Phrase": "Sa wà pay gíra,",
+                    "Gloss": "Before the war."
+                  }
+                ]
               }
-            ]
-          }
-        },
-        {
-          "Number": "2",
-          "DefEx": {
-            "Def": {
-              "Type": "TEXT",
-              "Content": "else, in addition."
             },
-            "Examples": []
-          }
-        },
-        {
-          "Number": "2a",
-          "DefEx": {
-            "Def": {
-              "Type": "TEXT",
-              "Content": "<i lang=\"cebword\">with future verb:</i> [so-and-so] will still happen."
-            },
-            "Examples": [
-              {
-                "Phrase": "Sulatan pa nákù si Husi,",
-                "Gloss": "I still have to write to José."
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "else, in addition."
+                },
+                "Examples": []
               }
-            ]
-          }
-        },
-        {
-          "Number": "2b",
-          "DefEx": {
-            "Def": {
-              "Type": "TEXT",
-              "Content": "with a past verb: [did] besides."
             },
-            "Examples": [
-              {
-                "Phrase": "Human siya sagpáa, gisultían pa ug pait,",
-                "Gloss": "He was slapped and bitter words were said to him as well."
+            {
+              "Number": "2a",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "<i lang=\"cebword\">with future verb:</i> [so-and-so] will still happen."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Sulatan pa nákù si Husi,",
+                    "Gloss": "I still have to write to José."
+                  }
+                ]
               }
-            ]
-          }
-        },
-        {
-          "Number": "2c",
-          "DefEx": {
-            "Def": {
-              "Type": "TEXT",
-              "Content": "<i lang=\"cebword\">with existential:</i> [so-and-so] also is in existence."
             },
-            "Examples": [
-              {
-                "Phrase": "Náa pa bay túbig sa baril?",
-                "Gloss": "Is there any more water in the barrel?"
+            {
+              "Number": "2b",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "with a past verb: [did] besides."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Human siya sagpáa, gisultían pa ug pait,",
+                    "Gloss": "He was slapped and bitter words were said to him as well."
+                  }
+                ]
               }
-            ]
-          }
-        },
-        {
-          "Number": "2d",
-          "DefEx": {
-            "Def": {
-              "Type": "TEXT",
-              "Content": "<i lang=\"cebword\">interrogative —:</i>"
             },
-            "Examples": []
-          }
-        },
-        {
-          "Number": "2d1",
-          "DefEx": {
-            "Def": {
-              "Type": "TEXT",
-              "Content": "what, where, why, etc. else."
-            },
-            "Examples": [
-              {
-                "Phrase": "Kinsa pay muadtu?",
-                "Gloss": "Who else will go?"
+            {
+              "Number": "2c",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "<i lang=\"cebword\">with existential:</i> [so-and-so] also is in existence."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Náa pa bay túbig sa baril?",
+                    "Gloss": "Is there any more water in the barrel?"
+                  }
+                ]
               }
-            ]
-          }
-        },
-        {
-          "Number": "2d2",
-          "DefEx": {
-            "Def": {
-              "Type": "TEXT",
-              "Content": "what, where, why, etc. could it be."
             },
-            "Examples": [
-              {
-                "Phrase": "Unsa pa ug dílì kwarta?",
-                "Gloss": "What could it be if not money?"
-              },
-              {
-                "Phrase": "Ngánu pa nga ikaw giyud?",
-                "Gloss": "Why, oh why, was it you, of all people?"
+            {
+              "Number": "2d",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "<i lang=\"cebword\">interrogative —:</i>"
+                },
+                "Examples": []
               }
-            ]
-          }
-        },
-        {
-          "Number": "2d3",
-          "CebWord": "unsa, háin -y",
-          "DefEx": {
-            "Def": {
-              "Type": "TEXT",
-              "Content": "<i lang=\"cebword\">[noun]-un</i> what [noun] are you talking about?"
             },
-            "Examples": [
-              {
-                "Phrase": "Unsa pay radiyúhun nga dúgay nang gikáwat,",
-                "Gloss": "What radio are you talking about when it was stolen long ago."
+            {
+              "Number": "2d1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "what, where, why, etc. else."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Kinsa pay muadtu?",
+                    "Gloss": "Who else will go?"
+                  }
+                ]
               }
-            ]
-          }
-        },
-        {
-          "Number": "2e",
-          "DefEx": {
-            "Def": {
-              "Type": "TEXT",
-              "Content": "<i lang=\"cebword\">in phrases bringing up a new subject:</i>"
             },
-            "Examples": []
-          }
+            {
+              "Number": "2d2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "what, where, why, etc. could it be."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Unsa pa ug dílì kwarta?",
+                    "Gloss": "What could it be if not money?"
+                  },
+                  {
+                    "Phrase": "Ngánu pa nga ikaw giyud?",
+                    "Gloss": "Why, oh why, was it you, of all people?"
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "2d3",
+              "CebWord": "unsa, háin -y",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "<i lang=\"cebword\">[noun]-un</i> what [noun] are you talking about?"
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Unsa pay radiyúhun nga dúgay nang gikáwat,",
+                    "Gloss": "What radio are you talking about when it was stolen long ago."
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "2e",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "<i lang=\"cebword\">in phrases bringing up a new subject:</i>"
+                },
+                "Examples": []
+              }
+            }
+          ]
         }
       ]
     },

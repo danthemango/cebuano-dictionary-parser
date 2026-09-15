@@ -146,4 +146,4 @@ I'll loosen the rules.
 - [ ] rewrite the tokenizeall and tokenize ID so I can move error files correctly
 - [x] fix 1632, class after cebword on numdef
 - [x] fix 1535 parsing is stuck
-- [ ] fix 1535
+- [x] fix 1535, accept a nested number def instead of a defex

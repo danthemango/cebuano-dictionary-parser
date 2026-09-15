@@ -234,32 +234,34 @@
             },
             {
               "Number": "7",
-              "CebWord": "— pay ákù, átù"
-            },
-            {
-              "Number": "7a",
-              "DefEx": {
-                "Def": {
-                  "Type": "TEXT",
-                  "Content": "by the way."
-                },
-                "Examples": [
-                  {
-                    "Phrase": "Láin pay átù, tagadiin man tu ka?",
-                    "Gloss": "By the way, where do you say you come from?"
+              "CebWord": "— pay ákù, átù",
+              "NumDefs": [
+                {
+                  "Number": "7a",
+                  "DefEx": {
+                    "Def": {
+                      "Type": "TEXT",
+                      "Content": "by the way."
+                    },
+                    "Examples": [
+                      {
+                        "Phrase": "Láin pay átù, tagadiin man tu ka?",
+                        "Gloss": "By the way, where do you say you come from?"
+                      }
+                    ]
                   }
-                ]
-              }
-            },
-            {
-              "Number": "7b",
-              "DefEx": {
-                "Def": {
-                  "Type": "LINK",
-                  "Content": "mau pay ákù"
                 },
-                "Examples": []
-              }
+                {
+                  "Number": "7b",
+                  "DefEx": {
+                    "Def": {
+                      "Type": "LINK",
+                      "Content": "mau pay ákù"
+                    },
+                    "Examples": []
+                  }
+                }
+              ]
             }
           ]
         },
