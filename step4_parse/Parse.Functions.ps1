@@ -352,6 +352,11 @@ function Search-WtDef {
         $i++
     }
 
+    while (IsType (Get-Token $Tokens $i) 'CLASS') {
+        $classes += (Get-Token $Tokens $i).Content
+        $i++
+    }
+
     $defex = Search-DefEx -Tokens $Tokens -StartIndex $i
     if ($defex.Found) {
         $i = $defex.NextIndex

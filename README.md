@@ -124,26 +124,26 @@ I'll loosen the rules.
 
 ### 2026-09-15
 - the changes yesterday pushed the total parsing rate from 93.8% to 98.8%
-- [x] add 1535 to parse and token testing
 - [x] update num-parsing to include `<b>a</b>` `<b>b</b>` `</b>c</b>`
     - sub-numbered sections may be introduced with only a bolded letter (e.g. <b>a</b> <b>b</b>)
     - I changed my tokenizer to be a bit more liberal than necessary, I need a more precise tokenizer if the dictionary writers aren't as precise, but it should be sufficient.
     - the new logic is, possibly comma separated numbers and chars up to length 3 in a bold html tag
-- [x] fix 485
+- fix 485
     - [x] strip corr segments
     - I will just remove all corr elements, which I think are corrections. I could do the extra work of capturing them and keeping
     them as metadata, but it could make the parser much more complicated and I don't understand what it means or how it could be
     useful.
-- [x] fix 13875
+- fix 13875
     - [x] wrong tokenization for `"CEBWORD","b1"`, `"CEBWORD","b2"`
     - fix `<b lang="ceb">` tags if they have a digit in the content, these are just badly formatted content.
     - the fix resulted in a bad parse on 150 (see below)
 - elevate the "CopyExpecteds" script so all of the testing files are being updated for both tokenization and parsing.
-- [x] fix 150: accept a wtdef in the body of a numbdef
-- [x] fix 686 links after examples
+- fix 150: accept a wtdef in the body of a numbdef
+- fix 686 links after examples
 - [x] throw exceptions on specific keywords: "see also", "short for", "cf."
 - I think some are failing because of number > number
 - [ ] rewrite the tokenizeall and tokenize ID so I can move error files correctly
-- [x] fix 1632, class after cebword on numdef
-- [x] fix 1535 parsing is stuck
-- [x] fix 1535, accept a nested number def instead of a defex
+- fix 1632, class after cebword on numdef
+- fix 1535 parsing is stuck
+- fix 1535: accept a nested number def instead of a defex
+- fix 1789: class after cebword on wordtype

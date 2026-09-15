@@ -1,0 +1,36 @@
+{
+  "WordDef": {
+    "Def": {
+      "Word": "bakul",
+      "WordTypeDefs": [
+        {
+          "WordType": "a",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "crippled in the leg."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "WordType": "v",
+          "CebWord": "(←)",
+          "Classes": [
+            "[B126]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "become crippled."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    }
+  },
+  "Found": true,
+  "NextIndex": 7,
+  "Diagnostics": []
+}
