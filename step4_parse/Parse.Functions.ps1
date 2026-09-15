@@ -53,10 +53,7 @@ function Search-Def {
     $text_link_arr = @()
     while ((IsType $tok 'TEXT') -or (IsType $tok 'LINK'))
     {
-        $text_link_arr += [PSCustomObject]@{
-            Type = $tok.Type
-            Content = $tok.Content
-        }
+        $text_link_arr += $tok
 
         $i++
         $tok = Get-Token $Tokens $i
@@ -181,13 +178,26 @@ function Search-DefEx {
     $exs = Search-Examples -Tokens $Tokens -StartIndex $i
     $i = $exs.NextIndex
 
+    $def = [PSCustomObject]@{
+        Def=$def.Def;
+        Examples=$exs.Examples
+    }
+
+    $links = @()
+    $tok = Get-Token $tokens $i
+    while (IsType $tok 'LINK') {
+        $links += $tok.Content
+        $i++
+        $tok = Get-Token $tokens $i
+    }
+    if ($links.Count -gt 0) {
+        $def | Add-Member -NotePropertyName Links -NotePropertyValue $links -Force
+    }
+
     [PSCustomObject]@{
         Found   = $true
         NextIndex = $i
-        Def     = [PSCustomObject]@{
-            Def=$def.Def;
-            Examples=$exs.Examples
-        }
+        Def     = $def
     }
 }
 

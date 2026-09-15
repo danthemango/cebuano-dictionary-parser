@@ -58,6 +58,9 @@
                   "Phrase": "Ang mga Magahat túa magpuyù sa kinaaluyukan sa lasang,",
                   "Gloss": "The Magahats live in the very center of the forest."
                 }
+              ],
+              "Links": [
+                "úyuk"
               ]
             }
           }
@@ -65,16 +68,7 @@
       }
     ]
   },
-  "Found": false,
-  "NextIndex": 14,
-  "Diagnostics": [
-    {
-      "Index": 14,
-      "Message": "Trailing token after DefBody: LINK",
-      "Token": {
-        "Type": "LINK",
-        "Content": "úyuk"
-      }
-    }
-  ]
+  "Found": true,
+  "NextIndex": 15,
+  "Diagnostics": []
 }

@@ -1,0 +1,337 @@
+{
+  "WordDef": {
+    "Def": {
+      "Word": "bahù",
+      "WordTypeDefs": [
+        {
+          "WordType": "a",
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "odorous, ill-smelling."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Limpiyúhi ang kasilyas kay bahù kaáyu,",
+                    "Gloss": "Clean the toilet because it stinks."
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "having been ‘it’ in a game for a long time."
+                },
+                "Examples": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Conjugations": [
+      {
+        "Word": "(←)",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "smell, odor."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Ang báhù sa litsun abut sa ámù,",
+                  "Gloss": "The smell of the roast pig reaches our place."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Word": "— nga",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "smell of."
+          },
+          "Examples": [
+            {
+              "Phrase": "Báhung singut,",
+              "Gloss": "Smell of sweat."
+            }
+          ]
+        }
+      },
+      {
+        "Word": "— nga paryinti",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "having some sort of distant tie of kinship."
+          },
+          "Examples": [
+            {
+              "Phrase": "Walà miy báhù nga paryinti. Nagkaparíha lang ang ámung apilyídu,",
+              "Gloss": "We are not related. We just happen to have the same name."
+            }
+          ]
+        },
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "Classes": [
+                  "[B; a2]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "be, become smelly."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Mubahù ang banig kay giihían man sa bátà,",
+                      "Gloss": "The mat will become smelly because the child urinated on it."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "Classes": [
+                  "[A12]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "a smell."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Nakabahù ka ba átung humut nga rúsas?",
+                      "Gloss": "Did you smell the fragrance of the roses?"
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "b",
+                "DefEx": {
+                  "Def": {
+                    "Type": "LINK",
+                    "Content": "paniN-: 3."
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "3",
+                "CebWord": "(→)",
+                "NumDefs": [
+                  {
+                    "Number": "1",
+                    "Classes": [
+                      "[B12; a]"
+                    ],
+                    "DefEx": {
+                      "Def": {
+                        "Type": "TEXT",
+                        "Content": "for meat and fruits to rot, spoil."
+                      },
+                      "Examples": [
+                        {
+                          "Phrase": "Nabahù ang karni kay walà nímu malútù gahápun,",
+                          "Gloss": "The meat became spoiled because you did not cook it yesterday."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "Number": "2",
+                    "Classes": [
+                      "[a12]"
+                    ],
+                    "DefEx": {
+                      "Def": {
+                        "Type": "TEXT",
+                        "Content": "cause coconut milk to ferment in making oil."
+                      },
+                      "Examples": [
+                        {
+                          "Phrase": "Bahúa úsà ang túnù unyà lanáha,",
+                          "Gloss": "You first ferment the coconut milk, then make it into oil."
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Word": "tiN-",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "Classes": [
+              "[A12; b8]"
+            ],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "perceive odor."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Nakatimahù ka ba ug patay nga ilagà?",
+                  "Gloss": "Do you smell a dead rat?"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Word": "paniN-(←)",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "Classes": [
+                  "[A23]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "emit odor."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Nanimáhù kang nangkà,",
+                      "Gloss": "You smell of jackfruit."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "1a",
+                "CebWord": "-ng kandílà",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "death is near (lit. the odor of candles is being emitted—facetious usage)."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Lúya na kaáyu ang masakitun. Nanimáhù nang kandílà,",
+                      "Gloss": "The patient is weak. You can smell the funereal candles."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "Classes": [
+                  "[A]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "smell, perceive odor."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Midágan ang lagsaw dihang nakapanimahù ug táwu,",
+                      "Gloss": "The deer ran when it perceived the odor of man."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "3",
+                "Classes": [
+                  "[A2]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "find out, get wind of."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Nanimáhù ug unsang kumbiráha maáyu níyang suhútan,",
+                      "Gloss": "He’s finding out what party is good to attend."
+                    },
+                    {
+                      "Phrase": "Ag tuntu nakapanimahù (nakabahù) sa ámung mga plánu,",
+                      "Gloss": "The fool got wind of our plans."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Word": "ig-(←)",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "CebWord": "— nga paryinti",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "be in any way a relative of."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Dílì ka igbáhù nga paryinti ni Títa. Makaminyù mu,",
+                  "Gloss": "You are in no way related to Tita. You two can get married."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Word": "ka-",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "stench."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Ang kabahù sa yánang dílì maagwanta,",
+                  "Gloss": "I can’t endure the stench of the pool of mud.†"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "Found": true,
+  "NextIndex": 87,
+  "Diagnostics": []
+}
