@@ -46,15 +46,21 @@ if (Test-Path $errorFile) {
     Remove-Item -Path $errorFile -Force
 }
 
-$parse = . $PSScriptRoot\ParseFile.ps1 -InFile $inFile
-if ($parse.Found) {
-    if ((-not (Test-Path $outFile)) -or $Force) {
+$success = $false
+$parse = $null
+if ((-not (Test-Path $outFile)) -or $Force) {
+    $parse = . $PSScriptRoot\ParseFile.ps1 -InFile $inFile
+    if ($parse.Found) {
         $parse | ConvertTo-Json -Depth 100 | Set-Content -Path $outFile -Encoding UTF8
-        if (-Not $Silent) { Write-Host "Write $outFilePath" }
-    } else {
-        if (-Not $Silent) { Write-Host "Skip $outFilePath (already exists)" }
+        $success = $true
     }
+    Write-Host "Write $outFile"
 } else {
+    $success = $true
+    if (-Not $Silent) { Write-Host "Skip $outFile (already exists)" }
+}
+
+if (-Not $success) {
     # delete the outFile if partially created
     if (Test-Path $outFile) {
         Remove-Item $outFile
