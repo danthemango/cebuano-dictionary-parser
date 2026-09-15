@@ -289,7 +289,7 @@ function Update-ChangeCebWord {
 
 <#
 .DESCRIPTION
-    find and transform corr spans, so they don't interfere with further processing
+    remove all <span class="corr"> elements, outputting children
 #>
 function Update-Corr {
     param(
@@ -305,23 +305,20 @@ function Update-Corr {
 
         $xml = [xml]("<root>$($Token.Content)</root>")
 
-        $corrSpans = $xml.SelectNodes('//span[@class="corr"]')
+        $nodes = $xml.SelectNodes("//*[@class='corr']")
 
-        foreach ($span in @($corrSpans)) {
+        # Copy to array because we're modifying the document
+        @($nodes) | ForEach-Object {
+            $node   = $_
+            $parent = $node.ParentNode
 
-            $corr = $xml.CreateElement('corr')
-
-            foreach ($attr in $span.Attributes) {
-                if ($attr.Name -ne 'class') {
-                    $corr.SetAttribute($attr.Name, $attr.Value)
-                }
+            # Insert children before the wrapper node
+            while ($node.FirstChild) {
+                $parent.InsertBefore($node.FirstChild, $node) | Out-Null
             }
 
-            while ($span.FirstChild) {
-                $corr.AppendChild($span.FirstChild) | Out-Null
-            }
-
-            $span.ParentNode.ReplaceChild($corr, $span) | Out-Null
+            # Remove the now-empty wrapper
+            $parent.RemoveChild($node) | Out-Null
         }
 
         $Token.Content = ($xml.DocumentElement.InnerXml)

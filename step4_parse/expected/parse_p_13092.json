@@ -165,7 +165,7 @@
             "Examples": [
               {
                 "Phrase": "Unsa pa ug dílì kwarta?",
-                "Gloss": "What could it be <corr id=\"xd20e323227\" title=\"Source: it\">if</corr> not money?"
+                "Gloss": "What could it be if not money?"
               },
               {
                 "Phrase": "Ngánu pa nga ikaw giyud?",
@@ -314,7 +314,7 @@
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
-                "Content": "[predicate] is <corr id=\"xd20e323305\" title=\"Source: superflous\">superfluous</corr>; [do] when one shouldn’t or shouldn’t have to."
+                "Content": "[predicate] is superfluous; [do] when one shouldn’t or shouldn’t have to."
               },
               "Examples": [
                 {

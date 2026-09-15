@@ -131,8 +131,11 @@ I'll loosen the rules.
     - sub-numbered sections may be introduced with only a bolded letter (e.g. <b>a</b> <b>b</b>)
     - I changed my tokenizer to be a bit more liberal than necessary, I need a more precise tokenizer if the dictionary writers aren't as precise, but it should be sufficient.
     - the new logic is, possibly comma separated numbers and chars up to length 3 in a bold html tag
-- [ ] fix 485
-    - [ ] tokenize corr segment, I don't think it's necessary but I'll parse it
+- [x] fix 485
+    - [x] strip corr segments
+    - I will just remove all corr elements, which I think are corrections. I could do the extra work of capturing them and keeping
+    them as metadata, but it could make the parser much more complicated and I don't understand what it means or how it could be
+    useful.
 - [ ] fix 13875
     - [ ] wrong tokenization for `"CEBWORD","b1"`, `"CEBWORD","b2"`
 - I elevated the "CopyExpecteds" script so all of the testing files are being updated for both tokenization and parsing.

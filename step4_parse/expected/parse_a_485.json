@@ -6,28 +6,31 @@
         "WordTypeDefs": [
           {
             "WordType": "v",
+            "Classes": [
+              "[A; b6]"
+            ],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
-                "Content": "<corr id=\"xd20e15781\" title=\"Not in source\"></corr>"
+                "Content": "avoid answering or seeming to heed by speaking off the topic, or pretend to be doing s.t. else in order to avoid the embarrassment of a confrontation."
               },
-              "Examples": []
+              "Examples": [
+                {
+                  "Phrase": "Ayaw paalibagbag ug basabása myintras gisultíhan ka nákù,",
+                  "Gloss": "Don’t sit there reading while I am talking to you."
+                },
+                {
+                  "Phrase": "Gialibagbágan (gipaalibagbágan) ku níyag tubag kay dì man siya muadmitir nákù,",
+                  "Gloss": "He answered me off the topic to avoid admitting it."
+                }
+              ]
             }
           }
         ]
       }
     ]
   },
-  "Found": false,
-  "NextIndex": 4,
-  "Diagnostics": [
-    {
-      "Index": 4,
-      "Message": "Trailing token after DefBody: CLASS",
-      "Token": {
-        "Type": "CLASS",
-        "Content": "[A; b6]"
-      }
-    }
-  ]
+  "Found": true,
+  "NextIndex": 9,
+  "Diagnostics": []
 }
