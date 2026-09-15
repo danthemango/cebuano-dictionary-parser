@@ -124,8 +124,6 @@ I'll loosen the rules.
 
 ### 2026-09-15
 - the changes yesterday pushed the total parsing rate from 93.8% to 98.8%
-- [ ] throw exceptions on "see also"
-- [ ] throw exceptions on "short for"
 - [x] add 1535 to parse and token testing
 - [x] update num-parsing to include `<b>a</b>` `<b>b</b>` `</b>c</b>`
     - sub-numbered sections may be introduced with only a bolded letter (e.g. <b>a</b> <b>b</b>)
@@ -140,5 +138,8 @@ I'll loosen the rules.
     - [x] wrong tokenization for `"CEBWORD","b1"`, `"CEBWORD","b2"`
     - fix `<b lang="ceb">` tags if they have a digit in the content, these are just badly formatted content.
     - the fix resulted in a bad parse on 150 (see below)
-- I elevated the "CopyExpecteds" script so all of the testing files are being updated for both tokenization and parsing.
+- elevate the "CopyExpecteds" script so all of the testing files are being updated for both tokenization and parsing.
 - [ ] fix wordtype missing on 150
+- [ ] fix 686: links after examples
+- [ ] throw exceptions on "see also"
+- [ ] throw exceptions on "short for"

@@ -1,0 +1,80 @@
+{
+  "WordDef": {
+    "Def": {
+      "Word": "alúyuk",
+      "DefEx": {
+        "Def": {
+          "Type": "TEXT",
+          "Content": "(not without <i lang=\"cebword\">l</i>)"
+        },
+        "Examples": []
+      },
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "part of the skull where the hair forms a whorl."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "Conjugations": [
+      {
+        "Word": "-an",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "having a whorl on the head."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Gwápu si Pidru kay aluyúkan sa buna,",
+                  "Gloss": "Pedro is handsome because he has a whorl on the front of his head."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Word": "kina-an(→)",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "topmost or innermost part of s.t."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Ang mga Magahat túa magpuyù sa kinaaluyukan sa lasang,",
+                  "Gloss": "The Magahats live in the very center of the forest."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "Found": false,
+  "NextIndex": 14,
+  "Diagnostics": [
+    {
+      "Index": 14,
+      "Message": "Trailing token after DefBody: LINK",
+      "Token": {
+        "Type": "LINK",
+        "Content": "úyuk"
+      }
+    }
+  ]
+}
