@@ -1,0 +1,82 @@
+{
+  "WordDef": {
+    "Def": {
+      "Word": "didtu",
+      "NumberedDefs": [
+        {
+          "Number": "1",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "there (far from speaker, far from addressee)."
+            },
+            "Examples": [
+              {
+                "Phrase": "Didtu ibutang,",
+                "Gloss": "Put it over there."
+              },
+              {
+                "Phrase": "Didtu níya ibutang,",
+                "Gloss": "She put it there."
+              },
+              {
+                "Phrase": "Ug didtu siya, nagpaábut ni Maríya,",
+                "Gloss": "And there he was waiting for Mary."
+              }
+            ]
+          }
+        },
+        {
+          "Number": "1a",
+          "CebWord": "didtu",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "in that [noun] as opposed to other places."
+            },
+            "Examples": [
+              {
+                "Phrase": "Didtung baláya siya mamatay,",
+                "Gloss": "He died in that house."
+              }
+            ]
+          }
+        },
+        {
+          "Number": "2",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "there (at a point in time in the past)."
+            },
+            "Examples": [
+              {
+                "Phrase": "Didtu ku makat-un sa paghigugma níya,",
+                "Gloss": "It was then I learned to love him."
+              }
+            ]
+          }
+        },
+        {
+          "Number": "3",
+          "CebWord": "didtu",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "there was, there were."
+            },
+            "Examples": [
+              {
+                "Phrase": "Didtuy táwu sa asíras,",
+                "Gloss": "There was s.o. there on the sidewalk."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "Found": true,
+  "NextIndex": 23,
+  "Diagnostics": []
+}

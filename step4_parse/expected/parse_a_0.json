@@ -1,0 +1,34 @@
+{
+  "WordDef": {
+    "Def": {
+      "Word": "a",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "letter A."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "Conjugations": [
+      {
+        "Word": "walay —",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "illiterate."
+          },
+          "Examples": []
+        }
+      }
+    ]
+  },
+  "Found": true,
+  "NextIndex": 5,
+  "Diagnostics": []
+}

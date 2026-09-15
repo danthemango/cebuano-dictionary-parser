@@ -1,0 +1,155 @@
+{
+  "WordDef": {
+    "Def": {
+      "Word": "ábang",
+      "WordTypeDefs": [
+        {
+          "WordType": "v",
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "CebWord": "ábang",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "rent."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Ang usa ka kwartu giabángan sa tigúlang,",
+                    "Gloss": "The old man rents one of the rooms."
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "2",
+              "CebWord": "ábang",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "hire a prostitute."
+                },
+                "Examples": []
+              }
+            },
+            {
+              "Number": "3",
+              "CebWord": "ábang",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "make an offering to a supernatural being for the use of land which is thought to be in his possession."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Iábang ni nákung baktína álang sa uma,",
+                    "Gloss": "I will sacrifice this pig as rental for the land."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "WordType": "n",
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "rent paid."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Pilay ábang nímu sa libru?",
+                    "Gloss": "How much rent did you pay for the book?"
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "money paid a prostitute."
+                },
+                "Examples": []
+              }
+            },
+            {
+              "Number": "3",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "toil taken by supernatural beings."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Kadtung nalumus dinhi ábang kunu tu sa ingkantu,",
+                    "Gloss": "The man who drowned here is said to have been the rent collected by the supernatural spirit."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Conjugations": [
+      {
+        "Word": "paN-",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "Classes": [
+              "[A2]"
+            ],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "patronize a prostitute."
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Word": "-an(→)<corr id=\"xd20e5140\" title=\"Not in source\"><sub>1</sub></corr>",
+        "NumberedDefs": [
+          {
+            "Number": "1, 2, 3",
+            "DefEx": {
+              "Def": {
+                "Type": "LINK",
+                "Content": "ábang: n"
+              },
+              "Examples": []
+            }
+          },
+          {
+            "Number": "4",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "haunted place, place where departed spirits take a toll or rent."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Abangan kunu kanang baláya. Náa giyuy mamatay káda túig,",
+                  "Gloss": "That house is haunted (lit. has a rental on it). Each year s.o. dies there."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "Found": true,
+  "NextIndex": 37,
+  "Diagnostics": []
+}

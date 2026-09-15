@@ -1,0 +1,188 @@
+{
+  "WordDef": {
+    "Def": {
+      "Word": "patay",
+      "WordTypeDefs": [
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A; b7]"
+          ],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "kill, slay."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Dì makapatay ning sakíta nímu,",
+                    "Gloss": "This sickness won’t kill you."
+                  },
+                  {
+                    "Phrase": "Patyun ku siya,",
+                    "Gloss": "I’ll kill him."
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "put an end to s.t. as if killing it."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Ang pagkapakyas makapatay sa kadásig,",
+                    "Gloss": "Failure can destroy one’s enthusiasm."
+                  },
+                  {
+                    "Phrase": "Adtu sa Kamara Báha patya ang balaudnun,",
+                    "Gloss": "The bill will be killed in the Lower House."
+                  },
+                  {
+                    "Phrase": "Angay patyun nang balitáa,",
+                    "Gloss": "That news should be suppressed."
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "3",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "shut off an engine, light; put out a fire."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Patya nang sugà,",
+                    "Gloss": "Turn off the lights."
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "3a",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "neutralize chemicals or colors."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Putì ang ipatay niánang pula nga kulur,",
+                    "Gloss": "Neutralize that red color with white."
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "3b",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "consume time."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Maáyu ning duláa ipatayg úras,",
+                    "Gloss": "This game is good for killing time."
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "4",
+              "CebWord": "patay",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "whittle s.t. down to reduce its size or smoothen it."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Patyi ang ngilit sa lamísa,",
+                    "Gloss": "Round off the edges of the table."
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "5",
+              "CebWord": "patay",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "be all tails in a game of tossing coins."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Mapatay na ni rung antúga,",
+                    "Gloss": "This toss will be all tails."
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "6",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "in a game of <i lang=\"cebword\">sungkà</i>, drop the last stone in an empty hole."
+                },
+                "Examples": []
+              }
+            },
+            {
+              "Number": "7",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "in set phrases:"
+                },
+                "Examples": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Conjugations": [
+      {
+        "Word": "a — sa báhù",
+        "Classes": [
+          "[A2P; a1]"
+        ],
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "mask a pungent smell."
+          },
+          "Examples": [
+            {
+              "Phrase": "Lamas ang ipatay sa báhù sa isdang langsa,",
+              "Gloss": "Spices can cover the fishy taste of fish."
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "Found": false,
+  "NextIndex": 48,
+  "Diagnostics": [
+    {
+      "Index": 48,
+      "Message": "Trailing token after DefBody: CEBWORD",
+      "Token": {
+        "Type": "CEBWORD",
+        "Content": "— ug hálas"
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "WordDef": {
+    "Def": {
+      "Word": "armádu",
+      "WordTypeDefs": [
+        {
+          "WordType": "a",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "<corr id=\"xd20e30951\" title=\"Not in source\"></corr>armed."
+            },
+            "Examples": [
+              {
+                "Phrase": "Usa ka grúpung armádu ang mitúlis sa bálu,",
+                "Gloss": "An armed group robbed the widow."
+              }
+            ]
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[B1256]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "be, become armed."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    }
+  },
+  "Found": true,
+  "NextIndex": 8,
+  "Diagnostics": []
+}

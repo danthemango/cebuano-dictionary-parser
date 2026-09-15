@@ -1,0 +1,17 @@
+{
+  "WordDef": {
+    "Def": {
+      "Word": "abi",
+      "DefEx": {
+        "Def": {
+          "Type": "LINK",
+          "Content": "abir: 1, 2"
+        },
+        "Examples": []
+      }
+    }
+  },
+  "Found": true,
+  "NextIndex": 2,
+  "Diagnostics": []
+}

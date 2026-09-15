@@ -1,0 +1,17 @@
+{
+  "WordDef": {
+    "Def": {
+      "Word": "agdul",
+      "DefEx": {
+        "Def": {
+          "Type": "LINK",
+          "Content": "arul: v 2."
+        },
+        "Examples": []
+      }
+    }
+  },
+  "Found": true,
+  "NextIndex": 2,
+  "Diagnostics": []
+}

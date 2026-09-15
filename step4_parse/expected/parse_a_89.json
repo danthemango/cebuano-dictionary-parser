@@ -1,0 +1,77 @@
+{
+  "WordDef": {
+    "Conjugations": [
+      {
+        "Word": "paN-",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "Classes": [
+              "[A2; b6]"
+            ],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "be jealous of a loved one."
+              },
+              "Examples": []
+            }
+          },
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "jealousy."
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Word": "abubhuan",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "jealous."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Abubhuang bána,",
+                  "Gloss": "A jealous husband."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Word": "mapangabubhúun",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "of a jealous type."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Mapangabubhúun nga pasiklap,",
+                  "Gloss": "A jealous glance."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "Found": true,
+  "NextIndex": 17,
+  "Diagnostics": []
+}

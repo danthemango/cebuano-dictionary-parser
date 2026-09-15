@@ -1,0 +1,102 @@
+{
+  "WordDef": {
+    "Def": {
+      "Word": "abága",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "shoulder."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A2SN; b5]"
+          ],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "take financial responsibility."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Abagáhun (pangabagáhun, pangabagáhan) ni Mánuy níya ang galastúhan sa pag-iskuyla,",
+                    "Gloss": "His brother will shoulder his school expenses."
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "take responsibility for accomplishing s.t."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Kita giyuy muabága (mangabága) áning prugramáha,",
+                    "Gloss": "We must undertake to carry out this program."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Conjugations": [
+      {
+        "Word": "(→)",
+        "DefEx": {
+          "Def": {
+            "Type": "LINK",
+            "Content": "abága: v"
+          },
+          "Examples": []
+        }
+      },
+      {
+        "Word": "paN-",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "right-hand-man."
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Word": "abagáhun",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "broad-shouldered."
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "Found": true,
+  "NextIndex": 21,
+  "Diagnostics": []
+}
