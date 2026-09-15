@@ -1,0 +1,818 @@
+{
+  "WordDef": {
+    "Def": {
+      "Word": "usa<sub>1</sub>",
+      "DefEx": {
+        "Def": {
+          "Type": "TEXT",
+          "Content": "<i lang=\"cebword\">numeral</i> one."
+        },
+        "Examples": []
+      },
+      "NumberedDefs": [
+        {
+          "Number": "1",
+          "CebWord": "usa<sub>1</sub>",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "one."
+            },
+            "Examples": [
+              {
+                "Phrase": "Sa usa ka púlung siyay nidaug,",
+                "Gloss": "In short, he won."
+              }
+            ]
+          }
+        },
+        {
+          "Number": "b",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "a certain (unnamed) one."
+            },
+            "Examples": [
+              {
+                "Phrase": "May usa ka hárì nga taas kaáyu ug búngut,",
+                "Gloss": "There was once a king who had a very long beard."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "Conjugations": [
+      {
+        "Word": "— niánà ka <span class=\"rm\">[<i lang=\"ceb\">word referring to time</i>]</span>",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "one [time]."
+          },
+          "Examples": [
+            {
+              "Phrase": "Usa niánà ka adlaw, miadtu siya sa hárì,",
+              "Gloss": "One day, he went to the king."
+            }
+          ]
+        },
+        "NumberedDefs": [
+          {
+            "Number": "2",
+            "CebWord": "usa<sub>1</sub>",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "the other one of the two or more."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Anhi ka áning manúka pusta? Adtu kus usa,",
+                  "Gloss": "Will you bet on this cock? I will bet on the other one."
+                },
+                {
+                  "Phrase": "Adtu líkù sa usang iskína,",
+                  "Gloss": "Turn into the next corner."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "2a",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "the other day, week, month, year that passed."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Dinhi siya sa usang adlaw,",
+                  "Gloss": "He was here the other day."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "3",
+            "CebWord": "usa<sub>1</sub>",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "each, each one."
+              },
+              "Examples": [
+                {
+                  "Phrase": "ísig (isig) usa ninyu mubáyad nákù ug singku písus,",
+                  "Gloss": "Each (each one) of you will pay me five pesos."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "4",
+            "CebWord": "usa<sub>1</sub>",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "each and every one."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Usag usa ninyu magdala sa íyang galamitun,",
+                  "Gloss": "Each and every one of you must bring his own tools."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "5a",
+            "CebWord": "usa<sub>1</sub>",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "[so-and-so] is another one who will [do]."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Usa sad siya sa mungadtu,",
+                  "Gloss": "He is also a member of the group going there."
+                }
+              ]
+            }
+          },
+          {
+            "Number": "5b",
+            "CebWord": "usa<sub>1</sub>",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "you’re another one who does [such-and-such a bad thing]."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Usa ka pang danghag,",
+                  "Gloss": "You’re another careless fellow."
+                }
+              ]
+            }
+          }
+        ],
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "CebWord": "usa<sub>1</sub>",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "be, become resolved or decided."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Ug mausa pa untà ang ákung hunàhúnà pagbíyà kaníya!",
+                      "Gloss": "If only I could make up my mind to leave her!"
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "CebWord": "usa<sub>1</sub>",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "do s.t. with one hand where both hands are usually used."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Gaan ra ning aswátun, usaan ra nákù ni,",
+                      "Gloss": "This is easy to pick up. I’ll do it with one hand."
+                    },
+                    {
+                      "Phrase": "Sumbagay ta, usaan ta ka,",
+                      "Gloss": "Let’s have a fight. I’ll beat you with one hand."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "3",
+                "CebWord": "usa<sub>1</sub>",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "no one, not a single soul."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Walay mausang mitábang kanákù,",
+                      "Gloss": "Not a single person helped me."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Word": "(←)",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "CebWord": "usa<sub>1</sub>",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "group things together in one."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Mag-úsa lang ta dinhis kwartu,",
+                      "Gloss": "Let’s just stay together in the room."
+                    },
+                    {
+                      "Phrase": "Usáhun ta na lang ni arun usa ray sudlan,",
+                      "Gloss": "Let’s just put this together so we use only one container."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "CebWord": "usa<sub>1</sub>",
+                "DefEx": {
+                  "Def": {
+                    "Type": "LINK",
+                    "Content": "usa: v1."
+                  },
+                  "Examples": []
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Word": "hi-(←)",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "Classes": [
+              "[B126C3]"
+            ],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "be, become united or unanimous."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Naghiúsa sila sa pagpapuyra sa suluguun,",
+                  "Gloss": "They were unanimous in wanting to have the servant fired."
+                },
+                {
+                  "Phrase": "Nahiúsa ang ílang hukum human makabatì sa tinúud,",
+                  "Gloss": "Their decision became unanimous after they heard the truth."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Word": "usaúsa",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "get-together party."
+              },
+              "Examples": []
+            }
+          },
+          {
+            "WordType": "v",
+            "Classes": [
+              "[C]"
+            ],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "have a get-together party."
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Word": "usáhay",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "sometimes, occasionally."
+          },
+          "Examples": [
+            {
+              "Phrase": "Usáhay dì ku makadungug,",
+              "Gloss": "Sometimes I cannot hear."
+            }
+          ]
+        }
+      },
+      {
+        "Word": "binagsa",
+        "DefEx": {
+          "Def": {
+            "Type": "LINK",
+            "Content": "tinagsa: v1."
+          },
+          "Examples": []
+        }
+      },
+      {
+        "Word": "inusára",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "CebWord": "usa<sub>1</sub>",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "be by oneself, alone."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Ug manglákaw sila mag-inusára lang ku áning baláya,",
+                      "Gloss": "If they leave, I will be alone in this house."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "CebWord": "usa<sub>1</sub>",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "do s.t. alone by oneself."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "ákung inusaráhun lag dáru,",
+                      "Gloss": "I will do the plowing alone."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Word": "inusaranhun",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "characterized by being all by oneself."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Kinabúhing inusaranhun,",
+                  "Gloss": "A life all alone by oneself."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Word": "maka-, ka-, kas-a",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "once."
+          },
+          "Examples": [
+            {
+              "Phrase": "Kausa (kas-a) miadtu siya sa balay,",
+              "Gloss": "He came to the house once."
+            }
+          ]
+        },
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "Classes": [
+              "[A12; a12]"
+            ],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "do s.t. to s.t. all at one time."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Maáyu untà ug makas-a nig lútù,",
+                  "Gloss": "It would be nice if these could be cooked all at one time."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Word": "kag-usà",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": ","
+          },
+          "Examples": []
+        }
+      },
+      {
+        "Word": "makag-usà",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": ","
+          },
+          "Examples": []
+        }
+      },
+      {
+        "Word": "tag-usà",
+        "DefEx": {
+          "Def": {
+            "Type": "LINK",
+            "Content": "talagsa"
+          },
+          "Examples": []
+        }
+      },
+      {
+        "Word": "kahiusáhan",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "state of being united."
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "marriage."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Karung adláwa mau ang kahiusáhan níla ni Idyun ug ni Bilma,",
+                      "Gloss": "The wedding of Edion and Vilma will take place today."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Word": "ulusáhun",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "wondrous, unique or peculiar."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Adtu nímu makítà sa sú ang mga mananap nga ulusáhun ug mga hitsúra,",
+                  "Gloss": "You will see strange and peculiar animals in the zoo."
+                },
+                {
+                  "Phrase": "Si Samsun sa karáang panahun mauy usa ka táwu nga may ulusáhung kusug,",
+                  "Gloss": "Samson of ancient times was a man of extraordinary strength."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Word": "tagsa",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "one apiece."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Tagáan ta mug tagsa,",
+                      "Gloss": "I’ll give you each one."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Word": "tagsa ray púlung",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "of few words."
+          },
+          "Examples": [
+            {
+              "Phrase": "Kun muingung dílì, hustu ra, dílì giyud. Tagsa ray púlung niánang tawhána,",
+              "Gloss": "If he says no it is no, period. He is a man of few words."
+            }
+          ]
+        },
+        "NumberedDefs": [
+          {
+            "Number": "2",
+            "DefEx": {
+              "Def": {
+                "Type": "LINK",
+                "Content": "talagsa"
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Word": "tagsatagsa",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "Classes": [
+              "[A1; c1]"
+            ],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "do s.t. one by one."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Magtagsatagsa na lang tag pamaúlì,",
+                  "Gloss": "Let us now go home one by one."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Word": "igtagsa",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "one’s first cousin."
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Word": "magtagsa",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "being first cousins."
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Word": "talagsa",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "seldom."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Talagsa ka ra man mamisíta nákù,",
+                  "Gloss": "You seldom visit me."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Word": "talagsay búngut",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "it will be a long time before [so-and-so] happens."
+          },
+          "Examples": [
+            {
+              "Phrase": "Talagsa lay búngut ug makigsulti ku níya,",
+              "Gloss": "Don’t expect me to talk to him for a long, long time."
+            }
+          ]
+        }
+      },
+      {
+        "Word": "panalagsa",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "being at great intervals."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Unyà mihagtuk sa atup nga sín ang panalagsang ulan,",
+                  "Gloss": "Then a few scattered raindrops rattled on the tin roof."
+                }
+              ]
+            }
+          },
+          {
+            "WordType": "v",
+            "Classes": [
+              "[A; b6]"
+            ],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "do s.t. once in a while, at infrequent intervals."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Panalagsai akug dúaw,",
+                  "Gloss": "Come visit me once in a while."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Word": "talagsaun",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "rare, few."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Talagsaun ra ang asáwa nga makaagwanta sa íyang pagkabána,",
+                      "Gloss": "Few wives could bear the sort of husband he makes."
+                    },
+                    {
+                      "Phrase": "Ang 1904 nga salapì talagsaun kaáyu,",
+                      "Gloss": "The 1904 fifty-centavo coin is very rare."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "extraordinary."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Talagsaun kaáyu ang íyang kaanyag,",
+                      "Gloss": "Her beauty is remarkable."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Word": "— ra pud",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "<i lang=\"cebword\">phrase said in reaction to s.t. unbelievable:</i> ‘that’s unheard of!’ <i lang=\"cebword\">‘Mukanta na run nà siya.’—‘Talagsaun ra pud.’</i> ‘Now he’s going to sing for us.’—‘The hell I will!’"
+          },
+          "Examples": []
+        }
+      },
+      {
+        "Word": "tinagsa",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "CebWord": "usa<sub>1</sub>",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "do one at a time."
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "2",
+                "CebWord": "usa<sub>1</sub>",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "do the <i lang=\"cebword\">tinagsa</i> dance."
+                  },
+                  "Examples": []
+                }
+              }
+            ]
+          },
+          {
+            "WordType": "a",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "done one at a time."
+              },
+              "Examples": []
+            }
+          },
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "k.o. folk dance in pairs, wherein the man tries to court an elusive woman, following her with courtship movements wherever she goes."
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "Found": true,
+  "NextIndex": 212,
+  "Diagnostics": []
+}

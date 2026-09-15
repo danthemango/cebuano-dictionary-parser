@@ -85,7 +85,8 @@ function Split-Nums {
         # e.g. '<corr id="xd20e31735" title="Not in source"><b>1</b></corr>' -> '<b>1</b> <corr id="xd20e31735" title="Not in source"></corr>'
         $Token.Content = [regex]::Replace($Token.Content, '<corr id="(?<id>[^"]+)" title="(?<title>[^"]*)"><b>(?<num>[\d])</b></corr>', '<b>${num}</b> <corr id="${id}" title="${title}"></corr>')
 
-        $Token | Split-TokensByPattern -pattern "<b>(\d+[a-z]?\d*?(?:,\s*\d+[a-z]?)*?)</b>" -tokenType "NUMBER" | Assert-ValidXML
+        # accept 1 to 3 digits of numbers and lowercase letters, and possibly with comma separated numbers
+        $Token | Split-TokensByPattern -pattern "<b>([a-z0-9]{1,3}(?:,\s*[a-z0-9]{1,3})*?)</b>" -tokenType "NUMBER" | Assert-ValidXML
     }
 }
 

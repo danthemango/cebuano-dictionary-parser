@@ -127,4 +127,7 @@ I'll loosen the rules.
 - [ ] throw exceptions on "see also"
 - [ ] throw exceptions on "short for"
 - [x] add 1535 to parse and token testing
-- [ ] update num-parsing to include `<b>a</b>` `<b>b</b>` `</b>c</b>`
+- [x] update num-parsing to include `<b>a</b>` `<b>b</b>` `</b>c</b>`
+    - sub-numbered sections may be introduced with only a bolded letter (e.g. <b>a</b> <b>b</b>)
+    - I changed my tokenizer to be a bit more liberal than necessary, I need a more precise tokenizer if the dictionary writers aren't as precise, but it should be sufficient.
+    - the new logic is, possibly comma separated numbers and chars up to length 3 in a bold html tag
