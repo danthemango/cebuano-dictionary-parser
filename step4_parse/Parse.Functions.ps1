@@ -1,6 +1,14 @@
 function Get-Token {
-    param([object[]]$Tokens, [int]$i)
-    if ($i -ge 0 -and $i -lt $Tokens.Count) { $Tokens[$i] } else { $null }
+    param(
+        [object[]]$Tokens,
+        [int]$Index
+    )
+    $i = $Index
+    if ($i -ge 0 -and $i -lt $Tokens.Count) {
+        $Tokens[$i]
+    } else {
+        $null
+    }
 }
 
 <#
@@ -153,7 +161,10 @@ function Search-DefEx {
     <#
       DEFEX ::= DEF EX*
     #>
-    param([object[]]$Tokens, [int]$StartIndex)
+    param(
+        [object[]]$Tokens,
+        [int]$StartIndex
+    )
     $i = $StartIndex;
 
     $def = Search-Def -Tokens $Tokens -StartIndex $i
@@ -187,7 +198,10 @@ function Search-NumDef {
         - Number + CEBWORD
         - Number + CEBWORD + DEFEX
     #>
-    param([object[]]$Tokens, [int]$StartIndex)
+    param(
+        [object[]]$Tokens,
+        [int]$StartIndex
+    )
     $i = $StartIndex;
 
     $numTok = Get-Token $Tokens $i
@@ -203,6 +217,13 @@ function Search-NumDef {
     }
     $i++
 
+    # collect CLASS*
+    $classes = @()
+    while (IsType (Get-Token $Tokens $i) 'CLASS') {
+        $classes += (Get-Token $Tokens $i).Content
+        $i++
+    }
+
     # DEFEX
     $defex = Search-DefEx -Tokens $Tokens -StartIndex $i
     if ($defex.Found) {
@@ -211,13 +232,14 @@ function Search-NumDef {
             NextIndex = $defex.NextIndex
             NumDef    = [PSCustomObject]@{
                 Number = $numTok.Content
+                Classes = $classes
                 DefEx  = $defex.Def
             }
         }
     }
 
     # CEBWORD
-    $tok = Get-Token -Tokens $Tokens -StartIndex $i
+    $tok = Get-Token $Tokens $i
     $cebword = $null
     if (IsType -Token $tok -Type "CEBWORD") {
         $cebword = $tok.Content
@@ -241,6 +263,7 @@ function Search-NumDef {
             NumDef    = [PSCustomObject]@{
                 Number = $numTok.Content
                 CebWord = $cebword
+                Classes = $classes
                 DefEx  = $defex.Def
             }
         }
@@ -252,6 +275,7 @@ function Search-NumDef {
             NumDef    = [PSCustomObject]@{
                 Number = $numTok.Content
                 CebWord = $cebword
+                Classes = $classes
             }
         }
     }

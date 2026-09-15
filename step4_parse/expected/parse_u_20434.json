@@ -12,7 +12,8 @@
       "NumberedDefs": [
         {
           "Number": "1",
-          "CebWord": "usa<sub>1</sub>",
+          "CebWord": "— ka a",
+          "Classes": [],
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -28,6 +29,7 @@
         },
         {
           "Number": "b",
+          "Classes": [],
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -61,7 +63,8 @@
         "NumberedDefs": [
           {
             "Number": "2",
-            "CebWord": "usa<sub>1</sub>",
+            "CebWord": "— nga",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -81,6 +84,7 @@
           },
           {
             "Number": "2a",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -96,7 +100,8 @@
           },
           {
             "Number": "3",
-            "CebWord": "usa<sub>1</sub>",
+            "CebWord": "ísig (isig) —",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -112,7 +117,8 @@
           },
           {
             "Number": "4",
-            "CebWord": "usa<sub>1</sub>",
+            "CebWord": "— ug —",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -128,7 +134,8 @@
           },
           {
             "Number": "5a",
-            "CebWord": "usa<sub>1</sub>",
+            "CebWord": "— usab, sad, upud",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -144,7 +151,8 @@
           },
           {
             "Number": "5b",
-            "CebWord": "usa<sub>1</sub>",
+            "CebWord": "— ka pa",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -165,7 +173,9 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "CebWord": "usa<sub>1</sub>",
+                "Classes": [
+                  "[A12; a12]"
+                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -181,7 +191,9 @@
               },
               {
                 "Number": "2",
-                "CebWord": "usa<sub>1</sub>",
+                "Classes": [
+                  "[b(1)]"
+                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -201,7 +213,8 @@
               },
               {
                 "Number": "3",
-                "CebWord": "usa<sub>1</sub>",
+                "CebWord": "walay ma-",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -227,7 +240,9 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "CebWord": "usa<sub>1</sub>",
+                "Classes": [
+                  "[C; a12]"
+                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -247,7 +262,9 @@
               },
               {
                 "Number": "2",
-                "CebWord": "usa<sub>1</sub>",
+                "Classes": [
+                  "[a12]"
+                ],
                 "DefEx": {
                   "Def": {
                     "Type": "LINK",
@@ -348,7 +365,9 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "CebWord": "usa<sub>1</sub>",
+                "Classes": [
+                  "[A]"
+                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -364,7 +383,9 @@
               },
               {
                 "Number": "2",
-                "CebWord": "usa<sub>1</sub>",
+                "Classes": [
+                  "[A1; a12]"
+                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -475,6 +496,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -485,6 +507,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -534,6 +557,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -568,6 +592,7 @@
         "NumberedDefs": [
           {
             "Number": "2",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "LINK",
@@ -712,6 +737,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -731,6 +757,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -766,7 +793,9 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "CebWord": "usa<sub>1</sub>",
+                "Classes": [
+                  "[A; a]"
+                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -777,7 +806,9 @@
               },
               {
                 "Number": "2",
-                "CebWord": "usa<sub>1</sub>",
+                "Classes": [
+                  "[AC; b]"
+                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",

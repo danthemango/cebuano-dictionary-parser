@@ -36,7 +36,9 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "CebWord": "bábuy<sub>1</sub>",
+                "Classes": [
+                  "[A12]"
+                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -50,12 +52,10 @@
                   ]
                 }
               },
-              {
-                "Number": "2",
-                "CebWord": "bábuy<sub>1</sub>"
-              },
+              null,
               {
                 "Number": "a",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -75,6 +75,7 @@
               },
               {
                 "Number": "b",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -90,7 +91,9 @@
               },
               {
                 "Number": "c",
-                "CebWord": "bábuy<sub>1</sub>",
+                "Classes": [
+                  "[AP; c1]"
+                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -187,6 +190,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -197,6 +201,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -215,6 +220,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -230,6 +236,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",

@@ -8,6 +8,7 @@
           "NumberedDefs": [
             {
               "Number": "1",
+              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -18,6 +19,7 @@
             },
             {
               "Number": "2",
+              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -33,6 +35,7 @@
             },
             {
               "Number": "2a",
+              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -63,6 +66,7 @@
         "NumberedDefs": [
           {
             "Number": "2b",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -78,6 +82,7 @@
           },
           {
             "Number": "3",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -88,6 +93,7 @@
           },
           {
             "Number": "4",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -128,7 +134,9 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "CebWord": "adlaw",
+                "Classes": [
+                  "[A3; b6]"
+                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -148,7 +156,9 @@
               },
               {
                 "Number": "2",
-                "CebWord": "adlaw",
+                "Classes": [
+                  "[A; b6]"
+                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -224,6 +234,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -234,6 +245,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -254,7 +266,9 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "CebWord": "adlaw",
+                "Classes": [
+                  "[A; a2]"
+                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -270,7 +284,9 @@
               },
               {
                 "Number": "2",
-                "CebWord": "adlaw",
+                "Classes": [
+                  "[A; c1]"
+                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -341,6 +357,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -356,6 +373,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -388,41 +406,11 @@
         "NumberedDefs": [
           {
             "Number": "1",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "LINK",
                 "Content": "ting-"
-              },
-              "Examples": []
-            }
-          },
-          {
-            "Number": "2",
-            "CebWord": "adlaw",
-            "DefEx": {
-              "Def": {
-                "Type": "TEXT",
-                "Content": "sunny."
-              },
-              "Examples": [
-                {
-                  "Phrase": "Sa buntag tiadlaw, apan sa hápun nag-ulan,",
-                  "Gloss": "In the morning it was sunny, but in the afternoon it rained."
-                }
-              ]
-            }
-          }
-        ]
-      },
-      {
-        "Word": "ting-",
-        "WordTypeDefs": [
-          {
-            "WordType": "n",
-            "DefEx": {
-              "Def": {
-                "Type": "TEXT",
-                "Content": "dry season.†"
               },
               "Examples": []
             }
@@ -431,7 +419,16 @@
       }
     ]
   },
-  "Found": true,
-  "NextIndex": 103,
-  "Diagnostics": []
+  "Found": false,
+  "NextIndex": 95,
+  "Diagnostics": [
+    {
+      "Index": 95,
+      "Message": "Trailing token after DefBody: NUMBER",
+      "Token": {
+        "Type": "NUMBER",
+        "Content": "2"
+      }
+    }
+  ]
 }

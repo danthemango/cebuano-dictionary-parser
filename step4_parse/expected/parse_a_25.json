@@ -8,7 +8,9 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "CebWord": "ábang",
+              "Classes": [
+                "[A2S; b]"
+              ],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -24,7 +26,9 @@
             },
             {
               "Number": "2",
-              "CebWord": "ábang",
+              "Classes": [
+                "[b]"
+              ],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -35,7 +39,9 @@
             },
             {
               "Number": "3",
-              "CebWord": "ábang",
+              "Classes": [
+                "[A2; c]"
+              ],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -56,6 +62,7 @@
           "NumberedDefs": [
             {
               "Number": "1",
+              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -71,6 +78,7 @@
             },
             {
               "Number": "2",
+              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -81,6 +89,7 @@
             },
             {
               "Number": "3",
+              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -122,6 +131,7 @@
         "NumberedDefs": [
           {
             "Number": "1, 2, 3",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "LINK",
@@ -132,6 +142,7 @@
           },
           {
             "Number": "4",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",

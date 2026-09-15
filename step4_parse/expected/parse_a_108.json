@@ -81,7 +81,9 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "CebWord": "ábung<sub>1</sub>",
+                "Classes": [
+                  "[A13; ac]"
+                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -113,7 +115,9 @@
             "NumberedDefs": [
               {
                 "Number": "2",
-                "CebWord": "ábung<sub>1</sub>",
+                "Classes": [
+                  "[a]"
+                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",

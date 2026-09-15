@@ -11,6 +11,7 @@
           "NumberedDefs": [
             {
               "Number": "1",
+              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -30,6 +31,7 @@
             },
             {
               "Number": "2",
+              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -53,6 +55,7 @@
             },
             {
               "Number": "3",
+              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -68,6 +71,7 @@
             },
             {
               "Number": "3a",
+              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -83,6 +87,7 @@
             },
             {
               "Number": "3b",
+              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -98,7 +103,9 @@
             },
             {
               "Number": "4",
-              "CebWord": "patay",
+              "Classes": [
+                "[A; b]"
+              ],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -114,7 +121,9 @@
             },
             {
               "Number": "5",
-              "CebWord": "patay",
+              "Classes": [
+                "[a3]"
+              ],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -130,6 +139,7 @@
             },
             {
               "Number": "6",
+              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -140,6 +150,7 @@
             },
             {
               "Number": "7",
+              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -176,6 +187,7 @@
         "NumberedDefs": [
           {
             "Number": "b1",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -186,6 +198,7 @@
           },
           {
             "Number": "b2",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -219,6 +232,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -234,6 +248,7 @@
               },
               {
                 "Number": "2",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -253,6 +268,7 @@
               },
               {
                 "Number": "3",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -263,6 +279,7 @@
               },
               {
                 "Number": "4",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -273,6 +290,7 @@
               },
               {
                 "Number": "5",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -288,6 +306,7 @@
               },
               {
                 "Number": "6",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -298,6 +317,7 @@
               },
               {
                 "Number": "7",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -313,6 +333,7 @@
               },
               {
                 "Number": "8",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -413,7 +434,9 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "CebWord": "patay",
+                "Classes": [
+                  "[A13]"
+                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -424,7 +447,9 @@
               },
               {
                 "Number": "2",
-                "CebWord": "patay",
+                "Classes": [
+                  "[C; a12]"
+                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -465,7 +490,9 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "CebWord": "patay",
+                "Classes": [
+                  "[C23; c6]"
+                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -476,7 +503,9 @@
               },
               {
                 "Number": "2",
-                "CebWord": "patay",
+                "Classes": [
+                  "[A; a]"
+                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -507,7 +536,9 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "CebWord": "patay",
+                "Classes": [
+                  "[A; c]"
+                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -523,7 +554,9 @@
               },
               {
                 "Number": "2",
-                "CebWord": "patay",
+                "Classes": [
+                  "[A; b(1)]"
+                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -539,7 +572,9 @@
               },
               {
                 "Number": "3",
-                "CebWord": "patay",
+                "Classes": [
+                  "[AP]"
+                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -575,6 +610,7 @@
             "NumberedDefs": [
               {
                 "Number": "1",
+                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -599,6 +635,7 @@
         "NumberedDefs": [
           {
             "Number": "2",
+            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
