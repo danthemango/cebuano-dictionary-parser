@@ -228,9 +228,6 @@ function Search-NumDef {
         $classes += (Get-Token $Tokens $i).Content
         $i++
     }
-    if ($classes.Count -gt 0) {
-        $numDef | Add-Member -NotePropertyName Classes -NotePropertyValue $classes -Force
-    }
 
     # cebword
     $tok = Get-Token $Tokens $i
@@ -238,6 +235,15 @@ function Search-NumDef {
         $numDef | Add-Member -NotePropertyName CebWord -NotePropertyValue $tok.Content -Force
         $found = $true
         $i++
+    }
+
+    # find any classes after cebword
+    while (IsType (Get-Token $Tokens $i) 'CLASS') {
+        $classes += (Get-Token $Tokens $i).Content
+        $i++
+    }
+    if ($classes.Count -gt 0) {
+        $numDef | Add-Member -NotePropertyName Classes -NotePropertyValue $classes -Force
     }
 
     # defex
@@ -327,8 +333,12 @@ function Search-WtDef {
     $numdefs = @()
     while (IsType (Get-Token $Tokens $i) 'NUMBER') {
         $nd = Search-NumDef -Tokens $Tokens -StartIndex $i
-        $numdefs += $nd.NumDef
-        $i = $nd.NextIndex
+        if ($nd.Found) {
+            $numdefs += $nd.NumDef
+            $i = $nd.NextIndex
+        } else {
+            break
+        }
     }
 
     if (($null -eq $cebword) -And ($numdefs.Count -eq 0) -And (-Not $defex.Found)) {

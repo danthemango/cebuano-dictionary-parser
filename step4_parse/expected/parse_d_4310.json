@@ -5,7 +5,6 @@
       "NumberedDefs": [
         {
           "Number": "1",
-          "Classes": [],
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -30,7 +29,6 @@
         {
           "Number": "1a",
           "CebWord": "— nga <span class=\"rm\">[<i lang=\"ceb\">noun</i>]</span>-a",
-          "Classes": [],
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -46,7 +44,6 @@
         },
         {
           "Number": "2",
-          "Classes": [],
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -63,7 +60,6 @@
         {
           "Number": "3",
           "CebWord": "—y",
-          "Classes": [],
           "DefEx": {
             "Def": {
               "Type": "TEXT",

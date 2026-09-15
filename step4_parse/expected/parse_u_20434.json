@@ -13,7 +13,6 @@
         {
           "Number": "1",
           "CebWord": "— ka a",
-          "Classes": [],
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -29,7 +28,6 @@
         },
         {
           "Number": "b",
-          "Classes": [],
           "DefEx": {
             "Def": {
               "Type": "TEXT",
@@ -64,7 +62,6 @@
           {
             "Number": "2",
             "CebWord": "— nga",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -84,7 +81,6 @@
           },
           {
             "Number": "2a",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -101,7 +97,6 @@
           {
             "Number": "3",
             "CebWord": "ísig (isig) —",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -118,7 +113,6 @@
           {
             "Number": "4",
             "CebWord": "— ug —",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -135,7 +129,6 @@
           {
             "Number": "5a",
             "CebWord": "— usab, sad, upud",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -152,7 +145,6 @@
           {
             "Number": "5b",
             "CebWord": "— ka pa",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
@@ -214,7 +206,6 @@
               {
                 "Number": "3",
                 "CebWord": "walay ma-",
-                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -496,7 +487,6 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -507,7 +497,6 @@
               },
               {
                 "Number": "2",
-                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -557,7 +546,6 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -592,7 +580,6 @@
         "NumberedDefs": [
           {
             "Number": "2",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "LINK",
@@ -737,7 +724,6 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -757,7 +743,6 @@
               },
               {
                 "Number": "2",
-                "Classes": [],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",

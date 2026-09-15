@@ -144,4 +144,6 @@ I'll loosen the rules.
 - [x] throw exceptions on specific keywords: "see also", "short for", "cf."
 - I think some are failing because of number > number
 - [ ] rewrite the tokenizeall and tokenize ID so I can move error files correctly
-- [ ] fix 1632, class after cebword on numdef
+- [x] fix 1632, class after cebword on numdef
+- [x] fix 1535 parsing is stuck
+- [ ] fix 1535

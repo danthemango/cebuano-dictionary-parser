@@ -51,227 +51,23 @@
                     }
                   ]
                 }
-              },
-              null,
-              {
-                "Number": "a",
-                "Classes": [],
-                "DefEx": {
-                  "Def": {
-                    "Type": "TEXT",
-                    "Content": "corner, pin down."
-                  },
-                  "Examples": [
-                    {
-                      "Phrase": "Nakabábuy (nakapabábuy) ang mga Písi sa mga Múrus sa pulù,",
-                      "Gloss": "The <span class=\"abbr\" title=\"Philippine Constabulary\"><abbr title=\"Philippine Constabulary\">P.C.</abbr></span> blockaded the Moros on the island."
-                    },
-                    {
-                      "Phrase": "Nabábuy kami tungud sa dakung bahà,",
-                      "Gloss": "We were blocked in because of the great flood."
-                    }
-                  ]
-                }
-              },
-              {
-                "Number": "b",
-                "Classes": [],
-                "DefEx": {
-                  "Def": {
-                    "Type": "TEXT",
-                    "Content": "checkmate (in chess)."
-                  },
-                  "Examples": [
-                    {
-                      "Phrase": "Babúyun nákù ang ímung piyun,",
-                      "Gloss": "I’m going to checkmate your pawn."
-                    }
-                  ]
-                }
-              },
-              {
-                "Number": "c",
-                "Classes": [
-                  "[AP; c1]"
-                ],
-                "DefEx": {
-                  "Def": {
-                    "Type": "TEXT",
-                    "Content": "tie up capital."
-                  },
-                  "Examples": [
-                    {
-                      "Phrase": "Ang ákung kwarta nabábuy sa nigusyu,",
-                      "Gloss": "My money is tied up in business."
-                    }
-                  ]
-                }
               }
             ]
-          },
-          {
-            "WordType": "a",
-            "DefEx": {
-              "Def": {
-                "Type": "TEXT",
-                "Content": "piggish, dirty."
-              },
-              "Examples": []
-            }
-          }
-        ]
-      },
-      {
-        "Word": "— ug balatían",
-        "DefEx": {
-          "Def": {
-            "Type": "TEXT",
-            "Content": "swinish, having no moral qualms."
-          },
-          "Examples": []
-        }
-      },
-      {
-        "Word": "paka-",
-        "WordTypeDefs": [
-          {
-            "WordType": "v",
-            "Classes": [
-              "[a12]"
-            ],
-            "DefEx": {
-              "Def": {
-                "Type": "TEXT",
-                "Content": "consider, treat like a pig."
-              },
-              "Examples": [
-                {
-                  "Phrase": "Gipakabábuy lang ku nímu,",
-                  "Gloss": "You just treat me like a pig."
-                }
-              ]
-            }
-          }
-        ]
-      },
-      {
-        "Word": "-an(→)",
-        "WordTypeDefs": [
-          {
-            "WordType": "n",
-            "DefEx": {
-              "Def": {
-                "Type": "TEXT",
-                "Content": "piggery."
-              },
-              "Examples": []
-            }
-          },
-          {
-            "WordType": "v",
-            "Classes": [
-              "[A1]"
-            ],
-            "DefEx": {
-              "Def": {
-                "Type": "TEXT",
-                "Content": "have, obtain a piggery."
-              },
-              "Examples": []
-            }
-          }
-        ]
-      },
-      {
-        "Word": "-in-",
-        "WordTypeDefs": [
-          {
-            "WordType": "a",
-            "NumberedDefs": [
-              {
-                "Number": "1",
-                "Classes": [],
-                "DefEx": {
-                  "Def": {
-                    "Type": "TEXT",
-                    "Content": "like a pig."
-                  },
-                  "Examples": []
-                }
-              },
-              {
-                "Number": "2",
-                "Classes": [],
-                "DefEx": {
-                  "Def": {
-                    "Type": "TEXT",
-                    "Content": "for a scolding to be abusive."
-                  },
-                  "Examples": []
-                }
-              }
-            ]
-          },
-          {
-            "WordType": "v",
-            "Classes": [
-              "[A; a12]"
-            ],
-            "NumberedDefs": [
-              {
-                "Number": "1",
-                "Classes": [],
-                "DefEx": {
-                  "Def": {
-                    "Type": "TEXT",
-                    "Content": "treat like a pig."
-                  },
-                  "Examples": [
-                    {
-                      "Phrase": "Gibinábuy ku nílag hikut,",
-                      "Gloss": "They hog-tied me."
-                    }
-                  ]
-                }
-              },
-              {
-                "Number": "2",
-                "Classes": [],
-                "DefEx": {
-                  "Def": {
-                    "Type": "TEXT",
-                    "Content": "be mercilessly scolded."
-                  },
-                  "Examples": [
-                    {
-                      "Phrase": "Gibinábuy ku níyag kasábà,",
-                      "Gloss": "He scolded me abusively."
-                    }
-                  ]
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "Word": "mag-r-(→)",
-        "WordTypeDefs": [
-          {
-            "WordType": "n",
-            "DefEx": {
-              "Def": {
-                "Type": "TEXT",
-                "Content": "pig-dealer."
-              },
-              "Examples": []
-            }
           }
         ]
       }
     ]
   },
-  "Found": true,
-  "NextIndex": 65,
-  "Diagnostics": []
+  "Found": false,
+  "NextIndex": 13,
+  "Diagnostics": [
+    {
+      "Index": 13,
+      "Message": "Trailing token after DefBody: NUMBER",
+      "Token": {
+        "Type": "NUMBER",
+        "Content": "2"
+      }
+    }
+  ]
 }

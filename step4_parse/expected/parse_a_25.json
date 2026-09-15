@@ -62,7 +62,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -78,7 +77,6 @@
             },
             {
               "Number": "2",
-              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -89,7 +87,6 @@
             },
             {
               "Number": "3",
-              "Classes": [],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -131,7 +128,6 @@
         "NumberedDefs": [
           {
             "Number": "1, 2, 3",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "LINK",
@@ -142,7 +138,6 @@
           },
           {
             "Number": "4",
-            "Classes": [],
             "DefEx": {
               "Def": {
                 "Type": "TEXT",

@@ -1,0 +1,317 @@
+{
+  "WordDef": {
+    "Def": {
+      "Word": "bag-u",
+      "WordTypeDefs": [
+        {
+          "WordType": "a",
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "new."
+                },
+                "Examples": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Conjugations": [
+      {
+        "Word": "-ng Túgun",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "New Testament."
+          },
+          "Examples": []
+        },
+        "NumberedDefs": [
+          {
+            "Number": "2",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "modern."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Ang mga batan-un sa bag-ung panahun agrisíbu,",
+                  "Gloss": "The youth nowadays is aggressive."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Word": "-ng túbù",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "the modern generation."
+          },
+          "Examples": []
+        }
+      },
+      {
+        "Word": "-ng túig",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "New Year."
+          },
+          "Examples": []
+        },
+        "NumberedDefs": [
+          {
+            "Number": "3",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "recently, just now."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Bag-u siyang abut,",
+                  "Gloss": "He is a new arrival here."
+                },
+                {
+                  "Phrase": "Bag-u pa siyang milakaw,",
+                  "Gloss": "He just left."
+                },
+                {
+                  "Phrase": "Bag-u pang gabíi pagsaka sa kawatan,",
+                  "Gloss": "It was early evening when the thief entered."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Word": "karung —",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "recently, of late."
+          },
+          "Examples": [
+            {
+              "Phrase": "Gidugù siya karung bag-u,",
+              "Gloss": "She recently menstruated."
+            }
+          ]
+        },
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "Classes": [
+                  "[B2]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "be, become new."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Mubag-u (mabag-u) nga tan-áwun ang sapátus basta limpiyáhan,",
+                      "Gloss": "Shoes will look new if you clean them."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "Classes": [
+                  "[AP1B1; a]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "change s.t. for the better, become better."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Dì ka gánì magbag-u,",
+                      "Gloss": "If you don’t reform."
+                    },
+                    {
+                      "Phrase": "Nagbag-u sila sa ílang panagway,",
+                      "Gloss": "They made their faces over anew."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "3",
+                "Classes": [
+                  "[A12; c]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "obtain s.t. new."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Nakabag-u siyag awtu pagkadaug sa swipstik,",
+                      "Gloss": "He got a new car when he won the sweepstakes."
+                    },
+                    {
+                      "Phrase": "Bag-úhan (baghúan) kug ligid ang ákung dyíp,",
+                      "Gloss": "I’ll buy new tires for my jeep."
+                    },
+                    {
+                      "Phrase": "Unsa mang gumáha ang ímung ibag-u?",
+                      "Gloss": "What brand of tires are you going to replace them with?"
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "4",
+                "Classes": [
+                  "[b4]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "feel strange, unaccustomed."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Naglísud pa siya kay gibag-úhan pa sa trabáhu,",
+                      "Gloss": "He’s having a hard time because he’s unaccustomed to the work."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "5",
+                "CebWord": "-ng túig",
+                "Classes": [
+                  "[B256; b4(1)]"
+                ],
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "for it to be New Year’s."
+                  },
+                  "Examples": []
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Word": "paN- nga túig",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "Classes": [
+              "[A2; c]"
+            ],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "celebrate New Year’s."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Didtu mi sa Hungkung mamag-ung túig,",
+                  "Gloss": "We celebrated New Year’s in H. K."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Word": "-in-",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "modern."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Ang binag-ung paági sa panguma,",
+                  "Gloss": "The modern way of farming."
+                }
+              ]
+            }
+          },
+          {
+            "WordType": "v",
+            "Classes": [
+              "[B15]"
+            ],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "change."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Nagbinag-u nga nadátù,",
+                  "Gloss": "He changed when he became rich."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Word": "mabinag-úhun",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "fond of modern things."
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Word": "bag-úhay",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "short while ago."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Bag-úhay pa lang giyud tung nilakaw si Ramun,",
+                  "Gloss": "Ramon left just a while ago.†"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "Found": true,
+  "NextIndex": 81,
+  "Diagnostics": []
+}
