@@ -1,0 +1,33 @@
+{
+  "WordDef": {
+    "Conjugations": [
+      {
+        "Word": "pa-",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "<corr id=\"xd20e15781\" title=\"Not in source\"></corr>"
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "Found": false,
+  "NextIndex": 4,
+  "Diagnostics": [
+    {
+      "Index": 4,
+      "Message": "Trailing token after DefBody: CLASS",
+      "Token": {
+        "Type": "CLASS",
+        "Content": "[A; b6]"
+      }
+    }
+  ]
+}
