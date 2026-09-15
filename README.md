@@ -120,6 +120,11 @@ I'll loosen the rules.
     - [ ] just remove a text segment with only a `<corr>` (I'm not sure if these will be useful, perhaps I should tokenize it and include some metadata on the def?)
 - 897 is failing because of a `short for` segment
     - [ ] throw exception on `short for`
-- [ ] 1535 is parsing incorrectly because of a failed tokenize of `<b>a</b>`
-    - [ ] and failed tokenize of `<b>b</b>` `</b>c</b>`
 - it appears a single letter may be used as if it's a numbered segment. I don't have much in the way of parsing sub-numbers, but I think if I find a single letter the html tag is different between an adjective (wordtype 'a') and numbered 'a'.
+
+### 2026-09-15
+- the changes yesterday pushed the total parsing rate from 93.8% to 98.8%
+- [ ] throw exceptions on "see also"
+- [ ] throw exceptions on "short for"
+- [ ] add 1535 to parse testing
+- [ ] update num-parsing to include `<b>a</b>` `<b>b</b>` `</b>c</b>`
