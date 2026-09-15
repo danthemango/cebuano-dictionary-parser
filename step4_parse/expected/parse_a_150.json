@@ -403,21 +403,47 @@
               },
               "Examples": []
             }
+          },
+          {
+            "Number": "2",
+            "WordTypeDefs": [
+              {
+                "WordType": "a",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "sunny."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Sa buntag tiadlaw, apan sa hápun nag-ulan,",
+                      "Gloss": "In the morning it was sunny, but in the afternoon it rained."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Word": "ting-",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "dry season.†"
+              },
+              "Examples": []
+            }
           }
         ]
       }
     ]
   },
-  "Found": false,
-  "NextIndex": 95,
-  "Diagnostics": [
-    {
-      "Index": 95,
-      "Message": "Trailing token after DefBody: NUMBER",
-      "Token": {
-        "Type": "NUMBER",
-        "Content": "2"
-      }
-    }
-  ]
+  "Found": true,
+  "NextIndex": 103,
+  "Diagnostics": []
 }

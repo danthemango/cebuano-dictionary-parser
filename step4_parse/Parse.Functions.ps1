@@ -246,6 +246,22 @@ function Search-NumDef {
         $numDef | Add-Member -NotePropertyName DefEx -NotePropertyValue $defex.Def -Force
         $found = $true
         $i = $defex.NextIndex
+    } else {
+        $wtdefs = @()
+        # accept a wtdef instead of a defex
+        while (IsType (Get-Token $Tokens $i) 'WORDTYPE') {
+            $wtDef = Search-WtDef -Tokens $Tokens -StartIndex $i
+            if ($wtDef.Found) {
+                $wtdefs += $wtDef.Def
+                $found = $True
+                $i = $wtDef.NextIndex
+            } else {
+                break
+            }
+        }
+        if ($wtdefs.Count -gt 0) {
+            $numDef | Add-Member -NotePropertyName WordTypeDefs -NotePropertyValue $wtdefs -Force
+        }
     }
 
     if ($found) {

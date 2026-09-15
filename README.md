@@ -139,7 +139,8 @@ I'll loosen the rules.
     - fix `<b lang="ceb">` tags if they have a digit in the content, these are just badly formatted content.
     - the fix resulted in a bad parse on 150 (see below)
 - elevate the "CopyExpecteds" script so all of the testing files are being updated for both tokenization and parsing.
-- [ ] fix wordtype missing on 150
+- [x] fix 150: accept a wtdef in the body of a numbdef
 - [ ] fix 686: links after examples
 - [ ] throw exceptions on "see also"
 - [ ] throw exceptions on "short for"
+- I think some are failing because of number > number
