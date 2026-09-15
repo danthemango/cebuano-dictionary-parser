@@ -136,6 +136,9 @@ I'll loosen the rules.
     - I will just remove all corr elements, which I think are corrections. I could do the extra work of capturing them and keeping
     them as metadata, but it could make the parser much more complicated and I don't understand what it means or how it could be
     useful.
-- [ ] fix 13875
-    - [ ] wrong tokenization for `"CEBWORD","b1"`, `"CEBWORD","b2"`
+- [x] fix 13875
+    - [x] wrong tokenization for `"CEBWORD","b1"`, `"CEBWORD","b2"`
+    - fix `<b lang="ceb">` tags if they have a digit in the content, these are just badly formatted content.
+    - the fix resulted in a bad parse on 150 (see below)
 - I elevated the "CopyExpecteds" script so all of the testing files are being updated for both tokenization and parsing.
+- [ ] fix wordtype missing on 150

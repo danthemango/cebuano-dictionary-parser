@@ -170,19 +170,468 @@
             }
           ]
         }
+      },
+      {
+        "Word": "— ug hálas",
+        "NumberedDefs": [
+          {
+            "Number": "b1",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "for men to urinate."
+              },
+              "Examples": []
+            }
+          },
+          {
+            "Number": "b2",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "for men to masturbate."
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Word": "c — sa kabugnaw",
+        "Classes": [
+          "[A; a1]"
+        ],
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "heat water until it becomes tepid."
+          },
+          "Examples": [
+            {
+              "Phrase": "Patya úsà ang kabugnaw sa túbig nga idígù sa bátà,",
+              "Gloss": "Warm the baby’s water before you bathe him."
+            }
+          ]
+        },
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "dead."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Patay na si Tátay,",
+                      "Gloss": "My father is dead."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "for s.t. to have been killed, deadened."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Patay ang ákung pagláum,",
+                      "Gloss": "I have no more hope."
+                    },
+                    {
+                      "Phrase": "Patay ang makina,",
+                      "Gloss": "The engine is dead."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "3",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "for coins to come out tails."
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "4",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "for the last stone to have been dropped in an empty hole in a game of <i lang=\"cebword\">sungkà</i>."
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "5",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "new moon."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Himatayun ang buwan run. Dì na madúgay patay na,",
+                      "Gloss": "We are in the last quarter now. Pretty soon it will be the new moon (no moon)."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "6",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "for nits to be hatched (lit. for the eggshell to be dead)."
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "7",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "be head over heels in love."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Patay siya nákù,",
+                      "Gloss": "She’s head over heels in love with me."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "8",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "<i lang=\"cebword\">in phrases</i>:"
+                  },
+                  "Examples": []
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Word": "— ug dugù",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "do s.t. in an unenthusiastic way."
+          },
+          "Examples": [
+            {
+              "Phrase": "Hinay siyang mangulitáwu kay patayg dugù. Kinahanglan hulhúgun,",
+              "Gloss": "He isn’t doing a very good job in courting the girl. He is unenthusiastic and needs prodding."
+            }
+          ]
+        }
+      },
+      {
+        "Word": "— gútum",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "poor as church mice."
+          },
+          "Examples": [
+            {
+              "Phrase": "Asa gud sila makapaiskuyla sa ílang mga bátang patay gútum man nà sila?",
+              "Gloss": "How could they send their children to school when they are poor as church mice?"
+            }
+          ]
+        }
+      },
+      {
+        "Word": "— nga irù",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "miserable, wretched."
+          },
+          "Examples": [
+            {
+              "Phrase": "Patayng irù ang táwung way kwarta,",
+              "Gloss": "A man who is penniless is miserable."
+            }
+          ]
+        }
+      },
+      {
+        "Word": "— ug lamì",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "having excessive sexual desires."
+          },
+          "Examples": [
+            {
+              "Phrase": "Patay kaáyu ug lamì nang bayhána maung kuyawng pangasaw-un,",
+              "Gloss": "It’s dangerous to marry that woman because she has excessive sexual desires."
+            }
+          ]
+        }
+      },
+      {
+        "Word": "— ug limud",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "an inveterate liar."
+          },
+          "Examples": []
+        }
+      },
+      {
+        "Word": "(←)",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "intense action of killing."
+              },
+              "Examples": []
+            }
+          },
+          {
+            "WordType": "v",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "CebWord": "patay",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "for several killings to be going on."
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "2",
+                "CebWord": "patay",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "fight it out with killing."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Patáyun nátù ang átung dúmut,",
+                      "Gloss": "We’ll settle our hatred by fighting it out to the death."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Word": "lunud, lúnud —",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "die-hard, inveterate."
+          },
+          "Examples": [
+            {
+              "Phrase": "Lúnud pátay nga sugarul,",
+              "Gloss": "An inveterate gambler."
+            }
+          ]
+        }
+      },
+      {
+        "Word": "-an(←)",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "CebWord": "patay",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "for roosters to fight it out to the death."
+                  },
+                  "Examples": []
+                }
+              },
+              {
+                "Number": "2",
+                "CebWord": "patay",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "play <i lang=\"cebword\">patáyan</i>."
+                  },
+                  "Examples": []
+                }
+              }
+            ]
+          },
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "game of betting on heads or tails played by twirling a coin."
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Word": "pataypátay",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "CebWord": "patay",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "do s.t. intensely."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Pataypatáyun (ipataypátay) nákù ning ákung láwas sa trabáhu arun ku mabúhì,",
+                      "Gloss": "I wear myself out working just to live."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "2",
+                "CebWord": "patay",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "do, act slowly without energy or enthusiasm."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Ug magpataypátay ka, mabyaan ka sa trák,",
+                      "Gloss": "If you take so long, you’ll miss the bus."
+                    }
+                  ]
+                }
+              },
+              {
+                "Number": "3",
+                "CebWord": "patay",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "pretend to be poor when one is rich, be a nobody when one is s.o."
+                  },
+                  "Examples": [
+                    {
+                      "Phrase": "Nagpapataypátay nang tawhána apan unásis diay,",
+                      "Gloss": "That man acts like a nobody but actually he’s an Onassis."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Word": "patyanay, pinatyánay",
+        "DefEx": {
+          "Def": {
+            "Type": "LINK",
+            "Content": "pátay"
+          },
+          "Examples": []
+        }
+      },
+      {
+        "Word": "palatyanan",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "NumberedDefs": [
+              {
+                "Number": "1",
+                "DefEx": {
+                  "Def": {
+                    "Type": "TEXT",
+                    "Content": "place s.t. is killed."
+                  },
+                  "Examples": []
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Word": "— sa utug",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "girl used to satisfy one’s sexual desires (lit. s.t. to kill one’s erection on)."
+          },
+          "Examples": []
+        },
+        "NumberedDefs": [
+          {
+            "Number": "2",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "total part of the body, place in the body which will cause instant death if struck."
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Word": "paN-",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "s.t. used to kill."
+              },
+              "Examples": [
+                {
+                  "Phrase": "Maáyung pamatay sa kágaw kanang sabúna,",
+                  "Gloss": "That soap is a good germicide."
+                }
+              ]
+            }
+          }
+        ]
       }
     ]
   },
-  "Found": false,
-  "NextIndex": 48,
-  "Diagnostics": [
-    {
-      "Index": 48,
-      "Message": "Trailing token after DefBody: CEBWORD",
-      "Token": {
-        "Type": "CEBWORD",
-        "Content": "— ug hálas"
-      }
-    }
-  ]
+  "Found": true,
+  "NextIndex": 161,
+  "Diagnostics": []
 }

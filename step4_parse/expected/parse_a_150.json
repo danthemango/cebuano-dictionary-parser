@@ -395,14 +395,10 @@
               },
               "Examples": []
             }
-          }
-        ]
-      },
-      {
-        "Word": "2",
-        "WordTypeDefs": [
+          },
           {
-            "WordType": "a",
+            "Number": "2",
+            "CebWord": "adlaw",
             "DefEx": {
               "Def": {
                 "Type": "TEXT",

@@ -81,9 +81,10 @@ function Split-Nums {
         $Token
     )
     process {
-        # move the corr span after a type, so we retain the info but capture the wordtype as expected
-        # e.g. '<corr id="xd20e31735" title="Not in source"><b>1</b></corr>' -> '<b>1</b> <corr id="xd20e31735" title="Not in source"></corr>'
-        $Token.Content = [regex]::Replace($Token.Content, '<corr id="(?<id>[^"]+)" title="(?<title>[^"]*)"><b>(?<num>[\d])</b></corr>', '<b>${num}</b> <corr id="${id}" title="${title}"></corr>')
+        # fix <b lang="ceb">b1</b> and the like
+        # I shouldn't have to do this but it's an obvious mistake made by the author
+        $Token.Content = [regex]::Replace($Token.Content, '<b lang="ceb">(?<num>[a-z]?\d)</b>', '<b>${num}</b>')
+        $Token.Content = [regex]::Replace($Token.Content, '<b lang="ceb">(?<num>\d[a-z]?)</b>', '<b>${num}</b>')
 
         # accept 1 to 3 digits of numbers and lowercase letters, and possibly with comma separated numbers
         $Token | Split-TokensByPattern -pattern "<b>([a-z0-9]{1,3}(?:,\s*[a-z0-9]{1,3})*?)</b>" -tokenType "NUMBER" | Assert-ValidXML
@@ -98,11 +99,6 @@ function Split-Types {
         $Token
     )
     process {
-        # move the corr span after a type, so we retain the info but capture the wordtype as expected
-        # also change the span type to corr type
-        # e.g. '<corr id="xd20e30951" title="Not in source"><i>a</i></corr>' -> '<i>a</i> <corr id="xd20e30951" title="Not in source"></corr>'
-        $Token.Content = [regex]::Replace($Token.Content, '<corr id="(?<id>[^"]+)" title="(?<title>[^"]*)"><i>(?<type>[anv])</i></corr>', '<i>${type}</i> <corr id="${id}" title="${title}"></corr>')
-
         $Token | Split-TokensByPattern -pattern "<i[^>]*>([anv])</i>" -tokenType "WORDTYPE"
     }
 }
