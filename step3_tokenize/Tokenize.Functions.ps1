@@ -358,6 +358,7 @@ function Update-ShortForm {
         return
     }
 }
+
 function Assert-ValidXMLContent {
     param (
         [string]$OldContent,
@@ -434,6 +435,20 @@ function Assert-Implemented {
     }
 }
 
+
+function Repair-Typos {
+    param(
+        [Parameter(ValueFromPipeline)]
+        $Token
+    )
+
+    process {
+        # noun and "a", marked as adjective but probably just a typo
+        $Token.Content = $Token.Content -replace '<i>n</i>\s*<i>a</i>', '<i>n</i> a'
+        $Token
+    }
+}
+
 # iterates through the list of tokens and for each text token we process more specific tokens where found
 # we usually start with a single text token per row
 function Tokenize {
@@ -446,6 +461,6 @@ function Tokenize {
         # - corr must be processed before splitting words, since it is usally inside of the word block
         # - split links must be processed before cebuano phrases because of some bad formatting (they use <i lang="ceb"> as a way to make the word "see" italic, e.g. in "see otherword")
         # I think each step should have valid XML, so we can assert valid XML after each step
-        $Token | Assert-ValidXML | Update-ShortForm | Update-Corr | Split-Nums | Split-Links | Split-CebuanoWords | Split-Classes | Split-Types | Update-ChangeCebWord | Split-CebuanoPhrases | Assert-ValidXML | Assert-Implemented
+        $Token | Assert-ValidXML | Repair-Typos | Update-ShortForm | Update-Corr | Split-Nums | Split-Links | Split-CebuanoWords | Split-Classes | Split-Types | Update-ChangeCebWord | Split-CebuanoPhrases | Assert-ValidXML | Assert-Implemented
     }
 }

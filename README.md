@@ -162,3 +162,4 @@ I'll loosen the rules.
 - fix 2995 (b.o link)
 - fix 3565, typo (double word type)
 - fix 4595: class instead of a definition
+- fix 5596, another double word type typo
