@@ -12,4 +12,4 @@ if (-Not $SkipTypos) {
 }
 Remove-Item "step4_parse\errors\error_*_$id.txt"
 . $PSScriptRoot\step3_tokenize\TokenizeId.ps1 -Id $Id -CopyToExpected:$CopyToExpected
-. $PSScriptRoot\step4_parse\ParseId.ps1 -Id $Id -CopyToExpected:$CopyToExpected
+. $PSScriptRoot\step4_parse\ParseId.ps1 -Id $Id -CopyToExpected:$CopyToExpected -Force

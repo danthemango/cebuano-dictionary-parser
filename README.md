@@ -172,3 +172,6 @@ I'll loosen the rules.
 - TODO fix 19627: mislabelled cebword?
 - fix 3384: mistagged CEBPHRASE
     - I expect cebphrases to have a comma, excl. point or question mark at the end, otherwise it's just a tagged section of text, which is probably just an extension of the definition or translated example.
+- fix 6158: it's a cebphrase that has a mistagged translation
+    - I wonder if I should update the parser to try and split on comma if the translation isn't found.
+- TODO fix 12404: cebword conjugation
