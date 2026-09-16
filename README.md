@@ -163,3 +163,4 @@ I'll loosen the rules.
 - fix 3565, typo (double word type)
 - fix 4595: class instead of a definition
 - fix 5596, another double word type typo
+- fix 6047: typo in number html tag

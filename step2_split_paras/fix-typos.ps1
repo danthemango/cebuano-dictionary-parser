@@ -1,10 +1,12 @@
 # fix some typos
 function Repair-Typos {
     param (
-        [string]$FilePath,
+        [int]$Id,
         [string]$SearchPattern,
         [string]$Replacement
     )
+
+    [string]$filePath = "$PSScriptRoot\data\para_*_$Id.xml"
 
     Write-Output "Fixing typos in file: $FilePath"
 
@@ -20,4 +22,5 @@ function Repair-Typos {
     Write-Output "Typos fixed in file: $FilePath"
 }
 
-Repair-Typos -FilePath "$PSScriptRoot\data\para_b_3565.xml" -SearchPattern '<i>a</i> protrusion' -Replacement 'a protrusion'
+Repair-Typos -Id 3565 -SearchPattern '<i>a</i> protrusion' -Replacement 'a protrusion'
+Repair-Typos -Id 6047 -SearchPattern '<i lang="ceb">1</i>' -Replacement '<b>1</b>'
