@@ -147,3 +147,8 @@ I'll loosen the rules.
 - fix 1535 parsing is stuck
 - fix 1535: accept a nested number def instead of a defex
 - fix 1789: class after cebword on wordtype
+
+### 2026-09-16
+- I added -Parallel blocks, since I realized I'm blocked mostly on disk accesses
+- I had to change `$Force` to `$using:Force` inside of those blocks, since inheriting scope is done differently in powershell
+- I changed tokenizeall to only write error on `-Verbose`

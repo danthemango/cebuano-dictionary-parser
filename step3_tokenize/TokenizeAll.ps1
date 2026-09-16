@@ -1,6 +1,15 @@
+<#
+.DESCRIPTION
+run tokenization on all definitions
+.PARAMETER Force
+Overwrite the output file
+.PARAMETER Verbose
+Print full error message
+#>
 param (
     # if true, update the files even if they exists
-    [switch]$Force
+    [switch]$Force,
+    [switch]$Verbose
 )
 
 [string]$inDir = "step2_split_paras\data"
@@ -22,7 +31,7 @@ Get-ChildItem -Path $inDir -Filter "para_*.xml" | ForEach-Object -Parallel {
     $errorFile = $errorFile -replace ".xml$", ".txt"
     $errorFile = Join-Path -Path $errorDir -ChildPath (Split-Path -Leaf $errorFile)
 
-    if ((-Not (Test-Path $outFile)) -Or $Force) {
+    if ((-Not (Test-Path $outFile)) -Or $using:Force) {
         try {
             if (Test-Path $errorFile) {
                 Remove-Item -Path $errorFile -Force
@@ -39,7 +48,11 @@ Get-ChildItem -Path $inDir -Filter "para_*.xml" | ForEach-Object -Parallel {
             [xml]$inFileXml = Get-Content $inFile
             $errorMessage += "`n`n$($inFileXml.root.InnerXml)"
             $errorMessage | Out-File -FilePath $errorFile -Encoding UTF8
-            Write-Error $errorMessage
+            if ($using:Verbose) {
+                Write-Error $errorMessage
+            } else {
+                Write-Error "Failed to tokenize $inFile"
+            }
         }
     }
 }
