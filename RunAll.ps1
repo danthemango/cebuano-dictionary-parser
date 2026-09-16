@@ -5,7 +5,6 @@ param (
 Write-Output "Deleting empty files"
 Get-ChildItem "step3_tokenize\data" | Where-Object length -eq 0 | Remove-Item
 
-Write-Output "fix typos"
 step2_split_paras\fix-typos.ps1
 
 $tokSW = [Diagnostics.Stopwatch]::StartNew()

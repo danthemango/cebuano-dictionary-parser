@@ -22,5 +22,8 @@ function Repair-Typos {
     Write-Output "Typos fixed in file: $FilePath"
 }
 
+Write-Output "fix typos"
+
 Repair-Typos -Id 3565 -SearchPattern '<i>a</i> protrusion' -Replacement 'a protrusion'
 Repair-Typos -Id 6047 -SearchPattern '<i lang="ceb">1</i>' -Replacement '<b>1</b>'
+Repair-Typos -Id 6600 -SearchPattern '<b>1</b> a' -Replacement '<b>1a</b>'
