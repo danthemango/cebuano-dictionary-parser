@@ -19,7 +19,6 @@ param (
     [switch]$Force
 )
 
-# [string]$inDir = "$PSScriptRoot\..\step3_tokenize\data"
 [string]$outDir = "$PSScriptRoot\data"
 mkdir -Force $outDir | Out-Null
 
@@ -33,8 +32,7 @@ if (-Not $Silent) { Write-Host "Read $($inFile.FullName)" }
 [string]$outDir = "$PSScriptRoot\data"
 mkdir -Force $outDir | Out-Null
 
-$outFile = $inFile.FullName -replace "tokens_", "parse_"
-$outFile = $outFile -replace "\.csv$", ".json"
+$outFile = $inFile.FullName -replace "tokens_", "parse_" -replace "\.csv$", ".json"
 $outFile = Join-Path -Path $outDir -ChildPath (Split-Path -Leaf $outFile)
 
 # delete the error file if it exists
