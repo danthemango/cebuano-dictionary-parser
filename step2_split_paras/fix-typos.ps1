@@ -29,7 +29,6 @@ function Repair-Typos {
 Write-Output "fix typos"
 
 Repair-Typos -Id 3565 -SearchPattern '<i>a</i> protrusion' -Replacement 'a protrusion'
-Repair-Typos -Id 6047 -SearchPattern '<i lang="ceb">1</i>' -Replacement '<b>1</b>'
 Repair-Typos -Id 6600 -SearchPattern '<b>1</b> a' -Replacement '<b>1a</b>'
 Repair-Typos -Id 6742 -SearchPattern '<i lang="ceb">Ihúlug ning suláta, Mail this letter.</i>' -Replacement '<i lang="ceb">Ihúlug ning suláta,</i> Mail this letter.'
 Repair-Typos -Id 6885 -SearchPattern '<i lang="ceb">Hustu na rung ilarga, Now is a good time to leave.</i>' -Replacement '<i lang="ceb">Hustu na rung ilarga,</i> Now is a good time to leave.'
