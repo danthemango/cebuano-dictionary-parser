@@ -40,3 +40,5 @@ Repair-Typos -Id 11368 -SearchPattern '<i lang="ceb">Wà malínis ang ákung kin
 Repair-Typos -Id 11956 -SearchPattern '(<i lang="ceb">Past</i>: <b lang="ceb">nag-</b><i lang="ceb">or</i><b lang="ceb">ga-</b>. <i lang="ceb">Subjunctive</i>: <b lang="ceb">mag-</b>.)' -Replacement '(Past: nag- or ga-. Subjunctive: mag-.)'
 # remove thsi explanation section since it's not labelled as part of any def
 Repair-Typos -Id 11956 -SearchPattern 'Verbs with <i lang="ceb">mag-</i>, <i lang="ceb">nag-</i> have the following meanings \(as opposed to verbs with <i lang="ceb">mi-</i>, <i lang="ceb">mu-</i> — <i lang="ceb">see</i><span class="sc" lang="ceb"><a href="#mu-">mu-</a></span>\):', ''
+Repair-Typos -Id 18768 -SearchPattern '<span class="sc" lang="ceb">un</span>' -Replacement 'UN'
+Repair-Typos -Id 20778 -SearchPattern '<b>y</b>' -Replacement '<b lang="ceb">y</b'
