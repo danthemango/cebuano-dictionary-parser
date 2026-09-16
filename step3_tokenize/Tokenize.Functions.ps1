@@ -135,7 +135,7 @@ function Split-CebuanoPhrases {
         # note: this regex uses the negative lookahead: (?:(?!</i>).)*?
         # it's the 0 or more lazy quantifier with non-capturing group containing negative lookahead </i>
         # meaning: "capture any text as long as it's not </i>
-        $Token | Split-TokensByPattern -pattern '<i lang="ceb">((?:(?!</i>).)*?[,!?\.])</i>' -tokenType "CEBPHRASE"
+        $Token | Split-TokensByPattern -pattern '^\s*<i lang="ceb">((?:(?!</i>).)*?[,!?\.])</i>' -tokenType "CEBPHRASE" | Split-TokensByPattern -pattern '(?<=[.!?]\)?\]?)\s*<i lang="ceb">((?:(?!</i>).)*?[,!?\.])</i>' -tokenType "CEBPHRASE"
     }
 }
 
@@ -284,7 +284,7 @@ function Update-ChangeCebWord {
         # anything with a colon:
         $Token.Content = [regex]::Replace($Token.Content, '<i lang="ceb">(?<content>(?:.)*?:)</i>', '<i>${content}</i>')
         # if the some keywords appear, I will assume it's a mistagged section
-        $Token.Content = [regex]::Replace($Token.Content, '<i lang="ceb">(?<content>[^<]*?(statement|particle|condition|future|existential|with|interrogative|phrase|subject|addition|compare|quotation|s\.t\.|s\.o|s\.w\.|k\.o\.|lit\.|voc\.)[^<]*?)</i>', '<i>${content}</i>')
+        $Token.Content = [regex]::Replace($Token.Content, '<i lang="ceb">(?<content>[^<]*?(statement|particle|condition|future|existential|with|interrogative|phrase|subject|addition|compare|quotation|s\.t\.|s\.o|s\.w\.|k\.o\.|lit\.|voc\.|noun|pronoun|adj\.)[^<]*?)</i>', '<i>${content}</i>')
 
         # if there is no comma at the end inside of the tags,
         # replace lang="ceb" with lang="cebword"
@@ -434,7 +434,6 @@ function Assert-Implemented {
         $Token
     }
 }
-
 
 function Repair-Typos {
     param(

@@ -169,3 +169,6 @@ I'll loosen the rules.
 - fix 6742: typo in cebphrase
 - allow class after DefEx
     - I'm not sure what this means, it can fix a bit less than a dozen broken parses
+- TODO fix 19627: mislabelled cebword?
+- fix 3384: mistagged CEBPHRASE
+    - I expect cebphrases to have a comma, excl. point or question mark at the end, otherwise it's just a tagged section of text, which is probably just an extension of the definition or translated example.

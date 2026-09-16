@@ -1,0 +1,68 @@
+{
+  "WordDef": {
+    "Def": {
+      "Word": "bulíru",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "bolero music."
+                },
+                "Examples": []
+              }
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "bolero vest."
+                },
+                "Examples": []
+              }
+            }
+          ]
+        },
+        {
+          "WordType": "v",
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "set the rhythm of a song to the <i lang=\"ceb\">tempo di bolero.</i>"
+                },
+                "Examples": []
+              },
+              "Classes": [
+                "[A12; c16]"
+              ]
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "wear, make into a bolero vest."
+                },
+                "Examples": []
+              },
+              "Classes": [
+                "[A; c1]"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "Found": true,
+  "NextIndex": 13,
+  "Diagnostics": []
+}

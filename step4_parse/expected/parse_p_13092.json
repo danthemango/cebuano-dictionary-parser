@@ -180,7 +180,7 @@
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
-                  "Content": "<i lang=\"cebword\">[noun]-un</i> what [noun] are you talking about?"
+                  "Content": "<i>[noun]-un</i> what [noun] are you talking about?"
                 },
                 "Examples": [
                   {
@@ -566,13 +566,9 @@
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
-                "Content": "["
+                "Content": "[<i>noun, pronoun, adj.</i>] if [noun] were [noun, pronoun, adj.]."
               },
               "Examples": [
-                {
-                  "Phrase": "noun, pronoun, adj.",
-                  "Gloss": "] if [noun] were [noun, pronoun, adj.]."
-                },
                 {
                   "Phrase": "Aku pay Huwan,",
                   "Gloss": "If I were John."
@@ -819,6 +815,6 @@
     ]
   },
   "Found": true,
-  "NextIndex": 246,
+  "NextIndex": 244,
   "Diagnostics": []
 }
