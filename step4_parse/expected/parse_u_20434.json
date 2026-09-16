@@ -165,9 +165,6 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "Classes": [
-                  "[A12; a12]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -179,13 +176,13 @@
                       "Gloss": "If only I could make up my mind to leave her!"
                     }
                   ]
-                }
+                },
+                "Classes": [
+                  "[A12; a12]"
+                ]
               },
               {
                 "Number": "2",
-                "Classes": [
-                  "[b(1)]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -201,7 +198,10 @@
                       "Gloss": "Let’s have a fight. I’ll beat you with one hand."
                     }
                   ]
-                }
+                },
+                "Classes": [
+                  "[b(1)]"
+                ]
               },
               {
                 "Number": "3",
@@ -231,9 +231,6 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "Classes": [
-                  "[C; a12]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -249,20 +246,23 @@
                       "Gloss": "Let’s just put this together so we use only one container."
                     }
                   ]
-                }
+                },
+                "Classes": [
+                  "[C; a12]"
+                ]
               },
               {
                 "Number": "2",
-                "Classes": [
-                  "[a12]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "LINK",
                     "Content": "usa: v1."
                   },
                   "Examples": []
-                }
+                },
+                "Classes": [
+                  "[a12]"
+                ]
               }
             ]
           }
@@ -356,9 +356,6 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "Classes": [
-                  "[A]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -370,13 +367,13 @@
                       "Gloss": "If they leave, I will be alone in this house."
                     }
                   ]
-                }
+                },
+                "Classes": [
+                  "[A]"
+                ]
               },
               {
                 "Number": "2",
-                "Classes": [
-                  "[A1; a12]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -388,7 +385,10 @@
                       "Gloss": "I will do the plowing alone."
                     }
                   ]
-                }
+                },
+                "Classes": [
+                  "[A1; a12]"
+                ]
               }
             ]
           }
@@ -778,29 +778,29 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "Classes": [
-                  "[A; a]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
                     "Content": "do one at a time."
                   },
                   "Examples": []
-                }
+                },
+                "Classes": [
+                  "[A; a]"
+                ]
               },
               {
                 "Number": "2",
-                "Classes": [
-                  "[AC; b]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
                     "Content": "do the <i lang=\"cebword\">tinagsa</i> dance."
                   },
                   "Examples": []
-                }
+                },
+                "Classes": [
+                  "[AC; b]"
+                ]
               }
             ]
           },

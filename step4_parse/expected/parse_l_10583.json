@@ -270,9 +270,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [
-                "[A3]"
-              ],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -288,13 +285,13 @@
                     "Gloss": "Don’t take it the wrong way."
                   }
                 ]
-              }
+              },
+              "Classes": [
+                "[A3]"
+              ]
             },
             {
               "Number": "1a",
-              "Classes": [
-                "[B126; b4(1)]"
-              ],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -306,13 +303,13 @@
                     "Gloss": "He went off his rocker because of his extreme grief."
                   }
                 ]
-              }
+              },
+              "Classes": [
+                "[B126; b4(1)]"
+              ]
             },
             {
               "Number": "2",
-              "Classes": [
-                "[A13]"
-              ],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -324,26 +321,26 @@
                     "Gloss": "I feel sick."
                   }
                 ]
-              }
+              },
+              "Classes": [
+                "[A13]"
+              ]
             },
             {
               "Number": "3",
-              "Classes": [
-                "[B]"
-              ],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
                   "Content": "get bad, worsen."
                 },
                 "Examples": []
-              }
+              },
+              "Classes": [
+                "[B]"
+              ]
             },
             {
               "Number": "3a",
-              "Classes": [
-                "[B1256; b6]"
-              ],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -359,7 +356,10 @@
                     "Gloss": "I feel uneasy in my situation."
                   }
                 ]
-              }
+              },
+              "Classes": [
+                "[B1256; b6]"
+              ]
             }
           ]
         }
@@ -413,9 +413,6 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "Classes": [
-                  "[A; a12]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -435,13 +432,13 @@
                       "Gloss": "I will come back for this some other time because I can not take it now."
                     }
                   ]
-                }
+                },
+                "Classes": [
+                  "[A; a12]"
+                ]
               },
               {
                 "Number": "2",
-                "Classes": [
-                  "[A; ac]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -457,7 +454,10 @@
                       "Gloss": "Set this aside for him."
                     }
                   ]
-                }
+                },
+                "Classes": [
+                  "[A; ac]"
+                ]
               }
             ]
           }
@@ -698,9 +698,6 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "Classes": [
-                  "[A23; c2]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -716,13 +713,13 @@
                       "Gloss": "I will be hurt if you treat me like a stranger."
                     }
                   ]
-                }
+                },
+                "Classes": [
+                  "[A23; c2]"
+                ]
               },
               {
                 "Number": "2",
-                "Classes": [
-                  "[A23; c3]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -734,7 +731,10 @@
                       "Gloss": "I will not treat my wife’s relatives like outsiders."
                     }
                   ]
-                }
+                },
+                "Classes": [
+                  "[A23; c3]"
+                ]
               }
             ]
           }

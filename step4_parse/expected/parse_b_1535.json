@@ -36,9 +36,6 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "Classes": [
-                  "[A12]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -50,7 +47,10 @@
                       "Gloss": "I got three pigs for taking care of his sow."
                     }
                   ]
-                }
+                },
+                "Classes": [
+                  "[A12]"
+                ]
               },
               {
                 "Number": "2",
@@ -94,9 +94,6 @@
                   },
                   {
                     "Number": "c",
-                    "Classes": [
-                      "[AP; c1]"
-                    ],
                     "DefEx": {
                       "Def": {
                         "Type": "TEXT",
@@ -108,7 +105,10 @@
                           "Gloss": "My money is tied up in business."
                         }
                       ]
-                    }
+                    },
+                    "Classes": [
+                      "[AP; c1]"
+                    ]
                   }
                 ]
               }

@@ -98,9 +98,6 @@
             },
             {
               "Number": "4",
-              "Classes": [
-                "[A; b]"
-              ],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -112,13 +109,13 @@
                     "Gloss": "Round off the edges of the table."
                   }
                 ]
-              }
+              },
+              "Classes": [
+                "[A; b]"
+              ]
             },
             {
               "Number": "5",
-              "Classes": [
-                "[a3]"
-              ],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -130,7 +127,10 @@
                     "Gloss": "This toss will be all tails."
                   }
                 ]
-              }
+              },
+              "Classes": [
+                "[a3]"
+              ]
             },
             {
               "Number": "6",
@@ -159,9 +159,6 @@
     "Conjugations": [
       {
         "Word": "a — sa báhù",
-        "Classes": [
-          "[A2P; a1]"
-        ],
         "DefEx": {
           "Def": {
             "Type": "TEXT",
@@ -173,7 +170,10 @@
               "Gloss": "Spices can cover the fishy taste of fish."
             }
           ]
-        }
+        },
+        "Classes": [
+          "[A2P; a1]"
+        ]
       },
       {
         "Word": "— ug hálas",
@@ -202,9 +202,6 @@
       },
       {
         "Word": "c — sa kabugnaw",
-        "Classes": [
-          "[A; a1]"
-        ],
         "DefEx": {
           "Def": {
             "Type": "TEXT",
@@ -217,6 +214,9 @@
             }
           ]
         },
+        "Classes": [
+          "[A; a1]"
+        ],
         "WordTypeDefs": [
           {
             "WordType": "a",
@@ -417,22 +417,19 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "Classes": [
-                  "[A13]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
                     "Content": "for several killings to be going on."
                   },
                   "Examples": []
-                }
+                },
+                "Classes": [
+                  "[A13]"
+                ]
               },
               {
                 "Number": "2",
-                "Classes": [
-                  "[C; a12]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -444,7 +441,10 @@
                       "Gloss": "We’ll settle our hatred by fighting it out to the death."
                     }
                   ]
-                }
+                },
+                "Classes": [
+                  "[C; a12]"
+                ]
               }
             ]
           }
@@ -473,29 +473,29 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "Classes": [
-                  "[C23; c6]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
                     "Content": "for roosters to fight it out to the death."
                   },
                   "Examples": []
-                }
+                },
+                "Classes": [
+                  "[C23; c6]"
+                ]
               },
               {
                 "Number": "2",
-                "Classes": [
-                  "[A; a]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
                     "Content": "play <i lang=\"cebword\">patáyan</i>."
                   },
                   "Examples": []
-                }
+                },
+                "Classes": [
+                  "[A; a]"
+                ]
               }
             ]
           },
@@ -519,9 +519,6 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "Classes": [
-                  "[A; c]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -533,13 +530,13 @@
                       "Gloss": "I wear myself out working just to live."
                     }
                   ]
-                }
+                },
+                "Classes": [
+                  "[A; c]"
+                ]
               },
               {
                 "Number": "2",
-                "Classes": [
-                  "[A; b(1)]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -551,13 +548,13 @@
                       "Gloss": "If you take so long, you’ll miss the bus."
                     }
                   ]
-                }
+                },
+                "Classes": [
+                  "[A; b(1)]"
+                ]
               },
               {
                 "Number": "3",
-                "Classes": [
-                  "[AP]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -569,7 +566,10 @@
                       "Gloss": "That man acts like a nobody but actually he’s an Onassis."
                     }
                   ]
-                }
+                },
+                "Classes": [
+                  "[AP]"
+                ]
               }
             ]
           }

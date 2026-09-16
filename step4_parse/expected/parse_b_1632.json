@@ -113,9 +113,6 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "Classes": [
-                  "[B2]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -127,13 +124,13 @@
                       "Gloss": "Shoes will look new if you clean them."
                     }
                   ]
-                }
+                },
+                "Classes": [
+                  "[B2]"
+                ]
               },
               {
                 "Number": "2",
-                "Classes": [
-                  "[AP1B1; a]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -149,13 +146,13 @@
                       "Gloss": "They made their faces over anew."
                     }
                   ]
-                }
+                },
+                "Classes": [
+                  "[AP1B1; a]"
+                ]
               },
               {
                 "Number": "3",
-                "Classes": [
-                  "[A12; c]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -175,13 +172,13 @@
                       "Gloss": "What brand of tires are you going to replace them with?"
                     }
                   ]
-                }
+                },
+                "Classes": [
+                  "[A12; c]"
+                ]
               },
               {
                 "Number": "4",
-                "Classes": [
-                  "[b4]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -193,21 +190,24 @@
                       "Gloss": "He’s having a hard time because he’s unaccustomed to the work."
                     }
                   ]
-                }
+                },
+                "Classes": [
+                  "[b4]"
+                ]
               },
               {
                 "Number": "5",
                 "CebWord": "-ng túig",
-                "Classes": [
-                  "[B256; b4(1)]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
                     "Content": "for it to be New Year’s."
                   },
                   "Examples": []
-                }
+                },
+                "Classes": [
+                  "[B256; b4(1)]"
+                ]
               }
             ]
           }

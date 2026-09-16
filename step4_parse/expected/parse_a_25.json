@@ -8,9 +8,6 @@
           "NumberedDefs": [
             {
               "Number": "1",
-              "Classes": [
-                "[A2S; b]"
-              ],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -22,26 +19,26 @@
                     "Gloss": "The old man rents one of the rooms."
                   }
                 ]
-              }
+              },
+              "Classes": [
+                "[A2S; b]"
+              ]
             },
             {
               "Number": "2",
-              "Classes": [
-                "[b]"
-              ],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
                   "Content": "hire a prostitute."
                 },
                 "Examples": []
-              }
+              },
+              "Classes": [
+                "[b]"
+              ]
             },
             {
               "Number": "3",
-              "Classes": [
-                "[A2; c]"
-              ],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -53,7 +50,10 @@
                     "Gloss": "I will sacrifice this pig as rental for the land."
                   }
                 ]
-              }
+              },
+              "Classes": [
+                "[A2; c]"
+              ]
             }
           ]
         },

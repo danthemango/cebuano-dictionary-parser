@@ -1,0 +1,187 @@
+{
+  "WordDef": {
+    "Def": {
+      "Word": "kudlit",
+      "WordTypeDefs": [
+        {
+          "WordType": "v",
+          "Classes": [
+            "[A; a]"
+          ],
+          "NumberedDefs": [
+            {
+              "Number": "1",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "make a scratch, pinprick, or line on s.t."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Kasingkásing nga gikudlit sa buktun, papil, káhuy,",
+                    "Gloss": "A heart tattooed on the arm, drawn on the paper, carved into the tree."
+                  },
+                  {
+                    "Phrase": "Gikudlítan sa duktur ang hubag,",
+                    "Gloss": "The doctor made an incision in the boil."
+                  }
+                ]
+              },
+              "Classes": [
+                "[A; b]"
+              ]
+            },
+            {
+              "Number": "1a",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "vaccinate."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Nía na ang nars nga mukudlit sa mga bátà,",
+                    "Gloss": "Here is the nurse to vaccinate (lit. prick) the children."
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "1b",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "change the palm configuration of a child that has the mark of a crocodile on his palm (<i lang=\"cebword\">buayáhun</i>) which betokens ill."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Kinahanglang kudlítan ang buayáhun arun kabuhíag anak,",
+                    "Gloss": "A child that bears the mark of the crocodile on his palm should have it extended so his parents will not have all their children die on them."
+                  }
+                ]
+              }
+            },
+            {
+              "Number": "2",
+              "DefEx": {
+                "Def": {
+                  "Type": "TEXT",
+                  "Content": "write s.t. (literary)."
+                },
+                "Examples": [
+                  {
+                    "Phrase": "Bálak nga gikudlit sa íyang dágang,",
+                    "Gloss": "The poem that his pen produced."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "WordType": "n",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "lines, scratches, pinpricks."
+            },
+            "Examples": []
+          }
+        }
+      ]
+    },
+    "Conjugations": [
+      {
+        "Word": "— sa pálad",
+        "NumberedDefs": [
+          {
+            "Number": "1",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "lines in the palm."
+              },
+              "Examples": []
+            }
+          },
+          {
+            "Number": "2",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "one’s fate or fortune as indicated by the palm."
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Word": "pa-",
+        "WordTypeDefs": [
+          {
+            "WordType": "v",
+            "Classes": [
+              "[A; ab]"
+            ],
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "have oneself inoculated or have the lines on the palm extended."
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Word": "-anan",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "person to be inoculated, place to be punctured, surface to be written on."
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Word": "-in-",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "marks made."
+              },
+              "Examples": []
+            }
+          }
+        ]
+      },
+      {
+        "Word": "mag-r-",
+        "WordTypeDefs": [
+          {
+            "WordType": "n",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "one who inoculates or tattoos."
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "Found": true,
+  "NextIndex": 42,
+  "Diagnostics": []
+}

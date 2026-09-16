@@ -91,9 +91,6 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "Classes": [
-                  "[B; a2]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -105,13 +102,13 @@
                       "Gloss": "The mat will become smelly because the child urinated on it."
                     }
                   ]
-                }
+                },
+                "Classes": [
+                  "[B; a2]"
+                ]
               },
               {
                 "Number": "2",
-                "Classes": [
-                  "[A12]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -123,7 +120,10 @@
                       "Gloss": "Did you smell the fragrance of the roses?"
                     }
                   ]
-                }
+                },
+                "Classes": [
+                  "[A12]"
+                ]
               },
               {
                 "Number": "b",
@@ -141,9 +141,6 @@
                 "NumDefs": [
                   {
                     "Number": "1",
-                    "Classes": [
-                      "[B12; a]"
-                    ],
                     "DefEx": {
                       "Def": {
                         "Type": "TEXT",
@@ -155,13 +152,13 @@
                           "Gloss": "The meat became spoiled because you did not cook it yesterday."
                         }
                       ]
-                    }
+                    },
+                    "Classes": [
+                      "[B12; a]"
+                    ]
                   },
                   {
                     "Number": "2",
-                    "Classes": [
-                      "[a12]"
-                    ],
                     "DefEx": {
                       "Def": {
                         "Type": "TEXT",
@@ -173,7 +170,10 @@
                           "Gloss": "You first ferment the coconut milk, then make it into oil."
                         }
                       ]
-                    }
+                    },
+                    "Classes": [
+                      "[a12]"
+                    ]
                   }
                 ]
               }
@@ -212,9 +212,6 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "Classes": [
-                  "[A23]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -226,7 +223,10 @@
                       "Gloss": "You smell of jackfruit."
                     }
                   ]
-                }
+                },
+                "Classes": [
+                  "[A23]"
+                ]
               },
               {
                 "Number": "1a",
@@ -246,9 +246,6 @@
               },
               {
                 "Number": "2",
-                "Classes": [
-                  "[A]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -260,13 +257,13 @@
                       "Gloss": "The deer ran when it perceived the odor of man."
                     }
                   ]
-                }
+                },
+                "Classes": [
+                  "[A]"
+                ]
               },
               {
                 "Number": "3",
-                "Classes": [
-                  "[A2]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -282,7 +279,10 @@
                       "Gloss": "The fool got wind of our plans."
                     }
                   ]
-                }
+                },
+                "Classes": [
+                  "[A2]"
+                ]
               }
             ]
           }

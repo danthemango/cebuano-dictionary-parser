@@ -68,9 +68,6 @@
             },
             {
               "Number": "3",
-              "Classes": [
-                "[C13]"
-              ],
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
@@ -82,7 +79,10 @@
                     "Gloss": "They did not meet because they just passed each other on the road."
                   }
                 ]
-              }
+              },
+              "Classes": [
+                "[C13]"
+              ]
             }
           ]
         }
@@ -91,9 +91,6 @@
     "Conjugations": [
       {
         "Word": "(←)",
-        "Classes": [
-          "[B]"
-        ],
         "DefEx": {
           "Def": {
             "Type": "TEXT",
@@ -105,7 +102,10 @@
               "Gloss": "Intertwining vines."
             }
           ]
-        }
+        },
+        "Classes": [
+          "[B]"
+        ]
       }
     ]
   },

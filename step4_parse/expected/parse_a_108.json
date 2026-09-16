@@ -81,9 +81,6 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "Classes": [
-                  "[A13; ac]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -99,7 +96,10 @@
                       "Gloss": "(Make the fire so that) the mango tree will be in the path of the smoke."
                     }
                   ]
-                }
+                },
+                "Classes": [
+                  "[A13; ac]"
+                ]
               }
             ]
           },
@@ -115,9 +115,6 @@
             "NumberedDefs": [
               {
                 "Number": "2",
-                "Classes": [
-                  "[a]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -133,7 +130,10 @@
                       "Gloss": "If you shoot at a flying bird, aim a little ahead."
                     }
                   ]
-                }
+                },
+                "Classes": [
+                  "[a]"
+                ]
               }
             ]
           }

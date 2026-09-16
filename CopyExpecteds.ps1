@@ -29,9 +29,10 @@ $ids = @(
     4595,
     485,
     686,
-    89
+    89,
+    9492
 )
 
 foreach ($id in $ids) {
-    . $PSScriptRoot\RunId.ps1 -Id $id -CopyToExpected
+    . $PSScriptRoot\RunId.ps1 -Id $id -CopyToExpected -SkipTypos
 }

@@ -128,9 +128,6 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "Classes": [
-                  "[A3; b6]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -146,13 +143,13 @@
                       "Gloss": "Pay him ten pesos per day."
                     }
                   ]
-                }
+                },
+                "Classes": [
+                  "[A3; b6]"
+                ]
               },
               {
                 "Number": "2",
-                "Classes": [
-                  "[A; b6]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -164,7 +161,10 @@
                       "Gloss": "Come to my house for my birthday party."
                     }
                   ]
-                }
+                },
+                "Classes": [
+                  "[A; b6]"
+                ]
               }
             ]
           }
@@ -258,9 +258,6 @@
             "NumberedDefs": [
               {
                 "Number": "1",
-                "Classes": [
-                  "[A; a2]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
@@ -272,20 +269,23 @@
                       "Gloss": "I will visit you daily."
                     }
                   ]
-                }
+                },
+                "Classes": [
+                  "[A; a2]"
+                ]
               },
               {
                 "Number": "2",
-                "Classes": [
-                  "[A; c1]"
-                ],
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
                     "Content": "make water warm."
                   },
                   "Examples": []
-                }
+                },
+                "Classes": [
+                  "[A; c1]"
+                ]
               }
             ]
           }
