@@ -9,7 +9,7 @@ mkdir -Force $outDir | Out-Null
 $errorDir = "step3_tokenize\errors"
 mkdir -Force $errorDir | Out-Null
 
-Get-ChildItem -Path $inDir -Filter "para_*.xml" | ForEach-Object {
+Get-ChildItem -Path $inDir -Filter "para_*.xml" | ForEach-Object -Parallel {
     $inFile = $_
     $outFile = $inFile.FullName -replace "para_", "tokens_"
     $outFile = $outFile -replace ".xml$", ".csv"
@@ -25,7 +25,7 @@ Get-ChildItem -Path $inDir -Filter "para_*.xml" | ForEach-Object {
             if (Test-Path $errorFile) {
                 Remove-Item -Path $errorFile -Force
             }
-            . $PSScriptRoot\TokenizeFile.ps1 -InFile $inFile | Export-Csv -Path $outFile -NoTypeInformation
+            step3_tokenize\TokenizeFile.ps1 -InFile $inFile | Export-Csv -Path $outFile -NoTypeInformation
         } catch {
             # delete the outFile if partially created
             if (Test-Path $outFile) {
