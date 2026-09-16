@@ -1,0 +1,37 @@
+{
+  "WordDef": {
+    "Def": {
+      "Word": "disturbu",
+      "WordTypeDefs": [
+        {
+          "WordType": "v",
+          "Classes": [
+            "[B6P; a]"
+          ]
+        },
+        {
+          "WordType": "n",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "nuisance, s.t. that disturbs."
+            },
+            "Examples": [
+              {
+                "Phrase": "Disturbu kaáyu kining pagsígig íhì,",
+                "Gloss": "It is a nuisance to have to urinate all the time."
+              },
+              {
+                "Phrase": "Nadisturbu ang ílang panimuyù tungud sa íyang pinaangkan,",
+                "Gloss": "The tranquility of their home was disturbed on account of her illegitimate child."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "Found": true,
+  "NextIndex": 9,
+  "Diagnostics": []
+}

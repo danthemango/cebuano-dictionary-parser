@@ -318,7 +318,10 @@ function Search-WtDef {
       WTDEF ::= WORDTYPE CLASS* [CEBWORD] ( NUMDEF+ | DEFEX )
       a word type def may have a class, and must have either have a cebword, a defex, one or more numdefs, or both
     #>
-    param([object[]]$Tokens, [int]$StartIndex)
+    param(
+        [object[]]$Tokens,
+        [int]$StartIndex
+    )
     $i = $StartIndex;
 
     # Require WORDTYPE
@@ -373,7 +376,28 @@ function Search-WtDef {
         }
     }
 
-    if (($null -eq $cebword) -And ($numdefs.Count -eq 0) -And (-Not $defex.Found)) {
+    $found = $false
+    $def = [PSCustomObject]@{
+        WordType = $wtTok.Content
+    }
+    if ($null -ne $cebword) {
+        $def | Add-Member -NotePropertyName CebWord -NotePropertyValue $cebword -Force
+        $found = $true
+    }
+    if ($classes.Count -gt 0) {
+        $def | Add-Member -NotePropertyName Classes -NotePropertyValue $classes -Force
+        $found = $true
+    }
+    if ($defex.Found) {
+        $def | Add-Member -NotePropertyName DefEx -NotePropertyValue $defex.Def -Force
+        $found = $true
+    }
+    if ($numdefs.Count -gt 0) {
+        $def | Add-Member -NotePropertyName NumberedDefs -NotePropertyValue $numdefs -Force
+        $found = $true
+    }
+
+    if (-Not $found) {
         return [PSCustomObject]@{
             Found       = $false
             NextIndex   = $i
@@ -386,28 +410,12 @@ function Search-WtDef {
                 }
             )
         }
-    }
-
-    $def = [PSCustomObject]@{
-        WordType = $wtTok.Content
-    }
-    if ($null -ne $cebword) {
-        $def | Add-Member -NotePropertyName CebWord -NotePropertyValue $cebword -Force
-    }
-    if ($classes.Count -gt 0) {
-        $def | Add-Member -NotePropertyName Classes -NotePropertyValue $classes -Force
-    }
-    if ($defex.Found) {
-        $def | Add-Member -NotePropertyName DefEx -NotePropertyValue $defex.Def -Force
-    }
-    if ($numdefs.Count -gt 0) {
-        $def | Add-Member -NotePropertyName NumberedDefs -NotePropertyValue $numdefs -Force
-    }
-
-    return [PSCustomObject]@{
-        Found        = $true
-        NextIndex    = $i
-        Def          = $def
+    } else {
+        return [PSCustomObject]@{
+            Found        = $true
+            NextIndex    = $i
+            Def          = $def
+        }
     }
 }
 
