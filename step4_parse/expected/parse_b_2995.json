@@ -1,0 +1,62 @@
+{
+  "WordDef": {
+    "Def": {
+      "Word": "bíu",
+      "WordTypeDefs": [
+        {
+          "WordType": "n",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "body odor."
+            },
+            "Examples": [
+              {
+                "Phrase": "Bahúang bíu nímu uy,",
+                "Gloss": "Jesus, what strong b.o. you’ve got."
+              }
+            ]
+          }
+        },
+        {
+          "WordType": "v",
+          "Classes": [
+            "[B126]"
+          ],
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "have b.o."
+            },
+            "Examples": [
+              {
+                "Phrase": "Mabíu (biúhun) ka ug dì ka malígù,",
+                "Gloss": "You’ll have b.o. if you don’t take a bath."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "Conjugations": [
+      {
+        "Word": "biúhun",
+        "WordTypeDefs": [
+          {
+            "WordType": "a",
+            "DefEx": {
+              "Def": {
+                "Type": "TEXT",
+                "Content": "having strong b.o."
+              },
+              "Examples": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "Found": true,
+  "NextIndex": 13,
+  "Diagnostics": []
+}

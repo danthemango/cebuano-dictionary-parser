@@ -57,7 +57,7 @@ if ((-not (Test-Path $outFile)) -or $Force) {
     }
 } else {
     $success = $true
-    Write-Host "Skip $outFile (already exists)"
+    if (-Not $Silent) { Write-Host "Skip $outFile (already exists)" }
 }
 
 if (-Not $success) {

@@ -159,3 +159,4 @@ I'll loosen the rules.
 - [x] fix 2589
     - I'm pretty sure this one is just a typo, it's an aside so it's marked as italics, but lang="ceb" was added even though it doesn't apply
     - strip ceb attr from tags using english keyword
+- [x] fix 2995 (b.o link)
