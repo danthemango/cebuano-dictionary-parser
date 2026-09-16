@@ -2,6 +2,9 @@ param (
     [switch]$Force
 )
 
+Write-Output "Deleting empty files"
+Get-ChildItem "step3_tokenize\data" | Where-Object length -eq 0 | Remove-Item
+
 $tokSW = [Diagnostics.Stopwatch]::StartNew()
 . $PSScriptRoot\step3_tokenize\TokenizeAll.ps1 -Force:$Force
 $tokSW.Stop()
