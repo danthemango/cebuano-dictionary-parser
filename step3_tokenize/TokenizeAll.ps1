@@ -5,18 +5,20 @@ param (
 
 [string]$inDir = "step2_split_paras\data"
 [string]$outDir = "step3_tokenize\data"
+[string]$errorDir = "step3_tokenize\errors"
 mkdir -Force $outDir | Out-Null
-$errorDir = "step3_tokenize\errors"
 mkdir -Force $errorDir | Out-Null
 
 Get-ChildItem -Path $inDir -Filter "para_*.xml" | ForEach-Object -Parallel {
+    [string]$outDir = "step3_tokenize\data"
     $inFile = $_
-    $outFile = $inFile.FullName -replace "para_", "tokens_"
+    [string]$outFile = $inFile.FullName -replace "para_", "tokens_"
     $outFile = $outFile -replace ".xml$", ".csv"
     $outFile = Join-Path -Path $outDir -ChildPath (Split-Path -Leaf $outFile)
 
     # delete the error file if it exists
-    $errorFile = $inFile.FullName -replace "para_", "error_"
+    [string]$errorDir = "step3_tokenize\errors"
+    [string]$errorFile = $inFile.FullName -replace "para_", "error_"
     $errorFile = $errorFile -replace ".xml$", ".txt"
     $errorFile = Join-Path -Path $errorDir -ChildPath (Split-Path -Leaf $errorFile)
 
