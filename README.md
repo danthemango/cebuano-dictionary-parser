@@ -165,3 +165,4 @@ I'll loosen the rules.
 - fix 5596, another double word type typo
 - fix 6047: typo in number html tag
 - fix 6600: typo numbering 1a (I think it's 1, followed by 1a, else it could be a duplicate 1 with an adjective, either way it's a typo)
+- fix 6632: duplicate wordtypo a a

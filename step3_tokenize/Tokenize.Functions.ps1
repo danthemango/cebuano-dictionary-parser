@@ -444,7 +444,7 @@ function Repair-Typos {
 
     process {
         # noun and "a", marked as adjective but probably just a typo
-        $Token.Content = $Token.Content -replace '<i>n</i>\s*<i>a</i>', '<i>n</i> a'
+        $Token.Content = $Token.Content -replace '<i>[anv]</i>\s*<i>a</i>', '<i>n</i> a'
         $Token
     }
 }
