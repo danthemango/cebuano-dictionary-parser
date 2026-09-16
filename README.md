@@ -174,4 +174,7 @@ I'll loosen the rules.
     - I expect cebphrases to have a comma, excl. point or question mark at the end, otherwise it's just a tagged section of text, which is probably just an extension of the definition or translated example.
 - fix 6158: it's a cebphrase that has a mistagged translation
     - I wonder if I should update the parser to try and split on comma if the translation isn't found.
-- TODO fix 12404: cebword conjugation
+- TODO fix 14636: cebword conjugation
+- TODO fix 15665: `see birnis for verb forms.`
+- fix 16899: I noticed they are using link format to indicate acronyms
+    - I think I'll write some more regex to find an acronym and strip the link formatting

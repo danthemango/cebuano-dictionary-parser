@@ -446,6 +446,8 @@ function Repair-Typos {
         $Token.Content = $Token.Content -replace '<i>[anv]</i>\s*<i>a</i>', '<i>n</i> a'
         # a mislabelled number (capture)
         $Token.Content = $Token.Content -replace '<i lang="ceb">(?<num>(?=[a-z0-9]*\d)[a-z0-9]+)</i>', '<b>${num}</b>'
+        # strip link formatting from acronyms
+        $Token.Content = $Token.Content -replace '<span class="sc" lang="ceb">(?<accr>(\w\.)+\w?)</span>', '${accr}'
 
         $Token
     }
