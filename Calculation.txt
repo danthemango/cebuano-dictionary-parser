@@ -1,5 +1,5 @@
-Tokenization Rate: 20893 / 20983 99.57%
-Parsing Rate: 20739 / 20892 99.27%
-Total Paragraph Parsing Rate: 20739 / 20982 98.84%
-Tokenize Time: 00:00:18.9267696
-Parse Time: 00:22:40.4111972
+Tokenization Rate: 20730 / 20984 98.79%
+Parsing Rate: 20822 / 20888 99.68%
+Total Paragraph Parsing Rate: 20822 / 20982 99.24%
+Tokenize Time: 00:01:56.0946050
+Parse Time: 00:06:39.1469121

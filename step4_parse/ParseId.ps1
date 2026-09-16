@@ -51,10 +51,10 @@ $parse = $null
 if ((-not (Test-Path $outFile)) -or $Force) {
     $parse = . $PSScriptRoot\ParseFile.ps1 -InFile $inFile
     if ($parse.Found) {
+        Write-Host "Write $outFile"
         $parse | ConvertTo-Json -Depth 100 | Set-Content -Path $outFile -Encoding UTF8
         $success = $true
     }
-    Write-Host "Write $outFile"
 } else {
     $success = $true
     Write-Host "Skip $outFile (already exists)"

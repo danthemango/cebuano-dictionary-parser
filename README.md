@@ -152,3 +152,8 @@ I'll loosen the rules.
 - I added -Parallel blocks, since I realized I'm blocked mostly on disk accesses
 - I had to change `$Force` to `$using:Force` inside of those blocks, since inheriting scope is done differently in powershell
 - I changed tokenizeall to only write error on `-Verbose`
+- I just realized that the 'see also' is already tokenized as a link sometimes, I need to rewrite the assert-implemented section (possibly move it to only TEXT block?)
+    - [ ] adjust "see also" assert-implemented
+- [ ] fix 2429, `[class]` to represent a new definition (?)
+    - I will ignore this one until I can find another example, I think it may be a typo?
+-
