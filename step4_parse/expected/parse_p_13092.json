@@ -90,7 +90,7 @@
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
-                  "Content": "<i lang=\"cebword\">with future verb:</i> [so-and-so] will still happen."
+                  "Content": "<i>with future verb:</i> [so-and-so] will still happen."
                 },
                 "Examples": [
                   {
@@ -120,7 +120,7 @@
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
-                  "Content": "<i lang=\"cebword\">with existential:</i> [so-and-so] also is in existence."
+                  "Content": "<i>with existential:</i> [so-and-so] also is in existence."
                 },
                 "Examples": [
                   {
@@ -135,7 +135,7 @@
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
-                  "Content": "<i lang=\"cebword\">interrogative —:</i>"
+                  "Content": "<i>interrogative —:</i>"
                 },
                 "Examples": []
               }
@@ -195,7 +195,7 @@
               "DefEx": {
                 "Def": {
                   "Type": "TEXT",
-                  "Content": "<i lang=\"cebword\">in phrases bringing up a new subject:</i>"
+                  "Content": "<i>in phrases bringing up a new subject:</i>"
                 },
                 "Examples": []
               }
@@ -255,7 +255,7 @@
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
-                "Content": "<i lang=\"cebword\">in phrases meaning in addition:</i>"
+                "Content": "<i>in phrases meaning in addition:</i>"
               },
               "Examples": []
             }
@@ -452,7 +452,7 @@
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
-                "Content": "<i lang=\"cebword\">in comparisons:</i> even more."
+                "Content": "<i>in comparisons:</i> even more."
               },
               "Examples": [
                 {
@@ -487,7 +487,7 @@
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
-                "Content": "<i lang=\"cebword\">in quotations, preceded by gen.:</i> [gen.] said."
+                "Content": "<i>in quotations, preceded by gen.:</i> [gen.] said."
               },
               "Examples": [
                 {
@@ -684,7 +684,7 @@
             "DefEx": {
               "Def": {
                 "Type": "TEXT",
-                "Content": "<i lang=\"cebword\">modifying a phrase referring to time:</i> [so-and-so] recently happened, won’t happen until ..."
+                "Content": "<i>modifying a phrase referring to time:</i> [so-and-so] recently happened, won’t happen until ..."
               },
               "Examples": [
                 {

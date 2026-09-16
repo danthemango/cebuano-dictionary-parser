@@ -320,7 +320,7 @@
                 "DefEx": {
                   "Def": {
                     "Type": "TEXT",
-                    "Content": "<i lang=\"cebword\">in phrases</i>:"
+                    "Content": "<i>in phrases</i>:"
                   },
                   "Examples": []
                 }

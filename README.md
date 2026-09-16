@@ -156,4 +156,6 @@ I'll loosen the rules.
     - [ ] adjust "see also" assert-implemented
 - [ ] fix 2429, `[class]` to represent a new definition (?)
     - I will ignore this one until I can find another example, I think it may be a typo?
--
+- [x] fix 2589
+    - I'm pretty sure this one is just a typo, it's an aside so it's marked as italics, but lang="ceb" was added even though it doesn't apply
+    - strip ceb attr from tags using english keyword

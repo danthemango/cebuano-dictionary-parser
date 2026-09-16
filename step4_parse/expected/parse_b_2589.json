@@ -1,0 +1,148 @@
+{
+  "WordDef": {
+    "Def": {
+      "Word": "bayà<sub>1</sub>",
+      "NumberedDefs": [
+        {
+          "Number": "1",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "particle giving an admonitary tone."
+            },
+            "Examples": []
+          }
+        },
+        {
+          "Number": "a",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "<i>with an imperative:</i> make sure that, better do."
+            },
+            "Examples": [
+              {
+                "Phrase": "Hinumdumi bayà,",
+                "Gloss": "You’d better remember."
+              },
+              {
+                "Phrase": "Sigurúa bayà ha,",
+                "Gloss": "Make sure you do it!"
+              }
+            ]
+          }
+        },
+        {
+          "Number": "b",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "<i>with a statement:</i> watch out."
+            },
+            "Examples": [
+              {
+                "Phrase": "Mamáak bayà nà,",
+                "Gloss": "Watch out! He bites."
+              },
+              {
+                "Phrase": "Ikaw bayà ang nanghilabut, ayaw pamasángil,",
+                "Gloss": "You touched it. Don’t try to make excuses."
+              }
+            ]
+          }
+        },
+        {
+          "Number": "c",
+          "DefEx": {
+            "Def": {
+              "Type": "LINK",
+              "Content": "bayáay"
+            },
+            "Examples": []
+          }
+        },
+        {
+          "Number": "2",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "<i>particle with a statement or exclamation:</i> [so-and-so] is different than it should be."
+            },
+            "Examples": [
+              {
+                "Phrase": "Tiawtíaw ka bayà,",
+                "Gloss": "You’re joking, though you shouldn’t be."
+              },
+              {
+                "Phrase": "Bayà, nagbinátà ka dihà,",
+                "Gloss": "Hmm, you’re acting like a child."
+              },
+              {
+                "Phrase": "Kabuútan bayà nímu,",
+                "Gloss": "How good of you, but you shouldn’t have."
+              },
+              {
+                "Phrase": "Bayang kusúga níyang midágan, mu rag unsáun siya,",
+                "Gloss": "God! How he ran away. As if I were going to do s.t. to him. <i lang=\"cebword\">‘Panginum mu áning kúk, u.’—‘Busug pa bayà ku, bay,’</i> ‘Here, drink this coke.’—‘No thanks, I’m still full.’"
+              }
+            ]
+          }
+        },
+        {
+          "Number": "3",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "why should that be the case when ..."
+            },
+            "Examples": [
+              {
+                "Phrase": "Wà nay bugas? Nagpalit bayà aku gahápun,",
+                "Gloss": "There’s no rice? Why? I just bought some yesterday."
+              }
+            ]
+          }
+        },
+        {
+          "Number": "4",
+          "DefEx": {
+            "Def": {
+              "Type": "TEXT",
+              "Content": "<i>particle conceding that s.t. is the case which one didn’t think to be so.</i>"
+            },
+            "Examples": [
+              {
+                "Phrase": "Nákug dì ka kamaung mulútù. Lamì bayà,",
+                "Gloss": "I thought you didn’t know how to cook. But I must say it’s good."
+              },
+              {
+                "Phrase": "Pagkadakù bayà sa Manílà,",
+                "Gloss": "I did not know Manila was this big."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "Conjugations": [
+      {
+        "Word": "-ay(←)",
+        "DefEx": {
+          "Def": {
+            "Type": "TEXT",
+            "Content": "<i>particle with a condition:</i> a feared consequence will happen if the condition happens (had happened, were to happen)."
+          },
+          "Examples": [
+            {
+              "Phrase": "Bayáay (bayà) na man ug nasakpan pa ta. Prísu giyud,",
+              "Gloss": "God! If we had been caught. It would have meant jail."
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "Found": true,
+  "NextIndex": 41,
+  "Diagnostics": []
+}

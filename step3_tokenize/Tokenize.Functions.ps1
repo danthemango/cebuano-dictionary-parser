@@ -275,6 +275,14 @@ function Update-ChangeCebWord {
     )
     process {
         if ($Token.Type -ne "TEXT") { $Token; return }
+
+        # find italic sections that are actually just explanations
+        # `<i lang=""cebword"">particle with a statement or exclamation:</i> [so-and-so] is different than it should be.`
+        # anything with a colon:
+        $Token.Content = [regex]::Replace($Token.Content, '<i lang="ceb">(?<content>(?:.)*?:)</i>', '<i>${content}</i>')
+        # if the some keywords appear, I will assume it's a mistagged section
+        $Token.Content = [regex]::Replace($Token.Content, '<i lang="ceb">(?<content>[^<]*?(statement|particle|condition|future|existential|with|interrogative|phrase|subject|addition|compare|quotation)[^<]*?)</i>', '<i>${content}</i>')
+
         # if there is no comma at the end inside of the tags,
         # replace lang="ceb" with lang="cebword"
         $Token.Content = [regex]::Replace($Token.Content, '<i lang="ceb">(?<content>(?:(?!</i>).)*?[^,!?\.])</i>', '<i lang="cebword">${content}</i>')
