@@ -247,13 +247,9 @@ function Search-NumDef {
         $i++
     }
 
-    # find any classes after cebword
     while (IsType (Get-Token $Tokens $i) 'CLASS') {
         $classes += (Get-Token $Tokens $i).Content
         $i++
-    }
-    if ($classes.Count -gt 0) {
-        $numDef | Add-Member -NotePropertyName Classes -NotePropertyValue $classes -Force
     }
 
     # defex
@@ -263,6 +259,15 @@ function Search-NumDef {
         $found = $true
         $i = $defex.NextIndex
     }
+
+    while (IsType (Get-Token $Tokens $i) 'CLASS') {
+        $classes += (Get-Token $Tokens $i).Content
+        $i++
+    }
+    if ($classes.Count -gt 0) {
+        $numDef | Add-Member -NotePropertyName Classes -NotePropertyValue $classes -Force
+    }
+
 
     # accept a nested number def if no defex found
     if (-Not $defex.Found) {
@@ -365,6 +370,11 @@ function Search-WtDef {
         $i = $defex.NextIndex
     }
 
+    while (IsType (Get-Token $Tokens $i) 'CLASS') {
+        $classes += (Get-Token $Tokens $i).Content
+        $i++
+    }
+
     $numdefs = @()
     while (IsType (Get-Token $Tokens $i) 'NUMBER') {
         $nd = Search-NumDef -Tokens $Tokens -StartIndex $i
@@ -465,15 +475,21 @@ function Search-DefBody {
         $i++
         $tok = Get-Token $Tokens $i
     }
-    if ($classes.Count -gt 0) {
-        $def | Add-Member -NotePropertyName Classes -NotePropertyValue $classes -Force
-    }
 
     $defex = Search-DefEx -Tokens $Tokens -StartIndex $i
     if ($defex.Found) {
         $found = $True
         $def | Add-Member -NotePropertyName DefEx -NotePropertyValue $defex.Def -Force
         $i = $defex.NextIndex
+    }
+
+    while (IsType $tok 'CLASS') {
+        $classes += (Get-Token $Tokens $i).Content
+        $i++
+        $tok = Get-Token $Tokens $i
+    }
+    if ($classes.Count -gt 0) {
+        $def | Add-Member -NotePropertyName Classes -NotePropertyValue $classes -Force
     }
 
     $numdefs = @()

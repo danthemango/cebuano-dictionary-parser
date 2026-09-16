@@ -284,7 +284,7 @@ function Update-ChangeCebWord {
         # anything with a colon:
         $Token.Content = [regex]::Replace($Token.Content, '<i lang="ceb">(?<content>(?:.)*?:)</i>', '<i>${content}</i>')
         # if the some keywords appear, I will assume it's a mistagged section
-        $Token.Content = [regex]::Replace($Token.Content, '<i lang="ceb">(?<content>[^<]*?(statement|particle|condition|future|existential|with|interrogative|phrase|subject|addition|compare|quotation)[^<]*?)</i>', '<i>${content}</i>')
+        $Token.Content = [regex]::Replace($Token.Content, '<i lang="ceb">(?<content>[^<]*?(statement|particle|condition|future|existential|with|interrogative|phrase|subject|addition|compare|quotation|s.t.|s.o|s.w.|k.o.|lit.|voc.)[^<]*?)</i>', '<i>${content}</i>')
 
         # if there is no comma at the end inside of the tags,
         # replace lang="ceb" with lang="cebword"

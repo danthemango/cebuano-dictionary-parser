@@ -167,3 +167,5 @@ I'll loosen the rules.
 - fix 6600: typo numbering 1a (I think it's 1, followed by 1a, else it could be a duplicate 1 with an adjective, either way it's a typo)
 - fix 6632: duplicate wordtypo a a
 - fix 6742: typo in cebphrase
+- allow class after DefEx
+    - I'm not sure what this means, it can fix a bit less than a dozen broken parses

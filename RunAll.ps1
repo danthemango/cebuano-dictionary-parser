@@ -23,4 +23,3 @@ $parseSW.Stop()
 .\Calculate.ps1 | Set-Content "Calculation.txt"
 Add-Content "Calculation.txt" "Tokenize Time: $($tokSW.Elapsed.ToString())"
 Add-Content "Calculation.txt" "Parse Time: $($parseSW.Elapsed.ToString())"
-
