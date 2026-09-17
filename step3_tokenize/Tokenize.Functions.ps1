@@ -515,7 +515,7 @@ function Assert-BalancedBrackets {
 
     process {
         $content = $Token.Content
-        if (-not (Test-Xml -Content $content)) {
+        if (-not (Test-Brackets -Content $content)) {
             throw "Invalid brackets content: $content"
         }
         $Token
