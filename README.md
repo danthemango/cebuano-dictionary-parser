@@ -188,3 +188,8 @@ I'll loosen the rules.
     - I think there are a few definitions that sucessfully passed parsing even though they should fail this test
 - TODO remove the letter from the filenames
     - it makes the naming process much more complicated, and it has not proved helpful
+- TODO fix xml errors on tokenize:
+    - [ ] 10388
+    - [ ] 18024
+    - [ ] 18585
+
