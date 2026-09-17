@@ -191,9 +191,10 @@ I'll loosen the rules.
 - TODO fix xml errors on tokenize:
     - [ ] 10388
     - [ ] 18024
-    - [ ] 18585
 - TODO fix 10583: example is interpreted as cebword
 - TODO fix 13092: strip ceb or cebword from `"TEXT","<i lang=""cebword"">doubled verb</i>"`
 - TODO fix CopyExpecteds: stops on exception
 - fix 2589: found misparsed example
 - rewrite cebword parser using xml interpreter
+- fix 18585: parse link before numbers
+    - the number parser inside of the link got interpreted first, which broke it
