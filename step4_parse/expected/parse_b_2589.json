@@ -108,13 +108,9 @@
           "DefEx": {
             "Def": {
               "Type": "TEXT",
-              "Content": "<i>particle conceding that s.t. is the case which one didn’t think to be so.</i>"
+              "Content": "<i>particle conceding that s.t. is the case which one didn’t think to be so.</i><i lang=\"ceb\">Nákug dì ka kamaung mulútù. Lamì bayà,</i> I thought you didn’t know how to cook. But I must say it’s good."
             },
             "Examples": [
-              {
-                "Phrase": "Nákug dì ka kamaung mulútù. Lamì bayà,",
-                "Gloss": "I thought you didn’t know how to cook. But I must say it’s good."
-              },
               {
                 "Phrase": "Pagkadakù bayà sa Manílà,",
                 "Gloss": "I did not know Manila was this big."
@@ -143,6 +139,6 @@
     ]
   },
   "Found": true,
-  "NextIndex": 41,
+  "NextIndex": 39,
   "Diagnostics": []
 }

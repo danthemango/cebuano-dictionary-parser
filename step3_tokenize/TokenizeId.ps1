@@ -29,9 +29,8 @@ if ($CopyToExpected) {
     $inFile = Get-Item -Path  "$PSScriptRoot\..\step2_split_paras\data\para_*_$Id.xml"
     [string]$expectedDir = "$PSScriptRoot\expected"
     mkdir -Force $expectedDir | Out-Null
-    [string]$expectedFilePath = $inFile.Name -replace "para_", "tokens_"
+    [string]$expectedFilePath = $inFile.Name -replace "para_", "tokens_" -replace ".xml$", ".csv"
     Write-Host "Write $($inFile.Name)"
-    $expectedFilePath = $expectedFilePath -replace ".xml$", ".csv"
     $expectedFilePath = Join-Path -Path $expectedDir -ChildPath (Split-Path -Leaf $expectedFilePath)
     . $PSScriptRoot\TokenizeFile.ps1 -InFile $inFile | Export-Csv -Path $expectedFilePath -NoTypeInformation
     Write-Host "Write $($expectedFilePath)"

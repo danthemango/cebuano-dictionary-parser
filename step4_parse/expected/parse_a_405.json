@@ -1,0 +1,17 @@
+{
+  "WordDef": {
+    "Def": {
+      "Word": "alabanit",
+      "DefEx": {
+        "Def": {
+          "Type": "LINK",
+          "Content": "rabanit"
+        },
+        "Examples": []
+      }
+    }
+  },
+  "Found": true,
+  "NextIndex": 2,
+  "Diagnostics": []
+}

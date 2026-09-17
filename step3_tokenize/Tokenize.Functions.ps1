@@ -113,11 +113,59 @@ function Split-CebuanoWords {
         $Token
     )
     process {
-        $pattern1 = "<b lang=""ceb"">\s*(.*?)\s*</b>"
-        # the id is likely used to be the target of the internal links, not sure if that information can be used later.
-        $pattern2 = "<b id=""[^""]+"" lang=""ceb"">\s*(.*?)\s*</b>"
+        if ($Token.Type -ne "TEXT") {
+            $Token
+            return
+        }
 
-        $Token | Split-TokensByPattern -pattern $pattern1 -tokenType "CEBWORD" | Split-TokensByPattern -pattern $pattern2 -tokenType "CEBWORD"
+        [xml]$xml = "<root>$($Token.Content)</root>"
+        [string]$text = ''
+        $newTokens = @()
+
+        foreach ($node in $xml.DocumentElement.ChildNodes) {
+            if (
+                $node.NodeType -eq [System.Xml.XmlNodeType]::Element -and
+                $node.Name -eq 'b' -and
+                $node.GetAttribute('lang') -eq 'ceb'
+            ) {
+                if ($text -ne '') {
+                    $newTokens += [PSCustomObject]@{
+                        Type    = 'TEXT'
+                Content = $text.Trim()
+                    }
+                    $text = ''
+                }
+
+                $newTokens += [PSCustomObject]@{
+                    Type    = 'CEBWORD'
+                    Content = $node.InnerXml.Trim()
+                }
+            }
+            else {
+                if ($node.NodeType -eq [System.Xml.XmlNodeType]::Text) {
+                    $text += $node.Value
+                } else {
+                    $text += $node.OuterXml
+                }
+            }
+        }
+
+        # append remaining text node if filled
+        if ($text -ne '') {
+            $newTokens += [PSCustomObject]@{
+                Type    = 'TEXT'
+                Content = $text.Trim()
+            }
+            $text = ''
+        }
+
+        # emit all new tokens
+        foreach ($newToken in $newTokens) {
+            if (-not $newtoken.content) {
+                Write-Host $newtoken
+            }
+            $newToken
+        }
     }
 }
 
@@ -333,24 +381,6 @@ function Update-Corr {
         $Token | Assert-ValidXML
     }
 }
-
-# function  {
-#     param(
-#         [Parameter(ValueFromPipeline)]
-#         $Token
-#     )
-
-#     process {
-#         if ($Token.Type -ne 'TEXT') {
-#             $Token
-#             return
-#         }
-
-
-#         $Token
-#         return
-#     }
-# }
 
 function Assert-ValidXMLContent {
     param (

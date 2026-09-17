@@ -23,6 +23,7 @@ $ids = @(
     2073,
     219,
     25,
+    2589,
     2995,
     3384,
     42,
@@ -35,5 +36,9 @@ $ids = @(
 )
 
 foreach ($id in $ids) {
-    . $PSScriptRoot\RunId.ps1 -Id $id -CopyToExpected -SkipTypos
+    try {
+        . $PSScriptRoot\RunId.ps1 -Id $id -CopyToExpected
+    } catch {
+        Write-Error "Error in $id : $_"
+    }
 }

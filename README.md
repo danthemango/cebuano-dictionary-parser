@@ -192,4 +192,8 @@ I'll loosen the rules.
     - [ ] 10388
     - [ ] 18024
     - [ ] 18585
-
+- TODO fix 10583: example is interpreted as cebword
+- TODO fix 13092: strip ceb or cebword from `"TEXT","<i lang=""cebword"">doubled verb</i>"`
+- TODO fix CopyExpecteds: stops on exception
+- fix 2589: found misparsed example
+- rewrite cebword parser using xml interpreter

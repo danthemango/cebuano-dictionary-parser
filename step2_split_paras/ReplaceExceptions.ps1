@@ -1,8 +1,12 @@
+<#
+.DESCRIPTION
+Replace some xml content with a better parsed version.
+This fixes some typos, and remove content that is difficult to parse and may not be interesting later.
+#>
 param (
     [switch]$Verbose
 )
 
-# fix some typos
 function Repair-Typos {
     param (
         [int]$Id,
@@ -42,3 +46,5 @@ Repair-Typos -Id 11956 -SearchPattern '(<i lang="ceb">Past</i>: <b lang="ceb">na
 Repair-Typos -Id 11956 -SearchPattern 'Verbs with <i lang="ceb">mag-</i>, <i lang="ceb">nag-</i> have the following meanings \(as opposed to verbs with <i lang="ceb">mi-</i>, <i lang="ceb">mu-</i> — <i lang="ceb">see</i><span class="sc" lang="ceb"><a href="#mu-">mu-</a></span>\):', ''
 Repair-Typos -Id 18768 -SearchPattern '<span class="sc" lang="ceb">un</span>' -Replacement 'UN'
 Repair-Typos -Id 20778 -SearchPattern '<b>y</b>' -Replacement '<b lang="ceb">y</b'
+# remove link and cebwords
+Repair-Typos -Id 10388 -SearchPattern '<b lang="ceb">— nga <span class="rm">\[<b lang="ceb">maka-/naka-</b><i lang="ceb">verb</i>\]</span></b>' -Replacement '<b lang="ceb">— nga [<b>maka-/naka-</b><i>verb</i>]</b>'
