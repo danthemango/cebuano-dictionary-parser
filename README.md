@@ -190,7 +190,6 @@ I'll loosen the rules.
     - it makes the naming process much more complicated, and it has not proved helpful
 - TODO fix xml errors on tokenize:
     - [ ] 10388
-    - [ ] 18024
 - TODO fix 10583: example is interpreted as cebword
 - TODO fix 13092: strip ceb or cebword from `"TEXT","<i lang=""cebword"">doubled verb</i>"`
 - TODO fix CopyExpecteds: stops on exception
@@ -198,3 +197,5 @@ I'll loosen the rules.
 - rewrite cebword parser using xml interpreter
 - fix 18585: parse link before numbers
     - the number parser inside of the link got interpreted first, which broke it
+- fix 18024: add exception for link in example
+    - if there are many more like this, I'll consider removing all link-types inside of `<i lang="ceb">` tags
