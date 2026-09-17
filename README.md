@@ -178,3 +178,13 @@ I'll loosen the rules.
 - TODO fix 15665: `see birnis for verb forms.`
 - fix 16899: I noticed they are using link format to indicate acronyms
     - I think I'll write some more regex to find an acronym and strip the link formatting
+    - it appears they are using these attributes for styling
+
+### 2026-09-17
+- TODO implement script to remove parse files that failed to tokenize
+- add the ID and the reason for tokenize failure
+- add assertion that brackets match after tokenization
+    - this should capture many of the issues I'm getting of text being partially parsed inside of an aside
+    - I think there are a few definitions that sucessfully passed parsing even though they should fail this test
+- TODO remove the letter from the filenames
+    - it makes the naming process much more complicated, and it has not proved helpful

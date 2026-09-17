@@ -19,23 +19,23 @@ mkdir -Force $outDir | Out-Null
 mkdir -Force $errorDir | Out-Null
 
 Get-ChildItem -Path $inDir -Filter "para_*.xml" | ForEach-Object -Parallel {
+    [int]$id = [regex]::Match($_.Name, 'para_._(\d+)\.xml').Groups[1].Value
     [string]$outDir = "step3_tokenize\data"
     $inFile = $_
     [string]$outFile = $inFile.FullName -replace "para_", "tokens_"
     $outFile = $outFile -replace ".xml$", ".csv"
     $outFile = Join-Path -Path $outDir -ChildPath (Split-Path -Leaf $outFile)
 
-    # delete the error file if it exists
     [string]$errorDir = "step3_tokenize\errors"
     [string]$errorFile = $inFile.FullName -replace "para_", "error_"
     $errorFile = $errorFile -replace ".xml$", ".txt"
     $errorFile = Join-Path -Path $errorDir -ChildPath (Split-Path -Leaf $errorFile)
+    if (Test-Path $errorFile) {
+        Remove-Item -Path $errorFile -Force
+    }
 
     if ((-Not (Test-Path $outFile)) -Or $using:Force) {
         try {
-            if (Test-Path $errorFile) {
-                Remove-Item -Path $errorFile -Force
-            }
             step3_tokenize\TokenizeFile.ps1 -InFile $inFile | Export-Csv -Path $outFile -NoTypeInformation
         } catch {
             # delete the outFile if partially created
@@ -51,7 +51,8 @@ Get-ChildItem -Path $inDir -Filter "para_*.xml" | ForEach-Object -Parallel {
             if ($using:Verbose) {
                 Write-Error $errorMessage
             } else {
-                Write-Error "Failed to tokenize $inFile"
+                $err = $_
+                Write-Error "Failed to tokenize $id : $err"
             }
         }
     }

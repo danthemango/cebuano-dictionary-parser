@@ -334,30 +334,23 @@ function Update-Corr {
     }
 }
 
-function Update-ShortForm {
-    param(
-        [Parameter(ValueFromPipeline)]
-        $Token
-    )
+# function  {
+#     param(
+#         [Parameter(ValueFromPipeline)]
+#         $Token
+#     )
 
-    process {
-        if ($Token.Type -ne 'TEXT') {
-            $Token
-            return
-        }
+#     process {
+#         if ($Token.Type -ne 'TEXT') {
+#             $Token
+#             return
+#         }
 
-        if ($Token.Content -Like "*Short Form*") {
-            throw "'Short Form' tokenization not implementd yet."
-        }
 
-        # if ($Token.Content -Like "*in set phrases*") {
-        #     throw "'in set phrases' tokenization not implementd yet."
-        # }
-
-        $Token
-        return
-    }
-}
+#         $Token
+#         return
+#     }
+# }
 
 function Assert-ValidXMLContent {
     param (
@@ -365,12 +358,12 @@ function Assert-ValidXMLContent {
         [string]$NewContent
     )
 
-    if (-not (IsValidXML -Content $NewContent)) {
+    if (-not (Test-Xml -Content $NewContent)) {
         throw "Invalid XML content: $NewContent original content: $OldContent"
     }
 }
 
-function IsValidXML {
+function Test-Xml {
     param (
         [string]$Content
     )
@@ -401,7 +394,7 @@ function Assert-ValidXML {
     )
     process {
         $content = $Token.Content
-        if (-not (IsValidXML -Content $content)) {
+        if (-not (Test-Xml -Content $content)) {
             throw "Invalid XML content: $content"
         }
         $Token
@@ -422,15 +415,20 @@ function Assert-Implemented {
         # throw exceptions on specific keywords: "see also", "short for", "cf."
         # case insensitive
 
-        if ($content -match "(?i)see also") {
-            throw "Not implemented: see also: $content"
+        $notImplementedPatterns = @(
+            'see also'
+            'short for'
+            'short form'
+            'cf\.'
+            'in set phrases'
+        )
+
+        foreach ($pattern in $notImplementedPatterns) {
+            if ($content -match "(?i)$pattern") {
+                throw "Not implemented: $pattern : $content"
+            }
         }
-        if ($content -match "(?i)short for") {
-            throw "Not implemented: short for: $content"
-        }
-        if ($content -match "(?i)cf\.") {
-            throw "Not implemented: cf.: $content"
-        }
+
         $Token
     }
 }
@@ -453,6 +451,77 @@ function Repair-Typos {
     }
 }
 
+<#
+.SYNOPSIS
+Tests whether (), [], and {} brackets are correctly nested.
+
+.PARAMETER Text
+The string to validate.
+
+.EXAMPLE
+Test-Brackets '(abc[123]{xyz})'
+# Returns: True
+
+.EXAMPLE
+Test-Brackets '(abc[123)]'
+# Returns: False
+#>
+function Test-Brackets {
+    param(
+        [string]$Text
+    )
+
+    $stack = [System.Collections.Generic.Stack[char]]::new()
+
+    $pairs = @{
+        ')' = '('
+        ']' = '['
+        '}' = '{'
+    }
+
+    foreach ($char in $Text.ToCharArray()) {
+        switch ($char) {
+            { $_ -in '(', '[', '{' } {
+                $stack.Push($char)
+                continue
+            }
+
+            { $_ -in ')', ']', '}' } {
+                if ($stack.Count -eq 0) {
+                    return $false
+                }
+
+                $open = $stack.Pop()
+
+                if ($open -ne $pairs[$char]) {
+                    return $false
+                }
+            }
+        }
+    }
+
+    return ($stack.Count -eq 0)
+}
+
+<#
+.SYNOPSIS
+
+#>
+function Assert-BalancedBrackets {
+    param(
+        [Parameter(ValueFromPipeline)]
+        $Token
+    )
+
+    process {
+        $content = $Token.Content
+        if (-not (Test-Xml -Content $content)) {
+            throw "Invalid brackets content: $content"
+        }
+        $Token
+    }
+}
+
 # iterates through the list of tokens and for each text token we process more specific tokens where found
 # we usually start with a single text token per row
 function Tokenize {
@@ -465,6 +534,6 @@ function Tokenize {
         # - corr must be processed before splitting words, since it is usally inside of the word block
         # - split links must be processed before cebuano phrases because of some bad formatting (they use <i lang="ceb"> as a way to make the word "see" italic, e.g. in "see otherword")
         # I think each step should have valid XML, so we can assert valid XML after each step
-        $Token | Assert-ValidXML | Repair-Typos | Update-ShortForm | Update-Corr | Split-Nums | Split-Links | Split-CebuanoWords | Split-Classes | Split-Types | Update-ChangeCebWord | Split-CebuanoPhrases | Assert-ValidXML | Assert-Implemented
+        $Token | Assert-ValidXML | Repair-Typos | Update-Corr | Split-Nums | Split-Links | Split-CebuanoWords | Split-Classes | Split-Types | Update-ChangeCebWord | Split-CebuanoPhrases | Assert-ValidXML | Assert-Implemented | Assert-BalancedBrackets
     }
 }
