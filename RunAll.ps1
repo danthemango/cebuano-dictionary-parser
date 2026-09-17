@@ -15,6 +15,9 @@ $tokSW.Stop()
 .\Calculate.ps1 | Set-Content "Calculation.txt"
 Add-Content "Calculation.txt" "Tokenize Time: $($tokSW.Elapsed.ToString())"
 
+# do some cleanup
+step4_parse\Cleanup.ps1
+
 $parseSW = [Diagnostics.Stopwatch]::StartNew()
 . $PSScriptRoot\step4_parse\ParseAll.ps1 -Force:$Force
 $parseSW.Stop()

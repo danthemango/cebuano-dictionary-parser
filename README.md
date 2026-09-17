@@ -181,7 +181,7 @@ I'll loosen the rules.
     - it appears they are using these attributes for styling
 
 ### 2026-09-17
-- TODO implement script to remove parse files that failed to tokenize
+- implement script to remove parse files that failed to tokenize
 - add the ID and the reason for tokenize failure
 - add assertion that brackets match after tokenization
     - this should capture many of the issues I'm getting of text being partially parsed inside of an aside
